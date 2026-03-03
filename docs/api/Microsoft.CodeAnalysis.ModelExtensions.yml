@@ -1,0 +1,942 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.ModelExtensions
+  commentId: T:Microsoft.CodeAnalysis.ModelExtensions
+  id: ModelExtensions
+  parent: Microsoft.CodeAnalysis
+  children:
+  - Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode)
+  - Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
+  - Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode)
+  - Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
+  - Microsoft.CodeAnalysis.ModelExtensions.GetAliasInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  - Microsoft.CodeAnalysis.ModelExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  - Microsoft.CodeAnalysis.ModelExtensions.GetMemberGroup(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  - Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeAliasInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  - Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  - Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeTypeInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  - Microsoft.CodeAnalysis.ModelExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  - Microsoft.CodeAnalysis.ModelExtensions.GetTypeInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: ModelExtensions
+  nameWithType: ModelExtensions
+  fullName: Microsoft.CodeAnalysis.ModelExtensions
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static class ModelExtensions
+    content.vb: Public Module ModelExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  commentId: M:Microsoft.CodeAnalysis.ModelExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  id: GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.ModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSymbolInfo(SemanticModel, SyntaxNode, CancellationToken)
+  nameWithType: ModelExtensions.GetSymbolInfo(SemanticModel, SyntaxNode, CancellationToken)
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel, Microsoft.CodeAnalysis.SyntaxNode, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static SymbolInfo GetSymbolInfo(this SemanticModel semanticModel, SyntaxNode node, CancellationToken cancellationToken = default)
+    parameters:
+    - id: semanticModel
+      type: Microsoft.CodeAnalysis.SemanticModel
+    - id: node
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Microsoft.CodeAnalysis.SymbolInfo
+    content.vb: Public Shared Function GetSymbolInfo(semanticModel As SemanticModel, node As SyntaxNode, cancellationToken As CancellationToken = Nothing) As SymbolInfo
+  overload: Microsoft.CodeAnalysis.ModelExtensions.GetSymbolInfo*
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  commentId: M:Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  id: GetSpeculativeSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.ModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSpeculativeSymbolInfo(SemanticModel, int, SyntaxNode, SpeculativeBindingOption)
+  nameWithType: ModelExtensions.GetSpeculativeSymbolInfo(SemanticModel, int, SyntaxNode, SpeculativeBindingOption)
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeSymbolInfo(Microsoft.CodeAnalysis.SemanticModel, int, Microsoft.CodeAnalysis.SyntaxNode, Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static SymbolInfo GetSpeculativeSymbolInfo(this SemanticModel semanticModel, int position, SyntaxNode expression, SpeculativeBindingOption bindingOption)
+    parameters:
+    - id: semanticModel
+      type: Microsoft.CodeAnalysis.SemanticModel
+    - id: position
+      type: System.Int32
+    - id: expression
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    - id: bindingOption
+      type: Microsoft.CodeAnalysis.SpeculativeBindingOption
+    return:
+      type: Microsoft.CodeAnalysis.SymbolInfo
+    content.vb: Public Shared Function GetSpeculativeSymbolInfo(semanticModel As SemanticModel, position As Integer, expression As SyntaxNode, bindingOption As SpeculativeBindingOption) As SymbolInfo
+  overload: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeSymbolInfo*
+  nameWithType.vb: ModelExtensions.GetSpeculativeSymbolInfo(SemanticModel, Integer, SyntaxNode, SpeculativeBindingOption)
+  fullName.vb: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeSymbolInfo(Microsoft.CodeAnalysis.SemanticModel, Integer, Microsoft.CodeAnalysis.SyntaxNode, Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  name.vb: GetSpeculativeSymbolInfo(SemanticModel, Integer, SyntaxNode, SpeculativeBindingOption)
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetTypeInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  commentId: M:Microsoft.CodeAnalysis.ModelExtensions.GetTypeInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  id: GetTypeInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.ModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetTypeInfo(SemanticModel, SyntaxNode, CancellationToken)
+  nameWithType: ModelExtensions.GetTypeInfo(SemanticModel, SyntaxNode, CancellationToken)
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetTypeInfo(Microsoft.CodeAnalysis.SemanticModel, Microsoft.CodeAnalysis.SyntaxNode, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static TypeInfo GetTypeInfo(this SemanticModel semanticModel, SyntaxNode node, CancellationToken cancellationToken = default)
+    parameters:
+    - id: semanticModel
+      type: Microsoft.CodeAnalysis.SemanticModel
+    - id: node
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Microsoft.CodeAnalysis.TypeInfo
+    content.vb: Public Shared Function GetTypeInfo(semanticModel As SemanticModel, node As SyntaxNode, cancellationToken As CancellationToken = Nothing) As TypeInfo
+  overload: Microsoft.CodeAnalysis.ModelExtensions.GetTypeInfo*
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetAliasInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  commentId: M:Microsoft.CodeAnalysis.ModelExtensions.GetAliasInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  id: GetAliasInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.ModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetAliasInfo(SemanticModel, SyntaxNode, CancellationToken)
+  nameWithType: ModelExtensions.GetAliasInfo(SemanticModel, SyntaxNode, CancellationToken)
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetAliasInfo(Microsoft.CodeAnalysis.SemanticModel, Microsoft.CodeAnalysis.SyntaxNode, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IAliasSymbol? GetAliasInfo(this SemanticModel semanticModel, SyntaxNode nameSyntax, CancellationToken cancellationToken = default)
+    parameters:
+    - id: semanticModel
+      type: Microsoft.CodeAnalysis.SemanticModel
+    - id: nameSyntax
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Microsoft.CodeAnalysis.IAliasSymbol
+    content.vb: Public Shared Function GetAliasInfo(semanticModel As SemanticModel, nameSyntax As SyntaxNode, cancellationToken As CancellationToken = Nothing) As IAliasSymbol
+  overload: Microsoft.CodeAnalysis.ModelExtensions.GetAliasInfo*
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeAliasInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  commentId: M:Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeAliasInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  id: GetSpeculativeAliasInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.ModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSpeculativeAliasInfo(SemanticModel, int, SyntaxNode, SpeculativeBindingOption)
+  nameWithType: ModelExtensions.GetSpeculativeAliasInfo(SemanticModel, int, SyntaxNode, SpeculativeBindingOption)
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeAliasInfo(Microsoft.CodeAnalysis.SemanticModel, int, Microsoft.CodeAnalysis.SyntaxNode, Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IAliasSymbol? GetSpeculativeAliasInfo(this SemanticModel semanticModel, int position, SyntaxNode nameSyntax, SpeculativeBindingOption bindingOption)
+    parameters:
+    - id: semanticModel
+      type: Microsoft.CodeAnalysis.SemanticModel
+    - id: position
+      type: System.Int32
+    - id: nameSyntax
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    - id: bindingOption
+      type: Microsoft.CodeAnalysis.SpeculativeBindingOption
+    return:
+      type: Microsoft.CodeAnalysis.IAliasSymbol
+    content.vb: Public Shared Function GetSpeculativeAliasInfo(semanticModel As SemanticModel, position As Integer, nameSyntax As SyntaxNode, bindingOption As SpeculativeBindingOption) As IAliasSymbol
+  overload: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeAliasInfo*
+  nameWithType.vb: ModelExtensions.GetSpeculativeAliasInfo(SemanticModel, Integer, SyntaxNode, SpeculativeBindingOption)
+  fullName.vb: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeAliasInfo(Microsoft.CodeAnalysis.SemanticModel, Integer, Microsoft.CodeAnalysis.SyntaxNode, Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  name.vb: GetSpeculativeAliasInfo(SemanticModel, Integer, SyntaxNode, SpeculativeBindingOption)
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeTypeInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  commentId: M:Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeTypeInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  id: GetSpeculativeTypeInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.ModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetSpeculativeTypeInfo(SemanticModel, int, SyntaxNode, SpeculativeBindingOption)
+  nameWithType: ModelExtensions.GetSpeculativeTypeInfo(SemanticModel, int, SyntaxNode, SpeculativeBindingOption)
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeTypeInfo(Microsoft.CodeAnalysis.SemanticModel, int, Microsoft.CodeAnalysis.SyntaxNode, Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static TypeInfo GetSpeculativeTypeInfo(this SemanticModel semanticModel, int position, SyntaxNode expression, SpeculativeBindingOption bindingOption)
+    parameters:
+    - id: semanticModel
+      type: Microsoft.CodeAnalysis.SemanticModel
+    - id: position
+      type: System.Int32
+    - id: expression
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    - id: bindingOption
+      type: Microsoft.CodeAnalysis.SpeculativeBindingOption
+    return:
+      type: Microsoft.CodeAnalysis.TypeInfo
+    content.vb: Public Shared Function GetSpeculativeTypeInfo(semanticModel As SemanticModel, position As Integer, expression As SyntaxNode, bindingOption As SpeculativeBindingOption) As TypeInfo
+  overload: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeTypeInfo*
+  nameWithType.vb: ModelExtensions.GetSpeculativeTypeInfo(SemanticModel, Integer, SyntaxNode, SpeculativeBindingOption)
+  fullName.vb: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeTypeInfo(Microsoft.CodeAnalysis.SemanticModel, Integer, Microsoft.CodeAnalysis.SyntaxNode, Microsoft.CodeAnalysis.SpeculativeBindingOption)
+  name.vb: GetSpeculativeTypeInfo(SemanticModel, Integer, SyntaxNode, SpeculativeBindingOption)
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  commentId: M:Microsoft.CodeAnalysis.ModelExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  id: GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.ModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetDeclaredSymbol(SemanticModel, SyntaxNode, CancellationToken)
+  nameWithType: ModelExtensions.GetDeclaredSymbol(SemanticModel, SyntaxNode, CancellationToken)
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel, Microsoft.CodeAnalysis.SyntaxNode, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static ISymbol? GetDeclaredSymbol(this SemanticModel semanticModel, SyntaxNode declaration, CancellationToken cancellationToken = default)
+    parameters:
+    - id: semanticModel
+      type: Microsoft.CodeAnalysis.SemanticModel
+    - id: declaration
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: Microsoft.CodeAnalysis.ISymbol
+    content.vb: Public Shared Function GetDeclaredSymbol(semanticModel As SemanticModel, declaration As SyntaxNode, cancellationToken As CancellationToken = Nothing) As ISymbol
+  overload: Microsoft.CodeAnalysis.ModelExtensions.GetDeclaredSymbol*
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetMemberGroup(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  commentId: M:Microsoft.CodeAnalysis.ModelExtensions.GetMemberGroup(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  id: GetMemberGroup(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.ModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetMemberGroup(SemanticModel, SyntaxNode, CancellationToken)
+  nameWithType: ModelExtensions.GetMemberGroup(SemanticModel, SyntaxNode, CancellationToken)
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetMemberGroup(Microsoft.CodeAnalysis.SemanticModel, Microsoft.CodeAnalysis.SyntaxNode, System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static ImmutableArray<ISymbol> GetMemberGroup(this SemanticModel semanticModel, SyntaxNode node, CancellationToken cancellationToken = default)
+    parameters:
+    - id: semanticModel
+      type: Microsoft.CodeAnalysis.SemanticModel
+    - id: node
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+    content.vb: Public Shared Function GetMemberGroup(semanticModel As SemanticModel, node As SyntaxNode, cancellationToken As CancellationToken = Nothing) As ImmutableArray(Of ISymbol)
+  overload: Microsoft.CodeAnalysis.ModelExtensions.GetMemberGroup*
+- uid: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
+  commentId: M:Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
+  id: AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.ModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeControlFlow(SemanticModel, SyntaxNode, SyntaxNode)
+  nameWithType: ModelExtensions.AnalyzeControlFlow(SemanticModel, SyntaxNode, SyntaxNode)
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel, Microsoft.CodeAnalysis.SyntaxNode, Microsoft.CodeAnalysis.SyntaxNode)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static ControlFlowAnalysis AnalyzeControlFlow(this SemanticModel semanticModel, SyntaxNode firstStatement, SyntaxNode lastStatement)
+    parameters:
+    - id: semanticModel
+      type: Microsoft.CodeAnalysis.SemanticModel
+    - id: firstStatement
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    - id: lastStatement
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    return:
+      type: Microsoft.CodeAnalysis.ControlFlowAnalysis
+    content.vb: Public Shared Function AnalyzeControlFlow(semanticModel As SemanticModel, firstStatement As SyntaxNode, lastStatement As SyntaxNode) As ControlFlowAnalysis
+  overload: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow*
+- uid: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode)
+  commentId: M:Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode)
+  id: AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.ModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeControlFlow(SemanticModel, SyntaxNode)
+  nameWithType: ModelExtensions.AnalyzeControlFlow(SemanticModel, SyntaxNode)
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel, Microsoft.CodeAnalysis.SyntaxNode)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static ControlFlowAnalysis AnalyzeControlFlow(this SemanticModel semanticModel, SyntaxNode statement)
+    parameters:
+    - id: semanticModel
+      type: Microsoft.CodeAnalysis.SemanticModel
+    - id: statement
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    return:
+      type: Microsoft.CodeAnalysis.ControlFlowAnalysis
+    content.vb: Public Shared Function AnalyzeControlFlow(semanticModel As SemanticModel, statement As SyntaxNode) As ControlFlowAnalysis
+  overload: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow*
+- uid: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
+  commentId: M:Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
+  id: AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,Microsoft.CodeAnalysis.SyntaxNode)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.ModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeDataFlow(SemanticModel, SyntaxNode, SyntaxNode)
+  nameWithType: ModelExtensions.AnalyzeDataFlow(SemanticModel, SyntaxNode, SyntaxNode)
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel, Microsoft.CodeAnalysis.SyntaxNode, Microsoft.CodeAnalysis.SyntaxNode)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static DataFlowAnalysis AnalyzeDataFlow(this SemanticModel semanticModel, SyntaxNode firstStatement, SyntaxNode lastStatement)
+    parameters:
+    - id: semanticModel
+      type: Microsoft.CodeAnalysis.SemanticModel
+    - id: firstStatement
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    - id: lastStatement
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    return:
+      type: Microsoft.CodeAnalysis.DataFlowAnalysis
+    content.vb: Public Shared Function AnalyzeDataFlow(semanticModel As SemanticModel, firstStatement As SyntaxNode, lastStatement As SyntaxNode) As DataFlowAnalysis
+  overload: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow*
+- uid: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode)
+  commentId: M:Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode)
+  id: AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.ModelExtensions
+  langs:
+  - csharp
+  - vb
+  name: AnalyzeDataFlow(SemanticModel, SyntaxNode)
+  nameWithType: ModelExtensions.AnalyzeDataFlow(SemanticModel, SyntaxNode)
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel, Microsoft.CodeAnalysis.SyntaxNode)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static DataFlowAnalysis AnalyzeDataFlow(this SemanticModel semanticModel, SyntaxNode statementOrExpression)
+    parameters:
+    - id: semanticModel
+      type: Microsoft.CodeAnalysis.SemanticModel
+    - id: statementOrExpression
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    return:
+      type: Microsoft.CodeAnalysis.DataFlowAnalysis
+    content.vb: Public Shared Function AnalyzeDataFlow(semanticModel As SemanticModel, statementOrExpression As SyntaxNode) As DataFlowAnalysis
+  overload: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow*
+references:
+- uid: Microsoft.CodeAnalysis
+  commentId: N:Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis
+  nameWithType: Microsoft.CodeAnalysis
+  fullName: Microsoft.CodeAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetSymbolInfo*
+  commentId: Overload:Microsoft.CodeAnalysis.ModelExtensions.GetSymbolInfo
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ModelExtensions.html#Microsoft_CodeAnalysis_ModelExtensions_GetSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_SyntaxNode_System_Threading_CancellationToken_
+  name: GetSymbolInfo
+  nameWithType: ModelExtensions.GetSymbolInfo
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetSymbolInfo
+- uid: Microsoft.CodeAnalysis.SemanticModel
+  commentId: T:Microsoft.CodeAnalysis.SemanticModel
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SemanticModel.html
+  name: SemanticModel
+  nameWithType: SemanticModel
+  fullName: Microsoft.CodeAnalysis.SemanticModel
+- uid: Microsoft.CodeAnalysis.SyntaxNode
+  commentId: T:Microsoft.CodeAnalysis.SyntaxNode
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SyntaxNode.html
+  name: SyntaxNode
+  nameWithType: SyntaxNode
+  fullName: Microsoft.CodeAnalysis.SyntaxNode
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.CodeAnalysis.SymbolInfo
+  commentId: T:Microsoft.CodeAnalysis.SymbolInfo
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolInfo.html
+  name: SymbolInfo
+  nameWithType: SymbolInfo
+  fullName: Microsoft.CodeAnalysis.SymbolInfo
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeSymbolInfo*
+  commentId: Overload:Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeSymbolInfo
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ModelExtensions.html#Microsoft_CodeAnalysis_ModelExtensions_GetSpeculativeSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SyntaxNode_Microsoft_CodeAnalysis_SpeculativeBindingOption_
+  name: GetSpeculativeSymbolInfo
+  nameWithType: ModelExtensions.GetSpeculativeSymbolInfo
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeSymbolInfo
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.CodeAnalysis.SpeculativeBindingOption
+  commentId: T:Microsoft.CodeAnalysis.SpeculativeBindingOption
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SpeculativeBindingOption.html
+  name: SpeculativeBindingOption
+  nameWithType: SpeculativeBindingOption
+  fullName: Microsoft.CodeAnalysis.SpeculativeBindingOption
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetTypeInfo*
+  commentId: Overload:Microsoft.CodeAnalysis.ModelExtensions.GetTypeInfo
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ModelExtensions.html#Microsoft_CodeAnalysis_ModelExtensions_GetTypeInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_SyntaxNode_System_Threading_CancellationToken_
+  name: GetTypeInfo
+  nameWithType: ModelExtensions.GetTypeInfo
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetTypeInfo
+- uid: Microsoft.CodeAnalysis.TypeInfo
+  commentId: T:Microsoft.CodeAnalysis.TypeInfo
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.TypeInfo.html
+  name: TypeInfo
+  nameWithType: TypeInfo
+  fullName: Microsoft.CodeAnalysis.TypeInfo
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetAliasInfo*
+  commentId: Overload:Microsoft.CodeAnalysis.ModelExtensions.GetAliasInfo
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ModelExtensions.html#Microsoft_CodeAnalysis_ModelExtensions_GetAliasInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_SyntaxNode_System_Threading_CancellationToken_
+  name: GetAliasInfo
+  nameWithType: ModelExtensions.GetAliasInfo
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetAliasInfo
+- uid: Microsoft.CodeAnalysis.IAliasSymbol
+  commentId: T:Microsoft.CodeAnalysis.IAliasSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IAliasSymbol.html
+  name: IAliasSymbol
+  nameWithType: IAliasSymbol
+  fullName: Microsoft.CodeAnalysis.IAliasSymbol
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeAliasInfo*
+  commentId: Overload:Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeAliasInfo
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ModelExtensions.html#Microsoft_CodeAnalysis_ModelExtensions_GetSpeculativeAliasInfo_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SyntaxNode_Microsoft_CodeAnalysis_SpeculativeBindingOption_
+  name: GetSpeculativeAliasInfo
+  nameWithType: ModelExtensions.GetSpeculativeAliasInfo
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeAliasInfo
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeTypeInfo*
+  commentId: Overload:Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeTypeInfo
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ModelExtensions.html#Microsoft_CodeAnalysis_ModelExtensions_GetSpeculativeTypeInfo_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SyntaxNode_Microsoft_CodeAnalysis_SpeculativeBindingOption_
+  name: GetSpeculativeTypeInfo
+  nameWithType: ModelExtensions.GetSpeculativeTypeInfo
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetSpeculativeTypeInfo
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetDeclaredSymbol*
+  commentId: Overload:Microsoft.CodeAnalysis.ModelExtensions.GetDeclaredSymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ModelExtensions.html#Microsoft_CodeAnalysis_ModelExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_SyntaxNode_System_Threading_CancellationToken_
+  name: GetDeclaredSymbol
+  nameWithType: ModelExtensions.GetDeclaredSymbol
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetDeclaredSymbol
+- uid: Microsoft.CodeAnalysis.ISymbol
+  commentId: T:Microsoft.CodeAnalysis.ISymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html
+  name: ISymbol
+  nameWithType: ISymbol
+  fullName: Microsoft.CodeAnalysis.ISymbol
+- uid: Microsoft.CodeAnalysis.ModelExtensions.GetMemberGroup*
+  commentId: Overload:Microsoft.CodeAnalysis.ModelExtensions.GetMemberGroup
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ModelExtensions.html#Microsoft_CodeAnalysis_ModelExtensions_GetMemberGroup_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_SyntaxNode_System_Threading_CancellationToken_
+  name: GetMemberGroup
+  nameWithType: ModelExtensions.GetMemberGroup
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.GetMemberGroup
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<ISymbol>
+  nameWithType: ImmutableArray<ISymbol>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.ISymbol>
+  nameWithType.vb: ImmutableArray(Of ISymbol)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.ISymbol)
+  name.vb: ImmutableArray(Of ISymbol)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: )
+- uid: System.Collections.Immutable.ImmutableArray`1
+  commentId: T:System.Collections.Immutable.ImmutableArray`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<T>
+  nameWithType: ImmutableArray<T>
+  fullName: System.Collections.Immutable.ImmutableArray<T>
+  nameWithType.vb: ImmutableArray(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T)
+  name.vb: ImmutableArray(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Immutable
+  commentId: N:System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Immutable
+  nameWithType: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+- uid: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow*
+  commentId: Overload:Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ModelExtensions.html#Microsoft_CodeAnalysis_ModelExtensions_AnalyzeControlFlow_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_SyntaxNode_Microsoft_CodeAnalysis_SyntaxNode_
+  name: AnalyzeControlFlow
+  nameWithType: ModelExtensions.AnalyzeControlFlow
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeControlFlow
+- uid: Microsoft.CodeAnalysis.ControlFlowAnalysis
+  commentId: T:Microsoft.CodeAnalysis.ControlFlowAnalysis
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ControlFlowAnalysis.html
+  name: ControlFlowAnalysis
+  nameWithType: ControlFlowAnalysis
+  fullName: Microsoft.CodeAnalysis.ControlFlowAnalysis
+- uid: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow*
+  commentId: Overload:Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ModelExtensions.html#Microsoft_CodeAnalysis_ModelExtensions_AnalyzeDataFlow_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_SyntaxNode_Microsoft_CodeAnalysis_SyntaxNode_
+  name: AnalyzeDataFlow
+  nameWithType: ModelExtensions.AnalyzeDataFlow
+  fullName: Microsoft.CodeAnalysis.ModelExtensions.AnalyzeDataFlow
+- uid: Microsoft.CodeAnalysis.DataFlowAnalysis
+  commentId: T:Microsoft.CodeAnalysis.DataFlowAnalysis
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.DataFlowAnalysis.html
+  name: DataFlowAnalysis
+  nameWithType: DataFlowAnalysis
+  fullName: Microsoft.CodeAnalysis.DataFlowAnalysis

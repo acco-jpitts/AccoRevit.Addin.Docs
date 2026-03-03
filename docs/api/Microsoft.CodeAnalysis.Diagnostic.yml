@@ -1,0 +1,2157 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.Diagnostic
+  commentId: T:Microsoft.CodeAnalysis.Diagnostic
+  id: Diagnostic
+  parent: Microsoft.CodeAnalysis
+  children:
+  - Microsoft.CodeAnalysis.Diagnostic.#ctor
+  - Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations
+  - Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Immutable.ImmutableDictionary{System.String,System.String},System.Object[])
+  - Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Immutable.ImmutableDictionary{System.String,System.String},System.Object[])
+  - Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Object[])
+  - Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Immutable.ImmutableDictionary{System.String,System.String},System.Object[])
+  - Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Object[])
+  - Microsoft.CodeAnalysis.Diagnostic.Create(System.String,System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.DiagnosticSeverity,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,System.Int32,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Generic.IEnumerable{System.String},System.Collections.Immutable.ImmutableDictionary{System.String,System.String})
+  - Microsoft.CodeAnalysis.Diagnostic.Create(System.String,System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.DiagnosticSeverity,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,System.Int32,System.Boolean,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Generic.IEnumerable{System.String},System.Collections.Immutable.ImmutableDictionary{System.String,System.String})
+  - Microsoft.CodeAnalysis.Diagnostic.DefaultSeverity
+  - Microsoft.CodeAnalysis.Diagnostic.Descriptor
+  - Microsoft.CodeAnalysis.Diagnostic.Equals(Microsoft.CodeAnalysis.Diagnostic)
+  - Microsoft.CodeAnalysis.Diagnostic.Equals(System.Object)
+  - Microsoft.CodeAnalysis.Diagnostic.GetHashCode
+  - Microsoft.CodeAnalysis.Diagnostic.GetMessage(System.IFormatProvider)
+  - Microsoft.CodeAnalysis.Diagnostic.GetSuppressionInfo(Microsoft.CodeAnalysis.Compilation)
+  - Microsoft.CodeAnalysis.Diagnostic.Id
+  - Microsoft.CodeAnalysis.Diagnostic.IsSuppressed
+  - Microsoft.CodeAnalysis.Diagnostic.IsWarningAsError
+  - Microsoft.CodeAnalysis.Diagnostic.Location
+  - Microsoft.CodeAnalysis.Diagnostic.Properties
+  - Microsoft.CodeAnalysis.Diagnostic.Severity
+  - Microsoft.CodeAnalysis.Diagnostic.ToString
+  - Microsoft.CodeAnalysis.Diagnostic.WarningLevel
+  langs:
+  - csharp
+  - vb
+  name: Diagnostic
+  nameWithType: Diagnostic
+  fullName: Microsoft.CodeAnalysis.Diagnostic
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: 'public abstract class Diagnostic : IEquatable<Diagnostic?>, IFormattable'
+    content.vb: Public MustInherit Class Diagnostic Implements IEquatable(Of Diagnostic), IFormattable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IEquatable{Microsoft.CodeAnalysis.Diagnostic}
+  - System.IFormattable
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Object[])
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Object[])
+  id: Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Object[])
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Create(DiagnosticDescriptor, Location?, params object?[]?)
+  nameWithType: Diagnostic.Create(DiagnosticDescriptor, Location?, params object?[]?)
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor, Microsoft.CodeAnalysis.Location?, params object?[]?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static Diagnostic Create(DiagnosticDescriptor descriptor, Location? location, params object?[]? messageArgs)
+    parameters:
+    - id: descriptor
+      type: Microsoft.CodeAnalysis.DiagnosticDescriptor
+    - id: location
+      type: Microsoft.CodeAnalysis.Location
+    - id: messageArgs
+      type: System.Object[]
+    return:
+      type: Microsoft.CodeAnalysis.Diagnostic
+    content.vb: Public Shared Function Create(descriptor As DiagnosticDescriptor, location As Location, ParamArray messageArgs As Object()) As Diagnostic
+  overload: Microsoft.CodeAnalysis.Diagnostic.Create*
+  nameWithType.vb: Diagnostic.Create(DiagnosticDescriptor, Location, ParamArray Object())
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor, Microsoft.CodeAnalysis.Location, ParamArray Object())
+  name.vb: Create(DiagnosticDescriptor, Location, ParamArray Object())
+- uid: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Immutable.ImmutableDictionary{System.String,System.String},System.Object[])
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Immutable.ImmutableDictionary{System.String,System.String},System.Object[])
+  id: Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Immutable.ImmutableDictionary{System.String,System.String},System.Object[])
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Create(DiagnosticDescriptor, Location?, ImmutableDictionary<string, string?>?, params object?[]?)
+  nameWithType: Diagnostic.Create(DiagnosticDescriptor, Location?, ImmutableDictionary<string, string?>?, params object?[]?)
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor, Microsoft.CodeAnalysis.Location?, System.Collections.Immutable.ImmutableDictionary<string, string?>?, params object?[]?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static Diagnostic Create(DiagnosticDescriptor descriptor, Location? location, ImmutableDictionary<string, string?>? properties, params object?[]? messageArgs)
+    parameters:
+    - id: descriptor
+      type: Microsoft.CodeAnalysis.DiagnosticDescriptor
+    - id: location
+      type: Microsoft.CodeAnalysis.Location
+    - id: properties
+      type: System.Collections.Immutable.ImmutableDictionary{System.String,System.String}
+    - id: messageArgs
+      type: System.Object[]
+    return:
+      type: Microsoft.CodeAnalysis.Diagnostic
+    content.vb: Public Shared Function Create(descriptor As DiagnosticDescriptor, location As Location, properties As ImmutableDictionary(Of String, String), ParamArray messageArgs As Object()) As Diagnostic
+  overload: Microsoft.CodeAnalysis.Diagnostic.Create*
+  nameWithType.vb: Diagnostic.Create(DiagnosticDescriptor, Location, ImmutableDictionary(Of String, String), ParamArray Object())
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor, Microsoft.CodeAnalysis.Location, System.Collections.Immutable.ImmutableDictionary(Of String, String), ParamArray Object())
+  name.vb: Create(DiagnosticDescriptor, Location, ImmutableDictionary(Of String, String), ParamArray Object())
+- uid: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Object[])
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Object[])
+  id: Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Object[])
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Create(DiagnosticDescriptor, Location?, IEnumerable<Location>?, params object?[]?)
+  nameWithType: Diagnostic.Create(DiagnosticDescriptor, Location?, IEnumerable<Location>?, params object?[]?)
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor, Microsoft.CodeAnalysis.Location?, System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Location>?, params object?[]?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static Diagnostic Create(DiagnosticDescriptor descriptor, Location? location, IEnumerable<Location>? additionalLocations, params object?[]? messageArgs)
+    parameters:
+    - id: descriptor
+      type: Microsoft.CodeAnalysis.DiagnosticDescriptor
+    - id: location
+      type: Microsoft.CodeAnalysis.Location
+    - id: additionalLocations
+      type: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
+    - id: messageArgs
+      type: System.Object[]
+    return:
+      type: Microsoft.CodeAnalysis.Diagnostic
+    content.vb: Public Shared Function Create(descriptor As DiagnosticDescriptor, location As Location, additionalLocations As IEnumerable(Of Location), ParamArray messageArgs As Object()) As Diagnostic
+  overload: Microsoft.CodeAnalysis.Diagnostic.Create*
+  nameWithType.vb: Diagnostic.Create(DiagnosticDescriptor, Location, IEnumerable(Of Location), ParamArray Object())
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor, Microsoft.CodeAnalysis.Location, System.Collections.Generic.IEnumerable(Of Microsoft.CodeAnalysis.Location), ParamArray Object())
+  name.vb: Create(DiagnosticDescriptor, Location, IEnumerable(Of Location), ParamArray Object())
+- uid: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Immutable.ImmutableDictionary{System.String,System.String},System.Object[])
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Immutable.ImmutableDictionary{System.String,System.String},System.Object[])
+  id: Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Immutable.ImmutableDictionary{System.String,System.String},System.Object[])
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Create(DiagnosticDescriptor, Location?, IEnumerable<Location>?, ImmutableDictionary<string, string?>?, params object?[]?)
+  nameWithType: Diagnostic.Create(DiagnosticDescriptor, Location?, IEnumerable<Location>?, ImmutableDictionary<string, string?>?, params object?[]?)
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor, Microsoft.CodeAnalysis.Location?, System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Location>?, System.Collections.Immutable.ImmutableDictionary<string, string?>?, params object?[]?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static Diagnostic Create(DiagnosticDescriptor descriptor, Location? location, IEnumerable<Location>? additionalLocations, ImmutableDictionary<string, string?>? properties, params object?[]? messageArgs)
+    parameters:
+    - id: descriptor
+      type: Microsoft.CodeAnalysis.DiagnosticDescriptor
+    - id: location
+      type: Microsoft.CodeAnalysis.Location
+    - id: additionalLocations
+      type: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
+    - id: properties
+      type: System.Collections.Immutable.ImmutableDictionary{System.String,System.String}
+    - id: messageArgs
+      type: System.Object[]
+    return:
+      type: Microsoft.CodeAnalysis.Diagnostic
+    content.vb: Public Shared Function Create(descriptor As DiagnosticDescriptor, location As Location, additionalLocations As IEnumerable(Of Location), properties As ImmutableDictionary(Of String, String), ParamArray messageArgs As Object()) As Diagnostic
+  overload: Microsoft.CodeAnalysis.Diagnostic.Create*
+  nameWithType.vb: Diagnostic.Create(DiagnosticDescriptor, Location, IEnumerable(Of Location), ImmutableDictionary(Of String, String), ParamArray Object())
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor, Microsoft.CodeAnalysis.Location, System.Collections.Generic.IEnumerable(Of Microsoft.CodeAnalysis.Location), System.Collections.Immutable.ImmutableDictionary(Of String, String), ParamArray Object())
+  name.vb: Create(DiagnosticDescriptor, Location, IEnumerable(Of Location), ImmutableDictionary(Of String, String), ParamArray Object())
+- uid: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Immutable.ImmutableDictionary{System.String,System.String},System.Object[])
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Immutable.ImmutableDictionary{System.String,System.String},System.Object[])
+  id: Create(Microsoft.CodeAnalysis.DiagnosticDescriptor,Microsoft.CodeAnalysis.Location,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Immutable.ImmutableDictionary{System.String,System.String},System.Object[])
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Create(DiagnosticDescriptor, Location?, DiagnosticSeverity, IEnumerable<Location>?, ImmutableDictionary<string, string?>?, params object?[]?)
+  nameWithType: Diagnostic.Create(DiagnosticDescriptor, Location?, DiagnosticSeverity, IEnumerable<Location>?, ImmutableDictionary<string, string?>?, params object?[]?)
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor, Microsoft.CodeAnalysis.Location?, Microsoft.CodeAnalysis.DiagnosticSeverity, System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Location>?, System.Collections.Immutable.ImmutableDictionary<string, string?>?, params object?[]?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static Diagnostic Create(DiagnosticDescriptor descriptor, Location? location, DiagnosticSeverity effectiveSeverity, IEnumerable<Location>? additionalLocations, ImmutableDictionary<string, string?>? properties, params object?[]? messageArgs)
+    parameters:
+    - id: descriptor
+      type: Microsoft.CodeAnalysis.DiagnosticDescriptor
+    - id: location
+      type: Microsoft.CodeAnalysis.Location
+    - id: effectiveSeverity
+      type: Microsoft.CodeAnalysis.DiagnosticSeverity
+    - id: additionalLocations
+      type: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
+    - id: properties
+      type: System.Collections.Immutable.ImmutableDictionary{System.String,System.String}
+    - id: messageArgs
+      type: System.Object[]
+    return:
+      type: Microsoft.CodeAnalysis.Diagnostic
+    content.vb: Public Shared Function Create(descriptor As DiagnosticDescriptor, location As Location, effectiveSeverity As DiagnosticSeverity, additionalLocations As IEnumerable(Of Location), properties As ImmutableDictionary(Of String, String), ParamArray messageArgs As Object()) As Diagnostic
+  overload: Microsoft.CodeAnalysis.Diagnostic.Create*
+  nameWithType.vb: Diagnostic.Create(DiagnosticDescriptor, Location, DiagnosticSeverity, IEnumerable(Of Location), ImmutableDictionary(Of String, String), ParamArray Object())
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostic.Create(Microsoft.CodeAnalysis.DiagnosticDescriptor, Microsoft.CodeAnalysis.Location, Microsoft.CodeAnalysis.DiagnosticSeverity, System.Collections.Generic.IEnumerable(Of Microsoft.CodeAnalysis.Location), System.Collections.Immutable.ImmutableDictionary(Of String, String), ParamArray Object())
+  name.vb: Create(DiagnosticDescriptor, Location, DiagnosticSeverity, IEnumerable(Of Location), ImmutableDictionary(Of String, String), ParamArray Object())
+- uid: Microsoft.CodeAnalysis.Diagnostic.Create(System.String,System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.DiagnosticSeverity,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,System.Int32,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Generic.IEnumerable{System.String},System.Collections.Immutable.ImmutableDictionary{System.String,System.String})
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.Create(System.String,System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.DiagnosticSeverity,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,System.Int32,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Generic.IEnumerable{System.String},System.Collections.Immutable.ImmutableDictionary{System.String,System.String})
+  id: Create(System.String,System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.DiagnosticSeverity,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,System.Int32,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Generic.IEnumerable{System.String},System.Collections.Immutable.ImmutableDictionary{System.String,System.String})
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Create(string, string, LocalizableString, DiagnosticSeverity, DiagnosticSeverity, bool, int, LocalizableString?, LocalizableString?, string?, Location?, IEnumerable<Location>?, IEnumerable<string>?, ImmutableDictionary<string, string?>?)
+  nameWithType: Diagnostic.Create(string, string, LocalizableString, DiagnosticSeverity, DiagnosticSeverity, bool, int, LocalizableString?, LocalizableString?, string?, Location?, IEnumerable<Location>?, IEnumerable<string>?, ImmutableDictionary<string, string?>?)
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Create(string, string, Microsoft.CodeAnalysis.LocalizableString, Microsoft.CodeAnalysis.DiagnosticSeverity, Microsoft.CodeAnalysis.DiagnosticSeverity, bool, int, Microsoft.CodeAnalysis.LocalizableString?, Microsoft.CodeAnalysis.LocalizableString?, string?, Microsoft.CodeAnalysis.Location?, System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Location>?, System.Collections.Generic.IEnumerable<string>?, System.Collections.Immutable.ImmutableDictionary<string, string?>?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static Diagnostic Create(string id, string category, LocalizableString message, DiagnosticSeverity severity, DiagnosticSeverity defaultSeverity, bool isEnabledByDefault, int warningLevel, LocalizableString? title = null, LocalizableString? description = null, string? helpLink = null, Location? location = null, IEnumerable<Location>? additionalLocations = null, IEnumerable<string>? customTags = null, ImmutableDictionary<string, string?>? properties = null)
+    parameters:
+    - id: id
+      type: System.String
+    - id: category
+      type: System.String
+    - id: message
+      type: Microsoft.CodeAnalysis.LocalizableString
+    - id: severity
+      type: Microsoft.CodeAnalysis.DiagnosticSeverity
+    - id: defaultSeverity
+      type: Microsoft.CodeAnalysis.DiagnosticSeverity
+    - id: isEnabledByDefault
+      type: System.Boolean
+    - id: warningLevel
+      type: System.Int32
+    - id: title
+      type: Microsoft.CodeAnalysis.LocalizableString
+    - id: description
+      type: Microsoft.CodeAnalysis.LocalizableString
+    - id: helpLink
+      type: System.String
+    - id: location
+      type: Microsoft.CodeAnalysis.Location
+    - id: additionalLocations
+      type: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
+    - id: customTags
+      type: System.Collections.Generic.IEnumerable{System.String}
+    - id: properties
+      type: System.Collections.Immutable.ImmutableDictionary{System.String,System.String}
+    return:
+      type: Microsoft.CodeAnalysis.Diagnostic
+    content.vb: Public Shared Function Create(id As String, category As String, message As LocalizableString, severity As DiagnosticSeverity, defaultSeverity As DiagnosticSeverity, isEnabledByDefault As Boolean, warningLevel As Integer, title As LocalizableString = Nothing, description As LocalizableString = Nothing, helpLink As String = Nothing, location As Location = Nothing, additionalLocations As IEnumerable(Of Location) = Nothing, customTags As IEnumerable(Of String) = Nothing, properties As ImmutableDictionary(Of String, String) = Nothing) As Diagnostic
+  overload: Microsoft.CodeAnalysis.Diagnostic.Create*
+  nameWithType.vb: Diagnostic.Create(String, String, LocalizableString, DiagnosticSeverity, DiagnosticSeverity, Boolean, Integer, LocalizableString, LocalizableString, String, Location, IEnumerable(Of Location), IEnumerable(Of String), ImmutableDictionary(Of String, String))
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostic.Create(String, String, Microsoft.CodeAnalysis.LocalizableString, Microsoft.CodeAnalysis.DiagnosticSeverity, Microsoft.CodeAnalysis.DiagnosticSeverity, Boolean, Integer, Microsoft.CodeAnalysis.LocalizableString, Microsoft.CodeAnalysis.LocalizableString, String, Microsoft.CodeAnalysis.Location, System.Collections.Generic.IEnumerable(Of Microsoft.CodeAnalysis.Location), System.Collections.Generic.IEnumerable(Of String), System.Collections.Immutable.ImmutableDictionary(Of String, String))
+  name.vb: Create(String, String, LocalizableString, DiagnosticSeverity, DiagnosticSeverity, Boolean, Integer, LocalizableString, LocalizableString, String, Location, IEnumerable(Of Location), IEnumerable(Of String), ImmutableDictionary(Of String, String))
+- uid: Microsoft.CodeAnalysis.Diagnostic.Create(System.String,System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.DiagnosticSeverity,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,System.Int32,System.Boolean,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Generic.IEnumerable{System.String},System.Collections.Immutable.ImmutableDictionary{System.String,System.String})
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.Create(System.String,System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.DiagnosticSeverity,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,System.Int32,System.Boolean,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Generic.IEnumerable{System.String},System.Collections.Immutable.ImmutableDictionary{System.String,System.String})
+  id: Create(System.String,System.String,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.DiagnosticSeverity,Microsoft.CodeAnalysis.DiagnosticSeverity,System.Boolean,System.Int32,System.Boolean,Microsoft.CodeAnalysis.LocalizableString,Microsoft.CodeAnalysis.LocalizableString,System.String,Microsoft.CodeAnalysis.Location,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location},System.Collections.Generic.IEnumerable{System.String},System.Collections.Immutable.ImmutableDictionary{System.String,System.String})
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Create(string, string, LocalizableString, DiagnosticSeverity, DiagnosticSeverity, bool, int, bool, LocalizableString?, LocalizableString?, string?, Location?, IEnumerable<Location>?, IEnumerable<string>?, ImmutableDictionary<string, string?>?)
+  nameWithType: Diagnostic.Create(string, string, LocalizableString, DiagnosticSeverity, DiagnosticSeverity, bool, int, bool, LocalizableString?, LocalizableString?, string?, Location?, IEnumerable<Location>?, IEnumerable<string>?, ImmutableDictionary<string, string?>?)
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Create(string, string, Microsoft.CodeAnalysis.LocalizableString, Microsoft.CodeAnalysis.DiagnosticSeverity, Microsoft.CodeAnalysis.DiagnosticSeverity, bool, int, bool, Microsoft.CodeAnalysis.LocalizableString?, Microsoft.CodeAnalysis.LocalizableString?, string?, Microsoft.CodeAnalysis.Location?, System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Location>?, System.Collections.Generic.IEnumerable<string>?, System.Collections.Immutable.ImmutableDictionary<string, string?>?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static Diagnostic Create(string id, string category, LocalizableString message, DiagnosticSeverity severity, DiagnosticSeverity defaultSeverity, bool isEnabledByDefault, int warningLevel, bool isSuppressed, LocalizableString? title = null, LocalizableString? description = null, string? helpLink = null, Location? location = null, IEnumerable<Location>? additionalLocations = null, IEnumerable<string>? customTags = null, ImmutableDictionary<string, string?>? properties = null)
+    parameters:
+    - id: id
+      type: System.String
+    - id: category
+      type: System.String
+    - id: message
+      type: Microsoft.CodeAnalysis.LocalizableString
+    - id: severity
+      type: Microsoft.CodeAnalysis.DiagnosticSeverity
+    - id: defaultSeverity
+      type: Microsoft.CodeAnalysis.DiagnosticSeverity
+    - id: isEnabledByDefault
+      type: System.Boolean
+    - id: warningLevel
+      type: System.Int32
+    - id: isSuppressed
+      type: System.Boolean
+    - id: title
+      type: Microsoft.CodeAnalysis.LocalizableString
+    - id: description
+      type: Microsoft.CodeAnalysis.LocalizableString
+    - id: helpLink
+      type: System.String
+    - id: location
+      type: Microsoft.CodeAnalysis.Location
+    - id: additionalLocations
+      type: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
+    - id: customTags
+      type: System.Collections.Generic.IEnumerable{System.String}
+    - id: properties
+      type: System.Collections.Immutable.ImmutableDictionary{System.String,System.String}
+    return:
+      type: Microsoft.CodeAnalysis.Diagnostic
+    content.vb: Public Shared Function Create(id As String, category As String, message As LocalizableString, severity As DiagnosticSeverity, defaultSeverity As DiagnosticSeverity, isEnabledByDefault As Boolean, warningLevel As Integer, isSuppressed As Boolean, title As LocalizableString = Nothing, description As LocalizableString = Nothing, helpLink As String = Nothing, location As Location = Nothing, additionalLocations As IEnumerable(Of Location) = Nothing, customTags As IEnumerable(Of String) = Nothing, properties As ImmutableDictionary(Of String, String) = Nothing) As Diagnostic
+  overload: Microsoft.CodeAnalysis.Diagnostic.Create*
+  nameWithType.vb: Diagnostic.Create(String, String, LocalizableString, DiagnosticSeverity, DiagnosticSeverity, Boolean, Integer, Boolean, LocalizableString, LocalizableString, String, Location, IEnumerable(Of Location), IEnumerable(Of String), ImmutableDictionary(Of String, String))
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostic.Create(String, String, Microsoft.CodeAnalysis.LocalizableString, Microsoft.CodeAnalysis.DiagnosticSeverity, Microsoft.CodeAnalysis.DiagnosticSeverity, Boolean, Integer, Boolean, Microsoft.CodeAnalysis.LocalizableString, Microsoft.CodeAnalysis.LocalizableString, String, Microsoft.CodeAnalysis.Location, System.Collections.Generic.IEnumerable(Of Microsoft.CodeAnalysis.Location), System.Collections.Generic.IEnumerable(Of String), System.Collections.Immutable.ImmutableDictionary(Of String, String))
+  name.vb: Create(String, String, LocalizableString, DiagnosticSeverity, DiagnosticSeverity, Boolean, Integer, Boolean, LocalizableString, LocalizableString, String, Location, IEnumerable(Of Location), IEnumerable(Of String), ImmutableDictionary(Of String, String))
+- uid: Microsoft.CodeAnalysis.Diagnostic.GetMessage(System.IFormatProvider)
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.GetMessage(System.IFormatProvider)
+  id: GetMessage(System.IFormatProvider)
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: GetMessage(IFormatProvider?)
+  nameWithType: Diagnostic.GetMessage(IFormatProvider?)
+  fullName: Microsoft.CodeAnalysis.Diagnostic.GetMessage(System.IFormatProvider?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public abstract string GetMessage(IFormatProvider? formatProvider = null)
+    parameters:
+    - id: formatProvider
+      type: System.IFormatProvider
+    return:
+      type: System.String
+    content.vb: Public MustOverride Function GetMessage(formatProvider As IFormatProvider = Nothing) As String
+  overload: Microsoft.CodeAnalysis.Diagnostic.GetMessage*
+  nameWithType.vb: Diagnostic.GetMessage(IFormatProvider)
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostic.GetMessage(System.IFormatProvider)
+  name.vb: GetMessage(IFormatProvider)
+- uid: Microsoft.CodeAnalysis.Diagnostic.GetSuppressionInfo(Microsoft.CodeAnalysis.Compilation)
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.GetSuppressionInfo(Microsoft.CodeAnalysis.Compilation)
+  id: GetSuppressionInfo(Microsoft.CodeAnalysis.Compilation)
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: GetSuppressionInfo(Compilation)
+  nameWithType: Diagnostic.GetSuppressionInfo(Compilation)
+  fullName: Microsoft.CodeAnalysis.Diagnostic.GetSuppressionInfo(Microsoft.CodeAnalysis.Compilation)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public SuppressionInfo? GetSuppressionInfo(Compilation compilation)
+    parameters:
+    - id: compilation
+      type: Microsoft.CodeAnalysis.Compilation
+    return:
+      type: Microsoft.CodeAnalysis.Diagnostics.SuppressionInfo
+    content.vb: Public Function GetSuppressionInfo(compilation As Compilation) As SuppressionInfo
+  overload: Microsoft.CodeAnalysis.Diagnostic.GetSuppressionInfo*
+- uid: Microsoft.CodeAnalysis.Diagnostic.ToString
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.ToString
+  id: ToString
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: Diagnostic.ToString()
+  fullName: Microsoft.CodeAnalysis.Diagnostic.ToString()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Microsoft.CodeAnalysis.Diagnostic.ToString*
+- uid: Microsoft.CodeAnalysis.Diagnostic.Equals(System.Object)
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: Diagnostic.Equals(object?)
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Equals(object?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  example: []
+  syntax:
+    content: public override sealed bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public NotOverridable Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.Object.Equals(System.Object)
+  overload: Microsoft.CodeAnalysis.Diagnostic.Equals*
+  nameWithType.vb: Diagnostic.Equals(Object)
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostic.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.CodeAnalysis.Diagnostic.GetHashCode
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: Diagnostic.GetHashCode()
+  fullName: Microsoft.CodeAnalysis.Diagnostic.GetHashCode()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  example: []
+  syntax:
+    content: public override abstract int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride Overrides Function GetHashCode() As Integer
+  overridden: System.Object.GetHashCode
+  overload: Microsoft.CodeAnalysis.Diagnostic.GetHashCode*
+- uid: Microsoft.CodeAnalysis.Diagnostic.Equals(Microsoft.CodeAnalysis.Diagnostic)
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.Equals(Microsoft.CodeAnalysis.Diagnostic)
+  id: Equals(Microsoft.CodeAnalysis.Diagnostic)
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Equals(Diagnostic?)
+  nameWithType: Diagnostic.Equals(Diagnostic?)
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Equals(Microsoft.CodeAnalysis.Diagnostic?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  example: []
+  syntax:
+    content: public abstract bool Equals(Diagnostic? obj)
+    parameters:
+    - id: obj
+      type: Microsoft.CodeAnalysis.Diagnostic
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride Function Equals(obj As Diagnostic) As Boolean
+  overload: Microsoft.CodeAnalysis.Diagnostic.Equals*
+  implements:
+  - System.IEquatable{Microsoft.CodeAnalysis.Diagnostic}.Equals(Microsoft.CodeAnalysis.Diagnostic)
+  nameWithType.vb: Diagnostic.Equals(Diagnostic)
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostic.Equals(Microsoft.CodeAnalysis.Diagnostic)
+  name.vb: Equals(Diagnostic)
+- uid: Microsoft.CodeAnalysis.Diagnostic.#ctor
+  commentId: M:Microsoft.CodeAnalysis.Diagnostic.#ctor
+  id: '#ctor'
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Diagnostic()
+  nameWithType: Diagnostic.Diagnostic()
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Diagnostic()
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: protected Diagnostic()
+    content.vb: Protected Sub New()
+  overload: Microsoft.CodeAnalysis.Diagnostic.#ctor*
+  nameWithType.vb: Diagnostic.New()
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostic.New()
+  name.vb: New()
+- uid: Microsoft.CodeAnalysis.Diagnostic.Descriptor
+  commentId: P:Microsoft.CodeAnalysis.Diagnostic.Descriptor
+  id: Descriptor
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Descriptor
+  nameWithType: Diagnostic.Descriptor
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Descriptor
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public abstract DiagnosticDescriptor Descriptor { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.DiagnosticDescriptor
+    content.vb: Public MustOverride ReadOnly Property Descriptor As DiagnosticDescriptor
+  overload: Microsoft.CodeAnalysis.Diagnostic.Descriptor*
+- uid: Microsoft.CodeAnalysis.Diagnostic.Id
+  commentId: P:Microsoft.CodeAnalysis.Diagnostic.Id
+  id: Id
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Diagnostic.Id
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Id
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public abstract string Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public MustOverride ReadOnly Property Id As String
+  overload: Microsoft.CodeAnalysis.Diagnostic.Id*
+- uid: Microsoft.CodeAnalysis.Diagnostic.DefaultSeverity
+  commentId: P:Microsoft.CodeAnalysis.Diagnostic.DefaultSeverity
+  id: DefaultSeverity
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: DefaultSeverity
+  nameWithType: Diagnostic.DefaultSeverity
+  fullName: Microsoft.CodeAnalysis.Diagnostic.DefaultSeverity
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual DiagnosticSeverity DefaultSeverity { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.DiagnosticSeverity
+    content.vb: Public Overridable ReadOnly Property DefaultSeverity As DiagnosticSeverity
+  overload: Microsoft.CodeAnalysis.Diagnostic.DefaultSeverity*
+- uid: Microsoft.CodeAnalysis.Diagnostic.Severity
+  commentId: P:Microsoft.CodeAnalysis.Diagnostic.Severity
+  id: Severity
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Severity
+  nameWithType: Diagnostic.Severity
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Severity
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public abstract DiagnosticSeverity Severity { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.DiagnosticSeverity
+    content.vb: Public MustOverride ReadOnly Property Severity As DiagnosticSeverity
+  overload: Microsoft.CodeAnalysis.Diagnostic.Severity*
+- uid: Microsoft.CodeAnalysis.Diagnostic.WarningLevel
+  commentId: P:Microsoft.CodeAnalysis.Diagnostic.WarningLevel
+  id: WarningLevel
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: WarningLevel
+  nameWithType: Diagnostic.WarningLevel
+  fullName: Microsoft.CodeAnalysis.Diagnostic.WarningLevel
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public abstract int WarningLevel { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride ReadOnly Property WarningLevel As Integer
+  overload: Microsoft.CodeAnalysis.Diagnostic.WarningLevel*
+- uid: Microsoft.CodeAnalysis.Diagnostic.IsSuppressed
+  commentId: P:Microsoft.CodeAnalysis.Diagnostic.IsSuppressed
+  id: IsSuppressed
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: IsSuppressed
+  nameWithType: Diagnostic.IsSuppressed
+  fullName: Microsoft.CodeAnalysis.Diagnostic.IsSuppressed
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public abstract bool IsSuppressed { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride ReadOnly Property IsSuppressed As Boolean
+  overload: Microsoft.CodeAnalysis.Diagnostic.IsSuppressed*
+- uid: Microsoft.CodeAnalysis.Diagnostic.IsWarningAsError
+  commentId: P:Microsoft.CodeAnalysis.Diagnostic.IsWarningAsError
+  id: IsWarningAsError
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: IsWarningAsError
+  nameWithType: Diagnostic.IsWarningAsError
+  fullName: Microsoft.CodeAnalysis.Diagnostic.IsWarningAsError
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public bool IsWarningAsError { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsWarningAsError As Boolean
+  overload: Microsoft.CodeAnalysis.Diagnostic.IsWarningAsError*
+- uid: Microsoft.CodeAnalysis.Diagnostic.Location
+  commentId: P:Microsoft.CodeAnalysis.Diagnostic.Location
+  id: Location
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Location
+  nameWithType: Diagnostic.Location
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Location
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public abstract Location Location { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.Location
+    content.vb: Public MustOverride ReadOnly Property Location As Location
+  overload: Microsoft.CodeAnalysis.Diagnostic.Location*
+- uid: Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations
+  commentId: P:Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations
+  id: AdditionalLocations
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: AdditionalLocations
+  nameWithType: Diagnostic.AdditionalLocations
+  fullName: Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public abstract IReadOnlyList<Location> AdditionalLocations { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Location}
+    content.vb: Public MustOverride ReadOnly Property AdditionalLocations As IReadOnlyList(Of Location)
+  overload: Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations*
+- uid: Microsoft.CodeAnalysis.Diagnostic.Properties
+  commentId: P:Microsoft.CodeAnalysis.Diagnostic.Properties
+  id: Properties
+  parent: Microsoft.CodeAnalysis.Diagnostic
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: Diagnostic.Properties
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Properties
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual ImmutableDictionary<string, string?> Properties { get; }
+    parameters: []
+    return:
+      type: System.Collections.Immutable.ImmutableDictionary{System.String,System.String}
+    content.vb: Public Overridable ReadOnly Property Properties As ImmutableDictionary(Of String, String)
+  overload: Microsoft.CodeAnalysis.Diagnostic.Properties*
+references:
+- uid: Microsoft.CodeAnalysis
+  commentId: N:Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis
+  nameWithType: Microsoft.CodeAnalysis
+  fullName: Microsoft.CodeAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IEquatable{Microsoft.CodeAnalysis.Diagnostic}
+  commentId: T:System.IEquatable{Microsoft.CodeAnalysis.Diagnostic}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<Diagnostic>
+  nameWithType: IEquatable<Diagnostic>
+  fullName: System.IEquatable<Microsoft.CodeAnalysis.Diagnostic>
+  nameWithType.vb: IEquatable(Of Diagnostic)
+  fullName.vb: System.IEquatable(Of Microsoft.CodeAnalysis.Diagnostic)
+  name.vb: IEquatable(Of Diagnostic)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Diagnostic
+    name: Diagnostic
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostic.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Diagnostic
+    name: Diagnostic
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostic.html
+  - name: )
+- uid: System.IFormattable
+  commentId: T:System.IFormattable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformattable
+  name: IFormattable
+  nameWithType: IFormattable
+  fullName: System.IFormattable
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.Diagnostic.Create*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.Create
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_Create_Microsoft_CodeAnalysis_DiagnosticDescriptor_Microsoft_CodeAnalysis_Location_System_Object___
+  name: Create
+  nameWithType: Diagnostic.Create
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Create
+- uid: Microsoft.CodeAnalysis.DiagnosticDescriptor
+  commentId: T:Microsoft.CodeAnalysis.DiagnosticDescriptor
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.DiagnosticDescriptor.html
+  name: DiagnosticDescriptor
+  nameWithType: DiagnosticDescriptor
+  fullName: Microsoft.CodeAnalysis.DiagnosticDescriptor
+- uid: Microsoft.CodeAnalysis.Location
+  commentId: T:Microsoft.CodeAnalysis.Location
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Location.html
+  name: Location
+  nameWithType: Location
+  fullName: Microsoft.CodeAnalysis.Location
+- uid: System.Object[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostic
+  commentId: T:Microsoft.CodeAnalysis.Diagnostic
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html
+  name: Diagnostic
+  nameWithType: Diagnostic
+  fullName: Microsoft.CodeAnalysis.Diagnostic
+- uid: System.Collections.Immutable.ImmutableDictionary{System.String,System.String}
+  commentId: T:System.Collections.Immutable.ImmutableDictionary{System.String,System.String}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutabledictionary-2
+  name: ImmutableDictionary<string, string>
+  nameWithType: ImmutableDictionary<string, string>
+  fullName: System.Collections.Immutable.ImmutableDictionary<string, string>
+  nameWithType.vb: ImmutableDictionary(Of String, String)
+  fullName.vb: System.Collections.Immutable.ImmutableDictionary(Of String, String)
+  name.vb: ImmutableDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2
+    name: ImmutableDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutabledictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2
+    name: ImmutableDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutabledictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Immutable.ImmutableDictionary`2
+  commentId: T:System.Collections.Immutable.ImmutableDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutabledictionary-2
+  name: ImmutableDictionary<TKey, TValue>
+  nameWithType: ImmutableDictionary<TKey, TValue>
+  fullName: System.Collections.Immutable.ImmutableDictionary<TKey, TValue>
+  nameWithType.vb: ImmutableDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Immutable.ImmutableDictionary(Of TKey, TValue)
+  name.vb: ImmutableDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2
+    name: ImmutableDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutabledictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableDictionary`2
+    name: ImmutableDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutabledictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Immutable
+  commentId: N:System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Immutable
+  nameWithType: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+- uid: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Location}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Location>
+  nameWithType: IEnumerable<Location>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Location>
+  nameWithType.vb: IEnumerable(Of Location)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.CodeAnalysis.Location)
+  name.vb: IEnumerable(Of Location)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Location
+    name: Location
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Location.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Location
+    name: Location
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Location.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.CodeAnalysis.DiagnosticSeverity
+  commentId: T:Microsoft.CodeAnalysis.DiagnosticSeverity
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.DiagnosticSeverity.html
+  name: DiagnosticSeverity
+  nameWithType: DiagnosticSeverity
+  fullName: Microsoft.CodeAnalysis.DiagnosticSeverity
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.CodeAnalysis.LocalizableString
+  commentId: T:Microsoft.CodeAnalysis.LocalizableString
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.LocalizableString.html
+  name: LocalizableString
+  nameWithType: LocalizableString
+  fullName: Microsoft.CodeAnalysis.LocalizableString
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostic.GetMessage*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.GetMessage
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_GetMessage_System_IFormatProvider_
+  name: GetMessage
+  nameWithType: Diagnostic.GetMessage
+  fullName: Microsoft.CodeAnalysis.Diagnostic.GetMessage
+- uid: System.IFormatProvider
+  commentId: T:System.IFormatProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iformatprovider
+  name: IFormatProvider
+  nameWithType: IFormatProvider
+  fullName: System.IFormatProvider
+- uid: Microsoft.CodeAnalysis.Diagnostic.GetSuppressionInfo*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.GetSuppressionInfo
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_GetSuppressionInfo_Microsoft_CodeAnalysis_Compilation_
+  name: GetSuppressionInfo
+  nameWithType: Diagnostic.GetSuppressionInfo
+  fullName: Microsoft.CodeAnalysis.Diagnostic.GetSuppressionInfo
+- uid: Microsoft.CodeAnalysis.Compilation
+  commentId: T:Microsoft.CodeAnalysis.Compilation
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Compilation.html
+  name: Compilation
+  nameWithType: Compilation
+  fullName: Microsoft.CodeAnalysis.Compilation
+- uid: Microsoft.CodeAnalysis.Diagnostics.SuppressionInfo
+  commentId: T:Microsoft.CodeAnalysis.Diagnostics.SuppressionInfo
+  parent: Microsoft.CodeAnalysis.Diagnostics
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SuppressionInfo.html
+  name: SuppressionInfo
+  nameWithType: SuppressionInfo
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SuppressionInfo
+- uid: Microsoft.CodeAnalysis.Diagnostics
+  commentId: N:Microsoft.CodeAnalysis.Diagnostics
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Diagnostics
+  nameWithType: Microsoft.CodeAnalysis.Diagnostics
+  fullName: Microsoft.CodeAnalysis.Diagnostics
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.html
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostic.ToString*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.ToString
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_ToString
+  name: ToString
+  nameWithType: Diagnostic.ToString
+  fullName: Microsoft.CodeAnalysis.Diagnostic.ToString
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostic.Equals*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.Equals
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_Equals_System_Object_
+  name: Equals
+  nameWithType: Diagnostic.Equals
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Equals
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostic.GetHashCode*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.GetHashCode
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_GetHashCode
+  name: GetHashCode
+  nameWithType: Diagnostic.GetHashCode
+  fullName: Microsoft.CodeAnalysis.Diagnostic.GetHashCode
+- uid: System.IEquatable{Microsoft.CodeAnalysis.Diagnostic}.Equals(Microsoft.CodeAnalysis.Diagnostic)
+  commentId: M:System.IEquatable{Microsoft.CodeAnalysis.Diagnostic}.Equals(Microsoft.CodeAnalysis.Diagnostic)
+  parent: System.IEquatable{Microsoft.CodeAnalysis.Diagnostic}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(Diagnostic)
+  nameWithType: IEquatable<Diagnostic>.Equals(Diagnostic)
+  fullName: System.IEquatable<Microsoft.CodeAnalysis.Diagnostic>.Equals(Microsoft.CodeAnalysis.Diagnostic)
+  nameWithType.vb: IEquatable(Of Diagnostic).Equals(Diagnostic)
+  fullName.vb: System.IEquatable(Of Microsoft.CodeAnalysis.Diagnostic).Equals(Microsoft.CodeAnalysis.Diagnostic)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.CodeAnalysis.Diagnostic}.Equals(Microsoft.CodeAnalysis.Diagnostic)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Diagnostic
+    name: Diagnostic
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostic.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.CodeAnalysis.Diagnostic}.Equals(Microsoft.CodeAnalysis.Diagnostic)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Diagnostic
+    name: Diagnostic
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostic.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostic.#ctor*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.#ctor
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic__ctor
+  name: Diagnostic
+  nameWithType: Diagnostic.Diagnostic
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Diagnostic
+  nameWithType.vb: Diagnostic.New
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostic.New
+  name.vb: New
+- uid: Microsoft.CodeAnalysis.Diagnostic.Descriptor*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.Descriptor
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_Descriptor
+  name: Descriptor
+  nameWithType: Diagnostic.Descriptor
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Descriptor
+- uid: Microsoft.CodeAnalysis.Diagnostic.Id*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.Id
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_Id
+  name: Id
+  nameWithType: Diagnostic.Id
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Id
+- uid: Microsoft.CodeAnalysis.Diagnostic.DefaultSeverity*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.DefaultSeverity
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_DefaultSeverity
+  name: DefaultSeverity
+  nameWithType: Diagnostic.DefaultSeverity
+  fullName: Microsoft.CodeAnalysis.Diagnostic.DefaultSeverity
+- uid: Microsoft.CodeAnalysis.Diagnostic.Severity*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.Severity
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_Severity
+  name: Severity
+  nameWithType: Diagnostic.Severity
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Severity
+- uid: Microsoft.CodeAnalysis.Diagnostic.WarningLevel*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.WarningLevel
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_WarningLevel
+  name: WarningLevel
+  nameWithType: Diagnostic.WarningLevel
+  fullName: Microsoft.CodeAnalysis.Diagnostic.WarningLevel
+- uid: Microsoft.CodeAnalysis.Diagnostic.IsSuppressed*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.IsSuppressed
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_IsSuppressed
+  name: IsSuppressed
+  nameWithType: Diagnostic.IsSuppressed
+  fullName: Microsoft.CodeAnalysis.Diagnostic.IsSuppressed
+- uid: Microsoft.CodeAnalysis.Diagnostic.IsWarningAsError*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.IsWarningAsError
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_IsWarningAsError
+  name: IsWarningAsError
+  nameWithType: Diagnostic.IsWarningAsError
+  fullName: Microsoft.CodeAnalysis.Diagnostic.IsWarningAsError
+- uid: Microsoft.CodeAnalysis.Diagnostic.Location*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.Location
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_Location
+  name: Location
+  nameWithType: Diagnostic.Location
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Location
+- uid: Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_AdditionalLocations
+  name: AdditionalLocations
+  nameWithType: Diagnostic.AdditionalLocations
+  fullName: Microsoft.CodeAnalysis.Diagnostic.AdditionalLocations
+- uid: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Location}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Location}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<Location>
+  nameWithType: IReadOnlyList<Location>
+  fullName: System.Collections.Generic.IReadOnlyList<Microsoft.CodeAnalysis.Location>
+  nameWithType.vb: IReadOnlyList(Of Location)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Microsoft.CodeAnalysis.Location)
+  name.vb: IReadOnlyList(Of Location)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Location
+    name: Location
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Location.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Location
+    name: Location
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Location.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostic.Properties*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostic.Properties
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html#Microsoft_CodeAnalysis_Diagnostic_Properties
+  name: Properties
+  nameWithType: Diagnostic.Properties
+  fullName: Microsoft.CodeAnalysis.Diagnostic.Properties

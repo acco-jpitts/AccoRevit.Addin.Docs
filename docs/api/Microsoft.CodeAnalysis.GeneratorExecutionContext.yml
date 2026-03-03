@@ -1,0 +1,1305 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext
+  commentId: T:Microsoft.CodeAnalysis.GeneratorExecutionContext
+  id: GeneratorExecutionContext
+  parent: Microsoft.CodeAnalysis
+  children:
+  - Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource(System.String,Microsoft.CodeAnalysis.Text.SourceText)
+  - Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource(System.String,System.String)
+  - Microsoft.CodeAnalysis.GeneratorExecutionContext.AdditionalFiles
+  - Microsoft.CodeAnalysis.GeneratorExecutionContext.AnalyzerConfigOptions
+  - Microsoft.CodeAnalysis.GeneratorExecutionContext.CancellationToken
+  - Microsoft.CodeAnalysis.GeneratorExecutionContext.Compilation
+  - Microsoft.CodeAnalysis.GeneratorExecutionContext.ParseOptions
+  - Microsoft.CodeAnalysis.GeneratorExecutionContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
+  - Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxContextReceiver
+  - Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxReceiver
+  langs:
+  - csharp
+  - vb
+  name: GeneratorExecutionContext
+  nameWithType: GeneratorExecutionContext
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext
+  type: Struct
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public readonly struct GeneratorExecutionContext
+    content.vb: Public Structure GeneratorExecutionContext
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource(System.String,System.String)
+  commentId: M:Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource(System.String,System.String)
+  id: AddSource(System.String,System.String)
+  parent: Microsoft.CodeAnalysis.GeneratorExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: AddSource(string, string)
+  nameWithType: GeneratorExecutionContext.AddSource(string, string)
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource(string, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public void AddSource(string hintName, string source)
+    parameters:
+    - id: hintName
+      type: System.String
+    - id: source
+      type: System.String
+    content.vb: Public Sub AddSource(hintName As String, source As String)
+  overload: Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource*
+  nameWithType.vb: GeneratorExecutionContext.AddSource(String, String)
+  fullName.vb: Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource(String, String)
+  name.vb: AddSource(String, String)
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource(System.String,Microsoft.CodeAnalysis.Text.SourceText)
+  commentId: M:Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource(System.String,Microsoft.CodeAnalysis.Text.SourceText)
+  id: AddSource(System.String,Microsoft.CodeAnalysis.Text.SourceText)
+  parent: Microsoft.CodeAnalysis.GeneratorExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: AddSource(string, SourceText)
+  nameWithType: GeneratorExecutionContext.AddSource(string, SourceText)
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource(string, Microsoft.CodeAnalysis.Text.SourceText)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public void AddSource(string hintName, SourceText sourceText)
+    parameters:
+    - id: hintName
+      type: System.String
+    - id: sourceText
+      type: Microsoft.CodeAnalysis.Text.SourceText
+    content.vb: Public Sub AddSource(hintName As String, sourceText As SourceText)
+  overload: Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource*
+  nameWithType.vb: GeneratorExecutionContext.AddSource(String, SourceText)
+  fullName.vb: Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource(String, Microsoft.CodeAnalysis.Text.SourceText)
+  name.vb: AddSource(String, SourceText)
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
+  commentId: M:Microsoft.CodeAnalysis.GeneratorExecutionContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
+  id: ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
+  parent: Microsoft.CodeAnalysis.GeneratorExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: ReportDiagnostic(Diagnostic)
+  nameWithType: GeneratorExecutionContext.ReportDiagnostic(Diagnostic)
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.ReportDiagnostic(Microsoft.CodeAnalysis.Diagnostic)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public void ReportDiagnostic(Diagnostic diagnostic)
+    parameters:
+    - id: diagnostic
+      type: Microsoft.CodeAnalysis.Diagnostic
+    content.vb: Public Sub ReportDiagnostic(diagnostic As Diagnostic)
+  overload: Microsoft.CodeAnalysis.GeneratorExecutionContext.ReportDiagnostic*
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.Compilation
+  commentId: P:Microsoft.CodeAnalysis.GeneratorExecutionContext.Compilation
+  id: Compilation
+  parent: Microsoft.CodeAnalysis.GeneratorExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: Compilation
+  nameWithType: GeneratorExecutionContext.Compilation
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.Compilation
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public Compilation Compilation { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.Compilation
+    content.vb: Public ReadOnly Property Compilation As Compilation
+  overload: Microsoft.CodeAnalysis.GeneratorExecutionContext.Compilation*
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.ParseOptions
+  commentId: P:Microsoft.CodeAnalysis.GeneratorExecutionContext.ParseOptions
+  id: ParseOptions
+  parent: Microsoft.CodeAnalysis.GeneratorExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: ParseOptions
+  nameWithType: GeneratorExecutionContext.ParseOptions
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.ParseOptions
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public ParseOptions ParseOptions { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.ParseOptions
+    content.vb: Public ReadOnly Property ParseOptions As ParseOptions
+  overload: Microsoft.CodeAnalysis.GeneratorExecutionContext.ParseOptions*
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.AdditionalFiles
+  commentId: P:Microsoft.CodeAnalysis.GeneratorExecutionContext.AdditionalFiles
+  id: AdditionalFiles
+  parent: Microsoft.CodeAnalysis.GeneratorExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: AdditionalFiles
+  nameWithType: GeneratorExecutionContext.AdditionalFiles
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.AdditionalFiles
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public ImmutableArray<AdditionalText> AdditionalFiles { get; }
+    parameters: []
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
+    content.vb: Public ReadOnly Property AdditionalFiles As ImmutableArray(Of AdditionalText)
+  overload: Microsoft.CodeAnalysis.GeneratorExecutionContext.AdditionalFiles*
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.AnalyzerConfigOptions
+  commentId: P:Microsoft.CodeAnalysis.GeneratorExecutionContext.AnalyzerConfigOptions
+  id: AnalyzerConfigOptions
+  parent: Microsoft.CodeAnalysis.GeneratorExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: AnalyzerConfigOptions
+  nameWithType: GeneratorExecutionContext.AnalyzerConfigOptions
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.AnalyzerConfigOptions
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public AnalyzerConfigOptionsProvider AnalyzerConfigOptions { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.Diagnostics.AnalyzerConfigOptionsProvider
+    content.vb: Public ReadOnly Property AnalyzerConfigOptions As AnalyzerConfigOptionsProvider
+  overload: Microsoft.CodeAnalysis.GeneratorExecutionContext.AnalyzerConfigOptions*
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxReceiver
+  commentId: P:Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxReceiver
+  id: SyntaxReceiver
+  parent: Microsoft.CodeAnalysis.GeneratorExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: SyntaxReceiver
+  nameWithType: GeneratorExecutionContext.SyntaxReceiver
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxReceiver
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public ISyntaxReceiver? SyntaxReceiver { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.ISyntaxReceiver
+    content.vb: Public ReadOnly Property SyntaxReceiver As ISyntaxReceiver
+  overload: Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxReceiver*
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxContextReceiver
+  commentId: P:Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxContextReceiver
+  id: SyntaxContextReceiver
+  parent: Microsoft.CodeAnalysis.GeneratorExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: SyntaxContextReceiver
+  nameWithType: GeneratorExecutionContext.SyntaxContextReceiver
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxContextReceiver
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public ISyntaxContextReceiver? SyntaxContextReceiver { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.ISyntaxContextReceiver
+    content.vb: Public ReadOnly Property SyntaxContextReceiver As ISyntaxContextReceiver
+  overload: Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxContextReceiver*
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.CancellationToken
+  commentId: P:Microsoft.CodeAnalysis.GeneratorExecutionContext.CancellationToken
+  id: CancellationToken
+  parent: Microsoft.CodeAnalysis.GeneratorExecutionContext
+  langs:
+  - csharp
+  - vb
+  name: CancellationToken
+  nameWithType: GeneratorExecutionContext.CancellationToken
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.CancellationToken
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public CancellationToken CancellationToken { get; }
+    parameters: []
+    return:
+      type: System.Threading.CancellationToken
+    content.vb: Public ReadOnly Property CancellationToken As CancellationToken
+  overload: Microsoft.CodeAnalysis.GeneratorExecutionContext.CancellationToken*
+references:
+- uid: Microsoft.CodeAnalysis
+  commentId: N:Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis
+  nameWithType: Microsoft.CodeAnalysis
+  fullName: Microsoft.CodeAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource*
+  commentId: Overload:Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource
+  isExternal: true
+  href: Microsoft.CodeAnalysis.GeneratorExecutionContext.html#Microsoft_CodeAnalysis_GeneratorExecutionContext_AddSource_System_String_System_String_
+  name: AddSource
+  nameWithType: GeneratorExecutionContext.AddSource
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.AddSource
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.CodeAnalysis.Text.SourceText
+  commentId: T:Microsoft.CodeAnalysis.Text.SourceText
+  parent: Microsoft.CodeAnalysis.Text
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.SourceText.html
+  name: SourceText
+  nameWithType: SourceText
+  fullName: Microsoft.CodeAnalysis.Text.SourceText
+- uid: Microsoft.CodeAnalysis.Text
+  commentId: N:Microsoft.CodeAnalysis.Text
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Text
+  nameWithType: Microsoft.CodeAnalysis.Text
+  fullName: Microsoft.CodeAnalysis.Text
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Text
+    name: Text
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Text
+    name: Text
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.html
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.ReportDiagnostic*
+  commentId: Overload:Microsoft.CodeAnalysis.GeneratorExecutionContext.ReportDiagnostic
+  isExternal: true
+  href: Microsoft.CodeAnalysis.GeneratorExecutionContext.html#Microsoft_CodeAnalysis_GeneratorExecutionContext_ReportDiagnostic_Microsoft_CodeAnalysis_Diagnostic_
+  name: ReportDiagnostic
+  nameWithType: GeneratorExecutionContext.ReportDiagnostic
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.ReportDiagnostic
+- uid: Microsoft.CodeAnalysis.Diagnostic
+  commentId: T:Microsoft.CodeAnalysis.Diagnostic
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostic.html
+  name: Diagnostic
+  nameWithType: Diagnostic
+  fullName: Microsoft.CodeAnalysis.Diagnostic
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.Compilation*
+  commentId: Overload:Microsoft.CodeAnalysis.GeneratorExecutionContext.Compilation
+  isExternal: true
+  href: Microsoft.CodeAnalysis.GeneratorExecutionContext.html#Microsoft_CodeAnalysis_GeneratorExecutionContext_Compilation
+  name: Compilation
+  nameWithType: GeneratorExecutionContext.Compilation
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.Compilation
+- uid: Microsoft.CodeAnalysis.Compilation
+  commentId: T:Microsoft.CodeAnalysis.Compilation
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Compilation.html
+  name: Compilation
+  nameWithType: Compilation
+  fullName: Microsoft.CodeAnalysis.Compilation
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.ParseOptions*
+  commentId: Overload:Microsoft.CodeAnalysis.GeneratorExecutionContext.ParseOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.GeneratorExecutionContext.html#Microsoft_CodeAnalysis_GeneratorExecutionContext_ParseOptions
+  name: ParseOptions
+  nameWithType: GeneratorExecutionContext.ParseOptions
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.ParseOptions
+- uid: Microsoft.CodeAnalysis.ParseOptions
+  commentId: T:Microsoft.CodeAnalysis.ParseOptions
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ParseOptions.html
+  name: ParseOptions
+  nameWithType: ParseOptions
+  fullName: Microsoft.CodeAnalysis.ParseOptions
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.AdditionalFiles*
+  commentId: Overload:Microsoft.CodeAnalysis.GeneratorExecutionContext.AdditionalFiles
+  isExternal: true
+  href: Microsoft.CodeAnalysis.GeneratorExecutionContext.html#Microsoft_CodeAnalysis_GeneratorExecutionContext_AdditionalFiles
+  name: AdditionalFiles
+  nameWithType: GeneratorExecutionContext.AdditionalFiles
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.AdditionalFiles
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AdditionalText}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<AdditionalText>
+  nameWithType: ImmutableArray<AdditionalText>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.AdditionalText>
+  nameWithType.vb: ImmutableArray(Of AdditionalText)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.AdditionalText)
+  name.vb: ImmutableArray(Of AdditionalText)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.AdditionalText
+    name: AdditionalText
+    isExternal: true
+    href: Microsoft.CodeAnalysis.AdditionalText.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.AdditionalText
+    name: AdditionalText
+    isExternal: true
+    href: Microsoft.CodeAnalysis.AdditionalText.html
+  - name: )
+- uid: System.Collections.Immutable.ImmutableArray`1
+  commentId: T:System.Collections.Immutable.ImmutableArray`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<T>
+  nameWithType: ImmutableArray<T>
+  fullName: System.Collections.Immutable.ImmutableArray<T>
+  nameWithType.vb: ImmutableArray(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T)
+  name.vb: ImmutableArray(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Immutable
+  commentId: N:System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Immutable
+  nameWithType: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.AnalyzerConfigOptions*
+  commentId: Overload:Microsoft.CodeAnalysis.GeneratorExecutionContext.AnalyzerConfigOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.GeneratorExecutionContext.html#Microsoft_CodeAnalysis_GeneratorExecutionContext_AnalyzerConfigOptions
+  name: AnalyzerConfigOptions
+  nameWithType: GeneratorExecutionContext.AnalyzerConfigOptions
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.AnalyzerConfigOptions
+- uid: Microsoft.CodeAnalysis.Diagnostics.AnalyzerConfigOptionsProvider
+  commentId: T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerConfigOptionsProvider
+  parent: Microsoft.CodeAnalysis.Diagnostics
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.AnalyzerConfigOptionsProvider.html
+  name: AnalyzerConfigOptionsProvider
+  nameWithType: AnalyzerConfigOptionsProvider
+  fullName: Microsoft.CodeAnalysis.Diagnostics.AnalyzerConfigOptionsProvider
+- uid: Microsoft.CodeAnalysis.Diagnostics
+  commentId: N:Microsoft.CodeAnalysis.Diagnostics
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Diagnostics
+  nameWithType: Microsoft.CodeAnalysis.Diagnostics
+  fullName: Microsoft.CodeAnalysis.Diagnostics
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.html
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxReceiver*
+  commentId: Overload:Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxReceiver
+  isExternal: true
+  href: Microsoft.CodeAnalysis.GeneratorExecutionContext.html#Microsoft_CodeAnalysis_GeneratorExecutionContext_SyntaxReceiver
+  name: SyntaxReceiver
+  nameWithType: GeneratorExecutionContext.SyntaxReceiver
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxReceiver
+- uid: Microsoft.CodeAnalysis.ISyntaxReceiver
+  commentId: T:Microsoft.CodeAnalysis.ISyntaxReceiver
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISyntaxReceiver.html
+  name: ISyntaxReceiver
+  nameWithType: ISyntaxReceiver
+  fullName: Microsoft.CodeAnalysis.ISyntaxReceiver
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxContextReceiver*
+  commentId: Overload:Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxContextReceiver
+  isExternal: true
+  href: Microsoft.CodeAnalysis.GeneratorExecutionContext.html#Microsoft_CodeAnalysis_GeneratorExecutionContext_SyntaxContextReceiver
+  name: SyntaxContextReceiver
+  nameWithType: GeneratorExecutionContext.SyntaxContextReceiver
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.SyntaxContextReceiver
+- uid: Microsoft.CodeAnalysis.ISyntaxContextReceiver
+  commentId: T:Microsoft.CodeAnalysis.ISyntaxContextReceiver
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISyntaxContextReceiver.html
+  name: ISyntaxContextReceiver
+  nameWithType: ISyntaxContextReceiver
+  fullName: Microsoft.CodeAnalysis.ISyntaxContextReceiver
+- uid: Microsoft.CodeAnalysis.GeneratorExecutionContext.CancellationToken*
+  commentId: Overload:Microsoft.CodeAnalysis.GeneratorExecutionContext.CancellationToken
+  isExternal: true
+  href: Microsoft.CodeAnalysis.GeneratorExecutionContext.html#Microsoft_CodeAnalysis_GeneratorExecutionContext_CancellationToken
+  name: CancellationToken
+  nameWithType: GeneratorExecutionContext.CancellationToken
+  fullName: Microsoft.CodeAnalysis.GeneratorExecutionContext.CancellationToken
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading

@@ -1,0 +1,898 @@
+### YamlMime:ManagedReference
+items:
+- uid: AccoRevit.Addin.Utils.WorkshareUtils
+  commentId: T:AccoRevit.Addin.Utils.WorkshareUtils
+  id: WorkshareUtils
+  parent: AccoRevit.Addin.Utils
+  children:
+  - AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId})
+  - AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
+  - AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId})
+  - AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
+  - AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId})
+  - AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
+  - AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsNotOwnedByOthers(System.Collections.Generic.List{Autodesk.Revit.DB.Element},System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}@)
+  - AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsOwnedByOthers(System.Collections.Generic.List{Autodesk.Revit.DB.Element},System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}@)
+  langs:
+  - csharp
+  - vb
+  name: WorkshareUtils
+  nameWithType: WorkshareUtils
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils
+  type: Class
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/WorkshareUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static class WorkshareUtils
+    content.vb: Public Module WorkshareUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId})
+  commentId: M:AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId})
+  id: GetOwnershipStatus(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId})
+  parent: AccoRevit.Addin.Utils.WorkshareUtils
+  langs:
+  - csharp
+  - vb
+  name: GetOwnershipStatus(IEnumerable<ElementId>)
+  nameWithType: WorkshareUtils.GetOwnershipStatus(IEnumerable<ElementId>)
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.ElementId>)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/WorkshareUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static Dictionary<ElementId, (CheckoutStatus status, string owner)> GetOwnershipStatus(IEnumerable<ElementId> elementIds)
+    parameters:
+    - id: elementIds
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId}
+    return:
+      type: System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}
+    content.vb: Public Shared Function GetOwnershipStatus(elementIds As IEnumerable(Of ElementId)) As Dictionary(Of ElementId, (status As CheckoutStatus, owner As String))
+  overload: AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus*
+  nameWithType.vb: WorkshareUtils.GetOwnershipStatus(IEnumerable(Of ElementId))
+  fullName.vb: AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.ElementId))
+  name.vb: GetOwnershipStatus(IEnumerable(Of ElementId))
+- uid: AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
+  commentId: M:AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
+  id: GetOwnershipStatus(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
+  parent: AccoRevit.Addin.Utils.WorkshareUtils
+  langs:
+  - csharp
+  - vb
+  name: GetOwnershipStatus(IEnumerable<Element>)
+  nameWithType: WorkshareUtils.GetOwnershipStatus(IEnumerable<Element>)
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/WorkshareUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static Dictionary<ElementId, (CheckoutStatus status, string owner)> GetOwnershipStatus(IEnumerable<Element> elements)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element}
+    return:
+      type: System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}
+    content.vb: Public Shared Function GetOwnershipStatus(elements As IEnumerable(Of Element)) As Dictionary(Of ElementId, (status As CheckoutStatus, owner As String))
+  overload: AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus*
+  nameWithType.vb: WorkshareUtils.GetOwnershipStatus(IEnumerable(Of Element))
+  fullName.vb: AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Element))
+  name.vb: GetOwnershipStatus(IEnumerable(Of Element))
+- uid: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
+  commentId: M:AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
+  id: GetElementsOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
+  parent: AccoRevit.Addin.Utils.WorkshareUtils
+  langs:
+  - csharp
+  - vb
+  name: GetElementsOwnedByOthers(IEnumerable<Element>)
+  nameWithType: WorkshareUtils.GetElementsOwnedByOthers(IEnumerable<Element>)
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/WorkshareUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static Dictionary<ElementId, (CheckoutStatus status, string owner)> GetElementsOwnedByOthers(IEnumerable<Element> elements)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element}
+    return:
+      type: System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}
+    content.vb: Public Shared Function GetElementsOwnedByOthers(elements As IEnumerable(Of Element)) As Dictionary(Of ElementId, (status As CheckoutStatus, owner As String))
+  overload: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers*
+  nameWithType.vb: WorkshareUtils.GetElementsOwnedByOthers(IEnumerable(Of Element))
+  fullName.vb: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Element))
+  name.vb: GetElementsOwnedByOthers(IEnumerable(Of Element))
+- uid: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId})
+  commentId: M:AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId})
+  id: GetElementsOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId})
+  parent: AccoRevit.Addin.Utils.WorkshareUtils
+  langs:
+  - csharp
+  - vb
+  name: GetElementsOwnedByOthers(IEnumerable<ElementId>)
+  nameWithType: WorkshareUtils.GetElementsOwnedByOthers(IEnumerable<ElementId>)
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.ElementId>)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/WorkshareUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static Dictionary<ElementId, (CheckoutStatus status, string owner)> GetElementsOwnedByOthers(IEnumerable<ElementId> elementIds)
+    parameters:
+    - id: elementIds
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId}
+    return:
+      type: System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}
+    content.vb: Public Shared Function GetElementsOwnedByOthers(elementIds As IEnumerable(Of ElementId)) As Dictionary(Of ElementId, (status As CheckoutStatus, owner As String))
+  overload: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers*
+  nameWithType.vb: WorkshareUtils.GetElementsOwnedByOthers(IEnumerable(Of ElementId))
+  fullName.vb: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.ElementId))
+  name.vb: GetElementsOwnedByOthers(IEnumerable(Of ElementId))
+- uid: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
+  commentId: M:AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
+  id: GetElementsNotOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element})
+  parent: AccoRevit.Addin.Utils.WorkshareUtils
+  langs:
+  - csharp
+  - vb
+  name: GetElementsNotOwnedByOthers(IEnumerable<Element>)
+  nameWithType: WorkshareUtils.GetElementsNotOwnedByOthers(IEnumerable<Element>)
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/WorkshareUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static Dictionary<ElementId, (CheckoutStatus status, string owner)> GetElementsNotOwnedByOthers(IEnumerable<Element> elements)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element}
+    return:
+      type: System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}
+    content.vb: Public Shared Function GetElementsNotOwnedByOthers(elements As IEnumerable(Of Element)) As Dictionary(Of ElementId, (status As CheckoutStatus, owner As String))
+  overload: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers*
+  nameWithType.vb: WorkshareUtils.GetElementsNotOwnedByOthers(IEnumerable(Of Element))
+  fullName.vb: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Element))
+  name.vb: GetElementsNotOwnedByOthers(IEnumerable(Of Element))
+- uid: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId})
+  commentId: M:AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId})
+  id: GetElementsNotOwnedByOthers(System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId})
+  parent: AccoRevit.Addin.Utils.WorkshareUtils
+  langs:
+  - csharp
+  - vb
+  name: GetElementsNotOwnedByOthers(IEnumerable<ElementId>)
+  nameWithType: WorkshareUtils.GetElementsNotOwnedByOthers(IEnumerable<ElementId>)
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers(System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.ElementId>)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/WorkshareUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static Dictionary<ElementId, (CheckoutStatus status, string owner)> GetElementsNotOwnedByOthers(IEnumerable<ElementId> elementIds)
+    parameters:
+    - id: elementIds
+      type: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId}
+    return:
+      type: System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}
+    content.vb: Public Shared Function GetElementsNotOwnedByOthers(elementIds As IEnumerable(Of ElementId)) As Dictionary(Of ElementId, (status As CheckoutStatus, owner As String))
+  overload: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers*
+  nameWithType.vb: WorkshareUtils.GetElementsNotOwnedByOthers(IEnumerable(Of ElementId))
+  fullName.vb: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers(System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.ElementId))
+  name.vb: GetElementsNotOwnedByOthers(IEnumerable(Of ElementId))
+- uid: AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsOwnedByOthers(System.Collections.Generic.List{Autodesk.Revit.DB.Element},System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}@)
+  commentId: M:AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsOwnedByOthers(System.Collections.Generic.List{Autodesk.Revit.DB.Element},System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}@)
+  id: TryGetElementsOwnedByOthers(System.Collections.Generic.List{Autodesk.Revit.DB.Element},System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}@)
+  parent: AccoRevit.Addin.Utils.WorkshareUtils
+  langs:
+  - csharp
+  - vb
+  name: TryGetElementsOwnedByOthers(List<Element>, out Dictionary<ElementId, (CheckoutStatus status, string owner)>)
+  nameWithType: WorkshareUtils.TryGetElementsOwnedByOthers(List<Element>, out Dictionary<ElementId, (CheckoutStatus status, string owner)>)
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsOwnedByOthers(System.Collections.Generic.List<Autodesk.Revit.DB.Element>, out System.Collections.Generic.Dictionary<Autodesk.Revit.DB.ElementId, (Autodesk.Revit.DB.CheckoutStatus status, string owner)>)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/WorkshareUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static bool TryGetElementsOwnedByOthers(List<Element> elements, out Dictionary<ElementId, (CheckoutStatus status, string owner)> ownedByOthers)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+    - id: ownedByOthers
+      type: System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryGetElementsOwnedByOthers(elements As List(Of Element), ownedByOthers As Dictionary(Of ElementId, (status As CheckoutStatus, owner As String))) As Boolean
+  overload: AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsOwnedByOthers*
+  nameWithType.vb: WorkshareUtils.TryGetElementsOwnedByOthers(List(Of Element), Dictionary(Of ElementId, (status As CheckoutStatus, owner As String)))
+  fullName.vb: AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsOwnedByOthers(System.Collections.Generic.List(Of Autodesk.Revit.DB.Element), System.Collections.Generic.Dictionary(Of Autodesk.Revit.DB.ElementId, (status As Autodesk.Revit.DB.CheckoutStatus, owner As String)))
+  name.vb: TryGetElementsOwnedByOthers(List(Of Element), Dictionary(Of ElementId, (status As CheckoutStatus, owner As String)))
+- uid: AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsNotOwnedByOthers(System.Collections.Generic.List{Autodesk.Revit.DB.Element},System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}@)
+  commentId: M:AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsNotOwnedByOthers(System.Collections.Generic.List{Autodesk.Revit.DB.Element},System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}@)
+  id: TryGetElementsNotOwnedByOthers(System.Collections.Generic.List{Autodesk.Revit.DB.Element},System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}@)
+  parent: AccoRevit.Addin.Utils.WorkshareUtils
+  langs:
+  - csharp
+  - vb
+  name: TryGetElementsNotOwnedByOthers(List<Element>, out Dictionary<ElementId, (CheckoutStatus status, string owner)>)
+  nameWithType: WorkshareUtils.TryGetElementsNotOwnedByOthers(List<Element>, out Dictionary<ElementId, (CheckoutStatus status, string owner)>)
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsNotOwnedByOthers(System.Collections.Generic.List<Autodesk.Revit.DB.Element>, out System.Collections.Generic.Dictionary<Autodesk.Revit.DB.ElementId, (Autodesk.Revit.DB.CheckoutStatus status, string owner)>)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/WorkshareUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static bool TryGetElementsNotOwnedByOthers(List<Element> elements, out Dictionary<ElementId, (CheckoutStatus status, string owner)> notOwnedByOthers)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+    - id: notOwnedByOthers
+      type: System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryGetElementsNotOwnedByOthers(elements As List(Of Element), notOwnedByOthers As Dictionary(Of ElementId, (status As CheckoutStatus, owner As String))) As Boolean
+  overload: AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsNotOwnedByOthers*
+  nameWithType.vb: WorkshareUtils.TryGetElementsNotOwnedByOthers(List(Of Element), Dictionary(Of ElementId, (status As CheckoutStatus, owner As String)))
+  fullName.vb: AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsNotOwnedByOthers(System.Collections.Generic.List(Of Autodesk.Revit.DB.Element), System.Collections.Generic.Dictionary(Of Autodesk.Revit.DB.ElementId, (status As Autodesk.Revit.DB.CheckoutStatus, owner As String)))
+  name.vb: TryGetElementsNotOwnedByOthers(List(Of Element), Dictionary(Of ElementId, (status As CheckoutStatus, owner As String)))
+references:
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus*
+  commentId: Overload:AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus
+  isExternal: true
+  href: AccoRevit.Addin.Utils.WorkshareUtils.html#AccoRevit_Addin_Utils_WorkshareUtils_GetOwnershipStatus_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementId__
+  name: GetOwnershipStatus
+  nameWithType: WorkshareUtils.GetOwnershipStatus
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils.GetOwnershipStatus
+- uid: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId}
+  commentId: T:System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementId}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ElementId>
+  nameWithType: IEnumerable<ElementId>
+  fullName: System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.ElementId>
+  nameWithType.vb: IEnumerable(Of ElementId)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.ElementId)
+  name.vb: IEnumerable(Of ElementId)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Autodesk.Revit.DB.ElementId
+    name: ElementId
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.ElementId
+    name: ElementId
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}
+  commentId: T:System.Collections.Generic.Dictionary{Autodesk.Revit.DB.ElementId,System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<ElementId, (CheckoutStatus status, string owner)>
+  nameWithType: Dictionary<ElementId, (CheckoutStatus status, string owner)>
+  fullName: System.Collections.Generic.Dictionary<Autodesk.Revit.DB.ElementId, (Autodesk.Revit.DB.CheckoutStatus status, string owner)>
+  nameWithType.vb: Dictionary(Of ElementId, (status As CheckoutStatus, owner As String))
+  fullName.vb: System.Collections.Generic.Dictionary(Of Autodesk.Revit.DB.ElementId, (status As Autodesk.Revit.DB.CheckoutStatus, owner As String))
+  name.vb: Dictionary(Of ElementId, (status As CheckoutStatus, owner As String))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: Autodesk.Revit.DB.ElementId
+    name: ElementId
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: (
+  - uid: Autodesk.Revit.DB.CheckoutStatus
+    name: CheckoutStatus
+    isExternal: true
+  - name: " "
+  - uid: System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}.status
+    name: status
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.checkoutstatus,system.string-.status
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}.owner
+    name: owner
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.checkoutstatus,system.string-.owner
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.ElementId
+    name: ElementId
+    isExternal: true
+  - name: ','
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}.status
+    name: status
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.checkoutstatus,system.string-.status
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Autodesk.Revit.DB.CheckoutStatus
+    name: CheckoutStatus
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{Autodesk.Revit.DB.CheckoutStatus,System.String}.owner
+    name: owner
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-autodesk.revit.db.checkoutstatus,system.string-.owner
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element}
+  commentId: T:System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.Element}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<Element>
+  nameWithType: IEnumerable<Element>
+  fullName: System.Collections.Generic.IEnumerable<Autodesk.Revit.DB.Element>
+  nameWithType.vb: IEnumerable(Of Element)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Autodesk.Revit.DB.Element)
+  name.vb: IEnumerable(Of Element)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+- uid: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers*
+  commentId: Overload:AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers
+  isExternal: true
+  href: AccoRevit.Addin.Utils.WorkshareUtils.html#AccoRevit_Addin_Utils_WorkshareUtils_GetElementsOwnedByOthers_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element__
+  name: GetElementsOwnedByOthers
+  nameWithType: WorkshareUtils.GetElementsOwnedByOthers
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsOwnedByOthers
+- uid: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers*
+  commentId: Overload:AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers
+  isExternal: true
+  href: AccoRevit.Addin.Utils.WorkshareUtils.html#AccoRevit_Addin_Utils_WorkshareUtils_GetElementsNotOwnedByOthers_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_Element__
+  name: GetElementsNotOwnedByOthers
+  nameWithType: WorkshareUtils.GetElementsNotOwnedByOthers
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils.GetElementsNotOwnedByOthers
+- uid: AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsOwnedByOthers*
+  commentId: Overload:AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsOwnedByOthers
+  isExternal: true
+  href: AccoRevit.Addin.Utils.WorkshareUtils.html#AccoRevit_Addin_Utils_WorkshareUtils_TryGetElementsOwnedByOthers_System_Collections_Generic_List_Autodesk_Revit_DB_Element__System_Collections_Generic_Dictionary_Autodesk_Revit_DB_ElementId_System_ValueTuple_Autodesk_Revit_DB_CheckoutStatus_System_String____
+  name: TryGetElementsOwnedByOthers
+  nameWithType: WorkshareUtils.TryGetElementsOwnedByOthers
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsOwnedByOthers
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Element>
+  nameWithType: List<Element>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Element>
+  nameWithType.vb: List(Of Element)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Element)
+  name.vb: List(Of Element)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsNotOwnedByOthers*
+  commentId: Overload:AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsNotOwnedByOthers
+  isExternal: true
+  href: AccoRevit.Addin.Utils.WorkshareUtils.html#AccoRevit_Addin_Utils_WorkshareUtils_TryGetElementsNotOwnedByOthers_System_Collections_Generic_List_Autodesk_Revit_DB_Element__System_Collections_Generic_Dictionary_Autodesk_Revit_DB_ElementId_System_ValueTuple_Autodesk_Revit_DB_CheckoutStatus_System_String____
+  name: TryGetElementsNotOwnedByOthers
+  nameWithType: WorkshareUtils.TryGetElementsNotOwnedByOthers
+  fullName: AccoRevit.Addin.Utils.WorkshareUtils.TryGetElementsNotOwnedByOthers

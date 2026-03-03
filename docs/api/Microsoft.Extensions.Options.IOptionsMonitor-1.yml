@@ -1,0 +1,891 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+  commentId: T:Microsoft.Extensions.Options.IOptionsMonitor`1
+  id: IOptionsMonitor`1
+  parent: Microsoft.Extensions.Options
+  children:
+  - Microsoft.Extensions.Options.IOptionsMonitor`1.CurrentValue
+  - Microsoft.Extensions.Options.IOptionsMonitor`1.Get(System.String)
+  - Microsoft.Extensions.Options.IOptionsMonitor`1.OnChange(System.Action{`0,System.String})
+  langs:
+  - csharp
+  - vb
+  name: IOptionsMonitor<TOptions>
+  nameWithType: IOptionsMonitor<TOptions>
+  fullName: Microsoft.Extensions.Options.IOptionsMonitor<TOptions>
+  type: Interface
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  syntax:
+    content: public interface IOptionsMonitor<out TOptions>
+    typeParameters:
+    - id: TOptions
+    content.vb: Public Interface IOptionsMonitor(Of Out TOptions)
+  derivedClasses:
+  - Microsoft.Extensions.Options.OptionsMonitor`1
+  extensionMethods:
+  - Microsoft.Extensions.Options.IOptionsMonitor`1.Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange``1(System.Action{{TOptions}})
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  nameWithType.vb: IOptionsMonitor(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IOptionsMonitor(Of TOptions)
+  name.vb: IOptionsMonitor(Of TOptions)
+- uid: Microsoft.Extensions.Options.IOptionsMonitor`1.Get(System.String)
+  commentId: M:Microsoft.Extensions.Options.IOptionsMonitor`1.Get(System.String)
+  id: Get(System.String)
+  parent: Microsoft.Extensions.Options.IOptionsMonitor`1
+  langs:
+  - csharp
+  - vb
+  name: Get(string?)
+  nameWithType: IOptionsMonitor<TOptions>.Get(string?)
+  fullName: Microsoft.Extensions.Options.IOptionsMonitor<TOptions>.Get(string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  syntax:
+    content: TOptions Get(string? name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: '{TOptions}'
+    content.vb: Function [Get](name As String) As TOptions
+  overload: Microsoft.Extensions.Options.IOptionsMonitor`1.Get*
+  nameWithType.vb: IOptionsMonitor(Of TOptions).Get(String)
+  fullName.vb: Microsoft.Extensions.Options.IOptionsMonitor(Of TOptions).Get(String)
+  name.vb: Get(String)
+- uid: Microsoft.Extensions.Options.IOptionsMonitor`1.OnChange(System.Action{`0,System.String})
+  commentId: M:Microsoft.Extensions.Options.IOptionsMonitor`1.OnChange(System.Action{`0,System.String})
+  id: OnChange(System.Action{`0,System.String})
+  parent: Microsoft.Extensions.Options.IOptionsMonitor`1
+  langs:
+  - csharp
+  - vb
+  name: OnChange(Action<TOptions, string?>)
+  nameWithType: IOptionsMonitor<TOptions>.OnChange(Action<TOptions, string?>)
+  fullName: Microsoft.Extensions.Options.IOptionsMonitor<TOptions>.OnChange(System.Action<TOptions, string?>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  syntax:
+    content: IDisposable? OnChange(Action<out TOptions, string?> listener)
+    parameters:
+    - id: listener
+      type: System.Action{{TOptions},System.String}
+    return:
+      type: System.IDisposable
+    content.vb: Function OnChange(listener As Action(Of Out TOptions, String)) As IDisposable
+  overload: Microsoft.Extensions.Options.IOptionsMonitor`1.OnChange*
+  nameWithType.vb: IOptionsMonitor(Of TOptions).OnChange(Action(Of TOptions, String))
+  fullName.vb: Microsoft.Extensions.Options.IOptionsMonitor(Of TOptions).OnChange(System.Action(Of TOptions, String))
+  name.vb: OnChange(Action(Of TOptions, String))
+- uid: Microsoft.Extensions.Options.IOptionsMonitor`1.CurrentValue
+  commentId: P:Microsoft.Extensions.Options.IOptionsMonitor`1.CurrentValue
+  id: CurrentValue
+  parent: Microsoft.Extensions.Options.IOptionsMonitor`1
+  langs:
+  - csharp
+  - vb
+  name: CurrentValue
+  nameWithType: IOptionsMonitor<TOptions>.CurrentValue
+  fullName: Microsoft.Extensions.Options.IOptionsMonitor<TOptions>.CurrentValue
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  syntax:
+    content: TOptions CurrentValue { get; }
+    parameters: []
+    return:
+      type: '{TOptions}'
+    content.vb: ReadOnly Property CurrentValue As TOptions
+  overload: Microsoft.Extensions.Options.IOptionsMonitor`1.CurrentValue*
+  nameWithType.vb: IOptionsMonitor(Of TOptions).CurrentValue
+  fullName.vb: Microsoft.Extensions.Options.IOptionsMonitor(Of TOptions).CurrentValue
+references:
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: Microsoft.Extensions.Options.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: Microsoft.Extensions.Options.html
+- uid: Microsoft.Extensions.Options.IOptionsMonitor`1.Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange``1(System.Action{{TOptions}})
+  commentId: M:Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange``1(Microsoft.Extensions.Options.IOptionsMonitor{``0},System.Action{``0})
+  parent: Microsoft.Extensions.Options.OptionsMonitorExtensions
+  definition: Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange``1(Microsoft.Extensions.Options.IOptionsMonitor{``0},System.Action{``0})
+  href: Microsoft.Extensions.Options.OptionsMonitorExtensions.html#Microsoft_Extensions_Options_OptionsMonitorExtensions_OnChange__1_Microsoft_Extensions_Options_IOptionsMonitor___0__System_Action___0__
+  name: OnChange<TOptions>(IOptionsMonitor<TOptions>, Action<TOptions>)
+  nameWithType: OptionsMonitorExtensions.OnChange<TOptions>(IOptionsMonitor<TOptions>, Action<TOptions>)
+  fullName: Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange<TOptions>(Microsoft.Extensions.Options.IOptionsMonitor<TOptions>, System.Action<TOptions>)
+  nameWithType.vb: OptionsMonitorExtensions.OnChange(Of TOptions)(IOptionsMonitor(Of TOptions), Action(Of TOptions))
+  fullName.vb: Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange(Of TOptions)(Microsoft.Extensions.Options.IOptionsMonitor(Of TOptions), System.Action(Of TOptions))
+  name.vb: OnChange(Of TOptions)(IOptionsMonitor(Of TOptions), Action(Of TOptions))
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange``1(Microsoft.Extensions.Options.IOptionsMonitor{`0},System.Action{`0})
+    name: OnChange
+    isExternal: true
+    href: Microsoft.Extensions.Options.OptionsMonitorExtensions.html#Microsoft_Extensions_Options_OptionsMonitorExtensions_OnChange__1_Microsoft_Extensions_Options_IOptionsMonitor___0__System_Action___0__
+  - name: <
+  - name: TOptions
+  - name: '>'
+  - name: (
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    isExternal: true
+    href: Microsoft.Extensions.Options.IOptionsMonitor-1.html
+  - name: <
+  - name: TOptions
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange``1(Microsoft.Extensions.Options.IOptionsMonitor{`0},System.Action{`0})
+    name: OnChange
+    isExternal: true
+    href: Microsoft.Extensions.Options.OptionsMonitorExtensions.html#Microsoft_Extensions_Options_OptionsMonitorExtensions_OnChange__1_Microsoft_Extensions_Options_IOptionsMonitor___0__System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+  - name: (
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    isExternal: true
+    href: Microsoft.Extensions.Options.IOptionsMonitor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange``1(Microsoft.Extensions.Options.IOptionsMonitor{``0},System.Action{``0})
+  commentId: M:Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange``1(Microsoft.Extensions.Options.IOptionsMonitor{``0},System.Action{``0})
+  isExternal: true
+  href: Microsoft.Extensions.Options.OptionsMonitorExtensions.html#Microsoft_Extensions_Options_OptionsMonitorExtensions_OnChange__1_Microsoft_Extensions_Options_IOptionsMonitor___0__System_Action___0__
+  name: OnChange<TOptions>(IOptionsMonitor<TOptions>, Action<TOptions>)
+  nameWithType: OptionsMonitorExtensions.OnChange<TOptions>(IOptionsMonitor<TOptions>, Action<TOptions>)
+  fullName: Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange<TOptions>(Microsoft.Extensions.Options.IOptionsMonitor<TOptions>, System.Action<TOptions>)
+  nameWithType.vb: OptionsMonitorExtensions.OnChange(Of TOptions)(IOptionsMonitor(Of TOptions), Action(Of TOptions))
+  fullName.vb: Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange(Of TOptions)(Microsoft.Extensions.Options.IOptionsMonitor(Of TOptions), System.Action(Of TOptions))
+  name.vb: OnChange(Of TOptions)(IOptionsMonitor(Of TOptions), Action(Of TOptions))
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange``1(Microsoft.Extensions.Options.IOptionsMonitor{``0},System.Action{``0})
+    name: OnChange
+    isExternal: true
+    href: Microsoft.Extensions.Options.OptionsMonitorExtensions.html#Microsoft_Extensions_Options_OptionsMonitorExtensions_OnChange__1_Microsoft_Extensions_Options_IOptionsMonitor___0__System_Action___0__
+  - name: <
+  - name: TOptions
+  - name: '>'
+  - name: (
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    isExternal: true
+    href: Microsoft.Extensions.Options.IOptionsMonitor-1.html
+  - name: <
+  - name: TOptions
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.OptionsMonitorExtensions.OnChange``1(Microsoft.Extensions.Options.IOptionsMonitor{``0},System.Action{``0})
+    name: OnChange
+    isExternal: true
+    href: Microsoft.Extensions.Options.OptionsMonitorExtensions.html#Microsoft_Extensions_Options_OptionsMonitorExtensions_OnChange__1_Microsoft_Extensions_Options_IOptionsMonitor___0__System_Action___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+  - name: (
+  - uid: Microsoft.Extensions.Options.IOptionsMonitor`1
+    name: IOptionsMonitor
+    isExternal: true
+    href: Microsoft.Extensions.Options.IOptionsMonitor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+  - name: )
+- uid: Microsoft.Extensions.Options.OptionsMonitorExtensions
+  commentId: T:Microsoft.Extensions.Options.OptionsMonitorExtensions
+  parent: Microsoft.Extensions.Options
+  isExternal: true
+  href: Microsoft.Extensions.Options.OptionsMonitorExtensions.html
+  name: OptionsMonitorExtensions
+  nameWithType: OptionsMonitorExtensions
+  fullName: Microsoft.Extensions.Options.OptionsMonitorExtensions
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.Extensions.Options.IOptionsMonitor`1.Get*
+  commentId: Overload:Microsoft.Extensions.Options.IOptionsMonitor`1.Get
+  isExternal: true
+  href: Microsoft.Extensions.Options.IOptionsMonitor-1.html#Microsoft_Extensions_Options_IOptionsMonitor_1_Get_System_String_
+  name: Get
+  nameWithType: IOptionsMonitor<TOptions>.Get
+  fullName: Microsoft.Extensions.Options.IOptionsMonitor<TOptions>.Get
+  nameWithType.vb: IOptionsMonitor(Of TOptions).Get
+  fullName.vb: Microsoft.Extensions.Options.IOptionsMonitor(Of TOptions).Get
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{TOptions}'
+  commentId: '!:TOptions'
+  definition: TOptions
+  name: TOptions
+  nameWithType: TOptions
+  fullName: TOptions
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: TOptions
+  name: TOptions
+  nameWithType: TOptions
+  fullName: TOptions
+- uid: Microsoft.Extensions.Options.IOptionsMonitor`1.OnChange*
+  commentId: Overload:Microsoft.Extensions.Options.IOptionsMonitor`1.OnChange
+  isExternal: true
+  href: Microsoft.Extensions.Options.IOptionsMonitor-1.html#Microsoft_Extensions_Options_IOptionsMonitor_1_OnChange_System_Action__0_System_String__
+  name: OnChange
+  nameWithType: IOptionsMonitor<TOptions>.OnChange
+  fullName: Microsoft.Extensions.Options.IOptionsMonitor<TOptions>.OnChange
+  nameWithType.vb: IOptionsMonitor(Of TOptions).OnChange
+  fullName.vb: Microsoft.Extensions.Options.IOptionsMonitor(Of TOptions).OnChange
+- uid: System.Action{{TOptions},System.String}
+  commentId: T:System.Action{`0,System.String}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<TOptions, string>
+  nameWithType: Action<TOptions, string>
+  fullName: System.Action<TOptions, string>
+  nameWithType.vb: Action(Of TOptions, String)
+  fullName.vb: System.Action(Of TOptions, String)
+  name.vb: Action(Of TOptions, String)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: TOptions
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: Microsoft.Extensions.Options.IOptionsMonitor`1.CurrentValue*
+  commentId: Overload:Microsoft.Extensions.Options.IOptionsMonitor`1.CurrentValue
+  isExternal: true
+  href: Microsoft.Extensions.Options.IOptionsMonitor-1.html#Microsoft_Extensions_Options_IOptionsMonitor_1_CurrentValue
+  name: CurrentValue
+  nameWithType: IOptionsMonitor<TOptions>.CurrentValue
+  fullName: Microsoft.Extensions.Options.IOptionsMonitor<TOptions>.CurrentValue
+  nameWithType.vb: IOptionsMonitor(Of TOptions).CurrentValue
+  fullName.vb: Microsoft.Extensions.Options.IOptionsMonitor(Of TOptions).CurrentValue

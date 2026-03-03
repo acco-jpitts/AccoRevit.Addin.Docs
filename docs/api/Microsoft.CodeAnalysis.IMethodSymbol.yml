@@ -1,0 +1,3329 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.IMethodSymbol
+  commentId: T:Microsoft.CodeAnalysis.IMethodSymbol
+  id: IMethodSymbol
+  parent: Microsoft.CodeAnalysis
+  children:
+  - Microsoft.CodeAnalysis.IMethodSymbol.Arity
+  - Microsoft.CodeAnalysis.IMethodSymbol.AssociatedAnonymousDelegate
+  - Microsoft.CodeAnalysis.IMethodSymbol.AssociatedSymbol
+  - Microsoft.CodeAnalysis.IMethodSymbol.CallingConvention
+  - Microsoft.CodeAnalysis.IMethodSymbol.Construct(Microsoft.CodeAnalysis.ITypeSymbol[])
+  - Microsoft.CodeAnalysis.IMethodSymbol.Construct(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.NullableAnnotation})
+  - Microsoft.CodeAnalysis.IMethodSymbol.ConstructedFrom
+  - Microsoft.CodeAnalysis.IMethodSymbol.ExplicitInterfaceImplementations
+  - Microsoft.CodeAnalysis.IMethodSymbol.GetDllImportData
+  - Microsoft.CodeAnalysis.IMethodSymbol.GetReturnTypeAttributes
+  - Microsoft.CodeAnalysis.IMethodSymbol.GetTypeInferredDuringReduction(Microsoft.CodeAnalysis.ITypeParameterSymbol)
+  - Microsoft.CodeAnalysis.IMethodSymbol.HidesBaseMethodsByName
+  - Microsoft.CodeAnalysis.IMethodSymbol.IsAsync
+  - Microsoft.CodeAnalysis.IMethodSymbol.IsCheckedBuiltin
+  - Microsoft.CodeAnalysis.IMethodSymbol.IsConditional
+  - Microsoft.CodeAnalysis.IMethodSymbol.IsExtensionMethod
+  - Microsoft.CodeAnalysis.IMethodSymbol.IsGenericMethod
+  - Microsoft.CodeAnalysis.IMethodSymbol.IsInitOnly
+  - Microsoft.CodeAnalysis.IMethodSymbol.IsPartialDefinition
+  - Microsoft.CodeAnalysis.IMethodSymbol.IsReadOnly
+  - Microsoft.CodeAnalysis.IMethodSymbol.IsVararg
+  - Microsoft.CodeAnalysis.IMethodSymbol.MethodImplementationFlags
+  - Microsoft.CodeAnalysis.IMethodSymbol.MethodKind
+  - Microsoft.CodeAnalysis.IMethodSymbol.OriginalDefinition
+  - Microsoft.CodeAnalysis.IMethodSymbol.OverriddenMethod
+  - Microsoft.CodeAnalysis.IMethodSymbol.Parameters
+  - Microsoft.CodeAnalysis.IMethodSymbol.PartialDefinitionPart
+  - Microsoft.CodeAnalysis.IMethodSymbol.PartialImplementationPart
+  - Microsoft.CodeAnalysis.IMethodSymbol.ReceiverNullableAnnotation
+  - Microsoft.CodeAnalysis.IMethodSymbol.ReceiverType
+  - Microsoft.CodeAnalysis.IMethodSymbol.ReduceExtensionMethod(Microsoft.CodeAnalysis.ITypeSymbol)
+  - Microsoft.CodeAnalysis.IMethodSymbol.ReducedFrom
+  - Microsoft.CodeAnalysis.IMethodSymbol.RefCustomModifiers
+  - Microsoft.CodeAnalysis.IMethodSymbol.RefKind
+  - Microsoft.CodeAnalysis.IMethodSymbol.ReturnNullableAnnotation
+  - Microsoft.CodeAnalysis.IMethodSymbol.ReturnType
+  - Microsoft.CodeAnalysis.IMethodSymbol.ReturnTypeCustomModifiers
+  - Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRef
+  - Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRefReadonly
+  - Microsoft.CodeAnalysis.IMethodSymbol.ReturnsVoid
+  - Microsoft.CodeAnalysis.IMethodSymbol.TypeArgumentNullableAnnotations
+  - Microsoft.CodeAnalysis.IMethodSymbol.TypeArguments
+  - Microsoft.CodeAnalysis.IMethodSymbol.TypeParameters
+  - Microsoft.CodeAnalysis.IMethodSymbol.UnmanagedCallingConventionTypes
+  langs:
+  - csharp
+  - vb
+  name: IMethodSymbol
+  nameWithType: IMethodSymbol
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol
+  type: Interface
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: 'public interface IMethodSymbol : ISymbol, IEquatable<ISymbol?>'
+    content.vb: Public Interface IMethodSymbol Inherits ISymbol, IEquatable(Of ISymbol)
+  inheritedMembers:
+  - Microsoft.CodeAnalysis.ISymbol.GetAttributes
+  - Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
+  - Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{{TResult}})
+  - Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{{TArgument},{TResult}},{TArgument})
+  - Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
+  - Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo,System.Boolean,System.Threading.CancellationToken)
+  - Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  - Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  - Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  - Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  - Microsoft.CodeAnalysis.ISymbol.Equals(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SymbolEqualityComparer)
+  - Microsoft.CodeAnalysis.ISymbol.Kind
+  - Microsoft.CodeAnalysis.ISymbol.Language
+  - Microsoft.CodeAnalysis.ISymbol.Name
+  - Microsoft.CodeAnalysis.ISymbol.MetadataName
+  - Microsoft.CodeAnalysis.ISymbol.MetadataToken
+  - Microsoft.CodeAnalysis.ISymbol.ContainingSymbol
+  - Microsoft.CodeAnalysis.ISymbol.ContainingAssembly
+  - Microsoft.CodeAnalysis.ISymbol.ContainingModule
+  - Microsoft.CodeAnalysis.ISymbol.ContainingType
+  - Microsoft.CodeAnalysis.ISymbol.ContainingNamespace
+  - Microsoft.CodeAnalysis.ISymbol.IsDefinition
+  - Microsoft.CodeAnalysis.ISymbol.IsStatic
+  - Microsoft.CodeAnalysis.ISymbol.IsVirtual
+  - Microsoft.CodeAnalysis.ISymbol.IsOverride
+  - Microsoft.CodeAnalysis.ISymbol.IsAbstract
+  - Microsoft.CodeAnalysis.ISymbol.IsSealed
+  - Microsoft.CodeAnalysis.ISymbol.IsExtern
+  - Microsoft.CodeAnalysis.ISymbol.IsImplicitlyDeclared
+  - Microsoft.CodeAnalysis.ISymbol.CanBeReferencedByName
+  - Microsoft.CodeAnalysis.ISymbol.Locations
+  - Microsoft.CodeAnalysis.ISymbol.DeclaringSyntaxReferences
+  - Microsoft.CodeAnalysis.ISymbol.DeclaredAccessibility
+  - Microsoft.CodeAnalysis.ISymbol.HasUnsupportedMetadata
+  - System.IEquatable{Microsoft.CodeAnalysis.ISymbol}.Equals(Microsoft.CodeAnalysis.ISymbol)
+  extensionMethods:
+  - Microsoft.CodeAnalysis.IMethodSymbol.Microsoft.CodeAnalysis.ISymbolExtensions.GetConstructedReducedFrom
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.GetTypeInferredDuringReduction(Microsoft.CodeAnalysis.ITypeParameterSymbol)
+  commentId: M:Microsoft.CodeAnalysis.IMethodSymbol.GetTypeInferredDuringReduction(Microsoft.CodeAnalysis.ITypeParameterSymbol)
+  id: GetTypeInferredDuringReduction(Microsoft.CodeAnalysis.ITypeParameterSymbol)
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: GetTypeInferredDuringReduction(ITypeParameterSymbol)
+  nameWithType: IMethodSymbol.GetTypeInferredDuringReduction(ITypeParameterSymbol)
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.GetTypeInferredDuringReduction(Microsoft.CodeAnalysis.ITypeParameterSymbol)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ITypeSymbol? GetTypeInferredDuringReduction(ITypeParameterSymbol reducedFromTypeParameter)
+    parameters:
+    - id: reducedFromTypeParameter
+      type: Microsoft.CodeAnalysis.ITypeParameterSymbol
+    return:
+      type: Microsoft.CodeAnalysis.ITypeSymbol
+    content.vb: Function GetTypeInferredDuringReduction(reducedFromTypeParameter As ITypeParameterSymbol) As ITypeSymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.GetTypeInferredDuringReduction*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReduceExtensionMethod(Microsoft.CodeAnalysis.ITypeSymbol)
+  commentId: M:Microsoft.CodeAnalysis.IMethodSymbol.ReduceExtensionMethod(Microsoft.CodeAnalysis.ITypeSymbol)
+  id: ReduceExtensionMethod(Microsoft.CodeAnalysis.ITypeSymbol)
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: ReduceExtensionMethod(ITypeSymbol)
+  nameWithType: IMethodSymbol.ReduceExtensionMethod(ITypeSymbol)
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReduceExtensionMethod(Microsoft.CodeAnalysis.ITypeSymbol)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: IMethodSymbol? ReduceExtensionMethod(ITypeSymbol receiverType)
+    parameters:
+    - id: receiverType
+      type: Microsoft.CodeAnalysis.ITypeSymbol
+    return:
+      type: Microsoft.CodeAnalysis.IMethodSymbol
+    content.vb: Function ReduceExtensionMethod(receiverType As ITypeSymbol) As IMethodSymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.ReduceExtensionMethod*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.GetReturnTypeAttributes
+  commentId: M:Microsoft.CodeAnalysis.IMethodSymbol.GetReturnTypeAttributes
+  id: GetReturnTypeAttributes
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: GetReturnTypeAttributes()
+  nameWithType: IMethodSymbol.GetReturnTypeAttributes()
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.GetReturnTypeAttributes()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<AttributeData> GetReturnTypeAttributes()
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AttributeData}
+    content.vb: Function GetReturnTypeAttributes() As ImmutableArray(Of AttributeData)
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.GetReturnTypeAttributes*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.Construct(Microsoft.CodeAnalysis.ITypeSymbol[])
+  commentId: M:Microsoft.CodeAnalysis.IMethodSymbol.Construct(Microsoft.CodeAnalysis.ITypeSymbol[])
+  id: Construct(Microsoft.CodeAnalysis.ITypeSymbol[])
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: Construct(params ITypeSymbol[])
+  nameWithType: IMethodSymbol.Construct(params ITypeSymbol[])
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.Construct(params Microsoft.CodeAnalysis.ITypeSymbol[])
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: IMethodSymbol Construct(params ITypeSymbol[] typeArguments)
+    parameters:
+    - id: typeArguments
+      type: Microsoft.CodeAnalysis.ITypeSymbol[]
+    return:
+      type: Microsoft.CodeAnalysis.IMethodSymbol
+    content.vb: Function Construct(ParamArray typeArguments As ITypeSymbol()) As IMethodSymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.Construct*
+  nameWithType.vb: IMethodSymbol.Construct(ParamArray ITypeSymbol())
+  fullName.vb: Microsoft.CodeAnalysis.IMethodSymbol.Construct(ParamArray Microsoft.CodeAnalysis.ITypeSymbol())
+  name.vb: Construct(ParamArray ITypeSymbol())
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.Construct(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.NullableAnnotation})
+  commentId: M:Microsoft.CodeAnalysis.IMethodSymbol.Construct(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.NullableAnnotation})
+  id: Construct(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.NullableAnnotation})
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: Construct(ImmutableArray<ITypeSymbol>, ImmutableArray<NullableAnnotation>)
+  nameWithType: IMethodSymbol.Construct(ImmutableArray<ITypeSymbol>, ImmutableArray<NullableAnnotation>)
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.Construct(System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.ITypeSymbol>, System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.NullableAnnotation>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: IMethodSymbol Construct(ImmutableArray<ITypeSymbol> typeArguments, ImmutableArray<NullableAnnotation> typeArgumentNullableAnnotations)
+    parameters:
+    - id: typeArguments
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
+    - id: typeArgumentNullableAnnotations
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.NullableAnnotation}
+    return:
+      type: Microsoft.CodeAnalysis.IMethodSymbol
+    content.vb: Function Construct(typeArguments As ImmutableArray(Of ITypeSymbol), typeArgumentNullableAnnotations As ImmutableArray(Of NullableAnnotation)) As IMethodSymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.Construct*
+  nameWithType.vb: IMethodSymbol.Construct(ImmutableArray(Of ITypeSymbol), ImmutableArray(Of NullableAnnotation))
+  fullName.vb: Microsoft.CodeAnalysis.IMethodSymbol.Construct(System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.ITypeSymbol), System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.NullableAnnotation))
+  name.vb: Construct(ImmutableArray(Of ITypeSymbol), ImmutableArray(Of NullableAnnotation))
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.GetDllImportData
+  commentId: M:Microsoft.CodeAnalysis.IMethodSymbol.GetDllImportData
+  id: GetDllImportData
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: GetDllImportData()
+  nameWithType: IMethodSymbol.GetDllImportData()
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.GetDllImportData()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: DllImportData? GetDllImportData()
+    return:
+      type: Microsoft.CodeAnalysis.DllImportData
+    content.vb: Function GetDllImportData() As DllImportData
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.GetDllImportData*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.MethodKind
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.MethodKind
+  id: MethodKind
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: MethodKind
+  nameWithType: IMethodSymbol.MethodKind
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.MethodKind
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: MethodKind MethodKind { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.MethodKind
+    content.vb: ReadOnly Property MethodKind As MethodKind
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.MethodKind*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.Arity
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.Arity
+  id: Arity
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: Arity
+  nameWithType: IMethodSymbol.Arity
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.Arity
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: int Arity { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property Arity As Integer
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.Arity*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsGenericMethod
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.IsGenericMethod
+  id: IsGenericMethod
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: IsGenericMethod
+  nameWithType: IMethodSymbol.IsGenericMethod
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsGenericMethod
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool IsGenericMethod { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsGenericMethod As Boolean
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.IsGenericMethod*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsExtensionMethod
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.IsExtensionMethod
+  id: IsExtensionMethod
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: IsExtensionMethod
+  nameWithType: IMethodSymbol.IsExtensionMethod
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsExtensionMethod
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool IsExtensionMethod { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsExtensionMethod As Boolean
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.IsExtensionMethod*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsAsync
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.IsAsync
+  id: IsAsync
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: IsAsync
+  nameWithType: IMethodSymbol.IsAsync
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsAsync
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool IsAsync { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsAsync As Boolean
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.IsAsync*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsVararg
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.IsVararg
+  id: IsVararg
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: IsVararg
+  nameWithType: IMethodSymbol.IsVararg
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsVararg
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool IsVararg { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsVararg As Boolean
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.IsVararg*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsCheckedBuiltin
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.IsCheckedBuiltin
+  id: IsCheckedBuiltin
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: IsCheckedBuiltin
+  nameWithType: IMethodSymbol.IsCheckedBuiltin
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsCheckedBuiltin
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool IsCheckedBuiltin { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsCheckedBuiltin As Boolean
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.IsCheckedBuiltin*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.HidesBaseMethodsByName
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.HidesBaseMethodsByName
+  id: HidesBaseMethodsByName
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: HidesBaseMethodsByName
+  nameWithType: IMethodSymbol.HidesBaseMethodsByName
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.HidesBaseMethodsByName
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool HidesBaseMethodsByName { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property HidesBaseMethodsByName As Boolean
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.HidesBaseMethodsByName*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsVoid
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.ReturnsVoid
+  id: ReturnsVoid
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: ReturnsVoid
+  nameWithType: IMethodSymbol.ReturnsVoid
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsVoid
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool ReturnsVoid { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property ReturnsVoid As Boolean
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsVoid*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRef
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRef
+  id: ReturnsByRef
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: ReturnsByRef
+  nameWithType: IMethodSymbol.ReturnsByRef
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRef
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool ReturnsByRef { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property ReturnsByRef As Boolean
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRef*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRefReadonly
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRefReadonly
+  id: ReturnsByRefReadonly
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: ReturnsByRefReadonly
+  nameWithType: IMethodSymbol.ReturnsByRefReadonly
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRefReadonly
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool ReturnsByRefReadonly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property ReturnsByRefReadonly As Boolean
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRefReadonly*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.RefKind
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.RefKind
+  id: RefKind
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: RefKind
+  nameWithType: IMethodSymbol.RefKind
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.RefKind
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: RefKind RefKind { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.RefKind
+    content.vb: ReadOnly Property RefKind As RefKind
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.RefKind*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReturnType
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.ReturnType
+  id: ReturnType
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: ReturnType
+  nameWithType: IMethodSymbol.ReturnType
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReturnType
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ITypeSymbol ReturnType { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.ITypeSymbol
+    content.vb: ReadOnly Property ReturnType As ITypeSymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.ReturnType*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReturnNullableAnnotation
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.ReturnNullableAnnotation
+  id: ReturnNullableAnnotation
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: ReturnNullableAnnotation
+  nameWithType: IMethodSymbol.ReturnNullableAnnotation
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReturnNullableAnnotation
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: NullableAnnotation ReturnNullableAnnotation { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.NullableAnnotation
+    content.vb: ReadOnly Property ReturnNullableAnnotation As NullableAnnotation
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.ReturnNullableAnnotation*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.TypeArguments
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.TypeArguments
+  id: TypeArguments
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: TypeArguments
+  nameWithType: IMethodSymbol.TypeArguments
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.TypeArguments
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<ITypeSymbol> TypeArguments { get; }
+    parameters: []
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
+    content.vb: ReadOnly Property TypeArguments As ImmutableArray(Of ITypeSymbol)
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.TypeArguments*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.TypeArgumentNullableAnnotations
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.TypeArgumentNullableAnnotations
+  id: TypeArgumentNullableAnnotations
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: TypeArgumentNullableAnnotations
+  nameWithType: IMethodSymbol.TypeArgumentNullableAnnotations
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.TypeArgumentNullableAnnotations
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<NullableAnnotation> TypeArgumentNullableAnnotations { get; }
+    parameters: []
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.NullableAnnotation}
+    content.vb: ReadOnly Property TypeArgumentNullableAnnotations As ImmutableArray(Of NullableAnnotation)
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.TypeArgumentNullableAnnotations*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.TypeParameters
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.TypeParameters
+  id: TypeParameters
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: TypeParameters
+  nameWithType: IMethodSymbol.TypeParameters
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.TypeParameters
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<ITypeParameterSymbol> TypeParameters { get; }
+    parameters: []
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
+    content.vb: ReadOnly Property TypeParameters As ImmutableArray(Of ITypeParameterSymbol)
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.TypeParameters*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.Parameters
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.Parameters
+  id: Parameters
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: Parameters
+  nameWithType: IMethodSymbol.Parameters
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.Parameters
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<IParameterSymbol> Parameters { get; }
+    parameters: []
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
+    content.vb: ReadOnly Property Parameters As ImmutableArray(Of IParameterSymbol)
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.Parameters*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ConstructedFrom
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.ConstructedFrom
+  id: ConstructedFrom
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: ConstructedFrom
+  nameWithType: IMethodSymbol.ConstructedFrom
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ConstructedFrom
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: IMethodSymbol ConstructedFrom { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.IMethodSymbol
+    content.vb: ReadOnly Property ConstructedFrom As IMethodSymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.ConstructedFrom*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsReadOnly
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.IsReadOnly
+  id: IsReadOnly
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: IsReadOnly
+  nameWithType: IMethodSymbol.IsReadOnly
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsReadOnly
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool IsReadOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsReadOnly As Boolean
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.IsReadOnly*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsInitOnly
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.IsInitOnly
+  id: IsInitOnly
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: IsInitOnly
+  nameWithType: IMethodSymbol.IsInitOnly
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsInitOnly
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool IsInitOnly { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsInitOnly As Boolean
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.IsInitOnly*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.OriginalDefinition
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.OriginalDefinition
+  id: OriginalDefinition
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: OriginalDefinition
+  nameWithType: IMethodSymbol.OriginalDefinition
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.OriginalDefinition
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: IMethodSymbol OriginalDefinition { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.IMethodSymbol
+    content.vb: ReadOnly Property OriginalDefinition As IMethodSymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.OriginalDefinition*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.OverriddenMethod
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.OverriddenMethod
+  id: OverriddenMethod
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: OverriddenMethod
+  nameWithType: IMethodSymbol.OverriddenMethod
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.OverriddenMethod
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: IMethodSymbol? OverriddenMethod { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.IMethodSymbol
+    content.vb: ReadOnly Property OverriddenMethod As IMethodSymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.OverriddenMethod*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReceiverType
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.ReceiverType
+  id: ReceiverType
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: ReceiverType
+  nameWithType: IMethodSymbol.ReceiverType
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReceiverType
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ITypeSymbol? ReceiverType { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.ITypeSymbol
+    content.vb: ReadOnly Property ReceiverType As ITypeSymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.ReceiverType*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReceiverNullableAnnotation
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.ReceiverNullableAnnotation
+  id: ReceiverNullableAnnotation
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: ReceiverNullableAnnotation
+  nameWithType: IMethodSymbol.ReceiverNullableAnnotation
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReceiverNullableAnnotation
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: NullableAnnotation ReceiverNullableAnnotation { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.NullableAnnotation
+    content.vb: ReadOnly Property ReceiverNullableAnnotation As NullableAnnotation
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.ReceiverNullableAnnotation*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReducedFrom
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.ReducedFrom
+  id: ReducedFrom
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: ReducedFrom
+  nameWithType: IMethodSymbol.ReducedFrom
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReducedFrom
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: IMethodSymbol? ReducedFrom { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.IMethodSymbol
+    content.vb: ReadOnly Property ReducedFrom As IMethodSymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.ReducedFrom*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ExplicitInterfaceImplementations
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.ExplicitInterfaceImplementations
+  id: ExplicitInterfaceImplementations
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: ExplicitInterfaceImplementations
+  nameWithType: IMethodSymbol.ExplicitInterfaceImplementations
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ExplicitInterfaceImplementations
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<IMethodSymbol> ExplicitInterfaceImplementations { get; }
+    parameters: []
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
+    content.vb: ReadOnly Property ExplicitInterfaceImplementations As ImmutableArray(Of IMethodSymbol)
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.ExplicitInterfaceImplementations*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReturnTypeCustomModifiers
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.ReturnTypeCustomModifiers
+  id: ReturnTypeCustomModifiers
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: ReturnTypeCustomModifiers
+  nameWithType: IMethodSymbol.ReturnTypeCustomModifiers
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReturnTypeCustomModifiers
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<CustomModifier> ReturnTypeCustomModifiers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+    content.vb: ReadOnly Property ReturnTypeCustomModifiers As ImmutableArray(Of CustomModifier)
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.ReturnTypeCustomModifiers*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.RefCustomModifiers
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.RefCustomModifiers
+  id: RefCustomModifiers
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: RefCustomModifiers
+  nameWithType: IMethodSymbol.RefCustomModifiers
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.RefCustomModifiers
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<CustomModifier> RefCustomModifiers { get; }
+    parameters: []
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+    content.vb: ReadOnly Property RefCustomModifiers As ImmutableArray(Of CustomModifier)
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.RefCustomModifiers*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.CallingConvention
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.CallingConvention
+  id: CallingConvention
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: CallingConvention
+  nameWithType: IMethodSymbol.CallingConvention
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.CallingConvention
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: SignatureCallingConvention CallingConvention { get; }
+    parameters: []
+    return:
+      type: System.Reflection.Metadata.SignatureCallingConvention
+    content.vb: ReadOnly Property CallingConvention As SignatureCallingConvention
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.CallingConvention*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.UnmanagedCallingConventionTypes
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.UnmanagedCallingConventionTypes
+  id: UnmanagedCallingConventionTypes
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: UnmanagedCallingConventionTypes
+  nameWithType: IMethodSymbol.UnmanagedCallingConventionTypes
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.UnmanagedCallingConventionTypes
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<INamedTypeSymbol> UnmanagedCallingConventionTypes { get; }
+    parameters: []
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+    content.vb: ReadOnly Property UnmanagedCallingConventionTypes As ImmutableArray(Of INamedTypeSymbol)
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.UnmanagedCallingConventionTypes*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.AssociatedSymbol
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.AssociatedSymbol
+  id: AssociatedSymbol
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: AssociatedSymbol
+  nameWithType: IMethodSymbol.AssociatedSymbol
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.AssociatedSymbol
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ISymbol? AssociatedSymbol { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.ISymbol
+    content.vb: ReadOnly Property AssociatedSymbol As ISymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.AssociatedSymbol*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.PartialDefinitionPart
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.PartialDefinitionPart
+  id: PartialDefinitionPart
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: PartialDefinitionPart
+  nameWithType: IMethodSymbol.PartialDefinitionPart
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.PartialDefinitionPart
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: IMethodSymbol? PartialDefinitionPart { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.IMethodSymbol
+    content.vb: ReadOnly Property PartialDefinitionPart As IMethodSymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.PartialDefinitionPart*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.PartialImplementationPart
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.PartialImplementationPart
+  id: PartialImplementationPart
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: PartialImplementationPart
+  nameWithType: IMethodSymbol.PartialImplementationPart
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.PartialImplementationPart
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: IMethodSymbol? PartialImplementationPart { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.IMethodSymbol
+    content.vb: ReadOnly Property PartialImplementationPart As IMethodSymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.PartialImplementationPart*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.MethodImplementationFlags
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.MethodImplementationFlags
+  id: MethodImplementationFlags
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: MethodImplementationFlags
+  nameWithType: IMethodSymbol.MethodImplementationFlags
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.MethodImplementationFlags
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: MethodImplAttributes MethodImplementationFlags { get; }
+    parameters: []
+    return:
+      type: System.Reflection.MethodImplAttributes
+    content.vb: ReadOnly Property MethodImplementationFlags As MethodImplAttributes
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.MethodImplementationFlags*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsPartialDefinition
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.IsPartialDefinition
+  id: IsPartialDefinition
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: IsPartialDefinition
+  nameWithType: IMethodSymbol.IsPartialDefinition
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsPartialDefinition
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool IsPartialDefinition { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsPartialDefinition As Boolean
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.IsPartialDefinition*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.AssociatedAnonymousDelegate
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.AssociatedAnonymousDelegate
+  id: AssociatedAnonymousDelegate
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: AssociatedAnonymousDelegate
+  nameWithType: IMethodSymbol.AssociatedAnonymousDelegate
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.AssociatedAnonymousDelegate
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: INamedTypeSymbol? AssociatedAnonymousDelegate { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.INamedTypeSymbol
+    content.vb: ReadOnly Property AssociatedAnonymousDelegate As INamedTypeSymbol
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.AssociatedAnonymousDelegate*
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsConditional
+  commentId: P:Microsoft.CodeAnalysis.IMethodSymbol.IsConditional
+  id: IsConditional
+  parent: Microsoft.CodeAnalysis.IMethodSymbol
+  langs:
+  - csharp
+  - vb
+  name: IsConditional
+  nameWithType: IMethodSymbol.IsConditional
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsConditional
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool IsConditional { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsConditional As Boolean
+  overload: Microsoft.CodeAnalysis.IMethodSymbol.IsConditional*
+references:
+- uid: Microsoft.CodeAnalysis
+  commentId: N:Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis
+  nameWithType: Microsoft.CodeAnalysis
+  fullName: Microsoft.CodeAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+- uid: Microsoft.CodeAnalysis.ISymbol.GetAttributes
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.GetAttributes
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetAttributes
+  name: GetAttributes()
+  nameWithType: ISymbol.GetAttributes()
+  fullName: Microsoft.CodeAnalysis.ISymbol.GetAttributes()
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.GetAttributes
+    name: GetAttributes
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetAttributes
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.GetAttributes
+    name: GetAttributes
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetAttributes
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept_Microsoft_CodeAnalysis_SymbolVisitor_
+  name: Accept(SymbolVisitor)
+  nameWithType: ISymbol.Accept(SymbolVisitor)
+  fullName: Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept_Microsoft_CodeAnalysis_SymbolVisitor_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept_Microsoft_CodeAnalysis_SymbolVisitor_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{{TResult}})
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+  parent: Microsoft.CodeAnalysis.ISymbol
+  definition: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__1_Microsoft_CodeAnalysis_SymbolVisitor___0__
+  name: Accept<TResult>(SymbolVisitor<TResult>)
+  nameWithType: ISymbol.Accept<TResult>(SymbolVisitor<TResult>)
+  fullName: Microsoft.CodeAnalysis.ISymbol.Accept<TResult>(Microsoft.CodeAnalysis.SymbolVisitor<TResult>)
+  nameWithType.vb: ISymbol.Accept(Of TResult)(SymbolVisitor(Of TResult))
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.Accept(Of TResult)(Microsoft.CodeAnalysis.SymbolVisitor(Of TResult))
+  name.vb: Accept(Of TResult)(SymbolVisitor(Of TResult))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__1_Microsoft_CodeAnalysis_SymbolVisitor___0__
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`1
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__1_Microsoft_CodeAnalysis_SymbolVisitor___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`1
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{{TArgument},{TResult}},{TArgument})
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  definition: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__2_Microsoft_CodeAnalysis_SymbolVisitor___0___1____0_
+  name: Accept<TArgument, TResult>(SymbolVisitor<TArgument, TResult>, TArgument)
+  nameWithType: ISymbol.Accept<TArgument, TResult>(SymbolVisitor<TArgument, TResult>, TArgument)
+  fullName: Microsoft.CodeAnalysis.ISymbol.Accept<TArgument, TResult>(Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>, TArgument)
+  nameWithType.vb: ISymbol.Accept(Of TArgument, TResult)(SymbolVisitor(Of TArgument, TResult), TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.Accept(Of TArgument, TResult)(Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult), TArgument)
+  name.vb: Accept(Of TArgument, TResult)(SymbolVisitor(Of TArgument, TResult), TArgument)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__2_Microsoft_CodeAnalysis_SymbolVisitor___0___1____0_
+  - name: <
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`2
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-2.html
+  - name: <
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TArgument
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__2_Microsoft_CodeAnalysis_SymbolVisitor___0___1____0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`2
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TArgument
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetDocumentationCommentId
+  name: GetDocumentationCommentId()
+  nameWithType: ISymbol.GetDocumentationCommentId()
+  fullName: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId()
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
+    name: GetDocumentationCommentId
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetDocumentationCommentId
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
+    name: GetDocumentationCommentId
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetDocumentationCommentId
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo,System.Boolean,System.Threading.CancellationToken)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetDocumentationCommentXml_System_Globalization_CultureInfo_System_Boolean_System_Threading_CancellationToken_
+  name: GetDocumentationCommentXml(CultureInfo, bool, CancellationToken)
+  nameWithType: ISymbol.GetDocumentationCommentXml(CultureInfo, bool, CancellationToken)
+  fullName: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo, bool, System.Threading.CancellationToken)
+  nameWithType.vb: ISymbol.GetDocumentationCommentXml(CultureInfo, Boolean, CancellationToken)
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo, Boolean, System.Threading.CancellationToken)
+  name.vb: GetDocumentationCommentXml(CultureInfo, Boolean, CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo,System.Boolean,System.Threading.CancellationToken)
+    name: GetDocumentationCommentXml
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetDocumentationCommentXml_System_Globalization_CultureInfo_System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo,System.Boolean,System.Threading.CancellationToken)
+    name: GetDocumentationCommentXml
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetDocumentationCommentXml_System_Globalization_CultureInfo_System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToDisplayString_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  name: ToDisplayString(SymbolDisplayFormat)
+  nameWithType: ISymbol.ToDisplayString(SymbolDisplayFormat)
+  fullName: Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToDisplayString
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToDisplayString_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToDisplayString
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToDisplayString_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToDisplayParts_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  name: ToDisplayParts(SymbolDisplayFormat)
+  nameWithType: ISymbol.ToDisplayParts(SymbolDisplayFormat)
+  fullName: Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToDisplayParts
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToDisplayParts_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToDisplayParts
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToDisplayParts_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToMinimalDisplayString_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  name: ToMinimalDisplayString(SemanticModel, int, SymbolDisplayFormat)
+  nameWithType: ISymbol.ToMinimalDisplayString(SemanticModel, int, SymbolDisplayFormat)
+  fullName: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel, int, Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  nameWithType.vb: ISymbol.ToMinimalDisplayString(SemanticModel, Integer, SymbolDisplayFormat)
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel, Integer, Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  name.vb: ToMinimalDisplayString(SemanticModel, Integer, SymbolDisplayFormat)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToMinimalDisplayString
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToMinimalDisplayString_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SemanticModel
+    name: SemanticModel
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SemanticModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToMinimalDisplayString
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToMinimalDisplayString_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SemanticModel
+    name: SemanticModel
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SemanticModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToMinimalDisplayParts_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  name: ToMinimalDisplayParts(SemanticModel, int, SymbolDisplayFormat)
+  nameWithType: ISymbol.ToMinimalDisplayParts(SemanticModel, int, SymbolDisplayFormat)
+  fullName: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel, int, Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  nameWithType.vb: ISymbol.ToMinimalDisplayParts(SemanticModel, Integer, SymbolDisplayFormat)
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel, Integer, Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  name.vb: ToMinimalDisplayParts(SemanticModel, Integer, SymbolDisplayFormat)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToMinimalDisplayParts
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToMinimalDisplayParts_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SemanticModel
+    name: SemanticModel
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SemanticModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToMinimalDisplayParts
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToMinimalDisplayParts_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SemanticModel
+    name: SemanticModel
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SemanticModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.Equals(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SymbolEqualityComparer)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.Equals(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SymbolEqualityComparer)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Equals_Microsoft_CodeAnalysis_ISymbol_Microsoft_CodeAnalysis_SymbolEqualityComparer_
+  name: Equals(ISymbol, SymbolEqualityComparer)
+  nameWithType: ISymbol.Equals(ISymbol, SymbolEqualityComparer)
+  fullName: Microsoft.CodeAnalysis.ISymbol.Equals(Microsoft.CodeAnalysis.ISymbol, Microsoft.CodeAnalysis.SymbolEqualityComparer)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Equals(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SymbolEqualityComparer)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Equals_Microsoft_CodeAnalysis_ISymbol_Microsoft_CodeAnalysis_SymbolEqualityComparer_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.SymbolEqualityComparer
+    name: SymbolEqualityComparer
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolEqualityComparer.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Equals(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SymbolEqualityComparer)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Equals_Microsoft_CodeAnalysis_ISymbol_Microsoft_CodeAnalysis_SymbolEqualityComparer_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.SymbolEqualityComparer
+    name: SymbolEqualityComparer
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolEqualityComparer.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.Kind
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.Kind
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Kind
+  name: Kind
+  nameWithType: ISymbol.Kind
+  fullName: Microsoft.CodeAnalysis.ISymbol.Kind
+- uid: Microsoft.CodeAnalysis.ISymbol.Language
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.Language
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Language
+  name: Language
+  nameWithType: ISymbol.Language
+  fullName: Microsoft.CodeAnalysis.ISymbol.Language
+- uid: Microsoft.CodeAnalysis.ISymbol.Name
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.Name
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Name
+  name: Name
+  nameWithType: ISymbol.Name
+  fullName: Microsoft.CodeAnalysis.ISymbol.Name
+- uid: Microsoft.CodeAnalysis.ISymbol.MetadataName
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.MetadataName
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_MetadataName
+  name: MetadataName
+  nameWithType: ISymbol.MetadataName
+  fullName: Microsoft.CodeAnalysis.ISymbol.MetadataName
+- uid: Microsoft.CodeAnalysis.ISymbol.MetadataToken
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.MetadataToken
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_MetadataToken
+  name: MetadataToken
+  nameWithType: ISymbol.MetadataToken
+  fullName: Microsoft.CodeAnalysis.ISymbol.MetadataToken
+- uid: Microsoft.CodeAnalysis.ISymbol.ContainingSymbol
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.ContainingSymbol
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ContainingSymbol
+  name: ContainingSymbol
+  nameWithType: ISymbol.ContainingSymbol
+  fullName: Microsoft.CodeAnalysis.ISymbol.ContainingSymbol
+- uid: Microsoft.CodeAnalysis.ISymbol.ContainingAssembly
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.ContainingAssembly
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ContainingAssembly
+  name: ContainingAssembly
+  nameWithType: ISymbol.ContainingAssembly
+  fullName: Microsoft.CodeAnalysis.ISymbol.ContainingAssembly
+- uid: Microsoft.CodeAnalysis.ISymbol.ContainingModule
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.ContainingModule
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ContainingModule
+  name: ContainingModule
+  nameWithType: ISymbol.ContainingModule
+  fullName: Microsoft.CodeAnalysis.ISymbol.ContainingModule
+- uid: Microsoft.CodeAnalysis.ISymbol.ContainingType
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.ContainingType
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ContainingType
+  name: ContainingType
+  nameWithType: ISymbol.ContainingType
+  fullName: Microsoft.CodeAnalysis.ISymbol.ContainingType
+- uid: Microsoft.CodeAnalysis.ISymbol.ContainingNamespace
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.ContainingNamespace
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ContainingNamespace
+  name: ContainingNamespace
+  nameWithType: ISymbol.ContainingNamespace
+  fullName: Microsoft.CodeAnalysis.ISymbol.ContainingNamespace
+- uid: Microsoft.CodeAnalysis.ISymbol.IsDefinition
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsDefinition
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsDefinition
+  name: IsDefinition
+  nameWithType: ISymbol.IsDefinition
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsDefinition
+- uid: Microsoft.CodeAnalysis.ISymbol.IsStatic
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsStatic
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsStatic
+  name: IsStatic
+  nameWithType: ISymbol.IsStatic
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsStatic
+- uid: Microsoft.CodeAnalysis.ISymbol.IsVirtual
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsVirtual
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsVirtual
+  name: IsVirtual
+  nameWithType: ISymbol.IsVirtual
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsVirtual
+- uid: Microsoft.CodeAnalysis.ISymbol.IsOverride
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsOverride
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsOverride
+  name: IsOverride
+  nameWithType: ISymbol.IsOverride
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsOverride
+- uid: Microsoft.CodeAnalysis.ISymbol.IsAbstract
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsAbstract
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsAbstract
+  name: IsAbstract
+  nameWithType: ISymbol.IsAbstract
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsAbstract
+- uid: Microsoft.CodeAnalysis.ISymbol.IsSealed
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsSealed
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsSealed
+  name: IsSealed
+  nameWithType: ISymbol.IsSealed
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsSealed
+- uid: Microsoft.CodeAnalysis.ISymbol.IsExtern
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsExtern
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsExtern
+  name: IsExtern
+  nameWithType: ISymbol.IsExtern
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsExtern
+- uid: Microsoft.CodeAnalysis.ISymbol.IsImplicitlyDeclared
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsImplicitlyDeclared
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsImplicitlyDeclared
+  name: IsImplicitlyDeclared
+  nameWithType: ISymbol.IsImplicitlyDeclared
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsImplicitlyDeclared
+- uid: Microsoft.CodeAnalysis.ISymbol.CanBeReferencedByName
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.CanBeReferencedByName
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_CanBeReferencedByName
+  name: CanBeReferencedByName
+  nameWithType: ISymbol.CanBeReferencedByName
+  fullName: Microsoft.CodeAnalysis.ISymbol.CanBeReferencedByName
+- uid: Microsoft.CodeAnalysis.ISymbol.Locations
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.Locations
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Locations
+  name: Locations
+  nameWithType: ISymbol.Locations
+  fullName: Microsoft.CodeAnalysis.ISymbol.Locations
+- uid: Microsoft.CodeAnalysis.ISymbol.DeclaringSyntaxReferences
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.DeclaringSyntaxReferences
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_DeclaringSyntaxReferences
+  name: DeclaringSyntaxReferences
+  nameWithType: ISymbol.DeclaringSyntaxReferences
+  fullName: Microsoft.CodeAnalysis.ISymbol.DeclaringSyntaxReferences
+- uid: Microsoft.CodeAnalysis.ISymbol.DeclaredAccessibility
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.DeclaredAccessibility
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_DeclaredAccessibility
+  name: DeclaredAccessibility
+  nameWithType: ISymbol.DeclaredAccessibility
+  fullName: Microsoft.CodeAnalysis.ISymbol.DeclaredAccessibility
+- uid: Microsoft.CodeAnalysis.ISymbol.HasUnsupportedMetadata
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.HasUnsupportedMetadata
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_HasUnsupportedMetadata
+  name: HasUnsupportedMetadata
+  nameWithType: ISymbol.HasUnsupportedMetadata
+  fullName: Microsoft.CodeAnalysis.ISymbol.HasUnsupportedMetadata
+- uid: System.IEquatable{Microsoft.CodeAnalysis.ISymbol}.Equals(Microsoft.CodeAnalysis.ISymbol)
+  commentId: M:System.IEquatable{Microsoft.CodeAnalysis.ISymbol}.Equals(Microsoft.CodeAnalysis.ISymbol)
+  parent: System.IEquatable{Microsoft.CodeAnalysis.ISymbol}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ISymbol)
+  nameWithType: IEquatable<ISymbol>.Equals(ISymbol)
+  fullName: System.IEquatable<Microsoft.CodeAnalysis.ISymbol>.Equals(Microsoft.CodeAnalysis.ISymbol)
+  nameWithType.vb: IEquatable(Of ISymbol).Equals(ISymbol)
+  fullName.vb: System.IEquatable(Of Microsoft.CodeAnalysis.ISymbol).Equals(Microsoft.CodeAnalysis.ISymbol)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.CodeAnalysis.ISymbol}.Equals(Microsoft.CodeAnalysis.ISymbol)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.CodeAnalysis.ISymbol}.Equals(Microsoft.CodeAnalysis.ISymbol)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.Microsoft.CodeAnalysis.ISymbolExtensions.GetConstructedReducedFrom
+  commentId: M:Microsoft.CodeAnalysis.ISymbolExtensions.GetConstructedReducedFrom(Microsoft.CodeAnalysis.IMethodSymbol)
+  parent: Microsoft.CodeAnalysis.ISymbolExtensions
+  definition: Microsoft.CodeAnalysis.ISymbolExtensions.GetConstructedReducedFrom(Microsoft.CodeAnalysis.IMethodSymbol)
+  href: Microsoft.CodeAnalysis.ISymbolExtensions.html#Microsoft_CodeAnalysis_ISymbolExtensions_GetConstructedReducedFrom_Microsoft_CodeAnalysis_IMethodSymbol_
+  name: GetConstructedReducedFrom(IMethodSymbol)
+  nameWithType: ISymbolExtensions.GetConstructedReducedFrom(IMethodSymbol)
+  fullName: Microsoft.CodeAnalysis.ISymbolExtensions.GetConstructedReducedFrom(Microsoft.CodeAnalysis.IMethodSymbol)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbolExtensions.GetConstructedReducedFrom(Microsoft.CodeAnalysis.IMethodSymbol)
+    name: GetConstructedReducedFrom
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbolExtensions.html#Microsoft_CodeAnalysis_ISymbolExtensions_GetConstructedReducedFrom_Microsoft_CodeAnalysis_IMethodSymbol_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.IMethodSymbol
+    name: IMethodSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IMethodSymbol.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbolExtensions.GetConstructedReducedFrom(Microsoft.CodeAnalysis.IMethodSymbol)
+    name: GetConstructedReducedFrom
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbolExtensions.html#Microsoft_CodeAnalysis_ISymbolExtensions_GetConstructedReducedFrom_Microsoft_CodeAnalysis_IMethodSymbol_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.IMethodSymbol
+    name: IMethodSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IMethodSymbol.html
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol
+  commentId: T:Microsoft.CodeAnalysis.ISymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html
+  name: ISymbol
+  nameWithType: ISymbol
+  fullName: Microsoft.CodeAnalysis.ISymbol
+- uid: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__1_Microsoft_CodeAnalysis_SymbolVisitor___0__
+  name: Accept<TResult>(SymbolVisitor<TResult>)
+  nameWithType: ISymbol.Accept<TResult>(SymbolVisitor<TResult>)
+  fullName: Microsoft.CodeAnalysis.ISymbol.Accept<TResult>(Microsoft.CodeAnalysis.SymbolVisitor<TResult>)
+  nameWithType.vb: ISymbol.Accept(Of TResult)(SymbolVisitor(Of TResult))
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.Accept(Of TResult)(Microsoft.CodeAnalysis.SymbolVisitor(Of TResult))
+  name.vb: Accept(Of TResult)(SymbolVisitor(Of TResult))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__1_Microsoft_CodeAnalysis_SymbolVisitor___0__
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`1
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__1_Microsoft_CodeAnalysis_SymbolVisitor___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`1
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__2_Microsoft_CodeAnalysis_SymbolVisitor___0___1____0_
+  name: Accept<TArgument, TResult>(SymbolVisitor<TArgument, TResult>, TArgument)
+  nameWithType: ISymbol.Accept<TArgument, TResult>(SymbolVisitor<TArgument, TResult>, TArgument)
+  fullName: Microsoft.CodeAnalysis.ISymbol.Accept<TArgument, TResult>(Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>, TArgument)
+  nameWithType.vb: ISymbol.Accept(Of TArgument, TResult)(SymbolVisitor(Of TArgument, TResult), TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.Accept(Of TArgument, TResult)(Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult), TArgument)
+  name.vb: Accept(Of TArgument, TResult)(SymbolVisitor(Of TArgument, TResult), TArgument)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__2_Microsoft_CodeAnalysis_SymbolVisitor___0___1____0_
+  - name: <
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`2
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-2.html
+  - name: <
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TArgument
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__2_Microsoft_CodeAnalysis_SymbolVisitor___0___1____0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`2
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TArgument
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Microsoft.CodeAnalysis.ISymbol}
+  commentId: T:System.IEquatable{Microsoft.CodeAnalysis.ISymbol}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ISymbol>
+  nameWithType: IEquatable<ISymbol>
+  fullName: System.IEquatable<Microsoft.CodeAnalysis.ISymbol>
+  nameWithType.vb: IEquatable(Of ISymbol)
+  fullName.vb: System.IEquatable(Of Microsoft.CodeAnalysis.ISymbol)
+  name.vb: IEquatable(Of ISymbol)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbolExtensions.GetConstructedReducedFrom(Microsoft.CodeAnalysis.IMethodSymbol)
+  commentId: M:Microsoft.CodeAnalysis.ISymbolExtensions.GetConstructedReducedFrom(Microsoft.CodeAnalysis.IMethodSymbol)
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbolExtensions.html#Microsoft_CodeAnalysis_ISymbolExtensions_GetConstructedReducedFrom_Microsoft_CodeAnalysis_IMethodSymbol_
+  name: GetConstructedReducedFrom(IMethodSymbol)
+  nameWithType: ISymbolExtensions.GetConstructedReducedFrom(IMethodSymbol)
+  fullName: Microsoft.CodeAnalysis.ISymbolExtensions.GetConstructedReducedFrom(Microsoft.CodeAnalysis.IMethodSymbol)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbolExtensions.GetConstructedReducedFrom(Microsoft.CodeAnalysis.IMethodSymbol)
+    name: GetConstructedReducedFrom
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbolExtensions.html#Microsoft_CodeAnalysis_ISymbolExtensions_GetConstructedReducedFrom_Microsoft_CodeAnalysis_IMethodSymbol_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.IMethodSymbol
+    name: IMethodSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IMethodSymbol.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbolExtensions.GetConstructedReducedFrom(Microsoft.CodeAnalysis.IMethodSymbol)
+    name: GetConstructedReducedFrom
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbolExtensions.html#Microsoft_CodeAnalysis_ISymbolExtensions_GetConstructedReducedFrom_Microsoft_CodeAnalysis_IMethodSymbol_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.IMethodSymbol
+    name: IMethodSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IMethodSymbol.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbolExtensions
+  commentId: T:Microsoft.CodeAnalysis.ISymbolExtensions
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbolExtensions.html
+  name: ISymbolExtensions
+  nameWithType: ISymbolExtensions
+  fullName: Microsoft.CodeAnalysis.ISymbolExtensions
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.GetTypeInferredDuringReduction*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.GetTypeInferredDuringReduction
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_GetTypeInferredDuringReduction_Microsoft_CodeAnalysis_ITypeParameterSymbol_
+  name: GetTypeInferredDuringReduction
+  nameWithType: IMethodSymbol.GetTypeInferredDuringReduction
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.GetTypeInferredDuringReduction
+- uid: Microsoft.CodeAnalysis.ITypeParameterSymbol
+  commentId: T:Microsoft.CodeAnalysis.ITypeParameterSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ITypeParameterSymbol.html
+  name: ITypeParameterSymbol
+  nameWithType: ITypeParameterSymbol
+  fullName: Microsoft.CodeAnalysis.ITypeParameterSymbol
+- uid: Microsoft.CodeAnalysis.ITypeSymbol
+  commentId: T:Microsoft.CodeAnalysis.ITypeSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ITypeSymbol.html
+  name: ITypeSymbol
+  nameWithType: ITypeSymbol
+  fullName: Microsoft.CodeAnalysis.ITypeSymbol
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReduceExtensionMethod*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.ReduceExtensionMethod
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_ReduceExtensionMethod_Microsoft_CodeAnalysis_ITypeSymbol_
+  name: ReduceExtensionMethod
+  nameWithType: IMethodSymbol.ReduceExtensionMethod
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReduceExtensionMethod
+- uid: Microsoft.CodeAnalysis.IMethodSymbol
+  commentId: T:Microsoft.CodeAnalysis.IMethodSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html
+  name: IMethodSymbol
+  nameWithType: IMethodSymbol
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.GetReturnTypeAttributes*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.GetReturnTypeAttributes
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_GetReturnTypeAttributes
+  name: GetReturnTypeAttributes
+  nameWithType: IMethodSymbol.GetReturnTypeAttributes
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.GetReturnTypeAttributes
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AttributeData}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.AttributeData}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<AttributeData>
+  nameWithType: ImmutableArray<AttributeData>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.AttributeData>
+  nameWithType.vb: ImmutableArray(Of AttributeData)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.AttributeData)
+  name.vb: ImmutableArray(Of AttributeData)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.AttributeData
+    name: AttributeData
+    isExternal: true
+    href: Microsoft.CodeAnalysis.AttributeData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.AttributeData
+    name: AttributeData
+    isExternal: true
+    href: Microsoft.CodeAnalysis.AttributeData.html
+  - name: )
+- uid: System.Collections.Immutable.ImmutableArray`1
+  commentId: T:System.Collections.Immutable.ImmutableArray`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<T>
+  nameWithType: ImmutableArray<T>
+  fullName: System.Collections.Immutable.ImmutableArray<T>
+  nameWithType.vb: ImmutableArray(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T)
+  name.vb: ImmutableArray(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Immutable
+  commentId: N:System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Immutable
+  nameWithType: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.Construct*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.Construct
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_Construct_Microsoft_CodeAnalysis_ITypeSymbol___
+  name: Construct
+  nameWithType: IMethodSymbol.Construct
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.Construct
+- uid: Microsoft.CodeAnalysis.ITypeSymbol[]
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ITypeSymbol.html
+  name: ITypeSymbol[]
+  nameWithType: ITypeSymbol[]
+  fullName: Microsoft.CodeAnalysis.ITypeSymbol[]
+  nameWithType.vb: ITypeSymbol()
+  fullName.vb: Microsoft.CodeAnalysis.ITypeSymbol()
+  name.vb: ITypeSymbol()
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ITypeSymbol
+    name: ITypeSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ITypeSymbol.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ITypeSymbol
+    name: ITypeSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ITypeSymbol.html
+  - name: (
+  - name: )
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeSymbol}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<ITypeSymbol>
+  nameWithType: ImmutableArray<ITypeSymbol>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.ITypeSymbol>
+  nameWithType.vb: ImmutableArray(Of ITypeSymbol)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.ITypeSymbol)
+  name.vb: ImmutableArray(Of ITypeSymbol)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.ITypeSymbol
+    name: ITypeSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ITypeSymbol.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.ITypeSymbol
+    name: ITypeSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ITypeSymbol.html
+  - name: )
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.NullableAnnotation}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.NullableAnnotation}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<NullableAnnotation>
+  nameWithType: ImmutableArray<NullableAnnotation>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.NullableAnnotation>
+  nameWithType.vb: ImmutableArray(Of NullableAnnotation)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.NullableAnnotation)
+  name.vb: ImmutableArray(Of NullableAnnotation)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.NullableAnnotation
+    name: NullableAnnotation
+    isExternal: true
+    href: Microsoft.CodeAnalysis.NullableAnnotation.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.NullableAnnotation
+    name: NullableAnnotation
+    isExternal: true
+    href: Microsoft.CodeAnalysis.NullableAnnotation.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.GetDllImportData*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.GetDllImportData
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_GetDllImportData
+  name: GetDllImportData
+  nameWithType: IMethodSymbol.GetDllImportData
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.GetDllImportData
+- uid: Microsoft.CodeAnalysis.DllImportData
+  commentId: T:Microsoft.CodeAnalysis.DllImportData
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.DllImportData.html
+  name: DllImportData
+  nameWithType: DllImportData
+  fullName: Microsoft.CodeAnalysis.DllImportData
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.MethodKind*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.MethodKind
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_MethodKind
+  name: MethodKind
+  nameWithType: IMethodSymbol.MethodKind
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.MethodKind
+- uid: Microsoft.CodeAnalysis.MethodKind
+  commentId: T:Microsoft.CodeAnalysis.MethodKind
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.MethodKind.html
+  name: MethodKind
+  nameWithType: MethodKind
+  fullName: Microsoft.CodeAnalysis.MethodKind
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.Arity*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.Arity
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_Arity
+  name: Arity
+  nameWithType: IMethodSymbol.Arity
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.Arity
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsGenericMethod*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.IsGenericMethod
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_IsGenericMethod
+  name: IsGenericMethod
+  nameWithType: IMethodSymbol.IsGenericMethod
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsGenericMethod
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsExtensionMethod*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.IsExtensionMethod
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_IsExtensionMethod
+  name: IsExtensionMethod
+  nameWithType: IMethodSymbol.IsExtensionMethod
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsExtensionMethod
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsAsync*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.IsAsync
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_IsAsync
+  name: IsAsync
+  nameWithType: IMethodSymbol.IsAsync
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsAsync
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsVararg*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.IsVararg
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_IsVararg
+  name: IsVararg
+  nameWithType: IMethodSymbol.IsVararg
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsVararg
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsCheckedBuiltin*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.IsCheckedBuiltin
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_IsCheckedBuiltin
+  name: IsCheckedBuiltin
+  nameWithType: IMethodSymbol.IsCheckedBuiltin
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsCheckedBuiltin
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.HidesBaseMethodsByName*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.HidesBaseMethodsByName
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_HidesBaseMethodsByName
+  name: HidesBaseMethodsByName
+  nameWithType: IMethodSymbol.HidesBaseMethodsByName
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.HidesBaseMethodsByName
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsVoid*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.ReturnsVoid
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_ReturnsVoid
+  name: ReturnsVoid
+  nameWithType: IMethodSymbol.ReturnsVoid
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsVoid
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRef*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRef
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_ReturnsByRef
+  name: ReturnsByRef
+  nameWithType: IMethodSymbol.ReturnsByRef
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRef
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRefReadonly*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRefReadonly
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_ReturnsByRefReadonly
+  name: ReturnsByRefReadonly
+  nameWithType: IMethodSymbol.ReturnsByRefReadonly
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReturnsByRefReadonly
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.RefKind*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.RefKind
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_RefKind
+  name: RefKind
+  nameWithType: IMethodSymbol.RefKind
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.RefKind
+- uid: Microsoft.CodeAnalysis.RefKind
+  commentId: T:Microsoft.CodeAnalysis.RefKind
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.RefKind.html
+  name: RefKind
+  nameWithType: RefKind
+  fullName: Microsoft.CodeAnalysis.RefKind
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReturnType*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.ReturnType
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_ReturnType
+  name: ReturnType
+  nameWithType: IMethodSymbol.ReturnType
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReturnType
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReturnNullableAnnotation*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.ReturnNullableAnnotation
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_ReturnNullableAnnotation
+  name: ReturnNullableAnnotation
+  nameWithType: IMethodSymbol.ReturnNullableAnnotation
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReturnNullableAnnotation
+- uid: Microsoft.CodeAnalysis.NullableAnnotation
+  commentId: T:Microsoft.CodeAnalysis.NullableAnnotation
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.NullableAnnotation.html
+  name: NullableAnnotation
+  nameWithType: NullableAnnotation
+  fullName: Microsoft.CodeAnalysis.NullableAnnotation
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.TypeArguments*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.TypeArguments
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_TypeArguments
+  name: TypeArguments
+  nameWithType: IMethodSymbol.TypeArguments
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.TypeArguments
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.TypeArgumentNullableAnnotations*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.TypeArgumentNullableAnnotations
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_TypeArgumentNullableAnnotations
+  name: TypeArgumentNullableAnnotations
+  nameWithType: IMethodSymbol.TypeArgumentNullableAnnotations
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.TypeArgumentNullableAnnotations
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.TypeParameters*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.TypeParameters
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_TypeParameters
+  name: TypeParameters
+  nameWithType: IMethodSymbol.TypeParameters
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.TypeParameters
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ITypeParameterSymbol}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<ITypeParameterSymbol>
+  nameWithType: ImmutableArray<ITypeParameterSymbol>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.ITypeParameterSymbol>
+  nameWithType.vb: ImmutableArray(Of ITypeParameterSymbol)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.ITypeParameterSymbol)
+  name.vb: ImmutableArray(Of ITypeParameterSymbol)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.ITypeParameterSymbol
+    name: ITypeParameterSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ITypeParameterSymbol.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.ITypeParameterSymbol
+    name: ITypeParameterSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ITypeParameterSymbol.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.Parameters*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.Parameters
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_Parameters
+  name: Parameters
+  nameWithType: IMethodSymbol.Parameters
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.Parameters
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IParameterSymbol}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<IParameterSymbol>
+  nameWithType: ImmutableArray<IParameterSymbol>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.IParameterSymbol>
+  nameWithType.vb: ImmutableArray(Of IParameterSymbol)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.IParameterSymbol)
+  name.vb: ImmutableArray(Of IParameterSymbol)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.IParameterSymbol
+    name: IParameterSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IParameterSymbol.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.IParameterSymbol
+    name: IParameterSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IParameterSymbol.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ConstructedFrom*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.ConstructedFrom
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_ConstructedFrom
+  name: ConstructedFrom
+  nameWithType: IMethodSymbol.ConstructedFrom
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ConstructedFrom
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsReadOnly*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.IsReadOnly
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_IsReadOnly
+  name: IsReadOnly
+  nameWithType: IMethodSymbol.IsReadOnly
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsReadOnly
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsInitOnly*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.IsInitOnly
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_IsInitOnly
+  name: IsInitOnly
+  nameWithType: IMethodSymbol.IsInitOnly
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsInitOnly
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.OriginalDefinition*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.OriginalDefinition
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_OriginalDefinition
+  name: OriginalDefinition
+  nameWithType: IMethodSymbol.OriginalDefinition
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.OriginalDefinition
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.OverriddenMethod*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.OverriddenMethod
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_OverriddenMethod
+  name: OverriddenMethod
+  nameWithType: IMethodSymbol.OverriddenMethod
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.OverriddenMethod
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReceiverType*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.ReceiverType
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_ReceiverType
+  name: ReceiverType
+  nameWithType: IMethodSymbol.ReceiverType
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReceiverType
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReceiverNullableAnnotation*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.ReceiverNullableAnnotation
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_ReceiverNullableAnnotation
+  name: ReceiverNullableAnnotation
+  nameWithType: IMethodSymbol.ReceiverNullableAnnotation
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReceiverNullableAnnotation
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReducedFrom*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.ReducedFrom
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_ReducedFrom
+  name: ReducedFrom
+  nameWithType: IMethodSymbol.ReducedFrom
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReducedFrom
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ExplicitInterfaceImplementations*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.ExplicitInterfaceImplementations
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_ExplicitInterfaceImplementations
+  name: ExplicitInterfaceImplementations
+  nameWithType: IMethodSymbol.ExplicitInterfaceImplementations
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ExplicitInterfaceImplementations
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.IMethodSymbol}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<IMethodSymbol>
+  nameWithType: ImmutableArray<IMethodSymbol>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.IMethodSymbol>
+  nameWithType.vb: ImmutableArray(Of IMethodSymbol)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.IMethodSymbol)
+  name.vb: ImmutableArray(Of IMethodSymbol)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.IMethodSymbol
+    name: IMethodSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IMethodSymbol.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.IMethodSymbol
+    name: IMethodSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IMethodSymbol.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.ReturnTypeCustomModifiers*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.ReturnTypeCustomModifiers
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_ReturnTypeCustomModifiers
+  name: ReturnTypeCustomModifiers
+  nameWithType: IMethodSymbol.ReturnTypeCustomModifiers
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.ReturnTypeCustomModifiers
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.CustomModifier}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<CustomModifier>
+  nameWithType: ImmutableArray<CustomModifier>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.CustomModifier>
+  nameWithType.vb: ImmutableArray(Of CustomModifier)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.CustomModifier)
+  name.vb: ImmutableArray(Of CustomModifier)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.CustomModifier
+    name: CustomModifier
+    isExternal: true
+    href: Microsoft.CodeAnalysis.CustomModifier.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.CustomModifier
+    name: CustomModifier
+    isExternal: true
+    href: Microsoft.CodeAnalysis.CustomModifier.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.RefCustomModifiers*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.RefCustomModifiers
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_RefCustomModifiers
+  name: RefCustomModifiers
+  nameWithType: IMethodSymbol.RefCustomModifiers
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.RefCustomModifiers
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.CallingConvention*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.CallingConvention
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_CallingConvention
+  name: CallingConvention
+  nameWithType: IMethodSymbol.CallingConvention
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.CallingConvention
+- uid: System.Reflection.Metadata.SignatureCallingConvention
+  commentId: T:System.Reflection.Metadata.SignatureCallingConvention
+  parent: System.Reflection.Metadata
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.metadata.signaturecallingconvention
+  name: SignatureCallingConvention
+  nameWithType: SignatureCallingConvention
+  fullName: System.Reflection.Metadata.SignatureCallingConvention
+- uid: System.Reflection.Metadata
+  commentId: N:System.Reflection.Metadata
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection.Metadata
+  nameWithType: System.Reflection.Metadata
+  fullName: System.Reflection.Metadata
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  - name: .
+  - uid: System.Reflection.Metadata
+    name: Metadata
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.metadata
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  - name: .
+  - uid: System.Reflection.Metadata
+    name: Metadata
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.metadata
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.UnmanagedCallingConventionTypes*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.UnmanagedCallingConventionTypes
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_UnmanagedCallingConventionTypes
+  name: UnmanagedCallingConventionTypes
+  nameWithType: IMethodSymbol.UnmanagedCallingConventionTypes
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.UnmanagedCallingConventionTypes
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<INamedTypeSymbol>
+  nameWithType: ImmutableArray<INamedTypeSymbol>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.INamedTypeSymbol>
+  nameWithType.vb: ImmutableArray(Of INamedTypeSymbol)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.INamedTypeSymbol)
+  name.vb: ImmutableArray(Of INamedTypeSymbol)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.INamedTypeSymbol
+    name: INamedTypeSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.INamedTypeSymbol.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.INamedTypeSymbol
+    name: INamedTypeSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.INamedTypeSymbol.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.AssociatedSymbol*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.AssociatedSymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_AssociatedSymbol
+  name: AssociatedSymbol
+  nameWithType: IMethodSymbol.AssociatedSymbol
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.AssociatedSymbol
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.PartialDefinitionPart*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.PartialDefinitionPart
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_PartialDefinitionPart
+  name: PartialDefinitionPart
+  nameWithType: IMethodSymbol.PartialDefinitionPart
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.PartialDefinitionPart
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.PartialImplementationPart*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.PartialImplementationPart
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_PartialImplementationPart
+  name: PartialImplementationPart
+  nameWithType: IMethodSymbol.PartialImplementationPart
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.PartialImplementationPart
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.MethodImplementationFlags*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.MethodImplementationFlags
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_MethodImplementationFlags
+  name: MethodImplementationFlags
+  nameWithType: IMethodSymbol.MethodImplementationFlags
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.MethodImplementationFlags
+- uid: System.Reflection.MethodImplAttributes
+  commentId: T:System.Reflection.MethodImplAttributes
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.methodimplattributes
+  name: MethodImplAttributes
+  nameWithType: MethodImplAttributes
+  fullName: System.Reflection.MethodImplAttributes
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsPartialDefinition*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.IsPartialDefinition
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_IsPartialDefinition
+  name: IsPartialDefinition
+  nameWithType: IMethodSymbol.IsPartialDefinition
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsPartialDefinition
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.AssociatedAnonymousDelegate*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.AssociatedAnonymousDelegate
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_AssociatedAnonymousDelegate
+  name: AssociatedAnonymousDelegate
+  nameWithType: IMethodSymbol.AssociatedAnonymousDelegate
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.AssociatedAnonymousDelegate
+- uid: Microsoft.CodeAnalysis.INamedTypeSymbol
+  commentId: T:Microsoft.CodeAnalysis.INamedTypeSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.INamedTypeSymbol.html
+  name: INamedTypeSymbol
+  nameWithType: INamedTypeSymbol
+  fullName: Microsoft.CodeAnalysis.INamedTypeSymbol
+- uid: Microsoft.CodeAnalysis.IMethodSymbol.IsConditional*
+  commentId: Overload:Microsoft.CodeAnalysis.IMethodSymbol.IsConditional
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html#Microsoft_CodeAnalysis_IMethodSymbol_IsConditional
+  name: IsConditional
+  nameWithType: IMethodSymbol.IsConditional
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol.IsConditional

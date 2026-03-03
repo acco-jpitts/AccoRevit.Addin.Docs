@@ -1,0 +1,706 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions
+  id: StringExtensions
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions
+  children:
+  - Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.EncodeFrameworkNamesToXml(System.String[])
+  - Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.Join``1(System.String,System.Collections.Generic.IEnumerator{``0})
+  - Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToFrameworkNames(System.String)
+  - Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256(System.String)
+  - Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256String(System.String)
+  langs:
+  - csharp
+  - vb
+  name: StringExtensions
+  nameWithType: StringExtensions
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Extensions
+  syntax:
+    content: public static class StringExtensions
+    content.vb: Public Module StringExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.Join``1(System.String,System.Collections.Generic.IEnumerator{``0})
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.Join``1(System.String,System.Collections.Generic.IEnumerator{``0})
+  id: Join``1(System.String,System.Collections.Generic.IEnumerator{``0})
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Join<T>(string, IEnumerator<T>)
+  nameWithType: StringExtensions.Join<T>(string, IEnumerator<T>)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.Join<T>(string, System.Collections.Generic.IEnumerator<T>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Extensions
+  syntax:
+    content: public static string Join<T>(string separator, IEnumerator<T> enumerator)
+    parameters:
+    - id: separator
+      type: System.String
+    - id: enumerator
+      type: System.Collections.Generic.IEnumerator{{T}}
+    typeParameters:
+    - id: T
+    return:
+      type: System.String
+    content.vb: Public Shared Function Join(Of T)(separator As String, enumerator As IEnumerator(Of T)) As String
+  overload: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.Join*
+  nameWithType.vb: StringExtensions.Join(Of T)(String, IEnumerator(Of T))
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.Join(Of T)(String, System.Collections.Generic.IEnumerator(Of T))
+  name.vb: Join(Of T)(String, IEnumerator(Of T))
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToFrameworkNames(System.String)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToFrameworkNames(System.String)
+  id: ToFrameworkNames(System.String)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToFrameworkNames(string)
+  nameWithType: StringExtensions.ToFrameworkNames(string)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToFrameworkNames(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Extensions
+  syntax:
+    content: public static IEnumerable<string> ToFrameworkNames(this string encodedFrameworkNames)
+    parameters:
+    - id: encodedFrameworkNames
+      type: System.String
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Shared Function ToFrameworkNames(encodedFrameworkNames As String) As IEnumerable(Of String)
+  overload: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToFrameworkNames*
+  nameWithType.vb: StringExtensions.ToFrameworkNames(String)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToFrameworkNames(String)
+  name.vb: ToFrameworkNames(String)
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.EncodeFrameworkNamesToXml(System.String[])
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.EncodeFrameworkNamesToXml(System.String[])
+  id: EncodeFrameworkNamesToXml(System.String[])
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: EncodeFrameworkNamesToXml(string[])
+  nameWithType: StringExtensions.EncodeFrameworkNamesToXml(string[])
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.EncodeFrameworkNamesToXml(string[])
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Extensions
+  syntax:
+    content: public static string EncodeFrameworkNamesToXml(string[] tfms)
+    parameters:
+    - id: tfms
+      type: System.String[]
+    return:
+      type: System.String
+    content.vb: Public Shared Function EncodeFrameworkNamesToXml(tfms As String()) As String
+  overload: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.EncodeFrameworkNamesToXml*
+  nameWithType.vb: StringExtensions.EncodeFrameworkNamesToXml(String())
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.EncodeFrameworkNamesToXml(String())
+  name.vb: EncodeFrameworkNamesToXml(String())
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256(System.String)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256(System.String)
+  id: ToSHA256(System.String)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToSHA256(string)
+  nameWithType: StringExtensions.ToSHA256(string)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Extensions
+  syntax:
+    content: public static byte[] ToSHA256(this string text)
+    parameters:
+    - id: text
+      type: System.String
+    return:
+      type: System.Byte[]
+    content.vb: Public Shared Function ToSHA256(text As String) As Byte()
+  overload: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256*
+  nameWithType.vb: StringExtensions.ToSHA256(String)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256(String)
+  name.vb: ToSHA256(String)
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256String(System.String)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256String(System.String)
+  id: ToSHA256String(System.String)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToSHA256String(string)
+  nameWithType: StringExtensions.ToSHA256String(string)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256String(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Extensions
+  syntax:
+    content: public static string ToSHA256String(this string text)
+    parameters:
+    - id: text
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function ToSHA256String(text As String) As String
+  overload: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256String*
+  nameWithType.vb: StringExtensions.ToSHA256String(String)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256String(String)
+  name.vb: ToSHA256String(String)
+references:
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions
+  commentId: N:Microsoft.CodeAnalysis.Elfie.Extensions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Elfie.Extensions
+  nameWithType: Microsoft.CodeAnalysis.Elfie.Extensions
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.Join*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.Join
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_StringExtensions_Join__1_System_String_System_Collections_Generic_IEnumerator___0__
+  name: Join
+  nameWithType: StringExtensions.Join
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.Join
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  commentId: T:System.Collections.Generic.IEnumerator{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToFrameworkNames*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToFrameworkNames
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_StringExtensions_ToFrameworkNames_System_String_
+  name: ToFrameworkNames
+  nameWithType: StringExtensions.ToFrameworkNames
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToFrameworkNames
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.EncodeFrameworkNamesToXml*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.EncodeFrameworkNamesToXml
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_StringExtensions_EncodeFrameworkNamesToXml_System_String___
+  name: EncodeFrameworkNamesToXml
+  nameWithType: StringExtensions.EncodeFrameworkNamesToXml
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.EncodeFrameworkNamesToXml
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_StringExtensions_ToSHA256_System_String_
+  name: ToSHA256
+  nameWithType: StringExtensions.ToSHA256
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256String*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256String
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_StringExtensions_ToSHA256String_System_String_
+  name: ToSHA256String
+  nameWithType: StringExtensions.ToSHA256String
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.StringExtensions.ToSHA256String

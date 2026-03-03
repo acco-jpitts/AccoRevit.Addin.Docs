@@ -1,0 +1,1259 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  id: ITabularWriter
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization
+  children:
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.BytesWritten
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.NextRow
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.RowCountWritten
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.SetColumns(System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(Microsoft.CodeAnalysis.Elfie.Model.Strings.String8)
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.Boolean)
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.Byte)
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.DateTime)
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.Double)
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.Int64)
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueEnd
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(Microsoft.CodeAnalysis.Elfie.Model.Strings.String8)
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(System.Boolean)
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(System.Byte)
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(System.DateTime)
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueStart
+  langs:
+  - csharp
+  - vb
+  name: ITabularWriter
+  nameWithType: ITabularWriter
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  type: Interface
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: 'public interface ITabularWriter : IDisposable'
+    content.vb: Public Interface ITabularWriter Inherits IDisposable
+  derivedClasses:
+  - Microsoft.CodeAnalysis.Elfie.Serialization.BaseTabularWriter
+  - Microsoft.CodeAnalysis.Elfie.Serialization.ConsoleTabularWriter
+  - Microsoft.CodeAnalysis.Elfie.Serialization.CsvWriter
+  - Microsoft.CodeAnalysis.Elfie.Serialization.JsonTabularWriter
+  - Microsoft.CodeAnalysis.Elfie.Serialization.TsvWriter
+  inheritedMembers:
+  - System.IDisposable.Dispose
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.SetColumns(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.SetColumns(System.Collections.Generic.IEnumerable{System.String})
+  id: SetColumns(System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: SetColumns(IEnumerable<string>)
+  nameWithType: ITabularWriter.SetColumns(IEnumerable<string>)
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.SetColumns(System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void SetColumns(IEnumerable<string> columnNames)
+    parameters:
+    - id: columnNames
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Sub SetColumns(columnNames As IEnumerable(Of String))
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.SetColumns*
+  nameWithType.vb: ITabularWriter.SetColumns(IEnumerable(Of String))
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.SetColumns(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: SetColumns(IEnumerable(Of String))
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(Microsoft.CodeAnalysis.Elfie.Model.Strings.String8)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(Microsoft.CodeAnalysis.Elfie.Model.Strings.String8)
+  id: Write(Microsoft.CodeAnalysis.Elfie.Model.Strings.String8)
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(String8)
+  nameWithType: ITabularWriter.Write(String8)
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(Microsoft.CodeAnalysis.Elfie.Model.Strings.String8)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void Write(String8 value)
+    parameters:
+    - id: value
+      type: Microsoft.CodeAnalysis.Elfie.Model.Strings.String8
+    content.vb: Sub Write(value As String8)
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write*
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.DateTime)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.DateTime)
+  id: Write(System.DateTime)
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(DateTime)
+  nameWithType: ITabularWriter.Write(DateTime)
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.DateTime)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void Write(DateTime value)
+    parameters:
+    - id: value
+      type: System.DateTime
+    content.vb: Sub Write(value As Date)
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write*
+  nameWithType.vb: ITabularWriter.Write(Date)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(Date)
+  name.vb: Write(Date)
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.Int64)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.Int64)
+  id: Write(System.Int64)
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(long)
+  nameWithType: ITabularWriter.Write(long)
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(long)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void Write(long value)
+    parameters:
+    - id: value
+      type: System.Int64
+    content.vb: Sub Write(value As Long)
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write*
+  nameWithType.vb: ITabularWriter.Write(Long)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(Long)
+  name.vb: Write(Long)
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.Double)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.Double)
+  id: Write(System.Double)
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(double)
+  nameWithType: ITabularWriter.Write(double)
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(double)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void Write(double value)
+    parameters:
+    - id: value
+      type: System.Double
+    content.vb: Sub Write(value As Double)
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write*
+  nameWithType.vb: ITabularWriter.Write(Double)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(Double)
+  name.vb: Write(Double)
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.Boolean)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.Boolean)
+  id: Write(System.Boolean)
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(bool)
+  nameWithType: ITabularWriter.Write(bool)
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void Write(bool value)
+    parameters:
+    - id: value
+      type: System.Boolean
+    content.vb: Sub Write(value As Boolean)
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write*
+  nameWithType.vb: ITabularWriter.Write(Boolean)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(Boolean)
+  name.vb: Write(Boolean)
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.Byte)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(System.Byte)
+  id: Write(System.Byte)
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: Write(byte)
+  nameWithType: ITabularWriter.Write(byte)
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(byte)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void Write(byte value)
+    parameters:
+    - id: value
+      type: System.Byte
+    content.vb: Sub Write(value As Byte)
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write*
+  nameWithType.vb: ITabularWriter.Write(Byte)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write(Byte)
+  name.vb: Write(Byte)
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueStart
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueStart
+  id: WriteValueStart
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteValueStart()
+  nameWithType: ITabularWriter.WriteValueStart()
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueStart()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void WriteValueStart()
+    content.vb: Sub WriteValueStart()
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueStart*
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueEnd
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueEnd
+  id: WriteValueEnd
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteValueEnd()
+  nameWithType: ITabularWriter.WriteValueEnd()
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueEnd()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void WriteValueEnd()
+    content.vb: Sub WriteValueEnd()
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueEnd*
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(Microsoft.CodeAnalysis.Elfie.Model.Strings.String8)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(Microsoft.CodeAnalysis.Elfie.Model.Strings.String8)
+  id: WriteValuePart(Microsoft.CodeAnalysis.Elfie.Model.Strings.String8)
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteValuePart(String8)
+  nameWithType: ITabularWriter.WriteValuePart(String8)
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(Microsoft.CodeAnalysis.Elfie.Model.Strings.String8)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void WriteValuePart(String8 part)
+    parameters:
+    - id: part
+      type: Microsoft.CodeAnalysis.Elfie.Model.Strings.String8
+    content.vb: Sub WriteValuePart(part As String8)
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart*
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(System.DateTime)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(System.DateTime)
+  id: WriteValuePart(System.DateTime)
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteValuePart(DateTime)
+  nameWithType: ITabularWriter.WriteValuePart(DateTime)
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(System.DateTime)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void WriteValuePart(DateTime value)
+    parameters:
+    - id: value
+      type: System.DateTime
+    content.vb: Sub WriteValuePart(value As Date)
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart*
+  nameWithType.vb: ITabularWriter.WriteValuePart(Date)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(Date)
+  name.vb: WriteValuePart(Date)
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(System.Int32)
+  id: WriteValuePart(System.Int32)
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteValuePart(int)
+  nameWithType: ITabularWriter.WriteValuePart(int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void WriteValuePart(int part)
+    parameters:
+    - id: part
+      type: System.Int32
+    content.vb: Sub WriteValuePart(part As Integer)
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart*
+  nameWithType.vb: ITabularWriter.WriteValuePart(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(Integer)
+  name.vb: WriteValuePart(Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(System.Boolean)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(System.Boolean)
+  id: WriteValuePart(System.Boolean)
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteValuePart(bool)
+  nameWithType: ITabularWriter.WriteValuePart(bool)
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void WriteValuePart(bool part)
+    parameters:
+    - id: part
+      type: System.Boolean
+    content.vb: Sub WriteValuePart(part As Boolean)
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart*
+  nameWithType.vb: ITabularWriter.WriteValuePart(Boolean)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(Boolean)
+  name.vb: WriteValuePart(Boolean)
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(System.Byte)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(System.Byte)
+  id: WriteValuePart(System.Byte)
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: WriteValuePart(byte)
+  nameWithType: ITabularWriter.WriteValuePart(byte)
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(byte)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void WriteValuePart(byte c)
+    parameters:
+    - id: c
+      type: System.Byte
+    content.vb: Sub WriteValuePart(c As Byte)
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart*
+  nameWithType.vb: ITabularWriter.WriteValuePart(Byte)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart(Byte)
+  name.vb: WriteValuePart(Byte)
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.NextRow
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.NextRow
+  id: NextRow
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: NextRow()
+  nameWithType: ITabularWriter.NextRow()
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.NextRow()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: void NextRow()
+    content.vb: Sub NextRow()
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.NextRow*
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.RowCountWritten
+  commentId: P:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.RowCountWritten
+  id: RowCountWritten
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: RowCountWritten
+  nameWithType: ITabularWriter.RowCountWritten
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.RowCountWritten
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: int RowCountWritten { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: ReadOnly Property RowCountWritten As Integer
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.RowCountWritten*
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.BytesWritten
+  commentId: P:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.BytesWritten
+  id: BytesWritten
+  parent: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter
+  langs:
+  - csharp
+  - vb
+  name: BytesWritten
+  nameWithType: ITabularWriter.BytesWritten
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.BytesWritten
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Serialization
+  syntax:
+    content: long BytesWritten { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: ReadOnly Property BytesWritten As Long
+  overload: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.BytesWritten*
+references:
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization
+  commentId: N:Microsoft.CodeAnalysis.Elfie.Serialization
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Elfie.Serialization
+  nameWithType: Microsoft.CodeAnalysis.Elfie.Serialization
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Serialization
+    name: Serialization
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Serialization.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Serialization
+    name: Serialization
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Serialization.html
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.SetColumns*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.SetColumns
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.html#Microsoft_CodeAnalysis_Elfie_Serialization_ITabularWriter_SetColumns_System_Collections_Generic_IEnumerable_System_String__
+  name: SetColumns
+  nameWithType: ITabularWriter.SetColumns
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.SetColumns
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.html#Microsoft_CodeAnalysis_Elfie_Serialization_ITabularWriter_Write_Microsoft_CodeAnalysis_Elfie_Model_Strings_String8_
+  name: Write
+  nameWithType: ITabularWriter.Write
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.Write
+- uid: Microsoft.CodeAnalysis.Elfie.Model.Strings.String8
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Model.Strings.String8
+  parent: Microsoft.CodeAnalysis.Elfie.Model.Strings
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.Strings.String8.html
+  name: String8
+  nameWithType: String8
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.Strings.String8
+- uid: Microsoft.CodeAnalysis.Elfie.Model.Strings
+  commentId: N:Microsoft.CodeAnalysis.Elfie.Model.Strings
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Elfie.Model.Strings
+  nameWithType: Microsoft.CodeAnalysis.Elfie.Model.Strings
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.Strings
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model
+    name: Model
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Strings
+    name: Strings
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Strings.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model
+    name: Model
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Strings
+    name: Strings
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Strings.html
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Byte
+  commentId: T:System.Byte
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte
+  nameWithType: byte
+  fullName: byte
+  nameWithType.vb: Byte
+  fullName.vb: Byte
+  name.vb: Byte
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueStart*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueStart
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.html#Microsoft_CodeAnalysis_Elfie_Serialization_ITabularWriter_WriteValueStart
+  name: WriteValueStart
+  nameWithType: ITabularWriter.WriteValueStart
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueStart
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueEnd*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueEnd
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.html#Microsoft_CodeAnalysis_Elfie_Serialization_ITabularWriter_WriteValueEnd
+  name: WriteValueEnd
+  nameWithType: ITabularWriter.WriteValueEnd
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValueEnd
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.html#Microsoft_CodeAnalysis_Elfie_Serialization_ITabularWriter_WriteValuePart_Microsoft_CodeAnalysis_Elfie_Model_Strings_String8_
+  name: WriteValuePart
+  nameWithType: ITabularWriter.WriteValuePart
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.WriteValuePart
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.NextRow*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.NextRow
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.html#Microsoft_CodeAnalysis_Elfie_Serialization_ITabularWriter_NextRow
+  name: NextRow
+  nameWithType: ITabularWriter.NextRow
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.NextRow
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.RowCountWritten*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.RowCountWritten
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.html#Microsoft_CodeAnalysis_Elfie_Serialization_ITabularWriter_RowCountWritten
+  name: RowCountWritten
+  nameWithType: ITabularWriter.RowCountWritten
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.RowCountWritten
+- uid: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.BytesWritten*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.BytesWritten
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.html#Microsoft_CodeAnalysis_Elfie_Serialization_ITabularWriter_BytesWritten
+  name: BytesWritten
+  nameWithType: ITabularWriter.BytesWritten
+  fullName: Microsoft.CodeAnalysis.Elfie.Serialization.ITabularWriter.BytesWritten

@@ -1,0 +1,1100 @@
+### YamlMime:ManagedReference
+items:
+- uid: AccoRevit.Addin.Utils.Select
+  commentId: T:AccoRevit.Addin.Utils.Select
+  id: Select
+  parent: AccoRevit.Addin.Utils
+  children:
+  - AccoRevit.Addin.Utils.Select.Area(System.String,System.String)
+  - AccoRevit.Addin.Utils.Select.Assemblies(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  - AccoRevit.Addin.Utils.Select.Assembly(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  - AccoRevit.Addin.Utils.Select.Element(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  - AccoRevit.Addin.Utils.Select.Elements(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  - AccoRevit.Addin.Utils.Select.FabricationPart(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  - AccoRevit.Addin.Utils.Select.FabricationParts(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  - AccoRevit.Addin.Utils.Select.FamilyInstance(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  - AccoRevit.Addin.Utils.Select.FamilyInstances(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  - AccoRevit.Addin.Utils.Select.Point(System.String)
+  - AccoRevit.Addin.Utils.Select.TryElement(Autodesk.Revit.DB.Element@,System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  - AccoRevit.Addin.Utils.Select.TryElements(System.Collections.Generic.List{Autodesk.Revit.DB.Element}@,System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: Select
+  nameWithType: Select
+  fullName: AccoRevit.Addin.Utils.Select
+  type: Class
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static class Select
+    content.vb: Public Module [Select]
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: AccoRevit.Addin.Utils.Select.Elements(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.Select.Elements(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  id: Elements(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  parent: AccoRevit.Addin.Utils.Select
+  langs:
+  - csharp
+  - vb
+  name: Elements(string, ISelectionFilter, bool, bool)
+  nameWithType: Select.Elements(string, ISelectionFilter, bool, bool)
+  fullName: AccoRevit.Addin.Utils.Select.Elements(string, Autodesk.Revit.UI.Selection.ISelectionFilter, bool, bool)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static List<Element> Elements(string promptMessage = "Select Elements", ISelectionFilter selectionFilter = null, bool useRectangleSelection = false, bool usePreselection = true)
+    parameters:
+    - id: promptMessage
+      type: System.String
+    - id: selectionFilter
+      type: Autodesk.Revit.UI.Selection.ISelectionFilter
+    - id: useRectangleSelection
+      type: System.Boolean
+    - id: usePreselection
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+    content.vb: Public Shared Function Elements(promptMessage As String = "Select Elements", selectionFilter As ISelectionFilter = Nothing, useRectangleSelection As Boolean = False, usePreselection As Boolean = True) As List(Of Element)
+  overload: AccoRevit.Addin.Utils.Select.Elements*
+  nameWithType.vb: Select.Elements(String, ISelectionFilter, Boolean, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.Select.Elements(String, Autodesk.Revit.UI.Selection.ISelectionFilter, Boolean, Boolean)
+  name.vb: Elements(String, ISelectionFilter, Boolean, Boolean)
+- uid: AccoRevit.Addin.Utils.Select.FamilyInstances(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.Select.FamilyInstances(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  id: FamilyInstances(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  parent: AccoRevit.Addin.Utils.Select
+  langs:
+  - csharp
+  - vb
+  name: FamilyInstances(string, ISelectionFilter, bool, bool)
+  nameWithType: Select.FamilyInstances(string, ISelectionFilter, bool, bool)
+  fullName: AccoRevit.Addin.Utils.Select.FamilyInstances(string, Autodesk.Revit.UI.Selection.ISelectionFilter, bool, bool)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static List<FamilyInstance> FamilyInstances(string promptMessage = "Select Families", ISelectionFilter selectionFilter = null, bool useRectangleSelection = false, bool usePreselection = true)
+    parameters:
+    - id: promptMessage
+      type: System.String
+    - id: selectionFilter
+      type: Autodesk.Revit.UI.Selection.ISelectionFilter
+    - id: useRectangleSelection
+      type: System.Boolean
+    - id: usePreselection
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.FamilyInstance}
+    content.vb: Public Shared Function FamilyInstances(promptMessage As String = "Select Families", selectionFilter As ISelectionFilter = Nothing, useRectangleSelection As Boolean = False, usePreselection As Boolean = True) As List(Of FamilyInstance)
+  overload: AccoRevit.Addin.Utils.Select.FamilyInstances*
+  nameWithType.vb: Select.FamilyInstances(String, ISelectionFilter, Boolean, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.Select.FamilyInstances(String, Autodesk.Revit.UI.Selection.ISelectionFilter, Boolean, Boolean)
+  name.vb: FamilyInstances(String, ISelectionFilter, Boolean, Boolean)
+- uid: AccoRevit.Addin.Utils.Select.FabricationParts(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.Select.FabricationParts(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  id: FabricationParts(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  parent: AccoRevit.Addin.Utils.Select
+  langs:
+  - csharp
+  - vb
+  name: FabricationParts(string, ISelectionFilter, bool, bool)
+  nameWithType: Select.FabricationParts(string, ISelectionFilter, bool, bool)
+  fullName: AccoRevit.Addin.Utils.Select.FabricationParts(string, Autodesk.Revit.UI.Selection.ISelectionFilter, bool, bool)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static List<FabricationPart> FabricationParts(string promptMessage = "Select Fabrication Parts", ISelectionFilter selectionFilter = null, bool useRectangleSelection = false, bool usePreselection = true)
+    parameters:
+    - id: promptMessage
+      type: System.String
+    - id: selectionFilter
+      type: Autodesk.Revit.UI.Selection.ISelectionFilter
+    - id: useRectangleSelection
+      type: System.Boolean
+    - id: usePreselection
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.FabricationPart}
+    content.vb: Public Shared Function FabricationParts(promptMessage As String = "Select Fabrication Parts", selectionFilter As ISelectionFilter = Nothing, useRectangleSelection As Boolean = False, usePreselection As Boolean = True) As List(Of FabricationPart)
+  overload: AccoRevit.Addin.Utils.Select.FabricationParts*
+  nameWithType.vb: Select.FabricationParts(String, ISelectionFilter, Boolean, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.Select.FabricationParts(String, Autodesk.Revit.UI.Selection.ISelectionFilter, Boolean, Boolean)
+  name.vb: FabricationParts(String, ISelectionFilter, Boolean, Boolean)
+- uid: AccoRevit.Addin.Utils.Select.Assemblies(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.Select.Assemblies(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  id: Assemblies(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  parent: AccoRevit.Addin.Utils.Select
+  langs:
+  - csharp
+  - vb
+  name: Assemblies(string, ISelectionFilter, bool, bool)
+  nameWithType: Select.Assemblies(string, ISelectionFilter, bool, bool)
+  fullName: AccoRevit.Addin.Utils.Select.Assemblies(string, Autodesk.Revit.UI.Selection.ISelectionFilter, bool, bool)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static List<AssemblyInstance> Assemblies(string promptMessage = "Select Assemblies", ISelectionFilter selectionFilter = null, bool useRectangleSelection = false, bool usePreselection = true)
+    parameters:
+    - id: promptMessage
+      type: System.String
+    - id: selectionFilter
+      type: Autodesk.Revit.UI.Selection.ISelectionFilter
+    - id: useRectangleSelection
+      type: System.Boolean
+    - id: usePreselection
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.AssemblyInstance}
+    content.vb: Public Shared Function Assemblies(promptMessage As String = "Select Assemblies", selectionFilter As ISelectionFilter = Nothing, useRectangleSelection As Boolean = False, usePreselection As Boolean = True) As List(Of AssemblyInstance)
+  overload: AccoRevit.Addin.Utils.Select.Assemblies*
+  nameWithType.vb: Select.Assemblies(String, ISelectionFilter, Boolean, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.Select.Assemblies(String, Autodesk.Revit.UI.Selection.ISelectionFilter, Boolean, Boolean)
+  name.vb: Assemblies(String, ISelectionFilter, Boolean, Boolean)
+- uid: AccoRevit.Addin.Utils.Select.Element(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.Select.Element(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  id: Element(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  parent: AccoRevit.Addin.Utils.Select
+  langs:
+  - csharp
+  - vb
+  name: Element(string, ISelectionFilter, bool)
+  nameWithType: Select.Element(string, ISelectionFilter, bool)
+  fullName: AccoRevit.Addin.Utils.Select.Element(string, Autodesk.Revit.UI.Selection.ISelectionFilter, bool)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static Element Element(string promptMessage = "Select an Element", ISelectionFilter selectionFilter = null, bool usePreselection = true)
+    parameters:
+    - id: promptMessage
+      type: System.String
+    - id: selectionFilter
+      type: Autodesk.Revit.UI.Selection.ISelectionFilter
+    - id: usePreselection
+      type: System.Boolean
+    return:
+      type: Autodesk.Revit.DB.Element
+    content.vb: Public Shared Function Element(promptMessage As String = "Select an Element", selectionFilter As ISelectionFilter = Nothing, usePreselection As Boolean = True) As Element
+  overload: AccoRevit.Addin.Utils.Select.Element*
+  nameWithType.vb: Select.Element(String, ISelectionFilter, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.Select.Element(String, Autodesk.Revit.UI.Selection.ISelectionFilter, Boolean)
+  name.vb: Element(String, ISelectionFilter, Boolean)
+- uid: AccoRevit.Addin.Utils.Select.FamilyInstance(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.Select.FamilyInstance(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  id: FamilyInstance(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  parent: AccoRevit.Addin.Utils.Select
+  langs:
+  - csharp
+  - vb
+  name: FamilyInstance(string, ISelectionFilter, bool)
+  nameWithType: Select.FamilyInstance(string, ISelectionFilter, bool)
+  fullName: AccoRevit.Addin.Utils.Select.FamilyInstance(string, Autodesk.Revit.UI.Selection.ISelectionFilter, bool)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static FamilyInstance FamilyInstance(string promptMessage = "Select a Family Instance", ISelectionFilter selectionFilter = null, bool usePreselection = true)
+    parameters:
+    - id: promptMessage
+      type: System.String
+    - id: selectionFilter
+      type: Autodesk.Revit.UI.Selection.ISelectionFilter
+    - id: usePreselection
+      type: System.Boolean
+    return:
+      type: Autodesk.Revit.DB.FamilyInstance
+    content.vb: Public Shared Function FamilyInstance(promptMessage As String = "Select a Family Instance", selectionFilter As ISelectionFilter = Nothing, usePreselection As Boolean = True) As FamilyInstance
+  overload: AccoRevit.Addin.Utils.Select.FamilyInstance*
+  nameWithType.vb: Select.FamilyInstance(String, ISelectionFilter, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.Select.FamilyInstance(String, Autodesk.Revit.UI.Selection.ISelectionFilter, Boolean)
+  name.vb: FamilyInstance(String, ISelectionFilter, Boolean)
+- uid: AccoRevit.Addin.Utils.Select.FabricationPart(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.Select.FabricationPart(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  id: FabricationPart(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  parent: AccoRevit.Addin.Utils.Select
+  langs:
+  - csharp
+  - vb
+  name: FabricationPart(string, ISelectionFilter, bool)
+  nameWithType: Select.FabricationPart(string, ISelectionFilter, bool)
+  fullName: AccoRevit.Addin.Utils.Select.FabricationPart(string, Autodesk.Revit.UI.Selection.ISelectionFilter, bool)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static FabricationPart FabricationPart(string promptMessage = "Select a Fabrication Part", ISelectionFilter selectionFilter = null, bool usePreselection = true)
+    parameters:
+    - id: promptMessage
+      type: System.String
+    - id: selectionFilter
+      type: Autodesk.Revit.UI.Selection.ISelectionFilter
+    - id: usePreselection
+      type: System.Boolean
+    return:
+      type: Autodesk.Revit.DB.FabricationPart
+    content.vb: Public Shared Function FabricationPart(promptMessage As String = "Select a Fabrication Part", selectionFilter As ISelectionFilter = Nothing, usePreselection As Boolean = True) As FabricationPart
+  overload: AccoRevit.Addin.Utils.Select.FabricationPart*
+  nameWithType.vb: Select.FabricationPart(String, ISelectionFilter, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.Select.FabricationPart(String, Autodesk.Revit.UI.Selection.ISelectionFilter, Boolean)
+  name.vb: FabricationPart(String, ISelectionFilter, Boolean)
+- uid: AccoRevit.Addin.Utils.Select.Assembly(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.Select.Assembly(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  id: Assembly(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  parent: AccoRevit.Addin.Utils.Select
+  langs:
+  - csharp
+  - vb
+  name: Assembly(string, ISelectionFilter, bool)
+  nameWithType: Select.Assembly(string, ISelectionFilter, bool)
+  fullName: AccoRevit.Addin.Utils.Select.Assembly(string, Autodesk.Revit.UI.Selection.ISelectionFilter, bool)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static AssemblyInstance Assembly(string promptMessage = "Select an Assembly", ISelectionFilter selectionFilter = null, bool usePreselection = true)
+    parameters:
+    - id: promptMessage
+      type: System.String
+    - id: selectionFilter
+      type: Autodesk.Revit.UI.Selection.ISelectionFilter
+    - id: usePreselection
+      type: System.Boolean
+    return:
+      type: Autodesk.Revit.DB.AssemblyInstance
+    content.vb: Public Shared Function Assembly(promptMessage As String = "Select an Assembly", selectionFilter As ISelectionFilter = Nothing, usePreselection As Boolean = True) As AssemblyInstance
+  overload: AccoRevit.Addin.Utils.Select.Assembly*
+  nameWithType.vb: Select.Assembly(String, ISelectionFilter, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.Select.Assembly(String, Autodesk.Revit.UI.Selection.ISelectionFilter, Boolean)
+  name.vb: Assembly(String, ISelectionFilter, Boolean)
+- uid: AccoRevit.Addin.Utils.Select.Point(System.String)
+  commentId: M:AccoRevit.Addin.Utils.Select.Point(System.String)
+  id: Point(System.String)
+  parent: AccoRevit.Addin.Utils.Select
+  langs:
+  - csharp
+  - vb
+  name: Point(string)
+  nameWithType: Select.Point(string)
+  fullName: AccoRevit.Addin.Utils.Select.Point(string)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static XYZ Point(string promptMessage = "Select a point")
+    parameters:
+    - id: promptMessage
+      type: System.String
+    return:
+      type: Autodesk.Revit.DB.XYZ
+    content.vb: Public Shared Function Point(promptMessage As String = "Select a point") As XYZ
+  overload: AccoRevit.Addin.Utils.Select.Point*
+  nameWithType.vb: Select.Point(String)
+  fullName.vb: AccoRevit.Addin.Utils.Select.Point(String)
+  name.vb: Point(String)
+- uid: AccoRevit.Addin.Utils.Select.Area(System.String,System.String)
+  commentId: M:AccoRevit.Addin.Utils.Select.Area(System.String,System.String)
+  id: Area(System.String,System.String)
+  parent: AccoRevit.Addin.Utils.Select
+  langs:
+  - csharp
+  - vb
+  name: Area(string, string)
+  nameWithType: Select.Area(string, string)
+  fullName: AccoRevit.Addin.Utils.Select.Area(string, string)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static Select.PickBox Area(string promptMessage = "Select an area", string boxStyle = "Points")
+    parameters:
+    - id: promptMessage
+      type: System.String
+    - id: boxStyle
+      type: System.String
+    return:
+      type: AccoRevit.Addin.Utils.Select.PickBox
+    content.vb: Public Shared Function Area(promptMessage As String = "Select an area", boxStyle As String = "Points") As [Select].PickBox
+  overload: AccoRevit.Addin.Utils.Select.Area*
+  nameWithType.vb: Select.Area(String, String)
+  fullName.vb: AccoRevit.Addin.Utils.Select.Area(String, String)
+  name.vb: Area(String, String)
+- uid: AccoRevit.Addin.Utils.Select.TryElement(Autodesk.Revit.DB.Element@,System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.Select.TryElement(Autodesk.Revit.DB.Element@,System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  id: TryElement(Autodesk.Revit.DB.Element@,System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)
+  parent: AccoRevit.Addin.Utils.Select
+  langs:
+  - csharp
+  - vb
+  name: TryElement(out Element, string, ISelectionFilter, bool)
+  nameWithType: Select.TryElement(out Element, string, ISelectionFilter, bool)
+  fullName: AccoRevit.Addin.Utils.Select.TryElement(out Autodesk.Revit.DB.Element, string, Autodesk.Revit.UI.Selection.ISelectionFilter, bool)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static Select.SelectionOutcome TryElement(out Element element, string promptMessage = "Select Element", ISelectionFilter selectionFilter = null, bool usePreselection = true)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+    - id: promptMessage
+      type: System.String
+    - id: selectionFilter
+      type: Autodesk.Revit.UI.Selection.ISelectionFilter
+    - id: usePreselection
+      type: System.Boolean
+    return:
+      type: AccoRevit.Addin.Utils.Select.SelectionOutcome
+    content.vb: Public Shared Function TryElement(element As Element, promptMessage As String = "Select Element", selectionFilter As ISelectionFilter = Nothing, usePreselection As Boolean = True) As [Select].SelectionOutcome
+  overload: AccoRevit.Addin.Utils.Select.TryElement*
+  nameWithType.vb: Select.TryElement(Element, String, ISelectionFilter, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.Select.TryElement(Autodesk.Revit.DB.Element, String, Autodesk.Revit.UI.Selection.ISelectionFilter, Boolean)
+  name.vb: TryElement(Element, String, ISelectionFilter, Boolean)
+- uid: AccoRevit.Addin.Utils.Select.TryElements(System.Collections.Generic.List{Autodesk.Revit.DB.Element}@,System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.Select.TryElements(System.Collections.Generic.List{Autodesk.Revit.DB.Element}@,System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  id: TryElements(System.Collections.Generic.List{Autodesk.Revit.DB.Element}@,System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)
+  parent: AccoRevit.Addin.Utils.Select
+  langs:
+  - csharp
+  - vb
+  name: TryElements(out List<Element>, string, ISelectionFilter, bool, bool)
+  nameWithType: Select.TryElements(out List<Element>, string, ISelectionFilter, bool, bool)
+  fullName: AccoRevit.Addin.Utils.Select.TryElements(out System.Collections.Generic.List<Autodesk.Revit.DB.Element>, string, Autodesk.Revit.UI.Selection.ISelectionFilter, bool, bool)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static Select.SelectionOutcome TryElements(out List<Element> elements, string promptMessage = "Select Elements", ISelectionFilter selectionFilter = null, bool useRectangleSelection = false, bool usePreselection = true)
+    parameters:
+    - id: elements
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+    - id: promptMessage
+      type: System.String
+    - id: selectionFilter
+      type: Autodesk.Revit.UI.Selection.ISelectionFilter
+    - id: useRectangleSelection
+      type: System.Boolean
+    - id: usePreselection
+      type: System.Boolean
+    return:
+      type: AccoRevit.Addin.Utils.Select.SelectionOutcome
+    content.vb: Public Shared Function TryElements(elements As List(Of Element), promptMessage As String = "Select Elements", selectionFilter As ISelectionFilter = Nothing, useRectangleSelection As Boolean = False, usePreselection As Boolean = True) As [Select].SelectionOutcome
+  overload: AccoRevit.Addin.Utils.Select.TryElements*
+  nameWithType.vb: Select.TryElements(List(Of Element), String, ISelectionFilter, Boolean, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.Select.TryElements(System.Collections.Generic.List(Of Autodesk.Revit.DB.Element), String, Autodesk.Revit.UI.Selection.ISelectionFilter, Boolean, Boolean)
+  name.vb: TryElements(List(Of Element), String, ISelectionFilter, Boolean, Boolean)
+references:
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Utils.Select.Elements*
+  commentId: Overload:AccoRevit.Addin.Utils.Select.Elements
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html#AccoRevit_Addin_Utils_Select_Elements_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_System_Boolean_
+  name: Elements
+  nameWithType: Select.Elements
+  fullName: AccoRevit.Addin.Utils.Select.Elements
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Autodesk.Revit.UI.Selection.ISelectionFilter
+  isExternal: true
+  name: ISelectionFilter
+  nameWithType: ISelectionFilter
+  fullName: Autodesk.Revit.UI.Selection.ISelectionFilter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.Element}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<Element>
+  nameWithType: List<Element>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.Element>
+  nameWithType.vb: List(Of Element)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.Element)
+  name.vb: List(Of Element)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AccoRevit.Addin.Utils.Select.FamilyInstances*
+  commentId: Overload:AccoRevit.Addin.Utils.Select.FamilyInstances
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html#AccoRevit_Addin_Utils_Select_FamilyInstances_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_System_Boolean_
+  name: FamilyInstances
+  nameWithType: Select.FamilyInstances
+  fullName: AccoRevit.Addin.Utils.Select.FamilyInstances
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.FamilyInstance}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.FamilyInstance}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<FamilyInstance>
+  nameWithType: List<FamilyInstance>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.FamilyInstance>
+  nameWithType.vb: List(Of FamilyInstance)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.FamilyInstance)
+  name.vb: List(Of FamilyInstance)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.FamilyInstance
+    name: FamilyInstance
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.FamilyInstance
+    name: FamilyInstance
+    isExternal: true
+  - name: )
+- uid: AccoRevit.Addin.Utils.Select.FabricationParts*
+  commentId: Overload:AccoRevit.Addin.Utils.Select.FabricationParts
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html#AccoRevit_Addin_Utils_Select_FabricationParts_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_System_Boolean_
+  name: FabricationParts
+  nameWithType: Select.FabricationParts
+  fullName: AccoRevit.Addin.Utils.Select.FabricationParts
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.FabricationPart}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.FabricationPart}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<FabricationPart>
+  nameWithType: List<FabricationPart>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.FabricationPart>
+  nameWithType.vb: List(Of FabricationPart)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.FabricationPart)
+  name.vb: List(Of FabricationPart)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.FabricationPart
+    name: FabricationPart
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.FabricationPart
+    name: FabricationPart
+    isExternal: true
+  - name: )
+- uid: AccoRevit.Addin.Utils.Select.Assemblies*
+  commentId: Overload:AccoRevit.Addin.Utils.Select.Assemblies
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html#AccoRevit_Addin_Utils_Select_Assemblies_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_System_Boolean_
+  name: Assemblies
+  nameWithType: Select.Assemblies
+  fullName: AccoRevit.Addin.Utils.Select.Assemblies
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.AssemblyInstance}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.AssemblyInstance}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<AssemblyInstance>
+  nameWithType: List<AssemblyInstance>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.AssemblyInstance>
+  nameWithType.vb: List(Of AssemblyInstance)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.AssemblyInstance)
+  name.vb: List(Of AssemblyInstance)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.AssemblyInstance
+    name: AssemblyInstance
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.AssemblyInstance
+    name: AssemblyInstance
+    isExternal: true
+  - name: )
+- uid: AccoRevit.Addin.Utils.Select.Element*
+  commentId: Overload:AccoRevit.Addin.Utils.Select.Element
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html#AccoRevit_Addin_Utils_Select_Element_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_
+  name: Element
+  nameWithType: Select.Element
+  fullName: AccoRevit.Addin.Utils.Select.Element
+- uid: Autodesk.Revit.DB.Element
+  isExternal: true
+  name: Element
+  nameWithType: Element
+  fullName: Autodesk.Revit.DB.Element
+- uid: AccoRevit.Addin.Utils.Select.FamilyInstance*
+  commentId: Overload:AccoRevit.Addin.Utils.Select.FamilyInstance
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html#AccoRevit_Addin_Utils_Select_FamilyInstance_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_
+  name: FamilyInstance
+  nameWithType: Select.FamilyInstance
+  fullName: AccoRevit.Addin.Utils.Select.FamilyInstance
+- uid: Autodesk.Revit.DB.FamilyInstance
+  isExternal: true
+  name: FamilyInstance
+  nameWithType: FamilyInstance
+  fullName: Autodesk.Revit.DB.FamilyInstance
+- uid: AccoRevit.Addin.Utils.Select.FabricationPart*
+  commentId: Overload:AccoRevit.Addin.Utils.Select.FabricationPart
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html#AccoRevit_Addin_Utils_Select_FabricationPart_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_
+  name: FabricationPart
+  nameWithType: Select.FabricationPart
+  fullName: AccoRevit.Addin.Utils.Select.FabricationPart
+- uid: Autodesk.Revit.DB.FabricationPart
+  isExternal: true
+  name: FabricationPart
+  nameWithType: FabricationPart
+  fullName: Autodesk.Revit.DB.FabricationPart
+- uid: AccoRevit.Addin.Utils.Select.Assembly*
+  commentId: Overload:AccoRevit.Addin.Utils.Select.Assembly
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html#AccoRevit_Addin_Utils_Select_Assembly_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_
+  name: Assembly
+  nameWithType: Select.Assembly
+  fullName: AccoRevit.Addin.Utils.Select.Assembly
+- uid: Autodesk.Revit.DB.AssemblyInstance
+  isExternal: true
+  name: AssemblyInstance
+  nameWithType: AssemblyInstance
+  fullName: Autodesk.Revit.DB.AssemblyInstance
+- uid: AccoRevit.Addin.Utils.Select.Point*
+  commentId: Overload:AccoRevit.Addin.Utils.Select.Point
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html#AccoRevit_Addin_Utils_Select_Point_System_String_
+  name: Point
+  nameWithType: Select.Point
+  fullName: AccoRevit.Addin.Utils.Select.Point
+- uid: Autodesk.Revit.DB.XYZ
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ
+- uid: AccoRevit.Addin.Utils.Select.Area*
+  commentId: Overload:AccoRevit.Addin.Utils.Select.Area
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html#AccoRevit_Addin_Utils_Select_Area_System_String_System_String_
+  name: Area
+  nameWithType: Select.Area
+  fullName: AccoRevit.Addin.Utils.Select.Area
+- uid: AccoRevit.Addin.Utils.Select.PickBox
+  commentId: T:AccoRevit.Addin.Utils.Select.PickBox
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html
+  name: Select.PickBox
+  nameWithType: Select.PickBox
+  fullName: AccoRevit.Addin.Utils.Select.PickBox
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.Select
+    name: Select
+    isExternal: true
+    href: AccoRevit.Addin.Utils.Select.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils.Select.PickBox
+    name: PickBox
+    isExternal: true
+    href: AccoRevit.Addin.Utils.Select.PickBox.html
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.Select
+    name: Select
+    isExternal: true
+    href: AccoRevit.Addin.Utils.Select.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils.Select.PickBox
+    name: PickBox
+    isExternal: true
+    href: AccoRevit.Addin.Utils.Select.PickBox.html
+- uid: AccoRevit.Addin.Utils.Select.TryElement*
+  commentId: Overload:AccoRevit.Addin.Utils.Select.TryElement
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html#AccoRevit_Addin_Utils_Select_TryElement_Autodesk_Revit_DB_Element__System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_
+  name: TryElement
+  nameWithType: Select.TryElement
+  fullName: AccoRevit.Addin.Utils.Select.TryElement
+- uid: AccoRevit.Addin.Utils.Select.SelectionOutcome
+  commentId: T:AccoRevit.Addin.Utils.Select.SelectionOutcome
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html
+  name: Select.SelectionOutcome
+  nameWithType: Select.SelectionOutcome
+  fullName: AccoRevit.Addin.Utils.Select.SelectionOutcome
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.Select
+    name: Select
+    isExternal: true
+    href: AccoRevit.Addin.Utils.Select.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils.Select.SelectionOutcome
+    name: SelectionOutcome
+    isExternal: true
+    href: AccoRevit.Addin.Utils.Select.SelectionOutcome.html
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.Select
+    name: Select
+    isExternal: true
+    href: AccoRevit.Addin.Utils.Select.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils.Select.SelectionOutcome
+    name: SelectionOutcome
+    isExternal: true
+    href: AccoRevit.Addin.Utils.Select.SelectionOutcome.html
+- uid: AccoRevit.Addin.Utils.Select.TryElements*
+  commentId: Overload:AccoRevit.Addin.Utils.Select.TryElements
+  isExternal: true
+  href: AccoRevit.Addin.Utils.Select.html#AccoRevit_Addin_Utils_Select_TryElements_System_Collections_Generic_List_Autodesk_Revit_DB_Element___System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_System_Boolean_
+  name: TryElements
+  nameWithType: Select.TryElements
+  fullName: AccoRevit.Addin.Utils.Select.TryElements

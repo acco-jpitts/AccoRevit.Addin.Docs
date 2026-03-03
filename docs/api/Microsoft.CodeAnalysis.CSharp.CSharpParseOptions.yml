@@ -1,0 +1,2153 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  commentId: T:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  id: CSharpParseOptions
+  parent: Microsoft.CodeAnalysis.CSharp
+  children:
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.#ctor(Microsoft.CodeAnalysis.CSharp.LanguageVersion,Microsoft.CodeAnalysis.DocumentationMode,Microsoft.CodeAnalysis.SourceCodeKind,System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Default
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals(Microsoft.CodeAnalysis.CSharp.CSharpParseOptions)
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals(System.Object)
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Features
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.GetHashCode
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Language
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.LanguageVersion
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.PreprocessorSymbolNames
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.SpecifiedLanguageVersion
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithLanguageVersion(Microsoft.CodeAnalysis.CSharp.LanguageVersion)
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(System.Collections.Generic.IEnumerable{System.String})
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(System.Collections.Immutable.ImmutableArray{System.String})
+  - Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(System.String[])
+  langs:
+  - csharp
+  - vb
+  name: CSharpParseOptions
+  nameWithType: CSharpParseOptions
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  syntax:
+    content: 'public sealed class CSharpParseOptions : ParseOptions, IEquatable<CSharpParseOptions>'
+    content.vb: Public NotInheritable Class CSharpParseOptions Inherits ParseOptions Implements IEquatable(Of CSharpParseOptions)
+  inheritance:
+  - System.Object
+  - Microsoft.CodeAnalysis.ParseOptions
+  implements:
+  - System.IEquatable{Microsoft.CodeAnalysis.CSharp.CSharpParseOptions}
+  inheritedMembers:
+  - Microsoft.CodeAnalysis.ParseOptions.Kind
+  - Microsoft.CodeAnalysis.ParseOptions.SpecifiedKind
+  - Microsoft.CodeAnalysis.ParseOptions.DocumentationMode
+  - Microsoft.CodeAnalysis.ParseOptions.Errors
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.#ctor(Microsoft.CodeAnalysis.CSharp.LanguageVersion,Microsoft.CodeAnalysis.DocumentationMode,Microsoft.CodeAnalysis.SourceCodeKind,System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.#ctor(Microsoft.CodeAnalysis.CSharp.LanguageVersion,Microsoft.CodeAnalysis.DocumentationMode,Microsoft.CodeAnalysis.SourceCodeKind,System.Collections.Generic.IEnumerable{System.String})
+  id: '#ctor(Microsoft.CodeAnalysis.CSharp.LanguageVersion,Microsoft.CodeAnalysis.DocumentationMode,Microsoft.CodeAnalysis.SourceCodeKind,System.Collections.Generic.IEnumerable{System.String})'
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: CSharpParseOptions(LanguageVersion, DocumentationMode, SourceCodeKind, IEnumerable<string>?)
+  nameWithType: CSharpParseOptions.CSharpParseOptions(LanguageVersion, DocumentationMode, SourceCodeKind, IEnumerable<string>?)
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CSharpParseOptions(Microsoft.CodeAnalysis.CSharp.LanguageVersion, Microsoft.CodeAnalysis.DocumentationMode, Microsoft.CodeAnalysis.SourceCodeKind, System.Collections.Generic.IEnumerable<string>?)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  syntax:
+    content: public CSharpParseOptions(LanguageVersion languageVersion = LanguageVersion.Default, DocumentationMode documentationMode = DocumentationMode.Parse, SourceCodeKind kind = SourceCodeKind.Regular, IEnumerable<string>? preprocessorSymbols = null)
+    parameters:
+    - id: languageVersion
+      type: Microsoft.CodeAnalysis.CSharp.LanguageVersion
+    - id: documentationMode
+      type: Microsoft.CodeAnalysis.DocumentationMode
+    - id: kind
+      type: Microsoft.CodeAnalysis.SourceCodeKind
+    - id: preprocessorSymbols
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Sub New(languageVersion As LanguageVersion = LanguageVersion.Default, documentationMode As DocumentationMode = DocumentationMode.Parse, kind As SourceCodeKind = SourceCodeKind.Regular, preprocessorSymbols As IEnumerable(Of String) = Nothing)
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.#ctor*
+  nameWithType.vb: CSharpParseOptions.New(LanguageVersion, DocumentationMode, SourceCodeKind, IEnumerable(Of String))
+  fullName.vb: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.New(Microsoft.CodeAnalysis.CSharp.LanguageVersion, Microsoft.CodeAnalysis.DocumentationMode, Microsoft.CodeAnalysis.SourceCodeKind, System.Collections.Generic.IEnumerable(Of String))
+  name.vb: New(LanguageVersion, DocumentationMode, SourceCodeKind, IEnumerable(Of String))
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  id: WithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: WithKind(SourceCodeKind)
+  nameWithType: CSharpParseOptions.WithKind(SourceCodeKind)
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  syntax:
+    content: public CSharpParseOptions WithKind(SourceCodeKind kind)
+    parameters:
+    - id: kind
+      type: Microsoft.CodeAnalysis.SourceCodeKind
+    return:
+      type: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+    content.vb: Public Function WithKind(kind As SourceCodeKind) As CSharpParseOptions
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithKind*
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithLanguageVersion(Microsoft.CodeAnalysis.CSharp.LanguageVersion)
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithLanguageVersion(Microsoft.CodeAnalysis.CSharp.LanguageVersion)
+  id: WithLanguageVersion(Microsoft.CodeAnalysis.CSharp.LanguageVersion)
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: WithLanguageVersion(LanguageVersion)
+  nameWithType: CSharpParseOptions.WithLanguageVersion(LanguageVersion)
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithLanguageVersion(Microsoft.CodeAnalysis.CSharp.LanguageVersion)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  syntax:
+    content: public CSharpParseOptions WithLanguageVersion(LanguageVersion version)
+    parameters:
+    - id: version
+      type: Microsoft.CodeAnalysis.CSharp.LanguageVersion
+    return:
+      type: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+    content.vb: Public Function WithLanguageVersion(version As LanguageVersion) As CSharpParseOptions
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithLanguageVersion*
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(System.Collections.Generic.IEnumerable{System.String})
+  id: WithPreprocessorSymbols(System.Collections.Generic.IEnumerable{System.String})
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: WithPreprocessorSymbols(IEnumerable<string>?)
+  nameWithType: CSharpParseOptions.WithPreprocessorSymbols(IEnumerable<string>?)
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(System.Collections.Generic.IEnumerable<string>?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  syntax:
+    content: public CSharpParseOptions WithPreprocessorSymbols(IEnumerable<string>? preprocessorSymbols)
+    parameters:
+    - id: preprocessorSymbols
+      type: System.Collections.Generic.IEnumerable{System.String}
+    return:
+      type: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+    content.vb: Public Function WithPreprocessorSymbols(preprocessorSymbols As IEnumerable(Of String)) As CSharpParseOptions
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols*
+  nameWithType.vb: CSharpParseOptions.WithPreprocessorSymbols(IEnumerable(Of String))
+  fullName.vb: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(System.Collections.Generic.IEnumerable(Of String))
+  name.vb: WithPreprocessorSymbols(IEnumerable(Of String))
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(System.String[])
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(System.String[])
+  id: WithPreprocessorSymbols(System.String[])
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: WithPreprocessorSymbols(params string[]?)
+  nameWithType: CSharpParseOptions.WithPreprocessorSymbols(params string[]?)
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(params string[]?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  syntax:
+    content: public CSharpParseOptions WithPreprocessorSymbols(params string[]? preprocessorSymbols)
+    parameters:
+    - id: preprocessorSymbols
+      type: System.String[]
+    return:
+      type: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+    content.vb: Public Function WithPreprocessorSymbols(ParamArray preprocessorSymbols As String()) As CSharpParseOptions
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols*
+  nameWithType.vb: CSharpParseOptions.WithPreprocessorSymbols(ParamArray String())
+  fullName.vb: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(ParamArray String())
+  name.vb: WithPreprocessorSymbols(ParamArray String())
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(System.Collections.Immutable.ImmutableArray{System.String})
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(System.Collections.Immutable.ImmutableArray{System.String})
+  id: WithPreprocessorSymbols(System.Collections.Immutable.ImmutableArray{System.String})
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: WithPreprocessorSymbols(ImmutableArray<string>)
+  nameWithType: CSharpParseOptions.WithPreprocessorSymbols(ImmutableArray<string>)
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(System.Collections.Immutable.ImmutableArray<string>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  syntax:
+    content: public CSharpParseOptions WithPreprocessorSymbols(ImmutableArray<string> symbols)
+    parameters:
+    - id: symbols
+      type: System.Collections.Immutable.ImmutableArray{System.String}
+    return:
+      type: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+    content.vb: Public Function WithPreprocessorSymbols(symbols As ImmutableArray(Of String)) As CSharpParseOptions
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols*
+  nameWithType.vb: CSharpParseOptions.WithPreprocessorSymbols(ImmutableArray(Of String))
+  fullName.vb: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols(System.Collections.Immutable.ImmutableArray(Of String))
+  name.vb: WithPreprocessorSymbols(ImmutableArray(Of String))
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  id: WithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: WithDocumentationMode(DocumentationMode)
+  nameWithType: CSharpParseOptions.WithDocumentationMode(DocumentationMode)
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  syntax:
+    content: public CSharpParseOptions WithDocumentationMode(DocumentationMode documentationMode)
+    parameters:
+    - id: documentationMode
+      type: Microsoft.CodeAnalysis.DocumentationMode
+    return:
+      type: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+    content.vb: Public Function WithDocumentationMode(documentationMode As DocumentationMode) As CSharpParseOptions
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithDocumentationMode*
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  id: CommonWithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: CommonWithKind(SourceCodeKind)
+  nameWithType: CSharpParseOptions.CommonWithKind(SourceCodeKind)
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  example: []
+  syntax:
+    content: public override ParseOptions CommonWithKind(SourceCodeKind kind)
+    parameters:
+    - id: kind
+      type: Microsoft.CodeAnalysis.SourceCodeKind
+    return:
+      type: Microsoft.CodeAnalysis.ParseOptions
+    content.vb: Public Overrides Function CommonWithKind(kind As SourceCodeKind) As ParseOptions
+  overridden: Microsoft.CodeAnalysis.ParseOptions.CommonWithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithKind*
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  id: CommonWithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: CommonWithDocumentationMode(DocumentationMode)
+  nameWithType: CSharpParseOptions.CommonWithDocumentationMode(DocumentationMode)
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  example: []
+  syntax:
+    content: protected override ParseOptions CommonWithDocumentationMode(DocumentationMode documentationMode)
+    parameters:
+    - id: documentationMode
+      type: Microsoft.CodeAnalysis.DocumentationMode
+    return:
+      type: Microsoft.CodeAnalysis.ParseOptions
+    content.vb: Protected Overrides Function CommonWithDocumentationMode(documentationMode As DocumentationMode) As ParseOptions
+  overridden: Microsoft.CodeAnalysis.ParseOptions.CommonWithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithDocumentationMode*
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  id: CommonWithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: CommonWithFeatures(IEnumerable<KeyValuePair<string, string>>?)
+  nameWithType: CSharpParseOptions.CommonWithFeatures(IEnumerable<KeyValuePair<string, string>>?)
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithFeatures(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, string>>?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  example: []
+  syntax:
+    content: protected override ParseOptions CommonWithFeatures(IEnumerable<KeyValuePair<string, string>>? features)
+    parameters:
+    - id: features
+      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+    return:
+      type: Microsoft.CodeAnalysis.ParseOptions
+    content.vb: Protected Overrides Function CommonWithFeatures(features As IEnumerable(Of KeyValuePair(Of String, String))) As ParseOptions
+  overridden: Microsoft.CodeAnalysis.ParseOptions.CommonWithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithFeatures*
+  nameWithType.vb: CSharpParseOptions.CommonWithFeatures(IEnumerable(Of KeyValuePair(Of String, String)))
+  fullName.vb: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithFeatures(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, String)))
+  name.vb: CommonWithFeatures(IEnumerable(Of KeyValuePair(Of String, String)))
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  id: WithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: WithFeatures(IEnumerable<KeyValuePair<string, string>>?)
+  nameWithType: CSharpParseOptions.WithFeatures(IEnumerable<KeyValuePair<string, string>>?)
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithFeatures(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, string>>?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  syntax:
+    content: public CSharpParseOptions WithFeatures(IEnumerable<KeyValuePair<string, string>>? features)
+    parameters:
+    - id: features
+      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+    return:
+      type: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+    content.vb: Public Function WithFeatures(features As IEnumerable(Of KeyValuePair(Of String, String))) As CSharpParseOptions
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithFeatures*
+  nameWithType.vb: CSharpParseOptions.WithFeatures(IEnumerable(Of KeyValuePair(Of String, String)))
+  fullName.vb: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithFeatures(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, String)))
+  name.vb: WithFeatures(IEnumerable(Of KeyValuePair(Of String, String)))
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals(System.Object)
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: CSharpParseOptions.Equals(object?)
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals(object?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: Microsoft.CodeAnalysis.ParseOptions.Equals(System.Object)
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals*
+  nameWithType.vb: CSharpParseOptions.Equals(Object)
+  fullName.vb: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals(Microsoft.CodeAnalysis.CSharp.CSharpParseOptions)
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals(Microsoft.CodeAnalysis.CSharp.CSharpParseOptions)
+  id: Equals(Microsoft.CodeAnalysis.CSharp.CSharpParseOptions)
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: Equals(CSharpParseOptions?)
+  nameWithType: CSharpParseOptions.Equals(CSharpParseOptions?)
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals(Microsoft.CodeAnalysis.CSharp.CSharpParseOptions?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  example: []
+  syntax:
+    content: public bool Equals(CSharpParseOptions? other)
+    parameters:
+    - id: other
+      type: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As CSharpParseOptions) As Boolean
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals*
+  implements:
+  - System.IEquatable{Microsoft.CodeAnalysis.CSharp.CSharpParseOptions}.Equals(Microsoft.CodeAnalysis.CSharp.CSharpParseOptions)
+  nameWithType.vb: CSharpParseOptions.Equals(CSharpParseOptions)
+  fullName.vb: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals(Microsoft.CodeAnalysis.CSharp.CSharpParseOptions)
+  name.vb: Equals(CSharpParseOptions)
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.GetHashCode
+  commentId: M:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: CSharpParseOptions.GetHashCode()
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.GetHashCode()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: Microsoft.CodeAnalysis.ParseOptions.GetHashCode
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.GetHashCode*
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Default
+  commentId: P:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Default
+  id: Default
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: CSharpParseOptions.Default
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Default
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  syntax:
+    content: public static CSharpParseOptions Default { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+    content.vb: Public Shared ReadOnly Property [Default] As CSharpParseOptions
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Default*
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.LanguageVersion
+  commentId: P:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.LanguageVersion
+  id: LanguageVersion
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: LanguageVersion
+  nameWithType: CSharpParseOptions.LanguageVersion
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.LanguageVersion
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  syntax:
+    content: public LanguageVersion LanguageVersion { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.CSharp.LanguageVersion
+    content.vb: Public ReadOnly Property LanguageVersion As LanguageVersion
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.LanguageVersion*
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.SpecifiedLanguageVersion
+  commentId: P:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.SpecifiedLanguageVersion
+  id: SpecifiedLanguageVersion
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: SpecifiedLanguageVersion
+  nameWithType: CSharpParseOptions.SpecifiedLanguageVersion
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.SpecifiedLanguageVersion
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  syntax:
+    content: public LanguageVersion SpecifiedLanguageVersion { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.CSharp.LanguageVersion
+    content.vb: Public ReadOnly Property SpecifiedLanguageVersion As LanguageVersion
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.SpecifiedLanguageVersion*
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.PreprocessorSymbolNames
+  commentId: P:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.PreprocessorSymbolNames
+  id: PreprocessorSymbolNames
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: PreprocessorSymbolNames
+  nameWithType: CSharpParseOptions.PreprocessorSymbolNames
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.PreprocessorSymbolNames
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  example: []
+  syntax:
+    content: public override IEnumerable<string> PreprocessorSymbolNames { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.String}
+    content.vb: Public Overrides ReadOnly Property PreprocessorSymbolNames As IEnumerable(Of String)
+  overridden: Microsoft.CodeAnalysis.ParseOptions.PreprocessorSymbolNames
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.PreprocessorSymbolNames*
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Language
+  commentId: P:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Language
+  id: Language
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: Language
+  nameWithType: CSharpParseOptions.Language
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Language
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  example: []
+  syntax:
+    content: public override string Language { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overrides ReadOnly Property Language As String
+  overridden: Microsoft.CodeAnalysis.ParseOptions.Language
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Language*
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Features
+  commentId: P:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Features
+  id: Features
+  parent: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  langs:
+  - csharp
+  - vb
+  name: Features
+  nameWithType: CSharpParseOptions.Features
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Features
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.CSharp
+  example: []
+  syntax:
+    content: public override IReadOnlyDictionary<string, string> Features { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+    content.vb: Public Overrides ReadOnly Property Features As IReadOnlyDictionary(Of String, String)
+  overridden: Microsoft.CodeAnalysis.ParseOptions.Features
+  overload: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Features*
+references:
+- uid: Microsoft.CodeAnalysis.CSharp
+  commentId: N:Microsoft.CodeAnalysis.CSharp
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.CSharp
+  nameWithType: Microsoft.CodeAnalysis.CSharp
+  fullName: Microsoft.CodeAnalysis.CSharp
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.CSharp
+    name: CSharp
+    isExternal: true
+    href: Microsoft.CodeAnalysis.CSharp.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.CSharp
+    name: CSharp
+    isExternal: true
+    href: Microsoft.CodeAnalysis.CSharp.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.CodeAnalysis.ParseOptions
+  commentId: T:Microsoft.CodeAnalysis.ParseOptions
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ParseOptions.html
+  name: ParseOptions
+  nameWithType: ParseOptions
+  fullName: Microsoft.CodeAnalysis.ParseOptions
+- uid: System.IEquatable{Microsoft.CodeAnalysis.CSharp.CSharpParseOptions}
+  commentId: T:System.IEquatable{Microsoft.CodeAnalysis.CSharp.CSharpParseOptions}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<CSharpParseOptions>
+  nameWithType: IEquatable<CSharpParseOptions>
+  fullName: System.IEquatable<Microsoft.CodeAnalysis.CSharp.CSharpParseOptions>
+  nameWithType.vb: IEquatable(Of CSharpParseOptions)
+  fullName.vb: System.IEquatable(Of Microsoft.CodeAnalysis.CSharp.CSharpParseOptions)
+  name.vb: IEquatable(Of CSharpParseOptions)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+    name: CSharpParseOptions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+    name: CSharpParseOptions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ParseOptions.Kind
+  commentId: P:Microsoft.CodeAnalysis.ParseOptions.Kind
+  parent: Microsoft.CodeAnalysis.ParseOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_Kind
+  name: Kind
+  nameWithType: ParseOptions.Kind
+  fullName: Microsoft.CodeAnalysis.ParseOptions.Kind
+- uid: Microsoft.CodeAnalysis.ParseOptions.SpecifiedKind
+  commentId: P:Microsoft.CodeAnalysis.ParseOptions.SpecifiedKind
+  parent: Microsoft.CodeAnalysis.ParseOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_SpecifiedKind
+  name: SpecifiedKind
+  nameWithType: ParseOptions.SpecifiedKind
+  fullName: Microsoft.CodeAnalysis.ParseOptions.SpecifiedKind
+- uid: Microsoft.CodeAnalysis.ParseOptions.DocumentationMode
+  commentId: P:Microsoft.CodeAnalysis.ParseOptions.DocumentationMode
+  parent: Microsoft.CodeAnalysis.ParseOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_DocumentationMode
+  name: DocumentationMode
+  nameWithType: ParseOptions.DocumentationMode
+  fullName: Microsoft.CodeAnalysis.ParseOptions.DocumentationMode
+- uid: Microsoft.CodeAnalysis.ParseOptions.Errors
+  commentId: P:Microsoft.CodeAnalysis.ParseOptions.Errors
+  parent: Microsoft.CodeAnalysis.ParseOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_Errors
+  name: Errors
+  nameWithType: ParseOptions.Errors
+  fullName: Microsoft.CodeAnalysis.ParseOptions.Errors
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.CodeAnalysis
+  commentId: N:Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis
+  nameWithType: Microsoft.CodeAnalysis
+  fullName: Microsoft.CodeAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.#ctor*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.#ctor
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions__ctor_Microsoft_CodeAnalysis_CSharp_LanguageVersion_Microsoft_CodeAnalysis_DocumentationMode_Microsoft_CodeAnalysis_SourceCodeKind_System_Collections_Generic_IEnumerable_System_String__
+  name: CSharpParseOptions
+  nameWithType: CSharpParseOptions.CSharpParseOptions
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CSharpParseOptions
+  nameWithType.vb: CSharpParseOptions.New
+  fullName.vb: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.New
+  name.vb: New
+- uid: Microsoft.CodeAnalysis.CSharp.LanguageVersion
+  commentId: T:Microsoft.CodeAnalysis.CSharp.LanguageVersion
+  parent: Microsoft.CodeAnalysis.CSharp
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.LanguageVersion.html
+  name: LanguageVersion
+  nameWithType: LanguageVersion
+  fullName: Microsoft.CodeAnalysis.CSharp.LanguageVersion
+- uid: Microsoft.CodeAnalysis.DocumentationMode
+  commentId: T:Microsoft.CodeAnalysis.DocumentationMode
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.DocumentationMode.html
+  name: DocumentationMode
+  nameWithType: DocumentationMode
+  fullName: Microsoft.CodeAnalysis.DocumentationMode
+- uid: Microsoft.CodeAnalysis.SourceCodeKind
+  commentId: T:Microsoft.CodeAnalysis.SourceCodeKind
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SourceCodeKind.html
+  name: SourceCodeKind
+  nameWithType: SourceCodeKind
+  fullName: Microsoft.CodeAnalysis.SourceCodeKind
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithKind*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithKind
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_WithKind_Microsoft_CodeAnalysis_SourceCodeKind_
+  name: WithKind
+  nameWithType: CSharpParseOptions.WithKind
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithKind
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  commentId: T:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+  parent: Microsoft.CodeAnalysis.CSharp
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html
+  name: CSharpParseOptions
+  nameWithType: CSharpParseOptions
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithLanguageVersion*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithLanguageVersion
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_WithLanguageVersion_Microsoft_CodeAnalysis_CSharp_LanguageVersion_
+  name: WithLanguageVersion
+  nameWithType: CSharpParseOptions.WithLanguageVersion
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithLanguageVersion
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_WithPreprocessorSymbols_System_Collections_Generic_IEnumerable_System_String__
+  name: WithPreprocessorSymbols
+  nameWithType: CSharpParseOptions.WithPreprocessorSymbols
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithPreprocessorSymbols
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Collections.Immutable.ImmutableArray{System.String}
+  commentId: T:System.Collections.Immutable.ImmutableArray{System.String}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<string>
+  nameWithType: ImmutableArray<string>
+  fullName: System.Collections.Immutable.ImmutableArray<string>
+  nameWithType.vb: ImmutableArray(Of String)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of String)
+  name.vb: ImmutableArray(Of String)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Immutable.ImmutableArray`1
+  commentId: T:System.Collections.Immutable.ImmutableArray`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<T>
+  nameWithType: ImmutableArray<T>
+  fullName: System.Collections.Immutable.ImmutableArray<T>
+  nameWithType.vb: ImmutableArray(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T)
+  name.vb: ImmutableArray(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Immutable
+  commentId: N:System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Immutable
+  nameWithType: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithDocumentationMode*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithDocumentationMode
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_WithDocumentationMode_Microsoft_CodeAnalysis_DocumentationMode_
+  name: WithDocumentationMode
+  nameWithType: CSharpParseOptions.WithDocumentationMode
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithDocumentationMode
+- uid: Microsoft.CodeAnalysis.ParseOptions.CommonWithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  commentId: M:Microsoft.CodeAnalysis.ParseOptions.CommonWithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  parent: Microsoft.CodeAnalysis.ParseOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SourceCodeKind.html
+  name: CommonWithKind(SourceCodeKind)
+  nameWithType: ParseOptions.CommonWithKind(SourceCodeKind)
+  fullName: Microsoft.CodeAnalysis.ParseOptions.CommonWithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ParseOptions.CommonWithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+    name: CommonWithKind
+    isExternal: true
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SourceCodeKind
+    name: SourceCodeKind
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SourceCodeKind.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ParseOptions.CommonWithKind(Microsoft.CodeAnalysis.SourceCodeKind)
+    name: CommonWithKind
+    isExternal: true
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SourceCodeKind
+    name: SourceCodeKind
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SourceCodeKind.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithKind*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithKind
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_CommonWithKind_Microsoft_CodeAnalysis_SourceCodeKind_
+  name: CommonWithKind
+  nameWithType: CSharpParseOptions.CommonWithKind
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithKind
+- uid: Microsoft.CodeAnalysis.ParseOptions.CommonWithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  commentId: M:Microsoft.CodeAnalysis.ParseOptions.CommonWithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  parent: Microsoft.CodeAnalysis.ParseOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_CommonWithDocumentationMode_Microsoft_CodeAnalysis_DocumentationMode_
+  name: CommonWithDocumentationMode(DocumentationMode)
+  nameWithType: ParseOptions.CommonWithDocumentationMode(DocumentationMode)
+  fullName: Microsoft.CodeAnalysis.ParseOptions.CommonWithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ParseOptions.CommonWithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+    name: CommonWithDocumentationMode
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_CommonWithDocumentationMode_Microsoft_CodeAnalysis_DocumentationMode_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.DocumentationMode
+    name: DocumentationMode
+    isExternal: true
+    href: Microsoft.CodeAnalysis.DocumentationMode.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ParseOptions.CommonWithDocumentationMode(Microsoft.CodeAnalysis.DocumentationMode)
+    name: CommonWithDocumentationMode
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_CommonWithDocumentationMode_Microsoft_CodeAnalysis_DocumentationMode_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.DocumentationMode
+    name: DocumentationMode
+    isExternal: true
+    href: Microsoft.CodeAnalysis.DocumentationMode.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithDocumentationMode*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithDocumentationMode
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_CommonWithDocumentationMode_Microsoft_CodeAnalysis_DocumentationMode_
+  name: CommonWithDocumentationMode
+  nameWithType: CSharpParseOptions.CommonWithDocumentationMode
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithDocumentationMode
+- uid: Microsoft.CodeAnalysis.ParseOptions.CommonWithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  commentId: M:Microsoft.CodeAnalysis.ParseOptions.CommonWithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+  parent: Microsoft.CodeAnalysis.ParseOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_CommonWithFeatures_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___
+  name: CommonWithFeatures(IEnumerable<KeyValuePair<string, string>>)
+  nameWithType: ParseOptions.CommonWithFeatures(IEnumerable<KeyValuePair<string, string>>)
+  fullName: Microsoft.CodeAnalysis.ParseOptions.CommonWithFeatures(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, string>>)
+  nameWithType.vb: ParseOptions.CommonWithFeatures(IEnumerable(Of KeyValuePair(Of String, String)))
+  fullName.vb: Microsoft.CodeAnalysis.ParseOptions.CommonWithFeatures(System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, String)))
+  name.vb: CommonWithFeatures(IEnumerable(Of KeyValuePair(Of String, String)))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ParseOptions.CommonWithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+    name: CommonWithFeatures
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_CommonWithFeatures_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ParseOptions.CommonWithFeatures(System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}})
+    name: CommonWithFeatures
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_CommonWithFeatures_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithFeatures*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithFeatures
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_CommonWithFeatures_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___
+  name: CommonWithFeatures
+  nameWithType: CSharpParseOptions.CommonWithFeatures
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.CommonWithFeatures
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<KeyValuePair<string, string>>
+  nameWithType: IEnumerable<KeyValuePair<string, string>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, string>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, String))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, String))
+  name.vb: IEnumerable(Of KeyValuePair(Of String, String))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithFeatures*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithFeatures
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_WithFeatures_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_String___
+  name: WithFeatures
+  nameWithType: CSharpParseOptions.WithFeatures
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.WithFeatures
+- uid: Microsoft.CodeAnalysis.ParseOptions.Equals(System.Object)
+  commentId: M:Microsoft.CodeAnalysis.ParseOptions.Equals(System.Object)
+  parent: Microsoft.CodeAnalysis.ParseOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: ParseOptions.Equals(object)
+  fullName: Microsoft.CodeAnalysis.ParseOptions.Equals(object)
+  nameWithType.vb: ParseOptions.Equals(Object)
+  fullName.vb: Microsoft.CodeAnalysis.ParseOptions.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ParseOptions.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ParseOptions.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_Equals_System_Object_
+  name: Equals
+  nameWithType: CSharpParseOptions.Equals
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IEquatable{Microsoft.CodeAnalysis.CSharp.CSharpParseOptions}.Equals(Microsoft.CodeAnalysis.CSharp.CSharpParseOptions)
+  commentId: M:System.IEquatable{Microsoft.CodeAnalysis.CSharp.CSharpParseOptions}.Equals(Microsoft.CodeAnalysis.CSharp.CSharpParseOptions)
+  parent: System.IEquatable{Microsoft.CodeAnalysis.CSharp.CSharpParseOptions}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(CSharpParseOptions)
+  nameWithType: IEquatable<CSharpParseOptions>.Equals(CSharpParseOptions)
+  fullName: System.IEquatable<Microsoft.CodeAnalysis.CSharp.CSharpParseOptions>.Equals(Microsoft.CodeAnalysis.CSharp.CSharpParseOptions)
+  nameWithType.vb: IEquatable(Of CSharpParseOptions).Equals(CSharpParseOptions)
+  fullName.vb: System.IEquatable(Of Microsoft.CodeAnalysis.CSharp.CSharpParseOptions).Equals(Microsoft.CodeAnalysis.CSharp.CSharpParseOptions)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.CodeAnalysis.CSharp.CSharpParseOptions}.Equals(Microsoft.CodeAnalysis.CSharp.CSharpParseOptions)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+    name: CSharpParseOptions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.CodeAnalysis.CSharp.CSharpParseOptions}.Equals(Microsoft.CodeAnalysis.CSharp.CSharpParseOptions)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions
+    name: CSharpParseOptions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: Microsoft.CodeAnalysis.ParseOptions.GetHashCode
+  commentId: M:Microsoft.CodeAnalysis.ParseOptions.GetHashCode
+  parent: Microsoft.CodeAnalysis.ParseOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_GetHashCode
+  name: GetHashCode()
+  nameWithType: ParseOptions.GetHashCode()
+  fullName: Microsoft.CodeAnalysis.ParseOptions.GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ParseOptions.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ParseOptions.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_GetHashCode
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.GetHashCode*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.GetHashCode
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_GetHashCode
+  name: GetHashCode
+  nameWithType: CSharpParseOptions.GetHashCode
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Default*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Default
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_Default
+  name: Default
+  nameWithType: CSharpParseOptions.Default
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Default
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.LanguageVersion*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.LanguageVersion
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_LanguageVersion
+  name: LanguageVersion
+  nameWithType: CSharpParseOptions.LanguageVersion
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.LanguageVersion
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.SpecifiedLanguageVersion*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.SpecifiedLanguageVersion
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_SpecifiedLanguageVersion
+  name: SpecifiedLanguageVersion
+  nameWithType: CSharpParseOptions.SpecifiedLanguageVersion
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.SpecifiedLanguageVersion
+- uid: Microsoft.CodeAnalysis.ParseOptions.PreprocessorSymbolNames
+  commentId: P:Microsoft.CodeAnalysis.ParseOptions.PreprocessorSymbolNames
+  parent: Microsoft.CodeAnalysis.ParseOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_PreprocessorSymbolNames
+  name: PreprocessorSymbolNames
+  nameWithType: ParseOptions.PreprocessorSymbolNames
+  fullName: Microsoft.CodeAnalysis.ParseOptions.PreprocessorSymbolNames
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.PreprocessorSymbolNames*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.PreprocessorSymbolNames
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_PreprocessorSymbolNames
+  name: PreprocessorSymbolNames
+  nameWithType: CSharpParseOptions.PreprocessorSymbolNames
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.PreprocessorSymbolNames
+- uid: Microsoft.CodeAnalysis.ParseOptions.Language
+  commentId: P:Microsoft.CodeAnalysis.ParseOptions.Language
+  parent: Microsoft.CodeAnalysis.ParseOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_Language
+  name: Language
+  nameWithType: ParseOptions.Language
+  fullName: Microsoft.CodeAnalysis.ParseOptions.Language
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Language*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Language
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_Language
+  name: Language
+  nameWithType: CSharpParseOptions.Language
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Language
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.CodeAnalysis.ParseOptions.Features
+  commentId: P:Microsoft.CodeAnalysis.ParseOptions.Features
+  parent: Microsoft.CodeAnalysis.ParseOptions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ParseOptions.html#Microsoft_CodeAnalysis_ParseOptions_Features
+  name: Features
+  nameWithType: ParseOptions.Features
+  fullName: Microsoft.CodeAnalysis.ParseOptions.Features
+- uid: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Features*
+  commentId: Overload:Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Features
+  isExternal: true
+  href: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.html#Microsoft_CodeAnalysis_CSharp_CSharpParseOptions_Features
+  name: Features
+  nameWithType: CSharpParseOptions.Features
+  fullName: Microsoft.CodeAnalysis.CSharp.CSharpParseOptions.Features
+- uid: System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<string, string>
+  nameWithType: IReadOnlyDictionary<string, string>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<string, string>
+  nameWithType.vb: IReadOnlyDictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of String, String)
+  name.vb: IReadOnlyDictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )

@@ -1,0 +1,1915 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  commentId: T:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  id: SymbolStartAnalysisContext
+  parent: Microsoft.CodeAnalysis.Diagnostics
+  children:
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.#ctor(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.CancellationToken
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Compilation
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterSpan
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterTree
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.IsGeneratedCode
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Options
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext})
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockStartAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}})
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext},Microsoft.CodeAnalysis.OperationKind[])
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.OperationKind})
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext})
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockStartAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext})
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSymbolEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext})
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{``0})
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},``0[])
+  - Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Symbol
+  langs:
+  - csharp
+  - vb
+  name: SymbolStartAnalysisContext
+  nameWithType: SymbolStartAnalysisContext
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public abstract class SymbolStartAnalysisContext
+    content.vb: Public MustInherit Class SymbolStartAnalysisContext
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.#ctor(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
+  commentId: M:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.#ctor(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)
+  id: '#ctor(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,System.Threading.CancellationToken)'
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: SymbolStartAnalysisContext(ISymbol, Compilation, AnalyzerOptions, CancellationToken)
+  nameWithType: SymbolStartAnalysisContext.SymbolStartAnalysisContext(ISymbol, Compilation, AnalyzerOptions, CancellationToken)
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.SymbolStartAnalysisContext(Microsoft.CodeAnalysis.ISymbol, Microsoft.CodeAnalysis.Compilation, Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions, System.Threading.CancellationToken)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: >-
+      [Obsolete("Use CompilationWithAnalyzers instead. See https://github.com/dotnet/roslyn/issues/63440 for more details.")]
+
+      public SymbolStartAnalysisContext(ISymbol symbol, Compilation compilation, AnalyzerOptions options, CancellationToken cancellationToken)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.ISymbol
+    - id: compilation
+      type: Microsoft.CodeAnalysis.Compilation
+    - id: options
+      type: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    content.vb: >-
+      <Obsolete("Use CompilationWithAnalyzers instead. See https://github.com/dotnet/roslyn/issues/63440 for more details.")>
+
+      Public Sub New(symbol As ISymbol, compilation As Compilation, options As AnalyzerOptions, cancellationToken As CancellationToken)
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.#ctor*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Use CompilationWithAnalyzers instead. See https://github.com/dotnet/roslyn/issues/63440 for more details.
+  nameWithType.vb: SymbolStartAnalysisContext.New(ISymbol, Compilation, AnalyzerOptions, CancellationToken)
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.New(Microsoft.CodeAnalysis.ISymbol, Microsoft.CodeAnalysis.Compilation, Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions, System.Threading.CancellationToken)
+  name.vb: New(ISymbol, Compilation, AnalyzerOptions, CancellationToken)
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSymbolEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext})
+  commentId: M:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSymbolEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext})
+  id: RegisterSymbolEndAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext})
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: RegisterSymbolEndAction(Action<SymbolAnalysisContext>)
+  nameWithType: SymbolStartAnalysisContext.RegisterSymbolEndAction(Action<SymbolAnalysisContext>)
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSymbolEndAction(System.Action<Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public abstract void RegisterSymbolEndAction(Action<SymbolAnalysisContext> action)
+    parameters:
+    - id: action
+      type: System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext}
+    content.vb: Public MustOverride Sub RegisterSymbolEndAction(action As Action(Of SymbolAnalysisContext))
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSymbolEndAction*
+  nameWithType.vb: SymbolStartAnalysisContext.RegisterSymbolEndAction(Action(Of SymbolAnalysisContext))
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSymbolEndAction(System.Action(Of Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext))
+  name.vb: RegisterSymbolEndAction(Action(Of SymbolAnalysisContext))
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockStartAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}})
+  commentId: M:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockStartAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}})
+  id: RegisterCodeBlockStartAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}})
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: RegisterCodeBlockStartAction<TLanguageKindEnum>(Action<CodeBlockStartAnalysisContext<TLanguageKindEnum>>)
+  nameWithType: SymbolStartAnalysisContext.RegisterCodeBlockStartAction<TLanguageKindEnum>(Action<CodeBlockStartAnalysisContext<TLanguageKindEnum>>)
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockStartAction<TLanguageKindEnum>(System.Action<Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext<TLanguageKindEnum>>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: 'public abstract void RegisterCodeBlockStartAction<TLanguageKindEnum>(Action<CodeBlockStartAnalysisContext<TLanguageKindEnum>> action) where TLanguageKindEnum : struct'
+    parameters:
+    - id: action
+      type: System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{{TLanguageKindEnum}}}
+    typeParameters:
+    - id: TLanguageKindEnum
+    content.vb: Public MustOverride Sub RegisterCodeBlockStartAction(Of TLanguageKindEnum As Structure)(action As Action(Of CodeBlockStartAnalysisContext(Of TLanguageKindEnum)))
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockStartAction*
+  nameWithType.vb: SymbolStartAnalysisContext.RegisterCodeBlockStartAction(Of TLanguageKindEnum)(Action(Of CodeBlockStartAnalysisContext(Of TLanguageKindEnum)))
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockStartAction(Of TLanguageKindEnum)(System.Action(Of Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext(Of TLanguageKindEnum)))
+  name.vb: RegisterCodeBlockStartAction(Of TLanguageKindEnum)(Action(Of CodeBlockStartAnalysisContext(Of TLanguageKindEnum)))
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext})
+  commentId: M:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext})
+  id: RegisterCodeBlockAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext})
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: RegisterCodeBlockAction(Action<CodeBlockAnalysisContext>)
+  nameWithType: SymbolStartAnalysisContext.RegisterCodeBlockAction(Action<CodeBlockAnalysisContext>)
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockAction(System.Action<Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public abstract void RegisterCodeBlockAction(Action<CodeBlockAnalysisContext> action)
+    parameters:
+    - id: action
+      type: System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext}
+    content.vb: Public MustOverride Sub RegisterCodeBlockAction(action As Action(Of CodeBlockAnalysisContext))
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockAction*
+  nameWithType.vb: SymbolStartAnalysisContext.RegisterCodeBlockAction(Action(Of CodeBlockAnalysisContext))
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockAction(System.Action(Of Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext))
+  name.vb: RegisterCodeBlockAction(Action(Of CodeBlockAnalysisContext))
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},``0[])
+  commentId: M:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},``0[])
+  id: RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},``0[])
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: RegisterSyntaxNodeAction<TLanguageKindEnum>(Action<SyntaxNodeAnalysisContext>, params TLanguageKindEnum[])
+  nameWithType: SymbolStartAnalysisContext.RegisterSyntaxNodeAction<TLanguageKindEnum>(Action<SyntaxNodeAnalysisContext>, params TLanguageKindEnum[])
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction<TLanguageKindEnum>(System.Action<Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext>, params TLanguageKindEnum[])
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: 'public void RegisterSyntaxNodeAction<TLanguageKindEnum>(Action<SyntaxNodeAnalysisContext> action, params TLanguageKindEnum[] syntaxKinds) where TLanguageKindEnum : struct'
+    parameters:
+    - id: action
+      type: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
+    - id: syntaxKinds
+      type: '{TLanguageKindEnum}[]'
+    typeParameters:
+    - id: TLanguageKindEnum
+    content.vb: Public Sub RegisterSyntaxNodeAction(Of TLanguageKindEnum As Structure)(action As Action(Of SyntaxNodeAnalysisContext), ParamArray syntaxKinds As TLanguageKindEnum())
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction*
+  nameWithType.vb: SymbolStartAnalysisContext.RegisterSyntaxNodeAction(Of TLanguageKindEnum)(Action(Of SyntaxNodeAnalysisContext), ParamArray TLanguageKindEnum())
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction(Of TLanguageKindEnum)(System.Action(Of Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext), ParamArray TLanguageKindEnum())
+  name.vb: RegisterSyntaxNodeAction(Of TLanguageKindEnum)(Action(Of SyntaxNodeAnalysisContext), ParamArray TLanguageKindEnum())
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{``0})
+  commentId: M:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{``0})
+  id: RegisterSyntaxNodeAction``1(System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext},System.Collections.Immutable.ImmutableArray{``0})
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: RegisterSyntaxNodeAction<TLanguageKindEnum>(Action<SyntaxNodeAnalysisContext>, ImmutableArray<TLanguageKindEnum>)
+  nameWithType: SymbolStartAnalysisContext.RegisterSyntaxNodeAction<TLanguageKindEnum>(Action<SyntaxNodeAnalysisContext>, ImmutableArray<TLanguageKindEnum>)
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction<TLanguageKindEnum>(System.Action<Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext>, System.Collections.Immutable.ImmutableArray<TLanguageKindEnum>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: 'public abstract void RegisterSyntaxNodeAction<TLanguageKindEnum>(Action<SyntaxNodeAnalysisContext> action, ImmutableArray<TLanguageKindEnum> syntaxKinds) where TLanguageKindEnum : struct'
+    parameters:
+    - id: action
+      type: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
+    - id: syntaxKinds
+      type: System.Collections.Immutable.ImmutableArray{{TLanguageKindEnum}}
+    typeParameters:
+    - id: TLanguageKindEnum
+    content.vb: Public MustOverride Sub RegisterSyntaxNodeAction(Of TLanguageKindEnum As Structure)(action As Action(Of SyntaxNodeAnalysisContext), syntaxKinds As ImmutableArray(Of TLanguageKindEnum))
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction*
+  nameWithType.vb: SymbolStartAnalysisContext.RegisterSyntaxNodeAction(Of TLanguageKindEnum)(Action(Of SyntaxNodeAnalysisContext), ImmutableArray(Of TLanguageKindEnum))
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction(Of TLanguageKindEnum)(System.Action(Of Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext), System.Collections.Immutable.ImmutableArray(Of TLanguageKindEnum))
+  name.vb: RegisterSyntaxNodeAction(Of TLanguageKindEnum)(Action(Of SyntaxNodeAnalysisContext), ImmutableArray(Of TLanguageKindEnum))
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockStartAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext})
+  commentId: M:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockStartAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext})
+  id: RegisterOperationBlockStartAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext})
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: RegisterOperationBlockStartAction(Action<OperationBlockStartAnalysisContext>)
+  nameWithType: SymbolStartAnalysisContext.RegisterOperationBlockStartAction(Action<OperationBlockStartAnalysisContext>)
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockStartAction(System.Action<Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public abstract void RegisterOperationBlockStartAction(Action<OperationBlockStartAnalysisContext> action)
+    parameters:
+    - id: action
+      type: System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext}
+    content.vb: Public MustOverride Sub RegisterOperationBlockStartAction(action As Action(Of OperationBlockStartAnalysisContext))
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockStartAction*
+  nameWithType.vb: SymbolStartAnalysisContext.RegisterOperationBlockStartAction(Action(Of OperationBlockStartAnalysisContext))
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockStartAction(System.Action(Of Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext))
+  name.vb: RegisterOperationBlockStartAction(Action(Of OperationBlockStartAnalysisContext))
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext})
+  commentId: M:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext})
+  id: RegisterOperationBlockAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext})
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: RegisterOperationBlockAction(Action<OperationBlockAnalysisContext>)
+  nameWithType: SymbolStartAnalysisContext.RegisterOperationBlockAction(Action<OperationBlockAnalysisContext>)
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockAction(System.Action<Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public abstract void RegisterOperationBlockAction(Action<OperationBlockAnalysisContext> action)
+    parameters:
+    - id: action
+      type: System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext}
+    content.vb: Public MustOverride Sub RegisterOperationBlockAction(action As Action(Of OperationBlockAnalysisContext))
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockAction*
+  nameWithType.vb: SymbolStartAnalysisContext.RegisterOperationBlockAction(Action(Of OperationBlockAnalysisContext))
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockAction(System.Action(Of Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext))
+  name.vb: RegisterOperationBlockAction(Action(Of OperationBlockAnalysisContext))
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext},Microsoft.CodeAnalysis.OperationKind[])
+  commentId: M:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext},Microsoft.CodeAnalysis.OperationKind[])
+  id: RegisterOperationAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext},Microsoft.CodeAnalysis.OperationKind[])
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: RegisterOperationAction(Action<OperationAnalysisContext>, params OperationKind[])
+  nameWithType: SymbolStartAnalysisContext.RegisterOperationAction(Action<OperationAnalysisContext>, params OperationKind[])
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction(System.Action<Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext>, params Microsoft.CodeAnalysis.OperationKind[])
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public void RegisterOperationAction(Action<OperationAnalysisContext> action, params OperationKind[] operationKinds)
+    parameters:
+    - id: action
+      type: System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext}
+    - id: operationKinds
+      type: Microsoft.CodeAnalysis.OperationKind[]
+    content.vb: Public Sub RegisterOperationAction(action As Action(Of OperationAnalysisContext), ParamArray operationKinds As OperationKind())
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction*
+  nameWithType.vb: SymbolStartAnalysisContext.RegisterOperationAction(Action(Of OperationAnalysisContext), ParamArray OperationKind())
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction(System.Action(Of Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext), ParamArray Microsoft.CodeAnalysis.OperationKind())
+  name.vb: RegisterOperationAction(Action(Of OperationAnalysisContext), ParamArray OperationKind())
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.OperationKind})
+  commentId: M:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.OperationKind})
+  id: RegisterOperationAction(System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext},System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.OperationKind})
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: RegisterOperationAction(Action<OperationAnalysisContext>, ImmutableArray<OperationKind>)
+  nameWithType: SymbolStartAnalysisContext.RegisterOperationAction(Action<OperationAnalysisContext>, ImmutableArray<OperationKind>)
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction(System.Action<Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext>, System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.OperationKind>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public abstract void RegisterOperationAction(Action<OperationAnalysisContext> action, ImmutableArray<OperationKind> operationKinds)
+    parameters:
+    - id: action
+      type: System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext}
+    - id: operationKinds
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.OperationKind}
+    content.vb: Public MustOverride Sub RegisterOperationAction(action As Action(Of OperationAnalysisContext), operationKinds As ImmutableArray(Of OperationKind))
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction*
+  nameWithType.vb: SymbolStartAnalysisContext.RegisterOperationAction(Action(Of OperationAnalysisContext), ImmutableArray(Of OperationKind))
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction(System.Action(Of Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext), System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.OperationKind))
+  name.vb: RegisterOperationAction(Action(Of OperationAnalysisContext), ImmutableArray(Of OperationKind))
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Symbol
+  commentId: P:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Symbol
+  id: Symbol
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: Symbol
+  nameWithType: SymbolStartAnalysisContext.Symbol
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Symbol
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public ISymbol Symbol { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.ISymbol
+    content.vb: Public ReadOnly Property Symbol As ISymbol
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Symbol*
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Compilation
+  commentId: P:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Compilation
+  id: Compilation
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: Compilation
+  nameWithType: SymbolStartAnalysisContext.Compilation
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Compilation
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public Compilation Compilation { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.Compilation
+    content.vb: Public ReadOnly Property Compilation As Compilation
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Compilation*
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Options
+  commentId: P:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Options
+  id: Options
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: Options
+  nameWithType: SymbolStartAnalysisContext.Options
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Options
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public AnalyzerOptions Options { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+    content.vb: Public ReadOnly Property Options As AnalyzerOptions
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Options*
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.IsGeneratedCode
+  commentId: P:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.IsGeneratedCode
+  id: IsGeneratedCode
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: IsGeneratedCode
+  nameWithType: SymbolStartAnalysisContext.IsGeneratedCode
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.IsGeneratedCode
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public bool IsGeneratedCode { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsGeneratedCode As Boolean
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.IsGeneratedCode*
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterTree
+  commentId: P:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterTree
+  id: FilterTree
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: FilterTree
+  nameWithType: SymbolStartAnalysisContext.FilterTree
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterTree
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public SyntaxTree? FilterTree { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.SyntaxTree
+    content.vb: Public ReadOnly Property FilterTree As SyntaxTree
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterTree*
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterSpan
+  commentId: P:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterSpan
+  id: FilterSpan
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: FilterSpan
+  nameWithType: SymbolStartAnalysisContext.FilterSpan
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterSpan
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public TextSpan? FilterSpan { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
+    content.vb: Public ReadOnly Property FilterSpan As TextSpan?
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterSpan*
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.CancellationToken
+  commentId: P:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.CancellationToken
+  id: CancellationToken
+  parent: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext
+  langs:
+  - csharp
+  - vb
+  name: CancellationToken
+  nameWithType: SymbolStartAnalysisContext.CancellationToken
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.CancellationToken
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Diagnostics
+  syntax:
+    content: public CancellationToken CancellationToken { get; }
+    parameters: []
+    return:
+      type: System.Threading.CancellationToken
+    content.vb: Public ReadOnly Property CancellationToken As CancellationToken
+  overload: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.CancellationToken*
+references:
+- uid: Microsoft.CodeAnalysis.Diagnostics
+  commentId: N:Microsoft.CodeAnalysis.Diagnostics
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Diagnostics
+  nameWithType: Microsoft.CodeAnalysis.Diagnostics
+  fullName: Microsoft.CodeAnalysis.Diagnostics
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.#ctor*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.#ctor
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext__ctor_Microsoft_CodeAnalysis_ISymbol_Microsoft_CodeAnalysis_Compilation_Microsoft_CodeAnalysis_Diagnostics_AnalyzerOptions_System_Threading_CancellationToken_
+  name: SymbolStartAnalysisContext
+  nameWithType: SymbolStartAnalysisContext.SymbolStartAnalysisContext
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.SymbolStartAnalysisContext
+  nameWithType.vb: SymbolStartAnalysisContext.New
+  fullName.vb: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.New
+  name.vb: New
+- uid: Microsoft.CodeAnalysis.ISymbol
+  commentId: T:Microsoft.CodeAnalysis.ISymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html
+  name: ISymbol
+  nameWithType: ISymbol
+  fullName: Microsoft.CodeAnalysis.ISymbol
+- uid: Microsoft.CodeAnalysis.Compilation
+  commentId: T:Microsoft.CodeAnalysis.Compilation
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Compilation.html
+  name: Compilation
+  nameWithType: Compilation
+  fullName: Microsoft.CodeAnalysis.Compilation
+- uid: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+  commentId: T:Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+  parent: Microsoft.CodeAnalysis.Diagnostics
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.html
+  name: AnalyzerOptions
+  nameWithType: AnalyzerOptions
+  fullName: Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: Microsoft.CodeAnalysis
+  commentId: N:Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis
+  nameWithType: Microsoft.CodeAnalysis
+  fullName: Microsoft.CodeAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSymbolEndAction*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSymbolEndAction
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_RegisterSymbolEndAction_System_Action_Microsoft_CodeAnalysis_Diagnostics_SymbolAnalysisContext__
+  name: RegisterSymbolEndAction
+  nameWithType: SymbolStartAnalysisContext.RegisterSymbolEndAction
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSymbolEndAction
+- uid: System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext}
+  commentId: T:System.Action{Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<SymbolAnalysisContext>
+  nameWithType: Action<SymbolAnalysisContext>
+  fullName: System.Action<Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext>
+  nameWithType.vb: Action(Of SymbolAnalysisContext)
+  fullName.vb: System.Action(Of Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext)
+  name.vb: Action(Of SymbolAnalysisContext)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+    name: SymbolAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext
+    name: SymbolAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.SymbolAnalysisContext.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockStartAction*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockStartAction
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_RegisterCodeBlockStartAction__1_System_Action_Microsoft_CodeAnalysis_Diagnostics_CodeBlockStartAnalysisContext___0___
+  name: RegisterCodeBlockStartAction
+  nameWithType: SymbolStartAnalysisContext.RegisterCodeBlockStartAction
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockStartAction
+- uid: System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{{TLanguageKindEnum}}}
+  commentId: T:System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext{``0}}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<CodeBlockStartAnalysisContext<TLanguageKindEnum>>
+  nameWithType: Action<CodeBlockStartAnalysisContext<TLanguageKindEnum>>
+  fullName: System.Action<Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext<TLanguageKindEnum>>
+  nameWithType.vb: Action(Of CodeBlockStartAnalysisContext(Of TLanguageKindEnum))
+  fullName.vb: System.Action(Of Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext(Of TLanguageKindEnum))
+  name.vb: Action(Of CodeBlockStartAnalysisContext(Of TLanguageKindEnum))
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+    name: CodeBlockStartAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext-1.html
+  - name: <
+  - name: TLanguageKindEnum
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext`1
+    name: CodeBlockStartAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.CodeBlockStartAnalysisContext-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TLanguageKindEnum
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockAction*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockAction
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_RegisterCodeBlockAction_System_Action_Microsoft_CodeAnalysis_Diagnostics_CodeBlockAnalysisContext__
+  name: RegisterCodeBlockAction
+  nameWithType: SymbolStartAnalysisContext.RegisterCodeBlockAction
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterCodeBlockAction
+- uid: System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext}
+  commentId: T:System.Action{Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<CodeBlockAnalysisContext>
+  nameWithType: Action<CodeBlockAnalysisContext>
+  fullName: System.Action<Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext>
+  nameWithType.vb: Action(Of CodeBlockAnalysisContext)
+  fullName.vb: System.Action(Of Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext)
+  name.vb: Action(Of CodeBlockAnalysisContext)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext
+    name: CodeBlockAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext
+    name: CodeBlockAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.CodeBlockAnalysisContext.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_RegisterSyntaxNodeAction__1_System_Action_Microsoft_CodeAnalysis_Diagnostics_SyntaxNodeAnalysisContext____0___
+  name: RegisterSyntaxNodeAction
+  nameWithType: SymbolStartAnalysisContext.RegisterSyntaxNodeAction
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterSyntaxNodeAction
+- uid: System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
+  commentId: T:System.Action{Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<SyntaxNodeAnalysisContext>
+  nameWithType: Action<SyntaxNodeAnalysisContext>
+  fullName: System.Action<Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext>
+  nameWithType.vb: Action(Of SyntaxNodeAnalysisContext)
+  fullName.vb: System.Action(Of Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext)
+  name.vb: Action(Of SyntaxNodeAnalysisContext)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+    name: SyntaxNodeAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext
+    name: SyntaxNodeAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.SyntaxNodeAnalysisContext.html
+  - name: )
+- uid: '{TLanguageKindEnum}[]'
+  isExternal: true
+  name: TLanguageKindEnum[]
+  nameWithType: TLanguageKindEnum[]
+  fullName: TLanguageKindEnum[]
+  nameWithType.vb: TLanguageKindEnum()
+  fullName.vb: TLanguageKindEnum()
+  name.vb: TLanguageKindEnum()
+  spec.csharp:
+  - name: TLanguageKindEnum
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: TLanguageKindEnum
+  - name: (
+  - name: )
+- uid: System.Collections.Immutable.ImmutableArray{{TLanguageKindEnum}}
+  commentId: T:System.Collections.Immutable.ImmutableArray{``0}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<TLanguageKindEnum>
+  nameWithType: ImmutableArray<TLanguageKindEnum>
+  fullName: System.Collections.Immutable.ImmutableArray<TLanguageKindEnum>
+  nameWithType.vb: ImmutableArray(Of TLanguageKindEnum)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of TLanguageKindEnum)
+  name.vb: ImmutableArray(Of TLanguageKindEnum)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - name: TLanguageKindEnum
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TLanguageKindEnum
+  - name: )
+- uid: System.Collections.Immutable.ImmutableArray`1
+  commentId: T:System.Collections.Immutable.ImmutableArray`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<T>
+  nameWithType: ImmutableArray<T>
+  fullName: System.Collections.Immutable.ImmutableArray<T>
+  nameWithType.vb: ImmutableArray(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T)
+  name.vb: ImmutableArray(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Immutable
+  commentId: N:System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Immutable
+  nameWithType: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockStartAction*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockStartAction
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_RegisterOperationBlockStartAction_System_Action_Microsoft_CodeAnalysis_Diagnostics_OperationBlockStartAnalysisContext__
+  name: RegisterOperationBlockStartAction
+  nameWithType: SymbolStartAnalysisContext.RegisterOperationBlockStartAction
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockStartAction
+- uid: System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext}
+  commentId: T:System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<OperationBlockStartAnalysisContext>
+  nameWithType: Action<OperationBlockStartAnalysisContext>
+  fullName: System.Action<Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext>
+  nameWithType.vb: Action(Of OperationBlockStartAnalysisContext)
+  fullName.vb: System.Action(Of Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext)
+  name.vb: Action(Of OperationBlockStartAnalysisContext)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext
+    name: OperationBlockStartAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext
+    name: OperationBlockStartAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.OperationBlockStartAnalysisContext.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockAction*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockAction
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_RegisterOperationBlockAction_System_Action_Microsoft_CodeAnalysis_Diagnostics_OperationBlockAnalysisContext__
+  name: RegisterOperationBlockAction
+  nameWithType: SymbolStartAnalysisContext.RegisterOperationBlockAction
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationBlockAction
+- uid: System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext}
+  commentId: T:System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<OperationBlockAnalysisContext>
+  nameWithType: Action<OperationBlockAnalysisContext>
+  fullName: System.Action<Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext>
+  nameWithType.vb: Action(Of OperationBlockAnalysisContext)
+  fullName.vb: System.Action(Of Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext)
+  name.vb: Action(Of OperationBlockAnalysisContext)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext
+    name: OperationBlockAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext
+    name: OperationBlockAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.OperationBlockAnalysisContext.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_RegisterOperationAction_System_Action_Microsoft_CodeAnalysis_Diagnostics_OperationAnalysisContext__Microsoft_CodeAnalysis_OperationKind___
+  name: RegisterOperationAction
+  nameWithType: SymbolStartAnalysisContext.RegisterOperationAction
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.RegisterOperationAction
+- uid: System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext}
+  commentId: T:System.Action{Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<OperationAnalysisContext>
+  nameWithType: Action<OperationAnalysisContext>
+  fullName: System.Action<Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext>
+  nameWithType.vb: Action(Of OperationAnalysisContext)
+  fullName.vb: System.Action(Of Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext)
+  name.vb: Action(Of OperationAnalysisContext)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext
+    name: OperationAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext
+    name: OperationAnalysisContext
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Diagnostics.OperationAnalysisContext.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.OperationKind[]
+  isExternal: true
+  href: Microsoft.CodeAnalysis.OperationKind.html
+  name: OperationKind[]
+  nameWithType: OperationKind[]
+  fullName: Microsoft.CodeAnalysis.OperationKind[]
+  nameWithType.vb: OperationKind()
+  fullName.vb: Microsoft.CodeAnalysis.OperationKind()
+  name.vb: OperationKind()
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.OperationKind
+    name: OperationKind
+    isExternal: true
+    href: Microsoft.CodeAnalysis.OperationKind.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.OperationKind
+    name: OperationKind
+    isExternal: true
+    href: Microsoft.CodeAnalysis.OperationKind.html
+  - name: (
+  - name: )
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.OperationKind}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.OperationKind}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<OperationKind>
+  nameWithType: ImmutableArray<OperationKind>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.OperationKind>
+  nameWithType.vb: ImmutableArray(Of OperationKind)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.OperationKind)
+  name.vb: ImmutableArray(Of OperationKind)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.OperationKind
+    name: OperationKind
+    isExternal: true
+    href: Microsoft.CodeAnalysis.OperationKind.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.OperationKind
+    name: OperationKind
+    isExternal: true
+    href: Microsoft.CodeAnalysis.OperationKind.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Symbol*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Symbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_Symbol
+  name: Symbol
+  nameWithType: SymbolStartAnalysisContext.Symbol
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Symbol
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Compilation*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Compilation
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_Compilation
+  name: Compilation
+  nameWithType: SymbolStartAnalysisContext.Compilation
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Compilation
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Options*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Options
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_Options
+  name: Options
+  nameWithType: SymbolStartAnalysisContext.Options
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.Options
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.IsGeneratedCode*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.IsGeneratedCode
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_IsGeneratedCode
+  name: IsGeneratedCode
+  nameWithType: SymbolStartAnalysisContext.IsGeneratedCode
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.IsGeneratedCode
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterTree*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterTree
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_FilterTree
+  name: FilterTree
+  nameWithType: SymbolStartAnalysisContext.FilterTree
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterTree
+- uid: Microsoft.CodeAnalysis.SyntaxTree
+  commentId: T:Microsoft.CodeAnalysis.SyntaxTree
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SyntaxTree.html
+  name: SyntaxTree
+  nameWithType: SyntaxTree
+  fullName: Microsoft.CodeAnalysis.SyntaxTree
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterSpan*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterSpan
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_FilterSpan
+  name: FilterSpan
+  nameWithType: SymbolStartAnalysisContext.FilterSpan
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.FilterSpan
+- uid: System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
+  commentId: T:System.Nullable{Microsoft.CodeAnalysis.Text.TextSpan}
+  parent: System
+  definition: System.Nullable`1
+  href: Microsoft.CodeAnalysis.Text.TextSpan.html
+  name: TextSpan?
+  nameWithType: TextSpan?
+  fullName: Microsoft.CodeAnalysis.Text.TextSpan?
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Text.TextSpan
+    name: TextSpan
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextSpan.html
+  - name: '?'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Text.TextSpan
+    name: TextSpan
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextSpan.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.CancellationToken*
+  commentId: Overload:Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.CancellationToken
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.html#Microsoft_CodeAnalysis_Diagnostics_SymbolStartAnalysisContext_CancellationToken
+  name: CancellationToken
+  nameWithType: SymbolStartAnalysisContext.CancellationToken
+  fullName: Microsoft.CodeAnalysis.Diagnostics.SymbolStartAnalysisContext.CancellationToken

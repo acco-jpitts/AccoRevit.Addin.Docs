@@ -1,0 +1,847 @@
+### YamlMime:ManagedReference
+items:
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  id: SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  children:
+  - Nice3point.Revit.Extensions.SystemExtensions.AppendPath(System.String,System.String)
+  - Nice3point.Revit.Extensions.SystemExtensions.AppendPath(System.String,System.String[])
+  - Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  - Nice3point.Revit.Extensions.SystemExtensions.Contains(System.String,System.String,System.StringComparison)
+  - Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual(System.Double,System.Double)
+  - Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual(System.Double,System.Double,System.Double)
+  - Nice3point.Revit.Extensions.SystemExtensions.IsNullOrEmpty(System.String)
+  - Nice3point.Revit.Extensions.SystemExtensions.IsNullOrWhiteSpace(System.String)
+  - Nice3point.Revit.Extensions.SystemExtensions.Round(System.Double)
+  - Nice3point.Revit.Extensions.SystemExtensions.Round(System.Double,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public static class SystemExtensions
+    content.vb: >-
+      <PublicAPI>
+
+      Public Module SystemExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  id: Cast``1(System.Object)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  langs:
+  - csharp
+  - vb
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [Pure]
+
+      public static T Cast<T>(this object obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: >-
+      <Pure>
+
+      Public Shared Function Cast(Of T)(obj As Object) As T
+  overload: Nice3point.Revit.Extensions.SystemExtensions.Cast*
+  attributes:
+  - type: JetBrains.Annotations.PureAttribute
+    ctor: JetBrains.Annotations.PureAttribute.#ctor
+    arguments: []
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Round(System.Double)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Round(System.Double)
+  id: Round(System.Double)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  langs:
+  - csharp
+  - vb
+  name: Round(double)
+  nameWithType: SystemExtensions.Round(double)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Round(double)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [Pure]
+
+      public static double Round(this double source)
+    parameters:
+    - id: source
+      type: System.Double
+    return:
+      type: System.Double
+    content.vb: >-
+      <Pure>
+
+      Public Shared Function Round(source As Double) As Double
+  overload: Nice3point.Revit.Extensions.SystemExtensions.Round*
+  attributes:
+  - type: JetBrains.Annotations.PureAttribute
+    ctor: JetBrains.Annotations.PureAttribute.#ctor
+    arguments: []
+  nameWithType.vb: SystemExtensions.Round(Double)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Round(Double)
+  name.vb: Round(Double)
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Round(System.Double,System.Int32)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Round(System.Double,System.Int32)
+  id: Round(System.Double,System.Int32)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  langs:
+  - csharp
+  - vb
+  name: Round(double, int)
+  nameWithType: SystemExtensions.Round(double, int)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Round(double, int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [Pure]
+
+      public static double Round(this double source, int digits)
+    parameters:
+    - id: source
+      type: System.Double
+    - id: digits
+      type: System.Int32
+    return:
+      type: System.Double
+    content.vb: >-
+      <Pure>
+
+      Public Shared Function Round(source As Double, digits As Integer) As Double
+  overload: Nice3point.Revit.Extensions.SystemExtensions.Round*
+  attributes:
+  - type: JetBrains.Annotations.PureAttribute
+    ctor: JetBrains.Annotations.PureAttribute.#ctor
+    arguments: []
+  nameWithType.vb: SystemExtensions.Round(Double, Integer)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Round(Double, Integer)
+  name.vb: Round(Double, Integer)
+- uid: Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual(System.Double,System.Double)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual(System.Double,System.Double)
+  id: IsAlmostEqual(System.Double,System.Double)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsAlmostEqual(double, double)
+  nameWithType: SystemExtensions.IsAlmostEqual(double, double)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual(double, double)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [Pure]
+
+      public static bool IsAlmostEqual(this double source, double value)
+    parameters:
+    - id: source
+      type: System.Double
+    - id: value
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Pure>
+
+      Public Shared Function IsAlmostEqual(source As Double, value As Double) As Boolean
+  overload: Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual*
+  attributes:
+  - type: JetBrains.Annotations.PureAttribute
+    ctor: JetBrains.Annotations.PureAttribute.#ctor
+    arguments: []
+  nameWithType.vb: SystemExtensions.IsAlmostEqual(Double, Double)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual(Double, Double)
+  name.vb: IsAlmostEqual(Double, Double)
+- uid: Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual(System.Double,System.Double,System.Double)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual(System.Double,System.Double,System.Double)
+  id: IsAlmostEqual(System.Double,System.Double,System.Double)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsAlmostEqual(double, double, double)
+  nameWithType: SystemExtensions.IsAlmostEqual(double, double, double)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual(double, double, double)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [Pure]
+
+      public static bool IsAlmostEqual(this double source, double value, double tolerance)
+    parameters:
+    - id: source
+      type: System.Double
+    - id: value
+      type: System.Double
+    - id: tolerance
+      type: System.Double
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Pure>
+
+      Public Shared Function IsAlmostEqual(source As Double, value As Double, tolerance As Double) As Boolean
+  overload: Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual*
+  attributes:
+  - type: JetBrains.Annotations.PureAttribute
+    ctor: JetBrains.Annotations.PureAttribute.#ctor
+    arguments: []
+  nameWithType.vb: SystemExtensions.IsAlmostEqual(Double, Double, Double)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual(Double, Double, Double)
+  name.vb: IsAlmostEqual(Double, Double, Double)
+- uid: Nice3point.Revit.Extensions.SystemExtensions.IsNullOrEmpty(System.String)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.IsNullOrEmpty(System.String)
+  id: IsNullOrEmpty(System.String)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrEmpty(string?)
+  nameWithType: SystemExtensions.IsNullOrEmpty(string?)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.IsNullOrEmpty(string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [Pure]
+
+      public static bool IsNullOrEmpty(this string? source)
+    parameters:
+    - id: source
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Pure>
+
+      Public Shared Function IsNullOrEmpty(source As String) As Boolean
+  overload: Nice3point.Revit.Extensions.SystemExtensions.IsNullOrEmpty*
+  attributes:
+  - type: JetBrains.Annotations.PureAttribute
+    ctor: JetBrains.Annotations.PureAttribute.#ctor
+    arguments: []
+  nameWithType.vb: SystemExtensions.IsNullOrEmpty(String)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.IsNullOrEmpty(String)
+  name.vb: IsNullOrEmpty(String)
+- uid: Nice3point.Revit.Extensions.SystemExtensions.IsNullOrWhiteSpace(System.String)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.IsNullOrWhiteSpace(System.String)
+  id: IsNullOrWhiteSpace(System.String)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrWhiteSpace(string?)
+  nameWithType: SystemExtensions.IsNullOrWhiteSpace(string?)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.IsNullOrWhiteSpace(string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [Pure]
+
+      public static bool IsNullOrWhiteSpace(this string? source)
+    parameters:
+    - id: source
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Pure>
+
+      Public Shared Function IsNullOrWhiteSpace(source As String) As Boolean
+  overload: Nice3point.Revit.Extensions.SystemExtensions.IsNullOrWhiteSpace*
+  attributes:
+  - type: JetBrains.Annotations.PureAttribute
+    ctor: JetBrains.Annotations.PureAttribute.#ctor
+    arguments: []
+  nameWithType.vb: SystemExtensions.IsNullOrWhiteSpace(String)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.IsNullOrWhiteSpace(String)
+  name.vb: IsNullOrWhiteSpace(String)
+- uid: Nice3point.Revit.Extensions.SystemExtensions.AppendPath(System.String,System.String)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.AppendPath(System.String,System.String)
+  id: AppendPath(System.String,System.String)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  langs:
+  - csharp
+  - vb
+  name: AppendPath(string, string)
+  nameWithType: SystemExtensions.AppendPath(string, string)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.AppendPath(string, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [Pure]
+
+      public static string AppendPath(this string source, string path)
+    parameters:
+    - id: source
+      type: System.String
+    - id: path
+      type: System.String
+    return:
+      type: System.String
+    content.vb: >-
+      <Pure>
+
+      Public Shared Function AppendPath(source As String, path As String) As String
+  overload: Nice3point.Revit.Extensions.SystemExtensions.AppendPath*
+  attributes:
+  - type: JetBrains.Annotations.PureAttribute
+    ctor: JetBrains.Annotations.PureAttribute.#ctor
+    arguments: []
+  nameWithType.vb: SystemExtensions.AppendPath(String, String)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.AppendPath(String, String)
+  name.vb: AppendPath(String, String)
+- uid: Nice3point.Revit.Extensions.SystemExtensions.AppendPath(System.String,System.String[])
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.AppendPath(System.String,System.String[])
+  id: AppendPath(System.String,System.String[])
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  langs:
+  - csharp
+  - vb
+  name: AppendPath(string, params string[])
+  nameWithType: SystemExtensions.AppendPath(string, params string[])
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.AppendPath(string, params string[])
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [Pure]
+
+      public static string AppendPath(this string source, params string[] paths)
+    parameters:
+    - id: source
+      type: System.String
+    - id: paths
+      type: System.String[]
+    return:
+      type: System.String
+    content.vb: >-
+      <Pure>
+
+      Public Shared Function AppendPath(source As String, ParamArray paths As String()) As String
+  overload: Nice3point.Revit.Extensions.SystemExtensions.AppendPath*
+  attributes:
+  - type: JetBrains.Annotations.PureAttribute
+    ctor: JetBrains.Annotations.PureAttribute.#ctor
+    arguments: []
+  nameWithType.vb: SystemExtensions.AppendPath(String, ParamArray String())
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.AppendPath(String, ParamArray String())
+  name.vb: AppendPath(String, ParamArray String())
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Contains(System.String,System.String,System.StringComparison)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Contains(System.String,System.String,System.StringComparison)
+  id: Contains(System.String,System.String,System.StringComparison)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  langs:
+  - csharp
+  - vb
+  name: Contains(string, string, StringComparison)
+  nameWithType: SystemExtensions.Contains(string, string, StringComparison)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Contains(string, string, System.StringComparison)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [Pure]
+
+      public static bool Contains(this string source, string value, StringComparison comparison)
+    parameters:
+    - id: source
+      type: System.String
+    - id: value
+      type: System.String
+    - id: comparison
+      type: System.StringComparison
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <Pure>
+
+      Public Shared Function Contains(source As String, value As String, comparison As StringComparison) As Boolean
+  overload: Nice3point.Revit.Extensions.SystemExtensions.Contains*
+  attributes:
+  - type: JetBrains.Annotations.PureAttribute
+    ctor: JetBrains.Annotations.PureAttribute.#ctor
+    arguments: []
+  nameWithType.vb: SystemExtensions.Contains(String, String, StringComparison)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Contains(String, String, System.StringComparison)
+  name.vb: Contains(String, String, StringComparison)
+references:
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast*
+  commentId: Overload:Nice3point.Revit.Extensions.SystemExtensions.Cast
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast
+  nameWithType: SystemExtensions.Cast
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Round*
+  commentId: Overload:Nice3point.Revit.Extensions.SystemExtensions.Round
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Round_System_Double_
+  name: Round
+  nameWithType: SystemExtensions.Round
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Round
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual*
+  commentId: Overload:Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_IsAlmostEqual_System_Double_System_Double_
+  name: IsAlmostEqual
+  nameWithType: SystemExtensions.IsAlmostEqual
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.IsAlmostEqual
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Nice3point.Revit.Extensions.SystemExtensions.IsNullOrEmpty*
+  commentId: Overload:Nice3point.Revit.Extensions.SystemExtensions.IsNullOrEmpty
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_IsNullOrEmpty_System_String_
+  name: IsNullOrEmpty
+  nameWithType: SystemExtensions.IsNullOrEmpty
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.IsNullOrEmpty
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Nice3point.Revit.Extensions.SystemExtensions.IsNullOrWhiteSpace*
+  commentId: Overload:Nice3point.Revit.Extensions.SystemExtensions.IsNullOrWhiteSpace
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_IsNullOrWhiteSpace_System_String_
+  name: IsNullOrWhiteSpace
+  nameWithType: SystemExtensions.IsNullOrWhiteSpace
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.IsNullOrWhiteSpace
+- uid: Nice3point.Revit.Extensions.SystemExtensions.AppendPath*
+  commentId: Overload:Nice3point.Revit.Extensions.SystemExtensions.AppendPath
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_AppendPath_System_String_System_String_
+  name: AppendPath
+  nameWithType: SystemExtensions.AppendPath
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.AppendPath
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Contains*
+  commentId: Overload:Nice3point.Revit.Extensions.SystemExtensions.Contains
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Contains_System_String_System_String_System_StringComparison_
+  name: Contains
+  nameWithType: SystemExtensions.Contains
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Contains
+- uid: System.StringComparison
+  commentId: T:System.StringComparison
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.stringcomparison
+  name: StringComparison
+  nameWithType: StringComparison
+  fullName: System.StringComparison

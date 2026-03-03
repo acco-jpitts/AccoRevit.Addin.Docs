@@ -1,0 +1,1504 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  commentId: T:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  id: DataFlowAnalysisResult`2
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  children:
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.#ctor(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult{`0,`1})
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ControlFlowGraph
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.EntryBlockOutput
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ExceptionPathsExitBlockOutputOpt
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ExitBlockOutput
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.GetPredicateKind(Microsoft.CodeAnalysis.IOperation)
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item(Microsoft.CodeAnalysis.FlowAnalysis.BasicBlock)
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item(Microsoft.CodeAnalysis.IOperation)
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item(Microsoft.CodeAnalysis.OperationKind,Microsoft.CodeAnalysis.SyntaxNode)
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.MergedStateForUnhandledThrowOperationsOpt
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ReturnValueAndPredicateKindOpt
+  langs:
+  - csharp
+  - vb
+  name: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: 'public class DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue> : IDataFlowAnalysisResult<TAbstractAnalysisValue> where TBlockAnalysisResult : AbstractBlockAnalysisResult'
+    typeParameters:
+    - id: TBlockAnalysisResult
+    - id: TAbstractAnalysisValue
+    content.vb: Public Class DataFlowAnalysisResult(Of TBlockAnalysisResult As AbstractBlockAnalysisResult, TAbstractAnalysisValue) Implements IDataFlowAnalysisResult(Of TAbstractAnalysisValue)
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DisposeAnalysis.DisposeAnalysisResult
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAnalysisResult
+  implements:
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult{{TAbstractAnalysisValue}}
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue)
+  name.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue)
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.#ctor(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult{`0,`1})
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.#ctor(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult{`0,`1})
+  id: '#ctor(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult{`0,`1})'
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  langs:
+  - csharp
+  - vb
+  name: DataFlowAnalysisResult(DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>)
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.DataFlowAnalysisResult(DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.DataFlowAnalysisResult(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: protected DataFlowAnalysisResult(DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue> other)
+    parameters:
+    - id: other
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+    content.vb: Protected Sub New(other As DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue))
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.#ctor*
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).New(DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue))
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).New(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue))
+  name.vb: New(DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue))
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.GetPredicateKind(Microsoft.CodeAnalysis.IOperation)
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.GetPredicateKind(Microsoft.CodeAnalysis.IOperation)
+  id: GetPredicateKind(Microsoft.CodeAnalysis.IOperation)
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  langs:
+  - csharp
+  - vb
+  name: GetPredicateKind(IOperation)
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.GetPredicateKind(IOperation)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.GetPredicateKind(Microsoft.CodeAnalysis.IOperation)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public PredicateValueKind GetPredicateKind(IOperation operation)
+    parameters:
+    - id: operation
+      type: Microsoft.CodeAnalysis.IOperation
+    return:
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind
+    content.vb: Public Function GetPredicateKind(operation As IOperation) As PredicateValueKind
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.GetPredicateKind*
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).GetPredicateKind(IOperation)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).GetPredicateKind(Microsoft.CodeAnalysis.IOperation)
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item(Microsoft.CodeAnalysis.FlowAnalysis.BasicBlock)
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item(Microsoft.CodeAnalysis.FlowAnalysis.BasicBlock)
+  id: Item(Microsoft.CodeAnalysis.FlowAnalysis.BasicBlock)
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  langs:
+  - csharp
+  - vb
+  name: this[BasicBlock]
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.this[BasicBlock]
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.this[Microsoft.CodeAnalysis.FlowAnalysis.BasicBlock]
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public TBlockAnalysisResult this[BasicBlock block] { get; }
+    parameters:
+    - id: block
+      type: Microsoft.CodeAnalysis.FlowAnalysis.BasicBlock
+    return:
+      type: '{TBlockAnalysisResult}'
+    content.vb: Public ReadOnly Default Property this[](block As BasicBlock) As TBlockAnalysisResult
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item*
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).this[](BasicBlock)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).this[](Microsoft.CodeAnalysis.FlowAnalysis.BasicBlock)
+  name.vb: this[](BasicBlock)
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item(Microsoft.CodeAnalysis.IOperation)
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item(Microsoft.CodeAnalysis.IOperation)
+  id: Item(Microsoft.CodeAnalysis.IOperation)
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  langs:
+  - csharp
+  - vb
+  name: this[IOperation]
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.this[IOperation]
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.this[Microsoft.CodeAnalysis.IOperation]
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public TAbstractAnalysisValue this[IOperation operation] { get; }
+    parameters:
+    - id: operation
+      type: Microsoft.CodeAnalysis.IOperation
+    return:
+      type: '{TAbstractAnalysisValue}'
+    content.vb: Public ReadOnly Default Property this[](operation As IOperation) As TAbstractAnalysisValue
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item*
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).this[](IOperation)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).this[](Microsoft.CodeAnalysis.IOperation)
+  name.vb: this[](IOperation)
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item(Microsoft.CodeAnalysis.OperationKind,Microsoft.CodeAnalysis.SyntaxNode)
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item(Microsoft.CodeAnalysis.OperationKind,Microsoft.CodeAnalysis.SyntaxNode)
+  id: Item(Microsoft.CodeAnalysis.OperationKind,Microsoft.CodeAnalysis.SyntaxNode)
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  langs:
+  - csharp
+  - vb
+  name: this[OperationKind, SyntaxNode]
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.this[OperationKind, SyntaxNode]
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.this[Microsoft.CodeAnalysis.OperationKind, Microsoft.CodeAnalysis.SyntaxNode]
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public TAbstractAnalysisValue this[OperationKind operationKind, SyntaxNode syntax] { get; }
+    parameters:
+    - id: operationKind
+      type: Microsoft.CodeAnalysis.OperationKind
+    - id: syntax
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    return:
+      type: '{TAbstractAnalysisValue}'
+    content.vb: Public ReadOnly Default Property this[](operationKind As OperationKind, syntax As SyntaxNode) As TAbstractAnalysisValue
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item*
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).this[](OperationKind, SyntaxNode)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).this[](Microsoft.CodeAnalysis.OperationKind, Microsoft.CodeAnalysis.SyntaxNode)
+  name.vb: this[](OperationKind, SyntaxNode)
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ControlFlowGraph
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ControlFlowGraph
+  id: ControlFlowGraph
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  langs:
+  - csharp
+  - vb
+  name: ControlFlowGraph
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ControlFlowGraph
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ControlFlowGraph
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  example: []
+  syntax:
+    content: public ControlFlowGraph ControlFlowGraph { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph
+    content.vb: Public ReadOnly Property ControlFlowGraph As ControlFlowGraph
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ControlFlowGraph*
+  implements:
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult{{TAbstractAnalysisValue}}.ControlFlowGraph
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ControlFlowGraph
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ControlFlowGraph
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ReturnValueAndPredicateKindOpt
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ReturnValueAndPredicateKindOpt
+  id: ReturnValueAndPredicateKindOpt
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  langs:
+  - csharp
+  - vb
+  name: ReturnValueAndPredicateKindOpt
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ReturnValueAndPredicateKindOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ReturnValueAndPredicateKindOpt
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  example: []
+  syntax:
+    content: public (TAbstractAnalysisValue Value, PredicateValueKind PredicateValueKind)? ReturnValueAndPredicateKindOpt { get; }
+    parameters: []
+    return:
+      type: System.Nullable{System.ValueTuple{{TAbstractAnalysisValue},Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind}}
+    content.vb: Public ReadOnly Property ReturnValueAndPredicateKindOpt As (Value As TAbstractAnalysisValue, PredicateValueKind As PredicateValueKind)?
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ReturnValueAndPredicateKindOpt*
+  implements:
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult{{TAbstractAnalysisValue}}.ReturnValueAndPredicateKindOpt
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ReturnValueAndPredicateKindOpt
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ReturnValueAndPredicateKindOpt
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.EntryBlockOutput
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.EntryBlockOutput
+  id: EntryBlockOutput
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  langs:
+  - csharp
+  - vb
+  name: EntryBlockOutput
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.EntryBlockOutput
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.EntryBlockOutput
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public TBlockAnalysisResult EntryBlockOutput { get; }
+    parameters: []
+    return:
+      type: '{TBlockAnalysisResult}'
+    content.vb: Public ReadOnly Property EntryBlockOutput As TBlockAnalysisResult
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.EntryBlockOutput*
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).EntryBlockOutput
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).EntryBlockOutput
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ExitBlockOutput
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ExitBlockOutput
+  id: ExitBlockOutput
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  langs:
+  - csharp
+  - vb
+  name: ExitBlockOutput
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ExitBlockOutput
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ExitBlockOutput
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public TBlockAnalysisResult ExitBlockOutput { get; }
+    parameters: []
+    return:
+      type: '{TBlockAnalysisResult}'
+    content.vb: Public ReadOnly Property ExitBlockOutput As TBlockAnalysisResult
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ExitBlockOutput*
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ExitBlockOutput
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ExitBlockOutput
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ExceptionPathsExitBlockOutputOpt
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ExceptionPathsExitBlockOutputOpt
+  id: ExceptionPathsExitBlockOutputOpt
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  langs:
+  - csharp
+  - vb
+  name: ExceptionPathsExitBlockOutputOpt
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ExceptionPathsExitBlockOutputOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ExceptionPathsExitBlockOutputOpt
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public TBlockAnalysisResult? ExceptionPathsExitBlockOutputOpt { get; }
+    parameters: []
+    return:
+      type: '{TBlockAnalysisResult}'
+    content.vb: Public ReadOnly Property ExceptionPathsExitBlockOutputOpt As TBlockAnalysisResult
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ExceptionPathsExitBlockOutputOpt*
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ExceptionPathsExitBlockOutputOpt
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ExceptionPathsExitBlockOutputOpt
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.MergedStateForUnhandledThrowOperationsOpt
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.MergedStateForUnhandledThrowOperationsOpt
+  id: MergedStateForUnhandledThrowOperationsOpt
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  langs:
+  - csharp
+  - vb
+  name: MergedStateForUnhandledThrowOperationsOpt
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.MergedStateForUnhandledThrowOperationsOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.MergedStateForUnhandledThrowOperationsOpt
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public TBlockAnalysisResult? MergedStateForUnhandledThrowOperationsOpt { get; }
+    parameters: []
+    return:
+      type: '{TBlockAnalysisResult}'
+    content.vb: Public ReadOnly Property MergedStateForUnhandledThrowOperationsOpt As TBlockAnalysisResult
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.MergedStateForUnhandledThrowOperationsOpt*
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).MergedStateForUnhandledThrowOperationsOpt
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).MergedStateForUnhandledThrowOperationsOpt
+references:
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  commentId: N:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  nameWithType: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis
+    name: FlowAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+    name: DataFlow
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis
+    name: FlowAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+    name: DataFlow
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult{{TAbstractAnalysisValue}}
+  commentId: T:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult{`1}
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  definition: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult`1
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult-1.html
+  name: IDataFlowAnalysisResult<TAbstractAnalysisValue>
+  nameWithType: IDataFlowAnalysisResult<TAbstractAnalysisValue>
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult<TAbstractAnalysisValue>
+  nameWithType.vb: IDataFlowAnalysisResult(Of TAbstractAnalysisValue)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult(Of TAbstractAnalysisValue)
+  name.vb: IDataFlowAnalysisResult(Of TAbstractAnalysisValue)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult`1
+    name: IDataFlowAnalysisResult
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult-1.html
+  - name: <
+  - name: TAbstractAnalysisValue
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult`1
+    name: IDataFlowAnalysisResult
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAbstractAnalysisValue
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult`1
+  commentId: T:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult`1
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult-1.html
+  name: IDataFlowAnalysisResult<TAbstractAnalysisValue>
+  nameWithType: IDataFlowAnalysisResult<TAbstractAnalysisValue>
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult<TAbstractAnalysisValue>
+  nameWithType.vb: IDataFlowAnalysisResult(Of TAbstractAnalysisValue)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult(Of TAbstractAnalysisValue)
+  name.vb: IDataFlowAnalysisResult(Of TAbstractAnalysisValue)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult`1
+    name: IDataFlowAnalysisResult
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult-1.html
+  - name: <
+  - name: TAbstractAnalysisValue
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult`1
+    name: IDataFlowAnalysisResult
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAbstractAnalysisValue
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.#ctor*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.#ctor
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult_2__ctor_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult__0__1__
+  name: DataFlowAnalysisResult
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.DataFlowAnalysisResult
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.DataFlowAnalysisResult
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).New
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).New
+  name.vb: New
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  commentId: T:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html
+  name: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue)
+  name.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+    name: DataFlowAnalysisResult
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html
+  - name: <
+  - name: TBlockAnalysisResult
+  - name: ','
+  - name: " "
+  - name: TAbstractAnalysisValue
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2
+    name: DataFlowAnalysisResult
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TBlockAnalysisResult
+  - name: ','
+  - name: " "
+  - name: TAbstractAnalysisValue
+  - name: )
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.GetPredicateKind*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.GetPredicateKind
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult_2_GetPredicateKind_Microsoft_CodeAnalysis_IOperation_
+  name: GetPredicateKind
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.GetPredicateKind
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.GetPredicateKind
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).GetPredicateKind
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).GetPredicateKind
+- uid: Microsoft.CodeAnalysis.IOperation
+  commentId: T:Microsoft.CodeAnalysis.IOperation
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IOperation.html
+  name: IOperation
+  nameWithType: IOperation
+  fullName: Microsoft.CodeAnalysis.IOperation
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind
+  commentId: T:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind.html
+  name: PredicateValueKind
+  nameWithType: PredicateValueKind
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind
+- uid: Microsoft.CodeAnalysis
+  commentId: N:Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis
+  nameWithType: Microsoft.CodeAnalysis
+  fullName: Microsoft.CodeAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.Item
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult_2_Item_Microsoft_CodeAnalysis_FlowAnalysis_BasicBlock_
+  name: this
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.this
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.this
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).this[]
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).this[]
+  name.vb: this[]
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.BasicBlock
+  commentId: T:Microsoft.CodeAnalysis.FlowAnalysis.BasicBlock
+  parent: Microsoft.CodeAnalysis.FlowAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.BasicBlock.html
+  name: BasicBlock
+  nameWithType: BasicBlock
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.BasicBlock
+- uid: '{TBlockAnalysisResult}'
+  commentId: '!:TBlockAnalysisResult'
+  definition: TBlockAnalysisResult
+  name: TBlockAnalysisResult
+  nameWithType: TBlockAnalysisResult
+  fullName: TBlockAnalysisResult
+- uid: Microsoft.CodeAnalysis.FlowAnalysis
+  commentId: N:Microsoft.CodeAnalysis.FlowAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.FlowAnalysis
+  nameWithType: Microsoft.CodeAnalysis.FlowAnalysis
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis
+    name: FlowAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis
+    name: FlowAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.html
+- uid: TBlockAnalysisResult
+  name: TBlockAnalysisResult
+  nameWithType: TBlockAnalysisResult
+  fullName: TBlockAnalysisResult
+- uid: '{TAbstractAnalysisValue}'
+  commentId: '!:TAbstractAnalysisValue'
+  definition: TAbstractAnalysisValue
+  name: TAbstractAnalysisValue
+  nameWithType: TAbstractAnalysisValue
+  fullName: TAbstractAnalysisValue
+- uid: TAbstractAnalysisValue
+  name: TAbstractAnalysisValue
+  nameWithType: TAbstractAnalysisValue
+  fullName: TAbstractAnalysisValue
+- uid: Microsoft.CodeAnalysis.OperationKind
+  commentId: T:Microsoft.CodeAnalysis.OperationKind
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.OperationKind.html
+  name: OperationKind
+  nameWithType: OperationKind
+  fullName: Microsoft.CodeAnalysis.OperationKind
+- uid: Microsoft.CodeAnalysis.SyntaxNode
+  commentId: T:Microsoft.CodeAnalysis.SyntaxNode
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SyntaxNode.html
+  name: SyntaxNode
+  nameWithType: SyntaxNode
+  fullName: Microsoft.CodeAnalysis.SyntaxNode
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ControlFlowGraph*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ControlFlowGraph
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult_2_ControlFlowGraph
+  name: ControlFlowGraph
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ControlFlowGraph
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ControlFlowGraph
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ControlFlowGraph
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ControlFlowGraph
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult{{TAbstractAnalysisValue}}.ControlFlowGraph
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult{`1}.ControlFlowGraph
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult{{TAbstractAnalysisValue}}
+  definition: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult`1.ControlFlowGraph
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_IDataFlowAnalysisResult_1_ControlFlowGraph
+  name: ControlFlowGraph
+  nameWithType: IDataFlowAnalysisResult<TAbstractAnalysisValue>.ControlFlowGraph
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult<TAbstractAnalysisValue>.ControlFlowGraph
+  nameWithType.vb: IDataFlowAnalysisResult(Of TAbstractAnalysisValue).ControlFlowGraph
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult(Of TAbstractAnalysisValue).ControlFlowGraph
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph
+  commentId: T:Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph
+  parent: Microsoft.CodeAnalysis.FlowAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph.html
+  name: ControlFlowGraph
+  nameWithType: ControlFlowGraph
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult`1.ControlFlowGraph
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult`1.ControlFlowGraph
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_IDataFlowAnalysisResult_1_ControlFlowGraph
+  name: ControlFlowGraph
+  nameWithType: IDataFlowAnalysisResult<TAbstractAnalysisValue>.ControlFlowGraph
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult<TAbstractAnalysisValue>.ControlFlowGraph
+  nameWithType.vb: IDataFlowAnalysisResult(Of TAbstractAnalysisValue).ControlFlowGraph
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult(Of TAbstractAnalysisValue).ControlFlowGraph
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ReturnValueAndPredicateKindOpt*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ReturnValueAndPredicateKindOpt
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult_2_ReturnValueAndPredicateKindOpt
+  name: ReturnValueAndPredicateKindOpt
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ReturnValueAndPredicateKindOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ReturnValueAndPredicateKindOpt
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ReturnValueAndPredicateKindOpt
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ReturnValueAndPredicateKindOpt
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult{{TAbstractAnalysisValue}}.ReturnValueAndPredicateKindOpt
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult{`1}.ReturnValueAndPredicateKindOpt
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult{{TAbstractAnalysisValue}}
+  definition: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult`1.ReturnValueAndPredicateKindOpt
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_IDataFlowAnalysisResult_1_ReturnValueAndPredicateKindOpt
+  name: ReturnValueAndPredicateKindOpt
+  nameWithType: IDataFlowAnalysisResult<TAbstractAnalysisValue>.ReturnValueAndPredicateKindOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult<TAbstractAnalysisValue>.ReturnValueAndPredicateKindOpt
+  nameWithType.vb: IDataFlowAnalysisResult(Of TAbstractAnalysisValue).ReturnValueAndPredicateKindOpt
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult(Of TAbstractAnalysisValue).ReturnValueAndPredicateKindOpt
+- uid: System.Nullable{System.ValueTuple{{TAbstractAnalysisValue},Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind}}
+  commentId: T:System.Nullable{System.ValueTuple{`0,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind}}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,microsoft.codeanalysis.flowanalysis.dataflow.predicatevaluekind-.value
+  name: (TAbstractAnalysisValue Value, PredicateValueKind PredicateValueKind)?
+  nameWithType: (TAbstractAnalysisValue Value, PredicateValueKind PredicateValueKind)?
+  fullName: (TAbstractAnalysisValue Value, Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind PredicateValueKind)?
+  nameWithType.vb: (Value As TAbstractAnalysisValue, PredicateValueKind As PredicateValueKind)?
+  fullName.vb: (Value As TAbstractAnalysisValue, PredicateValueKind As Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind)?
+  name.vb: (Value As TAbstractAnalysisValue, PredicateValueKind As PredicateValueKind)?
+  spec.csharp:
+  - name: (
+  - name: TAbstractAnalysisValue
+  - name: " "
+  - uid: System.ValueTuple{`0,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind}.Value
+    name: Value
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,microsoft.codeanalysis.flowanalysis.dataflow.predicatevaluekind-.value
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind
+    name: PredicateValueKind
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind.html
+  - name: " "
+  - uid: System.ValueTuple{`0,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind}.PredicateValueKind
+    name: PredicateValueKind
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,microsoft.codeanalysis.flowanalysis.dataflow.predicatevaluekind-.predicatevaluekind
+  - name: )
+  - name: '?'
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{`0,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind}.Value
+    name: Value
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,microsoft.codeanalysis.flowanalysis.dataflow.predicatevaluekind-.value
+  - name: " "
+  - name: As
+  - name: " "
+  - name: TAbstractAnalysisValue
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{`0,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind}.PredicateValueKind
+    name: PredicateValueKind
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple--0,microsoft.codeanalysis.flowanalysis.dataflow.predicatevaluekind-.predicatevaluekind
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind
+    name: PredicateValueKind
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicateValueKind.html
+  - name: )
+  - name: '?'
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult`1.ReturnValueAndPredicateKindOpt
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult`1.ReturnValueAndPredicateKindOpt
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_IDataFlowAnalysisResult_1_ReturnValueAndPredicateKindOpt
+  name: ReturnValueAndPredicateKindOpt
+  nameWithType: IDataFlowAnalysisResult<TAbstractAnalysisValue>.ReturnValueAndPredicateKindOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult<TAbstractAnalysisValue>.ReturnValueAndPredicateKindOpt
+  nameWithType.vb: IDataFlowAnalysisResult(Of TAbstractAnalysisValue).ReturnValueAndPredicateKindOpt
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisResult(Of TAbstractAnalysisValue).ReturnValueAndPredicateKindOpt
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.EntryBlockOutput*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.EntryBlockOutput
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult_2_EntryBlockOutput
+  name: EntryBlockOutput
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.EntryBlockOutput
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.EntryBlockOutput
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).EntryBlockOutput
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).EntryBlockOutput
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ExitBlockOutput*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ExitBlockOutput
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult_2_ExitBlockOutput
+  name: ExitBlockOutput
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ExitBlockOutput
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ExitBlockOutput
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ExitBlockOutput
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ExitBlockOutput
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ExceptionPathsExitBlockOutputOpt*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.ExceptionPathsExitBlockOutputOpt
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult_2_ExceptionPathsExitBlockOutputOpt
+  name: ExceptionPathsExitBlockOutputOpt
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ExceptionPathsExitBlockOutputOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.ExceptionPathsExitBlockOutputOpt
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ExceptionPathsExitBlockOutputOpt
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).ExceptionPathsExitBlockOutputOpt
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.MergedStateForUnhandledThrowOperationsOpt*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult`2.MergedStateForUnhandledThrowOperationsOpt
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult_2_MergedStateForUnhandledThrowOperationsOpt
+  name: MergedStateForUnhandledThrowOperationsOpt
+  nameWithType: DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.MergedStateForUnhandledThrowOperationsOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult<TBlockAnalysisResult, TAbstractAnalysisValue>.MergedStateForUnhandledThrowOperationsOpt
+  nameWithType.vb: DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).MergedStateForUnhandledThrowOperationsOpt
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult(Of TBlockAnalysisResult, TAbstractAnalysisValue).MergedStateForUnhandledThrowOperationsOpt

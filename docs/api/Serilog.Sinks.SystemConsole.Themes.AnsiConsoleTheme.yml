@@ -1,0 +1,1355 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  commentId: T:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  id: AnsiConsoleTheme
+  parent: Serilog.Sinks.SystemConsole.Themes
+  children:
+  - Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.#ctor(System.Collections.Generic.IReadOnlyDictionary{Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle,System.String})
+  - Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.CanBuffer
+  - Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Code
+  - Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Grayscale
+  - Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Literate
+  - Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Reset(System.IO.TextWriter)
+  - Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.ResetCharCount
+  - Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Set(System.IO.TextWriter,Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle)
+  - Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Sixteen
+  langs:
+  - csharp
+  - vb
+  name: AnsiConsoleTheme
+  nameWithType: AnsiConsoleTheme
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Sinks.SystemConsole.Themes
+  syntax:
+    content: 'public class AnsiConsoleTheme : ConsoleTheme'
+    content.vb: Public Class AnsiConsoleTheme Inherits ConsoleTheme
+  inheritance:
+  - System.Object
+  - Serilog.Sinks.SystemConsole.Themes.ConsoleTheme
+  inheritedMembers:
+  - Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.None
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.#ctor(System.Collections.Generic.IReadOnlyDictionary{Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle,System.String})
+  commentId: M:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.#ctor(System.Collections.Generic.IReadOnlyDictionary{Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle,System.String})
+  id: '#ctor(System.Collections.Generic.IReadOnlyDictionary{Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle,System.String})'
+  parent: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  langs:
+  - csharp
+  - vb
+  name: AnsiConsoleTheme(IReadOnlyDictionary<ConsoleThemeStyle, string>)
+  nameWithType: AnsiConsoleTheme.AnsiConsoleTheme(IReadOnlyDictionary<ConsoleThemeStyle, string>)
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.AnsiConsoleTheme(System.Collections.Generic.IReadOnlyDictionary<Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle, string>)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Sinks.SystemConsole.Themes
+  syntax:
+    content: public AnsiConsoleTheme(IReadOnlyDictionary<ConsoleThemeStyle, string> styles)
+    parameters:
+    - id: styles
+      type: System.Collections.Generic.IReadOnlyDictionary{Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle,System.String}
+    content.vb: Public Sub New(styles As IReadOnlyDictionary(Of ConsoleThemeStyle, String))
+  overload: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.#ctor*
+  nameWithType.vb: AnsiConsoleTheme.New(IReadOnlyDictionary(Of ConsoleThemeStyle, String))
+  fullName.vb: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.New(System.Collections.Generic.IReadOnlyDictionary(Of Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle, String))
+  name.vb: New(IReadOnlyDictionary(Of ConsoleThemeStyle, String))
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Set(System.IO.TextWriter,Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle)
+  commentId: M:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Set(System.IO.TextWriter,Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle)
+  id: Set(System.IO.TextWriter,Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle)
+  parent: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  langs:
+  - csharp
+  - vb
+  name: Set(TextWriter, ConsoleThemeStyle)
+  nameWithType: AnsiConsoleTheme.Set(TextWriter, ConsoleThemeStyle)
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Set(System.IO.TextWriter, Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Sinks.SystemConsole.Themes
+  example: []
+  syntax:
+    content: public override int Set(TextWriter output, ConsoleThemeStyle style)
+    parameters:
+    - id: output
+      type: System.IO.TextWriter
+    - id: style
+      type: Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function [Set](output As TextWriter, style As ConsoleThemeStyle) As Integer
+  overridden: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.Set(System.IO.TextWriter,Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle)
+  overload: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Set*
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Reset(System.IO.TextWriter)
+  commentId: M:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Reset(System.IO.TextWriter)
+  id: Reset(System.IO.TextWriter)
+  parent: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  langs:
+  - csharp
+  - vb
+  name: Reset(TextWriter)
+  nameWithType: AnsiConsoleTheme.Reset(TextWriter)
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Reset(System.IO.TextWriter)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Sinks.SystemConsole.Themes
+  example: []
+  syntax:
+    content: public override void Reset(TextWriter output)
+    parameters:
+    - id: output
+      type: System.IO.TextWriter
+    content.vb: Public Overrides Sub Reset(output As TextWriter)
+  overridden: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.Reset(System.IO.TextWriter)
+  overload: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Reset*
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Code
+  commentId: P:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Code
+  id: Code
+  parent: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  langs:
+  - csharp
+  - vb
+  name: Code
+  nameWithType: AnsiConsoleTheme.Code
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Code
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Sinks.SystemConsole.Themes
+  syntax:
+    content: public static AnsiConsoleTheme Code { get; }
+    parameters: []
+    return:
+      type: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+    content.vb: Public Shared ReadOnly Property Code As AnsiConsoleTheme
+  overload: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Code*
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Grayscale
+  commentId: P:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Grayscale
+  id: Grayscale
+  parent: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  langs:
+  - csharp
+  - vb
+  name: Grayscale
+  nameWithType: AnsiConsoleTheme.Grayscale
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Grayscale
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Sinks.SystemConsole.Themes
+  syntax:
+    content: public static AnsiConsoleTheme Grayscale { get; }
+    parameters: []
+    return:
+      type: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+    content.vb: Public Shared ReadOnly Property Grayscale As AnsiConsoleTheme
+  overload: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Grayscale*
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Literate
+  commentId: P:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Literate
+  id: Literate
+  parent: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  langs:
+  - csharp
+  - vb
+  name: Literate
+  nameWithType: AnsiConsoleTheme.Literate
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Literate
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Sinks.SystemConsole.Themes
+  syntax:
+    content: public static AnsiConsoleTheme Literate { get; }
+    parameters: []
+    return:
+      type: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+    content.vb: Public Shared ReadOnly Property Literate As AnsiConsoleTheme
+  overload: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Literate*
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Sixteen
+  commentId: P:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Sixteen
+  id: Sixteen
+  parent: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  langs:
+  - csharp
+  - vb
+  name: Sixteen
+  nameWithType: AnsiConsoleTheme.Sixteen
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Sixteen
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Sinks.SystemConsole.Themes
+  syntax:
+    content: public static AnsiConsoleTheme Sixteen { get; }
+    parameters: []
+    return:
+      type: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+    content.vb: Public Shared ReadOnly Property Sixteen As AnsiConsoleTheme
+  overload: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Sixteen*
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.CanBuffer
+  commentId: P:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.CanBuffer
+  id: CanBuffer
+  parent: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  langs:
+  - csharp
+  - vb
+  name: CanBuffer
+  nameWithType: AnsiConsoleTheme.CanBuffer
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.CanBuffer
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Sinks.SystemConsole.Themes
+  example: []
+  syntax:
+    content: public override bool CanBuffer { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides ReadOnly Property CanBuffer As Boolean
+  overridden: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.CanBuffer
+  overload: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.CanBuffer*
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.ResetCharCount
+  commentId: P:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.ResetCharCount
+  id: ResetCharCount
+  parent: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  langs:
+  - csharp
+  - vb
+  name: ResetCharCount
+  nameWithType: AnsiConsoleTheme.ResetCharCount
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.ResetCharCount
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Sinks.SystemConsole.Themes
+  example: []
+  syntax:
+    content: protected override int ResetCharCount { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Protected Overrides ReadOnly Property ResetCharCount As Integer
+  overridden: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.ResetCharCount
+  overload: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.ResetCharCount*
+references:
+- uid: Serilog.Sinks.SystemConsole.Themes
+  commentId: N:Serilog.Sinks.SystemConsole.Themes
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Sinks.SystemConsole.Themes
+  nameWithType: Serilog.Sinks.SystemConsole.Themes
+  fullName: Serilog.Sinks.SystemConsole.Themes
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Sinks
+    name: Sinks
+    isExternal: true
+    href: Serilog.Sinks.html
+  - name: .
+  - uid: Serilog.Sinks.SystemConsole
+    name: SystemConsole
+    isExternal: true
+    href: Serilog.Sinks.SystemConsole.html
+  - name: .
+  - uid: Serilog.Sinks.SystemConsole.Themes
+    name: Themes
+    isExternal: true
+    href: Serilog.Sinks.SystemConsole.Themes.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Sinks
+    name: Sinks
+    isExternal: true
+    href: Serilog.Sinks.html
+  - name: .
+  - uid: Serilog.Sinks.SystemConsole
+    name: SystemConsole
+    isExternal: true
+    href: Serilog.Sinks.SystemConsole.html
+  - name: .
+  - uid: Serilog.Sinks.SystemConsole.Themes
+    name: Themes
+    isExternal: true
+    href: Serilog.Sinks.SystemConsole.Themes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme
+  commentId: T:Serilog.Sinks.SystemConsole.Themes.ConsoleTheme
+  parent: Serilog.Sinks.SystemConsole.Themes
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.html
+  name: ConsoleTheme
+  nameWithType: ConsoleTheme
+  fullName: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme
+- uid: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.None
+  commentId: P:Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.None
+  parent: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_ConsoleTheme_None
+  name: None
+  nameWithType: ConsoleTheme.None
+  fullName: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.None
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.#ctor*
+  commentId: Overload:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.#ctor
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_AnsiConsoleTheme__ctor_System_Collections_Generic_IReadOnlyDictionary_Serilog_Sinks_SystemConsole_Themes_ConsoleThemeStyle_System_String__
+  name: AnsiConsoleTheme
+  nameWithType: AnsiConsoleTheme.AnsiConsoleTheme
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.AnsiConsoleTheme
+  nameWithType.vb: AnsiConsoleTheme.New
+  fullName.vb: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.New
+  name.vb: New
+- uid: System.Collections.Generic.IReadOnlyDictionary{Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle,System.String}
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary{Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<ConsoleThemeStyle, string>
+  nameWithType: IReadOnlyDictionary<ConsoleThemeStyle, string>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle, string>
+  nameWithType.vb: IReadOnlyDictionary(Of ConsoleThemeStyle, String)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle, String)
+  name.vb: IReadOnlyDictionary(Of ConsoleThemeStyle, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - uid: Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle
+    name: ConsoleThemeStyle
+    isExternal: true
+    href: Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle
+    name: ConsoleThemeStyle
+    isExternal: true
+    href: Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyDictionary`2
+  commentId: T:System.Collections.Generic.IReadOnlyDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  name: IReadOnlyDictionary<TKey, TValue>
+  nameWithType: IReadOnlyDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>
+  nameWithType.vb: IReadOnlyDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IReadOnlyDictionary(Of TKey, TValue)
+  name.vb: IReadOnlyDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyDictionary`2
+    name: IReadOnlyDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.Set(System.IO.TextWriter,Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle)
+  commentId: M:Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.Set(System.IO.TextWriter,Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle)
+  parent: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_ConsoleTheme_Set_System_IO_TextWriter_Serilog_Sinks_SystemConsole_Themes_ConsoleThemeStyle_
+  name: Set(TextWriter, ConsoleThemeStyle)
+  nameWithType: ConsoleTheme.Set(TextWriter, ConsoleThemeStyle)
+  fullName: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.Set(System.IO.TextWriter, Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle)
+  spec.csharp:
+  - uid: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.Set(System.IO.TextWriter,Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle)
+    name: Set
+    isExternal: true
+    href: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_ConsoleTheme_Set_System_IO_TextWriter_Serilog_Sinks_SystemConsole_Themes_ConsoleThemeStyle_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle
+    name: ConsoleThemeStyle
+    isExternal: true
+    href: Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.Set(System.IO.TextWriter,Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle)
+    name: Set
+    isExternal: true
+    href: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_ConsoleTheme_Set_System_IO_TextWriter_Serilog_Sinks_SystemConsole_Themes_ConsoleThemeStyle_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: ','
+  - name: " "
+  - uid: Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle
+    name: ConsoleThemeStyle
+    isExternal: true
+    href: Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle.html
+  - name: )
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Set*
+  commentId: Overload:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Set
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_AnsiConsoleTheme_Set_System_IO_TextWriter_Serilog_Sinks_SystemConsole_Themes_ConsoleThemeStyle_
+  name: Set
+  nameWithType: AnsiConsoleTheme.Set
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Set
+- uid: System.IO.TextWriter
+  commentId: T:System.IO.TextWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  name: TextWriter
+  nameWithType: TextWriter
+  fullName: System.IO.TextWriter
+- uid: Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle
+  commentId: T:Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle
+  parent: Serilog.Sinks.SystemConsole.Themes
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle.html
+  name: ConsoleThemeStyle
+  nameWithType: ConsoleThemeStyle
+  fullName: Serilog.Sinks.SystemConsole.Themes.ConsoleThemeStyle
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.Reset(System.IO.TextWriter)
+  commentId: M:Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.Reset(System.IO.TextWriter)
+  parent: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_ConsoleTheme_Reset_System_IO_TextWriter_
+  name: Reset(TextWriter)
+  nameWithType: ConsoleTheme.Reset(TextWriter)
+  fullName: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.Reset(System.IO.TextWriter)
+  spec.csharp:
+  - uid: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.Reset(System.IO.TextWriter)
+    name: Reset
+    isExternal: true
+    href: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_ConsoleTheme_Reset_System_IO_TextWriter_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: )
+  spec.vb:
+  - uid: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.Reset(System.IO.TextWriter)
+    name: Reset
+    isExternal: true
+    href: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_ConsoleTheme_Reset_System_IO_TextWriter_
+  - name: (
+  - uid: System.IO.TextWriter
+    name: TextWriter
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io.textwriter
+  - name: )
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Reset*
+  commentId: Overload:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Reset
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_AnsiConsoleTheme_Reset_System_IO_TextWriter_
+  name: Reset
+  nameWithType: AnsiConsoleTheme.Reset
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Reset
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Code*
+  commentId: Overload:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Code
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_AnsiConsoleTheme_Code
+  name: Code
+  nameWithType: AnsiConsoleTheme.Code
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Code
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  commentId: T:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+  parent: Serilog.Sinks.SystemConsole.Themes
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.html
+  name: AnsiConsoleTheme
+  nameWithType: AnsiConsoleTheme
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Grayscale*
+  commentId: Overload:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Grayscale
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_AnsiConsoleTheme_Grayscale
+  name: Grayscale
+  nameWithType: AnsiConsoleTheme.Grayscale
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Grayscale
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Literate*
+  commentId: Overload:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Literate
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_AnsiConsoleTheme_Literate
+  name: Literate
+  nameWithType: AnsiConsoleTheme.Literate
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Literate
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Sixteen*
+  commentId: Overload:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Sixteen
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_AnsiConsoleTheme_Sixteen
+  name: Sixteen
+  nameWithType: AnsiConsoleTheme.Sixteen
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.Sixteen
+- uid: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.CanBuffer
+  commentId: P:Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.CanBuffer
+  parent: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_ConsoleTheme_CanBuffer
+  name: CanBuffer
+  nameWithType: ConsoleTheme.CanBuffer
+  fullName: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.CanBuffer
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.CanBuffer*
+  commentId: Overload:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.CanBuffer
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_AnsiConsoleTheme_CanBuffer
+  name: CanBuffer
+  nameWithType: AnsiConsoleTheme.CanBuffer
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.CanBuffer
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.ResetCharCount
+  commentId: P:Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.ResetCharCount
+  parent: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_ConsoleTheme_ResetCharCount
+  name: ResetCharCount
+  nameWithType: ConsoleTheme.ResetCharCount
+  fullName: Serilog.Sinks.SystemConsole.Themes.ConsoleTheme.ResetCharCount
+- uid: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.ResetCharCount*
+  commentId: Overload:Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.ResetCharCount
+  isExternal: true
+  href: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.html#Serilog_Sinks_SystemConsole_Themes_AnsiConsoleTheme_ResetCharCount
+  name: ResetCharCount
+  nameWithType: AnsiConsoleTheme.ResetCharCount
+  fullName: Serilog.Sinks.SystemConsole.Themes.AnsiConsoleTheme.ResetCharCount

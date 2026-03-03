@@ -1,0 +1,637 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.SerilogServiceCollectionExtensions
+  commentId: T:Serilog.SerilogServiceCollectionExtensions
+  id: SerilogServiceCollectionExtensions
+  parent: Serilog
+  children:
+  - Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection,Serilog.ILogger,System.Boolean,Serilog.Extensions.Logging.LoggerProviderCollection)
+  - Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Serilog.LoggerConfiguration},System.Boolean,System.Boolean)
+  - Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{System.IServiceProvider,Serilog.LoggerConfiguration},System.Boolean,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: SerilogServiceCollectionExtensions
+  nameWithType: SerilogServiceCollectionExtensions
+  fullName: Serilog.SerilogServiceCollectionExtensions
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog
+  syntax:
+    content: public static class SerilogServiceCollectionExtensions
+    content.vb: Public Module SerilogServiceCollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection,Serilog.ILogger,System.Boolean,Serilog.Extensions.Logging.LoggerProviderCollection)
+  commentId: M:Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection,Serilog.ILogger,System.Boolean,Serilog.Extensions.Logging.LoggerProviderCollection)
+  id: AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection,Serilog.ILogger,System.Boolean,Serilog.Extensions.Logging.LoggerProviderCollection)
+  isExtensionMethod: true
+  parent: Serilog.SerilogServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddSerilog(IServiceCollection, ILogger?, bool, LoggerProviderCollection?)
+  nameWithType: SerilogServiceCollectionExtensions.AddSerilog(IServiceCollection, ILogger?, bool, LoggerProviderCollection?)
+  fullName: Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection, Serilog.ILogger?, bool, Serilog.Extensions.Logging.LoggerProviderCollection?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog
+  syntax:
+    content: public static IServiceCollection AddSerilog(this IServiceCollection collection, ILogger? logger = null, bool dispose = false, LoggerProviderCollection? providers = null)
+    parameters:
+    - id: collection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: logger
+      type: Serilog.ILogger
+    - id: dispose
+      type: System.Boolean
+    - id: providers
+      type: Serilog.Extensions.Logging.LoggerProviderCollection
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function AddSerilog(collection As IServiceCollection, logger As ILogger = Nothing, dispose As Boolean = False, providers As LoggerProviderCollection = Nothing) As IServiceCollection
+  overload: Serilog.SerilogServiceCollectionExtensions.AddSerilog*
+  nameWithType.vb: SerilogServiceCollectionExtensions.AddSerilog(IServiceCollection, ILogger, Boolean, LoggerProviderCollection)
+  fullName.vb: Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection, Serilog.ILogger, Boolean, Serilog.Extensions.Logging.LoggerProviderCollection)
+  name.vb: AddSerilog(IServiceCollection, ILogger, Boolean, LoggerProviderCollection)
+- uid: Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Serilog.LoggerConfiguration},System.Boolean,System.Boolean)
+  commentId: M:Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Serilog.LoggerConfiguration},System.Boolean,System.Boolean)
+  id: AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Serilog.LoggerConfiguration},System.Boolean,System.Boolean)
+  isExtensionMethod: true
+  parent: Serilog.SerilogServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddSerilog(IServiceCollection, Action<LoggerConfiguration>, bool, bool)
+  nameWithType: SerilogServiceCollectionExtensions.AddSerilog(IServiceCollection, Action<LoggerConfiguration>, bool, bool)
+  fullName: Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Serilog.LoggerConfiguration>, bool, bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog
+  syntax:
+    content: public static IServiceCollection AddSerilog(this IServiceCollection collection, Action<LoggerConfiguration> configureLogger, bool preserveStaticLogger = false, bool writeToProviders = false)
+    parameters:
+    - id: collection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configureLogger
+      type: System.Action{Serilog.LoggerConfiguration}
+    - id: preserveStaticLogger
+      type: System.Boolean
+    - id: writeToProviders
+      type: System.Boolean
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function AddSerilog(collection As IServiceCollection, configureLogger As Action(Of LoggerConfiguration), preserveStaticLogger As Boolean = False, writeToProviders As Boolean = False) As IServiceCollection
+  overload: Serilog.SerilogServiceCollectionExtensions.AddSerilog*
+  nameWithType.vb: SerilogServiceCollectionExtensions.AddSerilog(IServiceCollection, Action(Of LoggerConfiguration), Boolean, Boolean)
+  fullName.vb: Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Serilog.LoggerConfiguration), Boolean, Boolean)
+  name.vb: AddSerilog(IServiceCollection, Action(Of LoggerConfiguration), Boolean, Boolean)
+- uid: Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{System.IServiceProvider,Serilog.LoggerConfiguration},System.Boolean,System.Boolean)
+  commentId: M:Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{System.IServiceProvider,Serilog.LoggerConfiguration},System.Boolean,System.Boolean)
+  id: AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{System.IServiceProvider,Serilog.LoggerConfiguration},System.Boolean,System.Boolean)
+  isExtensionMethod: true
+  parent: Serilog.SerilogServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddSerilog(IServiceCollection, Action<IServiceProvider, LoggerConfiguration>, bool, bool)
+  nameWithType: SerilogServiceCollectionExtensions.AddSerilog(IServiceCollection, Action<IServiceProvider, LoggerConfiguration>, bool, bool)
+  fullName: Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<System.IServiceProvider, Serilog.LoggerConfiguration>, bool, bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog
+  syntax:
+    content: public static IServiceCollection AddSerilog(this IServiceCollection collection, Action<IServiceProvider, LoggerConfiguration> configureLogger, bool preserveStaticLogger = false, bool writeToProviders = false)
+    parameters:
+    - id: collection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configureLogger
+      type: System.Action{System.IServiceProvider,Serilog.LoggerConfiguration}
+    - id: preserveStaticLogger
+      type: System.Boolean
+    - id: writeToProviders
+      type: System.Boolean
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function AddSerilog(collection As IServiceCollection, configureLogger As Action(Of IServiceProvider, LoggerConfiguration), preserveStaticLogger As Boolean = False, writeToProviders As Boolean = False) As IServiceCollection
+  overload: Serilog.SerilogServiceCollectionExtensions.AddSerilog*
+  nameWithType.vb: SerilogServiceCollectionExtensions.AddSerilog(IServiceCollection, Action(Of IServiceProvider, LoggerConfiguration), Boolean, Boolean)
+  fullName.vb: Serilog.SerilogServiceCollectionExtensions.AddSerilog(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of System.IServiceProvider, Serilog.LoggerConfiguration), Boolean, Boolean)
+  name.vb: AddSerilog(IServiceCollection, Action(Of IServiceProvider, LoggerConfiguration), Boolean, Boolean)
+references:
+- uid: Serilog
+  commentId: N:Serilog
+  isExternal: true
+  href: Serilog.html
+  name: Serilog
+  nameWithType: Serilog
+  fullName: Serilog
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Serilog.SerilogServiceCollectionExtensions.AddSerilog*
+  commentId: Overload:Serilog.SerilogServiceCollectionExtensions.AddSerilog
+  isExternal: true
+  href: Serilog.SerilogServiceCollectionExtensions.html#Serilog_SerilogServiceCollectionExtensions_AddSerilog_Microsoft_Extensions_DependencyInjection_IServiceCollection_Serilog_ILogger_System_Boolean_Serilog_Extensions_Logging_LoggerProviderCollection_
+  name: AddSerilog
+  nameWithType: SerilogServiceCollectionExtensions.AddSerilog
+  fullName: Serilog.SerilogServiceCollectionExtensions.AddSerilog
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Serilog.ILogger
+  commentId: T:Serilog.ILogger
+  parent: Serilog
+  isExternal: true
+  href: Serilog.ILogger.html
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Serilog.ILogger
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Serilog.Extensions.Logging.LoggerProviderCollection
+  commentId: T:Serilog.Extensions.Logging.LoggerProviderCollection
+  parent: Serilog.Extensions.Logging
+  isExternal: true
+  href: Serilog.Extensions.Logging.LoggerProviderCollection.html
+  name: LoggerProviderCollection
+  nameWithType: LoggerProviderCollection
+  fullName: Serilog.Extensions.Logging.LoggerProviderCollection
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: Serilog.Extensions.Logging
+  commentId: N:Serilog.Extensions.Logging
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Extensions.Logging
+  nameWithType: Serilog.Extensions.Logging
+  fullName: Serilog.Extensions.Logging
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Extensions
+    name: Extensions
+    isExternal: true
+    href: Serilog.Extensions.html
+  - name: .
+  - uid: Serilog.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: Serilog.Extensions.Logging.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Extensions
+    name: Extensions
+    isExternal: true
+    href: Serilog.Extensions.html
+  - name: .
+  - uid: Serilog.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: Serilog.Extensions.Logging.html
+- uid: System.Action{Serilog.LoggerConfiguration}
+  commentId: T:System.Action{Serilog.LoggerConfiguration}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<LoggerConfiguration>
+  nameWithType: Action<LoggerConfiguration>
+  fullName: System.Action<Serilog.LoggerConfiguration>
+  nameWithType.vb: Action(Of LoggerConfiguration)
+  fullName.vb: System.Action(Of Serilog.LoggerConfiguration)
+  name.vb: Action(Of LoggerConfiguration)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Serilog.LoggerConfiguration
+    name: LoggerConfiguration
+    isExternal: true
+    href: Serilog.LoggerConfiguration.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Serilog.LoggerConfiguration
+    name: LoggerConfiguration
+    isExternal: true
+    href: Serilog.LoggerConfiguration.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Action{System.IServiceProvider,Serilog.LoggerConfiguration}
+  commentId: T:System.Action{System.IServiceProvider,Serilog.LoggerConfiguration}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<IServiceProvider, LoggerConfiguration>
+  nameWithType: Action<IServiceProvider, LoggerConfiguration>
+  fullName: System.Action<System.IServiceProvider, Serilog.LoggerConfiguration>
+  nameWithType.vb: Action(Of IServiceProvider, LoggerConfiguration)
+  fullName.vb: System.Action(Of System.IServiceProvider, Serilog.LoggerConfiguration)
+  name.vb: Action(Of IServiceProvider, LoggerConfiguration)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: ','
+  - name: " "
+  - uid: Serilog.LoggerConfiguration
+    name: LoggerConfiguration
+    isExternal: true
+    href: Serilog.LoggerConfiguration.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.IServiceProvider
+    name: IServiceProvider
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  - name: ','
+  - name: " "
+  - uid: Serilog.LoggerConfiguration
+    name: LoggerConfiguration
+    isExternal: true
+    href: Serilog.LoggerConfiguration.html
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )

@@ -1,0 +1,1130 @@
+### YamlMime:ManagedReference
+items:
+- uid: AccoRevit.Addin.Interfaces.IInsertLibraryService
+  commentId: T:AccoRevit.Addin.Interfaces.IInsertLibraryService
+  id: IInsertLibraryService
+  parent: AccoRevit.Addin.Interfaces
+  children:
+  - AccoRevit.Addin.Interfaces.IInsertLibraryService.Export
+  - AccoRevit.Addin.Interfaces.IInsertLibraryService.GetDisplayItems(System.Boolean,System.Nullable{System.Double},System.Double)
+  - AccoRevit.Addin.Interfaces.IInsertLibraryService.GetInsertData(System.String,System.String,System.Int32)
+  - AccoRevit.Addin.Interfaces.IInsertLibraryService.InsertFromUI(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Dictionary{System.Int32,AccoRevit.Addin.Library.DeckInserts.InsertData}},System.String,System.Collections.Generic.List{System.Double})
+  - AccoRevit.Addin.Interfaces.IInsertLibraryService.LoadDeckInserts(System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: IInsertLibraryService
+  nameWithType: IInsertLibraryService
+  fullName: AccoRevit.Addin.Interfaces.IInsertLibraryService
+  type: Interface
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Interfaces
+  syntax:
+    content: public interface IInsertLibraryService
+    content.vb: Public Interface IInsertLibraryService
+  derivedClasses:
+  - AccoRevit.Addin.Services.InsertLibraryService
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: AccoRevit.Addin.Interfaces.IInsertLibraryService.LoadDeckInserts(System.Boolean)
+  commentId: M:AccoRevit.Addin.Interfaces.IInsertLibraryService.LoadDeckInserts(System.Boolean)
+  id: LoadDeckInserts(System.Boolean)
+  parent: AccoRevit.Addin.Interfaces.IInsertLibraryService
+  langs:
+  - csharp
+  - vb
+  name: LoadDeckInserts(bool)
+  nameWithType: IInsertLibraryService.LoadDeckInserts(bool)
+  fullName: AccoRevit.Addin.Interfaces.IInsertLibraryService.LoadDeckInserts(bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Interfaces
+  syntax:
+    content: List<DeckInserts> LoadDeckInserts(bool isApproved)
+    parameters:
+    - id: isApproved
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.List{AccoRevit.Addin.Library.DeckInserts.DeckInserts}
+    content.vb: Function LoadDeckInserts(isApproved As Boolean) As List(Of DeckInserts)
+  overload: AccoRevit.Addin.Interfaces.IInsertLibraryService.LoadDeckInserts*
+  nameWithType.vb: IInsertLibraryService.LoadDeckInserts(Boolean)
+  fullName.vb: AccoRevit.Addin.Interfaces.IInsertLibraryService.LoadDeckInserts(Boolean)
+  name.vb: LoadDeckInserts(Boolean)
+- uid: AccoRevit.Addin.Interfaces.IInsertLibraryService.GetInsertData(System.String,System.String,System.Int32)
+  commentId: M:AccoRevit.Addin.Interfaces.IInsertLibraryService.GetInsertData(System.String,System.String,System.Int32)
+  id: GetInsertData(System.String,System.String,System.Int32)
+  parent: AccoRevit.Addin.Interfaces.IInsertLibraryService
+  langs:
+  - csharp
+  - vb
+  name: GetInsertData(string, string, int)
+  nameWithType: IInsertLibraryService.GetInsertData(string, string, int)
+  fullName: AccoRevit.Addin.Interfaces.IInsertLibraryService.GetInsertData(string, string, int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Interfaces
+  syntax:
+    content: InsertData GetInsertData(string displayName, string thickness, int rodSizeIndex)
+    parameters:
+    - id: displayName
+      type: System.String
+    - id: thickness
+      type: System.String
+    - id: rodSizeIndex
+      type: System.Int32
+    return:
+      type: AccoRevit.Addin.Library.DeckInserts.InsertData
+    content.vb: Function GetInsertData(displayName As String, thickness As String, rodSizeIndex As Integer) As InsertData
+  overload: AccoRevit.Addin.Interfaces.IInsertLibraryService.GetInsertData*
+  nameWithType.vb: IInsertLibraryService.GetInsertData(String, String, Integer)
+  fullName.vb: AccoRevit.Addin.Interfaces.IInsertLibraryService.GetInsertData(String, String, Integer)
+  name.vb: GetInsertData(String, String, Integer)
+- uid: AccoRevit.Addin.Interfaces.IInsertLibraryService.Export
+  commentId: M:AccoRevit.Addin.Interfaces.IInsertLibraryService.Export
+  id: Export
+  parent: AccoRevit.Addin.Interfaces.IInsertLibraryService
+  langs:
+  - csharp
+  - vb
+  name: Export()
+  nameWithType: IInsertLibraryService.Export()
+  fullName: AccoRevit.Addin.Interfaces.IInsertLibraryService.Export()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Interfaces
+  syntax:
+    content: void Export()
+    content.vb: Sub Export()
+  overload: AccoRevit.Addin.Interfaces.IInsertLibraryService.Export*
+- uid: AccoRevit.Addin.Interfaces.IInsertLibraryService.GetDisplayItems(System.Boolean,System.Nullable{System.Double},System.Double)
+  commentId: M:AccoRevit.Addin.Interfaces.IInsertLibraryService.GetDisplayItems(System.Boolean,System.Nullable{System.Double},System.Double)
+  id: GetDisplayItems(System.Boolean,System.Nullable{System.Double},System.Double)
+  parent: AccoRevit.Addin.Interfaces.IInsertLibraryService
+  langs:
+  - csharp
+  - vb
+  name: GetDisplayItems(bool, double?, double)
+  nameWithType: IInsertLibraryService.GetDisplayItems(bool, double?, double)
+  fullName: AccoRevit.Addin.Interfaces.IInsertLibraryService.GetDisplayItems(bool, double?, double)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Interfaces
+  syntax:
+    content: List<InsertDisplayItem> GetDisplayItems(bool isApproved, double? thickness = null, double rodDiameter = 0)
+    parameters:
+    - id: isApproved
+      type: System.Boolean
+    - id: thickness
+      type: System.Nullable{System.Double}
+    - id: rodDiameter
+      type: System.Double
+    return:
+      type: System.Collections.Generic.List{AccoRevit.Addin.Models.InsertDisplayItem}
+    content.vb: Function GetDisplayItems(isApproved As Boolean, thickness As Double? = Nothing, rodDiameter As Double = 0) As List(Of InsertDisplayItem)
+  overload: AccoRevit.Addin.Interfaces.IInsertLibraryService.GetDisplayItems*
+  nameWithType.vb: IInsertLibraryService.GetDisplayItems(Boolean, Double?, Double)
+  fullName.vb: AccoRevit.Addin.Interfaces.IInsertLibraryService.GetDisplayItems(Boolean, Double?, Double)
+  name.vb: GetDisplayItems(Boolean, Double?, Double)
+- uid: AccoRevit.Addin.Interfaces.IInsertLibraryService.InsertFromUI(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Dictionary{System.Int32,AccoRevit.Addin.Library.DeckInserts.InsertData}},System.String,System.Collections.Generic.List{System.Double})
+  commentId: M:AccoRevit.Addin.Interfaces.IInsertLibraryService.InsertFromUI(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Dictionary{System.Int32,AccoRevit.Addin.Library.DeckInserts.InsertData}},System.String,System.Collections.Generic.List{System.Double})
+  id: InsertFromUI(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Dictionary{System.Int32,AccoRevit.Addin.Library.DeckInserts.InsertData}},System.String,System.Collections.Generic.List{System.Double})
+  parent: AccoRevit.Addin.Interfaces.IInsertLibraryService
+  langs:
+  - csharp
+  - vb
+  name: InsertFromUI(Dictionary<string, Dictionary<int, InsertData>>, string, List<double>)
+  nameWithType: IInsertLibraryService.InsertFromUI(Dictionary<string, Dictionary<int, InsertData>>, string, List<double>)
+  fullName: AccoRevit.Addin.Interfaces.IInsertLibraryService.InsertFromUI(System.Collections.Generic.Dictionary<string, System.Collections.Generic.Dictionary<int, AccoRevit.Addin.Library.DeckInserts.InsertData>>, string, System.Collections.Generic.List<double>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Interfaces
+  syntax:
+    content: void InsertFromUI(Dictionary<string, Dictionary<int, InsertData>> inserts, string insertName, List<double> selectedThicknesses)
+    parameters:
+    - id: inserts
+      type: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Dictionary{System.Int32,AccoRevit.Addin.Library.DeckInserts.InsertData}}
+    - id: insertName
+      type: System.String
+    - id: selectedThicknesses
+      type: System.Collections.Generic.List{System.Double}
+    content.vb: Sub InsertFromUI(inserts As Dictionary(Of String, Dictionary(Of Integer, InsertData)), insertName As String, selectedThicknesses As List(Of Double))
+  overload: AccoRevit.Addin.Interfaces.IInsertLibraryService.InsertFromUI*
+  nameWithType.vb: IInsertLibraryService.InsertFromUI(Dictionary(Of String, Dictionary(Of Integer, InsertData)), String, List(Of Double))
+  fullName.vb: AccoRevit.Addin.Interfaces.IInsertLibraryService.InsertFromUI(System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.Dictionary(Of Integer, AccoRevit.Addin.Library.DeckInserts.InsertData)), String, System.Collections.Generic.List(Of Double))
+  name.vb: InsertFromUI(Dictionary(Of String, Dictionary(Of Integer, InsertData)), String, List(Of Double))
+references:
+- uid: AccoRevit.Addin.Interfaces
+  commentId: N:AccoRevit.Addin.Interfaces
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Interfaces
+  nameWithType: AccoRevit.Addin.Interfaces
+  fullName: AccoRevit.Addin.Interfaces
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: AccoRevit.Addin.Interfaces.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: AccoRevit.Addin.Interfaces.html
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: AccoRevit.Addin.Interfaces.IInsertLibraryService.LoadDeckInserts*
+  commentId: Overload:AccoRevit.Addin.Interfaces.IInsertLibraryService.LoadDeckInserts
+  isExternal: true
+  href: AccoRevit.Addin.Interfaces.IInsertLibraryService.html#AccoRevit_Addin_Interfaces_IInsertLibraryService_LoadDeckInserts_System_Boolean_
+  name: LoadDeckInserts
+  nameWithType: IInsertLibraryService.LoadDeckInserts
+  fullName: AccoRevit.Addin.Interfaces.IInsertLibraryService.LoadDeckInserts
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List{AccoRevit.Addin.Library.DeckInserts.DeckInserts}
+  commentId: T:System.Collections.Generic.List{AccoRevit.Addin.Library.DeckInserts.DeckInserts}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<DeckInserts>
+  nameWithType: List<DeckInserts>
+  fullName: System.Collections.Generic.List<AccoRevit.Addin.Library.DeckInserts.DeckInserts>
+  nameWithType.vb: List(Of DeckInserts)
+  fullName.vb: System.Collections.Generic.List(Of AccoRevit.Addin.Library.DeckInserts.DeckInserts)
+  name.vb: List(Of DeckInserts)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: AccoRevit.Addin.Library.DeckInserts.DeckInserts
+    name: DeckInserts
+    isExternal: true
+    href: AccoRevit.Addin.Library.DeckInserts.DeckInserts.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AccoRevit.Addin.Library.DeckInserts.DeckInserts
+    name: DeckInserts
+    isExternal: true
+    href: AccoRevit.Addin.Library.DeckInserts.DeckInserts.html
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AccoRevit.Addin.Interfaces.IInsertLibraryService.GetInsertData*
+  commentId: Overload:AccoRevit.Addin.Interfaces.IInsertLibraryService.GetInsertData
+  isExternal: true
+  href: AccoRevit.Addin.Interfaces.IInsertLibraryService.html#AccoRevit_Addin_Interfaces_IInsertLibraryService_GetInsertData_System_String_System_String_System_Int32_
+  name: GetInsertData
+  nameWithType: IInsertLibraryService.GetInsertData
+  fullName: AccoRevit.Addin.Interfaces.IInsertLibraryService.GetInsertData
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: AccoRevit.Addin.Library.DeckInserts.InsertData
+  commentId: T:AccoRevit.Addin.Library.DeckInserts.InsertData
+  parent: AccoRevit.Addin.Library.DeckInserts
+  isExternal: true
+  href: AccoRevit.Addin.Library.DeckInserts.InsertData.html
+  name: InsertData
+  nameWithType: InsertData
+  fullName: AccoRevit.Addin.Library.DeckInserts.InsertData
+- uid: AccoRevit.Addin.Library.DeckInserts
+  commentId: N:AccoRevit.Addin.Library.DeckInserts
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Library.DeckInserts
+  nameWithType: AccoRevit.Addin.Library.DeckInserts
+  fullName: AccoRevit.Addin.Library.DeckInserts
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Library
+    name: Library
+    isExternal: true
+    href: AccoRevit.Addin.Library.html
+  - name: .
+  - uid: AccoRevit.Addin.Library.DeckInserts
+    name: DeckInserts
+    isExternal: true
+    href: AccoRevit.Addin.Library.DeckInserts.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Library
+    name: Library
+    isExternal: true
+    href: AccoRevit.Addin.Library.html
+  - name: .
+  - uid: AccoRevit.Addin.Library.DeckInserts
+    name: DeckInserts
+    isExternal: true
+    href: AccoRevit.Addin.Library.DeckInserts.html
+- uid: AccoRevit.Addin.Interfaces.IInsertLibraryService.Export*
+  commentId: Overload:AccoRevit.Addin.Interfaces.IInsertLibraryService.Export
+  isExternal: true
+  href: AccoRevit.Addin.Interfaces.IInsertLibraryService.html#AccoRevit_Addin_Interfaces_IInsertLibraryService_Export
+  name: Export
+  nameWithType: IInsertLibraryService.Export
+  fullName: AccoRevit.Addin.Interfaces.IInsertLibraryService.Export
+- uid: AccoRevit.Addin.Interfaces.IInsertLibraryService.GetDisplayItems*
+  commentId: Overload:AccoRevit.Addin.Interfaces.IInsertLibraryService.GetDisplayItems
+  isExternal: true
+  href: AccoRevit.Addin.Interfaces.IInsertLibraryService.html#AccoRevit_Addin_Interfaces_IInsertLibraryService_GetDisplayItems_System_Boolean_System_Nullable_System_Double__System_Double_
+  name: GetDisplayItems
+  nameWithType: IInsertLibraryService.GetDisplayItems
+  fullName: AccoRevit.Addin.Interfaces.IInsertLibraryService.GetDisplayItems
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: System.Collections.Generic.List{AccoRevit.Addin.Models.InsertDisplayItem}
+  commentId: T:System.Collections.Generic.List{AccoRevit.Addin.Models.InsertDisplayItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<InsertDisplayItem>
+  nameWithType: List<InsertDisplayItem>
+  fullName: System.Collections.Generic.List<AccoRevit.Addin.Models.InsertDisplayItem>
+  nameWithType.vb: List(Of InsertDisplayItem)
+  fullName.vb: System.Collections.Generic.List(Of AccoRevit.Addin.Models.InsertDisplayItem)
+  name.vb: List(Of InsertDisplayItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: AccoRevit.Addin.Models.InsertDisplayItem
+    name: InsertDisplayItem
+    isExternal: true
+    href: AccoRevit.Addin.Models.InsertDisplayItem.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AccoRevit.Addin.Models.InsertDisplayItem
+    name: InsertDisplayItem
+    isExternal: true
+    href: AccoRevit.Addin.Models.InsertDisplayItem.html
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AccoRevit.Addin.Interfaces.IInsertLibraryService.InsertFromUI*
+  commentId: Overload:AccoRevit.Addin.Interfaces.IInsertLibraryService.InsertFromUI
+  isExternal: true
+  href: AccoRevit.Addin.Interfaces.IInsertLibraryService.html#AccoRevit_Addin_Interfaces_IInsertLibraryService_InsertFromUI_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_Dictionary_System_Int32_AccoRevit_Addin_Library_DeckInserts_InsertData___System_String_System_Collections_Generic_List_System_Double__
+  name: InsertFromUI
+  nameWithType: IInsertLibraryService.InsertFromUI
+  fullName: AccoRevit.Addin.Interfaces.IInsertLibraryService.InsertFromUI
+- uid: System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Dictionary{System.Int32,AccoRevit.Addin.Library.DeckInserts.InsertData}}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.Dictionary{System.Int32,AccoRevit.Addin.Library.DeckInserts.InsertData}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, Dictionary<int, InsertData>>
+  nameWithType: Dictionary<string, Dictionary<int, InsertData>>
+  fullName: System.Collections.Generic.Dictionary<string, System.Collections.Generic.Dictionary<int, AccoRevit.Addin.Library.DeckInserts.InsertData>>
+  nameWithType.vb: Dictionary(Of String, Dictionary(Of Integer, InsertData))
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, System.Collections.Generic.Dictionary(Of Integer, AccoRevit.Addin.Library.DeckInserts.InsertData))
+  name.vb: Dictionary(Of String, Dictionary(Of Integer, InsertData))
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: AccoRevit.Addin.Library.DeckInserts.InsertData
+    name: InsertData
+    isExternal: true
+    href: AccoRevit.Addin.Library.DeckInserts.InsertData.html
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: AccoRevit.Addin.Library.DeckInserts.InsertData
+    name: InsertData
+    isExternal: true
+    href: AccoRevit.Addin.Library.DeckInserts.InsertData.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.List{System.Double}
+  commentId: T:System.Collections.Generic.List{System.Double}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<double>
+  nameWithType: List<double>
+  fullName: System.Collections.Generic.List<double>
+  nameWithType.vb: List(Of Double)
+  fullName.vb: System.Collections.Generic.List(Of Double)
+  name.vb: List(Of Double)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )

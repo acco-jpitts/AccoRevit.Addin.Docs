@@ -1,0 +1,1615 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  commentId: T:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  id: IncrementalValueProviderExtensions
+  parent: Microsoft.CodeAnalysis
+  children:
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Collect``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0})
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1})
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1})
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{``1}})
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Immutable.ImmutableArray{``1}})
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{``1}})
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Immutable.ImmutableArray{``1}})
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Func{``0,System.Threading.CancellationToken,``1})
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Threading.CancellationToken,``1})
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Where``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Boolean})
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer``1(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Collections.Generic.IEqualityComparer{``0})
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Collections.Generic.IEqualityComparer{``0})
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName``1(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.String)
+  - Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.String)
+  langs:
+  - csharp
+  - vb
+  name: IncrementalValueProviderExtensions
+  nameWithType: IncrementalValueProviderExtensions
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static class IncrementalValueProviderExtensions
+    content.vb: Public Module IncrementalValueProviderExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Func{``0,System.Threading.CancellationToken,``1})
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Func{``0,System.Threading.CancellationToken,``1})
+  id: Select``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Func{``0,System.Threading.CancellationToken,``1})
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Select<TSource, TResult>(IncrementalValueProvider<TSource>, Func<TSource, CancellationToken, TResult>)
+  nameWithType: IncrementalValueProviderExtensions.Select<TSource, TResult>(IncrementalValueProvider<TSource>, Func<TSource, CancellationToken, TResult>)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select<TSource, TResult>(Microsoft.CodeAnalysis.IncrementalValueProvider<TSource>, System.Func<TSource, System.Threading.CancellationToken, TResult>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValueProvider<TResult> Select<TSource, TResult>(this IncrementalValueProvider<TSource> source, Func<TSource, CancellationToken, TResult> selector)
+    parameters:
+    - id: source
+      type: Microsoft.CodeAnalysis.IncrementalValueProvider{{TSource}}
+    - id: selector
+      type: System.Func{{TSource},System.Threading.CancellationToken,{TResult}}
+    typeParameters:
+    - id: TSource
+    - id: TResult
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValueProvider{{TResult}}
+    content.vb: Public Shared Function [Select](Of TSource, TResult)(source As IncrementalValueProvider(Of TSource), selector As Func(Of TSource, CancellationToken, TResult)) As IncrementalValueProvider(Of TResult)
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select*
+  nameWithType.vb: IncrementalValueProviderExtensions.Select(Of TSource, TResult)(IncrementalValueProvider(Of TSource), Func(Of TSource, CancellationToken, TResult))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select(Of TSource, TResult)(Microsoft.CodeAnalysis.IncrementalValueProvider(Of TSource), System.Func(Of TSource, System.Threading.CancellationToken, TResult))
+  name.vb: Select(Of TSource, TResult)(IncrementalValueProvider(Of TSource), Func(Of TSource, CancellationToken, TResult))
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Threading.CancellationToken,``1})
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Threading.CancellationToken,``1})
+  id: Select``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Threading.CancellationToken,``1})
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Select<TSource, TResult>(IncrementalValuesProvider<TSource>, Func<TSource, CancellationToken, TResult>)
+  nameWithType: IncrementalValueProviderExtensions.Select<TSource, TResult>(IncrementalValuesProvider<TSource>, Func<TSource, CancellationToken, TResult>)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select<TSource, TResult>(Microsoft.CodeAnalysis.IncrementalValuesProvider<TSource>, System.Func<TSource, System.Threading.CancellationToken, TResult>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValuesProvider<TResult> Select<TSource, TResult>(this IncrementalValuesProvider<TSource> source, Func<TSource, CancellationToken, TResult> selector)
+    parameters:
+    - id: source
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TSource}}
+    - id: selector
+      type: System.Func{{TSource},System.Threading.CancellationToken,{TResult}}
+    typeParameters:
+    - id: TSource
+    - id: TResult
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TResult}}
+    content.vb: Public Shared Function [Select](Of TSource, TResult)(source As IncrementalValuesProvider(Of TSource), selector As Func(Of TSource, CancellationToken, TResult)) As IncrementalValuesProvider(Of TResult)
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select*
+  nameWithType.vb: IncrementalValueProviderExtensions.Select(Of TSource, TResult)(IncrementalValuesProvider(Of TSource), Func(Of TSource, CancellationToken, TResult))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select(Of TSource, TResult)(Microsoft.CodeAnalysis.IncrementalValuesProvider(Of TSource), System.Func(Of TSource, System.Threading.CancellationToken, TResult))
+  name.vb: Select(Of TSource, TResult)(IncrementalValuesProvider(Of TSource), Func(Of TSource, CancellationToken, TResult))
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Immutable.ImmutableArray{``1}})
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Immutable.ImmutableArray{``1}})
+  id: SelectMany``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Immutable.ImmutableArray{``1}})
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: SelectMany<TSource, TResult>(IncrementalValueProvider<TSource>, Func<TSource, CancellationToken, ImmutableArray<TResult>>)
+  nameWithType: IncrementalValueProviderExtensions.SelectMany<TSource, TResult>(IncrementalValueProvider<TSource>, Func<TSource, CancellationToken, ImmutableArray<TResult>>)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany<TSource, TResult>(Microsoft.CodeAnalysis.IncrementalValueProvider<TSource>, System.Func<TSource, System.Threading.CancellationToken, System.Collections.Immutable.ImmutableArray<TResult>>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValuesProvider<TResult> SelectMany<TSource, TResult>(this IncrementalValueProvider<TSource> source, Func<TSource, CancellationToken, ImmutableArray<TResult>> selector)
+    parameters:
+    - id: source
+      type: Microsoft.CodeAnalysis.IncrementalValueProvider{{TSource}}
+    - id: selector
+      type: System.Func{{TSource},System.Threading.CancellationToken,System.Collections.Immutable.ImmutableArray{{TResult}}}
+    typeParameters:
+    - id: TSource
+    - id: TResult
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TResult}}
+    content.vb: Public Shared Function SelectMany(Of TSource, TResult)(source As IncrementalValueProvider(Of TSource), selector As Func(Of TSource, CancellationToken, ImmutableArray(Of TResult))) As IncrementalValuesProvider(Of TResult)
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany*
+  nameWithType.vb: IncrementalValueProviderExtensions.SelectMany(Of TSource, TResult)(IncrementalValueProvider(Of TSource), Func(Of TSource, CancellationToken, ImmutableArray(Of TResult)))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany(Of TSource, TResult)(Microsoft.CodeAnalysis.IncrementalValueProvider(Of TSource), System.Func(Of TSource, System.Threading.CancellationToken, System.Collections.Immutable.ImmutableArray(Of TResult)))
+  name.vb: SelectMany(Of TSource, TResult)(IncrementalValueProvider(Of TSource), Func(Of TSource, CancellationToken, ImmutableArray(Of TResult)))
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{``1}})
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{``1}})
+  id: SelectMany``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{``1}})
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: SelectMany<TSource, TResult>(IncrementalValueProvider<TSource>, Func<TSource, CancellationToken, IEnumerable<TResult>>)
+  nameWithType: IncrementalValueProviderExtensions.SelectMany<TSource, TResult>(IncrementalValueProvider<TSource>, Func<TSource, CancellationToken, IEnumerable<TResult>>)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany<TSource, TResult>(Microsoft.CodeAnalysis.IncrementalValueProvider<TSource>, System.Func<TSource, System.Threading.CancellationToken, System.Collections.Generic.IEnumerable<TResult>>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValuesProvider<TResult> SelectMany<TSource, TResult>(this IncrementalValueProvider<TSource> source, Func<TSource, CancellationToken, IEnumerable<TResult>> selector)
+    parameters:
+    - id: source
+      type: Microsoft.CodeAnalysis.IncrementalValueProvider{{TSource}}
+    - id: selector
+      type: System.Func{{TSource},System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{{TResult}}}
+    typeParameters:
+    - id: TSource
+    - id: TResult
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TResult}}
+    content.vb: Public Shared Function SelectMany(Of TSource, TResult)(source As IncrementalValueProvider(Of TSource), selector As Func(Of TSource, CancellationToken, IEnumerable(Of TResult))) As IncrementalValuesProvider(Of TResult)
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany*
+  nameWithType.vb: IncrementalValueProviderExtensions.SelectMany(Of TSource, TResult)(IncrementalValueProvider(Of TSource), Func(Of TSource, CancellationToken, IEnumerable(Of TResult)))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany(Of TSource, TResult)(Microsoft.CodeAnalysis.IncrementalValueProvider(Of TSource), System.Func(Of TSource, System.Threading.CancellationToken, System.Collections.Generic.IEnumerable(Of TResult)))
+  name.vb: SelectMany(Of TSource, TResult)(IncrementalValueProvider(Of TSource), Func(Of TSource, CancellationToken, IEnumerable(Of TResult)))
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Immutable.ImmutableArray{``1}})
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Immutable.ImmutableArray{``1}})
+  id: SelectMany``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Immutable.ImmutableArray{``1}})
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: SelectMany<TSource, TResult>(IncrementalValuesProvider<TSource>, Func<TSource, CancellationToken, ImmutableArray<TResult>>)
+  nameWithType: IncrementalValueProviderExtensions.SelectMany<TSource, TResult>(IncrementalValuesProvider<TSource>, Func<TSource, CancellationToken, ImmutableArray<TResult>>)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany<TSource, TResult>(Microsoft.CodeAnalysis.IncrementalValuesProvider<TSource>, System.Func<TSource, System.Threading.CancellationToken, System.Collections.Immutable.ImmutableArray<TResult>>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValuesProvider<TResult> SelectMany<TSource, TResult>(this IncrementalValuesProvider<TSource> source, Func<TSource, CancellationToken, ImmutableArray<TResult>> selector)
+    parameters:
+    - id: source
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TSource}}
+    - id: selector
+      type: System.Func{{TSource},System.Threading.CancellationToken,System.Collections.Immutable.ImmutableArray{{TResult}}}
+    typeParameters:
+    - id: TSource
+    - id: TResult
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TResult}}
+    content.vb: Public Shared Function SelectMany(Of TSource, TResult)(source As IncrementalValuesProvider(Of TSource), selector As Func(Of TSource, CancellationToken, ImmutableArray(Of TResult))) As IncrementalValuesProvider(Of TResult)
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany*
+  nameWithType.vb: IncrementalValueProviderExtensions.SelectMany(Of TSource, TResult)(IncrementalValuesProvider(Of TSource), Func(Of TSource, CancellationToken, ImmutableArray(Of TResult)))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany(Of TSource, TResult)(Microsoft.CodeAnalysis.IncrementalValuesProvider(Of TSource), System.Func(Of TSource, System.Threading.CancellationToken, System.Collections.Immutable.ImmutableArray(Of TResult)))
+  name.vb: SelectMany(Of TSource, TResult)(IncrementalValuesProvider(Of TSource), Func(Of TSource, CancellationToken, ImmutableArray(Of TResult)))
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{``1}})
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{``1}})
+  id: SelectMany``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{``1}})
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: SelectMany<TSource, TResult>(IncrementalValuesProvider<TSource>, Func<TSource, CancellationToken, IEnumerable<TResult>>)
+  nameWithType: IncrementalValueProviderExtensions.SelectMany<TSource, TResult>(IncrementalValuesProvider<TSource>, Func<TSource, CancellationToken, IEnumerable<TResult>>)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany<TSource, TResult>(Microsoft.CodeAnalysis.IncrementalValuesProvider<TSource>, System.Func<TSource, System.Threading.CancellationToken, System.Collections.Generic.IEnumerable<TResult>>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValuesProvider<TResult> SelectMany<TSource, TResult>(this IncrementalValuesProvider<TSource> source, Func<TSource, CancellationToken, IEnumerable<TResult>> selector)
+    parameters:
+    - id: source
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TSource}}
+    - id: selector
+      type: System.Func{{TSource},System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{{TResult}}}
+    typeParameters:
+    - id: TSource
+    - id: TResult
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TResult}}
+    content.vb: Public Shared Function SelectMany(Of TSource, TResult)(source As IncrementalValuesProvider(Of TSource), selector As Func(Of TSource, CancellationToken, IEnumerable(Of TResult))) As IncrementalValuesProvider(Of TResult)
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany*
+  nameWithType.vb: IncrementalValueProviderExtensions.SelectMany(Of TSource, TResult)(IncrementalValuesProvider(Of TSource), Func(Of TSource, CancellationToken, IEnumerable(Of TResult)))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany(Of TSource, TResult)(Microsoft.CodeAnalysis.IncrementalValuesProvider(Of TSource), System.Func(Of TSource, System.Threading.CancellationToken, System.Collections.Generic.IEnumerable(Of TResult)))
+  name.vb: SelectMany(Of TSource, TResult)(IncrementalValuesProvider(Of TSource), Func(Of TSource, CancellationToken, IEnumerable(Of TResult)))
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Collect``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0})
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Collect``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0})
+  id: Collect``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0})
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Collect<TSource>(IncrementalValuesProvider<TSource>)
+  nameWithType: IncrementalValueProviderExtensions.Collect<TSource>(IncrementalValuesProvider<TSource>)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Collect<TSource>(Microsoft.CodeAnalysis.IncrementalValuesProvider<TSource>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValueProvider<ImmutableArray<TSource>> Collect<TSource>(this IncrementalValuesProvider<TSource> source)
+    parameters:
+    - id: source
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TSource}}
+    typeParameters:
+    - id: TSource
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValueProvider{System.Collections.Immutable.ImmutableArray{{TSource}}}
+    content.vb: Public Shared Function Collect(Of TSource)(source As IncrementalValuesProvider(Of TSource)) As IncrementalValueProvider(Of ImmutableArray(Of TSource))
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Collect*
+  nameWithType.vb: IncrementalValueProviderExtensions.Collect(Of TSource)(IncrementalValuesProvider(Of TSource))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Collect(Of TSource)(Microsoft.CodeAnalysis.IncrementalValuesProvider(Of TSource))
+  name.vb: Collect(Of TSource)(IncrementalValuesProvider(Of TSource))
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1})
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1})
+  id: Combine``2(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1})
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Combine<TLeft, TRight>(IncrementalValuesProvider<TLeft>, IncrementalValueProvider<TRight>)
+  nameWithType: IncrementalValueProviderExtensions.Combine<TLeft, TRight>(IncrementalValuesProvider<TLeft>, IncrementalValueProvider<TRight>)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine<TLeft, TRight>(Microsoft.CodeAnalysis.IncrementalValuesProvider<TLeft>, Microsoft.CodeAnalysis.IncrementalValueProvider<TRight>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValuesProvider<(TLeft Left, TRight Right)> Combine<TLeft, TRight>(this IncrementalValuesProvider<TLeft> provider1, IncrementalValueProvider<TRight> provider2)
+    parameters:
+    - id: provider1
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TLeft}}
+    - id: provider2
+      type: Microsoft.CodeAnalysis.IncrementalValueProvider{{TRight}}
+    typeParameters:
+    - id: TLeft
+    - id: TRight
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{System.ValueTuple{{TLeft},{TRight}}}
+    content.vb: Public Shared Function Combine(Of TLeft, TRight)(provider1 As IncrementalValuesProvider(Of TLeft), provider2 As IncrementalValueProvider(Of TRight)) As IncrementalValuesProvider(Of (Left As TLeft, Right As TRight))
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine*
+  nameWithType.vb: IncrementalValueProviderExtensions.Combine(Of TLeft, TRight)(IncrementalValuesProvider(Of TLeft), IncrementalValueProvider(Of TRight))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine(Of TLeft, TRight)(Microsoft.CodeAnalysis.IncrementalValuesProvider(Of TLeft), Microsoft.CodeAnalysis.IncrementalValueProvider(Of TRight))
+  name.vb: Combine(Of TLeft, TRight)(IncrementalValuesProvider(Of TLeft), IncrementalValueProvider(Of TRight))
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1})
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1})
+  id: Combine``2(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},Microsoft.CodeAnalysis.IncrementalValueProvider{``1})
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Combine<TLeft, TRight>(IncrementalValueProvider<TLeft>, IncrementalValueProvider<TRight>)
+  nameWithType: IncrementalValueProviderExtensions.Combine<TLeft, TRight>(IncrementalValueProvider<TLeft>, IncrementalValueProvider<TRight>)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine<TLeft, TRight>(Microsoft.CodeAnalysis.IncrementalValueProvider<TLeft>, Microsoft.CodeAnalysis.IncrementalValueProvider<TRight>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValueProvider<(TLeft Left, TRight Right)> Combine<TLeft, TRight>(this IncrementalValueProvider<TLeft> provider1, IncrementalValueProvider<TRight> provider2)
+    parameters:
+    - id: provider1
+      type: Microsoft.CodeAnalysis.IncrementalValueProvider{{TLeft}}
+    - id: provider2
+      type: Microsoft.CodeAnalysis.IncrementalValueProvider{{TRight}}
+    typeParameters:
+    - id: TLeft
+    - id: TRight
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValueProvider{System.ValueTuple{{TLeft},{TRight}}}
+    content.vb: Public Shared Function Combine(Of TLeft, TRight)(provider1 As IncrementalValueProvider(Of TLeft), provider2 As IncrementalValueProvider(Of TRight)) As IncrementalValueProvider(Of (Left As TLeft, Right As TRight))
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine*
+  nameWithType.vb: IncrementalValueProviderExtensions.Combine(Of TLeft, TRight)(IncrementalValueProvider(Of TLeft), IncrementalValueProvider(Of TRight))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine(Of TLeft, TRight)(Microsoft.CodeAnalysis.IncrementalValueProvider(Of TLeft), Microsoft.CodeAnalysis.IncrementalValueProvider(Of TRight))
+  name.vb: Combine(Of TLeft, TRight)(IncrementalValueProvider(Of TLeft), IncrementalValueProvider(Of TRight))
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Where``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Boolean})
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Where``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Boolean})
+  id: Where``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Func{``0,System.Boolean})
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Where<TSource>(IncrementalValuesProvider<TSource>, Func<TSource, bool>)
+  nameWithType: IncrementalValueProviderExtensions.Where<TSource>(IncrementalValuesProvider<TSource>, Func<TSource, bool>)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Where<TSource>(Microsoft.CodeAnalysis.IncrementalValuesProvider<TSource>, System.Func<TSource, bool>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValuesProvider<TSource> Where<TSource>(this IncrementalValuesProvider<TSource> source, Func<TSource, bool> predicate)
+    parameters:
+    - id: source
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TSource}}
+    - id: predicate
+      type: System.Func{{TSource},System.Boolean}
+    typeParameters:
+    - id: TSource
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TSource}}
+    content.vb: Public Shared Function Where(Of TSource)(source As IncrementalValuesProvider(Of TSource), predicate As Func(Of TSource, Boolean)) As IncrementalValuesProvider(Of TSource)
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Where*
+  nameWithType.vb: IncrementalValueProviderExtensions.Where(Of TSource)(IncrementalValuesProvider(Of TSource), Func(Of TSource, Boolean))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Where(Of TSource)(Microsoft.CodeAnalysis.IncrementalValuesProvider(Of TSource), System.Func(Of TSource, Boolean))
+  name.vb: Where(Of TSource)(IncrementalValuesProvider(Of TSource), Func(Of TSource, Boolean))
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer``1(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer``1(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Collections.Generic.IEqualityComparer{``0})
+  id: WithComparer``1(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.Collections.Generic.IEqualityComparer{``0})
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithComparer<TSource>(IncrementalValueProvider<TSource>, IEqualityComparer<TSource>)
+  nameWithType: IncrementalValueProviderExtensions.WithComparer<TSource>(IncrementalValueProvider<TSource>, IEqualityComparer<TSource>)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer<TSource>(Microsoft.CodeAnalysis.IncrementalValueProvider<TSource>, System.Collections.Generic.IEqualityComparer<TSource>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValueProvider<TSource> WithComparer<TSource>(this IncrementalValueProvider<TSource> source, IEqualityComparer<TSource> comparer)
+    parameters:
+    - id: source
+      type: Microsoft.CodeAnalysis.IncrementalValueProvider{{TSource}}
+    - id: comparer
+      type: System.Collections.Generic.IEqualityComparer{{TSource}}
+    typeParameters:
+    - id: TSource
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValueProvider{{TSource}}
+    content.vb: Public Shared Function WithComparer(Of TSource)(source As IncrementalValueProvider(Of TSource), comparer As IEqualityComparer(Of TSource)) As IncrementalValueProvider(Of TSource)
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer*
+  nameWithType.vb: IncrementalValueProviderExtensions.WithComparer(Of TSource)(IncrementalValueProvider(Of TSource), IEqualityComparer(Of TSource))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer(Of TSource)(Microsoft.CodeAnalysis.IncrementalValueProvider(Of TSource), System.Collections.Generic.IEqualityComparer(Of TSource))
+  name.vb: WithComparer(Of TSource)(IncrementalValueProvider(Of TSource), IEqualityComparer(Of TSource))
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Collections.Generic.IEqualityComparer{``0})
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Collections.Generic.IEqualityComparer{``0})
+  id: WithComparer``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.Collections.Generic.IEqualityComparer{``0})
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithComparer<TSource>(IncrementalValuesProvider<TSource>, IEqualityComparer<TSource>)
+  nameWithType: IncrementalValueProviderExtensions.WithComparer<TSource>(IncrementalValuesProvider<TSource>, IEqualityComparer<TSource>)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer<TSource>(Microsoft.CodeAnalysis.IncrementalValuesProvider<TSource>, System.Collections.Generic.IEqualityComparer<TSource>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValuesProvider<TSource> WithComparer<TSource>(this IncrementalValuesProvider<TSource> source, IEqualityComparer<TSource> comparer)
+    parameters:
+    - id: source
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TSource}}
+    - id: comparer
+      type: System.Collections.Generic.IEqualityComparer{{TSource}}
+    typeParameters:
+    - id: TSource
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TSource}}
+    content.vb: Public Shared Function WithComparer(Of TSource)(source As IncrementalValuesProvider(Of TSource), comparer As IEqualityComparer(Of TSource)) As IncrementalValuesProvider(Of TSource)
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer*
+  nameWithType.vb: IncrementalValueProviderExtensions.WithComparer(Of TSource)(IncrementalValuesProvider(Of TSource), IEqualityComparer(Of TSource))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer(Of TSource)(Microsoft.CodeAnalysis.IncrementalValuesProvider(Of TSource), System.Collections.Generic.IEqualityComparer(Of TSource))
+  name.vb: WithComparer(Of TSource)(IncrementalValuesProvider(Of TSource), IEqualityComparer(Of TSource))
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName``1(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.String)
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName``1(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.String)
+  id: WithTrackingName``1(Microsoft.CodeAnalysis.IncrementalValueProvider{``0},System.String)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithTrackingName<TSource>(IncrementalValueProvider<TSource>, string)
+  nameWithType: IncrementalValueProviderExtensions.WithTrackingName<TSource>(IncrementalValueProvider<TSource>, string)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName<TSource>(Microsoft.CodeAnalysis.IncrementalValueProvider<TSource>, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValueProvider<TSource> WithTrackingName<TSource>(this IncrementalValueProvider<TSource> source, string name)
+    parameters:
+    - id: source
+      type: Microsoft.CodeAnalysis.IncrementalValueProvider{{TSource}}
+    - id: name
+      type: System.String
+    typeParameters:
+    - id: TSource
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValueProvider{{TSource}}
+    content.vb: Public Shared Function WithTrackingName(Of TSource)(source As IncrementalValueProvider(Of TSource), name As String) As IncrementalValueProvider(Of TSource)
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName*
+  nameWithType.vb: IncrementalValueProviderExtensions.WithTrackingName(Of TSource)(IncrementalValueProvider(Of TSource), String)
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName(Of TSource)(Microsoft.CodeAnalysis.IncrementalValueProvider(Of TSource), String)
+  name.vb: WithTrackingName(Of TSource)(IncrementalValueProvider(Of TSource), String)
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.String)
+  commentId: M:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.String)
+  id: WithTrackingName``1(Microsoft.CodeAnalysis.IncrementalValuesProvider{``0},System.String)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: WithTrackingName<TSource>(IncrementalValuesProvider<TSource>, string)
+  nameWithType: IncrementalValueProviderExtensions.WithTrackingName<TSource>(IncrementalValuesProvider<TSource>, string)
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName<TSource>(Microsoft.CodeAnalysis.IncrementalValuesProvider<TSource>, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static IncrementalValuesProvider<TSource> WithTrackingName<TSource>(this IncrementalValuesProvider<TSource> source, string name)
+    parameters:
+    - id: source
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TSource}}
+    - id: name
+      type: System.String
+    typeParameters:
+    - id: TSource
+    return:
+      type: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TSource}}
+    content.vb: Public Shared Function WithTrackingName(Of TSource)(source As IncrementalValuesProvider(Of TSource), name As String) As IncrementalValuesProvider(Of TSource)
+  overload: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName*
+  nameWithType.vb: IncrementalValueProviderExtensions.WithTrackingName(Of TSource)(IncrementalValuesProvider(Of TSource), String)
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName(Of TSource)(Microsoft.CodeAnalysis.IncrementalValuesProvider(Of TSource), String)
+  name.vb: WithTrackingName(Of TSource)(IncrementalValuesProvider(Of TSource), String)
+references:
+- uid: Microsoft.CodeAnalysis
+  commentId: N:Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis
+  nameWithType: Microsoft.CodeAnalysis
+  fullName: Microsoft.CodeAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select*
+  commentId: Overload:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.html#Microsoft_CodeAnalysis_IncrementalValueProviderExtensions_Select__2_Microsoft_CodeAnalysis_IncrementalValueProvider___0__System_Func___0_System_Threading_CancellationToken___1__
+  name: Select
+  nameWithType: IncrementalValueProviderExtensions.Select
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Select
+- uid: Microsoft.CodeAnalysis.IncrementalValueProvider{{TSource}}
+  commentId: T:Microsoft.CodeAnalysis.IncrementalValueProvider{``0}
+  parent: Microsoft.CodeAnalysis
+  definition: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+  href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  name: IncrementalValueProvider<TSource>
+  nameWithType: IncrementalValueProvider<TSource>
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProvider<TSource>
+  nameWithType.vb: IncrementalValueProvider(Of TSource)
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProvider(Of TSource)
+  name.vb: IncrementalValueProvider(Of TSource)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: <
+  - name: TSource
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: )
+- uid: System.Func{{TSource},System.Threading.CancellationToken,{TResult}}
+  commentId: T:System.Func{``0,System.Threading.CancellationToken,``1}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<TSource, CancellationToken, TResult>
+  nameWithType: Func<TSource, CancellationToken, TResult>
+  fullName: System.Func<TSource, System.Threading.CancellationToken, TResult>
+  nameWithType.vb: Func(Of TSource, CancellationToken, TResult)
+  fullName.vb: System.Func(Of TSource, System.Threading.CancellationToken, TResult)
+  name.vb: Func(Of TSource, CancellationToken, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValueProvider{{TResult}}
+  commentId: T:Microsoft.CodeAnalysis.IncrementalValueProvider{``1}
+  parent: Microsoft.CodeAnalysis
+  definition: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+  href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  name: IncrementalValueProvider<TResult>
+  nameWithType: IncrementalValueProvider<TResult>
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProvider<TResult>
+  nameWithType.vb: IncrementalValueProvider(Of TResult)
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProvider(Of TResult)
+  name.vb: IncrementalValueProvider(Of TResult)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+  commentId: T:Microsoft.CodeAnalysis.IncrementalValueProvider`1
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  name: IncrementalValueProvider<TValue>
+  nameWithType: IncrementalValueProvider<TValue>
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProvider<TValue>
+  nameWithType.vb: IncrementalValueProvider(Of TValue)
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProvider(Of TValue)
+  name.vb: IncrementalValueProvider(Of TValue)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Func`3
+  commentId: T:System.Func`3
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<T1, T2, TResult>
+  nameWithType: Func<T1, T2, TResult>
+  fullName: System.Func<T1, T2, TResult>
+  nameWithType.vb: Func(Of T1, T2, TResult)
+  fullName.vb: System.Func(Of T1, T2, TResult)
+  name.vb: Func(Of T1, T2, TResult)
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TSource}}
+  commentId: T:Microsoft.CodeAnalysis.IncrementalValuesProvider{``0}
+  parent: Microsoft.CodeAnalysis
+  definition: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+  href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  name: IncrementalValuesProvider<TSource>
+  nameWithType: IncrementalValuesProvider<TSource>
+  fullName: Microsoft.CodeAnalysis.IncrementalValuesProvider<TSource>
+  nameWithType.vb: IncrementalValuesProvider(Of TSource)
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValuesProvider(Of TSource)
+  name.vb: IncrementalValuesProvider(Of TSource)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+    name: IncrementalValuesProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  - name: <
+  - name: TSource
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+    name: IncrementalValuesProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TResult}}
+  commentId: T:Microsoft.CodeAnalysis.IncrementalValuesProvider{``1}
+  parent: Microsoft.CodeAnalysis
+  definition: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+  href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  name: IncrementalValuesProvider<TResult>
+  nameWithType: IncrementalValuesProvider<TResult>
+  fullName: Microsoft.CodeAnalysis.IncrementalValuesProvider<TResult>
+  nameWithType.vb: IncrementalValuesProvider(Of TResult)
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValuesProvider(Of TResult)
+  name.vb: IncrementalValuesProvider(Of TResult)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+    name: IncrementalValuesProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+    name: IncrementalValuesProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+  commentId: T:Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  name: IncrementalValuesProvider<TValues>
+  nameWithType: IncrementalValuesProvider<TValues>
+  fullName: Microsoft.CodeAnalysis.IncrementalValuesProvider<TValues>
+  nameWithType.vb: IncrementalValuesProvider(Of TValues)
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValuesProvider(Of TValues)
+  name.vb: IncrementalValuesProvider(Of TValues)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+    name: IncrementalValuesProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  - name: <
+  - name: TValues
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+    name: IncrementalValuesProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValues
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany*
+  commentId: Overload:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.html#Microsoft_CodeAnalysis_IncrementalValueProviderExtensions_SelectMany__2_Microsoft_CodeAnalysis_IncrementalValueProvider___0__System_Func___0_System_Threading_CancellationToken_System_Collections_Immutable_ImmutableArray___1___
+  name: SelectMany
+  nameWithType: IncrementalValueProviderExtensions.SelectMany
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.SelectMany
+- uid: System.Func{{TSource},System.Threading.CancellationToken,System.Collections.Immutable.ImmutableArray{{TResult}}}
+  commentId: T:System.Func{``0,System.Threading.CancellationToken,System.Collections.Immutable.ImmutableArray{``1}}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<TSource, CancellationToken, ImmutableArray<TResult>>
+  nameWithType: Func<TSource, CancellationToken, ImmutableArray<TResult>>
+  fullName: System.Func<TSource, System.Threading.CancellationToken, System.Collections.Immutable.ImmutableArray<TResult>>
+  nameWithType.vb: Func(Of TSource, CancellationToken, ImmutableArray(Of TResult))
+  fullName.vb: System.Func(Of TSource, System.Threading.CancellationToken, System.Collections.Immutable.ImmutableArray(Of TResult))
+  name.vb: Func(Of TSource, CancellationToken, ImmutableArray(Of TResult))
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: System.Func{{TSource},System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{{TResult}}}
+  commentId: T:System.Func{``0,System.Threading.CancellationToken,System.Collections.Generic.IEnumerable{``1}}
+  parent: System
+  definition: System.Func`3
+  href: https://learn.microsoft.com/dotnet/api/system.func-3
+  name: Func<TSource, CancellationToken, IEnumerable<TResult>>
+  nameWithType: Func<TSource, CancellationToken, IEnumerable<TResult>>
+  fullName: System.Func<TSource, System.Threading.CancellationToken, System.Collections.Generic.IEnumerable<TResult>>
+  nameWithType.vb: Func(Of TSource, CancellationToken, IEnumerable(Of TResult))
+  fullName.vb: System.Func(Of TSource, System.Threading.CancellationToken, System.Collections.Generic.IEnumerable(Of TResult))
+  name.vb: Func(Of TSource, CancellationToken, IEnumerable(Of TResult))
+  spec.csharp:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`3
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-3
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Collect*
+  commentId: Overload:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Collect
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.html#Microsoft_CodeAnalysis_IncrementalValueProviderExtensions_Collect__1_Microsoft_CodeAnalysis_IncrementalValuesProvider___0__
+  name: Collect
+  nameWithType: IncrementalValueProviderExtensions.Collect
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Collect
+- uid: Microsoft.CodeAnalysis.IncrementalValueProvider{System.Collections.Immutable.ImmutableArray{{TSource}}}
+  commentId: T:Microsoft.CodeAnalysis.IncrementalValueProvider{System.Collections.Immutable.ImmutableArray{``0}}
+  parent: Microsoft.CodeAnalysis
+  definition: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+  href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  name: IncrementalValueProvider<ImmutableArray<TSource>>
+  nameWithType: IncrementalValueProvider<ImmutableArray<TSource>>
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProvider<System.Collections.Immutable.ImmutableArray<TSource>>
+  nameWithType.vb: IncrementalValueProvider(Of ImmutableArray(Of TSource))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProvider(Of System.Collections.Immutable.ImmutableArray(Of TSource))
+  name.vb: IncrementalValueProvider(Of ImmutableArray(Of TSource))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: <
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - name: TSource
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine*
+  commentId: Overload:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.html#Microsoft_CodeAnalysis_IncrementalValueProviderExtensions_Combine__2_Microsoft_CodeAnalysis_IncrementalValuesProvider___0__Microsoft_CodeAnalysis_IncrementalValueProvider___1__
+  name: Combine
+  nameWithType: IncrementalValueProviderExtensions.Combine
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Combine
+- uid: Microsoft.CodeAnalysis.IncrementalValuesProvider{{TLeft}}
+  commentId: T:Microsoft.CodeAnalysis.IncrementalValuesProvider{``0}
+  parent: Microsoft.CodeAnalysis
+  definition: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+  href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  name: IncrementalValuesProvider<TLeft>
+  nameWithType: IncrementalValuesProvider<TLeft>
+  fullName: Microsoft.CodeAnalysis.IncrementalValuesProvider<TLeft>
+  nameWithType.vb: IncrementalValuesProvider(Of TLeft)
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValuesProvider(Of TLeft)
+  name.vb: IncrementalValuesProvider(Of TLeft)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+    name: IncrementalValuesProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  - name: <
+  - name: TLeft
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+    name: IncrementalValuesProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TLeft
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValueProvider{{TRight}}
+  commentId: T:Microsoft.CodeAnalysis.IncrementalValueProvider{``1}
+  parent: Microsoft.CodeAnalysis
+  definition: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+  href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  name: IncrementalValueProvider<TRight>
+  nameWithType: IncrementalValueProvider<TRight>
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProvider<TRight>
+  nameWithType.vb: IncrementalValueProvider(Of TRight)
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProvider(Of TRight)
+  name.vb: IncrementalValueProvider(Of TRight)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: <
+  - name: TRight
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TRight
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValuesProvider{System.ValueTuple{{TLeft},{TRight}}}
+  commentId: T:Microsoft.CodeAnalysis.IncrementalValuesProvider{System.ValueTuple{``0,``1}}
+  parent: Microsoft.CodeAnalysis
+  definition: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+  href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  name: IncrementalValuesProvider<(TLeft Left, TRight Right)>
+  nameWithType: IncrementalValuesProvider<(TLeft Left, TRight Right)>
+  fullName: Microsoft.CodeAnalysis.IncrementalValuesProvider<(TLeft Left, TRight Right)>
+  nameWithType.vb: IncrementalValuesProvider(Of (Left As TLeft, Right As TRight))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValuesProvider(Of (Left As TLeft, Right As TRight))
+  name.vb: IncrementalValuesProvider(Of (Left As TLeft, Right As TRight))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+    name: IncrementalValuesProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  - name: <
+  - name: (
+  - name: TLeft
+  - name: " "
+  - uid: System.ValueTuple{``0,``1}.Left
+    name: Left
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1-.left
+  - name: ','
+  - name: " "
+  - name: TRight
+  - name: " "
+  - uid: System.ValueTuple{``0,``1}.Right
+    name: Right
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1-.right
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.IncrementalValuesProvider`1
+    name: IncrementalValuesProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValuesProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{``0,``1}.Left
+    name: Left
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1-.left
+  - name: " "
+  - name: As
+  - name: " "
+  - name: TLeft
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{``0,``1}.Right
+    name: Right
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1-.right
+  - name: " "
+  - name: As
+  - name: " "
+  - name: TRight
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValueProvider{{TLeft}}
+  commentId: T:Microsoft.CodeAnalysis.IncrementalValueProvider{``0}
+  parent: Microsoft.CodeAnalysis
+  definition: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+  href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  name: IncrementalValueProvider<TLeft>
+  nameWithType: IncrementalValueProvider<TLeft>
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProvider<TLeft>
+  nameWithType.vb: IncrementalValueProvider(Of TLeft)
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProvider(Of TLeft)
+  name.vb: IncrementalValueProvider(Of TLeft)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: <
+  - name: TLeft
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TLeft
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValueProvider{System.ValueTuple{{TLeft},{TRight}}}
+  commentId: T:Microsoft.CodeAnalysis.IncrementalValueProvider{System.ValueTuple{``0,``1}}
+  parent: Microsoft.CodeAnalysis
+  definition: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+  href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  name: IncrementalValueProvider<(TLeft Left, TRight Right)>
+  nameWithType: IncrementalValueProvider<(TLeft Left, TRight Right)>
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProvider<(TLeft Left, TRight Right)>
+  nameWithType.vb: IncrementalValueProvider(Of (Left As TLeft, Right As TRight))
+  fullName.vb: Microsoft.CodeAnalysis.IncrementalValueProvider(Of (Left As TLeft, Right As TRight))
+  name.vb: IncrementalValueProvider(Of (Left As TLeft, Right As TRight))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: <
+  - name: (
+  - name: TLeft
+  - name: " "
+  - uid: System.ValueTuple{``0,``1}.Left
+    name: Left
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1-.left
+  - name: ','
+  - name: " "
+  - name: TRight
+  - name: " "
+  - uid: System.ValueTuple{``0,``1}.Right
+    name: Right
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1-.right
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.IncrementalValueProvider`1
+    name: IncrementalValueProvider
+    isExternal: true
+    href: Microsoft.CodeAnalysis.IncrementalValueProvider-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{``0,``1}.Left
+    name: Left
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1-.left
+  - name: " "
+  - name: As
+  - name: " "
+  - name: TLeft
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{``0,``1}.Right
+    name: Right
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple---0,--1-.right
+  - name: " "
+  - name: As
+  - name: " "
+  - name: TRight
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Where*
+  commentId: Overload:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Where
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.html#Microsoft_CodeAnalysis_IncrementalValueProviderExtensions_Where__1_Microsoft_CodeAnalysis_IncrementalValuesProvider___0__System_Func___0_System_Boolean__
+  name: Where
+  nameWithType: IncrementalValueProviderExtensions.Where
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.Where
+- uid: System.Func{{TSource},System.Boolean}
+  commentId: T:System.Func{``0,System.Boolean}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<TSource, bool>
+  nameWithType: Func<TSource, bool>
+  fullName: System.Func<TSource, bool>
+  nameWithType.vb: Func(Of TSource, Boolean)
+  fullName.vb: System.Func(Of TSource, Boolean)
+  name.vb: Func(Of TSource, Boolean)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: TSource
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer*
+  commentId: Overload:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.html#Microsoft_CodeAnalysis_IncrementalValueProviderExtensions_WithComparer__1_Microsoft_CodeAnalysis_IncrementalValueProvider___0__System_Collections_Generic_IEqualityComparer___0__
+  name: WithComparer
+  nameWithType: IncrementalValueProviderExtensions.WithComparer
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithComparer
+- uid: System.Collections.Generic.IEqualityComparer{{TSource}}
+  commentId: T:System.Collections.Generic.IEqualityComparer{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEqualityComparer`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  name: IEqualityComparer<TSource>
+  nameWithType: IEqualityComparer<TSource>
+  fullName: System.Collections.Generic.IEqualityComparer<TSource>
+  nameWithType.vb: IEqualityComparer(Of TSource)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of TSource)
+  name.vb: IEqualityComparer(Of TSource)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: TSource
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TSource
+  - name: )
+- uid: System.Collections.Generic.IEqualityComparer`1
+  commentId: T:System.Collections.Generic.IEqualityComparer`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  name: IEqualityComparer<T>
+  nameWithType: IEqualityComparer<T>
+  fullName: System.Collections.Generic.IEqualityComparer<T>
+  nameWithType.vb: IEqualityComparer(Of T)
+  fullName.vb: System.Collections.Generic.IEqualityComparer(Of T)
+  name.vb: IEqualityComparer(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEqualityComparer`1
+    name: IEqualityComparer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.iequalitycomparer-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName*
+  commentId: Overload:Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.html#Microsoft_CodeAnalysis_IncrementalValueProviderExtensions_WithTrackingName__1_Microsoft_CodeAnalysis_IncrementalValueProvider___0__System_String_
+  name: WithTrackingName
+  nameWithType: IncrementalValueProviderExtensions.WithTrackingName
+  fullName: Microsoft.CodeAnalysis.IncrementalValueProviderExtensions.WithTrackingName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

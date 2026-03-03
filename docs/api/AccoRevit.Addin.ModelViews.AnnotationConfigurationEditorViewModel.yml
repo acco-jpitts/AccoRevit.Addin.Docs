@@ -1,0 +1,2169 @@
+### YamlMime:ManagedReference
+items:
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  commentId: T:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  id: AnnotationConfigurationEditorViewModel
+  parent: AccoRevit.Addin.ModelViews
+  children:
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.#ctor(System.String)
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AddCommand
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableFamilyNames
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableServiceTypes
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.BrowseXmlCommand
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CanEditSelected
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CategoryFilterOptions
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DeleteCommand
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DuplicateCommand
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.IsDirty
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownCategories
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownPlacementPositions
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownTagTypes
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadCommand
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadFamilyTypesCommand
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SaveCommand
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SearchText
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedCategoryFilter
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedItem
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedTagTypeFilter
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.TagTypeFilterOptions
+  - AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.XmlFilePath
+  langs:
+  - csharp
+  - vb
+  name: AnnotationConfigurationEditorViewModel
+  nameWithType: AnnotationConfigurationEditorViewModel
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  type: Class
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: View model for editing an annotation configuration XML file that defines tag family, type, placement, and filtering rules.
+  remarks: >-
+    <p>
+
+    Provides a grid-backed collection of <xref href="AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel" data-throw-if-not-resolved="false"></xref> items with search and
+
+    category/tag-type filtering via <xref href="AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView" data-throw-if-not-resolved="false"></xref>.
+
+    </p>
+
+    <p>
+
+    Integrates with services that discover tag families on disk, query available family types from <code>.rfa</code> files,
+
+    and enumerate fabrication service types from the active Revit document.
+
+    </p>
+
+    <p>
+
+    Tracks unsaved changes using <xref href="AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.IsDirty" data-throw-if-not-resolved="false"></xref> and suppresses dirty tracking during bulk load operations.
+
+    </p>
+  example: []
+  syntax:
+    content: 'public class AnnotationConfigurationEditorViewModel : ViewModelBase, INotifyPropertyChanged, IViewModel'
+    content.vb: Public Class AnnotationConfigurationEditorViewModel Inherits ViewModelBase Implements INotifyPropertyChanged, IViewModel
+  inheritance:
+  - System.Object
+  - AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  implements:
+  - System.ComponentModel.INotifyPropertyChanged
+  - AccoRevit.Addin.ModelViews.Helpers.IViewModel
+  inheritedMembers:
+  - AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.Close(System.Boolean)
+  - AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.OnPropertyChanged(System.String)
+  - AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  - AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.IsSuccess
+  - AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.ExecuteCommand
+  - AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.CancelCommand
+  - AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.UiApplication
+  - AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.UiDocument
+  - AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.Document
+  - AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.RequestClose
+  - AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.PropertyChanged
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.#ctor(System.String)
+  commentId: M:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: AnnotationConfigurationEditorViewModel(string)
+  nameWithType: AnnotationConfigurationEditorViewModel.AnnotationConfigurationEditorViewModel(string)
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AnnotationConfigurationEditorViewModel(string)
+  type: Constructor
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Initializes a new editor view model and optionally loads an initial XML configuration file.
+  remarks: >-
+    On construction, this view model:
+
+
+    <ul><li>Creates required services and initializes <xref href="AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView" data-throw-if-not-resolved="false"></xref> sorting and filtering.</li><li>Wires collection/item change tracking for dirty state.</li><li>Loads family names and service types for picklists.</li><li>Loads the file at <code class="paramref">initialXmlPath</code> when provided and present on disk.</li></ul>
+  example: []
+  syntax:
+    content: public AnnotationConfigurationEditorViewModel(string initialXmlPath = null)
+    parameters:
+    - id: initialXmlPath
+      type: System.String
+      description: Optional path to an existing XML configuration file to load on startup. If not provided, the editor starts empty.
+    content.vb: Public Sub New(initialXmlPath As String = Nothing)
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.#ctor*
+  nameWithType.vb: AnnotationConfigurationEditorViewModel.New(String)
+  fullName.vb: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.New(String)
+  name.vb: New(String)
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableFamilyNames
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableFamilyNames
+  id: AvailableFamilyNames
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: AvailableFamilyNames
+  nameWithType: AnnotationConfigurationEditorViewModel.AvailableFamilyNames
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableFamilyNames
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Names of tag families discovered on disk for selection in the editor UI.
+  example: []
+  syntax:
+    content: public ObservableCollection<string> AvailableFamilyNames { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{System.String}
+    content.vb: Public ReadOnly Property AvailableFamilyNames As ObservableCollection(Of String)
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableFamilyNames*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableServiceTypes
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableServiceTypes
+  id: AvailableServiceTypes
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: AvailableServiceTypes
+  nameWithType: AnnotationConfigurationEditorViewModel.AvailableServiceTypes
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableServiceTypes
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Fabrication service type names discovered from the active document's fabrication configuration.
+  example: []
+  syntax:
+    content: public ObservableCollection<string> AvailableServiceTypes { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{System.String}
+    content.vb: Public ReadOnly Property AvailableServiceTypes As ObservableCollection(Of String)
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableServiceTypes*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadFamilyTypesCommand
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadFamilyTypesCommand
+  id: LoadFamilyTypesCommand
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: LoadFamilyTypesCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.LoadFamilyTypesCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadFamilyTypesCommand
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Command that loads available family types for the currently <xref href="AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedItem" data-throw-if-not-resolved="false"></xref> by opening the selected family file.
+  example: []
+  syntax:
+    content: public RelayCommand LoadFamilyTypesCommand { get; }
+    parameters: []
+    return:
+      type: AccoRevit.Addin.Utils.RelayCommand
+    content.vb: Public ReadOnly Property LoadFamilyTypesCommand As RelayCommand
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadFamilyTypesCommand*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items
+  id: Items
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: Items
+  nameWithType: AnnotationConfigurationEditorViewModel.Items
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Editable collection of annotation specification items.
+  example: []
+  syntax:
+    content: public ObservableCollection<AnnotationSpecificationItemViewModel> Items { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel}
+    content.vb: Public ReadOnly Property Items As ObservableCollection(Of AnnotationSpecificationItemViewModel)
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView
+  id: ItemsView
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: ItemsView
+  nameWithType: AnnotationConfigurationEditorViewModel.ItemsView
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Filterable/sortable view over <xref href="AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items" data-throw-if-not-resolved="false"></xref> used by the UI.
+  example: []
+  syntax:
+    content: public ICollectionView ItemsView { get; }
+    parameters: []
+    return:
+      type: System.ComponentModel.ICollectionView
+    content.vb: Public ReadOnly Property ItemsView As ICollectionView
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownPlacementPositions
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownPlacementPositions
+  id: KnownPlacementPositions
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: KnownPlacementPositions
+  nameWithType: AnnotationConfigurationEditorViewModel.KnownPlacementPositions
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownPlacementPositions
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Set of placement position values available for selection, seeded with known values and augmented from loaded items.
+  example: []
+  syntax:
+    content: public ObservableCollection<string> KnownPlacementPositions { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{System.String}
+    content.vb: Public ReadOnly Property KnownPlacementPositions As ObservableCollection(Of String)
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownPlacementPositions*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownTagTypes
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownTagTypes
+  id: KnownTagTypes
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: KnownTagTypes
+  nameWithType: AnnotationConfigurationEditorViewModel.KnownTagTypes
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownTagTypes
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Known tag types, seeded with common values and augmented from loaded items.
+  example: []
+  syntax:
+    content: public ObservableCollection<string> KnownTagTypes { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{System.String}
+    content.vb: Public ReadOnly Property KnownTagTypes As ObservableCollection(Of String)
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownTagTypes*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownCategories
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownCategories
+  id: KnownCategories
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: KnownCategories
+  nameWithType: AnnotationConfigurationEditorViewModel.KnownCategories
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownCategories
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Known categories, seeded with common values and augmented from loaded items.
+  example: []
+  syntax:
+    content: public ObservableCollection<string> KnownCategories { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{System.String}
+    content.vb: Public ReadOnly Property KnownCategories As ObservableCollection(Of String)
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownCategories*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CategoryFilterOptions
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CategoryFilterOptions
+  id: CategoryFilterOptions
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: CategoryFilterOptions
+  nameWithType: AnnotationConfigurationEditorViewModel.CategoryFilterOptions
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CategoryFilterOptions
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Category filter dropdown options (includes an “All” option).
+  example: []
+  syntax:
+    content: public ObservableCollection<string> CategoryFilterOptions { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{System.String}
+    content.vb: Public ReadOnly Property CategoryFilterOptions As ObservableCollection(Of String)
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CategoryFilterOptions*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.TagTypeFilterOptions
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.TagTypeFilterOptions
+  id: TagTypeFilterOptions
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: TagTypeFilterOptions
+  nameWithType: AnnotationConfigurationEditorViewModel.TagTypeFilterOptions
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.TagTypeFilterOptions
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Tag-type filter dropdown options (includes an “All” option).
+  example: []
+  syntax:
+    content: public ObservableCollection<string> TagTypeFilterOptions { get; }
+    parameters: []
+    return:
+      type: System.Collections.ObjectModel.ObservableCollection{System.String}
+    content.vb: Public ReadOnly Property TagTypeFilterOptions As ObservableCollection(Of String)
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.TagTypeFilterOptions*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.BrowseXmlCommand
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.BrowseXmlCommand
+  id: BrowseXmlCommand
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: BrowseXmlCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.BrowseXmlCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.BrowseXmlCommand
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Command that allows the user to browse and select an XML file to load.
+  example: []
+  syntax:
+    content: public RelayCommand BrowseXmlCommand { get; }
+    parameters: []
+    return:
+      type: AccoRevit.Addin.Utils.RelayCommand
+    content.vb: Public ReadOnly Property BrowseXmlCommand As RelayCommand
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.BrowseXmlCommand*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadCommand
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadCommand
+  id: LoadCommand
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: LoadCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.LoadCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadCommand
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Command that loads the XML file at <xref href="AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.XmlFilePath" data-throw-if-not-resolved="false"></xref> into <xref href="AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public RelayCommand LoadCommand { get; }
+    parameters: []
+    return:
+      type: AccoRevit.Addin.Utils.RelayCommand
+    content.vb: Public ReadOnly Property LoadCommand As RelayCommand
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadCommand*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SaveCommand
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SaveCommand
+  id: SaveCommand
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: SaveCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.SaveCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SaveCommand
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Command that saves the current <xref href="AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items" data-throw-if-not-resolved="false"></xref> back to <xref href="AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.XmlFilePath" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public RelayCommand SaveCommand { get; }
+    parameters: []
+    return:
+      type: AccoRevit.Addin.Utils.RelayCommand
+    content.vb: Public ReadOnly Property SaveCommand As RelayCommand
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SaveCommand*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AddCommand
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AddCommand
+  id: AddCommand
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: AddCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.AddCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AddCommand
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Command that adds a new default annotation specification item.
+  example: []
+  syntax:
+    content: public RelayCommand AddCommand { get; }
+    parameters: []
+    return:
+      type: AccoRevit.Addin.Utils.RelayCommand
+    content.vb: Public ReadOnly Property AddCommand As RelayCommand
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AddCommand*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DuplicateCommand
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DuplicateCommand
+  id: DuplicateCommand
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: DuplicateCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.DuplicateCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DuplicateCommand
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Command that duplicates the currently selected item.
+  example: []
+  syntax:
+    content: public RelayCommand DuplicateCommand { get; }
+    parameters: []
+    return:
+      type: AccoRevit.Addin.Utils.RelayCommand
+    content.vb: Public ReadOnly Property DuplicateCommand As RelayCommand
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DuplicateCommand*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DeleteCommand
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DeleteCommand
+  id: DeleteCommand
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: DeleteCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.DeleteCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DeleteCommand
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Command that deletes the currently selected item.
+  example: []
+  syntax:
+    content: public RelayCommand DeleteCommand { get; }
+    parameters: []
+    return:
+      type: AccoRevit.Addin.Utils.RelayCommand
+    content.vb: Public ReadOnly Property DeleteCommand As RelayCommand
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DeleteCommand*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.XmlFilePath
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.XmlFilePath
+  id: XmlFilePath
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: XmlFilePath
+  nameWithType: AnnotationConfigurationEditorViewModel.XmlFilePath
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.XmlFilePath
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Path to the currently loaded XML configuration file.
+  remarks: Updating this value invalidates command CanExecute states.
+  example: []
+  syntax:
+    content: public string XmlFilePath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property XmlFilePath As String
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.XmlFilePath*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SearchText
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SearchText
+  id: SearchText
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: SearchText
+  nameWithType: AnnotationConfigurationEditorViewModel.SearchText
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SearchText
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Free-text search term used by <xref href="AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView" data-throw-if-not-resolved="false"></xref> filtering.
+  example: []
+  syntax:
+    content: public string SearchText { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SearchText As String
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SearchText*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedCategoryFilter
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedCategoryFilter
+  id: SelectedCategoryFilter
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: SelectedCategoryFilter
+  nameWithType: AnnotationConfigurationEditorViewModel.SelectedCategoryFilter
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedCategoryFilter
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Currently selected category filter value (or “All”).
+  example: []
+  syntax:
+    content: public string SelectedCategoryFilter { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SelectedCategoryFilter As String
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedCategoryFilter*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedTagTypeFilter
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedTagTypeFilter
+  id: SelectedTagTypeFilter
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: SelectedTagTypeFilter
+  nameWithType: AnnotationConfigurationEditorViewModel.SelectedTagTypeFilter
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedTagTypeFilter
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Currently selected tag type filter value (or “All”).
+  example: []
+  syntax:
+    content: public string SelectedTagTypeFilter { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SelectedTagTypeFilter As String
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedTagTypeFilter*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedItem
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedItem
+  id: SelectedItem
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: SelectedItem
+  nameWithType: AnnotationConfigurationEditorViewModel.SelectedItem
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedItem
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: The currently selected item in the editor.
+  remarks: Updating this value refreshes dependent properties and command CanExecute states.
+  example: []
+  syntax:
+    content: public AnnotationSpecificationItemViewModel SelectedItem { get; set; }
+    parameters: []
+    return:
+      type: AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel
+    content.vb: Public Property SelectedItem As AnnotationSpecificationItemViewModel
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedItem*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CanEditSelected
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CanEditSelected
+  id: CanEditSelected
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: CanEditSelected
+  nameWithType: AnnotationConfigurationEditorViewModel.CanEditSelected
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CanEditSelected
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Gets a value indicating whether there is a selected item that can be edited.
+  example: []
+  syntax:
+    content: public bool CanEditSelected { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property CanEditSelected As Boolean
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CanEditSelected*
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.IsDirty
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.IsDirty
+  id: IsDirty
+  parent: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel
+  langs:
+  - csharp
+  - vb
+  name: IsDirty
+  nameWithType: AnnotationConfigurationEditorViewModel.IsDirty
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.IsDirty
+  type: Property
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/ModelViews/AnnotationConfigurationEditorViewModel.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.ModelViews
+  summary: Gets a value indicating whether the editor has unsaved changes.
+  example: []
+  syntax:
+    content: public bool IsDirty { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDirty As Boolean
+  overload: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.IsDirty*
+references:
+- uid: AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel
+  commentId: T:AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel
+  parent: AccoRevit.Addin.ModelViews
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel.html
+  name: AnnotationSpecificationItemViewModel
+  nameWithType: AnnotationSpecificationItemViewModel
+  fullName: AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_ItemsView
+  name: ItemsView
+  nameWithType: AnnotationConfigurationEditorViewModel.ItemsView
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.IsDirty
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.IsDirty
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_IsDirty
+  name: IsDirty
+  nameWithType: AnnotationConfigurationEditorViewModel.IsDirty
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.IsDirty
+- uid: AccoRevit.Addin.ModelViews
+  commentId: N:AccoRevit.Addin.ModelViews
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.ModelViews
+  nameWithType: AccoRevit.Addin.ModelViews
+  fullName: AccoRevit.Addin.ModelViews
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.ModelViews
+    name: ModelViews
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.ModelViews
+    name: ModelViews
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  commentId: T:AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  parent: AccoRevit.Addin.ModelViews.Helpers
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html
+  name: ViewModelBase
+  nameWithType: ViewModelBase
+  fullName: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: AccoRevit.Addin.ModelViews.Helpers.IViewModel
+  commentId: T:AccoRevit.Addin.ModelViews.Helpers.IViewModel
+  parent: AccoRevit.Addin.ModelViews.Helpers
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.Helpers.IViewModel.html
+  name: IViewModel
+  nameWithType: IViewModel
+  fullName: AccoRevit.Addin.ModelViews.Helpers.IViewModel
+- uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.Close(System.Boolean)
+  commentId: M:AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.Close(System.Boolean)
+  parent: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_Close_System_Boolean_
+  name: Close(bool)
+  nameWithType: ViewModelBase.Close(bool)
+  fullName: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.Close(bool)
+  nameWithType.vb: ViewModelBase.Close(Boolean)
+  fullName.vb: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.Close(Boolean)
+  name.vb: Close(Boolean)
+  spec.csharp:
+  - uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.Close(System.Boolean)
+    name: Close
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_Close_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.Close(System.Boolean)
+    name: Close
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_Close_System_Boolean_
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.OnPropertyChanged(System.String)
+  commentId: M:AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.OnPropertyChanged(System.String)
+  parent: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_OnPropertyChanged_System_String_
+  name: OnPropertyChanged(string)
+  nameWithType: ViewModelBase.OnPropertyChanged(string)
+  fullName: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.OnPropertyChanged(string)
+  nameWithType.vb: ViewModelBase.OnPropertyChanged(String)
+  fullName.vb: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.OnPropertyChanged(String)
+  name.vb: OnPropertyChanged(String)
+  spec.csharp:
+  - uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_OnPropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.OnPropertyChanged(System.String)
+    name: OnPropertyChanged
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_OnPropertyChanged_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty``1({T}@,{T},System.String)
+  commentId: M:AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  parent: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  definition: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_SetProperty__1___0____0_System_String_
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: ViewModelBase.SetProperty<T>(ref T, T, string)
+  fullName: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_SetProperty__1___0____0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_SetProperty__1___0____0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.IsSuccess
+  commentId: P:AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.IsSuccess
+  parent: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_IsSuccess
+  name: IsSuccess
+  nameWithType: ViewModelBase.IsSuccess
+  fullName: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.IsSuccess
+- uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.ExecuteCommand
+  commentId: P:AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.ExecuteCommand
+  parent: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_ExecuteCommand
+  name: ExecuteCommand
+  nameWithType: ViewModelBase.ExecuteCommand
+  fullName: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.ExecuteCommand
+- uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.CancelCommand
+  commentId: P:AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.CancelCommand
+  parent: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_CancelCommand
+  name: CancelCommand
+  nameWithType: ViewModelBase.CancelCommand
+  fullName: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.CancelCommand
+- uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.UiApplication
+  commentId: P:AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.UiApplication
+  parent: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_UiApplication
+  name: UiApplication
+  nameWithType: ViewModelBase.UiApplication
+  fullName: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.UiApplication
+- uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.UiDocument
+  commentId: P:AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.UiDocument
+  parent: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_UiDocument
+  name: UiDocument
+  nameWithType: ViewModelBase.UiDocument
+  fullName: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.UiDocument
+- uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.Document
+  commentId: P:AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.Document
+  parent: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_Document
+  name: Document
+  nameWithType: ViewModelBase.Document
+  fullName: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.Document
+- uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.RequestClose
+  commentId: E:AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.RequestClose
+  parent: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_RequestClose
+  name: RequestClose
+  nameWithType: ViewModelBase.RequestClose
+  fullName: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.RequestClose
+- uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.PropertyChanged
+  commentId: E:AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.PropertyChanged
+  parent: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_PropertyChanged
+  name: PropertyChanged
+  nameWithType: ViewModelBase.PropertyChanged
+  fullName: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.PropertyChanged
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.ModelViews.Helpers
+  commentId: N:AccoRevit.Addin.ModelViews.Helpers
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.ModelViews.Helpers
+  nameWithType: AccoRevit.Addin.ModelViews.Helpers
+  fullName: AccoRevit.Addin.ModelViews.Helpers
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.ModelViews
+    name: ModelViews
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.html
+  - name: .
+  - uid: AccoRevit.Addin.ModelViews.Helpers
+    name: Helpers
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.Helpers.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.ModelViews
+    name: ModelViews
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.html
+  - name: .
+  - uid: AccoRevit.Addin.ModelViews.Helpers
+    name: Helpers
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.Helpers.html
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  commentId: M:AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_SetProperty__1___0____0_System_String_
+  name: SetProperty<T>(ref T, T, string)
+  nameWithType: ViewModelBase.SetProperty<T>(ref T, T, string)
+  fullName: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty<T>(ref T, T, string)
+  nameWithType.vb: ViewModelBase.SetProperty(Of T)(T, T, String)
+  fullName.vb: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty(Of T)(T, T, String)
+  name.vb: SetProperty(Of T)(T, T, String)
+  spec.csharp:
+  - uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_SetProperty__1___0____0_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: ref
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.SetProperty``1(``0@,``0,System.String)
+    name: SetProperty
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.Helpers.ViewModelBase.html#AccoRevit_Addin_ModelViews_Helpers_ViewModelBase_SetProperty__1___0____0_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: ','
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.#ctor*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.#ctor
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel__ctor_System_String_
+  name: AnnotationConfigurationEditorViewModel
+  nameWithType: AnnotationConfigurationEditorViewModel.AnnotationConfigurationEditorViewModel
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AnnotationConfigurationEditorViewModel
+  nameWithType.vb: AnnotationConfigurationEditorViewModel.New
+  fullName.vb: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableFamilyNames*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableFamilyNames
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_AvailableFamilyNames
+  name: AvailableFamilyNames
+  nameWithType: AnnotationConfigurationEditorViewModel.AvailableFamilyNames
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableFamilyNames
+- uid: System.Collections.ObjectModel.ObservableCollection{System.String}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{System.String}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<string>
+  nameWithType: ObservableCollection<string>
+  fullName: System.Collections.ObjectModel.ObservableCollection<string>
+  nameWithType.vb: ObservableCollection(Of String)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of String)
+  name.vb: ObservableCollection(Of String)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableServiceTypes*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableServiceTypes
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_AvailableServiceTypes
+  name: AvailableServiceTypes
+  nameWithType: AnnotationConfigurationEditorViewModel.AvailableServiceTypes
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AvailableServiceTypes
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedItem
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedItem
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_SelectedItem
+  name: SelectedItem
+  nameWithType: AnnotationConfigurationEditorViewModel.SelectedItem
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedItem
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadFamilyTypesCommand*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadFamilyTypesCommand
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_LoadFamilyTypesCommand
+  name: LoadFamilyTypesCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.LoadFamilyTypesCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadFamilyTypesCommand
+- uid: AccoRevit.Addin.Utils.RelayCommand
+  commentId: T:AccoRevit.Addin.Utils.RelayCommand
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.RelayCommand.html
+  name: RelayCommand
+  nameWithType: RelayCommand
+  fullName: AccoRevit.Addin.Utils.RelayCommand
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_Items
+  name: Items
+  nameWithType: AnnotationConfigurationEditorViewModel.Items
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items
+- uid: System.Collections.ObjectModel.ObservableCollection{AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<AnnotationSpecificationItemViewModel>
+  nameWithType: ObservableCollection<AnnotationSpecificationItemViewModel>
+  fullName: System.Collections.ObjectModel.ObservableCollection<AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel>
+  nameWithType.vb: ObservableCollection(Of AnnotationSpecificationItemViewModel)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel)
+  name.vb: ObservableCollection(Of AnnotationSpecificationItemViewModel)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - uid: AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel
+    name: AnnotationSpecificationItemViewModel
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel
+    name: AnnotationSpecificationItemViewModel
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.AnnotationSpecificationItemViewModel.html
+  - name: )
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_Items
+  name: Items
+  nameWithType: AnnotationConfigurationEditorViewModel.Items
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.Items
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_ItemsView
+  name: ItemsView
+  nameWithType: AnnotationConfigurationEditorViewModel.ItemsView
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.ItemsView
+- uid: System.ComponentModel.ICollectionView
+  commentId: T:System.ComponentModel.ICollectionView
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.icollectionview
+  name: ICollectionView
+  nameWithType: ICollectionView
+  fullName: System.ComponentModel.ICollectionView
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownPlacementPositions*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownPlacementPositions
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_KnownPlacementPositions
+  name: KnownPlacementPositions
+  nameWithType: AnnotationConfigurationEditorViewModel.KnownPlacementPositions
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownPlacementPositions
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownTagTypes*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownTagTypes
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_KnownTagTypes
+  name: KnownTagTypes
+  nameWithType: AnnotationConfigurationEditorViewModel.KnownTagTypes
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownTagTypes
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownCategories*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownCategories
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_KnownCategories
+  name: KnownCategories
+  nameWithType: AnnotationConfigurationEditorViewModel.KnownCategories
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.KnownCategories
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CategoryFilterOptions*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CategoryFilterOptions
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_CategoryFilterOptions
+  name: CategoryFilterOptions
+  nameWithType: AnnotationConfigurationEditorViewModel.CategoryFilterOptions
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CategoryFilterOptions
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.TagTypeFilterOptions*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.TagTypeFilterOptions
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_TagTypeFilterOptions
+  name: TagTypeFilterOptions
+  nameWithType: AnnotationConfigurationEditorViewModel.TagTypeFilterOptions
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.TagTypeFilterOptions
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.BrowseXmlCommand*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.BrowseXmlCommand
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_BrowseXmlCommand
+  name: BrowseXmlCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.BrowseXmlCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.BrowseXmlCommand
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.XmlFilePath
+  commentId: P:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.XmlFilePath
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_XmlFilePath
+  name: XmlFilePath
+  nameWithType: AnnotationConfigurationEditorViewModel.XmlFilePath
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.XmlFilePath
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadCommand*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadCommand
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_LoadCommand
+  name: LoadCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.LoadCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.LoadCommand
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SaveCommand*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SaveCommand
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_SaveCommand
+  name: SaveCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.SaveCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SaveCommand
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AddCommand*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AddCommand
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_AddCommand
+  name: AddCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.AddCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.AddCommand
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DuplicateCommand*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DuplicateCommand
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_DuplicateCommand
+  name: DuplicateCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.DuplicateCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DuplicateCommand
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DeleteCommand*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DeleteCommand
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_DeleteCommand
+  name: DeleteCommand
+  nameWithType: AnnotationConfigurationEditorViewModel.DeleteCommand
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.DeleteCommand
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.XmlFilePath*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.XmlFilePath
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_XmlFilePath
+  name: XmlFilePath
+  nameWithType: AnnotationConfigurationEditorViewModel.XmlFilePath
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.XmlFilePath
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SearchText*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SearchText
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_SearchText
+  name: SearchText
+  nameWithType: AnnotationConfigurationEditorViewModel.SearchText
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SearchText
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedCategoryFilter*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedCategoryFilter
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_SelectedCategoryFilter
+  name: SelectedCategoryFilter
+  nameWithType: AnnotationConfigurationEditorViewModel.SelectedCategoryFilter
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedCategoryFilter
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedTagTypeFilter*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedTagTypeFilter
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_SelectedTagTypeFilter
+  name: SelectedTagTypeFilter
+  nameWithType: AnnotationConfigurationEditorViewModel.SelectedTagTypeFilter
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedTagTypeFilter
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedItem*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedItem
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_SelectedItem
+  name: SelectedItem
+  nameWithType: AnnotationConfigurationEditorViewModel.SelectedItem
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.SelectedItem
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CanEditSelected*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CanEditSelected
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_CanEditSelected
+  name: CanEditSelected
+  nameWithType: AnnotationConfigurationEditorViewModel.CanEditSelected
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.CanEditSelected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.IsDirty*
+  commentId: Overload:AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.IsDirty
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.html#AccoRevit_Addin_ModelViews_AnnotationConfigurationEditorViewModel_IsDirty
+  name: IsDirty
+  nameWithType: AnnotationConfigurationEditorViewModel.IsDirty
+  fullName: AccoRevit.Addin.ModelViews.AnnotationConfigurationEditorViewModel.IsDirty

@@ -1,0 +1,873 @@
+### YamlMime:ManagedReference
+items:
+- uid: Nice3point.Revit.Toolkit.Context
+  commentId: T:Nice3point.Revit.Toolkit.Context
+  id: Context
+  parent: Nice3point.Revit.Toolkit
+  children:
+  - Nice3point.Revit.Toolkit.Context.ActiveDocument
+  - Nice3point.Revit.Toolkit.Context.ActiveGraphicalView
+  - Nice3point.Revit.Toolkit.Context.ActiveUiDocument
+  - Nice3point.Revit.Toolkit.Context.ActiveView
+  - Nice3point.Revit.Toolkit.Context.Application
+  - Nice3point.Revit.Toolkit.Context.Document
+  - Nice3point.Revit.Toolkit.Context.IsRevitInApiMode
+  - Nice3point.Revit.Toolkit.Context.RestoreDialogs
+  - Nice3point.Revit.Toolkit.Context.RestoreFailures
+  - Nice3point.Revit.Toolkit.Context.SuppressDialogs(System.Action{Autodesk.Revit.UI.Events.DialogBoxShowingEventArgs})
+  - Nice3point.Revit.Toolkit.Context.SuppressDialogs(System.Int32)
+  - Nice3point.Revit.Toolkit.Context.SuppressFailures(System.Boolean)
+  - Nice3point.Revit.Toolkit.Context.UiApplication
+  - Nice3point.Revit.Toolkit.Context.UiControlledApplication
+  - Nice3point.Revit.Toolkit.Context.UiDocument
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: Context
+  fullName: Nice3point.Revit.Toolkit.Context
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static class Context
+    content.vb: Public Module Context
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Nice3point.Revit.Toolkit.Context.SuppressFailures(System.Boolean)
+  commentId: M:Nice3point.Revit.Toolkit.Context.SuppressFailures(System.Boolean)
+  id: SuppressFailures(System.Boolean)
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: SuppressFailures(bool)
+  nameWithType: Context.SuppressFailures(bool)
+  fullName: Nice3point.Revit.Toolkit.Context.SuppressFailures(bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static void SuppressFailures(bool resolveErrors = true)
+    parameters:
+    - id: resolveErrors
+      type: System.Boolean
+    content.vb: Public Shared Sub SuppressFailures(resolveErrors As Boolean = True)
+  overload: Nice3point.Revit.Toolkit.Context.SuppressFailures*
+  nameWithType.vb: Context.SuppressFailures(Boolean)
+  fullName.vb: Nice3point.Revit.Toolkit.Context.SuppressFailures(Boolean)
+  name.vb: SuppressFailures(Boolean)
+- uid: Nice3point.Revit.Toolkit.Context.SuppressDialogs(System.Int32)
+  commentId: M:Nice3point.Revit.Toolkit.Context.SuppressDialogs(System.Int32)
+  id: SuppressDialogs(System.Int32)
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: SuppressDialogs(int)
+  nameWithType: Context.SuppressDialogs(int)
+  fullName: Nice3point.Revit.Toolkit.Context.SuppressDialogs(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static void SuppressDialogs(int resultCode = 1)
+    parameters:
+    - id: resultCode
+      type: System.Int32
+    content.vb: Public Shared Sub SuppressDialogs(resultCode As Integer = 1)
+  overload: Nice3point.Revit.Toolkit.Context.SuppressDialogs*
+  nameWithType.vb: Context.SuppressDialogs(Integer)
+  fullName.vb: Nice3point.Revit.Toolkit.Context.SuppressDialogs(Integer)
+  name.vb: SuppressDialogs(Integer)
+- uid: Nice3point.Revit.Toolkit.Context.SuppressDialogs(System.Action{Autodesk.Revit.UI.Events.DialogBoxShowingEventArgs})
+  commentId: M:Nice3point.Revit.Toolkit.Context.SuppressDialogs(System.Action{Autodesk.Revit.UI.Events.DialogBoxShowingEventArgs})
+  id: SuppressDialogs(System.Action{Autodesk.Revit.UI.Events.DialogBoxShowingEventArgs})
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: SuppressDialogs(Action<DialogBoxShowingEventArgs>)
+  nameWithType: Context.SuppressDialogs(Action<DialogBoxShowingEventArgs>)
+  fullName: Nice3point.Revit.Toolkit.Context.SuppressDialogs(System.Action<Autodesk.Revit.UI.Events.DialogBoxShowingEventArgs>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static void SuppressDialogs(Action<DialogBoxShowingEventArgs> handler)
+    parameters:
+    - id: handler
+      type: System.Action{Autodesk.Revit.UI.Events.DialogBoxShowingEventArgs}
+    content.vb: Public Shared Sub SuppressDialogs(handler As Action(Of DialogBoxShowingEventArgs))
+  overload: Nice3point.Revit.Toolkit.Context.SuppressDialogs*
+  nameWithType.vb: Context.SuppressDialogs(Action(Of DialogBoxShowingEventArgs))
+  fullName.vb: Nice3point.Revit.Toolkit.Context.SuppressDialogs(System.Action(Of Autodesk.Revit.UI.Events.DialogBoxShowingEventArgs))
+  name.vb: SuppressDialogs(Action(Of DialogBoxShowingEventArgs))
+- uid: Nice3point.Revit.Toolkit.Context.RestoreDialogs
+  commentId: M:Nice3point.Revit.Toolkit.Context.RestoreDialogs
+  id: RestoreDialogs
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: RestoreDialogs()
+  nameWithType: Context.RestoreDialogs()
+  fullName: Nice3point.Revit.Toolkit.Context.RestoreDialogs()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static void RestoreDialogs()
+    content.vb: Public Shared Sub RestoreDialogs()
+  overload: Nice3point.Revit.Toolkit.Context.RestoreDialogs*
+- uid: Nice3point.Revit.Toolkit.Context.RestoreFailures
+  commentId: M:Nice3point.Revit.Toolkit.Context.RestoreFailures
+  id: RestoreFailures
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: RestoreFailures()
+  nameWithType: Context.RestoreFailures()
+  fullName: Nice3point.Revit.Toolkit.Context.RestoreFailures()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static void RestoreFailures()
+    content.vb: Public Shared Sub RestoreFailures()
+  overload: Nice3point.Revit.Toolkit.Context.RestoreFailures*
+- uid: Nice3point.Revit.Toolkit.Context.UiApplication
+  commentId: P:Nice3point.Revit.Toolkit.Context.UiApplication
+  id: UiApplication
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: UiApplication
+  nameWithType: Context.UiApplication
+  fullName: Nice3point.Revit.Toolkit.Context.UiApplication
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static UIApplication UiApplication { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.UI.UIApplication
+    content.vb: Public Shared ReadOnly Property UiApplication As UIApplication
+  overload: Nice3point.Revit.Toolkit.Context.UiApplication*
+- uid: Nice3point.Revit.Toolkit.Context.UiControlledApplication
+  commentId: P:Nice3point.Revit.Toolkit.Context.UiControlledApplication
+  id: UiControlledApplication
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: UiControlledApplication
+  nameWithType: Context.UiControlledApplication
+  fullName: Nice3point.Revit.Toolkit.Context.UiControlledApplication
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static UIControlledApplication UiControlledApplication { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.UI.UIControlledApplication
+    content.vb: Public Shared ReadOnly Property UiControlledApplication As UIControlledApplication
+  overload: Nice3point.Revit.Toolkit.Context.UiControlledApplication*
+- uid: Nice3point.Revit.Toolkit.Context.Application
+  commentId: P:Nice3point.Revit.Toolkit.Context.Application
+  id: Application
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: Application
+  nameWithType: Context.Application
+  fullName: Nice3point.Revit.Toolkit.Context.Application
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static Application Application { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.ApplicationServices.Application
+    content.vb: Public Shared ReadOnly Property Application As Application
+  overload: Nice3point.Revit.Toolkit.Context.Application*
+- uid: Nice3point.Revit.Toolkit.Context.ActiveUiDocument
+  commentId: P:Nice3point.Revit.Toolkit.Context.ActiveUiDocument
+  id: ActiveUiDocument
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: ActiveUiDocument
+  nameWithType: Context.ActiveUiDocument
+  fullName: Nice3point.Revit.Toolkit.Context.ActiveUiDocument
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static UIDocument? ActiveUiDocument { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.UI.UIDocument
+    content.vb: Public Shared ReadOnly Property ActiveUiDocument As UIDocument
+  overload: Nice3point.Revit.Toolkit.Context.ActiveUiDocument*
+- uid: Nice3point.Revit.Toolkit.Context.UiDocument
+  commentId: P:Nice3point.Revit.Toolkit.Context.UiDocument
+  id: UiDocument
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: UiDocument
+  nameWithType: Context.UiDocument
+  fullName: Nice3point.Revit.Toolkit.Context.UiDocument
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: >-
+      [Obsolete("Document property renamed and will be removed in the next Major version, use Context.ActiveUiDocument instead")]
+
+      public static UIDocument? UiDocument { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.UI.UIDocument
+    content.vb: >-
+      <Obsolete("Document property renamed and will be removed in the next Major version, use Context.ActiveUiDocument instead")>
+
+      Public Shared ReadOnly Property UiDocument As UIDocument
+  overload: Nice3point.Revit.Toolkit.Context.UiDocument*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Document property renamed and will be removed in the next Major version, use Context.ActiveUiDocument instead
+- uid: Nice3point.Revit.Toolkit.Context.ActiveDocument
+  commentId: P:Nice3point.Revit.Toolkit.Context.ActiveDocument
+  id: ActiveDocument
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: ActiveDocument
+  nameWithType: Context.ActiveDocument
+  fullName: Nice3point.Revit.Toolkit.Context.ActiveDocument
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static Document? ActiveDocument { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.Document
+    content.vb: Public Shared ReadOnly Property ActiveDocument As Document
+  overload: Nice3point.Revit.Toolkit.Context.ActiveDocument*
+- uid: Nice3point.Revit.Toolkit.Context.Document
+  commentId: P:Nice3point.Revit.Toolkit.Context.Document
+  id: Document
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: Document
+  nameWithType: Context.Document
+  fullName: Nice3point.Revit.Toolkit.Context.Document
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: >-
+      [Obsolete("Document property renamed and will be removed in the next Major version, use Context.ActiveDocument instead")]
+
+      public static Document? Document { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.Document
+    content.vb: >-
+      <Obsolete("Document property renamed and will be removed in the next Major version, use Context.ActiveDocument instead")>
+
+      Public Shared ReadOnly Property Document As Document
+  overload: Nice3point.Revit.Toolkit.Context.Document*
+  attributes:
+  - type: System.ObsoleteAttribute
+    ctor: System.ObsoleteAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Document property renamed and will be removed in the next Major version, use Context.ActiveDocument instead
+- uid: Nice3point.Revit.Toolkit.Context.ActiveView
+  commentId: P:Nice3point.Revit.Toolkit.Context.ActiveView
+  id: ActiveView
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: ActiveView
+  nameWithType: Context.ActiveView
+  fullName: Nice3point.Revit.Toolkit.Context.ActiveView
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static View? ActiveView { get; set; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.View
+    content.vb: Public Shared Property ActiveView As View
+  overload: Nice3point.Revit.Toolkit.Context.ActiveView*
+- uid: Nice3point.Revit.Toolkit.Context.ActiveGraphicalView
+  commentId: P:Nice3point.Revit.Toolkit.Context.ActiveGraphicalView
+  id: ActiveGraphicalView
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: ActiveGraphicalView
+  nameWithType: Context.ActiveGraphicalView
+  fullName: Nice3point.Revit.Toolkit.Context.ActiveGraphicalView
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static View? ActiveGraphicalView { get; }
+    parameters: []
+    return:
+      type: Autodesk.Revit.DB.View
+    content.vb: Public Shared ReadOnly Property ActiveGraphicalView As View
+  overload: Nice3point.Revit.Toolkit.Context.ActiveGraphicalView*
+- uid: Nice3point.Revit.Toolkit.Context.IsRevitInApiMode
+  commentId: P:Nice3point.Revit.Toolkit.Context.IsRevitInApiMode
+  id: IsRevitInApiMode
+  parent: Nice3point.Revit.Toolkit.Context
+  langs:
+  - csharp
+  - vb
+  name: IsRevitInApiMode
+  nameWithType: Context.IsRevitInApiMode
+  fullName: Nice3point.Revit.Toolkit.Context.IsRevitInApiMode
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Toolkit
+  syntax:
+    content: public static bool IsRevitInApiMode { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared ReadOnly Property IsRevitInApiMode As Boolean
+  overload: Nice3point.Revit.Toolkit.Context.IsRevitInApiMode*
+references:
+- uid: Nice3point.Revit.Toolkit
+  commentId: N:Nice3point.Revit.Toolkit
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Toolkit
+  nameWithType: Nice3point.Revit.Toolkit
+  fullName: Nice3point.Revit.Toolkit
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Toolkit
+    name: Toolkit
+    isExternal: true
+    href: Nice3point.Revit.Toolkit.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Toolkit
+    name: Toolkit
+    isExternal: true
+    href: Nice3point.Revit.Toolkit.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Nice3point.Revit.Toolkit.Context.SuppressFailures*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.SuppressFailures
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_SuppressFailures_System_Boolean_
+  name: SuppressFailures
+  nameWithType: Context.SuppressFailures
+  fullName: Nice3point.Revit.Toolkit.Context.SuppressFailures
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Nice3point.Revit.Toolkit.Context.SuppressDialogs*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.SuppressDialogs
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_SuppressDialogs_System_Int32_
+  name: SuppressDialogs
+  nameWithType: Context.SuppressDialogs
+  fullName: Nice3point.Revit.Toolkit.Context.SuppressDialogs
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Action{Autodesk.Revit.UI.Events.DialogBoxShowingEventArgs}
+  commentId: T:System.Action{Autodesk.Revit.UI.Events.DialogBoxShowingEventArgs}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<DialogBoxShowingEventArgs>
+  nameWithType: Action<DialogBoxShowingEventArgs>
+  fullName: System.Action<Autodesk.Revit.UI.Events.DialogBoxShowingEventArgs>
+  nameWithType.vb: Action(Of DialogBoxShowingEventArgs)
+  fullName.vb: System.Action(Of Autodesk.Revit.UI.Events.DialogBoxShowingEventArgs)
+  name.vb: Action(Of DialogBoxShowingEventArgs)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Autodesk.Revit.UI.Events.DialogBoxShowingEventArgs
+    name: DialogBoxShowingEventArgs
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.UI.Events.DialogBoxShowingEventArgs
+    name: DialogBoxShowingEventArgs
+    isExternal: true
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Nice3point.Revit.Toolkit.Context.RestoreDialogs*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.RestoreDialogs
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_RestoreDialogs
+  name: RestoreDialogs
+  nameWithType: Context.RestoreDialogs
+  fullName: Nice3point.Revit.Toolkit.Context.RestoreDialogs
+- uid: Nice3point.Revit.Toolkit.Context.RestoreFailures*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.RestoreFailures
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_RestoreFailures
+  name: RestoreFailures
+  nameWithType: Context.RestoreFailures
+  fullName: Nice3point.Revit.Toolkit.Context.RestoreFailures
+- uid: Nice3point.Revit.Toolkit.Context.UiApplication*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.UiApplication
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_UiApplication
+  name: UiApplication
+  nameWithType: Context.UiApplication
+  fullName: Nice3point.Revit.Toolkit.Context.UiApplication
+- uid: Autodesk.Revit.UI.UIApplication
+  isExternal: true
+  name: UIApplication
+  nameWithType: UIApplication
+  fullName: Autodesk.Revit.UI.UIApplication
+- uid: Nice3point.Revit.Toolkit.Context.UiControlledApplication*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.UiControlledApplication
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_UiControlledApplication
+  name: UiControlledApplication
+  nameWithType: Context.UiControlledApplication
+  fullName: Nice3point.Revit.Toolkit.Context.UiControlledApplication
+- uid: Autodesk.Revit.UI.UIControlledApplication
+  isExternal: true
+  name: UIControlledApplication
+  nameWithType: UIControlledApplication
+  fullName: Autodesk.Revit.UI.UIControlledApplication
+- uid: Nice3point.Revit.Toolkit.Context.Application*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.Application
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_Application
+  name: Application
+  nameWithType: Context.Application
+  fullName: Nice3point.Revit.Toolkit.Context.Application
+- uid: Autodesk.Revit.ApplicationServices.Application
+  isExternal: true
+  name: Application
+  nameWithType: Application
+  fullName: Autodesk.Revit.ApplicationServices.Application
+- uid: Nice3point.Revit.Toolkit.Context.ActiveUiDocument*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.ActiveUiDocument
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_ActiveUiDocument
+  name: ActiveUiDocument
+  nameWithType: Context.ActiveUiDocument
+  fullName: Nice3point.Revit.Toolkit.Context.ActiveUiDocument
+- uid: Autodesk.Revit.UI.UIDocument
+  isExternal: true
+  name: UIDocument
+  nameWithType: UIDocument
+  fullName: Autodesk.Revit.UI.UIDocument
+- uid: Nice3point.Revit.Toolkit.Context.UiDocument*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.UiDocument
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_UiDocument
+  name: UiDocument
+  nameWithType: Context.UiDocument
+  fullName: Nice3point.Revit.Toolkit.Context.UiDocument
+- uid: Nice3point.Revit.Toolkit.Context.ActiveDocument*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.ActiveDocument
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_ActiveDocument
+  name: ActiveDocument
+  nameWithType: Context.ActiveDocument
+  fullName: Nice3point.Revit.Toolkit.Context.ActiveDocument
+- uid: Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: Nice3point.Revit.Toolkit.Context.Document*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.Document
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_Document
+  name: Document
+  nameWithType: Context.Document
+  fullName: Nice3point.Revit.Toolkit.Context.Document
+- uid: Nice3point.Revit.Toolkit.Context.ActiveView*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.ActiveView
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_ActiveView
+  name: ActiveView
+  nameWithType: Context.ActiveView
+  fullName: Nice3point.Revit.Toolkit.Context.ActiveView
+- uid: Autodesk.Revit.DB.View
+  isExternal: true
+  name: View
+  nameWithType: View
+  fullName: Autodesk.Revit.DB.View
+- uid: Nice3point.Revit.Toolkit.Context.ActiveGraphicalView*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.ActiveGraphicalView
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_ActiveGraphicalView
+  name: ActiveGraphicalView
+  nameWithType: Context.ActiveGraphicalView
+  fullName: Nice3point.Revit.Toolkit.Context.ActiveGraphicalView
+- uid: Nice3point.Revit.Toolkit.Context.IsRevitInApiMode*
+  commentId: Overload:Nice3point.Revit.Toolkit.Context.IsRevitInApiMode
+  isExternal: true
+  href: Nice3point.Revit.Toolkit.Context.html#Nice3point_Revit_Toolkit_Context_IsRevitInApiMode
+  name: IsRevitInApiMode
+  nameWithType: Context.IsRevitInApiMode
+  fullName: Nice3point.Revit.Toolkit.Context.IsRevitInApiMode

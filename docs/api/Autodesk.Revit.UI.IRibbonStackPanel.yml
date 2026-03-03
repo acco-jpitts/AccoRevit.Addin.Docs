@@ -1,0 +1,869 @@
+### YamlMime:ManagedReference
+items:
+- uid: Autodesk.Revit.UI.IRibbonStackPanel
+  commentId: T:Autodesk.Revit.UI.IRibbonStackPanel
+  id: IRibbonStackPanel
+  parent: Autodesk.Revit.UI
+  children:
+  - Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox
+  - Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox(System.String)
+  - Autodesk.Revit.UI.IRibbonStackPanel.AddLabel(System.String)
+  - Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton(System.String)
+  - Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton(System.String,System.String)
+  - Autodesk.Revit.UI.IRibbonStackPanel.AddPushButton``1(System.String)
+  - Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton(System.String)
+  - Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton(System.String,System.String)
+  - Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox
+  - Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IRibbonStackPanel
+  nameWithType: IRibbonStackPanel
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel
+  type: Interface
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Autodesk.Revit.UI
+  syntax:
+    content: public interface IRibbonStackPanel
+    content.vb: Public Interface IRibbonStackPanel
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddPushButton``1(System.String)
+  commentId: M:Autodesk.Revit.UI.IRibbonStackPanel.AddPushButton``1(System.String)
+  id: AddPushButton``1(System.String)
+  parent: Autodesk.Revit.UI.IRibbonStackPanel
+  langs:
+  - csharp
+  - vb
+  name: AddPushButton<TCommand>(string)
+  nameWithType: IRibbonStackPanel.AddPushButton<TCommand>(string)
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddPushButton<TCommand>(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Autodesk.Revit.UI
+  syntax:
+    content: 'PushButton AddPushButton<TCommand>(string buttonText) where TCommand : IExternalCommand, new()'
+    parameters:
+    - id: buttonText
+      type: System.String
+    typeParameters:
+    - id: TCommand
+    return:
+      type: Autodesk.Revit.UI.PushButton
+    content.vb: Function AddPushButton(Of TCommand As {IExternalCommand, New})(buttonText As String) As PushButton
+  overload: Autodesk.Revit.UI.IRibbonStackPanel.AddPushButton*
+  nameWithType.vb: IRibbonStackPanel.AddPushButton(Of TCommand)(String)
+  fullName.vb: Autodesk.Revit.UI.IRibbonStackPanel.AddPushButton(Of TCommand)(String)
+  name.vb: AddPushButton(Of TCommand)(String)
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton(System.String)
+  commentId: M:Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton(System.String)
+  id: AddPullDownButton(System.String)
+  parent: Autodesk.Revit.UI.IRibbonStackPanel
+  langs:
+  - csharp
+  - vb
+  name: AddPullDownButton(string)
+  nameWithType: IRibbonStackPanel.AddPullDownButton(string)
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Autodesk.Revit.UI
+  syntax:
+    content: PulldownButton AddPullDownButton(string buttonText)
+    parameters:
+    - id: buttonText
+      type: System.String
+    return:
+      type: Autodesk.Revit.UI.PulldownButton
+    content.vb: Function AddPullDownButton(buttonText As String) As PulldownButton
+  overload: Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton*
+  nameWithType.vb: IRibbonStackPanel.AddPullDownButton(String)
+  fullName.vb: Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton(String)
+  name.vb: AddPullDownButton(String)
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton(System.String,System.String)
+  commentId: M:Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton(System.String,System.String)
+  id: AddPullDownButton(System.String,System.String)
+  parent: Autodesk.Revit.UI.IRibbonStackPanel
+  langs:
+  - csharp
+  - vb
+  name: AddPullDownButton(string, string)
+  nameWithType: IRibbonStackPanel.AddPullDownButton(string, string)
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton(string, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Autodesk.Revit.UI
+  syntax:
+    content: PulldownButton AddPullDownButton(string buttonText, string internalName)
+    parameters:
+    - id: buttonText
+      type: System.String
+    - id: internalName
+      type: System.String
+    return:
+      type: Autodesk.Revit.UI.PulldownButton
+    content.vb: Function AddPullDownButton(buttonText As String, internalName As String) As PulldownButton
+  overload: Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton*
+  nameWithType.vb: IRibbonStackPanel.AddPullDownButton(String, String)
+  fullName.vb: Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton(String, String)
+  name.vb: AddPullDownButton(String, String)
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton(System.String)
+  commentId: M:Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton(System.String)
+  id: AddSplitButton(System.String)
+  parent: Autodesk.Revit.UI.IRibbonStackPanel
+  langs:
+  - csharp
+  - vb
+  name: AddSplitButton(string)
+  nameWithType: IRibbonStackPanel.AddSplitButton(string)
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Autodesk.Revit.UI
+  syntax:
+    content: SplitButton AddSplitButton(string buttonText)
+    parameters:
+    - id: buttonText
+      type: System.String
+    return:
+      type: Autodesk.Revit.UI.SplitButton
+    content.vb: Function AddSplitButton(buttonText As String) As SplitButton
+  overload: Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton*
+  nameWithType.vb: IRibbonStackPanel.AddSplitButton(String)
+  fullName.vb: Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton(String)
+  name.vb: AddSplitButton(String)
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton(System.String,System.String)
+  commentId: M:Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton(System.String,System.String)
+  id: AddSplitButton(System.String,System.String)
+  parent: Autodesk.Revit.UI.IRibbonStackPanel
+  langs:
+  - csharp
+  - vb
+  name: AddSplitButton(string, string)
+  nameWithType: IRibbonStackPanel.AddSplitButton(string, string)
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton(string, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Autodesk.Revit.UI
+  syntax:
+    content: SplitButton AddSplitButton(string buttonText, string internalName)
+    parameters:
+    - id: buttonText
+      type: System.String
+    - id: internalName
+      type: System.String
+    return:
+      type: Autodesk.Revit.UI.SplitButton
+    content.vb: Function AddSplitButton(buttonText As String, internalName As String) As SplitButton
+  overload: Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton*
+  nameWithType.vb: IRibbonStackPanel.AddSplitButton(String, String)
+  fullName.vb: Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton(String, String)
+  name.vb: AddSplitButton(String, String)
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox
+  commentId: M:Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox
+  id: AddComboBox
+  parent: Autodesk.Revit.UI.IRibbonStackPanel
+  langs:
+  - csharp
+  - vb
+  name: AddComboBox()
+  nameWithType: IRibbonStackPanel.AddComboBox()
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Autodesk.Revit.UI
+  syntax:
+    content: ComboBox AddComboBox()
+    return:
+      type: Autodesk.Revit.UI.ComboBox
+    content.vb: Function AddComboBox() As ComboBox
+  overload: Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox*
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox(System.String)
+  commentId: M:Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox(System.String)
+  id: AddComboBox(System.String)
+  parent: Autodesk.Revit.UI.IRibbonStackPanel
+  langs:
+  - csharp
+  - vb
+  name: AddComboBox(string)
+  nameWithType: IRibbonStackPanel.AddComboBox(string)
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Autodesk.Revit.UI
+  syntax:
+    content: ComboBox AddComboBox(string internalName)
+    parameters:
+    - id: internalName
+      type: System.String
+    return:
+      type: Autodesk.Revit.UI.ComboBox
+    content.vb: Function AddComboBox(internalName As String) As ComboBox
+  overload: Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox*
+  nameWithType.vb: IRibbonStackPanel.AddComboBox(String)
+  fullName.vb: Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox(String)
+  name.vb: AddComboBox(String)
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox
+  commentId: M:Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox
+  id: AddTextBox
+  parent: Autodesk.Revit.UI.IRibbonStackPanel
+  langs:
+  - csharp
+  - vb
+  name: AddTextBox()
+  nameWithType: IRibbonStackPanel.AddTextBox()
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Autodesk.Revit.UI
+  syntax:
+    content: TextBox AddTextBox()
+    return:
+      type: Autodesk.Revit.UI.TextBox
+    content.vb: Function AddTextBox() As TextBox
+  overload: Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox*
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox(System.String)
+  commentId: M:Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox(System.String)
+  id: AddTextBox(System.String)
+  parent: Autodesk.Revit.UI.IRibbonStackPanel
+  langs:
+  - csharp
+  - vb
+  name: AddTextBox(string)
+  nameWithType: IRibbonStackPanel.AddTextBox(string)
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Autodesk.Revit.UI
+  syntax:
+    content: TextBox AddTextBox(string internalName)
+    parameters:
+    - id: internalName
+      type: System.String
+    return:
+      type: Autodesk.Revit.UI.TextBox
+    content.vb: Function AddTextBox(internalName As String) As TextBox
+  overload: Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox*
+  nameWithType.vb: IRibbonStackPanel.AddTextBox(String)
+  fullName.vb: Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox(String)
+  name.vb: AddTextBox(String)
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddLabel(System.String)
+  commentId: M:Autodesk.Revit.UI.IRibbonStackPanel.AddLabel(System.String)
+  id: AddLabel(System.String)
+  parent: Autodesk.Revit.UI.IRibbonStackPanel
+  langs:
+  - csharp
+  - vb
+  name: AddLabel(string)
+  nameWithType: IRibbonStackPanel.AddLabel(string)
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddLabel(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Autodesk.Revit.UI
+  syntax:
+    content: void AddLabel(string labelText)
+    parameters:
+    - id: labelText
+      type: System.String
+    content.vb: Sub AddLabel(labelText As String)
+  overload: Autodesk.Revit.UI.IRibbonStackPanel.AddLabel*
+  nameWithType.vb: IRibbonStackPanel.AddLabel(String)
+  fullName.vb: Autodesk.Revit.UI.IRibbonStackPanel.AddLabel(String)
+  name.vb: AddLabel(String)
+references:
+- uid: Autodesk.Revit.UI
+  commentId: N:Autodesk.Revit.UI
+  isExternal: true
+  href: Autodesk.html
+  name: Autodesk.Revit.UI
+  nameWithType: Autodesk.Revit.UI
+  fullName: Autodesk.Revit.UI
+  spec.csharp:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+    href: Autodesk.html
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+    href: Autodesk.Revit.html
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+    href: Autodesk.Revit.UI.html
+  spec.vb:
+  - uid: Autodesk
+    name: Autodesk
+    isExternal: true
+    href: Autodesk.html
+  - name: .
+  - uid: Autodesk.Revit
+    name: Revit
+    isExternal: true
+    href: Autodesk.Revit.html
+  - name: .
+  - uid: Autodesk.Revit.UI
+    name: UI
+    isExternal: true
+    href: Autodesk.Revit.UI.html
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddPushButton*
+  commentId: Overload:Autodesk.Revit.UI.IRibbonStackPanel.AddPushButton
+  isExternal: true
+  href: Autodesk.Revit.UI.IRibbonStackPanel.html#Autodesk_Revit_UI_IRibbonStackPanel_AddPushButton__1_System_String_
+  name: AddPushButton
+  nameWithType: IRibbonStackPanel.AddPushButton
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddPushButton
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Autodesk.Revit.UI.PushButton
+  isExternal: true
+  name: PushButton
+  nameWithType: PushButton
+  fullName: Autodesk.Revit.UI.PushButton
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton*
+  commentId: Overload:Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton
+  isExternal: true
+  href: Autodesk.Revit.UI.IRibbonStackPanel.html#Autodesk_Revit_UI_IRibbonStackPanel_AddPullDownButton_System_String_
+  name: AddPullDownButton
+  nameWithType: IRibbonStackPanel.AddPullDownButton
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddPullDownButton
+- uid: Autodesk.Revit.UI.PulldownButton
+  isExternal: true
+  name: PulldownButton
+  nameWithType: PulldownButton
+  fullName: Autodesk.Revit.UI.PulldownButton
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton*
+  commentId: Overload:Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton
+  isExternal: true
+  href: Autodesk.Revit.UI.IRibbonStackPanel.html#Autodesk_Revit_UI_IRibbonStackPanel_AddSplitButton_System_String_
+  name: AddSplitButton
+  nameWithType: IRibbonStackPanel.AddSplitButton
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddSplitButton
+- uid: Autodesk.Revit.UI.SplitButton
+  isExternal: true
+  name: SplitButton
+  nameWithType: SplitButton
+  fullName: Autodesk.Revit.UI.SplitButton
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox*
+  commentId: Overload:Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox
+  isExternal: true
+  href: Autodesk.Revit.UI.IRibbonStackPanel.html#Autodesk_Revit_UI_IRibbonStackPanel_AddComboBox
+  name: AddComboBox
+  nameWithType: IRibbonStackPanel.AddComboBox
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddComboBox
+- uid: Autodesk.Revit.UI.ComboBox
+  isExternal: true
+  name: ComboBox
+  nameWithType: ComboBox
+  fullName: Autodesk.Revit.UI.ComboBox
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox*
+  commentId: Overload:Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox
+  isExternal: true
+  href: Autodesk.Revit.UI.IRibbonStackPanel.html#Autodesk_Revit_UI_IRibbonStackPanel_AddTextBox
+  name: AddTextBox
+  nameWithType: IRibbonStackPanel.AddTextBox
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddTextBox
+- uid: Autodesk.Revit.UI.TextBox
+  isExternal: true
+  name: TextBox
+  nameWithType: TextBox
+  fullName: Autodesk.Revit.UI.TextBox
+- uid: Autodesk.Revit.UI.IRibbonStackPanel.AddLabel*
+  commentId: Overload:Autodesk.Revit.UI.IRibbonStackPanel.AddLabel
+  isExternal: true
+  href: Autodesk.Revit.UI.IRibbonStackPanel.html#Autodesk_Revit_UI_IRibbonStackPanel_AddLabel_System_String_
+  name: AddLabel
+  nameWithType: IRibbonStackPanel.AddLabel
+  fullName: Autodesk.Revit.UI.IRibbonStackPanel.AddLabel

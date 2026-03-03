@@ -1,0 +1,1071 @@
+### YamlMime:ManagedReference
+items:
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils
+  commentId: T:AccoRevit.Addin.Utils.FabricationPartUtils
+  id: FabricationPartUtils
+  parent: AccoRevit.Addin.Utils
+  children:
+  - AccoRevit.Addin.Utils.FabricationPartUtils.CreateStraightPart(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.FabricationServiceButton,System.Int32,Autodesk.Revit.DB.ElementId,System.Double)
+  - AccoRevit.Addin.Utils.FabricationPartUtils.CutInTap(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,System.Double,System.Double,System.Double)
+  - AccoRevit.Addin.Utils.FabricationPartUtils.CutInTee(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.FabricationPart,Autodesk.Revit.DB.Connector,System.Double,System.Double,System.Double)
+  - AccoRevit.Addin.Utils.FabricationPartUtils.FindServiceButton(Autodesk.Revit.DB.FabricationService,System.Int32,System.String)
+  - AccoRevit.Addin.Utils.FabricationPartUtils.GetFabricationServiceByNameContains(Autodesk.Revit.DB.FabricationConfiguration,System.String)
+  - AccoRevit.Addin.Utils.FabricationPartUtils.GetFirstNonPrimaryOrSecondaryConnector(Autodesk.Revit.DB.ConnectorManager)
+  - AccoRevit.Addin.Utils.FabricationPartUtils.LocateButton(Autodesk.Revit.DB.FabricationService,System.Int32,System.String)
+  - AccoRevit.Addin.Utils.FabricationPartUtils.LocateButtons(Autodesk.Revit.DB.FabricationService,System.Int32,System.String)
+  - AccoRevit.Addin.Utils.FabricationPartUtils.MatchConnectorSize(Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector)
+  - AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignConnect(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,System.Double)
+  - AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignSlopeConnect(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,System.Double,System.Double,Autodesk.Revit.DB.Fabrication.FabricationPartJustification)
+  langs:
+  - csharp
+  - vb
+  name: FabricationPartUtils
+  nameWithType: FabricationPartUtils
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils
+  type: Class
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/FabricationPartUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Utilities for creating and manipulating Revit fabrication parts and their connectors.
+  remarks: >-
+    Includes helpers for creating straight parts, finding service buttons, matching connector sizes, and placing taps/tees
+
+    using Revit fabrication APIs.
+  example: []
+  syntax:
+    content: public static class FabricationPartUtils
+    content.vb: Public Module FabricationPartUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.CreateStraightPart(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.FabricationServiceButton,System.Int32,Autodesk.Revit.DB.ElementId,System.Double)
+  commentId: M:AccoRevit.Addin.Utils.FabricationPartUtils.CreateStraightPart(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.FabricationServiceButton,System.Int32,Autodesk.Revit.DB.ElementId,System.Double)
+  id: CreateStraightPart(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.FabricationServiceButton,System.Int32,Autodesk.Revit.DB.ElementId,System.Double)
+  parent: AccoRevit.Addin.Utils.FabricationPartUtils
+  langs:
+  - csharp
+  - vb
+  name: CreateStraightPart(Document, FabricationServiceButton, int, ElementId, double)
+  nameWithType: FabricationPartUtils.CreateStraightPart(Document, FabricationServiceButton, int, ElementId, double)
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.CreateStraightPart(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.FabricationServiceButton, int, Autodesk.Revit.DB.ElementId, double)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/FabricationPartUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Creates a straight fabrication part from a service button and sets its length.
+  remarks: >-
+    <p>
+
+    This method sets the "Length Option" parameter to <code>"Value"</code> and sets the "Length" parameter to <code class="paramref">length</code>.
+
+    Parameter names are string-based and depend on the fabrication content.
+
+    </p>
+
+    <p>
+
+    Calls <xref href="Autodesk.Revit.DB.Document.Regenerate" data-throw-if-not-resolved="false"></xref> after setting parameters to ensure the part updates.
+
+    </p>
+  example: []
+  syntax:
+    content: public static FabricationPart CreateStraightPart(Document doc, FabricationServiceButton button, int condition, ElementId levelId, double length)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The destination document.
+    - id: button
+      type: Autodesk.Revit.DB.FabricationServiceButton
+      description: The fabrication service button used to create the part.
+    - id: condition
+      type: System.Int32
+      description: The fabrication condition index.
+    - id: levelId
+      type: Autodesk.Revit.DB.ElementId
+      description: The level id used for placement.
+    - id: length
+      type: System.Double
+      description: The desired length (in Revit internal units).
+    return:
+      type: Autodesk.Revit.DB.FabricationPart
+      description: The created <xref href="Autodesk.Revit.DB.FabricationPart" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function CreateStraightPart(doc As Document, button As FabricationServiceButton, condition As Integer, levelId As ElementId, length As Double) As FabricationPart
+  overload: AccoRevit.Addin.Utils.FabricationPartUtils.CreateStraightPart*
+  nameWithType.vb: FabricationPartUtils.CreateStraightPart(Document, FabricationServiceButton, Integer, ElementId, Double)
+  fullName.vb: AccoRevit.Addin.Utils.FabricationPartUtils.CreateStraightPart(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.FabricationServiceButton, Integer, Autodesk.Revit.DB.ElementId, Double)
+  name.vb: CreateStraightPart(Document, FabricationServiceButton, Integer, ElementId, Double)
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.GetFirstNonPrimaryOrSecondaryConnector(Autodesk.Revit.DB.ConnectorManager)
+  commentId: M:AccoRevit.Addin.Utils.FabricationPartUtils.GetFirstNonPrimaryOrSecondaryConnector(Autodesk.Revit.DB.ConnectorManager)
+  id: GetFirstNonPrimaryOrSecondaryConnector(Autodesk.Revit.DB.ConnectorManager)
+  parent: AccoRevit.Addin.Utils.FabricationPartUtils
+  langs:
+  - csharp
+  - vb
+  name: GetFirstNonPrimaryOrSecondaryConnector(ConnectorManager)
+  nameWithType: FabricationPartUtils.GetFirstNonPrimaryOrSecondaryConnector(ConnectorManager)
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.GetFirstNonPrimaryOrSecondaryConnector(Autodesk.Revit.DB.ConnectorManager)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/FabricationPartUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Returns the first connector that is neither primary nor secondary from a connector manager.
+  remarks: Uses <xref href="Autodesk.Revit.DB.Connector.GetMEPConnectorInfo" data-throw-if-not-resolved="false"></xref> and checks <code>IsPrimary</code>/<code>IsSecondary</code>.
+  example: []
+  syntax:
+    content: public static Connector GetFirstNonPrimaryOrSecondaryConnector(ConnectorManager cm)
+    parameters:
+    - id: cm
+      type: Autodesk.Revit.DB.ConnectorManager
+      description: The connector manager.
+    return:
+      type: Autodesk.Revit.DB.Connector
+      description: The first non-primary/non-secondary connector, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.
+    content.vb: Public Shared Function GetFirstNonPrimaryOrSecondaryConnector(cm As ConnectorManager) As Connector
+  overload: AccoRevit.Addin.Utils.FabricationPartUtils.GetFirstNonPrimaryOrSecondaryConnector*
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignConnect(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,System.Double)
+  commentId: M:AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignConnect(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,System.Double)
+  id: SizeAlignConnect(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,System.Double)
+  parent: AccoRevit.Addin.Utils.FabricationPartUtils
+  langs:
+  - csharp
+  - vb
+  name: SizeAlignConnect(Document, Connector, Connector, double)
+  nameWithType: FabricationPartUtils.SizeAlignConnect(Document, Connector, Connector, double)
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignConnect(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Connector, Autodesk.Revit.DB.Connector, double)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/FabricationPartUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Matches connector size, aligns the part by connectors, then connects/couples the connectors.
+  remarks: Calls <xref href="Autodesk.Revit.DB.Document.Regenerate" data-throw-if-not-resolved="false"></xref> between each operation to ensure geometry/connector state is current.
+  example: []
+  syntax:
+    content: public static void SizeAlignConnect(Document doc, Connector connFrom, Connector connTo, double rotation = 0)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The document containing the elements.
+    - id: connFrom
+      type: Autodesk.Revit.DB.Connector
+      description: The connector to be modified/aligned from.
+    - id: connTo
+      type: Autodesk.Revit.DB.Connector
+      description: The target connector to align and connect to.
+    - id: rotation
+      type: System.Double
+      description: Optional rotation about the connection axis (radians).
+    content.vb: Public Shared Sub SizeAlignConnect(doc As Document, connFrom As Connector, connTo As Connector, rotation As Double = 0)
+  overload: AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignConnect*
+  nameWithType.vb: FabricationPartUtils.SizeAlignConnect(Document, Connector, Connector, Double)
+  fullName.vb: AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignConnect(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Connector, Autodesk.Revit.DB.Connector, Double)
+  name.vb: SizeAlignConnect(Document, Connector, Connector, Double)
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignSlopeConnect(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,System.Double,System.Double,Autodesk.Revit.DB.Fabrication.FabricationPartJustification)
+  commentId: M:AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignSlopeConnect(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,System.Double,System.Double,Autodesk.Revit.DB.Fabrication.FabricationPartJustification)
+  id: SizeAlignSlopeConnect(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,System.Double,System.Double,Autodesk.Revit.DB.Fabrication.FabricationPartJustification)
+  parent: AccoRevit.Addin.Utils.FabricationPartUtils
+  langs:
+  - csharp
+  - vb
+  name: SizeAlignSlopeConnect(Document, Connector, Connector, double, double, FabricationPartJustification)
+  nameWithType: FabricationPartUtils.SizeAlignSlopeConnect(Document, Connector, Connector, double, double, FabricationPartJustification)
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignSlopeConnect(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Connector, Autodesk.Revit.DB.Connector, double, double, Autodesk.Revit.DB.Fabrication.FabricationPartJustification)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/FabricationPartUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Matches connector size, aligns the part by connectors with slope/justification, then connects/couples the connectors.
+  remarks: Calls <xref href="Autodesk.Revit.DB.Document.Regenerate" data-throw-if-not-resolved="false"></xref> between each operation to ensure geometry/connector state is current.
+  example: []
+  syntax:
+    content: public static void SizeAlignSlopeConnect(Document doc, Connector connFrom, Connector connTo, double rotation, double slope, FabricationPartJustification justification)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The document containing the elements.
+    - id: connFrom
+      type: Autodesk.Revit.DB.Connector
+      description: The connector to be modified/aligned from.
+    - id: connTo
+      type: Autodesk.Revit.DB.Connector
+      description: The target connector to align and connect to.
+    - id: rotation
+      type: System.Double
+      description: Rotation about the connection axis (radians).
+    - id: slope
+      type: System.Double
+      description: Slope value passed to Revit alignment API (units per Revit API expectation).
+    - id: justification
+      type: Autodesk.Revit.DB.Fabrication.FabricationPartJustification
+      description: Justification used for the sloped alignment.
+    content.vb: Public Shared Sub SizeAlignSlopeConnect(doc As Document, connFrom As Connector, connTo As Connector, rotation As Double, slope As Double, justification As FabricationPartJustification)
+  overload: AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignSlopeConnect*
+  nameWithType.vb: FabricationPartUtils.SizeAlignSlopeConnect(Document, Connector, Connector, Double, Double, FabricationPartJustification)
+  fullName.vb: AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignSlopeConnect(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Connector, Autodesk.Revit.DB.Connector, Double, Double, Autodesk.Revit.DB.Fabrication.FabricationPartJustification)
+  name.vb: SizeAlignSlopeConnect(Document, Connector, Connector, Double, Double, FabricationPartJustification)
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.MatchConnectorSize(Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector)
+  commentId: M:AccoRevit.Addin.Utils.FabricationPartUtils.MatchConnectorSize(Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector)
+  id: MatchConnectorSize(Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector)
+  parent: AccoRevit.Addin.Utils.FabricationPartUtils
+  langs:
+  - csharp
+  - vb
+  name: MatchConnectorSize(Connector, Connector)
+  nameWithType: FabricationPartUtils.MatchConnectorSize(Connector, Connector)
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.MatchConnectorSize(Autodesk.Revit.DB.Connector, Autodesk.Revit.DB.Connector)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/FabricationPartUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Sets the size of <code class="paramref">connFrom</code> to match <code class="paramref">connTo</code> based on connector profile shape.
+  remarks: >-
+    For rectangular/oval connectors, copies <xref href="Autodesk.Revit.DB.Connector.Width" data-throw-if-not-resolved="false"></xref> and <xref href="Autodesk.Revit.DB.Connector.Height" data-throw-if-not-resolved="false"></xref>.
+
+    For round/invalid/other shapes, copies <xref href="Autodesk.Revit.DB.Connector.Radius" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static void MatchConnectorSize(Connector connFrom, Connector connTo)
+    parameters:
+    - id: connFrom
+      type: Autodesk.Revit.DB.Connector
+      description: The connector whose size will be updated.
+    - id: connTo
+      type: Autodesk.Revit.DB.Connector
+      description: The connector providing the target size.
+    content.vb: Public Shared Sub MatchConnectorSize(connFrom As Connector, connTo As Connector)
+  overload: AccoRevit.Addin.Utils.FabricationPartUtils.MatchConnectorSize*
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.FindServiceButton(Autodesk.Revit.DB.FabricationService,System.Int32,System.String)
+  commentId: M:AccoRevit.Addin.Utils.FabricationPartUtils.FindServiceButton(Autodesk.Revit.DB.FabricationService,System.Int32,System.String)
+  id: FindServiceButton(Autodesk.Revit.DB.FabricationService,System.Int32,System.String)
+  parent: AccoRevit.Addin.Utils.FabricationPartUtils
+  langs:
+  - csharp
+  - vb
+  name: FindServiceButton(FabricationService, int, string)
+  nameWithType: FabricationPartUtils.FindServiceButton(FabricationService, int, string)
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.FindServiceButton(Autodesk.Revit.DB.FabricationService, int, string)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/FabricationPartUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Finds a fabrication service button by exact name match within a palette/group index.
+  remarks: >-
+    Uses <xref href="Autodesk.Revit.DB.FabricationService.GetButtonCount(System.Int32)" data-throw-if-not-resolved="false"></xref> and <xref href="Autodesk.Revit.DB.FabricationService.GetButton(System.Int32%2cSystem.Int32)" data-throw-if-not-resolved="false"></xref>.
+
+    Validates <code class="paramref">paletteIndex</code> against <code>PaletteCount</code> (2022+) or <code>GroupCount</code> (older).
+  example: []
+  syntax:
+    content: public static FabricationServiceButton FindServiceButton(FabricationService service, int paletteIndex, string buttonName)
+    parameters:
+    - id: service
+      type: Autodesk.Revit.DB.FabricationService
+      description: The fabrication service.
+    - id: paletteIndex
+      type: System.Int32
+      description: Palette (Revit 2022+) or group (older) index.
+    - id: buttonName
+      type: System.String
+      description: Button name to match (case-insensitive).
+    return:
+      type: Autodesk.Revit.DB.FabricationServiceButton
+      description: The matching <xref href="Autodesk.Revit.DB.FabricationServiceButton" data-throw-if-not-resolved="false"></xref>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if not found.
+    content.vb: Public Shared Function FindServiceButton(service As FabricationService, paletteIndex As Integer, buttonName As String) As FabricationServiceButton
+  overload: AccoRevit.Addin.Utils.FabricationPartUtils.FindServiceButton*
+  nameWithType.vb: FabricationPartUtils.FindServiceButton(FabricationService, Integer, String)
+  fullName.vb: AccoRevit.Addin.Utils.FabricationPartUtils.FindServiceButton(Autodesk.Revit.DB.FabricationService, Integer, String)
+  name.vb: FindServiceButton(FabricationService, Integer, String)
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.CutInTap(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,System.Double,System.Double,System.Double)
+  commentId: M:AccoRevit.Addin.Utils.FabricationPartUtils.CutInTap(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,System.Double,System.Double,System.Double)
+  id: CutInTap(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Connector,Autodesk.Revit.DB.Connector,System.Double,System.Double,System.Double)
+  parent: AccoRevit.Addin.Utils.FabricationPartUtils
+  langs:
+  - csharp
+  - vb
+  name: CutInTap(Document, Connector, Connector, double, double, double)
+  nameWithType: FabricationPartUtils.CutInTap(Document, Connector, Connector, double, double, double)
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.CutInTap(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Connector, Autodesk.Revit.DB.Connector, double, double, double)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/FabricationPartUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Places a fabrication branch connector as a tap onto a run connector at the specified offset/rotation/angle.
+  remarks: Calls <xref href="Autodesk.Revit.DB.Document.Regenerate" data-throw-if-not-resolved="false"></xref> after placement.
+  example: []
+  syntax:
+    content: public static void CutInTap(Document doc, Connector branchConnector, Connector runConnector, double offset, double rotation = 0, double angle = 0)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The document containing the elements.
+    - id: branchConnector
+      type: Autodesk.Revit.DB.Connector
+      description: The connector representing the branch (tap) connection.
+    - id: runConnector
+      type: Autodesk.Revit.DB.Connector
+      description: The connector representing the run (host) connection.
+    - id: offset
+      type: System.Double
+      description: Offset along the run per Revit API expectation (internal units).
+    - id: rotation
+      type: System.Double
+      description: Optional rotation about the run connection axis (radians).
+    - id: angle
+      type: System.Double
+      description: Optional angle value passed to the placement API (radians).
+    content.vb: Public Shared Sub CutInTap(doc As Document, branchConnector As Connector, runConnector As Connector, offset As Double, rotation As Double = 0, angle As Double = 0)
+  overload: AccoRevit.Addin.Utils.FabricationPartUtils.CutInTap*
+  nameWithType.vb: FabricationPartUtils.CutInTap(Document, Connector, Connector, Double, Double, Double)
+  fullName.vb: AccoRevit.Addin.Utils.FabricationPartUtils.CutInTap(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.Connector, Autodesk.Revit.DB.Connector, Double, Double, Double)
+  name.vb: CutInTap(Document, Connector, Connector, Double, Double, Double)
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.CutInTee(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.FabricationPart,Autodesk.Revit.DB.Connector,System.Double,System.Double,System.Double)
+  commentId: M:AccoRevit.Addin.Utils.FabricationPartUtils.CutInTee(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.FabricationPart,Autodesk.Revit.DB.Connector,System.Double,System.Double,System.Double)
+  id: CutInTee(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.FabricationPart,Autodesk.Revit.DB.Connector,System.Double,System.Double,System.Double)
+  parent: AccoRevit.Addin.Utils.FabricationPartUtils
+  langs:
+  - csharp
+  - vb
+  name: CutInTee(Document, FabricationPart, Connector, double, double, double)
+  nameWithType: FabricationPartUtils.CutInTee(Document, FabricationPart, Connector, double, double, double)
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.CutInTee(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.FabricationPart, Autodesk.Revit.DB.Connector, double, double, double)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/FabricationPartUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Places an existing tee fabrication part as a tap onto a run connector by using the tee's branch connector.
+  remarks: >-
+    The branch connector is selected as the first connector that is neither primary nor secondary.
+
+    Calls <xref href="Autodesk.Revit.DB.Document.Regenerate" data-throw-if-not-resolved="false"></xref> after placement.
+  example: []
+  syntax:
+    content: public static void CutInTee(Document doc, FabricationPart tee, Connector runConnector, double offset, double rotation = 0, double angle = 0)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+      description: The document containing the elements.
+    - id: tee
+      type: Autodesk.Revit.DB.FabricationPart
+      description: The tee fabrication part to be placed.
+    - id: runConnector
+      type: Autodesk.Revit.DB.Connector
+      description: The connector representing the run (host) connection.
+    - id: offset
+      type: System.Double
+      description: Offset along the run per Revit API expectation (internal units).
+    - id: rotation
+      type: System.Double
+      description: Optional rotation about the run connection axis (radians).
+    - id: angle
+      type: System.Double
+      description: Optional angle value passed to the placement API (radians).
+    content.vb: Public Shared Sub CutInTee(doc As Document, tee As FabricationPart, runConnector As Connector, offset As Double, rotation As Double = 0, angle As Double = 0)
+  overload: AccoRevit.Addin.Utils.FabricationPartUtils.CutInTee*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when no suitable branch connector can be found on the tee.
+  nameWithType.vb: FabricationPartUtils.CutInTee(Document, FabricationPart, Connector, Double, Double, Double)
+  fullName.vb: AccoRevit.Addin.Utils.FabricationPartUtils.CutInTee(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.FabricationPart, Autodesk.Revit.DB.Connector, Double, Double, Double)
+  name.vb: CutInTee(Document, FabricationPart, Connector, Double, Double, Double)
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.GetFabricationServiceByNameContains(Autodesk.Revit.DB.FabricationConfiguration,System.String)
+  commentId: M:AccoRevit.Addin.Utils.FabricationPartUtils.GetFabricationServiceByNameContains(Autodesk.Revit.DB.FabricationConfiguration,System.String)
+  id: GetFabricationServiceByNameContains(Autodesk.Revit.DB.FabricationConfiguration,System.String)
+  isExtensionMethod: true
+  parent: AccoRevit.Addin.Utils.FabricationPartUtils
+  langs:
+  - csharp
+  - vb
+  name: GetFabricationServiceByNameContains(FabricationConfiguration, string)
+  nameWithType: FabricationPartUtils.GetFabricationServiceByNameContains(FabricationConfiguration, string)
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.GetFabricationServiceByNameContains(Autodesk.Revit.DB.FabricationConfiguration, string)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/FabricationPartUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Gets the first loaded fabrication service whose name contains the specified substring (case-insensitive).
+  example: []
+  syntax:
+    content: public static FabricationService GetFabricationServiceByNameContains(this FabricationConfiguration config, string nameContains)
+    parameters:
+    - id: config
+      type: Autodesk.Revit.DB.FabricationConfiguration
+      description: The fabrication configuration.
+    - id: nameContains
+      type: System.String
+      description: Substring to search for within service names.
+    return:
+      type: Autodesk.Revit.DB.FabricationService
+      description: The first matching <xref href="Autodesk.Revit.DB.FabricationService" data-throw-if-not-resolved="false"></xref>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if not found.
+    content.vb: Public Shared Function GetFabricationServiceByNameContains(config As FabricationConfiguration, nameContains As String) As FabricationService
+  overload: AccoRevit.Addin.Utils.FabricationPartUtils.GetFabricationServiceByNameContains*
+  nameWithType.vb: FabricationPartUtils.GetFabricationServiceByNameContains(FabricationConfiguration, String)
+  fullName.vb: AccoRevit.Addin.Utils.FabricationPartUtils.GetFabricationServiceByNameContains(Autodesk.Revit.DB.FabricationConfiguration, String)
+  name.vb: GetFabricationServiceByNameContains(FabricationConfiguration, String)
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.LocateButton(Autodesk.Revit.DB.FabricationService,System.Int32,System.String)
+  commentId: M:AccoRevit.Addin.Utils.FabricationPartUtils.LocateButton(Autodesk.Revit.DB.FabricationService,System.Int32,System.String)
+  id: LocateButton(Autodesk.Revit.DB.FabricationService,System.Int32,System.String)
+  isExtensionMethod: true
+  parent: AccoRevit.Addin.Utils.FabricationPartUtils
+  langs:
+  - csharp
+  - vb
+  name: LocateButton(FabricationService, int, string)
+  nameWithType: FabricationPartUtils.LocateButton(FabricationService, int, string)
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.LocateButton(Autodesk.Revit.DB.FabricationService, int, string)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/FabricationPartUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Locates the first fabrication service button in the specified palette/group whose name contains the given substring.
+  remarks: >-
+    Performs a contains match rather than an exact match. Validates <code class="paramref">palette</code> against
+
+    <code>PaletteCount</code> (2022+) or <code>GroupCount</code> (older).
+  example: []
+  syntax:
+    content: public static FabricationServiceButton LocateButton(this FabricationService service, int palette, string name)
+    parameters:
+    - id: service
+      type: Autodesk.Revit.DB.FabricationService
+      description: The fabrication service.
+    - id: palette
+      type: System.Int32
+      description: Palette (Revit 2022+) or group (older) index.
+    - id: name
+      type: System.String
+      description: Substring to match against button names (case-insensitive).
+    return:
+      type: Autodesk.Revit.DB.FabricationServiceButton
+      description: The first matching <xref href="Autodesk.Revit.DB.FabricationServiceButton" data-throw-if-not-resolved="false"></xref>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if not found.
+    content.vb: Public Shared Function LocateButton(service As FabricationService, palette As Integer, name As String) As FabricationServiceButton
+  overload: AccoRevit.Addin.Utils.FabricationPartUtils.LocateButton*
+  nameWithType.vb: FabricationPartUtils.LocateButton(FabricationService, Integer, String)
+  fullName.vb: AccoRevit.Addin.Utils.FabricationPartUtils.LocateButton(Autodesk.Revit.DB.FabricationService, Integer, String)
+  name.vb: LocateButton(FabricationService, Integer, String)
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.LocateButtons(Autodesk.Revit.DB.FabricationService,System.Int32,System.String)
+  commentId: M:AccoRevit.Addin.Utils.FabricationPartUtils.LocateButtons(Autodesk.Revit.DB.FabricationService,System.Int32,System.String)
+  id: LocateButtons(Autodesk.Revit.DB.FabricationService,System.Int32,System.String)
+  isExtensionMethod: true
+  parent: AccoRevit.Addin.Utils.FabricationPartUtils
+  langs:
+  - csharp
+  - vb
+  name: LocateButtons(FabricationService, int, string)
+  nameWithType: FabricationPartUtils.LocateButtons(FabricationService, int, string)
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.LocateButtons(Autodesk.Revit.DB.FabricationService, int, string)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/FabricationPartUtils.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Locates all fabrication service buttons in the specified palette/group whose names contain the given substring.
+  remarks: Validates <code class="paramref">palette</code> against <code>PaletteCount</code> (2022+) or <code>GroupCount</code> (older).
+  example: []
+  syntax:
+    content: public static List<FabricationServiceButton> LocateButtons(this FabricationService service, int palette, string name)
+    parameters:
+    - id: service
+      type: Autodesk.Revit.DB.FabricationService
+      description: The fabrication service.
+    - id: palette
+      type: System.Int32
+      description: Palette (Revit 2022+) or group (older) index.
+    - id: name
+      type: System.String
+      description: Substring to match against button names (case-insensitive).
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.FabricationServiceButton}
+      description: A list of matching buttons. Returns an empty list if inputs are invalid or no matches are found.
+    content.vb: Public Shared Function LocateButtons(service As FabricationService, palette As Integer, name As String) As List(Of FabricationServiceButton)
+  overload: AccoRevit.Addin.Utils.FabricationPartUtils.LocateButtons*
+  nameWithType.vb: FabricationPartUtils.LocateButtons(FabricationService, Integer, String)
+  fullName.vb: AccoRevit.Addin.Utils.FabricationPartUtils.LocateButtons(Autodesk.Revit.DB.FabricationService, Integer, String)
+  name.vb: LocateButtons(FabricationService, Integer, String)
+references:
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Autodesk.Revit.DB.FabricationPart
+  isExternal: true
+  name: FabricationPart
+  nameWithType: FabricationPart
+  fullName: Autodesk.Revit.DB.FabricationPart
+- uid: Autodesk.Revit.DB.Document.Regenerate
+  commentId: M:Autodesk.Revit.DB.Document.Regenerate
+  isExternal: true
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.CreateStraightPart*
+  commentId: Overload:AccoRevit.Addin.Utils.FabricationPartUtils.CreateStraightPart
+  isExternal: true
+  href: AccoRevit.Addin.Utils.FabricationPartUtils.html#AccoRevit_Addin_Utils_FabricationPartUtils_CreateStraightPart_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_FabricationServiceButton_System_Int32_Autodesk_Revit_DB_ElementId_System_Double_
+  name: CreateStraightPart
+  nameWithType: FabricationPartUtils.CreateStraightPart
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.CreateStraightPart
+- uid: Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: Autodesk.Revit.DB.FabricationServiceButton
+  isExternal: true
+  name: FabricationServiceButton
+  nameWithType: FabricationServiceButton
+  fullName: Autodesk.Revit.DB.FabricationServiceButton
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Autodesk.Revit.DB.ElementId
+  isExternal: true
+  name: ElementId
+  nameWithType: ElementId
+  fullName: Autodesk.Revit.DB.ElementId
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Autodesk.Revit.DB.Connector.GetMEPConnectorInfo
+  commentId: M:Autodesk.Revit.DB.Connector.GetMEPConnectorInfo
+  isExternal: true
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.GetFirstNonPrimaryOrSecondaryConnector*
+  commentId: Overload:AccoRevit.Addin.Utils.FabricationPartUtils.GetFirstNonPrimaryOrSecondaryConnector
+  isExternal: true
+  href: AccoRevit.Addin.Utils.FabricationPartUtils.html#AccoRevit_Addin_Utils_FabricationPartUtils_GetFirstNonPrimaryOrSecondaryConnector_Autodesk_Revit_DB_ConnectorManager_
+  name: GetFirstNonPrimaryOrSecondaryConnector
+  nameWithType: FabricationPartUtils.GetFirstNonPrimaryOrSecondaryConnector
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.GetFirstNonPrimaryOrSecondaryConnector
+- uid: Autodesk.Revit.DB.ConnectorManager
+  commentId: '!:Autodesk.Revit.DB.ConnectorManager'
+  isExternal: true
+  name: ConnectorManager
+  nameWithType: ConnectorManager
+  fullName: Autodesk.Revit.DB.ConnectorManager
+- uid: Autodesk.Revit.DB.Connector
+  isExternal: true
+  name: Connector
+  nameWithType: Connector
+  fullName: Autodesk.Revit.DB.Connector
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignConnect*
+  commentId: Overload:AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignConnect
+  isExternal: true
+  href: AccoRevit.Addin.Utils.FabricationPartUtils.html#AccoRevit_Addin_Utils_FabricationPartUtils_SizeAlignConnect_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Connector_Autodesk_Revit_DB_Connector_System_Double_
+  name: SizeAlignConnect
+  nameWithType: FabricationPartUtils.SizeAlignConnect
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignConnect
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignSlopeConnect*
+  commentId: Overload:AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignSlopeConnect
+  isExternal: true
+  href: AccoRevit.Addin.Utils.FabricationPartUtils.html#AccoRevit_Addin_Utils_FabricationPartUtils_SizeAlignSlopeConnect_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Connector_Autodesk_Revit_DB_Connector_System_Double_System_Double_Autodesk_Revit_DB_Fabrication_FabricationPartJustification_
+  name: SizeAlignSlopeConnect
+  nameWithType: FabricationPartUtils.SizeAlignSlopeConnect
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.SizeAlignSlopeConnect
+- uid: Autodesk.Revit.DB.Fabrication.FabricationPartJustification
+  commentId: '!:Autodesk.Revit.DB.Fabrication.FabricationPartJustification'
+  isExternal: true
+  name: FabricationPartJustification
+  nameWithType: FabricationPartJustification
+  fullName: Autodesk.Revit.DB.Fabrication.FabricationPartJustification
+- uid: Autodesk.Revit.DB.Connector.Width
+  commentId: P:Autodesk.Revit.DB.Connector.Width
+  isExternal: true
+- uid: Autodesk.Revit.DB.Connector.Height
+  commentId: P:Autodesk.Revit.DB.Connector.Height
+  isExternal: true
+- uid: Autodesk.Revit.DB.Connector.Radius
+  commentId: P:Autodesk.Revit.DB.Connector.Radius
+  isExternal: true
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.MatchConnectorSize*
+  commentId: Overload:AccoRevit.Addin.Utils.FabricationPartUtils.MatchConnectorSize
+  isExternal: true
+  href: AccoRevit.Addin.Utils.FabricationPartUtils.html#AccoRevit_Addin_Utils_FabricationPartUtils_MatchConnectorSize_Autodesk_Revit_DB_Connector_Autodesk_Revit_DB_Connector_
+  name: MatchConnectorSize
+  nameWithType: FabricationPartUtils.MatchConnectorSize
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.MatchConnectorSize
+- uid: Autodesk.Revit.DB.FabricationService.GetButtonCount(System.Int32)
+  commentId: M:Autodesk.Revit.DB.FabricationService.GetButtonCount(System.Int32)
+  isExternal: true
+- uid: Autodesk.Revit.DB.FabricationService.GetButton(System.Int32,System.Int32)
+  commentId: M:Autodesk.Revit.DB.FabricationService.GetButton(System.Int32,System.Int32)
+  isExternal: true
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.FindServiceButton*
+  commentId: Overload:AccoRevit.Addin.Utils.FabricationPartUtils.FindServiceButton
+  isExternal: true
+  href: AccoRevit.Addin.Utils.FabricationPartUtils.html#AccoRevit_Addin_Utils_FabricationPartUtils_FindServiceButton_Autodesk_Revit_DB_FabricationService_System_Int32_System_String_
+  name: FindServiceButton
+  nameWithType: FabricationPartUtils.FindServiceButton
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.FindServiceButton
+- uid: Autodesk.Revit.DB.FabricationService
+  isExternal: true
+  name: FabricationService
+  nameWithType: FabricationService
+  fullName: Autodesk.Revit.DB.FabricationService
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.CutInTap*
+  commentId: Overload:AccoRevit.Addin.Utils.FabricationPartUtils.CutInTap
+  isExternal: true
+  href: AccoRevit.Addin.Utils.FabricationPartUtils.html#AccoRevit_Addin_Utils_FabricationPartUtils_CutInTap_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Connector_Autodesk_Revit_DB_Connector_System_Double_System_Double_System_Double_
+  name: CutInTap
+  nameWithType: FabricationPartUtils.CutInTap
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.CutInTap
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.CutInTee*
+  commentId: Overload:AccoRevit.Addin.Utils.FabricationPartUtils.CutInTee
+  isExternal: true
+  href: AccoRevit.Addin.Utils.FabricationPartUtils.html#AccoRevit_Addin_Utils_FabricationPartUtils_CutInTee_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_FabricationPart_Autodesk_Revit_DB_Connector_System_Double_System_Double_System_Double_
+  name: CutInTee
+  nameWithType: FabricationPartUtils.CutInTee
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.CutInTee
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.GetFabricationServiceByNameContains*
+  commentId: Overload:AccoRevit.Addin.Utils.FabricationPartUtils.GetFabricationServiceByNameContains
+  isExternal: true
+  href: AccoRevit.Addin.Utils.FabricationPartUtils.html#AccoRevit_Addin_Utils_FabricationPartUtils_GetFabricationServiceByNameContains_Autodesk_Revit_DB_FabricationConfiguration_System_String_
+  name: GetFabricationServiceByNameContains
+  nameWithType: FabricationPartUtils.GetFabricationServiceByNameContains
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.GetFabricationServiceByNameContains
+- uid: Autodesk.Revit.DB.FabricationConfiguration
+  commentId: T:Autodesk.Revit.DB.FabricationConfiguration
+  isExternal: true
+  name: FabricationConfiguration
+  nameWithType: FabricationConfiguration
+  fullName: Autodesk.Revit.DB.FabricationConfiguration
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.LocateButton*
+  commentId: Overload:AccoRevit.Addin.Utils.FabricationPartUtils.LocateButton
+  isExternal: true
+  href: AccoRevit.Addin.Utils.FabricationPartUtils.html#AccoRevit_Addin_Utils_FabricationPartUtils_LocateButton_Autodesk_Revit_DB_FabricationService_System_Int32_System_String_
+  name: LocateButton
+  nameWithType: FabricationPartUtils.LocateButton
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.LocateButton
+- uid: AccoRevit.Addin.Utils.FabricationPartUtils.LocateButtons*
+  commentId: Overload:AccoRevit.Addin.Utils.FabricationPartUtils.LocateButtons
+  isExternal: true
+  href: AccoRevit.Addin.Utils.FabricationPartUtils.html#AccoRevit_Addin_Utils_FabricationPartUtils_LocateButtons_Autodesk_Revit_DB_FabricationService_System_Int32_System_String_
+  name: LocateButtons
+  nameWithType: FabricationPartUtils.LocateButtons
+  fullName: AccoRevit.Addin.Utils.FabricationPartUtils.LocateButtons
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.FabricationServiceButton}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.FabricationServiceButton}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<FabricationServiceButton>
+  nameWithType: List<FabricationServiceButton>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.FabricationServiceButton>
+  nameWithType.vb: List(Of FabricationServiceButton)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.FabricationServiceButton)
+  name.vb: List(Of FabricationServiceButton)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.FabricationServiceButton
+    name: FabricationServiceButton
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.FabricationServiceButton
+    name: FabricationServiceButton
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

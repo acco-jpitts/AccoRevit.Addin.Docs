@@ -1,0 +1,1818 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  commentId: T:Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  id: INamespaceOrTypeSymbol
+  parent: Microsoft.CodeAnalysis
+  children:
+  - Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers
+  - Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers(System.String)
+  - Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers
+  - Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(System.String)
+  - Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(System.String,System.Int32)
+  - Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsNamespace
+  - Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsType
+  langs:
+  - csharp
+  - vb
+  name: INamespaceOrTypeSymbol
+  nameWithType: INamespaceOrTypeSymbol
+  fullName: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  type: Interface
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: 'public interface INamespaceOrTypeSymbol : ISymbol, IEquatable<ISymbol?>'
+    content.vb: Public Interface INamespaceOrTypeSymbol Inherits ISymbol, IEquatable(Of ISymbol)
+  inheritedMembers:
+  - Microsoft.CodeAnalysis.ISymbol.GetAttributes
+  - Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
+  - Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{{TResult}})
+  - Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{{TArgument},{TResult}},{TArgument})
+  - Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
+  - Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo,System.Boolean,System.Threading.CancellationToken)
+  - Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  - Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  - Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  - Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  - Microsoft.CodeAnalysis.ISymbol.Equals(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SymbolEqualityComparer)
+  - Microsoft.CodeAnalysis.ISymbol.Kind
+  - Microsoft.CodeAnalysis.ISymbol.Language
+  - Microsoft.CodeAnalysis.ISymbol.Name
+  - Microsoft.CodeAnalysis.ISymbol.MetadataName
+  - Microsoft.CodeAnalysis.ISymbol.MetadataToken
+  - Microsoft.CodeAnalysis.ISymbol.ContainingSymbol
+  - Microsoft.CodeAnalysis.ISymbol.ContainingAssembly
+  - Microsoft.CodeAnalysis.ISymbol.ContainingModule
+  - Microsoft.CodeAnalysis.ISymbol.ContainingType
+  - Microsoft.CodeAnalysis.ISymbol.ContainingNamespace
+  - Microsoft.CodeAnalysis.ISymbol.IsDefinition
+  - Microsoft.CodeAnalysis.ISymbol.IsStatic
+  - Microsoft.CodeAnalysis.ISymbol.IsVirtual
+  - Microsoft.CodeAnalysis.ISymbol.IsOverride
+  - Microsoft.CodeAnalysis.ISymbol.IsAbstract
+  - Microsoft.CodeAnalysis.ISymbol.IsSealed
+  - Microsoft.CodeAnalysis.ISymbol.IsExtern
+  - Microsoft.CodeAnalysis.ISymbol.IsImplicitlyDeclared
+  - Microsoft.CodeAnalysis.ISymbol.CanBeReferencedByName
+  - Microsoft.CodeAnalysis.ISymbol.Locations
+  - Microsoft.CodeAnalysis.ISymbol.DeclaringSyntaxReferences
+  - Microsoft.CodeAnalysis.ISymbol.DeclaredAccessibility
+  - Microsoft.CodeAnalysis.ISymbol.OriginalDefinition
+  - Microsoft.CodeAnalysis.ISymbol.HasUnsupportedMetadata
+  - System.IEquatable{Microsoft.CodeAnalysis.ISymbol}.Equals(Microsoft.CodeAnalysis.ISymbol)
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers
+  commentId: M:Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers
+  id: GetMembers
+  parent: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  langs:
+  - csharp
+  - vb
+  name: GetMembers()
+  nameWithType: INamespaceOrTypeSymbol.GetMembers()
+  fullName: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<ISymbol> GetMembers()
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+    content.vb: Function GetMembers() As ImmutableArray(Of ISymbol)
+  overload: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers*
+- uid: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers(System.String)
+  commentId: M:Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers(System.String)
+  id: GetMembers(System.String)
+  parent: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  langs:
+  - csharp
+  - vb
+  name: GetMembers(string)
+  nameWithType: INamespaceOrTypeSymbol.GetMembers(string)
+  fullName: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<ISymbol> GetMembers(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+    content.vb: Function GetMembers(name As String) As ImmutableArray(Of ISymbol)
+  overload: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers*
+  nameWithType.vb: INamespaceOrTypeSymbol.GetMembers(String)
+  fullName.vb: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers(String)
+  name.vb: GetMembers(String)
+- uid: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers
+  commentId: M:Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers
+  id: GetTypeMembers
+  parent: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  langs:
+  - csharp
+  - vb
+  name: GetTypeMembers()
+  nameWithType: INamespaceOrTypeSymbol.GetTypeMembers()
+  fullName: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<INamedTypeSymbol> GetTypeMembers()
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+    content.vb: Function GetTypeMembers() As ImmutableArray(Of INamedTypeSymbol)
+  overload: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers*
+- uid: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(System.String)
+  commentId: M:Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(System.String)
+  id: GetTypeMembers(System.String)
+  parent: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  langs:
+  - csharp
+  - vb
+  name: GetTypeMembers(string)
+  nameWithType: INamespaceOrTypeSymbol.GetTypeMembers(string)
+  fullName: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<INamedTypeSymbol> GetTypeMembers(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+    content.vb: Function GetTypeMembers(name As String) As ImmutableArray(Of INamedTypeSymbol)
+  overload: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers*
+  nameWithType.vb: INamespaceOrTypeSymbol.GetTypeMembers(String)
+  fullName.vb: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(String)
+  name.vb: GetTypeMembers(String)
+- uid: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(System.String,System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(System.String,System.Int32)
+  id: GetTypeMembers(System.String,System.Int32)
+  parent: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  langs:
+  - csharp
+  - vb
+  name: GetTypeMembers(string, int)
+  nameWithType: INamespaceOrTypeSymbol.GetTypeMembers(string, int)
+  fullName: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(string, int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: ImmutableArray<INamedTypeSymbol> GetTypeMembers(string name, int arity)
+    parameters:
+    - id: name
+      type: System.String
+    - id: arity
+      type: System.Int32
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+    content.vb: Function GetTypeMembers(name As String, arity As Integer) As ImmutableArray(Of INamedTypeSymbol)
+  overload: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers*
+  nameWithType.vb: INamespaceOrTypeSymbol.GetTypeMembers(String, Integer)
+  fullName.vb: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers(String, Integer)
+  name.vb: GetTypeMembers(String, Integer)
+- uid: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsNamespace
+  commentId: P:Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsNamespace
+  id: IsNamespace
+  parent: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  langs:
+  - csharp
+  - vb
+  name: IsNamespace
+  nameWithType: INamespaceOrTypeSymbol.IsNamespace
+  fullName: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsNamespace
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool IsNamespace { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsNamespace As Boolean
+  overload: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsNamespace*
+- uid: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsType
+  commentId: P:Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsType
+  id: IsType
+  parent: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol
+  langs:
+  - csharp
+  - vb
+  name: IsType
+  nameWithType: INamespaceOrTypeSymbol.IsType
+  fullName: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsType
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: bool IsType { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: ReadOnly Property IsType As Boolean
+  overload: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsType*
+references:
+- uid: Microsoft.CodeAnalysis
+  commentId: N:Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis
+  nameWithType: Microsoft.CodeAnalysis
+  fullName: Microsoft.CodeAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+- uid: Microsoft.CodeAnalysis.ISymbol.GetAttributes
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.GetAttributes
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetAttributes
+  name: GetAttributes()
+  nameWithType: ISymbol.GetAttributes()
+  fullName: Microsoft.CodeAnalysis.ISymbol.GetAttributes()
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.GetAttributes
+    name: GetAttributes
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetAttributes
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.GetAttributes
+    name: GetAttributes
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetAttributes
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept_Microsoft_CodeAnalysis_SymbolVisitor_
+  name: Accept(SymbolVisitor)
+  nameWithType: ISymbol.Accept(SymbolVisitor)
+  fullName: Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept_Microsoft_CodeAnalysis_SymbolVisitor_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept(Microsoft.CodeAnalysis.SymbolVisitor)
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept_Microsoft_CodeAnalysis_SymbolVisitor_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{{TResult}})
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+  parent: Microsoft.CodeAnalysis.ISymbol
+  definition: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__1_Microsoft_CodeAnalysis_SymbolVisitor___0__
+  name: Accept<TResult>(SymbolVisitor<TResult>)
+  nameWithType: ISymbol.Accept<TResult>(SymbolVisitor<TResult>)
+  fullName: Microsoft.CodeAnalysis.ISymbol.Accept<TResult>(Microsoft.CodeAnalysis.SymbolVisitor<TResult>)
+  nameWithType.vb: ISymbol.Accept(Of TResult)(SymbolVisitor(Of TResult))
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.Accept(Of TResult)(Microsoft.CodeAnalysis.SymbolVisitor(Of TResult))
+  name.vb: Accept(Of TResult)(SymbolVisitor(Of TResult))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__1_Microsoft_CodeAnalysis_SymbolVisitor___0__
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`1
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__1_Microsoft_CodeAnalysis_SymbolVisitor___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`1
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{{TArgument},{TResult}},{TArgument})
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  definition: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__2_Microsoft_CodeAnalysis_SymbolVisitor___0___1____0_
+  name: Accept<TArgument, TResult>(SymbolVisitor<TArgument, TResult>, TArgument)
+  nameWithType: ISymbol.Accept<TArgument, TResult>(SymbolVisitor<TArgument, TResult>, TArgument)
+  fullName: Microsoft.CodeAnalysis.ISymbol.Accept<TArgument, TResult>(Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>, TArgument)
+  nameWithType.vb: ISymbol.Accept(Of TArgument, TResult)(SymbolVisitor(Of TArgument, TResult), TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.Accept(Of TArgument, TResult)(Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult), TArgument)
+  name.vb: Accept(Of TArgument, TResult)(SymbolVisitor(Of TArgument, TResult), TArgument)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__2_Microsoft_CodeAnalysis_SymbolVisitor___0___1____0_
+  - name: <
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`2
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-2.html
+  - name: <
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TArgument
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__2_Microsoft_CodeAnalysis_SymbolVisitor___0___1____0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`2
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TArgument
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetDocumentationCommentId
+  name: GetDocumentationCommentId()
+  nameWithType: ISymbol.GetDocumentationCommentId()
+  fullName: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId()
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
+    name: GetDocumentationCommentId
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetDocumentationCommentId
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentId
+    name: GetDocumentationCommentId
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetDocumentationCommentId
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo,System.Boolean,System.Threading.CancellationToken)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo,System.Boolean,System.Threading.CancellationToken)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetDocumentationCommentXml_System_Globalization_CultureInfo_System_Boolean_System_Threading_CancellationToken_
+  name: GetDocumentationCommentXml(CultureInfo, bool, CancellationToken)
+  nameWithType: ISymbol.GetDocumentationCommentXml(CultureInfo, bool, CancellationToken)
+  fullName: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo, bool, System.Threading.CancellationToken)
+  nameWithType.vb: ISymbol.GetDocumentationCommentXml(CultureInfo, Boolean, CancellationToken)
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo, Boolean, System.Threading.CancellationToken)
+  name.vb: GetDocumentationCommentXml(CultureInfo, Boolean, CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo,System.Boolean,System.Threading.CancellationToken)
+    name: GetDocumentationCommentXml
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetDocumentationCommentXml_System_Globalization_CultureInfo_System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.GetDocumentationCommentXml(System.Globalization.CultureInfo,System.Boolean,System.Threading.CancellationToken)
+    name: GetDocumentationCommentXml
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_GetDocumentationCommentXml_System_Globalization_CultureInfo_System_Boolean_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Globalization.CultureInfo
+    name: CultureInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToDisplayString_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  name: ToDisplayString(SymbolDisplayFormat)
+  nameWithType: ISymbol.ToDisplayString(SymbolDisplayFormat)
+  fullName: Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToDisplayString
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToDisplayString_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToDisplayString(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToDisplayString
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToDisplayString_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToDisplayParts_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  name: ToDisplayParts(SymbolDisplayFormat)
+  nameWithType: ISymbol.ToDisplayParts(SymbolDisplayFormat)
+  fullName: Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToDisplayParts
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToDisplayParts_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToDisplayParts(Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToDisplayParts
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToDisplayParts_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToMinimalDisplayString_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  name: ToMinimalDisplayString(SemanticModel, int, SymbolDisplayFormat)
+  nameWithType: ISymbol.ToMinimalDisplayString(SemanticModel, int, SymbolDisplayFormat)
+  fullName: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel, int, Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  nameWithType.vb: ISymbol.ToMinimalDisplayString(SemanticModel, Integer, SymbolDisplayFormat)
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel, Integer, Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  name.vb: ToMinimalDisplayString(SemanticModel, Integer, SymbolDisplayFormat)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToMinimalDisplayString
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToMinimalDisplayString_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SemanticModel
+    name: SemanticModel
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SemanticModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayString(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToMinimalDisplayString
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToMinimalDisplayString_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SemanticModel
+    name: SemanticModel
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SemanticModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToMinimalDisplayParts_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  name: ToMinimalDisplayParts(SemanticModel, int, SymbolDisplayFormat)
+  nameWithType: ISymbol.ToMinimalDisplayParts(SemanticModel, int, SymbolDisplayFormat)
+  fullName: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel, int, Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  nameWithType.vb: ISymbol.ToMinimalDisplayParts(SemanticModel, Integer, SymbolDisplayFormat)
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel, Integer, Microsoft.CodeAnalysis.SymbolDisplayFormat)
+  name.vb: ToMinimalDisplayParts(SemanticModel, Integer, SymbolDisplayFormat)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToMinimalDisplayParts
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToMinimalDisplayParts_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SemanticModel
+    name: SemanticModel
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SemanticModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.ToMinimalDisplayParts(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.SymbolDisplayFormat)
+    name: ToMinimalDisplayParts
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ToMinimalDisplayParts_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_SymbolDisplayFormat_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SemanticModel
+    name: SemanticModel
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SemanticModel.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.SymbolDisplayFormat
+    name: SymbolDisplayFormat
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolDisplayFormat.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.Equals(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SymbolEqualityComparer)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.Equals(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SymbolEqualityComparer)
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Equals_Microsoft_CodeAnalysis_ISymbol_Microsoft_CodeAnalysis_SymbolEqualityComparer_
+  name: Equals(ISymbol, SymbolEqualityComparer)
+  nameWithType: ISymbol.Equals(ISymbol, SymbolEqualityComparer)
+  fullName: Microsoft.CodeAnalysis.ISymbol.Equals(Microsoft.CodeAnalysis.ISymbol, Microsoft.CodeAnalysis.SymbolEqualityComparer)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Equals(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SymbolEqualityComparer)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Equals_Microsoft_CodeAnalysis_ISymbol_Microsoft_CodeAnalysis_SymbolEqualityComparer_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.SymbolEqualityComparer
+    name: SymbolEqualityComparer
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolEqualityComparer.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Equals(Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.SymbolEqualityComparer)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Equals_Microsoft_CodeAnalysis_ISymbol_Microsoft_CodeAnalysis_SymbolEqualityComparer_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.SymbolEqualityComparer
+    name: SymbolEqualityComparer
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolEqualityComparer.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.Kind
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.Kind
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Kind
+  name: Kind
+  nameWithType: ISymbol.Kind
+  fullName: Microsoft.CodeAnalysis.ISymbol.Kind
+- uid: Microsoft.CodeAnalysis.ISymbol.Language
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.Language
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Language
+  name: Language
+  nameWithType: ISymbol.Language
+  fullName: Microsoft.CodeAnalysis.ISymbol.Language
+- uid: Microsoft.CodeAnalysis.ISymbol.Name
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.Name
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Name
+  name: Name
+  nameWithType: ISymbol.Name
+  fullName: Microsoft.CodeAnalysis.ISymbol.Name
+- uid: Microsoft.CodeAnalysis.ISymbol.MetadataName
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.MetadataName
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_MetadataName
+  name: MetadataName
+  nameWithType: ISymbol.MetadataName
+  fullName: Microsoft.CodeAnalysis.ISymbol.MetadataName
+- uid: Microsoft.CodeAnalysis.ISymbol.MetadataToken
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.MetadataToken
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_MetadataToken
+  name: MetadataToken
+  nameWithType: ISymbol.MetadataToken
+  fullName: Microsoft.CodeAnalysis.ISymbol.MetadataToken
+- uid: Microsoft.CodeAnalysis.ISymbol.ContainingSymbol
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.ContainingSymbol
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ContainingSymbol
+  name: ContainingSymbol
+  nameWithType: ISymbol.ContainingSymbol
+  fullName: Microsoft.CodeAnalysis.ISymbol.ContainingSymbol
+- uid: Microsoft.CodeAnalysis.ISymbol.ContainingAssembly
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.ContainingAssembly
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ContainingAssembly
+  name: ContainingAssembly
+  nameWithType: ISymbol.ContainingAssembly
+  fullName: Microsoft.CodeAnalysis.ISymbol.ContainingAssembly
+- uid: Microsoft.CodeAnalysis.ISymbol.ContainingModule
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.ContainingModule
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ContainingModule
+  name: ContainingModule
+  nameWithType: ISymbol.ContainingModule
+  fullName: Microsoft.CodeAnalysis.ISymbol.ContainingModule
+- uid: Microsoft.CodeAnalysis.ISymbol.ContainingType
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.ContainingType
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ContainingType
+  name: ContainingType
+  nameWithType: ISymbol.ContainingType
+  fullName: Microsoft.CodeAnalysis.ISymbol.ContainingType
+- uid: Microsoft.CodeAnalysis.ISymbol.ContainingNamespace
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.ContainingNamespace
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_ContainingNamespace
+  name: ContainingNamespace
+  nameWithType: ISymbol.ContainingNamespace
+  fullName: Microsoft.CodeAnalysis.ISymbol.ContainingNamespace
+- uid: Microsoft.CodeAnalysis.ISymbol.IsDefinition
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsDefinition
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsDefinition
+  name: IsDefinition
+  nameWithType: ISymbol.IsDefinition
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsDefinition
+- uid: Microsoft.CodeAnalysis.ISymbol.IsStatic
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsStatic
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsStatic
+  name: IsStatic
+  nameWithType: ISymbol.IsStatic
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsStatic
+- uid: Microsoft.CodeAnalysis.ISymbol.IsVirtual
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsVirtual
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsVirtual
+  name: IsVirtual
+  nameWithType: ISymbol.IsVirtual
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsVirtual
+- uid: Microsoft.CodeAnalysis.ISymbol.IsOverride
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsOverride
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsOverride
+  name: IsOverride
+  nameWithType: ISymbol.IsOverride
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsOverride
+- uid: Microsoft.CodeAnalysis.ISymbol.IsAbstract
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsAbstract
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsAbstract
+  name: IsAbstract
+  nameWithType: ISymbol.IsAbstract
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsAbstract
+- uid: Microsoft.CodeAnalysis.ISymbol.IsSealed
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsSealed
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsSealed
+  name: IsSealed
+  nameWithType: ISymbol.IsSealed
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsSealed
+- uid: Microsoft.CodeAnalysis.ISymbol.IsExtern
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsExtern
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsExtern
+  name: IsExtern
+  nameWithType: ISymbol.IsExtern
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsExtern
+- uid: Microsoft.CodeAnalysis.ISymbol.IsImplicitlyDeclared
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.IsImplicitlyDeclared
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_IsImplicitlyDeclared
+  name: IsImplicitlyDeclared
+  nameWithType: ISymbol.IsImplicitlyDeclared
+  fullName: Microsoft.CodeAnalysis.ISymbol.IsImplicitlyDeclared
+- uid: Microsoft.CodeAnalysis.ISymbol.CanBeReferencedByName
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.CanBeReferencedByName
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_CanBeReferencedByName
+  name: CanBeReferencedByName
+  nameWithType: ISymbol.CanBeReferencedByName
+  fullName: Microsoft.CodeAnalysis.ISymbol.CanBeReferencedByName
+- uid: Microsoft.CodeAnalysis.ISymbol.Locations
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.Locations
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Locations
+  name: Locations
+  nameWithType: ISymbol.Locations
+  fullName: Microsoft.CodeAnalysis.ISymbol.Locations
+- uid: Microsoft.CodeAnalysis.ISymbol.DeclaringSyntaxReferences
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.DeclaringSyntaxReferences
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_DeclaringSyntaxReferences
+  name: DeclaringSyntaxReferences
+  nameWithType: ISymbol.DeclaringSyntaxReferences
+  fullName: Microsoft.CodeAnalysis.ISymbol.DeclaringSyntaxReferences
+- uid: Microsoft.CodeAnalysis.ISymbol.DeclaredAccessibility
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.DeclaredAccessibility
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_DeclaredAccessibility
+  name: DeclaredAccessibility
+  nameWithType: ISymbol.DeclaredAccessibility
+  fullName: Microsoft.CodeAnalysis.ISymbol.DeclaredAccessibility
+- uid: Microsoft.CodeAnalysis.ISymbol.OriginalDefinition
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.OriginalDefinition
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_OriginalDefinition
+  name: OriginalDefinition
+  nameWithType: ISymbol.OriginalDefinition
+  fullName: Microsoft.CodeAnalysis.ISymbol.OriginalDefinition
+- uid: Microsoft.CodeAnalysis.ISymbol.HasUnsupportedMetadata
+  commentId: P:Microsoft.CodeAnalysis.ISymbol.HasUnsupportedMetadata
+  parent: Microsoft.CodeAnalysis.ISymbol
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_HasUnsupportedMetadata
+  name: HasUnsupportedMetadata
+  nameWithType: ISymbol.HasUnsupportedMetadata
+  fullName: Microsoft.CodeAnalysis.ISymbol.HasUnsupportedMetadata
+- uid: System.IEquatable{Microsoft.CodeAnalysis.ISymbol}.Equals(Microsoft.CodeAnalysis.ISymbol)
+  commentId: M:System.IEquatable{Microsoft.CodeAnalysis.ISymbol}.Equals(Microsoft.CodeAnalysis.ISymbol)
+  parent: System.IEquatable{Microsoft.CodeAnalysis.ISymbol}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ISymbol)
+  nameWithType: IEquatable<ISymbol>.Equals(ISymbol)
+  fullName: System.IEquatable<Microsoft.CodeAnalysis.ISymbol>.Equals(Microsoft.CodeAnalysis.ISymbol)
+  nameWithType.vb: IEquatable(Of ISymbol).Equals(ISymbol)
+  fullName.vb: System.IEquatable(Of Microsoft.CodeAnalysis.ISymbol).Equals(Microsoft.CodeAnalysis.ISymbol)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.CodeAnalysis.ISymbol}.Equals(Microsoft.CodeAnalysis.ISymbol)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.CodeAnalysis.ISymbol}.Equals(Microsoft.CodeAnalysis.ISymbol)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol
+  commentId: T:Microsoft.CodeAnalysis.ISymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html
+  name: ISymbol
+  nameWithType: ISymbol
+  fullName: Microsoft.CodeAnalysis.ISymbol
+- uid: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__1_Microsoft_CodeAnalysis_SymbolVisitor___0__
+  name: Accept<TResult>(SymbolVisitor<TResult>)
+  nameWithType: ISymbol.Accept<TResult>(SymbolVisitor<TResult>)
+  fullName: Microsoft.CodeAnalysis.ISymbol.Accept<TResult>(Microsoft.CodeAnalysis.SymbolVisitor<TResult>)
+  nameWithType.vb: ISymbol.Accept(Of TResult)(SymbolVisitor(Of TResult))
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.Accept(Of TResult)(Microsoft.CodeAnalysis.SymbolVisitor(Of TResult))
+  name.vb: Accept(Of TResult)(SymbolVisitor(Of TResult))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__1_Microsoft_CodeAnalysis_SymbolVisitor___0__
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`1
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-1.html
+  - name: <
+  - name: TResult
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``1(Microsoft.CodeAnalysis.SymbolVisitor{``0})
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__1_Microsoft_CodeAnalysis_SymbolVisitor___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`1
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+  commentId: M:Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__2_Microsoft_CodeAnalysis_SymbolVisitor___0___1____0_
+  name: Accept<TArgument, TResult>(SymbolVisitor<TArgument, TResult>, TArgument)
+  nameWithType: ISymbol.Accept<TArgument, TResult>(SymbolVisitor<TArgument, TResult>, TArgument)
+  fullName: Microsoft.CodeAnalysis.ISymbol.Accept<TArgument, TResult>(Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>, TArgument)
+  nameWithType.vb: ISymbol.Accept(Of TArgument, TResult)(SymbolVisitor(Of TArgument, TResult), TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.ISymbol.Accept(Of TArgument, TResult)(Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult), TArgument)
+  name.vb: Accept(Of TArgument, TResult)(SymbolVisitor(Of TArgument, TResult), TArgument)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__2_Microsoft_CodeAnalysis_SymbolVisitor___0___1____0_
+  - name: <
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`2
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-2.html
+  - name: <
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  - name: ','
+  - name: " "
+  - name: TArgument
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ISymbol.Accept``2(Microsoft.CodeAnalysis.SymbolVisitor{``0,``1},``0)
+    name: Accept
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html#Microsoft_CodeAnalysis_ISymbol_Accept__2_Microsoft_CodeAnalysis_SymbolVisitor___0___1____0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: (
+  - uid: Microsoft.CodeAnalysis.SymbolVisitor`2
+    name: SymbolVisitor
+    isExternal: true
+    href: Microsoft.CodeAnalysis.SymbolVisitor-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TArgument
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )
+  - name: ','
+  - name: " "
+  - name: TArgument
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.IEquatable{Microsoft.CodeAnalysis.ISymbol}
+  commentId: T:System.IEquatable{Microsoft.CodeAnalysis.ISymbol}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ISymbol>
+  nameWithType: IEquatable<ISymbol>
+  fullName: System.IEquatable<Microsoft.CodeAnalysis.ISymbol>
+  nameWithType.vb: IEquatable(Of ISymbol)
+  fullName.vb: System.IEquatable(Of Microsoft.CodeAnalysis.ISymbol)
+  name.vb: IEquatable(Of ISymbol)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers*
+  commentId: Overload:Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers
+  isExternal: true
+  href: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.html#Microsoft_CodeAnalysis_INamespaceOrTypeSymbol_GetMembers
+  name: GetMembers
+  nameWithType: INamespaceOrTypeSymbol.GetMembers
+  fullName: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetMembers
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ISymbol}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<ISymbol>
+  nameWithType: ImmutableArray<ISymbol>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.ISymbol>
+  nameWithType.vb: ImmutableArray(Of ISymbol)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.ISymbol)
+  name.vb: ImmutableArray(Of ISymbol)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.ISymbol
+    name: ISymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ISymbol.html
+  - name: )
+- uid: System.Collections.Immutable.ImmutableArray`1
+  commentId: T:System.Collections.Immutable.ImmutableArray`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<T>
+  nameWithType: ImmutableArray<T>
+  fullName: System.Collections.Immutable.ImmutableArray<T>
+  nameWithType.vb: ImmutableArray(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T)
+  name.vb: ImmutableArray(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Immutable
+  commentId: N:System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Immutable
+  nameWithType: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers*
+  commentId: Overload:Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers
+  isExternal: true
+  href: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.html#Microsoft_CodeAnalysis_INamespaceOrTypeSymbol_GetTypeMembers
+  name: GetTypeMembers
+  nameWithType: INamespaceOrTypeSymbol.GetTypeMembers
+  fullName: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.GetTypeMembers
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.INamedTypeSymbol}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<INamedTypeSymbol>
+  nameWithType: ImmutableArray<INamedTypeSymbol>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.INamedTypeSymbol>
+  nameWithType.vb: ImmutableArray(Of INamedTypeSymbol)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.INamedTypeSymbol)
+  name.vb: ImmutableArray(Of INamedTypeSymbol)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.INamedTypeSymbol
+    name: INamedTypeSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.INamedTypeSymbol.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.INamedTypeSymbol
+    name: INamedTypeSymbol
+    isExternal: true
+    href: Microsoft.CodeAnalysis.INamedTypeSymbol.html
+  - name: )
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsNamespace*
+  commentId: Overload:Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsNamespace
+  isExternal: true
+  href: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.html#Microsoft_CodeAnalysis_INamespaceOrTypeSymbol_IsNamespace
+  name: IsNamespace
+  nameWithType: INamespaceOrTypeSymbol.IsNamespace
+  fullName: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsNamespace
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsType*
+  commentId: Overload:Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsType
+  isExternal: true
+  href: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.html#Microsoft_CodeAnalysis_INamespaceOrTypeSymbol_IsType
+  name: IsType
+  nameWithType: INamespaceOrTypeSymbol.IsType
+  fullName: Microsoft.CodeAnalysis.INamespaceOrTypeSymbol.IsType

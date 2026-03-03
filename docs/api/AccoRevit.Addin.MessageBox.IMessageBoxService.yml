@@ -1,0 +1,781 @@
+### YamlMime:ManagedReference
+items:
+- uid: AccoRevit.Addin.MessageBox.IMessageBoxService
+  commentId: T:AccoRevit.Addin.MessageBox.IMessageBoxService
+  id: IMessageBoxService
+  parent: AccoRevit.Addin.MessageBox
+  children:
+  - AccoRevit.Addin.MessageBox.IMessageBoxService.Show(System.String,System.String,System.Windows.MessageBoxImage)
+  - AccoRevit.Addin.MessageBox.IMessageBoxService.ShowError(System.Exception,System.String)
+  - AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancel(System.String,System.String,System.String,System.String,System.Windows.MessageBoxImage)
+  - AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancelWithScroll(System.String,System.String,System.String,System.String)
+  - AccoRevit.Addin.MessageBox.IMessageBoxService.ShowWithScroll(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: IMessageBoxService
+  nameWithType: IMessageBoxService
+  fullName: AccoRevit.Addin.MessageBox.IMessageBoxService
+  type: Interface
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.MessageBox
+  syntax:
+    content: public interface IMessageBoxService
+    content.vb: Public Interface IMessageBoxService
+  derivedClasses:
+  - AccoRevit.Addin.MessageBox.MessageBoxService
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: AccoRevit.Addin.MessageBox.IMessageBoxService.Show(System.String,System.String,System.Windows.MessageBoxImage)
+  commentId: M:AccoRevit.Addin.MessageBox.IMessageBoxService.Show(System.String,System.String,System.Windows.MessageBoxImage)
+  id: Show(System.String,System.String,System.Windows.MessageBoxImage)
+  parent: AccoRevit.Addin.MessageBox.IMessageBoxService
+  langs:
+  - csharp
+  - vb
+  name: Show(string, string, MessageBoxImage)
+  nameWithType: IMessageBoxService.Show(string, string, MessageBoxImage)
+  fullName: AccoRevit.Addin.MessageBox.IMessageBoxService.Show(string, string, System.Windows.MessageBoxImage)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.MessageBox
+  syntax:
+    content: MessageBoxResult Show(string content, string title, MessageBoxImage icon)
+    parameters:
+    - id: content
+      type: System.String
+    - id: title
+      type: System.String
+    - id: icon
+      type: System.Windows.MessageBoxImage
+    return:
+      type: System.Windows.MessageBoxResult
+    content.vb: Function Show(content As String, title As String, icon As MessageBoxImage) As MessageBoxResult
+  overload: AccoRevit.Addin.MessageBox.IMessageBoxService.Show*
+  nameWithType.vb: IMessageBoxService.Show(String, String, MessageBoxImage)
+  fullName.vb: AccoRevit.Addin.MessageBox.IMessageBoxService.Show(String, String, System.Windows.MessageBoxImage)
+  name.vb: Show(String, String, MessageBoxImage)
+- uid: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowError(System.Exception,System.String)
+  commentId: M:AccoRevit.Addin.MessageBox.IMessageBoxService.ShowError(System.Exception,System.String)
+  id: ShowError(System.Exception,System.String)
+  parent: AccoRevit.Addin.MessageBox.IMessageBoxService
+  langs:
+  - csharp
+  - vb
+  name: ShowError(Exception, string)
+  nameWithType: IMessageBoxService.ShowError(Exception, string)
+  fullName: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowError(System.Exception, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.MessageBox
+  syntax:
+    content: void ShowError(Exception ex, string message = "An error occurred:")
+    parameters:
+    - id: ex
+      type: System.Exception
+    - id: message
+      type: System.String
+    content.vb: Sub ShowError(ex As Exception, message As String = "An error occurred:")
+  overload: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowError*
+  nameWithType.vb: IMessageBoxService.ShowError(Exception, String)
+  fullName.vb: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowError(System.Exception, String)
+  name.vb: ShowError(Exception, String)
+- uid: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancel(System.String,System.String,System.String,System.String,System.Windows.MessageBoxImage)
+  commentId: M:AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancel(System.String,System.String,System.String,System.String,System.Windows.MessageBoxImage)
+  id: ShowOKCancel(System.String,System.String,System.String,System.String,System.Windows.MessageBoxImage)
+  parent: AccoRevit.Addin.MessageBox.IMessageBoxService
+  langs:
+  - csharp
+  - vb
+  name: ShowOKCancel(string, string, string, string, MessageBoxImage)
+  nameWithType: IMessageBoxService.ShowOKCancel(string, string, string, string, MessageBoxImage)
+  fullName: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancel(string, string, string, string, System.Windows.MessageBoxImage)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.MessageBox
+  syntax:
+    content: MessageBoxResult ShowOKCancel(string content, string title, string okButtonText = "OK", string cancelButtonText = "Cancel", MessageBoxImage icon = MessageBoxImage.None)
+    parameters:
+    - id: content
+      type: System.String
+    - id: title
+      type: System.String
+    - id: okButtonText
+      type: System.String
+    - id: cancelButtonText
+      type: System.String
+    - id: icon
+      type: System.Windows.MessageBoxImage
+    return:
+      type: System.Windows.MessageBoxResult
+    content.vb: Function ShowOKCancel(content As String, title As String, okButtonText As String = "OK", cancelButtonText As String = "Cancel", icon As MessageBoxImage = MessageBoxImage.None) As MessageBoxResult
+  overload: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancel*
+  nameWithType.vb: IMessageBoxService.ShowOKCancel(String, String, String, String, MessageBoxImage)
+  fullName.vb: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancel(String, String, String, String, System.Windows.MessageBoxImage)
+  name.vb: ShowOKCancel(String, String, String, String, MessageBoxImage)
+- uid: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowWithScroll(System.String,System.String)
+  commentId: M:AccoRevit.Addin.MessageBox.IMessageBoxService.ShowWithScroll(System.String,System.String)
+  id: ShowWithScroll(System.String,System.String)
+  parent: AccoRevit.Addin.MessageBox.IMessageBoxService
+  langs:
+  - csharp
+  - vb
+  name: ShowWithScroll(string, string)
+  nameWithType: IMessageBoxService.ShowWithScroll(string, string)
+  fullName: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowWithScroll(string, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.MessageBox
+  syntax:
+    content: void ShowWithScroll(string content, string title)
+    parameters:
+    - id: content
+      type: System.String
+    - id: title
+      type: System.String
+    content.vb: Sub ShowWithScroll(content As String, title As String)
+  overload: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowWithScroll*
+  nameWithType.vb: IMessageBoxService.ShowWithScroll(String, String)
+  fullName.vb: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowWithScroll(String, String)
+  name.vb: ShowWithScroll(String, String)
+- uid: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancelWithScroll(System.String,System.String,System.String,System.String)
+  commentId: M:AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancelWithScroll(System.String,System.String,System.String,System.String)
+  id: ShowOKCancelWithScroll(System.String,System.String,System.String,System.String)
+  parent: AccoRevit.Addin.MessageBox.IMessageBoxService
+  langs:
+  - csharp
+  - vb
+  name: ShowOKCancelWithScroll(string, string, string, string)
+  nameWithType: IMessageBoxService.ShowOKCancelWithScroll(string, string, string, string)
+  fullName: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancelWithScroll(string, string, string, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.MessageBox
+  syntax:
+    content: MessageBoxResult ShowOKCancelWithScroll(string content, string title, string okButtonText = "OK", string cancelButtonText = "Cancel")
+    parameters:
+    - id: content
+      type: System.String
+    - id: title
+      type: System.String
+    - id: okButtonText
+      type: System.String
+    - id: cancelButtonText
+      type: System.String
+    return:
+      type: System.Windows.MessageBoxResult
+    content.vb: Function ShowOKCancelWithScroll(content As String, title As String, okButtonText As String = "OK", cancelButtonText As String = "Cancel") As MessageBoxResult
+  overload: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancelWithScroll*
+  nameWithType.vb: IMessageBoxService.ShowOKCancelWithScroll(String, String, String, String)
+  fullName.vb: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancelWithScroll(String, String, String, String)
+  name.vb: ShowOKCancelWithScroll(String, String, String, String)
+references:
+- uid: AccoRevit.Addin.MessageBox
+  commentId: N:AccoRevit.Addin.MessageBox
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.MessageBox
+  nameWithType: AccoRevit.Addin.MessageBox
+  fullName: AccoRevit.Addin.MessageBox
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.MessageBox
+    name: MessageBox
+    isExternal: true
+    href: AccoRevit.Addin.MessageBox.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.MessageBox
+    name: MessageBox
+    isExternal: true
+    href: AccoRevit.Addin.MessageBox.html
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: AccoRevit.Addin.MessageBox.IMessageBoxService.Show*
+  commentId: Overload:AccoRevit.Addin.MessageBox.IMessageBoxService.Show
+  isExternal: true
+  href: AccoRevit.Addin.MessageBox.IMessageBoxService.html#AccoRevit_Addin_MessageBox_IMessageBoxService_Show_System_String_System_String_System_Windows_MessageBoxImage_
+  name: Show
+  nameWithType: IMessageBoxService.Show
+  fullName: AccoRevit.Addin.MessageBox.IMessageBoxService.Show
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Windows.MessageBoxImage
+  commentId: T:System.Windows.MessageBoxImage
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.messageboximage
+  name: MessageBoxImage
+  nameWithType: MessageBoxImage
+  fullName: System.Windows.MessageBoxImage
+- uid: System.Windows.MessageBoxResult
+  commentId: T:System.Windows.MessageBoxResult
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.messageboxresult
+  name: MessageBoxResult
+  nameWithType: MessageBoxResult
+  fullName: System.Windows.MessageBoxResult
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+- uid: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowError*
+  commentId: Overload:AccoRevit.Addin.MessageBox.IMessageBoxService.ShowError
+  isExternal: true
+  href: AccoRevit.Addin.MessageBox.IMessageBoxService.html#AccoRevit_Addin_MessageBox_IMessageBoxService_ShowError_System_Exception_System_String_
+  name: ShowError
+  nameWithType: IMessageBoxService.ShowError
+  fullName: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowError
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancel*
+  commentId: Overload:AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancel
+  isExternal: true
+  href: AccoRevit.Addin.MessageBox.IMessageBoxService.html#AccoRevit_Addin_MessageBox_IMessageBoxService_ShowOKCancel_System_String_System_String_System_String_System_String_System_Windows_MessageBoxImage_
+  name: ShowOKCancel
+  nameWithType: IMessageBoxService.ShowOKCancel
+  fullName: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancel
+- uid: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowWithScroll*
+  commentId: Overload:AccoRevit.Addin.MessageBox.IMessageBoxService.ShowWithScroll
+  isExternal: true
+  href: AccoRevit.Addin.MessageBox.IMessageBoxService.html#AccoRevit_Addin_MessageBox_IMessageBoxService_ShowWithScroll_System_String_System_String_
+  name: ShowWithScroll
+  nameWithType: IMessageBoxService.ShowWithScroll
+  fullName: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowWithScroll
+- uid: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancelWithScroll*
+  commentId: Overload:AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancelWithScroll
+  isExternal: true
+  href: AccoRevit.Addin.MessageBox.IMessageBoxService.html#AccoRevit_Addin_MessageBox_IMessageBoxService_ShowOKCancelWithScroll_System_String_System_String_System_String_System_String_
+  name: ShowOKCancelWithScroll
+  nameWithType: IMessageBoxService.ShowOKCancelWithScroll
+  fullName: AccoRevit.Addin.MessageBox.IMessageBoxService.ShowOKCancelWithScroll

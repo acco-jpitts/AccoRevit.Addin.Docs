@@ -1,0 +1,1295 @@
+### YamlMime:ManagedReference
+items:
+- uid: Serilog.Extensions.Logging.SerilogLoggerProvider
+  commentId: T:Serilog.Extensions.Logging.SerilogLoggerProvider
+  id: SerilogLoggerProvider
+  parent: Serilog.Extensions.Logging
+  children:
+  - Serilog.Extensions.Logging.SerilogLoggerProvider.#ctor(Serilog.ILogger,System.Boolean)
+  - Serilog.Extensions.Logging.SerilogLoggerProvider.BeginScope``1(``0)
+  - Serilog.Extensions.Logging.SerilogLoggerProvider.CreateLogger(System.String)
+  - Serilog.Extensions.Logging.SerilogLoggerProvider.Dispose
+  - Serilog.Extensions.Logging.SerilogLoggerProvider.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  - Serilog.Extensions.Logging.SerilogLoggerProvider.SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider)
+  langs:
+  - csharp
+  - vb
+  name: SerilogLoggerProvider
+  nameWithType: SerilogLoggerProvider
+  fullName: Serilog.Extensions.Logging.SerilogLoggerProvider
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Extensions.Logging
+  syntax:
+    content: >-
+      [ProviderAlias("Serilog")]
+
+      public sealed class SerilogLoggerProvider : ILoggerProvider, IDisposable, ILogEventEnricher, ISupportExternalScope
+    content.vb: >-
+      <ProviderAlias("Serilog")>
+
+      Public NotInheritable Class SerilogLoggerProvider Implements ILoggerProvider, IDisposable, ILogEventEnricher, ISupportExternalScope
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Extensions.Logging.ILoggerProvider
+  - System.IDisposable
+  - Serilog.Core.ILogEventEnricher
+  - Microsoft.Extensions.Logging.ISupportExternalScope
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  attributes:
+  - type: Microsoft.Extensions.Logging.ProviderAliasAttribute
+    ctor: Microsoft.Extensions.Logging.ProviderAliasAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Serilog
+- uid: Serilog.Extensions.Logging.SerilogLoggerProvider.#ctor(Serilog.ILogger,System.Boolean)
+  commentId: M:Serilog.Extensions.Logging.SerilogLoggerProvider.#ctor(Serilog.ILogger,System.Boolean)
+  id: '#ctor(Serilog.ILogger,System.Boolean)'
+  parent: Serilog.Extensions.Logging.SerilogLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: SerilogLoggerProvider(ILogger?, bool)
+  nameWithType: SerilogLoggerProvider.SerilogLoggerProvider(ILogger?, bool)
+  fullName: Serilog.Extensions.Logging.SerilogLoggerProvider.SerilogLoggerProvider(Serilog.ILogger?, bool)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Extensions.Logging
+  syntax:
+    content: public SerilogLoggerProvider(ILogger? logger = null, bool dispose = false)
+    parameters:
+    - id: logger
+      type: Serilog.ILogger
+    - id: dispose
+      type: System.Boolean
+    content.vb: Public Sub New(logger As ILogger = Nothing, dispose As Boolean = False)
+  overload: Serilog.Extensions.Logging.SerilogLoggerProvider.#ctor*
+  nameWithType.vb: SerilogLoggerProvider.New(ILogger, Boolean)
+  fullName.vb: Serilog.Extensions.Logging.SerilogLoggerProvider.New(Serilog.ILogger, Boolean)
+  name.vb: New(ILogger, Boolean)
+- uid: Serilog.Extensions.Logging.SerilogLoggerProvider.CreateLogger(System.String)
+  commentId: M:Serilog.Extensions.Logging.SerilogLoggerProvider.CreateLogger(System.String)
+  id: CreateLogger(System.String)
+  parent: Serilog.Extensions.Logging.SerilogLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: CreateLogger(string)
+  nameWithType: SerilogLoggerProvider.CreateLogger(string)
+  fullName: Serilog.Extensions.Logging.SerilogLoggerProvider.CreateLogger(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Extensions.Logging
+  example: []
+  syntax:
+    content: public ILogger CreateLogger(string name)
+    parameters:
+    - id: name
+      type: System.String
+    return:
+      type: Microsoft.Extensions.Logging.ILogger
+    content.vb: Public Function CreateLogger(name As String) As ILogger
+  overload: Serilog.Extensions.Logging.SerilogLoggerProvider.CreateLogger*
+  implements:
+  - Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(System.String)
+  nameWithType.vb: SerilogLoggerProvider.CreateLogger(String)
+  fullName.vb: Serilog.Extensions.Logging.SerilogLoggerProvider.CreateLogger(String)
+  name.vb: CreateLogger(String)
+- uid: Serilog.Extensions.Logging.SerilogLoggerProvider.BeginScope``1(``0)
+  commentId: M:Serilog.Extensions.Logging.SerilogLoggerProvider.BeginScope``1(``0)
+  id: BeginScope``1(``0)
+  parent: Serilog.Extensions.Logging.SerilogLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: BeginScope<T>(T)
+  nameWithType: SerilogLoggerProvider.BeginScope<T>(T)
+  fullName: Serilog.Extensions.Logging.SerilogLoggerProvider.BeginScope<T>(T)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Extensions.Logging
+  syntax:
+    content: public IDisposable BeginScope<T>(T state)
+    parameters:
+    - id: state
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: System.IDisposable
+    content.vb: Public Function BeginScope(Of T)(state As T) As IDisposable
+  overload: Serilog.Extensions.Logging.SerilogLoggerProvider.BeginScope*
+  nameWithType.vb: SerilogLoggerProvider.BeginScope(Of T)(T)
+  fullName.vb: Serilog.Extensions.Logging.SerilogLoggerProvider.BeginScope(Of T)(T)
+  name.vb: BeginScope(Of T)(T)
+- uid: Serilog.Extensions.Logging.SerilogLoggerProvider.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  commentId: M:Serilog.Extensions.Logging.SerilogLoggerProvider.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  id: Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  parent: Serilog.Extensions.Logging.SerilogLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: Enrich(LogEvent, ILogEventPropertyFactory)
+  nameWithType: SerilogLoggerProvider.Enrich(LogEvent, ILogEventPropertyFactory)
+  fullName: Serilog.Extensions.Logging.SerilogLoggerProvider.Enrich(Serilog.Events.LogEvent, Serilog.Core.ILogEventPropertyFactory)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Extensions.Logging
+  example: []
+  syntax:
+    content: public void Enrich(LogEvent logEvent, ILogEventPropertyFactory propertyFactory)
+    parameters:
+    - id: logEvent
+      type: Serilog.Events.LogEvent
+    - id: propertyFactory
+      type: Serilog.Core.ILogEventPropertyFactory
+    content.vb: Public Sub Enrich(logEvent As LogEvent, propertyFactory As ILogEventPropertyFactory)
+  overload: Serilog.Extensions.Logging.SerilogLoggerProvider.Enrich*
+  implements:
+  - Serilog.Core.ILogEventEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+- uid: Serilog.Extensions.Logging.SerilogLoggerProvider.SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider)
+  commentId: M:Serilog.Extensions.Logging.SerilogLoggerProvider.SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider)
+  id: SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider)
+  parent: Serilog.Extensions.Logging.SerilogLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: SetScopeProvider(IExternalScopeProvider)
+  nameWithType: SerilogLoggerProvider.SetScopeProvider(IExternalScopeProvider)
+  fullName: Serilog.Extensions.Logging.SerilogLoggerProvider.SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Extensions.Logging
+  example: []
+  syntax:
+    content: public void SetScopeProvider(IExternalScopeProvider scopeProvider)
+    parameters:
+    - id: scopeProvider
+      type: Microsoft.Extensions.Logging.IExternalScopeProvider
+    content.vb: Public Sub SetScopeProvider(scopeProvider As IExternalScopeProvider)
+  overload: Serilog.Extensions.Logging.SerilogLoggerProvider.SetScopeProvider*
+  implements:
+  - Microsoft.Extensions.Logging.ISupportExternalScope.SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider)
+- uid: Serilog.Extensions.Logging.SerilogLoggerProvider.Dispose
+  commentId: M:Serilog.Extensions.Logging.SerilogLoggerProvider.Dispose
+  id: Dispose
+  parent: Serilog.Extensions.Logging.SerilogLoggerProvider
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: SerilogLoggerProvider.Dispose()
+  fullName: Serilog.Extensions.Logging.SerilogLoggerProvider.Dispose()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Serilog.Extensions.Logging
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Serilog.Extensions.Logging.SerilogLoggerProvider.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: Serilog.Extensions.Logging
+  commentId: N:Serilog.Extensions.Logging
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Extensions.Logging
+  nameWithType: Serilog.Extensions.Logging
+  fullName: Serilog.Extensions.Logging
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Extensions
+    name: Extensions
+    isExternal: true
+    href: Serilog.Extensions.html
+  - name: .
+  - uid: Serilog.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: Serilog.Extensions.Logging.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Extensions
+    name: Extensions
+    isExternal: true
+    href: Serilog.Extensions.html
+  - name: .
+  - uid: Serilog.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: Serilog.Extensions.Logging.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Extensions.Logging.ILoggerProvider
+  commentId: T:Microsoft.Extensions.Logging.ILoggerProvider
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: Microsoft.Extensions.Logging.ILoggerProvider.html
+  name: ILoggerProvider
+  nameWithType: ILoggerProvider
+  fullName: Microsoft.Extensions.Logging.ILoggerProvider
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Serilog.Core.ILogEventEnricher
+  commentId: T:Serilog.Core.ILogEventEnricher
+  parent: Serilog.Core
+  isExternal: true
+  href: Serilog.Core.ILogEventEnricher.html
+  name: ILogEventEnricher
+  nameWithType: ILogEventEnricher
+  fullName: Serilog.Core.ILogEventEnricher
+- uid: Microsoft.Extensions.Logging.ISupportExternalScope
+  commentId: T:Microsoft.Extensions.Logging.ISupportExternalScope
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: Microsoft.Extensions.Logging.ISupportExternalScope.html
+  name: ISupportExternalScope
+  nameWithType: ISupportExternalScope
+  fullName: Microsoft.Extensions.Logging.ISupportExternalScope
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.Extensions.Logging.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.Extensions.Logging.html
+- uid: Serilog.Core
+  commentId: N:Serilog.Core
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Core
+  nameWithType: Serilog.Core
+  fullName: Serilog.Core
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Core
+    name: Core
+    isExternal: true
+    href: Serilog.Core.html
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Serilog.Extensions.Logging.SerilogLoggerProvider.#ctor*
+  commentId: Overload:Serilog.Extensions.Logging.SerilogLoggerProvider.#ctor
+  isExternal: true
+  href: Serilog.Extensions.Logging.SerilogLoggerProvider.html#Serilog_Extensions_Logging_SerilogLoggerProvider__ctor_Serilog_ILogger_System_Boolean_
+  name: SerilogLoggerProvider
+  nameWithType: SerilogLoggerProvider.SerilogLoggerProvider
+  fullName: Serilog.Extensions.Logging.SerilogLoggerProvider.SerilogLoggerProvider
+  nameWithType.vb: SerilogLoggerProvider.New
+  fullName.vb: Serilog.Extensions.Logging.SerilogLoggerProvider.New
+  name.vb: New
+- uid: Serilog.ILogger
+  commentId: T:Serilog.ILogger
+  parent: Serilog
+  isExternal: true
+  href: Serilog.ILogger.html
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Serilog.ILogger
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Serilog
+  commentId: N:Serilog
+  isExternal: true
+  href: Serilog.html
+  name: Serilog
+  nameWithType: Serilog
+  fullName: Serilog
+- uid: Serilog.Extensions.Logging.SerilogLoggerProvider.CreateLogger*
+  commentId: Overload:Serilog.Extensions.Logging.SerilogLoggerProvider.CreateLogger
+  isExternal: true
+  href: Serilog.Extensions.Logging.SerilogLoggerProvider.html#Serilog_Extensions_Logging_SerilogLoggerProvider_CreateLogger_System_String_
+  name: CreateLogger
+  nameWithType: SerilogLoggerProvider.CreateLogger
+  fullName: Serilog.Extensions.Logging.SerilogLoggerProvider.CreateLogger
+- uid: Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(System.String)
+  commentId: M:Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(System.String)
+  parent: Microsoft.Extensions.Logging.ILoggerProvider
+  isExternal: true
+  href: Microsoft.Extensions.Logging.ILoggerProvider.html#Microsoft_Extensions_Logging_ILoggerProvider_CreateLogger_System_String_
+  name: CreateLogger(string)
+  nameWithType: ILoggerProvider.CreateLogger(string)
+  fullName: Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(string)
+  nameWithType.vb: ILoggerProvider.CreateLogger(String)
+  fullName.vb: Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(String)
+  name.vb: CreateLogger(String)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(System.String)
+    name: CreateLogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILoggerProvider.html#Microsoft_Extensions_Logging_ILoggerProvider_CreateLogger_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILoggerProvider.CreateLogger(System.String)
+    name: CreateLogger
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ILoggerProvider.html#Microsoft_Extensions_Logging_ILoggerProvider_CreateLogger_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Extensions.Logging.ILogger
+  commentId: T:Microsoft.Extensions.Logging.ILogger
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: Microsoft.Extensions.Logging.ILogger.html
+  name: ILogger
+  nameWithType: ILogger
+  fullName: Microsoft.Extensions.Logging.ILogger
+- uid: Serilog.Extensions.Logging.SerilogLoggerProvider.BeginScope*
+  commentId: Overload:Serilog.Extensions.Logging.SerilogLoggerProvider.BeginScope
+  isExternal: true
+  href: Serilog.Extensions.Logging.SerilogLoggerProvider.html#Serilog_Extensions_Logging_SerilogLoggerProvider_BeginScope__1___0_
+  name: BeginScope
+  nameWithType: SerilogLoggerProvider.BeginScope
+  fullName: Serilog.Extensions.Logging.SerilogLoggerProvider.BeginScope
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Serilog.Extensions.Logging.SerilogLoggerProvider.Enrich*
+  commentId: Overload:Serilog.Extensions.Logging.SerilogLoggerProvider.Enrich
+  isExternal: true
+  href: Serilog.Extensions.Logging.SerilogLoggerProvider.html#Serilog_Extensions_Logging_SerilogLoggerProvider_Enrich_Serilog_Events_LogEvent_Serilog_Core_ILogEventPropertyFactory_
+  name: Enrich
+  nameWithType: SerilogLoggerProvider.Enrich
+  fullName: Serilog.Extensions.Logging.SerilogLoggerProvider.Enrich
+- uid: Serilog.Core.ILogEventEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  commentId: M:Serilog.Core.ILogEventEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  parent: Serilog.Core.ILogEventEnricher
+  isExternal: true
+  href: Serilog.Core.ILogEventEnricher.html#Serilog_Core_ILogEventEnricher_Enrich_Serilog_Events_LogEvent_Serilog_Core_ILogEventPropertyFactory_
+  name: Enrich(LogEvent, ILogEventPropertyFactory)
+  nameWithType: ILogEventEnricher.Enrich(LogEvent, ILogEventPropertyFactory)
+  fullName: Serilog.Core.ILogEventEnricher.Enrich(Serilog.Events.LogEvent, Serilog.Core.ILogEventPropertyFactory)
+  spec.csharp:
+  - uid: Serilog.Core.ILogEventEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+    name: Enrich
+    isExternal: true
+    href: Serilog.Core.ILogEventEnricher.html#Serilog_Core_ILogEventEnricher_Enrich_Serilog_Events_LogEvent_Serilog_Core_ILogEventPropertyFactory_
+  - name: (
+  - uid: Serilog.Events.LogEvent
+    name: LogEvent
+    isExternal: true
+    href: Serilog.Events.LogEvent.html
+  - name: ','
+  - name: " "
+  - uid: Serilog.Core.ILogEventPropertyFactory
+    name: ILogEventPropertyFactory
+    isExternal: true
+    href: Serilog.Core.ILogEventPropertyFactory.html
+  - name: )
+  spec.vb:
+  - uid: Serilog.Core.ILogEventEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+    name: Enrich
+    isExternal: true
+    href: Serilog.Core.ILogEventEnricher.html#Serilog_Core_ILogEventEnricher_Enrich_Serilog_Events_LogEvent_Serilog_Core_ILogEventPropertyFactory_
+  - name: (
+  - uid: Serilog.Events.LogEvent
+    name: LogEvent
+    isExternal: true
+    href: Serilog.Events.LogEvent.html
+  - name: ','
+  - name: " "
+  - uid: Serilog.Core.ILogEventPropertyFactory
+    name: ILogEventPropertyFactory
+    isExternal: true
+    href: Serilog.Core.ILogEventPropertyFactory.html
+  - name: )
+- uid: Serilog.Events.LogEvent
+  commentId: T:Serilog.Events.LogEvent
+  parent: Serilog.Events
+  isExternal: true
+  href: Serilog.Events.LogEvent.html
+  name: LogEvent
+  nameWithType: LogEvent
+  fullName: Serilog.Events.LogEvent
+- uid: Serilog.Core.ILogEventPropertyFactory
+  commentId: T:Serilog.Core.ILogEventPropertyFactory
+  parent: Serilog.Core
+  isExternal: true
+  href: Serilog.Core.ILogEventPropertyFactory.html
+  name: ILogEventPropertyFactory
+  nameWithType: ILogEventPropertyFactory
+  fullName: Serilog.Core.ILogEventPropertyFactory
+- uid: Serilog.Events
+  commentId: N:Serilog.Events
+  isExternal: true
+  href: Serilog.html
+  name: Serilog.Events
+  nameWithType: Serilog.Events
+  fullName: Serilog.Events
+  spec.csharp:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+  spec.vb:
+  - uid: Serilog
+    name: Serilog
+    isExternal: true
+    href: Serilog.html
+  - name: .
+  - uid: Serilog.Events
+    name: Events
+    isExternal: true
+    href: Serilog.Events.html
+- uid: Serilog.Extensions.Logging.SerilogLoggerProvider.SetScopeProvider*
+  commentId: Overload:Serilog.Extensions.Logging.SerilogLoggerProvider.SetScopeProvider
+  isExternal: true
+  href: Serilog.Extensions.Logging.SerilogLoggerProvider.html#Serilog_Extensions_Logging_SerilogLoggerProvider_SetScopeProvider_Microsoft_Extensions_Logging_IExternalScopeProvider_
+  name: SetScopeProvider
+  nameWithType: SerilogLoggerProvider.SetScopeProvider
+  fullName: Serilog.Extensions.Logging.SerilogLoggerProvider.SetScopeProvider
+- uid: Microsoft.Extensions.Logging.ISupportExternalScope.SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider)
+  commentId: M:Microsoft.Extensions.Logging.ISupportExternalScope.SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider)
+  parent: Microsoft.Extensions.Logging.ISupportExternalScope
+  isExternal: true
+  href: Microsoft.Extensions.Logging.ISupportExternalScope.html#Microsoft_Extensions_Logging_ISupportExternalScope_SetScopeProvider_Microsoft_Extensions_Logging_IExternalScopeProvider_
+  name: SetScopeProvider(IExternalScopeProvider)
+  nameWithType: ISupportExternalScope.SetScopeProvider(IExternalScopeProvider)
+  fullName: Microsoft.Extensions.Logging.ISupportExternalScope.SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ISupportExternalScope.SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider)
+    name: SetScopeProvider
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ISupportExternalScope.html#Microsoft_Extensions_Logging_ISupportExternalScope_SetScopeProvider_Microsoft_Extensions_Logging_IExternalScopeProvider_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.IExternalScopeProvider
+    name: IExternalScopeProvider
+    isExternal: true
+    href: Microsoft.Extensions.Logging.IExternalScopeProvider.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ISupportExternalScope.SetScopeProvider(Microsoft.Extensions.Logging.IExternalScopeProvider)
+    name: SetScopeProvider
+    isExternal: true
+    href: Microsoft.Extensions.Logging.ISupportExternalScope.html#Microsoft_Extensions_Logging_ISupportExternalScope_SetScopeProvider_Microsoft_Extensions_Logging_IExternalScopeProvider_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.IExternalScopeProvider
+    name: IExternalScopeProvider
+    isExternal: true
+    href: Microsoft.Extensions.Logging.IExternalScopeProvider.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.IExternalScopeProvider
+  commentId: T:Microsoft.Extensions.Logging.IExternalScopeProvider
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: Microsoft.Extensions.Logging.IExternalScopeProvider.html
+  name: IExternalScopeProvider
+  nameWithType: IExternalScopeProvider
+  fullName: Microsoft.Extensions.Logging.IExternalScopeProvider
+- uid: Serilog.Extensions.Logging.SerilogLoggerProvider.Dispose*
+  commentId: Overload:Serilog.Extensions.Logging.SerilogLoggerProvider.Dispose
+  isExternal: true
+  href: Serilog.Extensions.Logging.SerilogLoggerProvider.html#Serilog_Extensions_Logging_SerilogLoggerProvider_Dispose
+  name: Dispose
+  nameWithType: SerilogLoggerProvider.Dispose
+  fullName: Serilog.Extensions.Logging.SerilogLoggerProvider.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

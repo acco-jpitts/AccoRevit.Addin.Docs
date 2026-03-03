@@ -1,0 +1,1171 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+  commentId: T:Microsoft.Extensions.Hosting.IHostApplicationBuilder
+  id: IHostApplicationBuilder
+  parent: Microsoft.Extensions.Hosting
+  children:
+  - Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration
+  - Microsoft.Extensions.Hosting.IHostApplicationBuilder.ConfigureContainer``1(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{``0},System.Action{``0})
+  - Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment
+  - Microsoft.Extensions.Hosting.IHostApplicationBuilder.Logging
+  - Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics
+  - Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties
+  - Microsoft.Extensions.Hosting.IHostApplicationBuilder.Services
+  langs:
+  - csharp
+  - vb
+  name: IHostApplicationBuilder
+  nameWithType: IHostApplicationBuilder
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+  type: Interface
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Hosting
+  syntax:
+    content: public interface IHostApplicationBuilder
+    content.vb: Public Interface IHostApplicationBuilder
+  derivedClasses:
+  - Microsoft.Extensions.Hosting.HostApplicationBuilder
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.ConfigureContainer``1(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{``0},System.Action{``0})
+  commentId: M:Microsoft.Extensions.Hosting.IHostApplicationBuilder.ConfigureContainer``1(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{``0},System.Action{``0})
+  id: ConfigureContainer``1(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{``0},System.Action{``0})
+  parent: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: ConfigureContainer<TContainerBuilder>(IServiceProviderFactory<TContainerBuilder>, Action<TContainerBuilder>?)
+  nameWithType: IHostApplicationBuilder.ConfigureContainer<TContainerBuilder>(IServiceProviderFactory<TContainerBuilder>, Action<TContainerBuilder>?)
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.ConfigureContainer<TContainerBuilder>(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory<TContainerBuilder>, System.Action<TContainerBuilder>?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Hosting
+  syntax:
+    content: 'void ConfigureContainer<TContainerBuilder>(IServiceProviderFactory<TContainerBuilder> factory, Action<TContainerBuilder>? configure = null) where TContainerBuilder : notnull'
+    parameters:
+    - id: factory
+      type: Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{{TContainerBuilder}}
+    - id: configure
+      type: System.Action{{TContainerBuilder}}
+    typeParameters:
+    - id: TContainerBuilder
+    content.vb: Sub ConfigureContainer(Of TContainerBuilder)(factory As IServiceProviderFactory(Of TContainerBuilder), configure As Action(Of TContainerBuilder) = Nothing)
+  overload: Microsoft.Extensions.Hosting.IHostApplicationBuilder.ConfigureContainer*
+  nameWithType.vb: IHostApplicationBuilder.ConfigureContainer(Of TContainerBuilder)(IServiceProviderFactory(Of TContainerBuilder), Action(Of TContainerBuilder))
+  fullName.vb: Microsoft.Extensions.Hosting.IHostApplicationBuilder.ConfigureContainer(Of TContainerBuilder)(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory(Of TContainerBuilder), System.Action(Of TContainerBuilder))
+  name.vb: ConfigureContainer(Of TContainerBuilder)(IServiceProviderFactory(Of TContainerBuilder), Action(Of TContainerBuilder))
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties
+  commentId: P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties
+  id: Properties
+  parent: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: Properties
+  nameWithType: IHostApplicationBuilder.Properties
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Hosting
+  syntax:
+    content: IDictionary<object, object> Properties { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IDictionary{System.Object,System.Object}
+    content.vb: ReadOnly Property Properties As IDictionary(Of Object, Object)
+  overload: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties*
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration
+  commentId: P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration
+  id: Configuration
+  parent: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: Configuration
+  nameWithType: IHostApplicationBuilder.Configuration
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Hosting
+  syntax:
+    content: IConfigurationManager Configuration { get; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.Configuration.IConfigurationManager
+    content.vb: ReadOnly Property Configuration As IConfigurationManager
+  overload: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration*
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment
+  commentId: P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment
+  id: Environment
+  parent: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: Environment
+  nameWithType: IHostApplicationBuilder.Environment
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Hosting
+  syntax:
+    content: IHostEnvironment Environment { get; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.Hosting.IHostEnvironment
+    content.vb: ReadOnly Property Environment As IHostEnvironment
+  overload: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment*
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Logging
+  commentId: P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Logging
+  id: Logging
+  parent: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: Logging
+  nameWithType: IHostApplicationBuilder.Logging
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Logging
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Hosting
+  syntax:
+    content: ILoggingBuilder Logging { get; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.Logging.ILoggingBuilder
+    content.vb: ReadOnly Property Logging As ILoggingBuilder
+  overload: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Logging*
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics
+  commentId: P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics
+  id: Metrics
+  parent: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: Metrics
+  nameWithType: IHostApplicationBuilder.Metrics
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Hosting
+  syntax:
+    content: IMetricsBuilder Metrics { get; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder
+    content.vb: ReadOnly Property Metrics As IMetricsBuilder
+  overload: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics*
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Services
+  commentId: P:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Services
+  id: Services
+  parent: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+  langs:
+  - csharp
+  - vb
+  name: Services
+  nameWithType: IHostApplicationBuilder.Services
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Services
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Hosting
+  syntax:
+    content: IServiceCollection Services { get; }
+    parameters: []
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: ReadOnly Property Services As IServiceCollection
+  overload: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Services*
+references:
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: Microsoft.Extensions.Hosting.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: Microsoft.Extensions.Hosting.html
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.ConfigureContainer*
+  commentId: Overload:Microsoft.Extensions.Hosting.IHostApplicationBuilder.ConfigureContainer
+  isExternal: true
+  href: Microsoft.Extensions.Hosting.IHostApplicationBuilder.html#Microsoft_Extensions_Hosting_IHostApplicationBuilder_ConfigureContainer__1_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory___0__System_Action___0__
+  name: ConfigureContainer
+  nameWithType: IHostApplicationBuilder.ConfigureContainer
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.ConfigureContainer
+- uid: Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{{TContainerBuilder}}
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{``0}
+  parent: Microsoft.Extensions.DependencyInjection
+  definition: Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iserviceproviderfactory-1
+  name: IServiceProviderFactory<TContainerBuilder>
+  nameWithType: IServiceProviderFactory<TContainerBuilder>
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceProviderFactory<TContainerBuilder>
+  nameWithType.vb: IServiceProviderFactory(Of TContainerBuilder)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.IServiceProviderFactory(Of TContainerBuilder)
+  name.vb: IServiceProviderFactory(Of TContainerBuilder)
+  spec.csharp:
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1
+    name: IServiceProviderFactory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iserviceproviderfactory-1
+  - name: <
+  - name: TContainerBuilder
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1
+    name: IServiceProviderFactory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iserviceproviderfactory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContainerBuilder
+  - name: )
+- uid: System.Action{{TContainerBuilder}}
+  commentId: T:System.Action{``0}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<TContainerBuilder>
+  nameWithType: Action<TContainerBuilder>
+  fullName: System.Action<TContainerBuilder>
+  nameWithType.vb: Action(Of TContainerBuilder)
+  fullName.vb: System.Action(Of TContainerBuilder)
+  name.vb: Action(Of TContainerBuilder)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TContainerBuilder
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContainerBuilder
+  - name: )
+- uid: Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iserviceproviderfactory-1
+  name: IServiceProviderFactory<TContainerBuilder>
+  nameWithType: IServiceProviderFactory<TContainerBuilder>
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceProviderFactory<TContainerBuilder>
+  nameWithType.vb: IServiceProviderFactory(Of TContainerBuilder)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.IServiceProviderFactory(Of TContainerBuilder)
+  name.vb: IServiceProviderFactory(Of TContainerBuilder)
+  spec.csharp:
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1
+    name: IServiceProviderFactory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iserviceproviderfactory-1
+  - name: <
+  - name: TContainerBuilder
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceProviderFactory`1
+    name: IServiceProviderFactory
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iserviceproviderfactory-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TContainerBuilder
+  - name: )
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties*
+  commentId: Overload:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties
+  isExternal: true
+  href: Microsoft.Extensions.Hosting.IHostApplicationBuilder.html#Microsoft_Extensions_Hosting_IHostApplicationBuilder_Properties
+  name: Properties
+  nameWithType: IHostApplicationBuilder.Properties
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Properties
+- uid: System.Collections.Generic.IDictionary{System.Object,System.Object}
+  commentId: T:System.Collections.Generic.IDictionary{System.Object,System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IDictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<object, object>
+  nameWithType: IDictionary<object, object>
+  fullName: System.Collections.Generic.IDictionary<object, object>
+  nameWithType.vb: IDictionary(Of Object, Object)
+  fullName.vb: System.Collections.Generic.IDictionary(Of Object, Object)
+  name.vb: IDictionary(Of Object, Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IDictionary`2
+  commentId: T:System.Collections.Generic.IDictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  name: IDictionary<TKey, TValue>
+  nameWithType: IDictionary<TKey, TValue>
+  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
+  nameWithType.vb: IDictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
+  name.vb: IDictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IDictionary`2
+    name: IDictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration*
+  commentId: Overload:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration
+  isExternal: true
+  href: Microsoft.Extensions.Hosting.IHostApplicationBuilder.html#Microsoft_Extensions_Hosting_IHostApplicationBuilder_Configuration
+  name: Configuration
+  nameWithType: IHostApplicationBuilder.Configuration
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Configuration
+- uid: Microsoft.Extensions.Configuration.IConfigurationManager
+  commentId: T:Microsoft.Extensions.Configuration.IConfigurationManager
+  parent: Microsoft.Extensions.Configuration
+  isExternal: true
+  href: Microsoft.Extensions.Configuration.IConfigurationManager.html
+  name: IConfigurationManager
+  nameWithType: IConfigurationManager
+  fullName: Microsoft.Extensions.Configuration.IConfigurationManager
+- uid: Microsoft.Extensions.Configuration
+  commentId: N:Microsoft.Extensions.Configuration
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Extensions.Configuration
+  nameWithType: Microsoft.Extensions.Configuration
+  fullName: Microsoft.Extensions.Configuration
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: Microsoft.Extensions.Configuration.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Configuration
+    name: Configuration
+    isExternal: true
+    href: Microsoft.Extensions.Configuration.html
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment*
+  commentId: Overload:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment
+  isExternal: true
+  href: Microsoft.Extensions.Hosting.IHostApplicationBuilder.html#Microsoft_Extensions_Hosting_IHostApplicationBuilder_Environment
+  name: Environment
+  nameWithType: IHostApplicationBuilder.Environment
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Environment
+- uid: Microsoft.Extensions.Hosting.IHostEnvironment
+  commentId: T:Microsoft.Extensions.Hosting.IHostEnvironment
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: Microsoft.Extensions.Hosting.IHostEnvironment.html
+  name: IHostEnvironment
+  nameWithType: IHostEnvironment
+  fullName: Microsoft.Extensions.Hosting.IHostEnvironment
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Logging*
+  commentId: Overload:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Logging
+  isExternal: true
+  href: Microsoft.Extensions.Hosting.IHostApplicationBuilder.html#Microsoft_Extensions_Hosting_IHostApplicationBuilder_Logging
+  name: Logging
+  nameWithType: IHostApplicationBuilder.Logging
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Logging
+- uid: Microsoft.Extensions.Logging.ILoggingBuilder
+  commentId: T:Microsoft.Extensions.Logging.ILoggingBuilder
+  parent: Microsoft.Extensions.Logging
+  isExternal: true
+  href: Microsoft.Extensions.Logging.ILoggingBuilder.html
+  name: ILoggingBuilder
+  nameWithType: ILoggingBuilder
+  fullName: Microsoft.Extensions.Logging.ILoggingBuilder
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.Extensions.Logging.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: Microsoft.Extensions.Logging.html
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics*
+  commentId: Overload:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics
+  isExternal: true
+  href: Microsoft.Extensions.Hosting.IHostApplicationBuilder.html#Microsoft_Extensions_Hosting_IHostApplicationBuilder_Metrics
+  name: Metrics
+  nameWithType: IHostApplicationBuilder.Metrics
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Metrics
+- uid: Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder
+  commentId: T:Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder
+  parent: Microsoft.Extensions.Diagnostics.Metrics
+  isExternal: true
+  href: Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder.html
+  name: IMetricsBuilder
+  nameWithType: IMetricsBuilder
+  fullName: Microsoft.Extensions.Diagnostics.Metrics.IMetricsBuilder
+- uid: Microsoft.Extensions.Diagnostics.Metrics
+  commentId: N:Microsoft.Extensions.Diagnostics.Metrics
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Extensions.Diagnostics.Metrics
+  nameWithType: Microsoft.Extensions.Diagnostics.Metrics
+  fullName: Microsoft.Extensions.Diagnostics.Metrics
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Microsoft.Extensions.Diagnostics.html
+  - name: .
+  - uid: Microsoft.Extensions.Diagnostics.Metrics
+    name: Metrics
+    isExternal: true
+    href: Microsoft.Extensions.Diagnostics.Metrics.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Microsoft.Extensions.Diagnostics.html
+  - name: .
+  - uid: Microsoft.Extensions.Diagnostics.Metrics
+    name: Metrics
+    isExternal: true
+    href: Microsoft.Extensions.Diagnostics.Metrics.html
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Services*
+  commentId: Overload:Microsoft.Extensions.Hosting.IHostApplicationBuilder.Services
+  isExternal: true
+  href: Microsoft.Extensions.Hosting.IHostApplicationBuilder.html#Microsoft_Extensions_Hosting_IHostApplicationBuilder_Services
+  name: Services
+  nameWithType: IHostApplicationBuilder.Services
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder.Services
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection

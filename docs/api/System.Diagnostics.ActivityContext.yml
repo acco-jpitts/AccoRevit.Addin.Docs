@@ -1,0 +1,1401 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Diagnostics.ActivityContext
+  commentId: T:System.Diagnostics.ActivityContext
+  id: ActivityContext
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.ActivityContext.#ctor(System.Diagnostics.ActivityTraceId,System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivityTraceFlags,System.String,System.Boolean)
+  - System.Diagnostics.ActivityContext.Equals(System.Diagnostics.ActivityContext)
+  - System.Diagnostics.ActivityContext.Equals(System.Object)
+  - System.Diagnostics.ActivityContext.GetHashCode
+  - System.Diagnostics.ActivityContext.IsRemote
+  - System.Diagnostics.ActivityContext.Parse(System.String,System.String)
+  - System.Diagnostics.ActivityContext.SpanId
+  - System.Diagnostics.ActivityContext.TraceFlags
+  - System.Diagnostics.ActivityContext.TraceId
+  - System.Diagnostics.ActivityContext.TraceState
+  - System.Diagnostics.ActivityContext.TryParse(System.String,System.String,System.Boolean,System.Diagnostics.ActivityContext@)
+  - System.Diagnostics.ActivityContext.TryParse(System.String,System.String,System.Diagnostics.ActivityContext@)
+  - System.Diagnostics.ActivityContext.op_Equality(System.Diagnostics.ActivityContext,System.Diagnostics.ActivityContext)
+  - System.Diagnostics.ActivityContext.op_Inequality(System.Diagnostics.ActivityContext,System.Diagnostics.ActivityContext)
+  langs:
+  - csharp
+  - vb
+  name: ActivityContext
+  nameWithType: ActivityContext
+  fullName: System.Diagnostics.ActivityContext
+  type: Struct
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: 'public readonly struct ActivityContext : IEquatable<ActivityContext>'
+    content.vb: Public Structure ActivityContext Implements IEquatable(Of ActivityContext)
+  implements:
+  - System.IEquatable{System.Diagnostics.ActivityContext}
+  inheritedMembers:
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: System.Diagnostics.ActivityContext.#ctor(System.Diagnostics.ActivityTraceId,System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivityTraceFlags,System.String,System.Boolean)
+  commentId: M:System.Diagnostics.ActivityContext.#ctor(System.Diagnostics.ActivityTraceId,System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivityTraceFlags,System.String,System.Boolean)
+  id: '#ctor(System.Diagnostics.ActivityTraceId,System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivityTraceFlags,System.String,System.Boolean)'
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: ActivityContext(ActivityTraceId, ActivitySpanId, ActivityTraceFlags, string?, bool)
+  nameWithType: ActivityContext.ActivityContext(ActivityTraceId, ActivitySpanId, ActivityTraceFlags, string?, bool)
+  fullName: System.Diagnostics.ActivityContext.ActivityContext(System.Diagnostics.ActivityTraceId, System.Diagnostics.ActivitySpanId, System.Diagnostics.ActivityTraceFlags, string?, bool)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public ActivityContext(ActivityTraceId traceId, ActivitySpanId spanId, ActivityTraceFlags traceFlags, string? traceState = null, bool isRemote = false)
+    parameters:
+    - id: traceId
+      type: System.Diagnostics.ActivityTraceId
+    - id: spanId
+      type: System.Diagnostics.ActivitySpanId
+    - id: traceFlags
+      type: System.Diagnostics.ActivityTraceFlags
+    - id: traceState
+      type: System.String
+    - id: isRemote
+      type: System.Boolean
+    content.vb: Public Sub New(traceId As ActivityTraceId, spanId As ActivitySpanId, traceFlags As ActivityTraceFlags, traceState As String = Nothing, isRemote As Boolean = False)
+  overload: System.Diagnostics.ActivityContext.#ctor*
+  nameWithType.vb: ActivityContext.New(ActivityTraceId, ActivitySpanId, ActivityTraceFlags, String, Boolean)
+  fullName.vb: System.Diagnostics.ActivityContext.New(System.Diagnostics.ActivityTraceId, System.Diagnostics.ActivitySpanId, System.Diagnostics.ActivityTraceFlags, String, Boolean)
+  name.vb: New(ActivityTraceId, ActivitySpanId, ActivityTraceFlags, String, Boolean)
+- uid: System.Diagnostics.ActivityContext.TryParse(System.String,System.String,System.Boolean,System.Diagnostics.ActivityContext@)
+  commentId: M:System.Diagnostics.ActivityContext.TryParse(System.String,System.String,System.Boolean,System.Diagnostics.ActivityContext@)
+  id: TryParse(System.String,System.String,System.Boolean,System.Diagnostics.ActivityContext@)
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: TryParse(string?, string?, bool, out ActivityContext)
+  nameWithType: ActivityContext.TryParse(string?, string?, bool, out ActivityContext)
+  fullName: System.Diagnostics.ActivityContext.TryParse(string?, string?, bool, out System.Diagnostics.ActivityContext)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static bool TryParse(string? traceParent, string? traceState, bool isRemote, out ActivityContext context)
+    parameters:
+    - id: traceParent
+      type: System.String
+    - id: traceState
+      type: System.String
+    - id: isRemote
+      type: System.Boolean
+    - id: context
+      type: System.Diagnostics.ActivityContext
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryParse(traceParent As String, traceState As String, isRemote As Boolean, context As ActivityContext) As Boolean
+  overload: System.Diagnostics.ActivityContext.TryParse*
+  nameWithType.vb: ActivityContext.TryParse(String, String, Boolean, ActivityContext)
+  fullName.vb: System.Diagnostics.ActivityContext.TryParse(String, String, Boolean, System.Diagnostics.ActivityContext)
+  name.vb: TryParse(String, String, Boolean, ActivityContext)
+- uid: System.Diagnostics.ActivityContext.TryParse(System.String,System.String,System.Diagnostics.ActivityContext@)
+  commentId: M:System.Diagnostics.ActivityContext.TryParse(System.String,System.String,System.Diagnostics.ActivityContext@)
+  id: TryParse(System.String,System.String,System.Diagnostics.ActivityContext@)
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: TryParse(string?, string?, out ActivityContext)
+  nameWithType: ActivityContext.TryParse(string?, string?, out ActivityContext)
+  fullName: System.Diagnostics.ActivityContext.TryParse(string?, string?, out System.Diagnostics.ActivityContext)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static bool TryParse(string? traceParent, string? traceState, out ActivityContext context)
+    parameters:
+    - id: traceParent
+      type: System.String
+    - id: traceState
+      type: System.String
+    - id: context
+      type: System.Diagnostics.ActivityContext
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function TryParse(traceParent As String, traceState As String, context As ActivityContext) As Boolean
+  overload: System.Diagnostics.ActivityContext.TryParse*
+  nameWithType.vb: ActivityContext.TryParse(String, String, ActivityContext)
+  fullName.vb: System.Diagnostics.ActivityContext.TryParse(String, String, System.Diagnostics.ActivityContext)
+  name.vb: TryParse(String, String, ActivityContext)
+- uid: System.Diagnostics.ActivityContext.Parse(System.String,System.String)
+  commentId: M:System.Diagnostics.ActivityContext.Parse(System.String,System.String)
+  id: Parse(System.String,System.String)
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: Parse(string, string?)
+  nameWithType: ActivityContext.Parse(string, string?)
+  fullName: System.Diagnostics.ActivityContext.Parse(string, string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static ActivityContext Parse(string traceParent, string? traceState)
+    parameters:
+    - id: traceParent
+      type: System.String
+    - id: traceState
+      type: System.String
+    return:
+      type: System.Diagnostics.ActivityContext
+    content.vb: Public Shared Function Parse(traceParent As String, traceState As String) As ActivityContext
+  overload: System.Diagnostics.ActivityContext.Parse*
+  nameWithType.vb: ActivityContext.Parse(String, String)
+  fullName.vb: System.Diagnostics.ActivityContext.Parse(String, String)
+  name.vb: Parse(String, String)
+- uid: System.Diagnostics.ActivityContext.Equals(System.Diagnostics.ActivityContext)
+  commentId: M:System.Diagnostics.ActivityContext.Equals(System.Diagnostics.ActivityContext)
+  id: Equals(System.Diagnostics.ActivityContext)
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: Equals(ActivityContext)
+  nameWithType: ActivityContext.Equals(ActivityContext)
+  fullName: System.Diagnostics.ActivityContext.Equals(System.Diagnostics.ActivityContext)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  example: []
+  syntax:
+    content: public bool Equals(ActivityContext value)
+    parameters:
+    - id: value
+      type: System.Diagnostics.ActivityContext
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(value As ActivityContext) As Boolean
+  overload: System.Diagnostics.ActivityContext.Equals*
+  implements:
+  - System.IEquatable{System.Diagnostics.ActivityContext}.Equals(System.Diagnostics.ActivityContext)
+- uid: System.Diagnostics.ActivityContext.Equals(System.Object)
+  commentId: M:System.Diagnostics.ActivityContext.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: ActivityContext.Equals(object?)
+  fullName: System.Diagnostics.ActivityContext.Equals(object?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: System.Diagnostics.ActivityContext.Equals*
+  nameWithType.vb: ActivityContext.Equals(Object)
+  fullName.vb: System.Diagnostics.ActivityContext.Equals(Object)
+  name.vb: Equals(Object)
+- uid: System.Diagnostics.ActivityContext.op_Equality(System.Diagnostics.ActivityContext,System.Diagnostics.ActivityContext)
+  commentId: M:System.Diagnostics.ActivityContext.op_Equality(System.Diagnostics.ActivityContext,System.Diagnostics.ActivityContext)
+  id: op_Equality(System.Diagnostics.ActivityContext,System.Diagnostics.ActivityContext)
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: operator ==(ActivityContext, ActivityContext)
+  nameWithType: ActivityContext.operator ==(ActivityContext, ActivityContext)
+  fullName: System.Diagnostics.ActivityContext.operator ==(System.Diagnostics.ActivityContext, System.Diagnostics.ActivityContext)
+  type: Operator
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static bool operator ==(ActivityContext left, ActivityContext right)
+    parameters:
+    - id: left
+      type: System.Diagnostics.ActivityContext
+    - id: right
+      type: System.Diagnostics.ActivityContext
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As ActivityContext, right As ActivityContext) As Boolean
+  overload: System.Diagnostics.ActivityContext.op_Equality*
+  nameWithType.vb: ActivityContext.=(ActivityContext, ActivityContext)
+  fullName.vb: System.Diagnostics.ActivityContext.=(System.Diagnostics.ActivityContext, System.Diagnostics.ActivityContext)
+  name.vb: =(ActivityContext, ActivityContext)
+- uid: System.Diagnostics.ActivityContext.op_Inequality(System.Diagnostics.ActivityContext,System.Diagnostics.ActivityContext)
+  commentId: M:System.Diagnostics.ActivityContext.op_Inequality(System.Diagnostics.ActivityContext,System.Diagnostics.ActivityContext)
+  id: op_Inequality(System.Diagnostics.ActivityContext,System.Diagnostics.ActivityContext)
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: operator !=(ActivityContext, ActivityContext)
+  nameWithType: ActivityContext.operator !=(ActivityContext, ActivityContext)
+  fullName: System.Diagnostics.ActivityContext.operator !=(System.Diagnostics.ActivityContext, System.Diagnostics.ActivityContext)
+  type: Operator
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static bool operator !=(ActivityContext left, ActivityContext right)
+    parameters:
+    - id: left
+      type: System.Diagnostics.ActivityContext
+    - id: right
+      type: System.Diagnostics.ActivityContext
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As ActivityContext, right As ActivityContext) As Boolean
+  overload: System.Diagnostics.ActivityContext.op_Inequality*
+  nameWithType.vb: ActivityContext.<>(ActivityContext, ActivityContext)
+  fullName.vb: System.Diagnostics.ActivityContext.<>(System.Diagnostics.ActivityContext, System.Diagnostics.ActivityContext)
+  name.vb: <>(ActivityContext, ActivityContext)
+- uid: System.Diagnostics.ActivityContext.GetHashCode
+  commentId: M:System.Diagnostics.ActivityContext.GetHashCode
+  id: GetHashCode
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ActivityContext.GetHashCode()
+  fullName: System.Diagnostics.ActivityContext.GetHashCode()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: System.Diagnostics.ActivityContext.GetHashCode*
+- uid: System.Diagnostics.ActivityContext.TraceId
+  commentId: P:System.Diagnostics.ActivityContext.TraceId
+  id: TraceId
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: TraceId
+  nameWithType: ActivityContext.TraceId
+  fullName: System.Diagnostics.ActivityContext.TraceId
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public ActivityTraceId TraceId { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivityTraceId
+    content.vb: Public ReadOnly Property TraceId As ActivityTraceId
+  overload: System.Diagnostics.ActivityContext.TraceId*
+- uid: System.Diagnostics.ActivityContext.SpanId
+  commentId: P:System.Diagnostics.ActivityContext.SpanId
+  id: SpanId
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: SpanId
+  nameWithType: ActivityContext.SpanId
+  fullName: System.Diagnostics.ActivityContext.SpanId
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public ActivitySpanId SpanId { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivitySpanId
+    content.vb: Public ReadOnly Property SpanId As ActivitySpanId
+  overload: System.Diagnostics.ActivityContext.SpanId*
+- uid: System.Diagnostics.ActivityContext.TraceFlags
+  commentId: P:System.Diagnostics.ActivityContext.TraceFlags
+  id: TraceFlags
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: TraceFlags
+  nameWithType: ActivityContext.TraceFlags
+  fullName: System.Diagnostics.ActivityContext.TraceFlags
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public ActivityTraceFlags TraceFlags { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivityTraceFlags
+    content.vb: Public ReadOnly Property TraceFlags As ActivityTraceFlags
+  overload: System.Diagnostics.ActivityContext.TraceFlags*
+- uid: System.Diagnostics.ActivityContext.TraceState
+  commentId: P:System.Diagnostics.ActivityContext.TraceState
+  id: TraceState
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: TraceState
+  nameWithType: ActivityContext.TraceState
+  fullName: System.Diagnostics.ActivityContext.TraceState
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public string? TraceState { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property TraceState As String
+  overload: System.Diagnostics.ActivityContext.TraceState*
+- uid: System.Diagnostics.ActivityContext.IsRemote
+  commentId: P:System.Diagnostics.ActivityContext.IsRemote
+  id: IsRemote
+  parent: System.Diagnostics.ActivityContext
+  langs:
+  - csharp
+  - vb
+  name: IsRemote
+  nameWithType: ActivityContext.IsRemote
+  fullName: System.Diagnostics.ActivityContext.IsRemote
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public bool IsRemote { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsRemote As Boolean
+  overload: System.Diagnostics.ActivityContext.IsRemote*
+references:
+- uid: System.Diagnostics
+  commentId: N:System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Diagnostics
+  nameWithType: System.Diagnostics
+  fullName: System.Diagnostics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+- uid: System.IEquatable{System.Diagnostics.ActivityContext}
+  commentId: T:System.IEquatable{System.Diagnostics.ActivityContext}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ActivityContext>
+  nameWithType: IEquatable<ActivityContext>
+  fullName: System.IEquatable<System.Diagnostics.ActivityContext>
+  nameWithType.vb: IEquatable(Of ActivityContext)
+  fullName.vb: System.IEquatable(Of System.Diagnostics.ActivityContext)
+  name.vb: IEquatable(Of ActivityContext)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.Diagnostics.ActivityContext
+    name: ActivityContext
+    isExternal: true
+    href: System.Diagnostics.ActivityContext.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Diagnostics.ActivityContext
+    name: ActivityContext
+    isExternal: true
+    href: System.Diagnostics.ActivityContext.html
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: System.Diagnostics.ActivityContext.#ctor*
+  commentId: Overload:System.Diagnostics.ActivityContext.#ctor
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext__ctor_System_Diagnostics_ActivityTraceId_System_Diagnostics_ActivitySpanId_System_Diagnostics_ActivityTraceFlags_System_String_System_Boolean_
+  name: ActivityContext
+  nameWithType: ActivityContext.ActivityContext
+  fullName: System.Diagnostics.ActivityContext.ActivityContext
+  nameWithType.vb: ActivityContext.New
+  fullName.vb: System.Diagnostics.ActivityContext.New
+  name.vb: New
+- uid: System.Diagnostics.ActivityTraceId
+  commentId: T:System.Diagnostics.ActivityTraceId
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivityTraceId.html
+  name: ActivityTraceId
+  nameWithType: ActivityTraceId
+  fullName: System.Diagnostics.ActivityTraceId
+- uid: System.Diagnostics.ActivitySpanId
+  commentId: T:System.Diagnostics.ActivitySpanId
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html
+  name: ActivitySpanId
+  nameWithType: ActivitySpanId
+  fullName: System.Diagnostics.ActivitySpanId
+- uid: System.Diagnostics.ActivityTraceFlags
+  commentId: T:System.Diagnostics.ActivityTraceFlags
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivityTraceFlags.html
+  name: ActivityTraceFlags
+  nameWithType: ActivityTraceFlags
+  fullName: System.Diagnostics.ActivityTraceFlags
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Diagnostics.ActivityContext.TryParse*
+  commentId: Overload:System.Diagnostics.ActivityContext.TryParse
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext_TryParse_System_String_System_String_System_Boolean_System_Diagnostics_ActivityContext__
+  name: TryParse
+  nameWithType: ActivityContext.TryParse
+  fullName: System.Diagnostics.ActivityContext.TryParse
+- uid: System.Diagnostics.ActivityContext
+  commentId: T:System.Diagnostics.ActivityContext
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html
+  name: ActivityContext
+  nameWithType: ActivityContext
+  fullName: System.Diagnostics.ActivityContext
+- uid: System.Diagnostics.ActivityContext.Parse*
+  commentId: Overload:System.Diagnostics.ActivityContext.Parse
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext_Parse_System_String_System_String_
+  name: Parse
+  nameWithType: ActivityContext.Parse
+  fullName: System.Diagnostics.ActivityContext.Parse
+- uid: System.Diagnostics.ActivityContext.Equals*
+  commentId: Overload:System.Diagnostics.ActivityContext.Equals
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext_Equals_System_Diagnostics_ActivityContext_
+  name: Equals
+  nameWithType: ActivityContext.Equals
+  fullName: System.Diagnostics.ActivityContext.Equals
+- uid: System.IEquatable{System.Diagnostics.ActivityContext}.Equals(System.Diagnostics.ActivityContext)
+  commentId: M:System.IEquatable{System.Diagnostics.ActivityContext}.Equals(System.Diagnostics.ActivityContext)
+  parent: System.IEquatable{System.Diagnostics.ActivityContext}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ActivityContext)
+  nameWithType: IEquatable<ActivityContext>.Equals(ActivityContext)
+  fullName: System.IEquatable<System.Diagnostics.ActivityContext>.Equals(System.Diagnostics.ActivityContext)
+  nameWithType.vb: IEquatable(Of ActivityContext).Equals(ActivityContext)
+  fullName.vb: System.IEquatable(Of System.Diagnostics.ActivityContext).Equals(System.Diagnostics.ActivityContext)
+  spec.csharp:
+  - uid: System.IEquatable{System.Diagnostics.ActivityContext}.Equals(System.Diagnostics.ActivityContext)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Diagnostics.ActivityContext
+    name: ActivityContext
+    isExternal: true
+    href: System.Diagnostics.ActivityContext.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.Diagnostics.ActivityContext}.Equals(System.Diagnostics.ActivityContext)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Diagnostics.ActivityContext
+    name: ActivityContext
+    isExternal: true
+    href: System.Diagnostics.ActivityContext.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Diagnostics.ActivityContext.op_Equality*
+  commentId: Overload:System.Diagnostics.ActivityContext.op_Equality
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext_op_Equality_System_Diagnostics_ActivityContext_System_Diagnostics_ActivityContext_
+  name: operator ==
+  nameWithType: ActivityContext.operator ==
+  fullName: System.Diagnostics.ActivityContext.operator ==
+  nameWithType.vb: ActivityContext.=
+  fullName.vb: System.Diagnostics.ActivityContext.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Diagnostics.ActivityContext.op_Equality*
+    name: ==
+    isExternal: true
+    href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext_op_Equality_System_Diagnostics_ActivityContext_System_Diagnostics_ActivityContext_
+- uid: System.Diagnostics.ActivityContext.op_Inequality*
+  commentId: Overload:System.Diagnostics.ActivityContext.op_Inequality
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext_op_Inequality_System_Diagnostics_ActivityContext_System_Diagnostics_ActivityContext_
+  name: operator !=
+  nameWithType: ActivityContext.operator !=
+  fullName: System.Diagnostics.ActivityContext.operator !=
+  nameWithType.vb: ActivityContext.<>
+  fullName.vb: System.Diagnostics.ActivityContext.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Diagnostics.ActivityContext.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext_op_Inequality_System_Diagnostics_ActivityContext_System_Diagnostics_ActivityContext_
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Diagnostics.ActivityContext.GetHashCode*
+  commentId: Overload:System.Diagnostics.ActivityContext.GetHashCode
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext_GetHashCode
+  name: GetHashCode
+  nameWithType: ActivityContext.GetHashCode
+  fullName: System.Diagnostics.ActivityContext.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Diagnostics.ActivityContext.TraceId*
+  commentId: Overload:System.Diagnostics.ActivityContext.TraceId
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext_TraceId
+  name: TraceId
+  nameWithType: ActivityContext.TraceId
+  fullName: System.Diagnostics.ActivityContext.TraceId
+- uid: System.Diagnostics.ActivityContext.SpanId*
+  commentId: Overload:System.Diagnostics.ActivityContext.SpanId
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext_SpanId
+  name: SpanId
+  nameWithType: ActivityContext.SpanId
+  fullName: System.Diagnostics.ActivityContext.SpanId
+- uid: System.Diagnostics.ActivityContext.TraceFlags*
+  commentId: Overload:System.Diagnostics.ActivityContext.TraceFlags
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext_TraceFlags
+  name: TraceFlags
+  nameWithType: ActivityContext.TraceFlags
+  fullName: System.Diagnostics.ActivityContext.TraceFlags
+- uid: System.Diagnostics.ActivityContext.TraceState*
+  commentId: Overload:System.Diagnostics.ActivityContext.TraceState
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext_TraceState
+  name: TraceState
+  nameWithType: ActivityContext.TraceState
+  fullName: System.Diagnostics.ActivityContext.TraceState
+- uid: System.Diagnostics.ActivityContext.IsRemote*
+  commentId: Overload:System.Diagnostics.ActivityContext.IsRemote
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html#System_Diagnostics_ActivityContext_IsRemote
+  name: IsRemote
+  nameWithType: ActivityContext.IsRemote
+  fullName: System.Diagnostics.ActivityContext.IsRemote

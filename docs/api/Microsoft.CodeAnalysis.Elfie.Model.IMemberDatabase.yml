@@ -1,0 +1,1869 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  id: IMemberDatabase
+  parent: Microsoft.CodeAnalysis.Elfie.Model
+  children:
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.DeclaredMembers
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetAssemblyName(System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetFrameworkTargets(System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberCharInLine(System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFileLine(System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFilePath(System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberModifiers(System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberParameters(System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberType(System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageName(System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageVersion(System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPopularityRank(System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.Index
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.SetLocation(System.Int32,System.String,System.UInt16,System.UInt16)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.StringStore
+  langs:
+  - csharp
+  - vb
+  name: IMemberDatabase
+  nameWithType: IMemberDatabase
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  type: Interface
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: 'public interface IMemberDatabase : IStatistics'
+    content.vb: Public Interface IMemberDatabase Inherits IStatistics
+  derivedClasses:
+  - Microsoft.CodeAnalysis.Elfie.Model.AddReferenceDatabase
+  - Microsoft.CodeAnalysis.Elfie.Model.PackageDatabase
+  inheritedMembers:
+  - Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.Count
+  - Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.Bytes
+  extensionMethods:
+  - Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(System.String)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+  - Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageName(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageName(System.Int32)
+  id: GetPackageName(System.Int32)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetPackageName(int)
+  nameWithType: IMemberDatabase.GetPackageName(int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageName(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: String8 GetPackageName(int memberIndex)
+    parameters:
+    - id: memberIndex
+      type: System.Int32
+    return:
+      type: Microsoft.CodeAnalysis.Elfie.Model.Strings.String8
+    content.vb: Function GetPackageName(memberIndex As Integer) As String8
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageName*
+  nameWithType.vb: IMemberDatabase.GetPackageName(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageName(Integer)
+  name.vb: GetPackageName(Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPopularityRank(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPopularityRank(System.Int32)
+  id: GetPopularityRank(System.Int32)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetPopularityRank(int)
+  nameWithType: IMemberDatabase.GetPopularityRank(int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPopularityRank(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: int GetPopularityRank(int memberIndex)
+    parameters:
+    - id: memberIndex
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Function GetPopularityRank(memberIndex As Integer) As Integer
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPopularityRank*
+  nameWithType.vb: IMemberDatabase.GetPopularityRank(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPopularityRank(Integer)
+  name.vb: GetPopularityRank(Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageVersion(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageVersion(System.Int32)
+  id: GetPackageVersion(System.Int32)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetPackageVersion(int)
+  nameWithType: IMemberDatabase.GetPackageVersion(int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageVersion(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: String8 GetPackageVersion(int memberIndex)
+    parameters:
+    - id: memberIndex
+      type: System.Int32
+    return:
+      type: Microsoft.CodeAnalysis.Elfie.Model.Strings.String8
+    content.vb: Function GetPackageVersion(memberIndex As Integer) As String8
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageVersion*
+  nameWithType.vb: IMemberDatabase.GetPackageVersion(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageVersion(Integer)
+  name.vb: GetPackageVersion(Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetAssemblyName(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetAssemblyName(System.Int32)
+  id: GetAssemblyName(System.Int32)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetAssemblyName(int)
+  nameWithType: IMemberDatabase.GetAssemblyName(int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetAssemblyName(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: String8 GetAssemblyName(int memberIndex)
+    parameters:
+    - id: memberIndex
+      type: System.Int32
+    return:
+      type: Microsoft.CodeAnalysis.Elfie.Model.Strings.String8
+    content.vb: Function GetAssemblyName(memberIndex As Integer) As String8
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetAssemblyName*
+  nameWithType.vb: IMemberDatabase.GetAssemblyName(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetAssemblyName(Integer)
+  name.vb: GetAssemblyName(Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetFrameworkTargets(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetFrameworkTargets(System.Int32)
+  id: GetFrameworkTargets(System.Int32)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetFrameworkTargets(int)
+  nameWithType: IMemberDatabase.GetFrameworkTargets(int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetFrameworkTargets(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: String8 GetFrameworkTargets(int memberIndex)
+    parameters:
+    - id: memberIndex
+      type: System.Int32
+    return:
+      type: Microsoft.CodeAnalysis.Elfie.Model.Strings.String8
+    content.vb: Function GetFrameworkTargets(memberIndex As Integer) As String8
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetFrameworkTargets*
+  nameWithType.vb: IMemberDatabase.GetFrameworkTargets(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetFrameworkTargets(Integer)
+  name.vb: GetFrameworkTargets(Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberType(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberType(System.Int32)
+  id: GetMemberType(System.Int32)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetMemberType(int)
+  nameWithType: IMemberDatabase.GetMemberType(int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberType(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: SymbolType GetMemberType(int memberIndex)
+    parameters:
+    - id: memberIndex
+      type: System.Int32
+    return:
+      type: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType
+    content.vb: Function GetMemberType(memberIndex As Integer) As SymbolType
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberType*
+  nameWithType.vb: IMemberDatabase.GetMemberType(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberType(Integer)
+  name.vb: GetMemberType(Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberModifiers(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberModifiers(System.Int32)
+  id: GetMemberModifiers(System.Int32)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetMemberModifiers(int)
+  nameWithType: IMemberDatabase.GetMemberModifiers(int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberModifiers(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: SymbolModifier GetMemberModifiers(int memberIndex)
+    parameters:
+    - id: memberIndex
+      type: System.Int32
+    return:
+      type: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolModifier
+    content.vb: Function GetMemberModifiers(memberIndex As Integer) As SymbolModifier
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberModifiers*
+  nameWithType.vb: IMemberDatabase.GetMemberModifiers(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberModifiers(Integer)
+  name.vb: GetMemberModifiers(Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberParameters(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberParameters(System.Int32)
+  id: GetMemberParameters(System.Int32)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetMemberParameters(int)
+  nameWithType: IMemberDatabase.GetMemberParameters(int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberParameters(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: String8 GetMemberParameters(int memberIndex)
+    parameters:
+    - id: memberIndex
+      type: System.Int32
+    return:
+      type: Microsoft.CodeAnalysis.Elfie.Model.Strings.String8
+    content.vb: Function GetMemberParameters(memberIndex As Integer) As String8
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberParameters*
+  nameWithType.vb: IMemberDatabase.GetMemberParameters(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberParameters(Integer)
+  name.vb: GetMemberParameters(Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFilePath(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFilePath(System.Int32)
+  id: GetMemberFilePath(System.Int32)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetMemberFilePath(int)
+  nameWithType: IMemberDatabase.GetMemberFilePath(int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFilePath(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: Path8 GetMemberFilePath(int memberIndex)
+    parameters:
+    - id: memberIndex
+      type: System.Int32
+    return:
+      type: Microsoft.CodeAnalysis.Elfie.Model.Tree.Path8
+    content.vb: Function GetMemberFilePath(memberIndex As Integer) As Path8
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFilePath*
+  nameWithType.vb: IMemberDatabase.GetMemberFilePath(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFilePath(Integer)
+  name.vb: GetMemberFilePath(Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFileLine(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFileLine(System.Int32)
+  id: GetMemberFileLine(System.Int32)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetMemberFileLine(int)
+  nameWithType: IMemberDatabase.GetMemberFileLine(int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFileLine(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: ushort GetMemberFileLine(int memberIndex)
+    parameters:
+    - id: memberIndex
+      type: System.Int32
+    return:
+      type: System.UInt16
+    content.vb: Function GetMemberFileLine(memberIndex As Integer) As UShort
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFileLine*
+  nameWithType.vb: IMemberDatabase.GetMemberFileLine(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFileLine(Integer)
+  name.vb: GetMemberFileLine(Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberCharInLine(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberCharInLine(System.Int32)
+  id: GetMemberCharInLine(System.Int32)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: GetMemberCharInLine(int)
+  nameWithType: IMemberDatabase.GetMemberCharInLine(int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberCharInLine(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: ushort GetMemberCharInLine(int memberIndex)
+    parameters:
+    - id: memberIndex
+      type: System.Int32
+    return:
+      type: System.UInt16
+    content.vb: Function GetMemberCharInLine(memberIndex As Integer) As UShort
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberCharInLine*
+  nameWithType.vb: IMemberDatabase.GetMemberCharInLine(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberCharInLine(Integer)
+  name.vb: GetMemberCharInLine(Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.SetLocation(System.Int32,System.String,System.UInt16,System.UInt16)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.SetLocation(System.Int32,System.String,System.UInt16,System.UInt16)
+  id: SetLocation(System.Int32,System.String,System.UInt16,System.UInt16)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: SetLocation(int, string, ushort, ushort)
+  nameWithType: IMemberDatabase.SetLocation(int, string, ushort, ushort)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.SetLocation(int, string, ushort, ushort)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: void SetLocation(int memberIndex, string filePath, ushort line, ushort charInLine)
+    parameters:
+    - id: memberIndex
+      type: System.Int32
+    - id: filePath
+      type: System.String
+    - id: line
+      type: System.UInt16
+    - id: charInLine
+      type: System.UInt16
+    content.vb: Sub SetLocation(memberIndex As Integer, filePath As String, line As UShort, charInLine As UShort)
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.SetLocation*
+  nameWithType.vb: IMemberDatabase.SetLocation(Integer, String, UShort, UShort)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.SetLocation(Integer, String, UShort, UShort)
+  name.vb: SetLocation(Integer, String, UShort, UShort)
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.StringStore
+  commentId: P:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.StringStore
+  id: StringStore
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: StringStore
+  nameWithType: IMemberDatabase.StringStore
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.StringStore
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: StringStore StringStore { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.Elfie.Model.Strings.StringStore
+    content.vb: ReadOnly Property StringStore As StringStore
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.StringStore*
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.DeclaredMembers
+  commentId: P:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.DeclaredMembers
+  id: DeclaredMembers
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: DeclaredMembers
+  nameWithType: IMemberDatabase.DeclaredMembers
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.DeclaredMembers
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: ItemTree DeclaredMembers { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.Elfie.Model.Tree.ItemTree
+    content.vb: ReadOnly Property DeclaredMembers As ItemTree
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.DeclaredMembers*
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.Index
+  commentId: P:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.Index
+  id: Index
+  parent: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+  langs:
+  - csharp
+  - vb
+  name: Index
+  nameWithType: IMemberDatabase.Index
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.Index
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Model
+  syntax:
+    content: MemberIndex Index { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.Elfie.Model.Index.MemberIndex
+    content.vb: ReadOnly Property Index As MemberIndex
+  overload: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.Index*
+references:
+- uid: Microsoft.CodeAnalysis.Elfie.Model
+  commentId: N:Microsoft.CodeAnalysis.Elfie.Model
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Elfie.Model
+  nameWithType: Microsoft.CodeAnalysis.Elfie.Model
+  fullName: Microsoft.CodeAnalysis.Elfie.Model
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model
+    name: Model
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model
+    name: Model
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.html
+- uid: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.Count
+  commentId: P:Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.Count
+  parent: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.html#Microsoft_CodeAnalysis_Elfie_Diagnostics_IStatistics_Count
+  name: Count
+  nameWithType: IStatistics.Count
+  fullName: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.Count
+- uid: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.Bytes
+  commentId: P:Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.Bytes
+  parent: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.html#Microsoft_CodeAnalysis_Elfie_Diagnostics_IStatistics_Bytes
+  name: Bytes
+  nameWithType: IStatistics.Bytes
+  fullName: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.Bytes
+- uid: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(System.String)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics,System.String)
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions
+  definition: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics,System.String)
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IStatisticsExtensions_ToStatisticsString_Microsoft_CodeAnalysis_Elfie_Diagnostics_IStatistics_System_String_
+  name: ToStatisticsString(IStatistics, string)
+  nameWithType: IStatisticsExtensions.ToStatisticsString(IStatistics, string)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics, string)
+  nameWithType.vb: IStatisticsExtensions.ToStatisticsString(IStatistics, String)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics, String)
+  name.vb: ToStatisticsString(IStatistics, String)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics,System.String)
+    name: ToStatisticsString
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IStatisticsExtensions_ToStatisticsString_Microsoft_CodeAnalysis_Elfie_Diagnostics_IStatistics_System_String_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics
+    name: IStatistics
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics,System.String)
+    name: ToStatisticsString
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IStatisticsExtensions_ToStatisticsString_Microsoft_CodeAnalysis_Elfie_Diagnostics_IStatistics_System_String_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics
+    name: IStatistics
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase
+  definition: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+  href: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_MemberDatabase_TryGetAncestorOfType_Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_System_Int32_Microsoft_CodeAnalysis_Elfie_Model_Structures_SymbolType_System_Int32__
+  name: TryGetAncestorOfType(IMemberDatabase, int, SymbolType, out int)
+  nameWithType: MemberDatabase.TryGetAncestorOfType(IMemberDatabase, int, SymbolType, out int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase, int, Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType, out int)
+  nameWithType.vb: MemberDatabase.TryGetAncestorOfType(IMemberDatabase, Integer, SymbolType, Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase, Integer, Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType, Integer)
+  name.vb: TryGetAncestorOfType(IMemberDatabase, Integer, SymbolType, Integer)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+    name: TryGetAncestorOfType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_MemberDatabase_TryGetAncestorOfType_Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_System_Int32_Microsoft_CodeAnalysis_Elfie_Model_Structures_SymbolType_System_Int32__
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+    name: IMemberDatabase
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType
+    name: SymbolType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+    name: TryGetAncestorOfType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_MemberDatabase_TryGetAncestorOfType_Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_System_Int32_Microsoft_CodeAnalysis_Elfie_Model_Structures_SymbolType_System_Int32__
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+    name: IMemberDatabase
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType
+    name: SymbolType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+  parent: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase
+  definition: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+  href: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_MemberDatabase_TryGetFirstChildOfType_Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_System_Int32_Microsoft_CodeAnalysis_Elfie_Model_Structures_SymbolType_System_Int32__
+  name: TryGetFirstChildOfType(IMemberDatabase, int, SymbolType, out int)
+  nameWithType: MemberDatabase.TryGetFirstChildOfType(IMemberDatabase, int, SymbolType, out int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase, int, Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType, out int)
+  nameWithType.vb: MemberDatabase.TryGetFirstChildOfType(IMemberDatabase, Integer, SymbolType, Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase, Integer, Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType, Integer)
+  name.vb: TryGetFirstChildOfType(IMemberDatabase, Integer, SymbolType, Integer)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+    name: TryGetFirstChildOfType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_MemberDatabase_TryGetFirstChildOfType_Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_System_Int32_Microsoft_CodeAnalysis_Elfie_Model_Structures_SymbolType_System_Int32__
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+    name: IMemberDatabase
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType
+    name: SymbolType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+    name: TryGetFirstChildOfType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_MemberDatabase_TryGetFirstChildOfType_Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_System_Int32_Microsoft_CodeAnalysis_Elfie_Model_Structures_SymbolType_System_Int32__
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+    name: IMemberDatabase
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType
+    name: SymbolType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics
+  parent: Microsoft.CodeAnalysis.Elfie.Diagnostics
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.html
+  name: IStatistics
+  nameWithType: IStatistics
+  fullName: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics,System.String)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics,System.String)
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IStatisticsExtensions_ToStatisticsString_Microsoft_CodeAnalysis_Elfie_Diagnostics_IStatistics_System_String_
+  name: ToStatisticsString(IStatistics, string)
+  nameWithType: IStatisticsExtensions.ToStatisticsString(IStatistics, string)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics, string)
+  nameWithType.vb: IStatisticsExtensions.ToStatisticsString(IStatistics, String)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics, String)
+  name.vb: ToStatisticsString(IStatistics, String)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics,System.String)
+    name: ToStatisticsString
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IStatisticsExtensions_ToStatisticsString_Microsoft_CodeAnalysis_Elfie_Diagnostics_IStatistics_System_String_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics
+    name: IStatistics
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.ToStatisticsString(Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics,System.String)
+    name: ToStatisticsString
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IStatisticsExtensions_ToStatisticsString_Microsoft_CodeAnalysis_Elfie_Diagnostics_IStatistics_System_String_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics
+    name: IStatistics
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Diagnostics.IStatistics.html
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions.html
+  name: IStatisticsExtensions
+  nameWithType: IStatisticsExtensions
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.IStatisticsExtensions
+- uid: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_MemberDatabase_TryGetAncestorOfType_Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_System_Int32_Microsoft_CodeAnalysis_Elfie_Model_Structures_SymbolType_System_Int32__
+  name: TryGetAncestorOfType(IMemberDatabase, int, SymbolType, out int)
+  nameWithType: MemberDatabase.TryGetAncestorOfType(IMemberDatabase, int, SymbolType, out int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase, int, Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType, out int)
+  nameWithType.vb: MemberDatabase.TryGetAncestorOfType(IMemberDatabase, Integer, SymbolType, Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase, Integer, Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType, Integer)
+  name.vb: TryGetAncestorOfType(IMemberDatabase, Integer, SymbolType, Integer)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+    name: TryGetAncestorOfType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_MemberDatabase_TryGetAncestorOfType_Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_System_Int32_Microsoft_CodeAnalysis_Elfie_Model_Structures_SymbolType_System_Int32__
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+    name: IMemberDatabase
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType
+    name: SymbolType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetAncestorOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+    name: TryGetAncestorOfType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_MemberDatabase_TryGetAncestorOfType_Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_System_Int32_Microsoft_CodeAnalysis_Elfie_Model_Structures_SymbolType_System_Int32__
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+    name: IMemberDatabase
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType
+    name: SymbolType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase
+  parent: Microsoft.CodeAnalysis.Elfie.Model
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.html
+  name: MemberDatabase
+  nameWithType: MemberDatabase
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase
+- uid: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_MemberDatabase_TryGetFirstChildOfType_Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_System_Int32_Microsoft_CodeAnalysis_Elfie_Model_Structures_SymbolType_System_Int32__
+  name: TryGetFirstChildOfType(IMemberDatabase, int, SymbolType, out int)
+  nameWithType: MemberDatabase.TryGetFirstChildOfType(IMemberDatabase, int, SymbolType, out int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase, int, Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType, out int)
+  nameWithType.vb: MemberDatabase.TryGetFirstChildOfType(IMemberDatabase, Integer, SymbolType, Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase, Integer, Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType, Integer)
+  name.vb: TryGetFirstChildOfType(IMemberDatabase, Integer, SymbolType, Integer)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+    name: TryGetFirstChildOfType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_MemberDatabase_TryGetFirstChildOfType_Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_System_Int32_Microsoft_CodeAnalysis_Elfie_Model_Structures_SymbolType_System_Int32__
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+    name: IMemberDatabase
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType
+    name: SymbolType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType.html
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.TryGetFirstChildOfType(Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase,System.Int32,Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType,System.Int32@)
+    name: TryGetFirstChildOfType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.MemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_MemberDatabase_TryGetFirstChildOfType_Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_System_Int32_Microsoft_CodeAnalysis_Elfie_Model_Structures_SymbolType_System_Int32__
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase
+    name: IMemberDatabase
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType
+    name: SymbolType
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType.html
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: Microsoft.CodeAnalysis.Elfie.Diagnostics
+  commentId: N:Microsoft.CodeAnalysis.Elfie.Diagnostics
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Elfie.Diagnostics
+  nameWithType: Microsoft.CodeAnalysis.Elfie.Diagnostics
+  fullName: Microsoft.CodeAnalysis.Elfie.Diagnostics
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Diagnostics.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Diagnostics.html
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions
+  commentId: N:Microsoft.CodeAnalysis.Elfie.Extensions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Elfie.Extensions
+  nameWithType: Microsoft.CodeAnalysis.Elfie.Extensions
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.html
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageName*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageName
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_GetPackageName_System_Int32_
+  name: GetPackageName
+  nameWithType: IMemberDatabase.GetPackageName
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageName
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.CodeAnalysis.Elfie.Model.Strings.String8
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Model.Strings.String8
+  parent: Microsoft.CodeAnalysis.Elfie.Model.Strings
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.Strings.String8.html
+  name: String8
+  nameWithType: String8
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.Strings.String8
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.CodeAnalysis.Elfie.Model.Strings
+  commentId: N:Microsoft.CodeAnalysis.Elfie.Model.Strings
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Elfie.Model.Strings
+  nameWithType: Microsoft.CodeAnalysis.Elfie.Model.Strings
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.Strings
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model
+    name: Model
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Strings
+    name: Strings
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Strings.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model
+    name: Model
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Strings
+    name: Strings
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Strings.html
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPopularityRank*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPopularityRank
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_GetPopularityRank_System_Int32_
+  name: GetPopularityRank
+  nameWithType: IMemberDatabase.GetPopularityRank
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPopularityRank
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageVersion*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageVersion
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_GetPackageVersion_System_Int32_
+  name: GetPackageVersion
+  nameWithType: IMemberDatabase.GetPackageVersion
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetPackageVersion
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetAssemblyName*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetAssemblyName
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_GetAssemblyName_System_Int32_
+  name: GetAssemblyName
+  nameWithType: IMemberDatabase.GetAssemblyName
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetAssemblyName
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetFrameworkTargets*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetFrameworkTargets
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_GetFrameworkTargets_System_Int32_
+  name: GetFrameworkTargets
+  nameWithType: IMemberDatabase.GetFrameworkTargets
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetFrameworkTargets
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberType*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberType
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_GetMemberType_System_Int32_
+  name: GetMemberType
+  nameWithType: IMemberDatabase.GetMemberType
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberType
+- uid: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType
+  parent: Microsoft.CodeAnalysis.Elfie.Model.Structures
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType.html
+  name: SymbolType
+  nameWithType: SymbolType
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolType
+- uid: Microsoft.CodeAnalysis.Elfie.Model.Structures
+  commentId: N:Microsoft.CodeAnalysis.Elfie.Model.Structures
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Elfie.Model.Structures
+  nameWithType: Microsoft.CodeAnalysis.Elfie.Model.Structures
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.Structures
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model
+    name: Model
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Structures
+    name: Structures
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Structures.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model
+    name: Model
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Structures
+    name: Structures
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Structures.html
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberModifiers*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberModifiers
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_GetMemberModifiers_System_Int32_
+  name: GetMemberModifiers
+  nameWithType: IMemberDatabase.GetMemberModifiers
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberModifiers
+- uid: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolModifier
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolModifier
+  parent: Microsoft.CodeAnalysis.Elfie.Model.Structures
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolModifier.html
+  name: SymbolModifier
+  nameWithType: SymbolModifier
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.Structures.SymbolModifier
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberParameters*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberParameters
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_GetMemberParameters_System_Int32_
+  name: GetMemberParameters
+  nameWithType: IMemberDatabase.GetMemberParameters
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberParameters
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFilePath*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFilePath
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_GetMemberFilePath_System_Int32_
+  name: GetMemberFilePath
+  nameWithType: IMemberDatabase.GetMemberFilePath
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFilePath
+- uid: Microsoft.CodeAnalysis.Elfie.Model.Tree.Path8
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Model.Tree.Path8
+  parent: Microsoft.CodeAnalysis.Elfie.Model.Tree
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.Tree.Path8.html
+  name: Path8
+  nameWithType: Path8
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.Tree.Path8
+- uid: Microsoft.CodeAnalysis.Elfie.Model.Tree
+  commentId: N:Microsoft.CodeAnalysis.Elfie.Model.Tree
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Elfie.Model.Tree
+  nameWithType: Microsoft.CodeAnalysis.Elfie.Model.Tree
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.Tree
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model
+    name: Model
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Tree
+    name: Tree
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Tree.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model
+    name: Model
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Tree
+    name: Tree
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Tree.html
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFileLine*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFileLine
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_GetMemberFileLine_System_Int32_
+  name: GetMemberFileLine
+  nameWithType: IMemberDatabase.GetMemberFileLine
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberFileLine
+- uid: System.UInt16
+  commentId: T:System.UInt16
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.uint16
+  name: ushort
+  nameWithType: ushort
+  fullName: ushort
+  nameWithType.vb: UShort
+  fullName.vb: UShort
+  name.vb: UShort
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberCharInLine*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberCharInLine
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_GetMemberCharInLine_System_Int32_
+  name: GetMemberCharInLine
+  nameWithType: IMemberDatabase.GetMemberCharInLine
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.GetMemberCharInLine
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.SetLocation*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.SetLocation
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_SetLocation_System_Int32_System_String_System_UInt16_System_UInt16_
+  name: SetLocation
+  nameWithType: IMemberDatabase.SetLocation
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.SetLocation
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.StringStore*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.StringStore
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_StringStore
+  name: StringStore
+  nameWithType: IMemberDatabase.StringStore
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.StringStore
+- uid: Microsoft.CodeAnalysis.Elfie.Model.Strings.StringStore
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Model.Strings.StringStore
+  parent: Microsoft.CodeAnalysis.Elfie.Model.Strings
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.Strings.StringStore.html
+  name: StringStore
+  nameWithType: StringStore
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.Strings.StringStore
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.DeclaredMembers*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.DeclaredMembers
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_DeclaredMembers
+  name: DeclaredMembers
+  nameWithType: IMemberDatabase.DeclaredMembers
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.DeclaredMembers
+- uid: Microsoft.CodeAnalysis.Elfie.Model.Tree.ItemTree
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Model.Tree.ItemTree
+  parent: Microsoft.CodeAnalysis.Elfie.Model.Tree
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.Tree.ItemTree.html
+  name: ItemTree
+  nameWithType: ItemTree
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.Tree.ItemTree
+- uid: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.Index*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.Index
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.html#Microsoft_CodeAnalysis_Elfie_Model_IMemberDatabase_Index
+  name: Index
+  nameWithType: IMemberDatabase.Index
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.IMemberDatabase.Index
+- uid: Microsoft.CodeAnalysis.Elfie.Model.Index.MemberIndex
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Model.Index.MemberIndex
+  parent: Microsoft.CodeAnalysis.Elfie.Model.Index
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Model.Index.MemberIndex.html
+  name: MemberIndex
+  nameWithType: MemberIndex
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.Index.MemberIndex
+- uid: Microsoft.CodeAnalysis.Elfie.Model.Index
+  commentId: N:Microsoft.CodeAnalysis.Elfie.Model.Index
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Elfie.Model.Index
+  nameWithType: Microsoft.CodeAnalysis.Elfie.Model.Index
+  fullName: Microsoft.CodeAnalysis.Elfie.Model.Index
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model
+    name: Model
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Index
+    name: Index
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Index.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model
+    name: Model
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Model.Index
+    name: Index
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Model.Index.html

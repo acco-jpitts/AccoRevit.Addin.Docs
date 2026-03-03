@@ -1,0 +1,968 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  commentId: T:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  id: OptionsServiceCollectionExtensions
+  parent: Microsoft.Extensions.DependencyInjection
+  children:
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureAll``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object)
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type)
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{``0})
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigureAll``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  - Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{``0})
+  langs:
+  - csharp
+  - vb
+  name: OptionsServiceCollectionExtensions
+  nameWithType: OptionsServiceCollectionExtensions
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: public static class OptionsServiceCollectionExtensions
+    content.vb: Public Module OptionsServiceCollectionExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddOptions(IServiceCollection)
+  nameWithType: OptionsServiceCollectionExtensions.AddOptions(IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: public static IServiceCollection AddOptions(this IServiceCollection services)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function AddOptions(services As IServiceCollection) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions*
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  id: AddOptionsWithValidateOnStart``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddOptionsWithValidateOnStart<TOptions>(IServiceCollection, string?)
+  nameWithType: OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart<TOptions>(IServiceCollection, string?)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: 'public static OptionsBuilder<TOptions> AddOptionsWithValidateOnStart<TOptions>(this IServiceCollection services, string? name = null) where TOptions : class'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: name
+      type: System.String
+    typeParameters:
+    - id: TOptions
+    return:
+      type: Microsoft.Extensions.Options.OptionsBuilder{{TOptions}}
+    content.vb: Public Shared Function AddOptionsWithValidateOnStart(Of TOptions As Class)(services As IServiceCollection, name As String = Nothing) As OptionsBuilder(Of TOptions)
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart*
+  nameWithType.vb: OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart(Of TOptions)(IServiceCollection, String)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, String)
+  name.vb: AddOptionsWithValidateOnStart(Of TOptions)(IServiceCollection, String)
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  id: AddOptionsWithValidateOnStart``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddOptionsWithValidateOnStart<TOptions, TValidateOptions>(IServiceCollection, string?)
+  nameWithType: OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart<TOptions, TValidateOptions>(IServiceCollection, string?)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart<TOptions, TValidateOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: 'public static OptionsBuilder<TOptions> AddOptionsWithValidateOnStart<TOptions, TValidateOptions>(this IServiceCollection services, string? name = null) where TOptions : class where TValidateOptions : class, IValidateOptions<TOptions>'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: name
+      type: System.String
+    typeParameters:
+    - id: TOptions
+    - id: TValidateOptions
+    return:
+      type: Microsoft.Extensions.Options.OptionsBuilder{{TOptions}}
+    content.vb: Public Shared Function AddOptionsWithValidateOnStart(Of TOptions As Class, TValidateOptions As {Class, IValidateOptions(Of TOptions)})(services As IServiceCollection, name As String = Nothing) As OptionsBuilder(Of TOptions)
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart*
+  nameWithType.vb: OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart(Of TOptions, TValidateOptions)(IServiceCollection, String)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart(Of TOptions, TValidateOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, String)
+  name.vb: AddOptionsWithValidateOnStart(Of TOptions, TValidateOptions)(IServiceCollection, String)
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  id: Configure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: Configure<TOptions>(IServiceCollection, Action<TOptions>)
+  nameWithType: OptionsServiceCollectionExtensions.Configure<TOptions>(IServiceCollection, Action<TOptions>)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<TOptions>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: 'public static IServiceCollection Configure<TOptions>(this IServiceCollection services, Action<TOptions> configureOptions) where TOptions : class'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configureOptions
+      type: System.Action{{TOptions}}
+    typeParameters:
+    - id: TOptions
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function Configure(Of TOptions As Class)(services As IServiceCollection, configureOptions As Action(Of TOptions)) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure*
+  nameWithType.vb: OptionsServiceCollectionExtensions.Configure(Of TOptions)(IServiceCollection, Action(Of TOptions))
+  fullName.vb: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of TOptions))
+  name.vb: Configure(Of TOptions)(IServiceCollection, Action(Of TOptions))
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{``0})
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{``0})
+  id: Configure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{``0})
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: Configure<TOptions>(IServiceCollection, string?, Action<TOptions>)
+  nameWithType: OptionsServiceCollectionExtensions.Configure<TOptions>(IServiceCollection, string?, Action<TOptions>)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, string?, System.Action<TOptions>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: 'public static IServiceCollection Configure<TOptions>(this IServiceCollection services, string? name, Action<TOptions> configureOptions) where TOptions : class'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: name
+      type: System.String
+    - id: configureOptions
+      type: System.Action{{TOptions}}
+    typeParameters:
+    - id: TOptions
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function Configure(Of TOptions As Class)(services As IServiceCollection, name As String, configureOptions As Action(Of TOptions)) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure*
+  nameWithType.vb: OptionsServiceCollectionExtensions.Configure(Of TOptions)(IServiceCollection, String, Action(Of TOptions))
+  fullName.vb: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, String, System.Action(Of TOptions))
+  name.vb: Configure(Of TOptions)(IServiceCollection, String, Action(Of TOptions))
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureAll``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureAll``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  id: ConfigureAll``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureAll<TOptions>(IServiceCollection, Action<TOptions>)
+  nameWithType: OptionsServiceCollectionExtensions.ConfigureAll<TOptions>(IServiceCollection, Action<TOptions>)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureAll<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<TOptions>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: 'public static IServiceCollection ConfigureAll<TOptions>(this IServiceCollection services, Action<TOptions> configureOptions) where TOptions : class'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configureOptions
+      type: System.Action{{TOptions}}
+    typeParameters:
+    - id: TOptions
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function ConfigureAll(Of TOptions As Class)(services As IServiceCollection, configureOptions As Action(Of TOptions)) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureAll*
+  nameWithType.vb: OptionsServiceCollectionExtensions.ConfigureAll(Of TOptions)(IServiceCollection, Action(Of TOptions))
+  fullName.vb: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureAll(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of TOptions))
+  name.vb: ConfigureAll(Of TOptions)(IServiceCollection, Action(Of TOptions))
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  id: PostConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: PostConfigure<TOptions>(IServiceCollection, Action<TOptions>)
+  nameWithType: OptionsServiceCollectionExtensions.PostConfigure<TOptions>(IServiceCollection, Action<TOptions>)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<TOptions>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: 'public static IServiceCollection PostConfigure<TOptions>(this IServiceCollection services, Action<TOptions> configureOptions) where TOptions : class'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configureOptions
+      type: System.Action{{TOptions}}
+    typeParameters:
+    - id: TOptions
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function PostConfigure(Of TOptions As Class)(services As IServiceCollection, configureOptions As Action(Of TOptions)) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure*
+  nameWithType.vb: OptionsServiceCollectionExtensions.PostConfigure(Of TOptions)(IServiceCollection, Action(Of TOptions))
+  fullName.vb: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of TOptions))
+  name.vb: PostConfigure(Of TOptions)(IServiceCollection, Action(Of TOptions))
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{``0})
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{``0})
+  id: PostConfigure``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String,System.Action{``0})
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: PostConfigure<TOptions>(IServiceCollection, string?, Action<TOptions>)
+  nameWithType: OptionsServiceCollectionExtensions.PostConfigure<TOptions>(IServiceCollection, string?, Action<TOptions>)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, string?, System.Action<TOptions>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: 'public static IServiceCollection PostConfigure<TOptions>(this IServiceCollection services, string? name, Action<TOptions> configureOptions) where TOptions : class'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: name
+      type: System.String
+    - id: configureOptions
+      type: System.Action{{TOptions}}
+    typeParameters:
+    - id: TOptions
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function PostConfigure(Of TOptions As Class)(services As IServiceCollection, name As String, configureOptions As Action(Of TOptions)) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure*
+  nameWithType.vb: OptionsServiceCollectionExtensions.PostConfigure(Of TOptions)(IServiceCollection, String, Action(Of TOptions))
+  fullName.vb: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, String, System.Action(Of TOptions))
+  name.vb: PostConfigure(Of TOptions)(IServiceCollection, String, Action(Of TOptions))
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigureAll``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigureAll``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  id: PostConfigureAll``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{``0})
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: PostConfigureAll<TOptions>(IServiceCollection, Action<TOptions>)
+  nameWithType: OptionsServiceCollectionExtensions.PostConfigureAll<TOptions>(IServiceCollection, Action<TOptions>)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigureAll<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<TOptions>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: 'public static IServiceCollection PostConfigureAll<TOptions>(this IServiceCollection services, Action<TOptions> configureOptions) where TOptions : class'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configureOptions
+      type: System.Action{{TOptions}}
+    typeParameters:
+    - id: TOptions
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function PostConfigureAll(Of TOptions As Class)(services As IServiceCollection, configureOptions As Action(Of TOptions)) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigureAll*
+  nameWithType.vb: OptionsServiceCollectionExtensions.PostConfigureAll(Of TOptions)(IServiceCollection, Action(Of TOptions))
+  fullName.vb: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigureAll(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of TOptions))
+  name.vb: PostConfigureAll(Of TOptions)(IServiceCollection, Action(Of TOptions))
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: ConfigureOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureOptions<TConfigureOptions>(IServiceCollection)
+  nameWithType: OptionsServiceCollectionExtensions.ConfigureOptions<TConfigureOptions>(IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions<TConfigureOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: 'public static IServiceCollection ConfigureOptions<TConfigureOptions>(this IServiceCollection services) where TConfigureOptions : class'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    typeParameters:
+    - id: TConfigureOptions
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function ConfigureOptions(Of TConfigureOptions As Class)(services As IServiceCollection) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions*
+  nameWithType.vb: OptionsServiceCollectionExtensions.ConfigureOptions(Of TConfigureOptions)(IServiceCollection)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions(Of TConfigureOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: ConfigureOptions(Of TConfigureOptions)(IServiceCollection)
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type)
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type)
+  id: ConfigureOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Type)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureOptions(IServiceCollection, Type)
+  nameWithType: OptionsServiceCollectionExtensions.ConfigureOptions(IServiceCollection, Type)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Type)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: public static IServiceCollection ConfigureOptions(this IServiceCollection services, Type configureType)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configureType
+      type: System.Type
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function ConfigureOptions(services As IServiceCollection, configureType As Type) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions*
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object)
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object)
+  id: ConfigureOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Object)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureOptions(IServiceCollection, object)
+  nameWithType: OptionsServiceCollectionExtensions.ConfigureOptions(IServiceCollection, object)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection, object)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: public static IServiceCollection ConfigureOptions(this IServiceCollection services, object configureInstance)
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: configureInstance
+      type: System.Object
+    return:
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    content.vb: Public Shared Function ConfigureOptions(services As IServiceCollection, configureInstance As Object) As IServiceCollection
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions*
+  nameWithType.vb: OptionsServiceCollectionExtensions.ConfigureOptions(IServiceCollection, Object)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions(Microsoft.Extensions.DependencyInjection.IServiceCollection, Object)
+  name.vb: ConfigureOptions(IServiceCollection, Object)
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  id: AddOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddOptions<TOptions>(IServiceCollection)
+  nameWithType: OptionsServiceCollectionExtensions.AddOptions<TOptions>(IServiceCollection)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: 'public static OptionsBuilder<TOptions> AddOptions<TOptions>(this IServiceCollection services) where TOptions : class'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    typeParameters:
+    - id: TOptions
+    return:
+      type: Microsoft.Extensions.Options.OptionsBuilder{{TOptions}}
+    content.vb: Public Shared Function AddOptions(Of TOptions As Class)(services As IServiceCollection) As OptionsBuilder(Of TOptions)
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions*
+  nameWithType.vb: OptionsServiceCollectionExtensions.AddOptions(Of TOptions)(IServiceCollection)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: AddOptions(Of TOptions)(IServiceCollection)
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  commentId: M:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  id: AddOptions``1(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.String)
+  isExtensionMethod: true
+  parent: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddOptions<TOptions>(IServiceCollection, string?)
+  nameWithType: OptionsServiceCollectionExtensions.AddOptions<TOptions>(IServiceCollection, string?)
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions<TOptions>(Microsoft.Extensions.DependencyInjection.IServiceCollection, string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.DependencyInjection
+  syntax:
+    content: 'public static OptionsBuilder<TOptions> AddOptions<TOptions>(this IServiceCollection services, string? name) where TOptions : class'
+    parameters:
+    - id: services
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    - id: name
+      type: System.String
+    typeParameters:
+    - id: TOptions
+    return:
+      type: Microsoft.Extensions.Options.OptionsBuilder{{TOptions}}
+    content.vb: Public Shared Function AddOptions(Of TOptions As Class)(services As IServiceCollection, name As String) As OptionsBuilder(Of TOptions)
+  overload: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions*
+  nameWithType.vb: OptionsServiceCollectionExtensions.AddOptions(Of TOptions)(IServiceCollection, String)
+  fullName.vb: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions(Of TOptions)(Microsoft.Extensions.DependencyInjection.IServiceCollection, String)
+  name.vb: AddOptions(Of TOptions)(IServiceCollection, String)
+references:
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions
+  isExternal: true
+  href: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_AddOptions_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: AddOptions
+  nameWithType: OptionsServiceCollectionExtensions.AddOptions
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptions
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart
+  isExternal: true
+  href: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_AddOptionsWithValidateOnStart__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_String_
+  name: AddOptionsWithValidateOnStart
+  nameWithType: OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.AddOptionsWithValidateOnStart
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Extensions.Options.OptionsBuilder{{TOptions}}
+  commentId: T:Microsoft.Extensions.Options.OptionsBuilder{``0}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.OptionsBuilder`1
+  href: Microsoft.Extensions.Options.OptionsBuilder-1.html
+  name: OptionsBuilder<TOptions>
+  nameWithType: OptionsBuilder<TOptions>
+  fullName: Microsoft.Extensions.Options.OptionsBuilder<TOptions>
+  nameWithType.vb: OptionsBuilder(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.OptionsBuilder(Of TOptions)
+  name.vb: OptionsBuilder(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.OptionsBuilder`1
+    name: OptionsBuilder
+    isExternal: true
+    href: Microsoft.Extensions.Options.OptionsBuilder-1.html
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.OptionsBuilder`1
+    name: OptionsBuilder
+    isExternal: true
+    href: Microsoft.Extensions.Options.OptionsBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options.OptionsBuilder`1
+  commentId: T:Microsoft.Extensions.Options.OptionsBuilder`1
+  parent: Microsoft.Extensions.Options
+  isExternal: true
+  href: Microsoft.Extensions.Options.OptionsBuilder-1.html
+  name: OptionsBuilder<TOptions>
+  nameWithType: OptionsBuilder<TOptions>
+  fullName: Microsoft.Extensions.Options.OptionsBuilder<TOptions>
+  nameWithType.vb: OptionsBuilder(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.OptionsBuilder(Of TOptions)
+  name.vb: OptionsBuilder(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.OptionsBuilder`1
+    name: OptionsBuilder
+    isExternal: true
+    href: Microsoft.Extensions.Options.OptionsBuilder-1.html
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.OptionsBuilder`1
+    name: OptionsBuilder
+    isExternal: true
+    href: Microsoft.Extensions.Options.OptionsBuilder-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: Microsoft.Extensions.Options.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: Microsoft.Extensions.Options.html
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure
+  isExternal: true
+  href: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_Configure__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action___0__
+  name: Configure
+  nameWithType: OptionsServiceCollectionExtensions.Configure
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.Configure
+- uid: System.Action{{TOptions}}
+  commentId: T:System.Action{``0}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<TOptions>
+  nameWithType: Action<TOptions>
+  fullName: System.Action<TOptions>
+  nameWithType.vb: Action(Of TOptions)
+  fullName.vb: System.Action(Of TOptions)
+  name.vb: Action(Of TOptions)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureAll*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureAll
+  isExternal: true
+  href: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_ConfigureAll__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action___0__
+  name: ConfigureAll
+  nameWithType: OptionsServiceCollectionExtensions.ConfigureAll
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureAll
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure
+  isExternal: true
+  href: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_PostConfigure__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action___0__
+  name: PostConfigure
+  nameWithType: OptionsServiceCollectionExtensions.PostConfigure
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigure
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigureAll*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigureAll
+  isExternal: true
+  href: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_PostConfigureAll__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action___0__
+  name: PostConfigureAll
+  nameWithType: OptionsServiceCollectionExtensions.PostConfigureAll
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.PostConfigureAll
+- uid: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions*
+  commentId: Overload:Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions
+  isExternal: true
+  href: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.html#Microsoft_Extensions_DependencyInjection_OptionsServiceCollectionExtensions_ConfigureOptions__1_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  name: ConfigureOptions
+  nameWithType: OptionsServiceCollectionExtensions.ConfigureOptions
+  fullName: Microsoft.Extensions.DependencyInjection.OptionsServiceCollectionExtensions.ConfigureOptions
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

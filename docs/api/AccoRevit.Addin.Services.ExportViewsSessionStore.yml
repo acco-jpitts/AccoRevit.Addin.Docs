@@ -1,0 +1,1062 @@
+### YamlMime:ManagedReference
+items:
+- uid: AccoRevit.Addin.Services.ExportViewsSessionStore
+  commentId: T:AccoRevit.Addin.Services.ExportViewsSessionStore
+  id: ExportViewsSessionStore
+  parent: AccoRevit.Addin.Services
+  children:
+  - AccoRevit.Addin.Services.ExportViewsSessionStore.#ctor
+  - AccoRevit.Addin.Services.ExportViewsSessionStore.Clear(System.String)
+  - AccoRevit.Addin.Services.ExportViewsSessionStore.Set(System.String,AccoRevit.Addin.Services.ExportViewsSessionState)
+  - AccoRevit.Addin.Services.ExportViewsSessionStore.TryGet(System.String,AccoRevit.Addin.Services.ExportViewsSessionState@)
+  langs:
+  - csharp
+  - vb
+  name: ExportViewsSessionStore
+  nameWithType: ExportViewsSessionStore
+  fullName: AccoRevit.Addin.Services.ExportViewsSessionStore
+  type: Class
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Services/ExportViewsSessionStore.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Services
+  syntax:
+    content: 'public sealed class ExportViewsSessionStore : IExportViewsSessionStore'
+    content.vb: Public NotInheritable Class ExportViewsSessionStore Implements IExportViewsSessionStore
+  inheritance:
+  - System.Object
+  implements:
+  - AccoRevit.Addin.Services.IExportViewsSessionStore
+  inheritedMembers:
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: AccoRevit.Addin.Services.ExportViewsSessionStore.TryGet(System.String,AccoRevit.Addin.Services.ExportViewsSessionState@)
+  commentId: M:AccoRevit.Addin.Services.ExportViewsSessionStore.TryGet(System.String,AccoRevit.Addin.Services.ExportViewsSessionState@)
+  id: TryGet(System.String,AccoRevit.Addin.Services.ExportViewsSessionState@)
+  parent: AccoRevit.Addin.Services.ExportViewsSessionStore
+  langs:
+  - csharp
+  - vb
+  name: TryGet(string, out ExportViewsSessionState)
+  nameWithType: ExportViewsSessionStore.TryGet(string, out ExportViewsSessionState)
+  fullName: AccoRevit.Addin.Services.ExportViewsSessionStore.TryGet(string, out AccoRevit.Addin.Services.ExportViewsSessionState)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Services/ExportViewsSessionStore.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Services
+  example: []
+  syntax:
+    content: public bool TryGet(string scopeKey, out ExportViewsSessionState state)
+    parameters:
+    - id: scopeKey
+      type: System.String
+    - id: state
+      type: AccoRevit.Addin.Services.ExportViewsSessionState
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGet(scopeKey As String, state As ExportViewsSessionState) As Boolean
+  overload: AccoRevit.Addin.Services.ExportViewsSessionStore.TryGet*
+  implements:
+  - AccoRevit.Addin.Services.IExportViewsSessionStore.TryGet(System.String,AccoRevit.Addin.Services.ExportViewsSessionState@)
+  nameWithType.vb: ExportViewsSessionStore.TryGet(String, ExportViewsSessionState)
+  fullName.vb: AccoRevit.Addin.Services.ExportViewsSessionStore.TryGet(String, AccoRevit.Addin.Services.ExportViewsSessionState)
+  name.vb: TryGet(String, ExportViewsSessionState)
+- uid: AccoRevit.Addin.Services.ExportViewsSessionStore.Set(System.String,AccoRevit.Addin.Services.ExportViewsSessionState)
+  commentId: M:AccoRevit.Addin.Services.ExportViewsSessionStore.Set(System.String,AccoRevit.Addin.Services.ExportViewsSessionState)
+  id: Set(System.String,AccoRevit.Addin.Services.ExportViewsSessionState)
+  parent: AccoRevit.Addin.Services.ExportViewsSessionStore
+  langs:
+  - csharp
+  - vb
+  name: Set(string, ExportViewsSessionState)
+  nameWithType: ExportViewsSessionStore.Set(string, ExportViewsSessionState)
+  fullName: AccoRevit.Addin.Services.ExportViewsSessionStore.Set(string, AccoRevit.Addin.Services.ExportViewsSessionState)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Services/ExportViewsSessionStore.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Services
+  example: []
+  syntax:
+    content: public void Set(string scopeKey, ExportViewsSessionState state)
+    parameters:
+    - id: scopeKey
+      type: System.String
+    - id: state
+      type: AccoRevit.Addin.Services.ExportViewsSessionState
+    content.vb: Public Sub [Set](scopeKey As String, state As ExportViewsSessionState)
+  overload: AccoRevit.Addin.Services.ExportViewsSessionStore.Set*
+  implements:
+  - AccoRevit.Addin.Services.IExportViewsSessionStore.Set(System.String,AccoRevit.Addin.Services.ExportViewsSessionState)
+  nameWithType.vb: ExportViewsSessionStore.Set(String, ExportViewsSessionState)
+  fullName.vb: AccoRevit.Addin.Services.ExportViewsSessionStore.Set(String, AccoRevit.Addin.Services.ExportViewsSessionState)
+  name.vb: Set(String, ExportViewsSessionState)
+- uid: AccoRevit.Addin.Services.ExportViewsSessionStore.Clear(System.String)
+  commentId: M:AccoRevit.Addin.Services.ExportViewsSessionStore.Clear(System.String)
+  id: Clear(System.String)
+  parent: AccoRevit.Addin.Services.ExportViewsSessionStore
+  langs:
+  - csharp
+  - vb
+  name: Clear(string)
+  nameWithType: ExportViewsSessionStore.Clear(string)
+  fullName: AccoRevit.Addin.Services.ExportViewsSessionStore.Clear(string)
+  type: Method
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Services/ExportViewsSessionStore.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Services
+  example: []
+  syntax:
+    content: public void Clear(string scopeKey)
+    parameters:
+    - id: scopeKey
+      type: System.String
+    content.vb: Public Sub Clear(scopeKey As String)
+  overload: AccoRevit.Addin.Services.ExportViewsSessionStore.Clear*
+  implements:
+  - AccoRevit.Addin.Services.IExportViewsSessionStore.Clear(System.String)
+  nameWithType.vb: ExportViewsSessionStore.Clear(String)
+  fullName.vb: AccoRevit.Addin.Services.ExportViewsSessionStore.Clear(String)
+  name.vb: Clear(String)
+- uid: AccoRevit.Addin.Services.ExportViewsSessionStore.#ctor
+  commentId: M:AccoRevit.Addin.Services.ExportViewsSessionStore.#ctor
+  id: '#ctor'
+  parent: AccoRevit.Addin.Services.ExportViewsSessionStore
+  langs:
+  - csharp
+  - vb
+  name: ExportViewsSessionStore()
+  nameWithType: ExportViewsSessionStore.ExportViewsSessionStore()
+  fullName: AccoRevit.Addin.Services.ExportViewsSessionStore.ExportViewsSessionStore()
+  type: Constructor
+  source:
+    href: https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Services/ExportViewsSessionStore.cs
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Services
+  syntax:
+    content: public ExportViewsSessionStore()
+    content.vb: Public Sub New()
+  overload: AccoRevit.Addin.Services.ExportViewsSessionStore.#ctor*
+  nameWithType.vb: ExportViewsSessionStore.New()
+  fullName.vb: AccoRevit.Addin.Services.ExportViewsSessionStore.New()
+  name.vb: New()
+references:
+- uid: AccoRevit.Addin.Services
+  commentId: N:AccoRevit.Addin.Services
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Services
+  nameWithType: AccoRevit.Addin.Services
+  fullName: AccoRevit.Addin.Services
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Services
+    name: Services
+    isExternal: true
+    href: AccoRevit.Addin.Services.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Services
+    name: Services
+    isExternal: true
+    href: AccoRevit.Addin.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AccoRevit.Addin.Services.IExportViewsSessionStore
+  commentId: T:AccoRevit.Addin.Services.IExportViewsSessionStore
+  parent: AccoRevit.Addin.Services
+  isExternal: true
+  href: AccoRevit.Addin.Services.IExportViewsSessionStore.html
+  name: IExportViewsSessionStore
+  nameWithType: IExportViewsSessionStore
+  fullName: AccoRevit.Addin.Services.IExportViewsSessionStore
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: AccoRevit.Addin.Services.ExportViewsSessionStore.TryGet*
+  commentId: Overload:AccoRevit.Addin.Services.ExportViewsSessionStore.TryGet
+  isExternal: true
+  href: AccoRevit.Addin.Services.ExportViewsSessionStore.html#AccoRevit_Addin_Services_ExportViewsSessionStore_TryGet_System_String_AccoRevit_Addin_Services_ExportViewsSessionState__
+  name: TryGet
+  nameWithType: ExportViewsSessionStore.TryGet
+  fullName: AccoRevit.Addin.Services.ExportViewsSessionStore.TryGet
+- uid: AccoRevit.Addin.Services.IExportViewsSessionStore.TryGet(System.String,AccoRevit.Addin.Services.ExportViewsSessionState@)
+  commentId: M:AccoRevit.Addin.Services.IExportViewsSessionStore.TryGet(System.String,AccoRevit.Addin.Services.ExportViewsSessionState@)
+  parent: AccoRevit.Addin.Services.IExportViewsSessionStore
+  isExternal: true
+  href: AccoRevit.Addin.Services.IExportViewsSessionStore.html#AccoRevit_Addin_Services_IExportViewsSessionStore_TryGet_System_String_AccoRevit_Addin_Services_ExportViewsSessionState__
+  name: TryGet(string, out ExportViewsSessionState)
+  nameWithType: IExportViewsSessionStore.TryGet(string, out ExportViewsSessionState)
+  fullName: AccoRevit.Addin.Services.IExportViewsSessionStore.TryGet(string, out AccoRevit.Addin.Services.ExportViewsSessionState)
+  nameWithType.vb: IExportViewsSessionStore.TryGet(String, ExportViewsSessionState)
+  fullName.vb: AccoRevit.Addin.Services.IExportViewsSessionStore.TryGet(String, AccoRevit.Addin.Services.ExportViewsSessionState)
+  name.vb: TryGet(String, ExportViewsSessionState)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Services.IExportViewsSessionStore.TryGet(System.String,AccoRevit.Addin.Services.ExportViewsSessionState@)
+    name: TryGet
+    isExternal: true
+    href: AccoRevit.Addin.Services.IExportViewsSessionStore.html#AccoRevit_Addin_Services_IExportViewsSessionStore_TryGet_System_String_AccoRevit_Addin_Services_ExportViewsSessionState__
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: out
+  - name: " "
+  - uid: AccoRevit.Addin.Services.ExportViewsSessionState
+    name: ExportViewsSessionState
+    isExternal: true
+    href: AccoRevit.Addin.Services.ExportViewsSessionState.html
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Services.IExportViewsSessionStore.TryGet(System.String,AccoRevit.Addin.Services.ExportViewsSessionState@)
+    name: TryGet
+    isExternal: true
+    href: AccoRevit.Addin.Services.IExportViewsSessionStore.html#AccoRevit_Addin_Services_IExportViewsSessionStore_TryGet_System_String_AccoRevit_Addin_Services_ExportViewsSessionState__
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: AccoRevit.Addin.Services.ExportViewsSessionState
+    name: ExportViewsSessionState
+    isExternal: true
+    href: AccoRevit.Addin.Services.ExportViewsSessionState.html
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AccoRevit.Addin.Services.ExportViewsSessionState
+  commentId: T:AccoRevit.Addin.Services.ExportViewsSessionState
+  parent: AccoRevit.Addin.Services
+  isExternal: true
+  href: AccoRevit.Addin.Services.ExportViewsSessionState.html
+  name: ExportViewsSessionState
+  nameWithType: ExportViewsSessionState
+  fullName: AccoRevit.Addin.Services.ExportViewsSessionState
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: AccoRevit.Addin.Services.ExportViewsSessionStore.Set*
+  commentId: Overload:AccoRevit.Addin.Services.ExportViewsSessionStore.Set
+  isExternal: true
+  href: AccoRevit.Addin.Services.ExportViewsSessionStore.html#AccoRevit_Addin_Services_ExportViewsSessionStore_Set_System_String_AccoRevit_Addin_Services_ExportViewsSessionState_
+  name: Set
+  nameWithType: ExportViewsSessionStore.Set
+  fullName: AccoRevit.Addin.Services.ExportViewsSessionStore.Set
+- uid: AccoRevit.Addin.Services.IExportViewsSessionStore.Set(System.String,AccoRevit.Addin.Services.ExportViewsSessionState)
+  commentId: M:AccoRevit.Addin.Services.IExportViewsSessionStore.Set(System.String,AccoRevit.Addin.Services.ExportViewsSessionState)
+  parent: AccoRevit.Addin.Services.IExportViewsSessionStore
+  isExternal: true
+  href: AccoRevit.Addin.Services.IExportViewsSessionStore.html#AccoRevit_Addin_Services_IExportViewsSessionStore_Set_System_String_AccoRevit_Addin_Services_ExportViewsSessionState_
+  name: Set(string, ExportViewsSessionState)
+  nameWithType: IExportViewsSessionStore.Set(string, ExportViewsSessionState)
+  fullName: AccoRevit.Addin.Services.IExportViewsSessionStore.Set(string, AccoRevit.Addin.Services.ExportViewsSessionState)
+  nameWithType.vb: IExportViewsSessionStore.Set(String, ExportViewsSessionState)
+  fullName.vb: AccoRevit.Addin.Services.IExportViewsSessionStore.Set(String, AccoRevit.Addin.Services.ExportViewsSessionState)
+  name.vb: Set(String, ExportViewsSessionState)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Services.IExportViewsSessionStore.Set(System.String,AccoRevit.Addin.Services.ExportViewsSessionState)
+    name: Set
+    isExternal: true
+    href: AccoRevit.Addin.Services.IExportViewsSessionStore.html#AccoRevit_Addin_Services_IExportViewsSessionStore_Set_System_String_AccoRevit_Addin_Services_ExportViewsSessionState_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: AccoRevit.Addin.Services.ExportViewsSessionState
+    name: ExportViewsSessionState
+    isExternal: true
+    href: AccoRevit.Addin.Services.ExportViewsSessionState.html
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Services.IExportViewsSessionStore.Set(System.String,AccoRevit.Addin.Services.ExportViewsSessionState)
+    name: Set
+    isExternal: true
+    href: AccoRevit.Addin.Services.IExportViewsSessionStore.html#AccoRevit_Addin_Services_IExportViewsSessionStore_Set_System_String_AccoRevit_Addin_Services_ExportViewsSessionState_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: AccoRevit.Addin.Services.ExportViewsSessionState
+    name: ExportViewsSessionState
+    isExternal: true
+    href: AccoRevit.Addin.Services.ExportViewsSessionState.html
+  - name: )
+- uid: AccoRevit.Addin.Services.ExportViewsSessionStore.Clear*
+  commentId: Overload:AccoRevit.Addin.Services.ExportViewsSessionStore.Clear
+  isExternal: true
+  href: AccoRevit.Addin.Services.ExportViewsSessionStore.html#AccoRevit_Addin_Services_ExportViewsSessionStore_Clear_System_String_
+  name: Clear
+  nameWithType: ExportViewsSessionStore.Clear
+  fullName: AccoRevit.Addin.Services.ExportViewsSessionStore.Clear
+- uid: AccoRevit.Addin.Services.IExportViewsSessionStore.Clear(System.String)
+  commentId: M:AccoRevit.Addin.Services.IExportViewsSessionStore.Clear(System.String)
+  parent: AccoRevit.Addin.Services.IExportViewsSessionStore
+  isExternal: true
+  href: AccoRevit.Addin.Services.IExportViewsSessionStore.html#AccoRevit_Addin_Services_IExportViewsSessionStore_Clear_System_String_
+  name: Clear(string)
+  nameWithType: IExportViewsSessionStore.Clear(string)
+  fullName: AccoRevit.Addin.Services.IExportViewsSessionStore.Clear(string)
+  nameWithType.vb: IExportViewsSessionStore.Clear(String)
+  fullName.vb: AccoRevit.Addin.Services.IExportViewsSessionStore.Clear(String)
+  name.vb: Clear(String)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Services.IExportViewsSessionStore.Clear(System.String)
+    name: Clear
+    isExternal: true
+    href: AccoRevit.Addin.Services.IExportViewsSessionStore.html#AccoRevit_Addin_Services_IExportViewsSessionStore_Clear_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Services.IExportViewsSessionStore.Clear(System.String)
+    name: Clear
+    isExternal: true
+    href: AccoRevit.Addin.Services.IExportViewsSessionStore.html#AccoRevit_Addin_Services_IExportViewsSessionStore_Clear_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AccoRevit.Addin.Services.ExportViewsSessionStore.#ctor*
+  commentId: Overload:AccoRevit.Addin.Services.ExportViewsSessionStore.#ctor
+  isExternal: true
+  href: AccoRevit.Addin.Services.ExportViewsSessionStore.html#AccoRevit_Addin_Services_ExportViewsSessionStore__ctor
+  name: ExportViewsSessionStore
+  nameWithType: ExportViewsSessionStore.ExportViewsSessionStore
+  fullName: AccoRevit.Addin.Services.ExportViewsSessionStore.ExportViewsSessionStore
+  nameWithType.vb: ExportViewsSessionStore.New
+  fullName.vb: AccoRevit.Addin.Services.ExportViewsSessionStore.New
+  name.vb: New

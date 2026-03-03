@@ -1,0 +1,1462 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Diagnostics.ActivitySpanId
+  commentId: T:System.Diagnostics.ActivitySpanId
+  id: ActivitySpanId
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.ActivitySpanId.CopyTo(System.Span{System.Byte})
+  - System.Diagnostics.ActivitySpanId.CreateFromBytes(System.ReadOnlySpan{System.Byte})
+  - System.Diagnostics.ActivitySpanId.CreateFromString(System.ReadOnlySpan{System.Char})
+  - System.Diagnostics.ActivitySpanId.CreateFromUtf8String(System.ReadOnlySpan{System.Byte})
+  - System.Diagnostics.ActivitySpanId.CreateRandom
+  - System.Diagnostics.ActivitySpanId.Equals(System.Diagnostics.ActivitySpanId)
+  - System.Diagnostics.ActivitySpanId.Equals(System.Object)
+  - System.Diagnostics.ActivitySpanId.GetHashCode
+  - System.Diagnostics.ActivitySpanId.ToHexString
+  - System.Diagnostics.ActivitySpanId.ToString
+  - System.Diagnostics.ActivitySpanId.op_Equality(System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivitySpanId)
+  - System.Diagnostics.ActivitySpanId.op_Inequality(System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivitySpanId)
+  langs:
+  - csharp
+  - vb
+  name: ActivitySpanId
+  nameWithType: ActivitySpanId
+  fullName: System.Diagnostics.ActivitySpanId
+  type: Struct
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: 'public readonly struct ActivitySpanId : IEquatable<ActivitySpanId>'
+    content.vb: Public Structure ActivitySpanId Implements IEquatable(Of ActivitySpanId)
+  implements:
+  - System.IEquatable{System.Diagnostics.ActivitySpanId}
+  inheritedMembers:
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetType
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: System.Diagnostics.ActivitySpanId.CreateRandom
+  commentId: M:System.Diagnostics.ActivitySpanId.CreateRandom
+  id: CreateRandom
+  parent: System.Diagnostics.ActivitySpanId
+  langs:
+  - csharp
+  - vb
+  name: CreateRandom()
+  nameWithType: ActivitySpanId.CreateRandom()
+  fullName: System.Diagnostics.ActivitySpanId.CreateRandom()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static ActivitySpanId CreateRandom()
+    return:
+      type: System.Diagnostics.ActivitySpanId
+    content.vb: Public Shared Function CreateRandom() As ActivitySpanId
+  overload: System.Diagnostics.ActivitySpanId.CreateRandom*
+- uid: System.Diagnostics.ActivitySpanId.CreateFromBytes(System.ReadOnlySpan{System.Byte})
+  commentId: M:System.Diagnostics.ActivitySpanId.CreateFromBytes(System.ReadOnlySpan{System.Byte})
+  id: CreateFromBytes(System.ReadOnlySpan{System.Byte})
+  parent: System.Diagnostics.ActivitySpanId
+  langs:
+  - csharp
+  - vb
+  name: CreateFromBytes(ReadOnlySpan<byte>)
+  nameWithType: ActivitySpanId.CreateFromBytes(ReadOnlySpan<byte>)
+  fullName: System.Diagnostics.ActivitySpanId.CreateFromBytes(System.ReadOnlySpan<byte>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static ActivitySpanId CreateFromBytes(ReadOnlySpan<byte> idData)
+    parameters:
+    - id: idData
+      type: System.ReadOnlySpan{System.Byte}
+    return:
+      type: System.Diagnostics.ActivitySpanId
+    content.vb: Public Shared Function CreateFromBytes(idData As ReadOnlySpan(Of Byte)) As ActivitySpanId
+  overload: System.Diagnostics.ActivitySpanId.CreateFromBytes*
+  nameWithType.vb: ActivitySpanId.CreateFromBytes(ReadOnlySpan(Of Byte))
+  fullName.vb: System.Diagnostics.ActivitySpanId.CreateFromBytes(System.ReadOnlySpan(Of Byte))
+  name.vb: CreateFromBytes(ReadOnlySpan(Of Byte))
+- uid: System.Diagnostics.ActivitySpanId.CreateFromUtf8String(System.ReadOnlySpan{System.Byte})
+  commentId: M:System.Diagnostics.ActivitySpanId.CreateFromUtf8String(System.ReadOnlySpan{System.Byte})
+  id: CreateFromUtf8String(System.ReadOnlySpan{System.Byte})
+  parent: System.Diagnostics.ActivitySpanId
+  langs:
+  - csharp
+  - vb
+  name: CreateFromUtf8String(ReadOnlySpan<byte>)
+  nameWithType: ActivitySpanId.CreateFromUtf8String(ReadOnlySpan<byte>)
+  fullName: System.Diagnostics.ActivitySpanId.CreateFromUtf8String(System.ReadOnlySpan<byte>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static ActivitySpanId CreateFromUtf8String(ReadOnlySpan<byte> idData)
+    parameters:
+    - id: idData
+      type: System.ReadOnlySpan{System.Byte}
+    return:
+      type: System.Diagnostics.ActivitySpanId
+    content.vb: Public Shared Function CreateFromUtf8String(idData As ReadOnlySpan(Of Byte)) As ActivitySpanId
+  overload: System.Diagnostics.ActivitySpanId.CreateFromUtf8String*
+  nameWithType.vb: ActivitySpanId.CreateFromUtf8String(ReadOnlySpan(Of Byte))
+  fullName.vb: System.Diagnostics.ActivitySpanId.CreateFromUtf8String(System.ReadOnlySpan(Of Byte))
+  name.vb: CreateFromUtf8String(ReadOnlySpan(Of Byte))
+- uid: System.Diagnostics.ActivitySpanId.CreateFromString(System.ReadOnlySpan{System.Char})
+  commentId: M:System.Diagnostics.ActivitySpanId.CreateFromString(System.ReadOnlySpan{System.Char})
+  id: CreateFromString(System.ReadOnlySpan{System.Char})
+  parent: System.Diagnostics.ActivitySpanId
+  langs:
+  - csharp
+  - vb
+  name: CreateFromString(ReadOnlySpan<char>)
+  nameWithType: ActivitySpanId.CreateFromString(ReadOnlySpan<char>)
+  fullName: System.Diagnostics.ActivitySpanId.CreateFromString(System.ReadOnlySpan<char>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static ActivitySpanId CreateFromString(ReadOnlySpan<char> idData)
+    parameters:
+    - id: idData
+      type: System.ReadOnlySpan{System.Char}
+    return:
+      type: System.Diagnostics.ActivitySpanId
+    content.vb: Public Shared Function CreateFromString(idData As ReadOnlySpan(Of Char)) As ActivitySpanId
+  overload: System.Diagnostics.ActivitySpanId.CreateFromString*
+  nameWithType.vb: ActivitySpanId.CreateFromString(ReadOnlySpan(Of Char))
+  fullName.vb: System.Diagnostics.ActivitySpanId.CreateFromString(System.ReadOnlySpan(Of Char))
+  name.vb: CreateFromString(ReadOnlySpan(Of Char))
+- uid: System.Diagnostics.ActivitySpanId.ToHexString
+  commentId: M:System.Diagnostics.ActivitySpanId.ToHexString
+  id: ToHexString
+  parent: System.Diagnostics.ActivitySpanId
+  langs:
+  - csharp
+  - vb
+  name: ToHexString()
+  nameWithType: ActivitySpanId.ToHexString()
+  fullName: System.Diagnostics.ActivitySpanId.ToHexString()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public string ToHexString()
+    return:
+      type: System.String
+    content.vb: Public Function ToHexString() As String
+  overload: System.Diagnostics.ActivitySpanId.ToHexString*
+- uid: System.Diagnostics.ActivitySpanId.ToString
+  commentId: M:System.Diagnostics.ActivitySpanId.ToString
+  id: ToString
+  parent: System.Diagnostics.ActivitySpanId
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: ActivitySpanId.ToString()
+  fullName: System.Diagnostics.ActivitySpanId.ToString()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: System.Diagnostics.ActivitySpanId.ToString*
+- uid: System.Diagnostics.ActivitySpanId.op_Equality(System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivitySpanId)
+  commentId: M:System.Diagnostics.ActivitySpanId.op_Equality(System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivitySpanId)
+  id: op_Equality(System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivitySpanId)
+  parent: System.Diagnostics.ActivitySpanId
+  langs:
+  - csharp
+  - vb
+  name: operator ==(ActivitySpanId, ActivitySpanId)
+  nameWithType: ActivitySpanId.operator ==(ActivitySpanId, ActivitySpanId)
+  fullName: System.Diagnostics.ActivitySpanId.operator ==(System.Diagnostics.ActivitySpanId, System.Diagnostics.ActivitySpanId)
+  type: Operator
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static bool operator ==(ActivitySpanId spanId1, ActivitySpanId spandId2)
+    parameters:
+    - id: spanId1
+      type: System.Diagnostics.ActivitySpanId
+    - id: spandId2
+      type: System.Diagnostics.ActivitySpanId
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(spanId1 As ActivitySpanId, spandId2 As ActivitySpanId) As Boolean
+  overload: System.Diagnostics.ActivitySpanId.op_Equality*
+  nameWithType.vb: ActivitySpanId.=(ActivitySpanId, ActivitySpanId)
+  fullName.vb: System.Diagnostics.ActivitySpanId.=(System.Diagnostics.ActivitySpanId, System.Diagnostics.ActivitySpanId)
+  name.vb: =(ActivitySpanId, ActivitySpanId)
+- uid: System.Diagnostics.ActivitySpanId.op_Inequality(System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivitySpanId)
+  commentId: M:System.Diagnostics.ActivitySpanId.op_Inequality(System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivitySpanId)
+  id: op_Inequality(System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivitySpanId)
+  parent: System.Diagnostics.ActivitySpanId
+  langs:
+  - csharp
+  - vb
+  name: operator !=(ActivitySpanId, ActivitySpanId)
+  nameWithType: ActivitySpanId.operator !=(ActivitySpanId, ActivitySpanId)
+  fullName: System.Diagnostics.ActivitySpanId.operator !=(System.Diagnostics.ActivitySpanId, System.Diagnostics.ActivitySpanId)
+  type: Operator
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static bool operator !=(ActivitySpanId spanId1, ActivitySpanId spandId2)
+    parameters:
+    - id: spanId1
+      type: System.Diagnostics.ActivitySpanId
+    - id: spandId2
+      type: System.Diagnostics.ActivitySpanId
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(spanId1 As ActivitySpanId, spandId2 As ActivitySpanId) As Boolean
+  overload: System.Diagnostics.ActivitySpanId.op_Inequality*
+  nameWithType.vb: ActivitySpanId.<>(ActivitySpanId, ActivitySpanId)
+  fullName.vb: System.Diagnostics.ActivitySpanId.<>(System.Diagnostics.ActivitySpanId, System.Diagnostics.ActivitySpanId)
+  name.vb: <>(ActivitySpanId, ActivitySpanId)
+- uid: System.Diagnostics.ActivitySpanId.Equals(System.Diagnostics.ActivitySpanId)
+  commentId: M:System.Diagnostics.ActivitySpanId.Equals(System.Diagnostics.ActivitySpanId)
+  id: Equals(System.Diagnostics.ActivitySpanId)
+  parent: System.Diagnostics.ActivitySpanId
+  langs:
+  - csharp
+  - vb
+  name: Equals(ActivitySpanId)
+  nameWithType: ActivitySpanId.Equals(ActivitySpanId)
+  fullName: System.Diagnostics.ActivitySpanId.Equals(System.Diagnostics.ActivitySpanId)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  example: []
+  syntax:
+    content: public bool Equals(ActivitySpanId spanId)
+    parameters:
+    - id: spanId
+      type: System.Diagnostics.ActivitySpanId
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(spanId As ActivitySpanId) As Boolean
+  overload: System.Diagnostics.ActivitySpanId.Equals*
+  implements:
+  - System.IEquatable{System.Diagnostics.ActivitySpanId}.Equals(System.Diagnostics.ActivitySpanId)
+- uid: System.Diagnostics.ActivitySpanId.Equals(System.Object)
+  commentId: M:System.Diagnostics.ActivitySpanId.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: System.Diagnostics.ActivitySpanId
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: ActivitySpanId.Equals(object?)
+  fullName: System.Diagnostics.ActivitySpanId.Equals(object?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: System.Diagnostics.ActivitySpanId.Equals*
+  nameWithType.vb: ActivitySpanId.Equals(Object)
+  fullName.vb: System.Diagnostics.ActivitySpanId.Equals(Object)
+  name.vb: Equals(Object)
+- uid: System.Diagnostics.ActivitySpanId.GetHashCode
+  commentId: M:System.Diagnostics.ActivitySpanId.GetHashCode
+  id: GetHashCode
+  parent: System.Diagnostics.ActivitySpanId
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: ActivitySpanId.GetHashCode()
+  fullName: System.Diagnostics.ActivitySpanId.GetHashCode()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: System.Diagnostics.ActivitySpanId.GetHashCode*
+- uid: System.Diagnostics.ActivitySpanId.CopyTo(System.Span{System.Byte})
+  commentId: M:System.Diagnostics.ActivitySpanId.CopyTo(System.Span{System.Byte})
+  id: CopyTo(System.Span{System.Byte})
+  parent: System.Diagnostics.ActivitySpanId
+  langs:
+  - csharp
+  - vb
+  name: CopyTo(Span<byte>)
+  nameWithType: ActivitySpanId.CopyTo(Span<byte>)
+  fullName: System.Diagnostics.ActivitySpanId.CopyTo(System.Span<byte>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public void CopyTo(Span<byte> destination)
+    parameters:
+    - id: destination
+      type: System.Span{System.Byte}
+    content.vb: Public Sub CopyTo(destination As Span(Of Byte))
+  overload: System.Diagnostics.ActivitySpanId.CopyTo*
+  nameWithType.vb: ActivitySpanId.CopyTo(Span(Of Byte))
+  fullName.vb: System.Diagnostics.ActivitySpanId.CopyTo(System.Span(Of Byte))
+  name.vb: CopyTo(Span(Of Byte))
+references:
+- uid: System.Diagnostics
+  commentId: N:System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Diagnostics
+  nameWithType: System.Diagnostics
+  fullName: System.Diagnostics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+- uid: System.IEquatable{System.Diagnostics.ActivitySpanId}
+  commentId: T:System.IEquatable{System.Diagnostics.ActivitySpanId}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<ActivitySpanId>
+  nameWithType: IEquatable<ActivitySpanId>
+  fullName: System.IEquatable<System.Diagnostics.ActivitySpanId>
+  nameWithType.vb: IEquatable(Of ActivitySpanId)
+  fullName.vb: System.IEquatable(Of System.Diagnostics.ActivitySpanId)
+  name.vb: IEquatable(Of ActivitySpanId)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: System.Diagnostics.ActivitySpanId
+    name: ActivitySpanId
+    isExternal: true
+    href: System.Diagnostics.ActivitySpanId.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Diagnostics.ActivitySpanId
+    name: ActivitySpanId
+    isExternal: true
+    href: System.Diagnostics.ActivitySpanId.html
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: System.Diagnostics.ActivitySpanId.CreateRandom*
+  commentId: Overload:System.Diagnostics.ActivitySpanId.CreateRandom
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html#System_Diagnostics_ActivitySpanId_CreateRandom
+  name: CreateRandom
+  nameWithType: ActivitySpanId.CreateRandom
+  fullName: System.Diagnostics.ActivitySpanId.CreateRandom
+- uid: System.Diagnostics.ActivitySpanId
+  commentId: T:System.Diagnostics.ActivitySpanId
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html
+  name: ActivitySpanId
+  nameWithType: ActivitySpanId
+  fullName: System.Diagnostics.ActivitySpanId
+- uid: System.Diagnostics.ActivitySpanId.CreateFromBytes*
+  commentId: Overload:System.Diagnostics.ActivitySpanId.CreateFromBytes
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html#System_Diagnostics_ActivitySpanId_CreateFromBytes_System_ReadOnlySpan_System_Byte__
+  name: CreateFromBytes
+  nameWithType: ActivitySpanId.CreateFromBytes
+  fullName: System.Diagnostics.ActivitySpanId.CreateFromBytes
+- uid: System.ReadOnlySpan{System.Byte}
+  commentId: T:System.ReadOnlySpan{System.Byte}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<byte>
+  nameWithType: ReadOnlySpan<byte>
+  fullName: System.ReadOnlySpan<byte>
+  nameWithType.vb: ReadOnlySpan(Of Byte)
+  fullName.vb: System.ReadOnlySpan(Of Byte)
+  name.vb: ReadOnlySpan(Of Byte)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.ReadOnlySpan`1
+  commentId: T:System.ReadOnlySpan`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<T>
+  nameWithType: ReadOnlySpan<T>
+  fullName: System.ReadOnlySpan<T>
+  nameWithType.vb: ReadOnlySpan(Of T)
+  fullName.vb: System.ReadOnlySpan(Of T)
+  name.vb: ReadOnlySpan(Of T)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Diagnostics.ActivitySpanId.CreateFromUtf8String*
+  commentId: Overload:System.Diagnostics.ActivitySpanId.CreateFromUtf8String
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html#System_Diagnostics_ActivitySpanId_CreateFromUtf8String_System_ReadOnlySpan_System_Byte__
+  name: CreateFromUtf8String
+  nameWithType: ActivitySpanId.CreateFromUtf8String
+  fullName: System.Diagnostics.ActivitySpanId.CreateFromUtf8String
+- uid: System.Diagnostics.ActivitySpanId.CreateFromString*
+  commentId: Overload:System.Diagnostics.ActivitySpanId.CreateFromString
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html#System_Diagnostics_ActivitySpanId_CreateFromString_System_ReadOnlySpan_System_Char__
+  name: CreateFromString
+  nameWithType: ActivitySpanId.CreateFromString
+  fullName: System.Diagnostics.ActivitySpanId.CreateFromString
+- uid: System.ReadOnlySpan{System.Char}
+  commentId: T:System.ReadOnlySpan{System.Char}
+  parent: System
+  definition: System.ReadOnlySpan`1
+  href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  name: ReadOnlySpan<char>
+  nameWithType: ReadOnlySpan<char>
+  fullName: System.ReadOnlySpan<char>
+  nameWithType.vb: ReadOnlySpan(Of Char)
+  fullName.vb: System.ReadOnlySpan(Of Char)
+  name.vb: ReadOnlySpan(Of Char)
+  spec.csharp:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: <
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: '>'
+  spec.vb:
+  - uid: System.ReadOnlySpan`1
+    name: ReadOnlySpan
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.readonlyspan-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: System.Diagnostics.ActivitySpanId.ToHexString*
+  commentId: Overload:System.Diagnostics.ActivitySpanId.ToHexString
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html#System_Diagnostics_ActivitySpanId_ToHexString
+  name: ToHexString
+  nameWithType: ActivitySpanId.ToHexString
+  fullName: System.Diagnostics.ActivitySpanId.ToHexString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Diagnostics.ActivitySpanId.ToString*
+  commentId: Overload:System.Diagnostics.ActivitySpanId.ToString
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html#System_Diagnostics_ActivitySpanId_ToString
+  name: ToString
+  nameWithType: ActivitySpanId.ToString
+  fullName: System.Diagnostics.ActivitySpanId.ToString
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Diagnostics.ActivitySpanId.op_Equality*
+  commentId: Overload:System.Diagnostics.ActivitySpanId.op_Equality
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html#System_Diagnostics_ActivitySpanId_op_Equality_System_Diagnostics_ActivitySpanId_System_Diagnostics_ActivitySpanId_
+  name: operator ==
+  nameWithType: ActivitySpanId.operator ==
+  fullName: System.Diagnostics.ActivitySpanId.operator ==
+  nameWithType.vb: ActivitySpanId.=
+  fullName.vb: System.Diagnostics.ActivitySpanId.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Diagnostics.ActivitySpanId.op_Equality*
+    name: ==
+    isExternal: true
+    href: System.Diagnostics.ActivitySpanId.html#System_Diagnostics_ActivitySpanId_op_Equality_System_Diagnostics_ActivitySpanId_System_Diagnostics_ActivitySpanId_
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Diagnostics.ActivitySpanId.op_Inequality*
+  commentId: Overload:System.Diagnostics.ActivitySpanId.op_Inequality
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html#System_Diagnostics_ActivitySpanId_op_Inequality_System_Diagnostics_ActivitySpanId_System_Diagnostics_ActivitySpanId_
+  name: operator !=
+  nameWithType: ActivitySpanId.operator !=
+  fullName: System.Diagnostics.ActivitySpanId.operator !=
+  nameWithType.vb: ActivitySpanId.<>
+  fullName.vb: System.Diagnostics.ActivitySpanId.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: System.Diagnostics.ActivitySpanId.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: System.Diagnostics.ActivitySpanId.html#System_Diagnostics_ActivitySpanId_op_Inequality_System_Diagnostics_ActivitySpanId_System_Diagnostics_ActivitySpanId_
+- uid: System.Diagnostics.ActivitySpanId.Equals*
+  commentId: Overload:System.Diagnostics.ActivitySpanId.Equals
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html#System_Diagnostics_ActivitySpanId_Equals_System_Diagnostics_ActivitySpanId_
+  name: Equals
+  nameWithType: ActivitySpanId.Equals
+  fullName: System.Diagnostics.ActivitySpanId.Equals
+- uid: System.IEquatable{System.Diagnostics.ActivitySpanId}.Equals(System.Diagnostics.ActivitySpanId)
+  commentId: M:System.IEquatable{System.Diagnostics.ActivitySpanId}.Equals(System.Diagnostics.ActivitySpanId)
+  parent: System.IEquatable{System.Diagnostics.ActivitySpanId}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(ActivitySpanId)
+  nameWithType: IEquatable<ActivitySpanId>.Equals(ActivitySpanId)
+  fullName: System.IEquatable<System.Diagnostics.ActivitySpanId>.Equals(System.Diagnostics.ActivitySpanId)
+  nameWithType.vb: IEquatable(Of ActivitySpanId).Equals(ActivitySpanId)
+  fullName.vb: System.IEquatable(Of System.Diagnostics.ActivitySpanId).Equals(System.Diagnostics.ActivitySpanId)
+  spec.csharp:
+  - uid: System.IEquatable{System.Diagnostics.ActivitySpanId}.Equals(System.Diagnostics.ActivitySpanId)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Diagnostics.ActivitySpanId
+    name: ActivitySpanId
+    isExternal: true
+    href: System.Diagnostics.ActivitySpanId.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{System.Diagnostics.ActivitySpanId}.Equals(System.Diagnostics.ActivitySpanId)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: System.Diagnostics.ActivitySpanId
+    name: ActivitySpanId
+    isExternal: true
+    href: System.Diagnostics.ActivitySpanId.html
+  - name: )
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.Diagnostics.ActivitySpanId.GetHashCode*
+  commentId: Overload:System.Diagnostics.ActivitySpanId.GetHashCode
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html#System_Diagnostics_ActivitySpanId_GetHashCode
+  name: GetHashCode
+  nameWithType: ActivitySpanId.GetHashCode
+  fullName: System.Diagnostics.ActivitySpanId.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Diagnostics.ActivitySpanId.CopyTo*
+  commentId: Overload:System.Diagnostics.ActivitySpanId.CopyTo
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html#System_Diagnostics_ActivitySpanId_CopyTo_System_Span_System_Byte__
+  name: CopyTo
+  nameWithType: ActivitySpanId.CopyTo
+  fullName: System.Diagnostics.ActivitySpanId.CopyTo
+- uid: System.Span{System.Byte}
+  commentId: T:System.Span{System.Byte}
+  parent: System
+  definition: System.Span`1
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<byte>
+  nameWithType: Span<byte>
+  fullName: System.Span<byte>
+  nameWithType.vb: Span(Of Byte)
+  fullName.vb: System.Span(Of Byte)
+  name.vb: Span(Of Byte)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Span`1
+  commentId: T:System.Span`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.span-1
+  name: Span<T>
+  nameWithType: Span<T>
+  fullName: System.Span<T>
+  nameWithType.vb: Span(Of T)
+  fullName.vb: System.Span(Of T)
+  name.vb: Span(Of T)
+  spec.csharp:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Span`1
+    name: Span
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.span-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
