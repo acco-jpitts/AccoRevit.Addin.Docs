@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class OperationWalker | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class OperationWalker | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.CodeAnalysis.Operations.OperationWalker">
+
+
+
+  <h1 id="Microsoft_CodeAnalysis_Operations_OperationWalker" data-uid="Microsoft.CodeAnalysis.Operations.OperationWalker" class="text-break">
+Class OperationWalker  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.CodeAnalysis.html">CodeAnalysis</a>.<a class="xref" href="Microsoft.CodeAnalysis.Operations.html">Operations</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class OperationWalker : OperationVisitor</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html">OperationVisitor</a></div>
+      <div><span class="xref">OperationWalker</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitInvalid_Microsoft_CodeAnalysis_Operations_IInvalidOperation_">OperationVisitor.VisitInvalid(IInvalidOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitBlock_Microsoft_CodeAnalysis_Operations_IBlockOperation_">OperationVisitor.VisitBlock(IBlockOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitVariableDeclarationGroup_Microsoft_CodeAnalysis_Operations_IVariableDeclarationGroupOperation_">OperationVisitor.VisitVariableDeclarationGroup(IVariableDeclarationGroupOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitSwitch_Microsoft_CodeAnalysis_Operations_ISwitchOperation_">OperationVisitor.VisitSwitch(ISwitchOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitForEachLoop_Microsoft_CodeAnalysis_Operations_IForEachLoopOperation_">OperationVisitor.VisitForEachLoop(IForEachLoopOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitForLoop_Microsoft_CodeAnalysis_Operations_IForLoopOperation_">OperationVisitor.VisitForLoop(IForLoopOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitForToLoop_Microsoft_CodeAnalysis_Operations_IForToLoopOperation_">OperationVisitor.VisitForToLoop(IForToLoopOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitWhileLoop_Microsoft_CodeAnalysis_Operations_IWhileLoopOperation_">OperationVisitor.VisitWhileLoop(IWhileLoopOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitLabeled_Microsoft_CodeAnalysis_Operations_ILabeledOperation_">OperationVisitor.VisitLabeled(ILabeledOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitBranch_Microsoft_CodeAnalysis_Operations_IBranchOperation_">OperationVisitor.VisitBranch(IBranchOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitEmpty_Microsoft_CodeAnalysis_Operations_IEmptyOperation_">OperationVisitor.VisitEmpty(IEmptyOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitReturn_Microsoft_CodeAnalysis_Operations_IReturnOperation_">OperationVisitor.VisitReturn(IReturnOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitLock_Microsoft_CodeAnalysis_Operations_ILockOperation_">OperationVisitor.VisitLock(ILockOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitTry_Microsoft_CodeAnalysis_Operations_ITryOperation_">OperationVisitor.VisitTry(ITryOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitUsing_Microsoft_CodeAnalysis_Operations_IUsingOperation_">OperationVisitor.VisitUsing(IUsingOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitExpressionStatement_Microsoft_CodeAnalysis_Operations_IExpressionStatementOperation_">OperationVisitor.VisitExpressionStatement(IExpressionStatementOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitLocalFunction_Microsoft_CodeAnalysis_Operations_ILocalFunctionOperation_">OperationVisitor.VisitLocalFunction(ILocalFunctionOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitStop_Microsoft_CodeAnalysis_Operations_IStopOperation_">OperationVisitor.VisitStop(IStopOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitEnd_Microsoft_CodeAnalysis_Operations_IEndOperation_">OperationVisitor.VisitEnd(IEndOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitRaiseEvent_Microsoft_CodeAnalysis_Operations_IRaiseEventOperation_">OperationVisitor.VisitRaiseEvent(IRaiseEventOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitLiteral_Microsoft_CodeAnalysis_Operations_ILiteralOperation_">OperationVisitor.VisitLiteral(ILiteralOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitConversion_Microsoft_CodeAnalysis_Operations_IConversionOperation_">OperationVisitor.VisitConversion(IConversionOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitInvocation_Microsoft_CodeAnalysis_Operations_IInvocationOperation_">OperationVisitor.VisitInvocation(IInvocationOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitArrayElementReference_Microsoft_CodeAnalysis_Operations_IArrayElementReferenceOperation_">OperationVisitor.VisitArrayElementReference(IArrayElementReferenceOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitLocalReference_Microsoft_CodeAnalysis_Operations_ILocalReferenceOperation_">OperationVisitor.VisitLocalReference(ILocalReferenceOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitParameterReference_Microsoft_CodeAnalysis_Operations_IParameterReferenceOperation_">OperationVisitor.VisitParameterReference(IParameterReferenceOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitFieldReference_Microsoft_CodeAnalysis_Operations_IFieldReferenceOperation_">OperationVisitor.VisitFieldReference(IFieldReferenceOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitMethodReference_Microsoft_CodeAnalysis_Operations_IMethodReferenceOperation_">OperationVisitor.VisitMethodReference(IMethodReferenceOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitPropertyReference_Microsoft_CodeAnalysis_Operations_IPropertyReferenceOperation_">OperationVisitor.VisitPropertyReference(IPropertyReferenceOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitEventReference_Microsoft_CodeAnalysis_Operations_IEventReferenceOperation_">OperationVisitor.VisitEventReference(IEventReferenceOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitUnaryOperator_Microsoft_CodeAnalysis_Operations_IUnaryOperation_">OperationVisitor.VisitUnaryOperator(IUnaryOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitBinaryOperator_Microsoft_CodeAnalysis_Operations_IBinaryOperation_">OperationVisitor.VisitBinaryOperator(IBinaryOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitConditional_Microsoft_CodeAnalysis_Operations_IConditionalOperation_">OperationVisitor.VisitConditional(IConditionalOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitCoalesce_Microsoft_CodeAnalysis_Operations_ICoalesceOperation_">OperationVisitor.VisitCoalesce(ICoalesceOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitAnonymousFunction_Microsoft_CodeAnalysis_Operations_IAnonymousFunctionOperation_">OperationVisitor.VisitAnonymousFunction(IAnonymousFunctionOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitObjectCreation_Microsoft_CodeAnalysis_Operations_IObjectCreationOperation_">OperationVisitor.VisitObjectCreation(IObjectCreationOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitTypeParameterObjectCreation_Microsoft_CodeAnalysis_Operations_ITypeParameterObjectCreationOperation_">OperationVisitor.VisitTypeParameterObjectCreation(ITypeParameterObjectCreationOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitArrayCreation_Microsoft_CodeAnalysis_Operations_IArrayCreationOperation_">OperationVisitor.VisitArrayCreation(IArrayCreationOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitInstanceReference_Microsoft_CodeAnalysis_Operations_IInstanceReferenceOperation_">OperationVisitor.VisitInstanceReference(IInstanceReferenceOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitIsType_Microsoft_CodeAnalysis_Operations_IIsTypeOperation_">OperationVisitor.VisitIsType(IIsTypeOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitAwait_Microsoft_CodeAnalysis_Operations_IAwaitOperation_">OperationVisitor.VisitAwait(IAwaitOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitSimpleAssignment_Microsoft_CodeAnalysis_Operations_ISimpleAssignmentOperation_">OperationVisitor.VisitSimpleAssignment(ISimpleAssignmentOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitCompoundAssignment_Microsoft_CodeAnalysis_Operations_ICompoundAssignmentOperation_">OperationVisitor.VisitCompoundAssignment(ICompoundAssignmentOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitParenthesized_Microsoft_CodeAnalysis_Operations_IParenthesizedOperation_">OperationVisitor.VisitParenthesized(IParenthesizedOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitEventAssignment_Microsoft_CodeAnalysis_Operations_IEventAssignmentOperation_">OperationVisitor.VisitEventAssignment(IEventAssignmentOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitConditionalAccess_Microsoft_CodeAnalysis_Operations_IConditionalAccessOperation_">OperationVisitor.VisitConditionalAccess(IConditionalAccessOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitConditionalAccessInstance_Microsoft_CodeAnalysis_Operations_IConditionalAccessInstanceOperation_">OperationVisitor.VisitConditionalAccessInstance(IConditionalAccessInstanceOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitInterpolatedString_Microsoft_CodeAnalysis_Operations_IInterpolatedStringOperation_">OperationVisitor.VisitInterpolatedString(IInterpolatedStringOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitAnonymousObjectCreation_Microsoft_CodeAnalysis_Operations_IAnonymousObjectCreationOperation_">OperationVisitor.VisitAnonymousObjectCreation(IAnonymousObjectCreationOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitObjectOrCollectionInitializer_Microsoft_CodeAnalysis_Operations_IObjectOrCollectionInitializerOperation_">OperationVisitor.VisitObjectOrCollectionInitializer(IObjectOrCollectionInitializerOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitMemberInitializer_Microsoft_CodeAnalysis_Operations_IMemberInitializerOperation_">OperationVisitor.VisitMemberInitializer(IMemberInitializerOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitCollectionElementInitializer_Microsoft_CodeAnalysis_Operations_ICollectionElementInitializerOperation_">OperationVisitor.VisitCollectionElementInitializer(ICollectionElementInitializerOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitNameOf_Microsoft_CodeAnalysis_Operations_INameOfOperation_">OperationVisitor.VisitNameOf(INameOfOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitTuple_Microsoft_CodeAnalysis_Operations_ITupleOperation_">OperationVisitor.VisitTuple(ITupleOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitDynamicObjectCreation_Microsoft_CodeAnalysis_Operations_IDynamicObjectCreationOperation_">OperationVisitor.VisitDynamicObjectCreation(IDynamicObjectCreationOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitDynamicMemberReference_Microsoft_CodeAnalysis_Operations_IDynamicMemberReferenceOperation_">OperationVisitor.VisitDynamicMemberReference(IDynamicMemberReferenceOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitDynamicInvocation_Microsoft_CodeAnalysis_Operations_IDynamicInvocationOperation_">OperationVisitor.VisitDynamicInvocation(IDynamicInvocationOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitDynamicIndexerAccess_Microsoft_CodeAnalysis_Operations_IDynamicIndexerAccessOperation_">OperationVisitor.VisitDynamicIndexerAccess(IDynamicIndexerAccessOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitTranslatedQuery_Microsoft_CodeAnalysis_Operations_ITranslatedQueryOperation_">OperationVisitor.VisitTranslatedQuery(ITranslatedQueryOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitDelegateCreation_Microsoft_CodeAnalysis_Operations_IDelegateCreationOperation_">OperationVisitor.VisitDelegateCreation(IDelegateCreationOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitDefaultValue_Microsoft_CodeAnalysis_Operations_IDefaultValueOperation_">OperationVisitor.VisitDefaultValue(IDefaultValueOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitTypeOf_Microsoft_CodeAnalysis_Operations_ITypeOfOperation_">OperationVisitor.VisitTypeOf(ITypeOfOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitSizeOf_Microsoft_CodeAnalysis_Operations_ISizeOfOperation_">OperationVisitor.VisitSizeOf(ISizeOfOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitAddressOf_Microsoft_CodeAnalysis_Operations_IAddressOfOperation_">OperationVisitor.VisitAddressOf(IAddressOfOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitIsPattern_Microsoft_CodeAnalysis_Operations_IIsPatternOperation_">OperationVisitor.VisitIsPattern(IIsPatternOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitIncrementOrDecrement_Microsoft_CodeAnalysis_Operations_IIncrementOrDecrementOperation_">OperationVisitor.VisitIncrementOrDecrement(IIncrementOrDecrementOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitThrow_Microsoft_CodeAnalysis_Operations_IThrowOperation_">OperationVisitor.VisitThrow(IThrowOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitDeconstructionAssignment_Microsoft_CodeAnalysis_Operations_IDeconstructionAssignmentOperation_">OperationVisitor.VisitDeconstructionAssignment(IDeconstructionAssignmentOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitDeclarationExpression_Microsoft_CodeAnalysis_Operations_IDeclarationExpressionOperation_">OperationVisitor.VisitDeclarationExpression(IDeclarationExpressionOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitOmittedArgument_Microsoft_CodeAnalysis_Operations_IOmittedArgumentOperation_">OperationVisitor.VisitOmittedArgument(IOmittedArgumentOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitFieldInitializer_Microsoft_CodeAnalysis_Operations_IFieldInitializerOperation_">OperationVisitor.VisitFieldInitializer(IFieldInitializerOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitVariableInitializer_Microsoft_CodeAnalysis_Operations_IVariableInitializerOperation_">OperationVisitor.VisitVariableInitializer(IVariableInitializerOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitPropertyInitializer_Microsoft_CodeAnalysis_Operations_IPropertyInitializerOperation_">OperationVisitor.VisitPropertyInitializer(IPropertyInitializerOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitParameterInitializer_Microsoft_CodeAnalysis_Operations_IParameterInitializerOperation_">OperationVisitor.VisitParameterInitializer(IParameterInitializerOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitArrayInitializer_Microsoft_CodeAnalysis_Operations_IArrayInitializerOperation_">OperationVisitor.VisitArrayInitializer(IArrayInitializerOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitVariableDeclarator_Microsoft_CodeAnalysis_Operations_IVariableDeclaratorOperation_">OperationVisitor.VisitVariableDeclarator(IVariableDeclaratorOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitVariableDeclaration_Microsoft_CodeAnalysis_Operations_IVariableDeclarationOperation_">OperationVisitor.VisitVariableDeclaration(IVariableDeclarationOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitArgument_Microsoft_CodeAnalysis_Operations_IArgumentOperation_">OperationVisitor.VisitArgument(IArgumentOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitCatchClause_Microsoft_CodeAnalysis_Operations_ICatchClauseOperation_">OperationVisitor.VisitCatchClause(ICatchClauseOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitSwitchCase_Microsoft_CodeAnalysis_Operations_ISwitchCaseOperation_">OperationVisitor.VisitSwitchCase(ISwitchCaseOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitDefaultCaseClause_Microsoft_CodeAnalysis_Operations_IDefaultCaseClauseOperation_">OperationVisitor.VisitDefaultCaseClause(IDefaultCaseClauseOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitPatternCaseClause_Microsoft_CodeAnalysis_Operations_IPatternCaseClauseOperation_">OperationVisitor.VisitPatternCaseClause(IPatternCaseClauseOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitRangeCaseClause_Microsoft_CodeAnalysis_Operations_IRangeCaseClauseOperation_">OperationVisitor.VisitRangeCaseClause(IRangeCaseClauseOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitRelationalCaseClause_Microsoft_CodeAnalysis_Operations_IRelationalCaseClauseOperation_">OperationVisitor.VisitRelationalCaseClause(IRelationalCaseClauseOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitSingleValueCaseClause_Microsoft_CodeAnalysis_Operations_ISingleValueCaseClauseOperation_">OperationVisitor.VisitSingleValueCaseClause(ISingleValueCaseClauseOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitInterpolatedStringText_Microsoft_CodeAnalysis_Operations_IInterpolatedStringTextOperation_">OperationVisitor.VisitInterpolatedStringText(IInterpolatedStringTextOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitInterpolation_Microsoft_CodeAnalysis_Operations_IInterpolationOperation_">OperationVisitor.VisitInterpolation(IInterpolationOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitConstantPattern_Microsoft_CodeAnalysis_Operations_IConstantPatternOperation_">OperationVisitor.VisitConstantPattern(IConstantPatternOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitDeclarationPattern_Microsoft_CodeAnalysis_Operations_IDeclarationPatternOperation_">OperationVisitor.VisitDeclarationPattern(IDeclarationPatternOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitTupleBinaryOperator_Microsoft_CodeAnalysis_Operations_ITupleBinaryOperation_">OperationVisitor.VisitTupleBinaryOperator(ITupleBinaryOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitMethodBodyOperation_Microsoft_CodeAnalysis_Operations_IMethodBodyOperation_">OperationVisitor.VisitMethodBodyOperation(IMethodBodyOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitConstructorBodyOperation_Microsoft_CodeAnalysis_Operations_IConstructorBodyOperation_">OperationVisitor.VisitConstructorBodyOperation(IConstructorBodyOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitDiscardOperation_Microsoft_CodeAnalysis_Operations_IDiscardOperation_">OperationVisitor.VisitDiscardOperation(IDiscardOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitFlowCapture_Microsoft_CodeAnalysis_FlowAnalysis_IFlowCaptureOperation_">OperationVisitor.VisitFlowCapture(IFlowCaptureOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitFlowCaptureReference_Microsoft_CodeAnalysis_FlowAnalysis_IFlowCaptureReferenceOperation_">OperationVisitor.VisitFlowCaptureReference(IFlowCaptureReferenceOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitIsNull_Microsoft_CodeAnalysis_FlowAnalysis_IIsNullOperation_">OperationVisitor.VisitIsNull(IIsNullOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitCaughtException_Microsoft_CodeAnalysis_FlowAnalysis_ICaughtExceptionOperation_">OperationVisitor.VisitCaughtException(ICaughtExceptionOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitStaticLocalInitializationSemaphore_Microsoft_CodeAnalysis_FlowAnalysis_IStaticLocalInitializationSemaphoreOperation_">OperationVisitor.VisitStaticLocalInitializationSemaphore(IStaticLocalInitializationSemaphoreOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitFlowAnonymousFunction_Microsoft_CodeAnalysis_FlowAnalysis_IFlowAnonymousFunctionOperation_">OperationVisitor.VisitFlowAnonymousFunction(IFlowAnonymousFunctionOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitCoalesceAssignment_Microsoft_CodeAnalysis_Operations_ICoalesceAssignmentOperation_">OperationVisitor.VisitCoalesceAssignment(ICoalesceAssignmentOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitRangeOperation_Microsoft_CodeAnalysis_Operations_IRangeOperation_">OperationVisitor.VisitRangeOperation(IRangeOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitReDim_Microsoft_CodeAnalysis_Operations_IReDimOperation_">OperationVisitor.VisitReDim(IReDimOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitReDimClause_Microsoft_CodeAnalysis_Operations_IReDimClauseOperation_">OperationVisitor.VisitReDimClause(IReDimClauseOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitRecursivePattern_Microsoft_CodeAnalysis_Operations_IRecursivePatternOperation_">OperationVisitor.VisitRecursivePattern(IRecursivePatternOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitDiscardPattern_Microsoft_CodeAnalysis_Operations_IDiscardPatternOperation_">OperationVisitor.VisitDiscardPattern(IDiscardPatternOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitSwitchExpression_Microsoft_CodeAnalysis_Operations_ISwitchExpressionOperation_">OperationVisitor.VisitSwitchExpression(ISwitchExpressionOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitSwitchExpressionArm_Microsoft_CodeAnalysis_Operations_ISwitchExpressionArmOperation_">OperationVisitor.VisitSwitchExpressionArm(ISwitchExpressionArmOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitPropertySubpattern_Microsoft_CodeAnalysis_Operations_IPropertySubpatternOperation_">OperationVisitor.VisitPropertySubpattern(IPropertySubpatternOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitUsingDeclaration_Microsoft_CodeAnalysis_Operations_IUsingDeclarationOperation_">OperationVisitor.VisitUsingDeclaration(IUsingDeclarationOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitNegatedPattern_Microsoft_CodeAnalysis_Operations_INegatedPatternOperation_">OperationVisitor.VisitNegatedPattern(INegatedPatternOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitBinaryPattern_Microsoft_CodeAnalysis_Operations_IBinaryPatternOperation_">OperationVisitor.VisitBinaryPattern(IBinaryPatternOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitTypePattern_Microsoft_CodeAnalysis_Operations_ITypePatternOperation_">OperationVisitor.VisitTypePattern(ITypePatternOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitRelationalPattern_Microsoft_CodeAnalysis_Operations_IRelationalPatternOperation_">OperationVisitor.VisitRelationalPattern(IRelationalPatternOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitWith_Microsoft_CodeAnalysis_Operations_IWithOperation_">OperationVisitor.VisitWith(IWithOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitInterpolatedStringHandlerCreation_Microsoft_CodeAnalysis_Operations_IInterpolatedStringHandlerCreationOperation_">OperationVisitor.VisitInterpolatedStringHandlerCreation(IInterpolatedStringHandlerCreationOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitInterpolatedStringAddition_Microsoft_CodeAnalysis_Operations_IInterpolatedStringAdditionOperation_">OperationVisitor.VisitInterpolatedStringAddition(IInterpolatedStringAdditionOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitInterpolatedStringAppend_Microsoft_CodeAnalysis_Operations_IInterpolatedStringAppendOperation_">OperationVisitor.VisitInterpolatedStringAppend(IInterpolatedStringAppendOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitInterpolatedStringHandlerArgumentPlaceholder_Microsoft_CodeAnalysis_Operations_IInterpolatedStringHandlerArgumentPlaceholderOperation_">OperationVisitor.VisitInterpolatedStringHandlerArgumentPlaceholder(IInterpolatedStringHandlerArgumentPlaceholderOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitFunctionPointerInvocation_Microsoft_CodeAnalysis_Operations_IFunctionPointerInvocationOperation_">OperationVisitor.VisitFunctionPointerInvocation(IFunctionPointerInvocationOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitListPattern_Microsoft_CodeAnalysis_Operations_IListPatternOperation_">OperationVisitor.VisitListPattern(IListPatternOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitSlicePattern_Microsoft_CodeAnalysis_Operations_ISlicePatternOperation_">OperationVisitor.VisitSlicePattern(ISlicePatternOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitImplicitIndexerReference_Microsoft_CodeAnalysis_Operations_IImplicitIndexerReferenceOperation_">OperationVisitor.VisitImplicitIndexerReference(IImplicitIndexerReferenceOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitUtf8String_Microsoft_CodeAnalysis_Operations_IUtf8StringOperation_">OperationVisitor.VisitUtf8String(IUtf8StringOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitAttribute_Microsoft_CodeAnalysis_Operations_IAttributeOperation_">OperationVisitor.VisitAttribute(IAttributeOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitInlineArrayAccess_Microsoft_CodeAnalysis_Operations_IInlineArrayAccessOperation_">OperationVisitor.VisitInlineArrayAccess(IInlineArrayAccessOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitCollectionExpression_Microsoft_CodeAnalysis_Operations_ICollectionExpressionOperation_">OperationVisitor.VisitCollectionExpression(ICollectionExpressionOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.Operations.OperationVisitor.html#Microsoft_CodeAnalysis_Operations_OperationVisitor_VisitSpread_Microsoft_CodeAnalysis_Operations_ISpreadOperation_">OperationVisitor.VisitSpread(ISpreadOperation)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_">UnitExtensions.ToUnitLabel(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_">ReflectionUtils.GetHighlightProperty(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_">SystemExtensions.Cast&lt;T&gt;(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_CodeAnalysis_Operations_OperationWalker__ctor_" data-uid="Microsoft.CodeAnalysis.Operations.OperationWalker.#ctor*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_Operations_OperationWalker__ctor" data-uid="Microsoft.CodeAnalysis.Operations.OperationWalker.#ctor">
+  OperationWalker()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected OperationWalker()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_CodeAnalysis_Operations_OperationWalker_DefaultVisit_" data-uid="Microsoft.CodeAnalysis.Operations.OperationWalker.DefaultVisit*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_Operations_OperationWalker_DefaultVisit_Microsoft_CodeAnalysis_IOperation_" data-uid="Microsoft.CodeAnalysis.Operations.OperationWalker.DefaultVisit(Microsoft.CodeAnalysis.IOperation)">
+  DefaultVisit(IOperation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DefaultVisit(IOperation operation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>operation</code> <a class="xref" href="Microsoft.CodeAnalysis.IOperation.html">IOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_Operations_OperationWalker_Visit_" data-uid="Microsoft.CodeAnalysis.Operations.OperationWalker.Visit*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_Operations_OperationWalker_Visit_Microsoft_CodeAnalysis_IOperation_" data-uid="Microsoft.CodeAnalysis.Operations.OperationWalker.Visit(Microsoft.CodeAnalysis.IOperation)">
+  Visit(IOperation?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Visit(IOperation? operation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>operation</code> <a class="xref" href="Microsoft.CodeAnalysis.IOperation.html">IOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

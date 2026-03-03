@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class AbstractDataFlowAnalysisContext&lt;TAnalysisData, TAnalysisContext, TAnalysisResult, TAbstractAnalysisValue&gt; | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class AbstractDataFlowAnalysisContext&lt;TAnalysisData, TAnalysisContext, TAnalysisResult, TAbstractAnalysisValue&gt; | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4">
+
+
+
+  <h1 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4" class="text-break">
+Class AbstractDataFlowAnalysisContext&lt;TAnalysisData, TAnalysisContext, TAnalysisResult, TAbstractAnalysisValue&gt;  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.CodeAnalysis.html">CodeAnalysis</a>.<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.html">FlowAnalysis</a>.<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.html">DataFlow</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AbstractDataFlowAnalysisContext&lt;TAnalysisData, TAnalysisContext, TAnalysisResult, TAbstractAnalysisValue&gt; : CacheBasedEquatable&lt;TAnalysisContext&gt;, IEquatable&lt;TAnalysisContext?&gt;, IDataFlowAnalysisContext where TAnalysisContext : class, IDataFlowAnalysisContext where TAnalysisResult : class, IDataFlowAnalysisResult&lt;TAbstractAnalysisValue&gt;</code></pre>
+  </div>
+
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TAnalysisData</code></dt>
+    <dd></dd>
+    <dt><code>TAnalysisContext</code></dt>
+    <dd></dd>
+    <dt><code>TAnalysisResult</code></dt>
+    <dd></dd>
+    <dt><code>TAbstractAnalysisValue</code></dt>
+    <dd></dd>
+  </dl>
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html">CacheBasedEquatable</a>&lt;TAnalysisContext&gt;</div>
+      <div><span class="xref">AbstractDataFlowAnalysisContext&lt;TAnalysisData, TAnalysisContext, TAnalysisResult, TAbstractAnalysisValue&gt;</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;TAnalysisContext&gt;</div>
+      <div><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.IDataFlowAnalysisContext.html">IDataFlowAnalysisContext</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisContext.html">CopyAnalysisContext</a></div>
+      <div><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DisposeAnalysis.DisposeAnalysisContext.html">DisposeAnalysisContext</a></div>
+      <div><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAnalysisContext.html">PointsToAnalysisContext</a></div>
+      <div><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.ValueContentAnalysis.ValueContentAnalysisContext.html">ValueContentAnalysisContext</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_GetHashCode">CacheBasedEquatable&lt;TAnalysisContext&gt;.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals_System_Object_">CacheBasedEquatable&lt;TAnalysisContext&gt;.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals__0_">CacheBasedEquatable&lt;TAnalysisContext&gt;.Equals(TAnalysisContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_">UnitExtensions.ToUnitLabel(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_">ReflectionUtils.GetHighlightProperty(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_">SystemExtensions.Cast&lt;T&gt;(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4__ctor_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.#ctor*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4__ctor_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractValueDomain__3__Analyzer_Utilities_WellKnownTypeProvider_Microsoft_CodeAnalysis_FlowAnalysis_ControlFlowGraph_Microsoft_CodeAnalysis_ISymbol_Microsoft_CodeAnalysis_Diagnostics_AnalyzerOptions_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_InterproceduralAnalysisConfiguration_System_Boolean_System_Boolean_System_Boolean_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyBlockAnalysisResult_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAbstractValue__Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_PointsToAnalysis_PointsToAnalysisResult_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_ValueContentAnalysis_ValueContentBlockAnalysisResult_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_ValueContentAnalysis_ValueContentAbstractValue__System_Func__1__2__Microsoft_CodeAnalysis_FlowAnalysis_ControlFlowGraph_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_InterproceduralAnalysisData__0__1__3__Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_InterproceduralAnalysisPredicate_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.#ctor(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractValueDomain{`3},Analyzer.Utilities.WellKnownTypeProvider,Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph,Microsoft.CodeAnalysis.ISymbol,Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralAnalysisConfiguration,System.Boolean,System.Boolean,System.Boolean,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyBlockAnalysisResult,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue},Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAnalysisResult,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.ValueContentAnalysis.ValueContentBlockAnalysisResult,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.ValueContentAnalysis.ValueContentAbstractValue},System.Func{`1,`2},Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralAnalysisData{`0,`1,`3},Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralAnalysisPredicate)">
+  AbstractDataFlowAnalysisContext(AbstractValueDomain&lt;TAbstractAnalysisValue&gt;, WellKnownTypeProvider, ControlFlowGraph, ISymbol, AnalyzerOptions, InterproceduralAnalysisConfiguration, bool, bool, bool, DataFlowAnalysisResult&lt;CopyBlockAnalysisResult, CopyAbstractValue&gt;?, PointsToAnalysisResult?, DataFlowAnalysisResult&lt;ValueContentBlockAnalysisResult, ValueContentAbstractValue&gt;?, Func&lt;TAnalysisContext, TAnalysisResult?&gt;, ControlFlowGraph?, InterproceduralAnalysisData&lt;TAnalysisData, TAnalysisContext, TAbstractAnalysisValue&gt;?, InterproceduralAnalysisPredicate?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AbstractDataFlowAnalysisContext(AbstractValueDomain&lt;TAbstractAnalysisValue&gt; valueDomain, WellKnownTypeProvider wellKnownTypeProvider, ControlFlowGraph controlFlowGraph, ISymbol owningSymbol, AnalyzerOptions analyzerOptions, InterproceduralAnalysisConfiguration interproceduralAnalysisConfig, bool pessimisticAnalysis, bool predicateAnalysis, bool exceptionPathsAnalysis, DataFlowAnalysisResult&lt;CopyBlockAnalysisResult, CopyAbstractValue&gt;? copyAnalysisResultOpt, PointsToAnalysisResult? pointsToAnalysisResultOpt, DataFlowAnalysisResult&lt;ValueContentBlockAnalysisResult, ValueContentAbstractValue&gt;? valueContentAnalysisResultOpt, Func&lt;TAnalysisContext, TAnalysisResult?&gt; tryGetOrComputeAnalysisResult, ControlFlowGraph? parentControlFlowGraphOpt, InterproceduralAnalysisData&lt;TAnalysisData, TAnalysisContext, TAbstractAnalysisValue&gt;? interproceduralAnalysisDataOpt, InterproceduralAnalysisPredicate? interproceduralAnalysisPredicateOpt)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>valueDomain</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractValueDomain-1.html">AbstractValueDomain</a>&lt;TAbstractAnalysisValue&gt;</dt>
+    <dd></dd>
+    <dt><code>wellKnownTypeProvider</code> <a class="xref" href="Analyzer.Utilities.WellKnownTypeProvider.html">WellKnownTypeProvider</a></dt>
+    <dd></dd>
+    <dt><code>controlFlowGraph</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph.html">ControlFlowGraph</a></dt>
+    <dd></dd>
+    <dt><code>owningSymbol</code> <a class="xref" href="Microsoft.CodeAnalysis.ISymbol.html">ISymbol</a></dt>
+    <dd></dd>
+    <dt><code>analyzerOptions</code> <a class="xref" href="Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.html">AnalyzerOptions</a></dt>
+    <dd></dd>
+    <dt><code>interproceduralAnalysisConfig</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralAnalysisConfiguration.html">InterproceduralAnalysisConfiguration</a></dt>
+    <dd></dd>
+    <dt><code>pessimisticAnalysis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>predicateAnalysis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>exceptionPathsAnalysis</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>copyAnalysisResultOpt</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html">DataFlowAnalysisResult</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyBlockAnalysisResult.html">CopyBlockAnalysisResult</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>pointsToAnalysisResultOpt</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAnalysisResult.html">PointsToAnalysisResult</a></dt>
+    <dd></dd>
+    <dt><code>valueContentAnalysisResultOpt</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html">DataFlowAnalysisResult</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.ValueContentAnalysis.ValueContentBlockAnalysisResult.html">ValueContentBlockAnalysisResult</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.ValueContentAnalysis.ValueContentAbstractValue.html">ValueContentAbstractValue</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>tryGetOrComputeAnalysisResult</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TAnalysisContext, TAnalysisResult&gt;</dt>
+    <dd></dd>
+    <dt><code>parentControlFlowGraphOpt</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph.html">ControlFlowGraph</a></dt>
+    <dd></dd>
+    <dt><code>interproceduralAnalysisDataOpt</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralAnalysisData-3.html">InterproceduralAnalysisData</a>&lt;TAnalysisData, TAnalysisContext, TAbstractAnalysisValue&gt;</dt>
+    <dd></dd>
+    <dt><code>interproceduralAnalysisPredicateOpt</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralAnalysisPredicate.html">InterproceduralAnalysisPredicate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_AnalyzerOptions_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.AnalyzerOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_AnalyzerOptions" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.AnalyzerOptions">
+  AnalyzerOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AnalyzerOptions AnalyzerOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.Diagnostics.AnalyzerOptions.html">AnalyzerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ControlFlowGraph_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ControlFlowGraph*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ControlFlowGraph" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ControlFlowGraph">
+  ControlFlowGraph
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControlFlowGraph ControlFlowGraph { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph.html">ControlFlowGraph</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_CopyAnalysisResultOpt_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.CopyAnalysisResultOpt*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_CopyAnalysisResultOpt" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.CopyAnalysisResultOpt">
+  CopyAnalysisResultOpt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataFlowAnalysisResult&lt;CopyBlockAnalysisResult, CopyAbstractValue&gt;? CopyAnalysisResultOpt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html">DataFlowAnalysisResult</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyBlockAnalysisResult.html">CopyBlockAnalysisResult</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ExceptionPathsAnalysis_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ExceptionPathsAnalysis*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ExceptionPathsAnalysis" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ExceptionPathsAnalysis">
+  ExceptionPathsAnalysis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ExceptionPathsAnalysis { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_InterproceduralAnalysisConfiguration_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.InterproceduralAnalysisConfiguration*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_InterproceduralAnalysisConfiguration" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.InterproceduralAnalysisConfiguration">
+  InterproceduralAnalysisConfiguration
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InterproceduralAnalysisConfiguration InterproceduralAnalysisConfiguration { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralAnalysisConfiguration.html">InterproceduralAnalysisConfiguration</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_InterproceduralAnalysisDataOpt_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.InterproceduralAnalysisDataOpt*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_InterproceduralAnalysisDataOpt" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.InterproceduralAnalysisDataOpt">
+  InterproceduralAnalysisDataOpt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InterproceduralAnalysisData&lt;TAnalysisData, TAnalysisContext, TAbstractAnalysisValue&gt;? InterproceduralAnalysisDataOpt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralAnalysisData-3.html">InterproceduralAnalysisData</a>&lt;TAnalysisData, TAnalysisContext, TAbstractAnalysisValue&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_InterproceduralAnalysisPredicateOpt_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.InterproceduralAnalysisPredicateOpt*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_InterproceduralAnalysisPredicateOpt" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.InterproceduralAnalysisPredicateOpt">
+  InterproceduralAnalysisPredicateOpt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InterproceduralAnalysisPredicate? InterproceduralAnalysisPredicateOpt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralAnalysisPredicate.html">InterproceduralAnalysisPredicate</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_OwningSymbol_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.OwningSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_OwningSymbol" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.OwningSymbol">
+  OwningSymbol
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ISymbol OwningSymbol { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ISymbol.html">ISymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ParentControlFlowGraphOpt_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ParentControlFlowGraphOpt*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ParentControlFlowGraphOpt" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ParentControlFlowGraphOpt">
+  ParentControlFlowGraphOpt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ControlFlowGraph? ParentControlFlowGraphOpt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph.html">ControlFlowGraph</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_PessimisticAnalysis_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.PessimisticAnalysis*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_PessimisticAnalysis" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.PessimisticAnalysis">
+  PessimisticAnalysis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PessimisticAnalysis { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_PointsToAnalysisResultOpt_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.PointsToAnalysisResultOpt*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_PointsToAnalysisResultOpt" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.PointsToAnalysisResultOpt">
+  PointsToAnalysisResultOpt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PointsToAnalysisResult? PointsToAnalysisResultOpt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAnalysisResult.html">PointsToAnalysisResult</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_PredicateAnalysis_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.PredicateAnalysis*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_PredicateAnalysis" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.PredicateAnalysis">
+  PredicateAnalysis
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool PredicateAnalysis { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_TryGetOrComputeAnalysisResult_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.TryGetOrComputeAnalysisResult*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_TryGetOrComputeAnalysisResult" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.TryGetOrComputeAnalysisResult">
+  TryGetOrComputeAnalysisResult
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;TAnalysisContext, TAnalysisResult?&gt; TryGetOrComputeAnalysisResult { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;TAnalysisContext, TAnalysisResult&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ValueContentAnalysisResultOpt_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ValueContentAnalysisResultOpt*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ValueContentAnalysisResultOpt" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ValueContentAnalysisResultOpt">
+  ValueContentAnalysisResultOpt
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DataFlowAnalysisResult&lt;ValueContentBlockAnalysisResult, ValueContentAbstractValue&gt;? ValueContentAnalysisResultOpt { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html">DataFlowAnalysisResult</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.ValueContentAnalysis.ValueContentBlockAnalysisResult.html">ValueContentBlockAnalysisResult</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.ValueContentAnalysis.ValueContentAbstractValue.html">ValueContentAbstractValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ValueDomain_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ValueDomain*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ValueDomain" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ValueDomain">
+  ValueDomain
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AbstractValueDomain&lt;TAbstractAnalysisValue&gt; ValueDomain { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractValueDomain-1.html">AbstractValueDomain</a>&lt;TAbstractAnalysisValue&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_WellKnownTypeProvider_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.WellKnownTypeProvider*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_WellKnownTypeProvider" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.WellKnownTypeProvider">
+  WellKnownTypeProvider
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public WellKnownTypeProvider WellKnownTypeProvider { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Analyzer.Utilities.WellKnownTypeProvider.html">WellKnownTypeProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ComputeHashCodeParts_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ComputeHashCodeParts*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ComputeHashCodeParts_System_Action_System_Int32__" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ComputeHashCodeParts(System.Action{System.Int32})">
+  ComputeHashCodeParts(Action&lt;int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override sealed void ComputeHashCodeParts(Action&lt;int&gt; addPart)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>addPart</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ComputeHashCodePartsSpecific_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ComputeHashCodePartsSpecific*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ComputeHashCodePartsSpecific_System_Action_System_Int32__" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ComputeHashCodePartsSpecific(System.Action{System.Int32})">
+  ComputeHashCodePartsSpecific(Action&lt;int&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void ComputeHashCodePartsSpecific(Action&lt;int&gt; builder)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>builder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ForkForInterproceduralAnalysis_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ForkForInterproceduralAnalysis*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_ForkForInterproceduralAnalysis_Microsoft_CodeAnalysis_IMethodSymbol_Microsoft_CodeAnalysis_FlowAnalysis_ControlFlowGraph_Microsoft_CodeAnalysis_IOperation_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_PointsToAnalysis_PointsToAnalysisResult_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyBlockAnalysisResult_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAbstractValue__Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DataFlowAnalysisResult_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_ValueContentAnalysis_ValueContentBlockAnalysisResult_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_ValueContentAnalysis_ValueContentAbstractValue__Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_InterproceduralAnalysisData__0__1__3__" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.ForkForInterproceduralAnalysis(Microsoft.CodeAnalysis.IMethodSymbol,Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph,Microsoft.CodeAnalysis.IOperation,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAnalysisResult,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyBlockAnalysisResult,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue},Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.ValueContentAnalysis.ValueContentBlockAnalysisResult,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.ValueContentAnalysis.ValueContentAbstractValue},Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralAnalysisData{`0,`1,`3})">
+  ForkForInterproceduralAnalysis(IMethodSymbol, ControlFlowGraph, IOperation, PointsToAnalysisResult?, DataFlowAnalysisResult&lt;CopyBlockAnalysisResult, CopyAbstractValue&gt;?, DataFlowAnalysisResult&lt;ValueContentBlockAnalysisResult, ValueContentAbstractValue&gt;?, InterproceduralAnalysisData&lt;TAnalysisData, TAnalysisContext, TAbstractAnalysisValue&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract TAnalysisContext ForkForInterproceduralAnalysis(IMethodSymbol invokedMethod, ControlFlowGraph invokedCfg, IOperation operation, PointsToAnalysisResult? pointsToAnalysisResultOpt, DataFlowAnalysisResult&lt;CopyBlockAnalysisResult, CopyAbstractValue&gt;? copyAnalysisResultOpt, DataFlowAnalysisResult&lt;ValueContentBlockAnalysisResult, ValueContentAbstractValue&gt;? valueContentAnalysisResultOpt, InterproceduralAnalysisData&lt;TAnalysisData, TAnalysisContext, TAbstractAnalysisValue&gt;? interproceduralAnalysisData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>invokedMethod</code> <a class="xref" href="Microsoft.CodeAnalysis.IMethodSymbol.html">IMethodSymbol</a></dt>
+    <dd></dd>
+    <dt><code>invokedCfg</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph.html">ControlFlowGraph</a></dt>
+    <dd></dd>
+    <dt><code>operation</code> <a class="xref" href="Microsoft.CodeAnalysis.IOperation.html">IOperation</a></dt>
+    <dd></dd>
+    <dt><code>pointsToAnalysisResultOpt</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAnalysisResult.html">PointsToAnalysisResult</a></dt>
+    <dd></dd>
+    <dt><code>copyAnalysisResultOpt</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html">DataFlowAnalysisResult</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyBlockAnalysisResult.html">CopyBlockAnalysisResult</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>valueContentAnalysisResultOpt</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DataFlowAnalysisResult-2.html">DataFlowAnalysisResult</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.ValueContentAnalysis.ValueContentBlockAnalysisResult.html">ValueContentBlockAnalysisResult</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.ValueContentAnalysis.ValueContentAbstractValue.html">ValueContentAbstractValue</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>interproceduralAnalysisData</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralAnalysisData-3.html">InterproceduralAnalysisData</a>&lt;TAnalysisData, TAnalysisContext, TAbstractAnalysisValue&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TAnalysisContext</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_GetAnonymousFunctionControlFlowGraph_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.GetAnonymousFunctionControlFlowGraph*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_GetAnonymousFunctionControlFlowGraph_Microsoft_CodeAnalysis_FlowAnalysis_IFlowAnonymousFunctionOperation_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.GetAnonymousFunctionControlFlowGraph(Microsoft.CodeAnalysis.FlowAnalysis.IFlowAnonymousFunctionOperation)">
+  GetAnonymousFunctionControlFlowGraph(IFlowAnonymousFunctionOperation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControlFlowGraph? GetAnonymousFunctionControlFlowGraph(IFlowAnonymousFunctionOperation lambda)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>lambda</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.IFlowAnonymousFunctionOperation.html">IFlowAnonymousFunctionOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph.html">ControlFlowGraph</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_GetLocalFunctionControlFlowGraph_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.GetLocalFunctionControlFlowGraph*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractDataFlowAnalysisContext_4_GetLocalFunctionControlFlowGraph_Microsoft_CodeAnalysis_IMethodSymbol_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractDataFlowAnalysisContext`4.GetLocalFunctionControlFlowGraph(Microsoft.CodeAnalysis.IMethodSymbol)">
+  GetLocalFunctionControlFlowGraph(IMethodSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControlFlowGraph? GetLocalFunctionControlFlowGraph(IMethodSymbol localFunction)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>localFunction</code> <a class="xref" href="Microsoft.CodeAnalysis.IMethodSymbol.html">IMethodSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.ControlFlowGraph.html">ControlFlowGraph</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

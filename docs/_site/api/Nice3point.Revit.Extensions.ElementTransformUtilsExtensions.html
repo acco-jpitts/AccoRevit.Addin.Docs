@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ElementTransformUtilsExtensions | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ElementTransformUtilsExtensions | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions">
+
+
+
+  <h1 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions" class="text-break">
+Class ElementTransformUtilsExtensions  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Nice3point.html">Nice3point</a>.<a class="xref" href="Nice3point.Revit.html">Revit</a>.<a class="xref" href="Nice3point.Revit.Extensions.html">Extensions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public static class ElementTransformUtilsExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ElementTransformUtilsExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CanBeMirrored_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CanBeMirrored*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CanBeMirrored_Autodesk_Revit_DB_Element_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CanBeMirrored(Autodesk.Revit.DB.Element)">
+  CanBeMirrored(Element)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static bool CanBeMirrored(this Element element)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">Element</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CanMirrorElements_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CanMirrorElements*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CanMirrorElements_System_Collections_Generic_ICollection_Autodesk_Revit_DB_ElementId__Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CanMirrorElements(System.Collections.Generic.ICollection{Autodesk.Revit.DB.ElementId},Autodesk.Revit.DB.Document)">
+  CanMirrorElements(ICollection&lt;ElementId&gt;, Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static bool CanMirrorElements(this ICollection&lt;ElementId&gt; elementIds, Document document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_Copy_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.Copy*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_Copy_Autodesk_Revit_DB_Element_Autodesk_Revit_DB_XYZ_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.Copy(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.XYZ)">
+  Copy(Element, XYZ)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICollection&lt;ElementId&gt; Copy(this Element element, XYZ vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">Element</span></dt>
+    <dd></dd>
+    <dt><code>vector</code> <span class="xref">XYZ</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_Copy_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.Copy*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_Copy_Autodesk_Revit_DB_Element_System_Double_System_Double_System_Double_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.Copy(Autodesk.Revit.DB.Element,System.Double,System.Double,System.Double)">
+  Copy(Element, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICollection&lt;ElementId&gt; Copy(this Element element, double deltaX, double deltaY, double deltaZ)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">Element</span></dt>
+    <dd></dd>
+    <dt><code>deltaX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>deltaY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>deltaZ</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CopyElements_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CopyElements*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CopyElements_System_Collections_Generic_ICollection_Autodesk_Revit_DB_ElementId__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CopyElements(System.Collections.Generic.ICollection{Autodesk.Revit.DB.ElementId},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Document)">
+  CopyElements(ICollection&lt;ElementId&gt;, Document, Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICollection&lt;ElementId&gt; CopyElements(this ICollection&lt;ElementId&gt; elementsToCopy, Document sourceDocument, Document destinationDocument)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementsToCopy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>sourceDocument</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>destinationDocument</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CopyElements_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CopyElements*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CopyElements_System_Collections_Generic_ICollection_Autodesk_Revit_DB_ElementId__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Transform_Autodesk_Revit_DB_CopyPasteOptions_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CopyElements(System.Collections.Generic.ICollection{Autodesk.Revit.DB.ElementId},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Transform,Autodesk.Revit.DB.CopyPasteOptions)">
+  CopyElements(ICollection&lt;ElementId&gt;, Document, Document, Transform, CopyPasteOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICollection&lt;ElementId&gt; CopyElements(this ICollection&lt;ElementId&gt; elementsToCopy, Document sourceDocument, Document destinationDocument, Transform transform, CopyPasteOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementsToCopy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>sourceDocument</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>destinationDocument</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>transform</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">CopyPasteOptions</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CopyElements_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CopyElements*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CopyElements_System_Collections_Generic_ICollection_Autodesk_Revit_DB_ElementId__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_XYZ_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CopyElements(System.Collections.Generic.ICollection{Autodesk.Revit.DB.ElementId},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ)">
+  CopyElements(ICollection&lt;ElementId&gt;, Document, XYZ)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICollection&lt;ElementId&gt; CopyElements(this ICollection&lt;ElementId&gt; elementsToCopy, Document document, XYZ translation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementsToCopy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>translation</code> <span class="xref">XYZ</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CopyElements_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CopyElements*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CopyElements_System_Collections_Generic_ICollection_Autodesk_Revit_DB_ElementId__Autodesk_Revit_DB_View_Autodesk_Revit_DB_View_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CopyElements(System.Collections.Generic.ICollection{Autodesk.Revit.DB.ElementId},Autodesk.Revit.DB.View,Autodesk.Revit.DB.View)">
+  CopyElements(ICollection&lt;ElementId&gt;, View, View)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICollection&lt;ElementId&gt; CopyElements(this ICollection&lt;ElementId&gt; elementsToCopy, View sourceView, View destinationView)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementsToCopy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>sourceView</code> <span class="xref">View</span></dt>
+    <dd></dd>
+    <dt><code>destinationView</code> <span class="xref">View</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CopyElements_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CopyElements*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_CopyElements_System_Collections_Generic_ICollection_Autodesk_Revit_DB_ElementId__Autodesk_Revit_DB_View_Autodesk_Revit_DB_View_Autodesk_Revit_DB_Transform_Autodesk_Revit_DB_CopyPasteOptions_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.CopyElements(System.Collections.Generic.ICollection{Autodesk.Revit.DB.ElementId},Autodesk.Revit.DB.View,Autodesk.Revit.DB.View,Autodesk.Revit.DB.Transform,Autodesk.Revit.DB.CopyPasteOptions)">
+  CopyElements(ICollection&lt;ElementId&gt;, View, View, Transform, CopyPasteOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICollection&lt;ElementId&gt; CopyElements(this ICollection&lt;ElementId&gt; elementsToCopy, View sourceView, View destinationView, Transform additionalTransform, CopyPasteOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementsToCopy</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>sourceView</code> <span class="xref">View</span></dt>
+    <dd></dd>
+    <dt><code>destinationView</code> <span class="xref">View</span></dt>
+    <dd></dd>
+    <dt><code>additionalTransform</code> <span class="xref">Transform</span></dt>
+    <dd></dd>
+    <dt><code>options</code> <span class="xref">CopyPasteOptions</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_GetTransformFromViewToView_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.GetTransformFromViewToView*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_GetTransformFromViewToView_Autodesk_Revit_DB_View_Autodesk_Revit_DB_View_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.GetTransformFromViewToView(Autodesk.Revit.DB.View,Autodesk.Revit.DB.View)">
+  GetTransformFromViewToView(View, View)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static Transform GetTransformFromViewToView(this View sourceView, View destinationView)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sourceView</code> <span class="xref">View</span></dt>
+    <dd></dd>
+    <dt><code>destinationView</code> <span class="xref">View</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Transform</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_Mirror_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.Mirror*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_Mirror_Autodesk_Revit_DB_Element_Autodesk_Revit_DB_Plane_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.Mirror(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Plane)">
+  Mirror(Element, Plane)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Element Mirror(this Element element, Plane plane)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">Element</span></dt>
+    <dd></dd>
+    <dt><code>plane</code> <span class="xref">Plane</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Element</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_MirrorElements_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.MirrorElements*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_MirrorElements_System_Collections_Generic_ICollection_Autodesk_Revit_DB_ElementId__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Plane_System_Boolean_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.MirrorElements(System.Collections.Generic.ICollection{Autodesk.Revit.DB.ElementId},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Plane,System.Boolean)">
+  MirrorElements(ICollection&lt;ElementId&gt;, Document, Plane, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICollection&lt;ElementId&gt; MirrorElements(this ICollection&lt;ElementId&gt; elementsToMirror, Document document, Plane plane, bool mirrorCopies)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementsToMirror</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>plane</code> <span class="xref">Plane</span></dt>
+    <dd></dd>
+    <dt><code>mirrorCopies</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_Move_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.Move*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_Move_Autodesk_Revit_DB_Element_Autodesk_Revit_DB_XYZ_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.Move(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.XYZ)">
+  Move(Element, XYZ)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Element Move(this Element element, XYZ vector)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">Element</span></dt>
+    <dd></dd>
+    <dt><code>vector</code> <span class="xref">XYZ</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Element</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_Move_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.Move*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_Move_Autodesk_Revit_DB_Element_System_Double_System_Double_System_Double_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.Move(Autodesk.Revit.DB.Element,System.Double,System.Double,System.Double)">
+  Move(Element, double, double, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Element Move(this Element element, double deltaX = 0, double deltaY = 0, double deltaZ = 0)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">Element</span></dt>
+    <dd></dd>
+    <dt><code>deltaX</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>deltaY</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+    <dt><code>deltaZ</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Element</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_MoveElements_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.MoveElements*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_MoveElements_System_Collections_Generic_ICollection_Autodesk_Revit_DB_ElementId__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_XYZ_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.MoveElements(System.Collections.Generic.ICollection{Autodesk.Revit.DB.ElementId},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.XYZ)">
+  MoveElements(ICollection&lt;ElementId&gt;, Document, XYZ)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICollection&lt;ElementId&gt; MoveElements(this ICollection&lt;ElementId&gt; elementsToMove, Document document, XYZ translation)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementsToMove</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>translation</code> <span class="xref">XYZ</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_Rotate_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.Rotate*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_Rotate_Autodesk_Revit_DB_Element_Autodesk_Revit_DB_Line_System_Double_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.Rotate(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.Line,System.Double)">
+  Rotate(Element, Line, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Element Rotate(this Element element, Line axis, double angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">Element</span></dt>
+    <dd></dd>
+    <dt><code>axis</code> <span class="xref">Line</span></dt>
+    <dd></dd>
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Element</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_RotateElements_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.RotateElements*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_ElementTransformUtilsExtensions_RotateElements_System_Collections_Generic_ICollection_Autodesk_Revit_DB_ElementId__Autodesk_Revit_DB_Document_Autodesk_Revit_DB_Line_System_Double_" data-uid="Nice3point.Revit.Extensions.ElementTransformUtilsExtensions.RotateElements(System.Collections.Generic.ICollection{Autodesk.Revit.DB.ElementId},Autodesk.Revit.DB.Document,Autodesk.Revit.DB.Line,System.Double)">
+  RotateElements(ICollection&lt;ElementId&gt;, Document, Line, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ICollection&lt;ElementId&gt; RotateElements(this ICollection&lt;ElementId&gt; elementsToRotate, Document document, Line axis, double angle)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elementsToRotate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>axis</code> <span class="xref">Line</span></dt>
+    <dd></dd>
+    <dt><code>angle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

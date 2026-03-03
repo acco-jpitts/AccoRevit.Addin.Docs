@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SymbolDisplayFormat | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SymbolDisplayFormat | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat">
+
+
+
+  <h1 id="Microsoft_CodeAnalysis_SymbolDisplayFormat" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat" class="text-break">
+Class SymbolDisplayFormat  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.CodeAnalysis.html">CodeAnalysis</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SymbolDisplayFormat</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SymbolDisplayFormat</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_">UnitExtensions.ToUnitLabel(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_">ReflectionUtils.GetHighlightProperty(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_">SystemExtensions.Cast&lt;T&gt;(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat__ctor_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.#ctor*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat__ctor_Microsoft_CodeAnalysis_SymbolDisplayGlobalNamespaceStyle_Microsoft_CodeAnalysis_SymbolDisplayTypeQualificationStyle_Microsoft_CodeAnalysis_SymbolDisplayGenericsOptions_Microsoft_CodeAnalysis_SymbolDisplayMemberOptions_Microsoft_CodeAnalysis_SymbolDisplayDelegateStyle_Microsoft_CodeAnalysis_SymbolDisplayExtensionMethodStyle_Microsoft_CodeAnalysis_SymbolDisplayParameterOptions_Microsoft_CodeAnalysis_SymbolDisplayPropertyStyle_Microsoft_CodeAnalysis_SymbolDisplayLocalOptions_Microsoft_CodeAnalysis_SymbolDisplayKindOptions_Microsoft_CodeAnalysis_SymbolDisplayMiscellaneousOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.#ctor(Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle,Microsoft.CodeAnalysis.SymbolDisplayTypeQualificationStyle,Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions,Microsoft.CodeAnalysis.SymbolDisplayMemberOptions,Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle,Microsoft.CodeAnalysis.SymbolDisplayExtensionMethodStyle,Microsoft.CodeAnalysis.SymbolDisplayParameterOptions,Microsoft.CodeAnalysis.SymbolDisplayPropertyStyle,Microsoft.CodeAnalysis.SymbolDisplayLocalOptions,Microsoft.CodeAnalysis.SymbolDisplayKindOptions,Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions)">
+  SymbolDisplayFormat(SymbolDisplayGlobalNamespaceStyle, SymbolDisplayTypeQualificationStyle, SymbolDisplayGenericsOptions, SymbolDisplayMemberOptions, SymbolDisplayDelegateStyle, SymbolDisplayExtensionMethodStyle, SymbolDisplayParameterOptions, SymbolDisplayPropertyStyle, SymbolDisplayLocalOptions, SymbolDisplayKindOptions, SymbolDisplayMiscellaneousOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat(SymbolDisplayGlobalNamespaceStyle globalNamespaceStyle = SymbolDisplayGlobalNamespaceStyle.Omitted, SymbolDisplayTypeQualificationStyle typeQualificationStyle = SymbolDisplayTypeQualificationStyle.NameOnly, SymbolDisplayGenericsOptions genericsOptions = SymbolDisplayGenericsOptions.None, SymbolDisplayMemberOptions memberOptions = SymbolDisplayMemberOptions.None, SymbolDisplayDelegateStyle delegateStyle = SymbolDisplayDelegateStyle.NameOnly, SymbolDisplayExtensionMethodStyle extensionMethodStyle = SymbolDisplayExtensionMethodStyle.Default, SymbolDisplayParameterOptions parameterOptions = SymbolDisplayParameterOptions.None, SymbolDisplayPropertyStyle propertyStyle = SymbolDisplayPropertyStyle.NameOnly, SymbolDisplayLocalOptions localOptions = SymbolDisplayLocalOptions.None, SymbolDisplayKindOptions kindOptions = SymbolDisplayKindOptions.None, SymbolDisplayMiscellaneousOptions miscellaneousOptions = SymbolDisplayMiscellaneousOptions.None)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>globalNamespaceStyle</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle.html">SymbolDisplayGlobalNamespaceStyle</a></dt>
+    <dd></dd>
+    <dt><code>typeQualificationStyle</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayTypeQualificationStyle.html">SymbolDisplayTypeQualificationStyle</a></dt>
+    <dd></dd>
+    <dt><code>genericsOptions</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions.html">SymbolDisplayGenericsOptions</a></dt>
+    <dd></dd>
+    <dt><code>memberOptions</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayMemberOptions.html">SymbolDisplayMemberOptions</a></dt>
+    <dd></dd>
+    <dt><code>delegateStyle</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle.html">SymbolDisplayDelegateStyle</a></dt>
+    <dd></dd>
+    <dt><code>extensionMethodStyle</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayExtensionMethodStyle.html">SymbolDisplayExtensionMethodStyle</a></dt>
+    <dd></dd>
+    <dt><code>parameterOptions</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.html">SymbolDisplayParameterOptions</a></dt>
+    <dd></dd>
+    <dt><code>propertyStyle</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayPropertyStyle.html">SymbolDisplayPropertyStyle</a></dt>
+    <dd></dd>
+    <dt><code>localOptions</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayLocalOptions.html">SymbolDisplayLocalOptions</a></dt>
+    <dd></dd>
+    <dt><code>kindOptions</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayKindOptions.html">SymbolDisplayKindOptions</a></dt>
+    <dd></dd>
+    <dt><code>miscellaneousOptions</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions.html">SymbolDisplayMiscellaneousOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_CSharpErrorMessageFormat_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.CSharpErrorMessageFormat*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_CSharpErrorMessageFormat" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.CSharpErrorMessageFormat">
+  CSharpErrorMessageFormat
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolDisplayFormat CSharpErrorMessageFormat { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_CSharpShortErrorMessageFormat_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.CSharpShortErrorMessageFormat*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_CSharpShortErrorMessageFormat" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.CSharpShortErrorMessageFormat">
+  CSharpShortErrorMessageFormat
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolDisplayFormat CSharpShortErrorMessageFormat { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_DelegateStyle_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.DelegateStyle*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_DelegateStyle" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.DelegateStyle">
+  DelegateStyle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayDelegateStyle DelegateStyle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayDelegateStyle.html">SymbolDisplayDelegateStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_ExtensionMethodStyle_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.ExtensionMethodStyle*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_ExtensionMethodStyle" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.ExtensionMethodStyle">
+  ExtensionMethodStyle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayExtensionMethodStyle ExtensionMethodStyle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayExtensionMethodStyle.html">SymbolDisplayExtensionMethodStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_FullyQualifiedFormat_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.FullyQualifiedFormat*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_FullyQualifiedFormat" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.FullyQualifiedFormat">
+  FullyQualifiedFormat
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolDisplayFormat FullyQualifiedFormat { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_GenericsOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.GenericsOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_GenericsOptions" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.GenericsOptions">
+  GenericsOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayGenericsOptions GenericsOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions.html">SymbolDisplayGenericsOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_GlobalNamespaceStyle_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.GlobalNamespaceStyle*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_GlobalNamespaceStyle" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.GlobalNamespaceStyle">
+  GlobalNamespaceStyle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayGlobalNamespaceStyle GlobalNamespaceStyle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle.html">SymbolDisplayGlobalNamespaceStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_KindOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.KindOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_KindOptions" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.KindOptions">
+  KindOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayKindOptions KindOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayKindOptions.html">SymbolDisplayKindOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_LocalOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.LocalOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_LocalOptions" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.LocalOptions">
+  LocalOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayLocalOptions LocalOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayLocalOptions.html">SymbolDisplayLocalOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_MemberOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.MemberOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_MemberOptions" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.MemberOptions">
+  MemberOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayMemberOptions MemberOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayMemberOptions.html">SymbolDisplayMemberOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_MinimallyQualifiedFormat_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.MinimallyQualifiedFormat*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_MinimallyQualifiedFormat" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.MinimallyQualifiedFormat">
+  MinimallyQualifiedFormat
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolDisplayFormat MinimallyQualifiedFormat { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_MiscellaneousOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.MiscellaneousOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_MiscellaneousOptions" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.MiscellaneousOptions">
+  MiscellaneousOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayMiscellaneousOptions MiscellaneousOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions.html">SymbolDisplayMiscellaneousOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_ParameterOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.ParameterOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_ParameterOptions" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.ParameterOptions">
+  ParameterOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayParameterOptions ParameterOptions { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.html">SymbolDisplayParameterOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_PropertyStyle_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.PropertyStyle*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_PropertyStyle" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.PropertyStyle">
+  PropertyStyle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayPropertyStyle PropertyStyle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayPropertyStyle.html">SymbolDisplayPropertyStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_TypeQualificationStyle_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.TypeQualificationStyle*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_TypeQualificationStyle" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.TypeQualificationStyle">
+  TypeQualificationStyle
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayTypeQualificationStyle TypeQualificationStyle { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayTypeQualificationStyle.html">SymbolDisplayTypeQualificationStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_VisualBasicErrorMessageFormat_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.VisualBasicErrorMessageFormat*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_VisualBasicErrorMessageFormat" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.VisualBasicErrorMessageFormat">
+  VisualBasicErrorMessageFormat
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolDisplayFormat VisualBasicErrorMessageFormat { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_VisualBasicShortErrorMessageFormat_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.VisualBasicShortErrorMessageFormat*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_VisualBasicShortErrorMessageFormat" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.VisualBasicShortErrorMessageFormat">
+  VisualBasicShortErrorMessageFormat
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolDisplayFormat VisualBasicShortErrorMessageFormat { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_AddGenericsOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.AddGenericsOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_AddGenericsOptions_Microsoft_CodeAnalysis_SymbolDisplayGenericsOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.AddGenericsOptions(Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions)">
+  AddGenericsOptions(SymbolDisplayGenericsOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat AddGenericsOptions(SymbolDisplayGenericsOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions.html">SymbolDisplayGenericsOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_AddKindOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.AddKindOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_AddKindOptions_Microsoft_CodeAnalysis_SymbolDisplayKindOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.AddKindOptions(Microsoft.CodeAnalysis.SymbolDisplayKindOptions)">
+  AddKindOptions(SymbolDisplayKindOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat AddKindOptions(SymbolDisplayKindOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayKindOptions.html">SymbolDisplayKindOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_AddLocalOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.AddLocalOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_AddLocalOptions_Microsoft_CodeAnalysis_SymbolDisplayLocalOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.AddLocalOptions(Microsoft.CodeAnalysis.SymbolDisplayLocalOptions)">
+  AddLocalOptions(SymbolDisplayLocalOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat AddLocalOptions(SymbolDisplayLocalOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayLocalOptions.html">SymbolDisplayLocalOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_AddMemberOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.AddMemberOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_AddMemberOptions_Microsoft_CodeAnalysis_SymbolDisplayMemberOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.AddMemberOptions(Microsoft.CodeAnalysis.SymbolDisplayMemberOptions)">
+  AddMemberOptions(SymbolDisplayMemberOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat AddMemberOptions(SymbolDisplayMemberOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayMemberOptions.html">SymbolDisplayMemberOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_AddMiscellaneousOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.AddMiscellaneousOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_AddMiscellaneousOptions_Microsoft_CodeAnalysis_SymbolDisplayMiscellaneousOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.AddMiscellaneousOptions(Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions)">
+  AddMiscellaneousOptions(SymbolDisplayMiscellaneousOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat AddMiscellaneousOptions(SymbolDisplayMiscellaneousOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions.html">SymbolDisplayMiscellaneousOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_AddParameterOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.AddParameterOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_AddParameterOptions_Microsoft_CodeAnalysis_SymbolDisplayParameterOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.AddParameterOptions(Microsoft.CodeAnalysis.SymbolDisplayParameterOptions)">
+  AddParameterOptions(SymbolDisplayParameterOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat AddParameterOptions(SymbolDisplayParameterOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.html">SymbolDisplayParameterOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_RemoveGenericsOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveGenericsOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_RemoveGenericsOptions_Microsoft_CodeAnalysis_SymbolDisplayGenericsOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveGenericsOptions(Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions)">
+  RemoveGenericsOptions(SymbolDisplayGenericsOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat RemoveGenericsOptions(SymbolDisplayGenericsOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions.html">SymbolDisplayGenericsOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_RemoveKindOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveKindOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_RemoveKindOptions_Microsoft_CodeAnalysis_SymbolDisplayKindOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveKindOptions(Microsoft.CodeAnalysis.SymbolDisplayKindOptions)">
+  RemoveKindOptions(SymbolDisplayKindOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat RemoveKindOptions(SymbolDisplayKindOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayKindOptions.html">SymbolDisplayKindOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_RemoveLocalOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveLocalOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_RemoveLocalOptions_Microsoft_CodeAnalysis_SymbolDisplayLocalOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveLocalOptions(Microsoft.CodeAnalysis.SymbolDisplayLocalOptions)">
+  RemoveLocalOptions(SymbolDisplayLocalOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat RemoveLocalOptions(SymbolDisplayLocalOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayLocalOptions.html">SymbolDisplayLocalOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_RemoveMemberOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveMemberOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_RemoveMemberOptions_Microsoft_CodeAnalysis_SymbolDisplayMemberOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveMemberOptions(Microsoft.CodeAnalysis.SymbolDisplayMemberOptions)">
+  RemoveMemberOptions(SymbolDisplayMemberOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat RemoveMemberOptions(SymbolDisplayMemberOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayMemberOptions.html">SymbolDisplayMemberOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_RemoveMiscellaneousOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveMiscellaneousOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_RemoveMiscellaneousOptions_Microsoft_CodeAnalysis_SymbolDisplayMiscellaneousOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveMiscellaneousOptions(Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions)">
+  RemoveMiscellaneousOptions(SymbolDisplayMiscellaneousOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat RemoveMiscellaneousOptions(SymbolDisplayMiscellaneousOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions.html">SymbolDisplayMiscellaneousOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_RemoveParameterOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveParameterOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_RemoveParameterOptions_Microsoft_CodeAnalysis_SymbolDisplayParameterOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.RemoveParameterOptions(Microsoft.CodeAnalysis.SymbolDisplayParameterOptions)">
+  RemoveParameterOptions(SymbolDisplayParameterOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat RemoveParameterOptions(SymbolDisplayParameterOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.html">SymbolDisplayParameterOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithGenericsOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithGenericsOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithGenericsOptions_Microsoft_CodeAnalysis_SymbolDisplayGenericsOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithGenericsOptions(Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions)">
+  WithGenericsOptions(SymbolDisplayGenericsOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat WithGenericsOptions(SymbolDisplayGenericsOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayGenericsOptions.html">SymbolDisplayGenericsOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithGlobalNamespaceStyle_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithGlobalNamespaceStyle*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithGlobalNamespaceStyle_Microsoft_CodeAnalysis_SymbolDisplayGlobalNamespaceStyle_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithGlobalNamespaceStyle(Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle)">
+  WithGlobalNamespaceStyle(SymbolDisplayGlobalNamespaceStyle)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat WithGlobalNamespaceStyle(SymbolDisplayGlobalNamespaceStyle style)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>style</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayGlobalNamespaceStyle.html">SymbolDisplayGlobalNamespaceStyle</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithKindOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithKindOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithKindOptions_Microsoft_CodeAnalysis_SymbolDisplayKindOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithKindOptions(Microsoft.CodeAnalysis.SymbolDisplayKindOptions)">
+  WithKindOptions(SymbolDisplayKindOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat WithKindOptions(SymbolDisplayKindOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayKindOptions.html">SymbolDisplayKindOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithLocalOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithLocalOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithLocalOptions_Microsoft_CodeAnalysis_SymbolDisplayLocalOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithLocalOptions(Microsoft.CodeAnalysis.SymbolDisplayLocalOptions)">
+  WithLocalOptions(SymbolDisplayLocalOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat WithLocalOptions(SymbolDisplayLocalOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayLocalOptions.html">SymbolDisplayLocalOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithMemberOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithMemberOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithMemberOptions_Microsoft_CodeAnalysis_SymbolDisplayMemberOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithMemberOptions(Microsoft.CodeAnalysis.SymbolDisplayMemberOptions)">
+  WithMemberOptions(SymbolDisplayMemberOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat WithMemberOptions(SymbolDisplayMemberOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayMemberOptions.html">SymbolDisplayMemberOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithMiscellaneousOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithMiscellaneousOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithMiscellaneousOptions_Microsoft_CodeAnalysis_SymbolDisplayMiscellaneousOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithMiscellaneousOptions(Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions)">
+  WithMiscellaneousOptions(SymbolDisplayMiscellaneousOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat WithMiscellaneousOptions(SymbolDisplayMiscellaneousOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayMiscellaneousOptions.html">SymbolDisplayMiscellaneousOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithParameterOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithParameterOptions*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolDisplayFormat_WithParameterOptions_Microsoft_CodeAnalysis_SymbolDisplayParameterOptions_" data-uid="Microsoft.CodeAnalysis.SymbolDisplayFormat.WithParameterOptions(Microsoft.CodeAnalysis.SymbolDisplayParameterOptions)">
+  WithParameterOptions(SymbolDisplayParameterOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SymbolDisplayFormat WithParameterOptions(SymbolDisplayParameterOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayParameterOptions.html">SymbolDisplayParameterOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolDisplayFormat.html">SymbolDisplayFormat</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

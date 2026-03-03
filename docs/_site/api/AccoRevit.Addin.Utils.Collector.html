@@ -1,0 +1,3104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Collector | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Collector | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="AccoRevit.Addin.Utils.Collector">
+
+
+
+  <h1 id="AccoRevit_Addin_Utils_Collector" data-uid="AccoRevit.Addin.Utils.Collector" class="text-break">
+Class Collector  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="AccoRevit.html">AccoRevit</a>.<a class="xref" href="AccoRevit.Addin.html">Addin</a>.<a class="xref" href="AccoRevit.Addin.Utils.html">Utils</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Collector</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Collector</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_FindViewPort_" data-uid="AccoRevit.Addin.Utils.Collector.FindViewPort*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_FindViewPort_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_" data-uid="AccoRevit.Addin.Utils.Collector.FindViewPort(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)">
+  FindViewPort(Document, ElementId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Finds the first <span class="xref">Autodesk.Revit.DB.Viewport</span> whose <span class="xref">Autodesk.Revit.DB.Viewport.ViewId</span> matches the specified view id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Viewport FindViewPort(this Document doc, ElementId viewId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd><p>The view id placed on a sheet.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Viewport</span></dt>
+    <dd><p>The matching viewport, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_FindViewPort_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>A view can be placed on multiple sheets; this returns the first match encountered by the collector.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllFamilyInstances_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllFamilyInstances*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllFamilyInstances_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllFamilyInstances(Autodesk.Revit.DB.Document)">
+  GetAllFamilyInstances(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all <span class="xref">Autodesk.Revit.DB.FamilyInstance</span> elements in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;FamilyInstance&gt; GetAllFamilyInstances(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
+    <dd><p>A list of all family instances.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllFamilySymbols_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllFamilySymbols*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllFamilySymbols_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllFamilySymbols(Autodesk.Revit.DB.Document)">
+  GetAllFamilySymbols(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all loaded family symbols in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;FamilySymbol&gt; GetAllFamilySymbols(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilySymbol</span>&gt;</dt>
+    <dd><p>A list of all <span class="xref">Autodesk.Revit.DB.FamilySymbol</span> instances.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllFilterableViews_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllFilterableViews*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllFilterableViews_Autodesk_Revit_DB_Document_System_Boolean_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllFilterableViews(Autodesk.Revit.DB.Document,System.Boolean)">
+  GetAllFilterableViews(Document, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets views that support graphics overrides (i.e., are &quot;filterable&quot;), optionally including templates, sorted by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;View&gt; GetAllFilterableViews(this Document doc, bool includeTemplates = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>includeTemplates</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>When <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a>, includes view templates; otherwise excludes templates.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">View</span>&gt;</dt>
+    <dd><p>A list of views for which graphics overrides are allowed (see <code>AreGraphicsOverridesAllowed</code>).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetAllFilterableViews_Autodesk_Revit_DB_Document_System_Boolean__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Filters out invalid objects (<code>null</code> or <span class="xref">Autodesk.Revit.DB.Element.IsValidObject</span> is false).</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllFilters_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllFilters*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllFilters_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllFilters(Autodesk.Revit.DB.Document)">
+  GetAllFilters(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all parameter filter elements in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;ParameterFilterElement&gt; GetAllFilters(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ParameterFilterElement</span>&gt;</dt>
+    <dd><p>A list of all <span class="xref">Autodesk.Revit.DB.ParameterFilterElement</span> instances.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetAllFilters_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This collects both view filters and reusable parameter filter definitions represented by <span class="xref">Autodesk.Revit.DB.ParameterFilterElement</span>.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllLevels_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllLevels*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllLevels_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllLevels(Autodesk.Revit.DB.Document)">
+  GetAllLevels(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all level instances in the document, ordered by project elevation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Level&gt; GetAllLevels(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Level</span>&gt;</dt>
+    <dd><p>A list of <span class="xref">Autodesk.Revit.DB.Level</span> instances ordered by <span class="xref">Autodesk.Revit.DB.Level.ProjectElevation</span>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetAllLevels_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Collects instance elements only (<span class="xref">Autodesk.Revit.DB.FilteredElementCollector.WhereElementIsNotElementType</span>).</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllLoadedRoomTagSymbols_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllLoadedRoomTagSymbols*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllLoadedRoomTagSymbols_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllLoadedRoomTagSymbols(Autodesk.Revit.DB.Document)">
+  GetAllLoadedRoomTagSymbols(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all loaded room tag family symbols in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;FamilySymbol&gt; GetAllLoadedRoomTagSymbols(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilySymbol</span>&gt;</dt>
+    <dd><p>A list of loaded room tag <span class="xref">Autodesk.Revit.DB.FamilySymbol</span> instances.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetAllLoadedRoomTagSymbols_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Filters by <span class="xref">Autodesk.Revit.DB.BuiltInCategory.OST_RoomTags</span> and collects <span class="xref">Autodesk.Revit.DB.FamilySymbol</span> elements.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllRevitLinkTypes_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllRevitLinkTypes*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllRevitLinkTypes_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllRevitLinkTypes(Autodesk.Revit.DB.Document)">
+  GetAllRevitLinkTypes(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all unique <span class="xref">Autodesk.Revit.DB.RevitLinkType</span> elements referenced by link instances in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;RevitLinkType&gt; GetAllRevitLinkTypes(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">RevitLinkType</span>&gt;</dt>
+    <dd><p>A list of <span class="xref">Autodesk.Revit.DB.RevitLinkType</span> objects resolved from <span class="xref">Autodesk.Revit.DB.RevitLinkInstance</span> elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetAllRevitLinkTypes_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+This method collects <span class="xref">Autodesk.Revit.DB.RevitLinkInstance</span> elements and resolves each instance's type via
+<code>doc.GetElement(instance.GetTypeId())</code>.
+</p>
+<p>
+Results may include duplicates if multiple instances share the same type; add <code>Distinct()</code> if you need uniqueness.
+</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllScheduleTemplates_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllScheduleTemplates*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllScheduleTemplates_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllScheduleTemplates(Autodesk.Revit.DB.Document)">
+  GetAllScheduleTemplates(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all schedule view templates in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;ViewSchedule&gt; GetAllScheduleTemplates(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ViewSchedule</span>&gt;</dt>
+    <dd><p>A list of all <span class="xref">Autodesk.Revit.DB.ViewSchedule</span> templates.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetAllScheduleTemplates_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Uses <span class="xref">Autodesk.Revit.DB.FilteredElementCollector.WhereElementIsNotElementType</span> and filters to <span class="xref">Autodesk.Revit.DB.View.IsTemplate</span>.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllSheetSets_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllSheetSets*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllSheetSets_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllSheetSets(Autodesk.Revit.DB.Document)">
+  GetAllSheetSets(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all sheet sets in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;ViewSheetSet&gt; GetAllSheetSets(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ViewSheetSet</span>&gt;</dt>
+    <dd><p>A list of all <span class="xref">Autodesk.Revit.DB.ViewSheetSet</span> instances.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllSheets_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllSheets*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllSheets_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllSheets(Autodesk.Revit.DB.Document)">
+  GetAllSheets(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all sheets in the document, sorted by sheet number.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;ViewSheet&gt; GetAllSheets(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ViewSheet</span>&gt;</dt>
+    <dd><p>A list of all <span class="xref">Autodesk.Revit.DB.ViewSheet</span> instances, ordered by <span class="xref">Autodesk.Revit.DB.ViewSheet.SheetNumber</span>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetAllSheets_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Ordering uses the default string comparer (case-sensitive by default).</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllTextNoteTypes_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllTextNoteTypes*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllTextNoteTypes_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllTextNoteTypes(Autodesk.Revit.DB.Document)">
+  GetAllTextNoteTypes(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all loaded <span class="xref">Autodesk.Revit.DB.TextNoteType</span> elements in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;TextNoteType&gt; GetAllTextNoteTypes(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">TextNoteType</span>&gt;</dt>
+    <dd><p>A list of all <span class="xref">Autodesk.Revit.DB.TextNoteType</span> elements.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllTitleBlocksBySheetId_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllTitleBlocksBySheetId*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllTitleBlocksBySheetId_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllTitleBlocksBySheetId(Autodesk.Revit.DB.Document)">
+  GetAllTitleBlocksBySheetId(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Builds a lookup of title block instances keyed by their owning sheet id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;ElementId, FamilyInstance&gt; GetAllTitleBlocksBySheetId(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span class="xref">ElementId</span>, <span class="xref">FamilyInstance</span>&gt;</dt>
+    <dd><p>A dictionary mapping <span class="xref">Autodesk.Revit.DB.ElementId</span> (sheet/view id) to the first title block <span class="xref">Autodesk.Revit.DB.FamilyInstance</span>
+found for that owner.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetAllTitleBlocksBySheetId_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+Title blocks are owned by a sheet view; this method groups by <span class="xref">Autodesk.Revit.DB.Element.OwnerViewId</span>.
+</p>
+<p>
+If multiple title blocks exist on the same sheet, only the first instance in each group is used.
+</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllViewTemplates_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllViewTemplates*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllViewTemplates_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllViewTemplates(Autodesk.Revit.DB.Document)">
+  GetAllViewTemplates(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all view templates in the document, sorted by name (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;View&gt; GetAllViewTemplates(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">View</span>&gt;</dt>
+    <dd><p>A list of all view templates in the document.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAllViews_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllViews*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAllViews_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetAllViews(Autodesk.Revit.DB.Document)">
+  GetAllViews(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all non-template views excluding sheets, sorted by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;View&gt; GetAllViews(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">View</span>&gt;</dt>
+    <dd><p>A list of views that are not templates and not <span class="xref">Autodesk.Revit.DB.ViewType.DrawingSheet</span>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetAllViews_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Ordering uses the default string comparer (case-sensitive by default). If you want case-insensitive ordering,
+use <code>OrderBy(v =&gt; v.Name, StringComparer.OrdinalIgnoreCase)</code>.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetAssemblySheets_" data-uid="AccoRevit.Addin.Utils.Collector.GetAssemblySheets*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetAssemblySheets_Autodesk_Revit_DB_Document_System_Collections_Generic_List_Autodesk_Revit_DB_AssemblyInstance__" data-uid="AccoRevit.Addin.Utils.Collector.GetAssemblySheets(Autodesk.Revit.DB.Document,System.Collections.Generic.List{Autodesk.Revit.DB.AssemblyInstance})">
+  GetAssemblySheets(Document, List&lt;AssemblyInstance&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a mapping of sheets to assembly instances where the sheet number matches an assembly type name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;ViewSheet, AssemblyInstance&gt; GetAssemblySheets(this Document doc, List&lt;AssemblyInstance&gt; assemblyInstances)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search for sheets.</p>
+</dd>
+    <dt><code>assemblyInstances</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">AssemblyInstance</span>&gt;</dt>
+    <dd><p>Assembly instances to map by <span class="xref">Autodesk.Revit.DB.AssemblyInstance.AssemblyTypeName</span>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<span class="xref">ViewSheet</span>, <span class="xref">AssemblyInstance</span>&gt;</dt>
+    <dd><p>A dictionary where the key is a <span class="xref">Autodesk.Revit.DB.ViewSheet</span> and the value is the corresponding <span class="xref">Autodesk.Revit.DB.AssemblyInstance</span>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetAssemblySheets_Autodesk_Revit_DB_Document_System_Collections_Generic_List_Autodesk_Revit_DB_AssemblyInstance___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+This method builds a lookup keyed by <span class="xref">Autodesk.Revit.DB.AssemblyInstance.AssemblyTypeName</span> and then selects sheets whose
+<span class="xref">Autodesk.Revit.DB.ViewSheet.SheetNumber</span> exists in that lookup.
+</p>
+<p>
+If multiple assemblies share the same type name (case-insensitive), <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.enumerable.todictionary#system-linq-enumerable-todictionary-3(system-collections-generic-ienumerable((-0))-system-func((-0-1))-system-func((-0-2)))">ToDictionary&lt;TSource, TKey, TElement&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TElement&gt;)</a> will throw.
+</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetElementsByCategories_" data-uid="AccoRevit.Addin.Utils.Collector.GetElementsByCategories*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetElementsByCategories_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_View_Autodesk_Revit_DB_BuiltInCategory___" data-uid="AccoRevit.Addin.Utils.Collector.GetElementsByCategories(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View,Autodesk.Revit.DB.BuiltInCategory[])">
+  GetElementsByCategories(Document, View, params BuiltInCategory[])
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Collects instance elements in the document that belong to any of the specified built-in categories,
+optionally scoped to a view.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;Element&gt; GetElementsByCategories(this Document doc, View view = null, params BuiltInCategory[] categories)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>view</code> <span class="xref">View</span></dt>
+    <dd><p>Optional view scope. When provided, the collector is constrained to elements visible/owned by that view.</p>
+</dd>
+    <dt><code>categories</code> <span class="xref">BuiltInCategory</span>[]</dt>
+    <dd><p>One or more <span class="xref">Autodesk.Revit.DB.BuiltInCategory</span> values to include.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd><p>A list of instance <span class="xref">Autodesk.Revit.DB.Element</span> objects that match the category filter. Returns an empty array when
+<code class="paramref">categories</code> is null/empty.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetElementsByCategories_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_View_Autodesk_Revit_DB_BuiltInCategory____remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Uses <span class="xref">Autodesk.Revit.DB.ElementMulticategoryFilter</span> and <span class="xref">Autodesk.Revit.DB.FilteredElementCollector.WhereElementIsNotElementType</span>
+to exclude element types.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></dt>
+    <dd><p>Thrown when <code class="paramref">doc</code> is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetFamilyInstancesByFamilyName_" data-uid="AccoRevit.Addin.Utils.Collector.GetFamilyInstancesByFamilyName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetFamilyInstancesByFamilyName_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_System_String__" data-uid="AccoRevit.Addin.Utils.Collector.GetFamilyInstancesByFamilyName(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{System.String})">
+  GetFamilyInstancesByFamilyName(Document, IEnumerable&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all <span class="xref">Autodesk.Revit.DB.FamilyInstance</span> elements in the document whose family name matches any of the provided names
+(case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;FamilyInstance&gt; GetFamilyInstancesByFamilyName(this Document doc, IEnumerable&lt;string&gt; familyNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>familyNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Family names to include.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
+    <dd><p>A list of matching family instances in the document.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetFamilyInstancesByFamilyName_" data-uid="AccoRevit.Addin.Utils.Collector.GetFamilyInstancesByFamilyName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetFamilyInstancesByFamilyName_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetFamilyInstancesByFamilyName(Autodesk.Revit.DB.Document,System.String)">
+  GetFamilyInstancesByFamilyName(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all <span class="xref">Autodesk.Revit.DB.FamilyInstance</span> elements in the document whose family name equals the specified value
+(case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;FamilyInstance&gt; GetFamilyInstancesByFamilyName(this Document doc, string familyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>familyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Family name to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
+    <dd><p>A list of matching family instances in the document.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetFamilyInstancesByFamilyNameInView_" data-uid="AccoRevit.Addin.Utils.Collector.GetFamilyInstancesByFamilyNameInView*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetFamilyInstancesByFamilyNameInView_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_System_String__Autodesk_Revit_DB_View_" data-uid="AccoRevit.Addin.Utils.Collector.GetFamilyInstancesByFamilyNameInView(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{System.String},Autodesk.Revit.DB.View)">
+  GetFamilyInstancesByFamilyNameInView(Document, IEnumerable&lt;string&gt;, View)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all <span class="xref">Autodesk.Revit.DB.FamilyInstance</span> elements in a given view whose family name matches any of the provided names
+(case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;FamilyInstance&gt; GetFamilyInstancesByFamilyNameInView(this Document doc, IEnumerable&lt;string&gt; familyNames, View view = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>familyNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>Family names to include.</p>
+</dd>
+    <dt><code>view</code> <span class="xref">View</span></dt>
+    <dd><p>Optional view scope. If not provided, <span class="xref">Autodesk.Revit.DB.Document.ActiveView</span> is used. If both are null, an exception is thrown.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
+    <dd><p>A list of matching family instances in the specified (or active) view.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetFamilyInstancesByFamilyNameInView_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_System_String__Autodesk_Revit_DB_View__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>View scoping is performed by constructing a <span class="xref">FilteredElementCollector</span> with a view id.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when no view is supplied and <span class="xref">Autodesk.Revit.DB.Document.ActiveView</span> is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetFamilyInstancesByFamilyNameInView_" data-uid="AccoRevit.Addin.Utils.Collector.GetFamilyInstancesByFamilyNameInView*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetFamilyInstancesByFamilyNameInView_Autodesk_Revit_DB_Document_System_String_Autodesk_Revit_DB_View_" data-uid="AccoRevit.Addin.Utils.Collector.GetFamilyInstancesByFamilyNameInView(Autodesk.Revit.DB.Document,System.String,Autodesk.Revit.DB.View)">
+  GetFamilyInstancesByFamilyNameInView(Document, string, View)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all <span class="xref">Autodesk.Revit.DB.FamilyInstance</span> elements in a given view whose family name equals the specified value
+(case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;FamilyInstance&gt; GetFamilyInstancesByFamilyNameInView(this Document doc, string familyName, View view = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>familyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Family name to match.</p>
+</dd>
+    <dt><code>view</code> <span class="xref">View</span></dt>
+    <dd><p>Optional view scope. If not provided, <span class="xref">Autodesk.Revit.DB.Document.ActiveView</span> is used. If both are null, an exception is thrown.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
+    <dd><p>A list of matching family instances in the specified (or active) view.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown when no view is supplied and <span class="xref">Autodesk.Revit.DB.Document.ActiveView</span> is null.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetFamilySymbolsByName_" data-uid="AccoRevit.Addin.Utils.Collector.GetFamilySymbolsByName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetFamilySymbolsByName_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetFamilySymbolsByName(Autodesk.Revit.DB.Document,System.String)">
+  GetFamilySymbolsByName(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all loaded family symbols whose <span class="xref">Autodesk.Revit.DB.ElementType.FamilyName</span> equals the specified family name
+(case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;FamilySymbol&gt; GetFamilySymbolsByName(this Document doc, string familyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>familyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Family name to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilySymbol</span>&gt;</dt>
+    <dd><p>A list of matching <span class="xref">Autodesk.Revit.DB.FamilySymbol</span> instances.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetFirstViewportOnSheet_" data-uid="AccoRevit.Addin.Utils.Collector.GetFirstViewportOnSheet*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetFirstViewportOnSheet_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewSheet_" data-uid="AccoRevit.Addin.Utils.Collector.GetFirstViewportOnSheet(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewSheet)">
+  GetFirstViewportOnSheet(Document, ViewSheet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first <span class="xref">Autodesk.Revit.DB.Viewport</span> instance found on the specified sheet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Viewport GetFirstViewportOnSheet(this Document doc, ViewSheet sheet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>sheet</code> <span class="xref">ViewSheet</span></dt>
+    <dd><p>The sheet to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Viewport</span></dt>
+    <dd><p>The first viewport on the sheet, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none exist.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetGrids_" data-uid="AccoRevit.Addin.Utils.Collector.GetGrids*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetGrids_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetGrids(Autodesk.Revit.DB.Document)">
+  GetGrids(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all grid elements in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Grid&gt; GetGrids(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Grid</span>&gt;</dt>
+    <dd><p>A list of all <span class="xref">Autodesk.Revit.DB.Grid</span> instances in the document.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetGrids_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Collects instance elements only (<span class="xref">Autodesk.Revit.DB.FilteredElementCollector.WhereElementIsNotElementType</span>).</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetGrids_" data-uid="AccoRevit.Addin.Utils.Collector.GetGrids*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetGrids_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_View_" data-uid="AccoRevit.Addin.Utils.Collector.GetGrids(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View)">
+  GetGrids(Document, View)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all grid elements visible/collected within the specified view scope.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Grid&gt; GetGrids(this Document doc, View view)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>view</code> <span class="xref">View</span></dt>
+    <dd><p>The view used to scope the collector.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Grid</span>&gt;</dt>
+    <dd><p>A list of <span class="xref">Autodesk.Revit.DB.Grid</span> instances in the specified view scope.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetGrids_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_View__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Uses the view-scoped <span class="xref">Autodesk.Revit.DB.FilteredElementCollector</span> constructor (<code>new FilteredElementCollector(doc, view.Id)</code>).</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetHangerIds_" data-uid="AccoRevit.Addin.Utils.Collector.GetHangerIds*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetHangerIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="AccoRevit.Addin.Utils.Collector.GetHangerIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  GetHangerIds(Document, ElementFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the element ids of fabrication hanger instances in the document, optionally constrained by an additional filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;ElementId&gt; GetHangerIds(this Document doc, ElementFilter elementFilter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>elementFilter</code> <span class="xref">ElementFilter</span></dt>
+    <dd><p>Optional additional <span class="xref">Autodesk.Revit.DB.ElementFilter</span> applied via <span class="xref">Autodesk.Revit.DB.FilteredElementCollector.WherePasses(Autodesk.Revit.DB.ElementFilter)</span>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd><p>A list of <span class="xref">Autodesk.Revit.DB.ElementId</span> values for matching hanger instances.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetHangerIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Collects elements in <span class="xref">Autodesk.Revit.DB.BuiltInCategory.OST_FabricationHangers</span> and excludes element types.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetHangerIds_" data-uid="AccoRevit.Addin.Utils.Collector.GetHangerIds*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetHangerIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_View_Autodesk_Revit_DB_ElementFilter_" data-uid="AccoRevit.Addin.Utils.Collector.GetHangerIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View,Autodesk.Revit.DB.ElementFilter)">
+  GetHangerIds(Document, View, ElementFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the element ids of fabrication hanger instances scoped to a view (or the active view), optionally constrained by an additional filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;ElementId&gt; GetHangerIds(this Document doc, View view, ElementFilter elementFilter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>view</code> <span class="xref">View</span></dt>
+    <dd><p>View to scope the collector. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, <span class="xref">Autodesk.Revit.DB.Document.ActiveView</span> is used.</p>
+</dd>
+    <dt><code>elementFilter</code> <span class="xref">ElementFilter</span></dt>
+    <dd><p>Optional additional <span class="xref">Autodesk.Revit.DB.ElementFilter</span> applied via <span class="xref">Autodesk.Revit.DB.FilteredElementCollector.WherePasses(Autodesk.Revit.DB.ElementFilter)</span>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd><p>A list of <span class="xref">Autodesk.Revit.DB.ElementId</span> values for matching hanger instances in the view scope.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetHangerIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_View_Autodesk_Revit_DB_ElementFilter__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If both <code class="paramref">view</code> and <span class="xref">Autodesk.Revit.DB.Document.ActiveView</span> are null, a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullreferenceexception">NullReferenceException</a> may occur
+when accessing <code>targetView.Id</code>.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetHangers_" data-uid="AccoRevit.Addin.Utils.Collector.GetHangers*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetHangers_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="AccoRevit.Addin.Utils.Collector.GetHangers(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  GetHangers(Document, ElementFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets fabrication hanger instance elements in the document, optionally constrained by an additional filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;Element&gt; GetHangers(this Document doc, ElementFilter elementFilter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>elementFilter</code> <span class="xref">ElementFilter</span></dt>
+    <dd><p>Optional additional <span class="xref">Autodesk.Revit.DB.ElementFilter</span> applied via <span class="xref">Autodesk.Revit.DB.FilteredElementCollector.WherePasses(Autodesk.Revit.DB.ElementFilter)</span>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a> of hanger <span class="xref">Autodesk.Revit.DB.Element</span> instances.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetHangers_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Collects elements in <span class="xref">Autodesk.Revit.DB.BuiltInCategory.OST_FabricationHangers</span> and excludes element types.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetHangers_" data-uid="AccoRevit.Addin.Utils.Collector.GetHangers*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetHangers_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_View_Autodesk_Revit_DB_ElementFilter_" data-uid="AccoRevit.Addin.Utils.Collector.GetHangers(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.View,Autodesk.Revit.DB.ElementFilter)">
+  GetHangers(Document, View, ElementFilter)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets fabrication hanger instance elements scoped to a specific view, optionally constrained by an additional filter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IList&lt;Element&gt; GetHangers(this Document doc, View view, ElementFilter elementFilter = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>view</code> <span class="xref">View</span></dt>
+    <dd><p>The view used to scope the collector. If <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>, returns an empty list.</p>
+</dd>
+    <dt><code>elementFilter</code> <span class="xref">ElementFilter</span></dt>
+    <dd><p>Optional additional <span class="xref">Autodesk.Revit.DB.ElementFilter</span> applied via <span class="xref">Autodesk.Revit.DB.FilteredElementCollector.WherePasses(Autodesk.Revit.DB.ElementFilter)</span>.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList&lt;T&gt;</a> of hanger <span class="xref">Autodesk.Revit.DB.Element</span> instances in the view scope.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetLevelByName_" data-uid="AccoRevit.Addin.Utils.Collector.GetLevelByName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetLevelByName_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetLevelByName(Autodesk.Revit.DB.Document,System.String)">
+  GetLevelByName(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first level whose name equals the specified value (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Level GetLevelByName(this Document doc, string levelName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>levelName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Exact level name to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Level</span></dt>
+    <dd><p>The matching <span class="xref">Autodesk.Revit.DB.Level</span>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetProjectBasePoint_" data-uid="AccoRevit.Addin.Utils.Collector.GetProjectBasePoint*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetProjectBasePoint_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetProjectBasePoint(Autodesk.Revit.DB.Document)">
+  GetProjectBasePoint(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the position of the Project Base Point in model coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XYZ GetProjectBasePoint(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">XYZ</span></dt>
+    <dd><p>The <span class="xref">Autodesk.Revit.DB.BasePoint.Position</span> for the first <span class="xref">Autodesk.Revit.DB.BuiltInCategory.OST_ProjectBasePoint</span> instance,
+or <span class="xref">Autodesk.Revit.DB.XYZ.Zero</span> if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetProjectBasePoint_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This returns the base point element position (not survey point), and does not apply additional transforms.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetProjectInfoElement_" data-uid="AccoRevit.Addin.Utils.Collector.GetProjectInfoElement*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetProjectInfoElement_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetProjectInfoElement(Autodesk.Revit.DB.Document)">
+  GetProjectInfoElement(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first element in the &quot;Project Information&quot; category.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Element GetProjectInfoElement(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Element</span></dt>
+    <dd><p>The first project information element, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if the category is unavailable or no element is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetProjectInfoElement_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+This method resolves the category by its display name ("Project Information") via <span class="xref">Autodesk.Revit.DB.CategoryNameMap</span>.
+In non-English locales, the name may differ and this lookup can fail.
+</p>
+<p>
+If the category cannot be resolved (or settings/categories are unavailable), the method returns <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>.
+</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetScheduleByName_" data-uid="AccoRevit.Addin.Utils.Collector.GetScheduleByName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetScheduleByName_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetScheduleByName(Autodesk.Revit.DB.Document,System.String)">
+  GetScheduleByName(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first non-template schedule view whose name equals the specified value (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ViewSchedule GetScheduleByName(this Document doc, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Exact schedule name to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ViewSchedule</span></dt>
+    <dd><p>The matching schedule, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetScheduleByName_Autodesk_Revit_DB_Document_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Filters out schedule templates (<span class="xref">Autodesk.Revit.DB.View.IsTemplate</span>).</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetScheduleByNameContains_" data-uid="AccoRevit.Addin.Utils.Collector.GetScheduleByNameContains*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetScheduleByNameContains_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetScheduleByNameContains(Autodesk.Revit.DB.Document,System.String)">
+  GetScheduleByNameContains(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first non-template schedule view whose name contains the specified substring (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ViewSchedule GetScheduleByNameContains(this Document doc, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Substring to match within schedule names.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ViewSchedule</span></dt>
+    <dd><p>The matching schedule, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetScheduleByNameContains_Autodesk_Revit_DB_Document_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Filters out schedule templates (<span class="xref">Autodesk.Revit.DB.View.IsTemplate</span>).</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetScheduleTemplateByName_" data-uid="AccoRevit.Addin.Utils.Collector.GetScheduleTemplateByName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetScheduleTemplateByName_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetScheduleTemplateByName(Autodesk.Revit.DB.Document,System.String)">
+  GetScheduleTemplateByName(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first schedule template whose name equals the specified value (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ViewSchedule GetScheduleTemplateByName(this Document doc, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Exact schedule template name to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ViewSchedule</span></dt>
+    <dd><p>The matching schedule template, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetScheduleTemplateByNameContains_" data-uid="AccoRevit.Addin.Utils.Collector.GetScheduleTemplateByNameContains*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetScheduleTemplateByNameContains_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetScheduleTemplateByNameContains(Autodesk.Revit.DB.Document,System.String)">
+  GetScheduleTemplateByNameContains(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first schedule template whose name contains the specified substring (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ViewSchedule GetScheduleTemplateByNameContains(this Document doc, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Substring to match within schedule template names.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ViewSchedule</span></dt>
+    <dd><p>The matching schedule template, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetScopeBoxByName_" data-uid="AccoRevit.Addin.Utils.Collector.GetScopeBoxByName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetScopeBoxByName_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetScopeBoxByName(Autodesk.Revit.DB.Document,System.String)">
+  GetScopeBoxByName(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the bounding box of the first scope box whose name equals the specified value (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BoundingBoxXYZ GetScopeBoxByName(this Document doc, string scopeBoxName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>scopeBoxName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Exact scope box name to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">BoundingBoxXYZ</span></dt>
+    <dd><p>The <span class="xref">Autodesk.Revit.DB.BoundingBoxXYZ</span> of the first matching scope box, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetScopeBoxByName_Autodesk_Revit_DB_Document_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Bounding boxes are evaluated with <code>get_BoundingBox(null)</code> (model context).</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetScopeBoxByNameContains_" data-uid="AccoRevit.Addin.Utils.Collector.GetScopeBoxByNameContains*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetScopeBoxByNameContains_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetScopeBoxByNameContains(Autodesk.Revit.DB.Document,System.String)">
+  GetScopeBoxByNameContains(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the bounding box of the first scope box whose name contains the specified substring (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BoundingBoxXYZ GetScopeBoxByNameContains(this Document doc, string scopeBoxName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>scopeBoxName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Substring to match within scope box names.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">BoundingBoxXYZ</span></dt>
+    <dd><p>The <span class="xref">Autodesk.Revit.DB.BoundingBoxXYZ</span> of the first matching scope box, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetScopeBoxByNameContains_Autodesk_Revit_DB_Document_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Bounding boxes are evaluated with <code>get_BoundingBox(null)</code> (model context).</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetScopeBoxes_" data-uid="AccoRevit.Addin.Utils.Collector.GetScopeBoxes*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetScopeBoxes_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetScopeBoxes(Autodesk.Revit.DB.Document)">
+  GetScopeBoxes(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all scope box elements in the document, sorted by name (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Element&gt; GetScopeBoxes(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd><p>A list of scope box elements (<span class="xref">Autodesk.Revit.DB.BuiltInCategory.OST_VolumeOfInterest</span>).</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetScopeBoxes_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Returned elements are instances only (<span class="xref">Autodesk.Revit.DB.FilteredElementCollector.WhereElementIsNotElementType</span>).</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetSheetByName_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetByName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetSheetByName_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetByName(Autodesk.Revit.DB.Document,System.String)">
+  GetSheetByName(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first sheet whose name equals the specified value (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ViewSheet GetSheetByName(this Document doc, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Exact sheet name to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ViewSheet</span></dt>
+    <dd><p>The matching <span class="xref">Autodesk.Revit.DB.ViewSheet</span>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetSheetByNameContains_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetByNameContains*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetSheetByNameContains_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetByNameContains(Autodesk.Revit.DB.Document,System.String)">
+  GetSheetByNameContains(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first sheet whose name contains the specified substring (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ViewSheet GetSheetByNameContains(this Document doc, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Substring to match within sheet names.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ViewSheet</span></dt>
+    <dd><p>The matching <span class="xref">Autodesk.Revit.DB.ViewSheet</span>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetSheetByNumber_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetByNumber*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetSheetByNumber_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetByNumber(Autodesk.Revit.DB.Document,System.String)">
+  GetSheetByNumber(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first sheet whose sheet number equals the specified value (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ViewSheet GetSheetByNumber(this Document doc, string number)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Exact sheet number to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ViewSheet</span></dt>
+    <dd><p>The matching <span class="xref">Autodesk.Revit.DB.ViewSheet</span>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetSheetByNumberContains_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetByNumberContains*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetSheetByNumberContains_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetByNumberContains(Autodesk.Revit.DB.Document,System.String)">
+  GetSheetByNumberContains(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first sheet whose sheet number contains the specified substring (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ViewSheet GetSheetByNumberContains(this Document doc, string number)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>number</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Substring to match within sheet numbers.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ViewSheet</span></dt>
+    <dd><p>The matching <span class="xref">Autodesk.Revit.DB.ViewSheet</span>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetSheetSetByName_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetSetByName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetSheetSetByName_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetSetByName(Autodesk.Revit.DB.Document,System.String)">
+  GetSheetSetByName(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first sheet set whose name equals the specified value (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ViewSheetSet GetSheetSetByName(this Document doc, string sheetSetName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>sheetSetName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Exact sheet set name to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ViewSheetSet</span></dt>
+    <dd><p>The matching <span class="xref">Autodesk.Revit.DB.ViewSheetSet</span>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetSheetSetByNameContains_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetSetByNameContains*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetSheetSetByNameContains_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetSetByNameContains(Autodesk.Revit.DB.Document,System.String)">
+  GetSheetSetByNameContains(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all sheet sets whose names contain the specified substring (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;ViewSheetSet&gt; GetSheetSetByNameContains(this Document doc, string sheetSetName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>sheetSetName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Substring to match within sheet set names.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">ViewSheetSet</span>&gt;</dt>
+    <dd><p>A list of matching <span class="xref">Autodesk.Revit.DB.ViewSheetSet</span> instances.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetSheetSets_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetSets*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetSheetSets_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetSheetSets(Autodesk.Revit.DB.Document)">
+  GetSheetSets(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all sheet sets in the document and returns them keyed by set name (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, ViewSheetSet&gt; GetSheetSets(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">ViewSheetSet</span>&gt;</dt>
+    <dd><p>A dictionary of <span class="xref">Autodesk.Revit.DB.ViewSheetSet</span> instances keyed by <span class="xref">Autodesk.Revit.DB.ViewSheetSet.Name</span>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetSheetSets_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>If multiple sheet sets have the same name differing only by case, the dictionary creation will throw.</p>
+</div>
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></dt>
+    <dd><p>Thrown by <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.linq.enumerable.todictionary#system-linq-enumerable-todictionary-3(system-collections-generic-ienumerable((-0))-system-func((-0-1))-system-func((-0-2))-system-collections-generic-iequalitycomparer((-1)))">ToDictionary&lt;TSource, TKey, TElement&gt;(IEnumerable&lt;TSource&gt;, Func&lt;TSource, TKey&gt;, Func&lt;TSource, TElement&gt;, IEqualityComparer&lt;TKey&gt;)</a>
+if duplicate names exist under the provided comparer.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetSolidFillPattern_" data-uid="AccoRevit.Addin.Utils.Collector.GetSolidFillPattern*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetSolidFillPattern_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetSolidFillPattern(Autodesk.Revit.DB.Document)">
+  GetSolidFillPattern(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first loaded solid fill pattern element in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FillPatternElement GetSolidFillPattern(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FillPatternElement</span></dt>
+    <dd><p>A <span class="xref">Autodesk.Revit.DB.FillPatternElement</span> whose name contains &quot;solid&quot; (case-insensitive), or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetSolidFillPattern_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method matches by name only. In environments where multiple &quot;solid&quot; patterns exist, the first match is returned.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetTitleBlockBoundingBox_" data-uid="AccoRevit.Addin.Utils.Collector.GetTitleBlockBoundingBox*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetTitleBlockBoundingBox_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewSheet_" data-uid="AccoRevit.Addin.Utils.Collector.GetTitleBlockBoundingBox(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewSheet)">
+  GetTitleBlockBoundingBox(Document, ViewSheet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the bounding box of the first title block instance found on the specified sheet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static BoundingBoxXYZ GetTitleBlockBoundingBox(this Document doc, ViewSheet sheet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>sheet</code> <span class="xref">ViewSheet</span></dt>
+    <dd><p>The target sheet view.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">BoundingBoxXYZ</span></dt>
+    <dd><p>The title block <span class="xref">Autodesk.Revit.DB.BoundingBoxXYZ</span> in the context of <code class="paramref">sheet</code>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>
+if the sheet has no title block instance.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetTitleBlockBoundingBox_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewSheet__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>The bounding box is evaluated using <code>instance.get_BoundingBox(sheet)</code>, which depends on the sheet view context.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetTitleBlockInstanceByName_" data-uid="AccoRevit.Addin.Utils.Collector.GetTitleBlockInstanceByName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetTitleBlockInstanceByName_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetTitleBlockInstanceByName(Autodesk.Revit.DB.Document,System.String)">
+  GetTitleBlockInstanceByName(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first title block instance in the document whose type (symbol) name equals the specified value (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FamilyInstance GetTitleBlockInstanceByName(this Document doc, string titleBlockName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>titleBlockName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Exact title block type name (symbol name) to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FamilyInstance</span></dt>
+    <dd><p>The matching title block <span class="xref">Autodesk.Revit.DB.FamilyInstance</span>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetTitleBlockInstanceByName_Autodesk_Revit_DB_Document_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method searches instances in <span class="xref">Autodesk.Revit.DB.BuiltInCategory.OST_TitleBlocks</span> and compares the type name
+by resolving <code>doc.GetElement(instance.GetTypeId())</code> as a <span class="xref">Autodesk.Revit.DB.FamilySymbol</span>.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetTitleBlockOnSheet_" data-uid="AccoRevit.Addin.Utils.Collector.GetTitleBlockOnSheet*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetTitleBlockOnSheet_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_" data-uid="AccoRevit.Addin.Utils.Collector.GetTitleBlockOnSheet(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)">
+  GetTitleBlockOnSheet(Document, ElementId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the title block instance placed on the specified sheet id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FamilyInstance GetTitleBlockOnSheet(this Document doc, ElementId sheetId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>sheetId</code> <span class="xref">ElementId</span></dt>
+    <dd><p>The target sheet id.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FamilyInstance</span></dt>
+    <dd><p>The title block <span class="xref">Autodesk.Revit.DB.FamilyInstance</span> on the sheet, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetTitleBlockOnSheet_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method matches by <span class="xref">Autodesk.Revit.DB.Element.OwnerViewId</span> equal to <code class="paramref">sheetId</code>.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetTitleBlockOnSheet_" data-uid="AccoRevit.Addin.Utils.Collector.GetTitleBlockOnSheet*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetTitleBlockOnSheet_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewSheet_" data-uid="AccoRevit.Addin.Utils.Collector.GetTitleBlockOnSheet(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewSheet)">
+  GetTitleBlockOnSheet(Document, ViewSheet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the title block instance placed on the specified sheet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FamilyInstance GetTitleBlockOnSheet(this Document doc, ViewSheet sheet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>sheet</code> <span class="xref">ViewSheet</span></dt>
+    <dd><p>The target sheet.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FamilyInstance</span></dt>
+    <dd><p>The title block <span class="xref">FamilyInstance</span> on the sheet, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetTitleBlockOnSheet_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewSheet__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>This method matches by <span class="xref">Autodesk.Revit.DB.Element.OwnerViewId</span> equal to <code class="paramref">sheet</code>'s id.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetTitleBlockTypeByName_" data-uid="AccoRevit.Addin.Utils.Collector.GetTitleBlockTypeByName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetTitleBlockTypeByName_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetTitleBlockTypeByName(Autodesk.Revit.DB.Document,System.String)">
+  GetTitleBlockTypeByName(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the title block type (symbol) by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FamilySymbol GetTitleBlockTypeByName(this Document doc, string titleBlockName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>titleBlockName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Exact title block type name (symbol name) to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FamilySymbol</span></dt>
+    <dd><p>The matching <span class="xref">Autodesk.Revit.DB.FamilySymbol</span>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetTitleBlockTypeByName_Autodesk_Revit_DB_Document_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+Intended to return the type (symbol) associated with a title block named <code class="paramref">titleBlockName</code>.
+</p>
+<p>
+Note: the current implementation collects <span class="xref">Autodesk.Revit.DB.FamilyInstance</span> elements and casts the result to
+<span class="xref">Autodesk.Revit.DB.FamilySymbol</span>, which will return <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a>. To return a symbol, query
+<span class="xref">Autodesk.Revit.DB.FamilySymbol</span> elements (or resolve <code>GetTypeId()</code> from an instance) instead.
+</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetViewByName_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewByName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetViewByName_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewByName(Autodesk.Revit.DB.Document,System.String)">
+  GetViewByName(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first non-template view (excluding sheets) whose name equals the specified value (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static View GetViewByName(this Document doc, string viewNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>viewNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Exact view name to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">View</span></dt>
+    <dd><p>The matching view, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetViewByNameAndType_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewByNameAndType*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetViewByNameAndType_Autodesk_Revit_DB_Document_System_String_Autodesk_Revit_DB_ViewType_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewByNameAndType(Autodesk.Revit.DB.Document,System.String,Autodesk.Revit.DB.ViewType)">
+  GetViewByNameAndType(Document, string, ViewType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first non-template view of a specified type whose name equals the specified value (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static View GetViewByNameAndType(this Document doc, string viewName, ViewType viewType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>viewName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Exact view name to match.</p>
+</dd>
+    <dt><code>viewType</code> <span class="xref">ViewType</span></dt>
+    <dd><p>The view type to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">View</span></dt>
+    <dd><p>The matching view, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetViewByNameContains_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewByNameContains*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetViewByNameContains_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewByNameContains(Autodesk.Revit.DB.Document,System.String)">
+  GetViewByNameContains(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first non-template view (excluding sheets) whose name contains the specified substring (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static View GetViewByNameContains(this Document doc, string viewName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>viewName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Substring to match within view names.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">View</span></dt>
+    <dd><p>The matching view, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetViewFamilyType_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewFamilyType*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetViewFamilyType_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewFamily_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewFamilyType(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewFamily)">
+  GetViewFamilyType(Document, ViewFamily)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first <span class="xref">Autodesk.Revit.DB.ViewFamilyType</span> element matching the specified <span class="xref">Autodesk.Revit.DB.ViewFamily</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ViewFamilyType GetViewFamilyType(this Document doc, ViewFamily viewFamily)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>viewFamily</code> <span class="xref">ViewFamily</span></dt>
+    <dd><p>The view family to match (e.g., FloorPlan, CeilingPlan, 3D).</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ViewFamilyType</span></dt>
+    <dd><p>The matching <span class="xref">Autodesk.Revit.DB.ViewFamilyType</span>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetViewFamilyType_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewFamily__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Searches element types only using <span class="xref">Autodesk.Revit.DB.FilteredElementCollector.WhereElementIsElementType</span>.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetViewTemplateByName_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewTemplateByName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetViewTemplateByName_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewTemplateByName(Autodesk.Revit.DB.Document,System.String)">
+  GetViewTemplateByName(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first view template in the document whose name equals the specified value (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static View GetViewTemplateByName(this Document doc, string templateName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>templateName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Exact template name to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">View</span></dt>
+    <dd><p>The matching view template, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetViewTemplateByName_Autodesk_Revit_DB_Document_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Searches all <span class="xref">Autodesk.Revit.DB.View</span> elements and filters to <span class="xref">Autodesk.Revit.DB.View.IsTemplate</span> views only.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetViewTemplateByNameContains_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewTemplateByNameContains*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetViewTemplateByNameContains_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewTemplateByNameContains(Autodesk.Revit.DB.Document,System.String)">
+  GetViewTemplateByNameContains(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first view template in the document whose name contains the specified substring (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static View GetViewTemplateByNameContains(this Document doc, string templateName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>templateName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Substring to match within template names.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">View</span></dt>
+    <dd><p>The matching view template, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if none is found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetViewTemplateByNameContains_Autodesk_Revit_DB_Document_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Searches all <span class="xref">Autodesk.Revit.DB.View</span> elements and filters to <span class="xref">Autodesk.Revit.DB.View.IsTemplate</span> views only.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetViewTemplatesByViewType_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewTemplatesByViewType*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetViewTemplatesByViewType_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewType_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewTemplatesByViewType(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewType)">
+  GetViewTemplatesByViewType(Document, ViewType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all view templates in the document for a specified <span class="xref">Autodesk.Revit.DB.ViewType</span>, sorted by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;View&gt; GetViewTemplatesByViewType(this Document doc, ViewType viewType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>viewType</code> <span class="xref">ViewType</span></dt>
+    <dd><p>The view type to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">View</span>&gt;</dt>
+    <dd><p>A list of view templates matching the specified view type.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetViewTemplatesByViewType_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewType__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Ordering uses the default string comparer (case-sensitive by default). If you want case-insensitive ordering,
+use <code>OrderBy(v =&gt; v.Name, StringComparer.OrdinalIgnoreCase)</code>.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetViewportsOnSheet_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewportsOnSheet*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetViewportsOnSheet_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewportsOnSheet(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)">
+  GetViewportsOnSheet(Document, ElementId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all <span class="xref">Autodesk.Revit.DB.Viewport</span> instances on the specified sheet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Viewport&gt; GetViewportsOnSheet(this Document doc, ElementId targetSheetId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>targetSheetId</code> <span class="xref">ElementId</span></dt>
+    <dd><p>The sheet element id to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Viewport</span>&gt;</dt>
+    <dd><p>A list of viewports on the sheet.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetViewportsOnSheet_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewportsOnSheet*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetViewportsOnSheet_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewSheet_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewportsOnSheet(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewSheet)">
+  GetViewportsOnSheet(Document, ViewSheet)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all <span class="xref">Autodesk.Revit.DB.Viewport</span> instances on the specified sheet.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Viewport&gt; GetViewportsOnSheet(this Document doc, ViewSheet targetSheet)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>targetSheet</code> <span class="xref">ViewSheet</span></dt>
+    <dd><p>The sheet to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Viewport</span>&gt;</dt>
+    <dd><p>A list of viewports on the sheet.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetViewsByName_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewsByName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetViewsByName_Autodesk_Revit_DB_Document_System_Collections_Generic_List_System_String__" data-uid="AccoRevit.Addin.Utils.Collector.GetViewsByName(Autodesk.Revit.DB.Document,System.Collections.Generic.List{System.String})">
+  GetViewsByName(Document, List&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all non-template views (excluding sheets) whose names match any of the specified values (case-insensitive),
+sorted by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;View&gt; GetViewsByName(this Document doc, List&lt;string&gt; viewNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>viewNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>List of view names to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">View</span>&gt;</dt>
+    <dd><p>A list of matching views.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetViewsByNameContains_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewsByNameContains*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetViewsByNameContains_Autodesk_Revit_DB_Document_System_Collections_Generic_List_System_String__" data-uid="AccoRevit.Addin.Utils.Collector.GetViewsByNameContains(Autodesk.Revit.DB.Document,System.Collections.Generic.List{System.String})">
+  GetViewsByNameContains(Document, List&lt;string&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all non-template views (excluding sheets) whose names contain any of the specified substrings (case-insensitive).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;View&gt; GetViewsByNameContains(this Document doc, List&lt;string&gt; viewNames)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>viewNames</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd><p>List of substrings to match within view names.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">View</span>&gt;</dt>
+    <dd><p>A list of matching views.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetViewsByNameContains_Autodesk_Revit_DB_Document_System_Collections_Generic_List_System_String___remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Results are not explicitly ordered.</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetViewsByViewType_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewsByViewType*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetViewsByViewType_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ViewType_" data-uid="AccoRevit.Addin.Utils.Collector.GetViewsByViewType(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ViewType)">
+  GetViewsByViewType(Document, ViewType)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all non-template views of a specified <span class="xref">Autodesk.Revit.DB.ViewType</span>, sorted by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;View&gt; GetViewsByViewType(this Document doc, ViewType viewType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>viewType</code> <span class="xref">ViewType</span></dt>
+    <dd><p>The view type to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">View</span>&gt;</dt>
+    <dd><p>A list of matching views.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetWorksetByName_" data-uid="AccoRevit.Addin.Utils.Collector.GetWorksetByName*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetWorksetByName_Autodesk_Revit_DB_Document_System_String_" data-uid="AccoRevit.Addin.Utils.Collector.GetWorksetByName(Autodesk.Revit.DB.Document,System.String)">
+  GetWorksetByName(Document, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the first user workset whose name equals the specified value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Workset GetWorksetByName(this Document doc, string worksetName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+    <dt><code>worksetName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Exact workset name to match.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Workset</span></dt>
+    <dd><p>The matching <span class="xref">Autodesk.Revit.DB.Workset</span>, or <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/keywords/null">null</a> if not found.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetWorksetByName_Autodesk_Revit_DB_Document_System_String__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>
+Only user worksets (<span class="xref">Autodesk.Revit.DB.WorksetKind.UserWorkset</span>) are considered.
+</p>
+<p>
+The current comparison is case-sensitive (<code>workset.Name == worksetName</code>). If you want case-insensitive behavior,
+use <code>string.Equals(workset.Name, worksetName, StringComparison.OrdinalIgnoreCase)</code>.
+</p>
+</div>
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Collector_GetWorksets_" data-uid="AccoRevit.Addin.Utils.Collector.GetWorksets*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Collector_GetWorksets_Autodesk_Revit_DB_Document_" data-uid="AccoRevit.Addin.Utils.Collector.GetWorksets(Autodesk.Revit.DB.Document)">
+  GetWorksets(Document)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all user worksets in the document.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Workset&gt; GetWorksets(this Document doc)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>doc</code> <span class="xref">Document</span></dt>
+    <dd><p>The Revit document to search.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Workset</span>&gt;</dt>
+    <dd><p>A list of <span class="xref">Autodesk.Revit.DB.Workset</span> instances where <span class="xref">Autodesk.Revit.DB.Workset.Kind</span> is <span class="xref">Autodesk.Revit.DB.WorksetKind.UserWorkset</span>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="AccoRevit_Addin_Utils_Collector_GetWorksets_Autodesk_Revit_DB_Document__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>Uses <span class="xref">Autodesk.Revit.DB.FilteredWorksetCollector</span> and materializes worksets via <span class="xref">Autodesk.Revit.DB.FilteredWorksetCollector.ToWorksets</span>.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Collector.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

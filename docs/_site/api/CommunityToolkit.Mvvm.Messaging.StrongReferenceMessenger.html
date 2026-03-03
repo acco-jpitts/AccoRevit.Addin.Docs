@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class StrongReferenceMessenger | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class StrongReferenceMessenger | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger">
+
+
+
+  <h1 id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger" class="text-break">
+Class StrongReferenceMessenger  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="CommunityToolkit.html">CommunityToolkit</a>.<a class="xref" href="CommunityToolkit.Mvvm.html">Mvvm</a>.<a class="xref" href="CommunityToolkit.Mvvm.Messaging.html">Messaging</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class StrongReferenceMessenger : IMessenger</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">StrongReferenceMessenger</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessenger.html">IMessenger</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_CreateObservable__1_CommunityToolkit_Mvvm_Messaging_IMessenger_">IMessengerExtensions.CreateObservable&lt;TMessage&gt;(IMessenger)</a>
+  </div>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_CreateObservable__2_CommunityToolkit_Mvvm_Messaging_IMessenger___1_">IMessengerExtensions.CreateObservable&lt;TMessage, TToken&gt;(IMessenger, TToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_IsRegistered__1_CommunityToolkit_Mvvm_Messaging_IMessenger_System_Object_">IMessengerExtensions.IsRegistered&lt;TMessage&gt;(IMessenger, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_RegisterAll_CommunityToolkit_Mvvm_Messaging_IMessenger_System_Object_">IMessengerExtensions.RegisterAll(IMessenger, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_RegisterAll__1_CommunityToolkit_Mvvm_Messaging_IMessenger_System_Object___0_">IMessengerExtensions.RegisterAll&lt;TToken&gt;(IMessenger, object, TToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_Register__1_CommunityToolkit_Mvvm_Messaging_IMessenger_CommunityToolkit_Mvvm_Messaging_IRecipient___0__">IMessengerExtensions.Register&lt;TMessage&gt;(IMessenger, IRecipient&lt;TMessage&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_Register__1_CommunityToolkit_Mvvm_Messaging_IMessenger_System_Object_CommunityToolkit_Mvvm_Messaging_MessageHandler_System_Object___0__">IMessengerExtensions.Register&lt;TMessage&gt;(IMessenger, object, MessageHandler&lt;object, TMessage&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_Register__2_CommunityToolkit_Mvvm_Messaging_IMessenger_CommunityToolkit_Mvvm_Messaging_IRecipient___0____1_">IMessengerExtensions.Register&lt;TMessage, TToken&gt;(IMessenger, IRecipient&lt;TMessage&gt;, TToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_Register__2_CommunityToolkit_Mvvm_Messaging_IMessenger_System_Object___1_CommunityToolkit_Mvvm_Messaging_MessageHandler_System_Object___0__">IMessengerExtensions.Register&lt;TMessage, TToken&gt;(IMessenger, object, TToken, MessageHandler&lt;object, TMessage&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_Register__2_CommunityToolkit_Mvvm_Messaging_IMessenger___0_CommunityToolkit_Mvvm_Messaging_MessageHandler___0___1__">IMessengerExtensions.Register&lt;TRecipient, TMessage&gt;(IMessenger, TRecipient, MessageHandler&lt;TRecipient, TMessage&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_Send__1_CommunityToolkit_Mvvm_Messaging_IMessenger_">IMessengerExtensions.Send&lt;TMessage&gt;(IMessenger)</a>
+  </div>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_Send__1_CommunityToolkit_Mvvm_Messaging_IMessenger___0_">IMessengerExtensions.Send&lt;TMessage&gt;(IMessenger, TMessage)</a>
+  </div>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_Send__2_CommunityToolkit_Mvvm_Messaging_IMessenger___1_">IMessengerExtensions.Send&lt;TMessage, TToken&gt;(IMessenger, TToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="CommunityToolkit.Mvvm.Messaging.IMessengerExtensions.html#CommunityToolkit_Mvvm_Messaging_IMessengerExtensions_Unregister__1_CommunityToolkit_Mvvm_Messaging_IMessenger_System_Object_">IMessengerExtensions.Unregister&lt;TMessage&gt;(IMessenger, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_">UnitExtensions.ToUnitLabel(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_">ReflectionUtils.GetHighlightProperty(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_">SystemExtensions.Cast&lt;T&gt;(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger__ctor_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.#ctor*"></a>
+
+  <h3 id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger__ctor" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.#ctor">
+  StrongReferenceMessenger()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StrongReferenceMessenger()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_Default_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.Default*"></a>
+
+  <h3 id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_Default" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.Default">
+  Default
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static StrongReferenceMessenger Default { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.html">StrongReferenceMessenger</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_IsRegistered_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.IsRegistered*"></a>
+
+  <h3 id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_IsRegistered__2_System_Object___1_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.IsRegistered``2(System.Object,``1)">
+  IsRegistered&lt;TMessage, TToken&gt;(object, TToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsRegistered&lt;TMessage, TToken&gt;(object recipient, TToken token) where TMessage : class where TToken : IEquatable&lt;TToken&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>recipient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>token</code> <span class="xref">TToken</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TMessage</code></dt>
+    <dd></dd>
+    <dt><code>TToken</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_Register_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.Register*"></a>
+
+  <h3 id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_Register__3___0___2_CommunityToolkit_Mvvm_Messaging_MessageHandler___0___1__" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.Register``3(``0,``2,CommunityToolkit.Mvvm.Messaging.MessageHandler{``0,``1})">
+  Register&lt;TRecipient, TMessage, TToken&gt;(TRecipient, TToken, MessageHandler&lt;TRecipient, TMessage&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Register&lt;TRecipient, TMessage, TToken&gt;(TRecipient recipient, TToken token, MessageHandler&lt;TRecipient, TMessage&gt; handler) where TRecipient : class where TMessage : class where TToken : IEquatable&lt;TToken&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>recipient</code> <span class="xref">TRecipient</span></dt>
+    <dd></dd>
+    <dt><code>token</code> <span class="xref">TToken</span></dt>
+    <dd></dd>
+    <dt><code>handler</code> <a class="xref" href="CommunityToolkit.Mvvm.Messaging.MessageHandler-2.html">MessageHandler</a>&lt;TRecipient, TMessage&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TRecipient</code></dt>
+    <dd></dd>
+    <dt><code>TMessage</code></dt>
+    <dd></dd>
+    <dt><code>TToken</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_Reset_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.Reset*"></a>
+
+  <h3 id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_Reset" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_Send_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.Send*"></a>
+
+  <h3 id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_Send__2___0___1_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.Send``2(``0,``1)">
+  Send&lt;TMessage, TToken&gt;(TMessage, TToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TMessage Send&lt;TMessage, TToken&gt;(TMessage message, TToken token) where TMessage : class where TToken : IEquatable&lt;TToken&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>message</code> <span class="xref">TMessage</span></dt>
+    <dd></dd>
+    <dt><code>token</code> <span class="xref">TToken</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TMessage</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TMessage</code></dt>
+    <dd></dd>
+    <dt><code>TToken</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_UnregisterAll_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.UnregisterAll*"></a>
+
+  <h3 id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_UnregisterAll_System_Object_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.UnregisterAll(System.Object)">
+  UnregisterAll(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterAll(object recipient)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>recipient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_UnregisterAll_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.UnregisterAll*"></a>
+
+  <h3 id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_UnregisterAll__1_System_Object___0_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.UnregisterAll``1(System.Object,``0)">
+  UnregisterAll&lt;TToken&gt;(object, TToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnregisterAll&lt;TToken&gt;(object recipient, TToken token) where TToken : IEquatable&lt;TToken&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>recipient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>token</code> <span class="xref">TToken</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TToken</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_Unregister_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.Unregister*"></a>
+
+  <h3 id="CommunityToolkit_Mvvm_Messaging_StrongReferenceMessenger_Unregister__2_System_Object___1_" data-uid="CommunityToolkit.Mvvm.Messaging.StrongReferenceMessenger.Unregister``2(System.Object,``1)">
+  Unregister&lt;TMessage, TToken&gt;(object, TToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Unregister&lt;TMessage, TToken&gt;(object recipient, TToken token) where TMessage : class where TToken : IEquatable&lt;TToken&gt;</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>recipient</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+    <dt><code>token</code> <span class="xref">TToken</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TMessage</code></dt>
+    <dd></dd>
+    <dt><code>TToken</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

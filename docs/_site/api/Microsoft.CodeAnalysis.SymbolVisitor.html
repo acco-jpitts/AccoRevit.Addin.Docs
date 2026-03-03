@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class SymbolVisitor | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class SymbolVisitor | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.CodeAnalysis.SymbolVisitor">
+
+
+
+  <h1 id="Microsoft_CodeAnalysis_SymbolVisitor" data-uid="Microsoft.CodeAnalysis.SymbolVisitor" class="text-break">
+Class SymbolVisitor  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.CodeAnalysis.html">CodeAnalysis</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class SymbolVisitor</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">SymbolVisitor</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_">UnitExtensions.ToUnitLabel(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_">ReflectionUtils.GetHighlightProperty(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_">SystemExtensions.Cast&lt;T&gt;(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor__ctor_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.#ctor*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor__ctor" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.#ctor">
+  SymbolVisitor()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected SymbolVisitor()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_DefaultVisit_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.DefaultVisit*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_DefaultVisit_Microsoft_CodeAnalysis_ISymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.DefaultVisit(Microsoft.CodeAnalysis.ISymbol)">
+  DefaultVisit(ISymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void DefaultVisit(ISymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.ISymbol.html">ISymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_Visit_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.Visit*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_Visit_Microsoft_CodeAnalysis_ISymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.Visit(Microsoft.CodeAnalysis.ISymbol)">
+  Visit(ISymbol?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Visit(ISymbol? symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.ISymbol.html">ISymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitAlias_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitAlias*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitAlias_Microsoft_CodeAnalysis_IAliasSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitAlias(Microsoft.CodeAnalysis.IAliasSymbol)">
+  VisitAlias(IAliasSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitAlias(IAliasSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IAliasSymbol.html">IAliasSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitArrayType_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitArrayType*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitArrayType_Microsoft_CodeAnalysis_IArrayTypeSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitArrayType(Microsoft.CodeAnalysis.IArrayTypeSymbol)">
+  VisitArrayType(IArrayTypeSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitArrayType(IArrayTypeSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IArrayTypeSymbol.html">IArrayTypeSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitAssembly_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitAssembly*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitAssembly_Microsoft_CodeAnalysis_IAssemblySymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitAssembly(Microsoft.CodeAnalysis.IAssemblySymbol)">
+  VisitAssembly(IAssemblySymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitAssembly(IAssemblySymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IAssemblySymbol.html">IAssemblySymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitDiscard_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitDiscard*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitDiscard_Microsoft_CodeAnalysis_IDiscardSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitDiscard(Microsoft.CodeAnalysis.IDiscardSymbol)">
+  VisitDiscard(IDiscardSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitDiscard(IDiscardSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IDiscardSymbol.html">IDiscardSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitDynamicType_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitDynamicType*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitDynamicType_Microsoft_CodeAnalysis_IDynamicTypeSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitDynamicType(Microsoft.CodeAnalysis.IDynamicTypeSymbol)">
+  VisitDynamicType(IDynamicTypeSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitDynamicType(IDynamicTypeSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IDynamicTypeSymbol.html">IDynamicTypeSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitEvent_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitEvent*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitEvent_Microsoft_CodeAnalysis_IEventSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitEvent(Microsoft.CodeAnalysis.IEventSymbol)">
+  VisitEvent(IEventSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitEvent(IEventSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IEventSymbol.html">IEventSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitField_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitField*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitField_Microsoft_CodeAnalysis_IFieldSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitField(Microsoft.CodeAnalysis.IFieldSymbol)">
+  VisitField(IFieldSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitField(IFieldSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IFieldSymbol.html">IFieldSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitFunctionPointerType_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitFunctionPointerType*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitFunctionPointerType_Microsoft_CodeAnalysis_IFunctionPointerTypeSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitFunctionPointerType(Microsoft.CodeAnalysis.IFunctionPointerTypeSymbol)">
+  VisitFunctionPointerType(IFunctionPointerTypeSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitFunctionPointerType(IFunctionPointerTypeSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IFunctionPointerTypeSymbol.html">IFunctionPointerTypeSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitLabel_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitLabel*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitLabel_Microsoft_CodeAnalysis_ILabelSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitLabel(Microsoft.CodeAnalysis.ILabelSymbol)">
+  VisitLabel(ILabelSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitLabel(ILabelSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.ILabelSymbol.html">ILabelSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitLocal_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitLocal*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitLocal_Microsoft_CodeAnalysis_ILocalSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitLocal(Microsoft.CodeAnalysis.ILocalSymbol)">
+  VisitLocal(ILocalSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitLocal(ILocalSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.ILocalSymbol.html">ILocalSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitMethod_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitMethod*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitMethod_Microsoft_CodeAnalysis_IMethodSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitMethod(Microsoft.CodeAnalysis.IMethodSymbol)">
+  VisitMethod(IMethodSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitMethod(IMethodSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IMethodSymbol.html">IMethodSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitModule_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitModule*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitModule_Microsoft_CodeAnalysis_IModuleSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitModule(Microsoft.CodeAnalysis.IModuleSymbol)">
+  VisitModule(IModuleSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitModule(IModuleSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IModuleSymbol.html">IModuleSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitNamedType_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitNamedType*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitNamedType_Microsoft_CodeAnalysis_INamedTypeSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitNamedType(Microsoft.CodeAnalysis.INamedTypeSymbol)">
+  VisitNamedType(INamedTypeSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitNamedType(INamedTypeSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.INamedTypeSymbol.html">INamedTypeSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitNamespace_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitNamespace*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitNamespace_Microsoft_CodeAnalysis_INamespaceSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitNamespace(Microsoft.CodeAnalysis.INamespaceSymbol)">
+  VisitNamespace(INamespaceSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitNamespace(INamespaceSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.INamespaceSymbol.html">INamespaceSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitParameter_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitParameter*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitParameter_Microsoft_CodeAnalysis_IParameterSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitParameter(Microsoft.CodeAnalysis.IParameterSymbol)">
+  VisitParameter(IParameterSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitParameter(IParameterSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IParameterSymbol.html">IParameterSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitPointerType_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitPointerType*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitPointerType_Microsoft_CodeAnalysis_IPointerTypeSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitPointerType(Microsoft.CodeAnalysis.IPointerTypeSymbol)">
+  VisitPointerType(IPointerTypeSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitPointerType(IPointerTypeSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IPointerTypeSymbol.html">IPointerTypeSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitProperty_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitProperty*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitProperty_Microsoft_CodeAnalysis_IPropertySymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitProperty(Microsoft.CodeAnalysis.IPropertySymbol)">
+  VisitProperty(IPropertySymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitProperty(IPropertySymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IPropertySymbol.html">IPropertySymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitRangeVariable_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitRangeVariable*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitRangeVariable_Microsoft_CodeAnalysis_IRangeVariableSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitRangeVariable(Microsoft.CodeAnalysis.IRangeVariableSymbol)">
+  VisitRangeVariable(IRangeVariableSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitRangeVariable(IRangeVariableSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.IRangeVariableSymbol.html">IRangeVariableSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_SymbolVisitor_VisitTypeParameter_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitTypeParameter*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_SymbolVisitor_VisitTypeParameter_Microsoft_CodeAnalysis_ITypeParameterSymbol_" data-uid="Microsoft.CodeAnalysis.SymbolVisitor.VisitTypeParameter(Microsoft.CodeAnalysis.ITypeParameterSymbol)">
+  VisitTypeParameter(ITypeParameterSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void VisitTypeParameter(ITypeParameterSymbol symbol)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>symbol</code> <a class="xref" href="Microsoft.CodeAnalysis.ITypeParameterSymbol.html">ITypeParameterSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

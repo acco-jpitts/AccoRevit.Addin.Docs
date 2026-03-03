@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class ExternalCommand | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class ExternalCommand | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand">
+
+
+
+  <h1 id="Nice3point_Revit_Toolkit_External_ExternalCommand" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand" class="text-break">
+Class ExternalCommand  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Nice3point.html">Nice3point</a>.<a class="xref" href="Nice3point.Revit.html">Revit</a>.<a class="xref" href="Nice3point.Revit.Toolkit.html">Toolkit</a>.<a class="xref" href="Nice3point.Revit.Toolkit.External.html">External</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ExternalCommand : IExternalCommand</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">ExternalCommand</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><span class="xref">IExternalCommand</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.About.html">About</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AddAccoFamilyParameters.html">AddAccoFamilyParameters</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AddHangerStructure.html">AddHangerStructure</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AddInsertToLibrary.html">AddInsertToLibrary</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AddNoTypeTagToSelectedSheets.html">AddNoTypeTagToSelectedSheets</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AddPointData.html">AddPointData</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AddRecordStamp.html">AddRecordStamp</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AliasTag.html">AliasTag</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AlignHangersAcrossRuns.html">AlignHangersAcrossRuns</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AlignInlineRunToSource.html">AlignInlineRunToSource</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AnnotateChild.html">AnnotateChild</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AnnotateHangerBundles.html">AnnotateHangerBundles</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AnnotateOverall.html">AnnotateOverall</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AnnotateParent.html">AnnotateParent</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AnnotationCallout.html">AnnotationCallout</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AnnotationPrep.html">AnnotationPrep</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ApplySpoolName.html">ApplySpoolName</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AssemblySheets.html">AssemblySheets</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AttachHangersToBearer.html">AttachHangersToBearer</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.AuditFarAwayElements.html">AuditFarAwayElements</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.BuildPackages.html">BuildPackages</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.BuildPackagesConfig.html">BuildPackagesConfig</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.BuyOutBom.html">BuyOutBom</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CalSilCounts.html">CalSilCounts</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CalculateElevationDifference.html">CalculateElevationDifference</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CalculateOffsetMiterAngles.html">CalculateOffsetMiterAngles</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.Calculator.html">Calculator</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CenterHanger.html">CenterHanger</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CheckDatabaseConnectors.html">CheckDatabaseConnectors</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CheckDatabaseGuid.html">CheckDatabaseGuid</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CheckDatabaseMaterials.html">CheckDatabaseMaterials</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CheckFabricationConnections.html">CheckFabricationConnections</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CheckHangerSpacing.html">CheckHangerSpacing</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CheckOwnership.html">CheckOwnership</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CheckSleeveClashes.html">CheckSleeveClashes</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CheckStrutLength.html">CheckStrutLength</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CheckTapsForDisconnects.html">CheckTapsForDisconnects</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ColorPackages.html">ColorPackages</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ConvertPointCoordinates.html">ConvertPointCoordinates</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CopyFloorsFromLink.html">CopyFloorsFromLink</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CreateDeckLayoutViews.html">CreateDeckLayoutViews</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CreateDeckLayoutWorksets.html">CreateDeckLayoutWorksets</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CreateHangerSchedules.html">CreateHangerSchedules</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CreateRoomTags.html">CreateRoomTags</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CreateSection.html">CreateSection</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CreateSeriesViewsAndSheets.html">CreateSeriesViewsAndSheets</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CreateSketchPlane.html">CreateSketchPlane</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CreateSpoolMap.html">CreateSpoolMap</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CreateSupportAssemblies.html">CreateSupportAssemblies</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CreateSupportAssembliesConfig.html">CreateSupportAssembliesConfig</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CreateSupportAssemblySheets.html">CreateSupportAssemblySheets</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.CreateViews.html">CreateViews</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.DetachRods.html">DetachRods</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.EditAnnotationSettings.html">EditAnnotationSettings</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ElevationTag.html">ElevationTag</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ExportBom.html">ExportBom</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ExportInsertLibrary.html">ExportInsertLibrary</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ExportMajByMark.html">ExportMajByMark</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ExportPoints.html">ExportPoints</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ExportToPcf.html">ExportToPcf</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ExportViewTemplateNames.html">ExportViewTemplateNames</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ExportViews.html">ExportViews</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.FilterByCID.html">FilterByCID</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.FilterByType.html">FilterByType</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.FindAllSheetsWithSelectedRevision.html">FindAllSheetsWithSelectedRevision</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.FindDisconnectedSaddles.html">FindDisconnectedSaddles</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.FindHanger.html">FindHanger</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.FindPipeClashes.html">FindPipeClashes</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.FindUnattached.html">FindUnattached</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.FixDuplicateMarkWarning.html">FixDuplicateMarkWarning</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.FixPipeLength.html">FixPipeLength</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.FixSpoolNumbering.html">FixSpoolNumbering</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.FixTaggedElementLevel.html">FixTaggedElementLevel</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.GetServiceListFromProfile.html">GetServiceListFromProfile</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.GetViewLocations.html">GetViewLocations</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.GridDimensions.html">GridDimensions</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.HangerCsvExport.html">HangerCsvExport</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.HangerLabels.html">HangerLabels</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.HideServices.html">HideServices</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ImportFamilies.html">ImportFamilies</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ImportSharedParametersAirTerminals.html">ImportSharedParametersAirTerminals</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ImportSharedParametersHd.html">ImportSharedParametersHd</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ImportSharedParametersSm.html">ImportSharedParametersSm</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.IsolateServices.html">IsolateServices</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.KeyCreation.html">KeyCreation</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.LengthTag.html">LengthTag</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.LevelDatumInformation.html">LevelDatumInformation</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.LinkModelWithSharedCoordinates.html">LinkModelWithSharedCoordinates</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ManageProjectUnits.html">ManageProjectUnits</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.MarkItemNumber.html">MarkItemNumber</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.Match.html">Match</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.MatchParameters.html">MatchParameters</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.MiscTag.html">MiscTag</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ModelPrepSupports.html">ModelPrepSupports</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.MoveModelToInternalOrigin.html">MoveModelToInternalOrigin</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.MultiTag.html">MultiTag</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.NoteTag.html">NoteTag</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.NumberTag.html">NumberTag</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.OffsetMiterCalculator.html">OffsetMiterCalculator</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.OffsetTag.html">OffsetTag</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.OpenSelectedDependentViews.html">OpenSelectedDependentViews</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.OpenSelectedSheets.html">OpenSelectedSheets</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.OpenSelectedViews.html">OpenSelectedViews</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.Overkill.html">Overkill</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PackageSheets.html">PackageSheets</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ParameterMapping.html">ParameterMapping</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PlaceBlankPointLoadOnSeismic.html">PlaceBlankPointLoadOnSeismic</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PlaceGridDims.html">PlaceGridDims</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PlaceGridPoints.html">PlaceGridPoints</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PlaceLayoutPoints.html">PlaceLayoutPoints</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PlaceSeismic.html">PlaceSeismic</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PlaceTrapezeHardware.html">PlaceTrapezeHardware</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PointLoadsConvert.html">PointLoadsConvert</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PointLoadsExport.html">PointLoadsExport</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PointLoadsHosted.html">PointLoadsHosted</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PointLoadsReplace.html">PointLoadsReplace</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PointLoadsUnhosted.html">PointLoadsUnhosted</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PrepForFabPro.html">PrepForFabPro</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PrintSheetSets.html">PrintSheetSets</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.PrintSpoolPackages.html">PrintSpoolPackages</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.RehostHanger.html">RehostHanger</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.RehostHangerAuto.html">RehostHangerAuto</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.RehostHangersAlongRun.html">RehostHangersAlongRun</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ReloadRibbon.html">ReloadRibbon</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.RemoveFPandMParameters.html">RemoveFPandMParameters</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.RemovePipeDiameterSymbols.html">RemovePipeDiameterSymbols</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.RemoveRevisionFromSheets.html">RemoveRevisionFromSheets</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.Renumber.html">Renumber</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.RenumberByMark.html">RenumberByMark</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ReplaceClashingSleevesWithWallOpenings.html">ReplaceClashingSleevesWithWallOpenings</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ReplaceTextinSelectedViewNames.html">ReplaceTextinSelectedViewNames</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ResetExportStatus.html">ResetExportStatus</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ResetOverrides.html">ResetOverrides</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.RodLengthZero.html">RodLengthZero</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.RunColorSpools.html">RunColorSpools</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SelectAllFabPartsInProject.html">SelectAllFabPartsInProject</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SelectAllFabPartsInView.html">SelectAllFabPartsInView</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SelectAllNonFabPartsInView.html">SelectAllNonFabPartsInView</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SelectAllNotTagged.html">SelectAllNotTagged</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SelectByMark.html">SelectByMark</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SelectByService.html">SelectByService</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SelectElementByUniqueId.html">SelectElementByUniqueId</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SelectHangerProfile.html">SelectHangerProfile</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SelectHangers.html">SelectHangers</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SelectOwnerOfTrimblePoints.html">SelectOwnerOfTrimblePoints</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SelectSpoolsMissingTagsForPriorityMap.html">SelectSpoolsMissingTagsForPriorityMap</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SelectTrimblePointsFromHosts.html">SelectTrimblePointsFromHosts</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SelectionBoxFloorplan.html">SelectionBoxFloorplan</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetAncillaryKits.html">SetAncillaryKits</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetArea.html">SetArea</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetAreaSpoolName.html">SetAreaSpoolName</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetBagAbdTag.html">SetBagAbdTag</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetElementPackageName.html">SetElementPackageName</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetElementPackageNameConfig.html">SetElementPackageNameConfig</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetElevationBySource.html">SetElevationBySource</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetFabStatus.html">SetFabStatus</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetLevel.html">SetLevel</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetLevelForBom.html">SetLevelForBom</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetParameter.html">SetParameter</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetPipeLevelByHanger.html">SetPipeLevelByHanger</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetRevisionOnSheets.html">SetRevisionOnSheets</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetRodOffset.html">SetRodOffset</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetSheetInfoByMaster.html">SetSheetInfoByMaster</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetSleeveAtWall.html">SetSleeveAtWall</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetSleeveAtWallConfig.html">SetSleeveAtWallConfig</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetSleeveLength.html">SetSleeveLength</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetSpoolKey.html">SetSpoolKey</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetSpoolWeights.html">SetSpoolWeights</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetStrutLength.html">SetStrutLength</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetTransparency.html">SetTransparency</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetUpperAttachment.html">SetUpperAttachment</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetViewportBySourceViewport.html">SetViewportBySourceViewport</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetWorksetLevel.html">SetWorksetLevel</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SetWorksetSpool.html">SetWorksetSpool</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ShowAllServices.html">ShowAllServices</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ShowDiffs.html">ShowDiffs</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ShowElements.html">ShowElements</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ShowInsertDefinitions.html">ShowInsertDefinitions</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ShowMissingMapProdData.html">ShowMissingMapProdData</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ShowPointData.html">ShowPointData</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SizeTag.html">SizeTag</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SortFiltersInViewTemplates.html">SortFiltersInViewTemplates</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SpoolList.html">SpoolList</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SpoolingStartup.html">SpoolingStartup</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.StampHangerReports.html">StampHangerReports</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.StretchAndFit.html">StretchAndFit</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SupportAssemblyBomRenumber.html">SupportAssemblyBomRenumber</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SwapRods.html">SwapRods</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SwapTheme.html">SwapTheme</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.SystemFlow.html">SystemFlow</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ToggleCategorySelectorPane.html">ToggleCategorySelectorPane</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ToggleConsole.html">ToggleConsole</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ToggleHangerStructureUpdater.html">ToggleHangerStructureUpdater</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ToggleHangerUpdater.html">ToggleHangerUpdater</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ToggleJointTrackingUpdater.html">ToggleJointTrackingUpdater</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.TogglePointCoordinateUpdater.html">TogglePointCoordinateUpdater</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ToggleSeismicUpdater.html">ToggleSeismicUpdater</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ToggleServiceDialog.html">ToggleServiceDialog</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ToggleTabColorizer.html">ToggleTabColorizer</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ToggleUnattachedHangerPane.html">ToggleUnattachedHangerPane</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.TransferFiltersViewTemplates.html">TransferFiltersViewTemplates</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.TurnOffLinksinSelectedViews.html">TurnOffLinksinSelectedViews</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.ViewFilterVisibility.html">ViewFilterVisibility</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WhoDidThat.html">WhoDidThat</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeAllAssemblyViewsNotOnASheet.html">WipeAllAssemblyViewsNotOnASheet</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeAllAssemblyViewsNotOnASheetConfig.html">WipeAllAssemblyViewsNotOnASheetConfig</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeAllDuplicateViews.html">WipeAllDuplicateViews</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeCollabCache.html">WipeCollabCache</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeFabProAttachments.html">WipeFabProAttachments</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeFilters.html">WipeFilters</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeLineStylesAndMaterials.html">WipeLineStylesAndMaterials</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeSelectedSheetSets.html">WipeSelectedSheetSets</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeSelectedSheets.html">WipeSelectedSheets</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeSelectedSheetsWithNoViews.html">WipeSelectedSheetsWithNoViews</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeSelectedViewsNotOnASheet.html">WipeSelectedViewsNotOnASheet</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeUnattachedHangerGroups.html">WipeUnattachedHangerGroups</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeUnnamedSectionViews.html">WipeUnnamedSectionViews</a></div>
+      <div><a class="xref" href="AccoRevit.Addin.RibbonCommands.WipeUnusedViewTemplates.html">WipeUnusedViewTemplates</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_">UnitExtensions.ToUnitLabel(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_">ReflectionUtils.GetHighlightProperty(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_">SystemExtensions.Cast&lt;T&gt;(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Nice3point_Revit_Toolkit_External_ExternalCommand__ctor_" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.#ctor*"></a>
+
+  <h3 id="Nice3point_Revit_Toolkit_External_ExternalCommand__ctor" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.#ctor">
+  ExternalCommand()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ExternalCommand()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Nice3point_Revit_Toolkit_External_ExternalCommand_ActiveView_" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.ActiveView*"></a>
+
+  <h3 id="Nice3point_Revit_Toolkit_External_ExternalCommand_ActiveView" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.ActiveView">
+  ActiveView
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public View ActiveView { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">View</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Toolkit_External_ExternalCommand_Application_" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.Application*"></a>
+
+  <h3 id="Nice3point_Revit_Toolkit_External_ExternalCommand_Application" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.Application">
+  Application
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Application Application { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Application</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Toolkit_External_ExternalCommand_Document_" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.Document*"></a>
+
+  <h3 id="Nice3point_Revit_Toolkit_External_ExternalCommand_Document" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.Document">
+  Document
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Document Document { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Toolkit_External_ExternalCommand_ElementSet_" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.ElementSet*"></a>
+
+  <h3 id="Nice3point_Revit_Toolkit_External_ExternalCommand_ElementSet" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.ElementSet">
+  ElementSet
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ElementSet ElementSet { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ElementSet</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Toolkit_External_ExternalCommand_ErrorMessage_" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.ErrorMessage*"></a>
+
+  <h3 id="Nice3point_Revit_Toolkit_External_ExternalCommand_ErrorMessage" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.ErrorMessage">
+  ErrorMessage
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ErrorMessage { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Toolkit_External_ExternalCommand_ExternalCommandData_" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.ExternalCommandData*"></a>
+
+  <h3 id="Nice3point_Revit_Toolkit_External_ExternalCommand_ExternalCommandData" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.ExternalCommandData">
+  ExternalCommandData
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExternalCommandData ExternalCommandData { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">ExternalCommandData</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Toolkit_External_ExternalCommand_Result_" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.Result*"></a>
+
+  <h3 id="Nice3point_Revit_Toolkit_External_ExternalCommand_Result" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.Result">
+  Result
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Result Result { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Result</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Toolkit_External_ExternalCommand_UiApplication_" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.UiApplication*"></a>
+
+  <h3 id="Nice3point_Revit_Toolkit_External_ExternalCommand_UiApplication" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.UiApplication">
+  UiApplication
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIApplication UiApplication { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UIApplication</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Toolkit_External_ExternalCommand_UiDocument_" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.UiDocument*"></a>
+
+  <h3 id="Nice3point_Revit_Toolkit_External_ExternalCommand_UiDocument" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.UiDocument">
+  UiDocument
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UIDocument UiDocument { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><span class="xref">UIDocument</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Nice3point_Revit_Toolkit_External_ExternalCommand_Execute_" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.Execute*"></a>
+
+  <h3 id="Nice3point_Revit_Toolkit_External_ExternalCommand_Execute" data-uid="Nice3point.Revit.Toolkit.External.ExternalCommand.Execute">
+  Execute()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Execute()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

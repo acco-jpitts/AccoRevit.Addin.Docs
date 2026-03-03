@@ -1,0 +1,4172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Utf8JsonWriter | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Utf8JsonWriter | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="System.Text.Json.Utf8JsonWriter">
+
+
+
+  <h1 id="System_Text_Json_Utf8JsonWriter" data-uid="System.Text.Json.Utf8JsonWriter" class="text-break">
+Class Utf8JsonWriter  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="System.html">System</a>.<a class="xref" href="System.Text.html">Text</a>.<a class="xref" href="System.Text.Json.html">Json</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class Utf8JsonWriter : IDisposable, IAsyncDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Utf8JsonWriter</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_">UnitExtensions.ToUnitLabel(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_">ReflectionUtils.GetHighlightProperty(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_">SystemExtensions.Cast&lt;T&gt;(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="System_Text_Json_Utf8JsonWriter__ctor_" data-uid="System.Text.Json.Utf8JsonWriter.#ctor*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter__ctor_System_Buffers_IBufferWriter_System_Byte__System_Text_Json_JsonWriterOptions_" data-uid="System.Text.Json.Utf8JsonWriter.#ctor(System.Buffers.IBufferWriter{System.Byte},System.Text.Json.JsonWriterOptions)">
+  Utf8JsonWriter(IBufferWriter&lt;byte&gt;, JsonWriterOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Utf8JsonWriter(IBufferWriter&lt;byte&gt; bufferWriter, JsonWriterOptions options = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferWriter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1">IBufferWriter</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Text.Json.JsonWriterOptions.html">JsonWriterOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter__ctor_" data-uid="System.Text.Json.Utf8JsonWriter.#ctor*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter__ctor_System_IO_Stream_System_Text_Json_JsonWriterOptions_" data-uid="System.Text.Json.Utf8JsonWriter.#ctor(System.IO.Stream,System.Text.Json.JsonWriterOptions)">
+  Utf8JsonWriter(Stream, JsonWriterOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Utf8JsonWriter(Stream utf8Json, JsonWriterOptions options = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8Json</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Text.Json.JsonWriterOptions.html">JsonWriterOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_BytesCommitted_" data-uid="System.Text.Json.Utf8JsonWriter.BytesCommitted*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_BytesCommitted" data-uid="System.Text.Json.Utf8JsonWriter.BytesCommitted">
+  BytesCommitted
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long BytesCommitted { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_BytesPending_" data-uid="System.Text.Json.Utf8JsonWriter.BytesPending*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_BytesPending" data-uid="System.Text.Json.Utf8JsonWriter.BytesPending">
+  BytesPending
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int BytesPending { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_CurrentDepth_" data-uid="System.Text.Json.Utf8JsonWriter.CurrentDepth*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_CurrentDepth" data-uid="System.Text.Json.Utf8JsonWriter.CurrentDepth">
+  CurrentDepth
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int CurrentDepth { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_Options_" data-uid="System.Text.Json.Utf8JsonWriter.Options*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_Options" data-uid="System.Text.Json.Utf8JsonWriter.Options">
+  Options
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonWriterOptions Options { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Text.Json.JsonWriterOptions.html">JsonWriterOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_Dispose_" data-uid="System.Text.Json.Utf8JsonWriter.Dispose*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_Dispose" data-uid="System.Text.Json.Utf8JsonWriter.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_DisposeAsync_" data-uid="System.Text.Json.Utf8JsonWriter.DisposeAsync*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_DisposeAsync" data-uid="System.Text.Json.Utf8JsonWriter.DisposeAsync">
+  DisposeAsync()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ValueTask DisposeAsync()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_Flush_" data-uid="System.Text.Json.Utf8JsonWriter.Flush*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_Flush" data-uid="System.Text.Json.Utf8JsonWriter.Flush">
+  Flush()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Flush()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_FlushAsync_" data-uid="System.Text.Json.Utf8JsonWriter.FlushAsync*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_FlushAsync_System_Threading_CancellationToken_" data-uid="System.Text.Json.Utf8JsonWriter.FlushAsync(System.Threading.CancellationToken)">
+  FlushAsync(CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task FlushAsync(CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_Reset_" data-uid="System.Text.Json.Utf8JsonWriter.Reset*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_Reset" data-uid="System.Text.Json.Utf8JsonWriter.Reset">
+  Reset()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_Reset_" data-uid="System.Text.Json.Utf8JsonWriter.Reset*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_Reset_System_Buffers_IBufferWriter_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.Reset(System.Buffers.IBufferWriter{System.Byte})">
+  Reset(IBufferWriter&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset(IBufferWriter&lt;byte&gt; bufferWriter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bufferWriter</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffers.ibufferwriter-1">IBufferWriter</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_Reset_" data-uid="System.Text.Json.Utf8JsonWriter.Reset*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_Reset_System_IO_Stream_" data-uid="System.Text.Json.Utf8JsonWriter.Reset(System.IO.Stream)">
+  Reset(Stream)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Reset(Stream utf8Json)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8Json</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.stream">Stream</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteBase64String_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBase64String*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteBase64String_System_ReadOnlySpan_System_Byte__System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteBase64String(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
+  WriteBase64String(ReadOnlySpan&lt;byte&gt;, ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBase64String(ReadOnlySpan&lt;byte&gt; utf8PropertyName, ReadOnlySpan&lt;byte&gt; bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteBase64String_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBase64String*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteBase64String_System_ReadOnlySpan_System_Char__System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteBase64String(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Byte})">
+  WriteBase64String(ReadOnlySpan&lt;char&gt;, ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBase64String(ReadOnlySpan&lt;char&gt; propertyName, ReadOnlySpan&lt;byte&gt; bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteBase64String_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBase64String*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteBase64String_System_String_System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteBase64String(System.String,System.ReadOnlySpan{System.Byte})">
+  WriteBase64String(string, ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBase64String(string propertyName, ReadOnlySpan&lt;byte&gt; bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteBase64String_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBase64String*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteBase64String_System_Text_Json_JsonEncodedText_System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteBase64String(System.Text.Json.JsonEncodedText,System.ReadOnlySpan{System.Byte})">
+  WriteBase64String(JsonEncodedText, ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBase64String(JsonEncodedText propertyName, ReadOnlySpan&lt;byte&gt; bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteBase64StringSegment_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBase64StringSegment*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteBase64StringSegment_System_ReadOnlySpan_System_Byte__System_Boolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBase64StringSegment(System.ReadOnlySpan{System.Byte},System.Boolean)">
+  WriteBase64StringSegment(ReadOnlySpan&lt;byte&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBase64StringSegment(ReadOnlySpan&lt;byte&gt; value, bool isFinalSegment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>isFinalSegment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteBase64StringValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBase64StringValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteBase64StringValue_System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteBase64StringValue(System.ReadOnlySpan{System.Byte})">
+  WriteBase64StringValue(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBase64StringValue(ReadOnlySpan&lt;byte&gt; bytes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>bytes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteBoolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBoolean*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteBoolean_System_ReadOnlySpan_System_Byte__System_Boolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBoolean(System.ReadOnlySpan{System.Byte},System.Boolean)">
+  WriteBoolean(ReadOnlySpan&lt;byte&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBoolean(ReadOnlySpan&lt;byte&gt; utf8PropertyName, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteBoolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBoolean*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteBoolean_System_ReadOnlySpan_System_Char__System_Boolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBoolean(System.ReadOnlySpan{System.Char},System.Boolean)">
+  WriteBoolean(ReadOnlySpan&lt;char&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBoolean(ReadOnlySpan&lt;char&gt; propertyName, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteBoolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBoolean*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteBoolean_System_String_System_Boolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBoolean(System.String,System.Boolean)">
+  WriteBoolean(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBoolean(string propertyName, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteBoolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBoolean*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteBoolean_System_Text_Json_JsonEncodedText_System_Boolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBoolean(System.Text.Json.JsonEncodedText,System.Boolean)">
+  WriteBoolean(JsonEncodedText, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBoolean(JsonEncodedText propertyName, bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteBooleanValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBooleanValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteBooleanValue_System_Boolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteBooleanValue(System.Boolean)">
+  WriteBooleanValue(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteBooleanValue(bool value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteCommentValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteCommentValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteCommentValue_System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteCommentValue(System.ReadOnlySpan{System.Byte})">
+  WriteCommentValue(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteCommentValue(ReadOnlySpan&lt;byte&gt; utf8Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteCommentValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteCommentValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteCommentValue_System_ReadOnlySpan_System_Char__" data-uid="System.Text.Json.Utf8JsonWriter.WriteCommentValue(System.ReadOnlySpan{System.Char})">
+  WriteCommentValue(ReadOnlySpan&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteCommentValue(ReadOnlySpan&lt;char&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteCommentValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteCommentValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteCommentValue_System_String_" data-uid="System.Text.Json.Utf8JsonWriter.WriteCommentValue(System.String)">
+  WriteCommentValue(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteCommentValue(string value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteEndArray_" data-uid="System.Text.Json.Utf8JsonWriter.WriteEndArray*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteEndArray" data-uid="System.Text.Json.Utf8JsonWriter.WriteEndArray">
+  WriteEndArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteEndArray()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteEndObject_" data-uid="System.Text.Json.Utf8JsonWriter.WriteEndObject*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteEndObject" data-uid="System.Text.Json.Utf8JsonWriter.WriteEndObject">
+  WriteEndObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteEndObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNull_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNull*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNull_System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteNull(System.ReadOnlySpan{System.Byte})">
+  WriteNull(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNull(ReadOnlySpan&lt;byte&gt; utf8PropertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNull_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNull*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNull_System_ReadOnlySpan_System_Char__" data-uid="System.Text.Json.Utf8JsonWriter.WriteNull(System.ReadOnlySpan{System.Char})">
+  WriteNull(ReadOnlySpan&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNull(ReadOnlySpan&lt;char&gt; propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNull_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNull*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNull_System_String_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNull(System.String)">
+  WriteNull(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNull(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNull_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNull*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNull_System_Text_Json_JsonEncodedText_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNull(System.Text.Json.JsonEncodedText)">
+  WriteNull(JsonEncodedText)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNull(JsonEncodedText propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNullValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNullValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNullValue" data-uid="System.Text.Json.Utf8JsonWriter.WriteNullValue">
+  WriteNullValue()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNullValue()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Byte__System_Decimal_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.Decimal)">
+  WriteNumber(ReadOnlySpan&lt;byte&gt;, decimal)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(ReadOnlySpan&lt;byte&gt; utf8PropertyName, decimal value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Byte__System_Double_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.Double)">
+  WriteNumber(ReadOnlySpan&lt;byte&gt;, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(ReadOnlySpan&lt;byte&gt; utf8PropertyName, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Byte__System_Int32_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.Int32)">
+  WriteNumber(ReadOnlySpan&lt;byte&gt;, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(ReadOnlySpan&lt;byte&gt; utf8PropertyName, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Byte__System_Int64_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.Int64)">
+  WriteNumber(ReadOnlySpan&lt;byte&gt;, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(ReadOnlySpan&lt;byte&gt; utf8PropertyName, long value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Byte__System_Single_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.Single)">
+  WriteNumber(ReadOnlySpan&lt;byte&gt;, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(ReadOnlySpan&lt;byte&gt; utf8PropertyName, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Byte__System_UInt32_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.UInt32)">
+  WriteNumber(ReadOnlySpan&lt;byte&gt;, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public void WriteNumber(ReadOnlySpan&lt;byte&gt; utf8PropertyName, uint value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Byte__System_UInt64_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Byte},System.UInt64)">
+  WriteNumber(ReadOnlySpan&lt;byte&gt;, ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public void WriteNumber(ReadOnlySpan&lt;byte&gt; utf8PropertyName, ulong value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Char__System_Decimal_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.Decimal)">
+  WriteNumber(ReadOnlySpan&lt;char&gt;, decimal)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(ReadOnlySpan&lt;char&gt; propertyName, decimal value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Char__System_Double_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.Double)">
+  WriteNumber(ReadOnlySpan&lt;char&gt;, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(ReadOnlySpan&lt;char&gt; propertyName, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Char__System_Int32_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.Int32)">
+  WriteNumber(ReadOnlySpan&lt;char&gt;, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(ReadOnlySpan&lt;char&gt; propertyName, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Char__System_Int64_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.Int64)">
+  WriteNumber(ReadOnlySpan&lt;char&gt;, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(ReadOnlySpan&lt;char&gt; propertyName, long value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Char__System_Single_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.Single)">
+  WriteNumber(ReadOnlySpan&lt;char&gt;, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(ReadOnlySpan&lt;char&gt; propertyName, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Char__System_UInt32_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.UInt32)">
+  WriteNumber(ReadOnlySpan&lt;char&gt;, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public void WriteNumber(ReadOnlySpan&lt;char&gt; propertyName, uint value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_ReadOnlySpan_System_Char__System_UInt64_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.ReadOnlySpan{System.Char},System.UInt64)">
+  WriteNumber(ReadOnlySpan&lt;char&gt;, ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public void WriteNumber(ReadOnlySpan&lt;char&gt; propertyName, ulong value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_String_System_Decimal_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.Decimal)">
+  WriteNumber(string, decimal)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string propertyName, decimal value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_String_System_Double_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.Double)">
+  WriteNumber(string, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string propertyName, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_String_System_Int32_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.Int32)">
+  WriteNumber(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string propertyName, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_String_System_Int64_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.Int64)">
+  WriteNumber(string, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string propertyName, long value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_String_System_Single_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.Single)">
+  WriteNumber(string, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(string propertyName, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_String_System_UInt32_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.UInt32)">
+  WriteNumber(string, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public void WriteNumber(string propertyName, uint value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_String_System_UInt64_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.String,System.UInt64)">
+  WriteNumber(string, ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public void WriteNumber(string propertyName, ulong value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_Text_Json_JsonEncodedText_System_Decimal_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.Decimal)">
+  WriteNumber(JsonEncodedText, decimal)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(JsonEncodedText propertyName, decimal value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_Text_Json_JsonEncodedText_System_Double_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.Double)">
+  WriteNumber(JsonEncodedText, double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(JsonEncodedText propertyName, double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_Text_Json_JsonEncodedText_System_Int32_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.Int32)">
+  WriteNumber(JsonEncodedText, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(JsonEncodedText propertyName, int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_Text_Json_JsonEncodedText_System_Int64_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.Int64)">
+  WriteNumber(JsonEncodedText, long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(JsonEncodedText propertyName, long value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_Text_Json_JsonEncodedText_System_Single_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.Single)">
+  WriteNumber(JsonEncodedText, float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumber(JsonEncodedText propertyName, float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_Text_Json_JsonEncodedText_System_UInt32_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.UInt32)">
+  WriteNumber(JsonEncodedText, uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public void WriteNumber(JsonEncodedText propertyName, uint value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumber_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumber_System_Text_Json_JsonEncodedText_System_UInt64_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumber(System.Text.Json.JsonEncodedText,System.UInt64)">
+  WriteNumber(JsonEncodedText, ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public void WriteNumber(JsonEncodedText propertyName, ulong value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_System_Decimal_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.Decimal)">
+  WriteNumberValue(decimal)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumberValue(decimal value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.decimal">decimal</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_System_Double_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.Double)">
+  WriteNumberValue(double)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumberValue(double value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.double">double</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_System_Int32_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.Int32)">
+  WriteNumberValue(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumberValue(int value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_System_Int64_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.Int64)">
+  WriteNumberValue(long)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumberValue(long value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_System_Single_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.Single)">
+  WriteNumberValue(float)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteNumberValue(float value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.single">float</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_System_UInt32_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.UInt32)">
+  WriteNumberValue(uint)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public void WriteNumberValue(uint value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint32">uint</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteNumberValue_System_UInt64_" data-uid="System.Text.Json.Utf8JsonWriter.WriteNumberValue(System.UInt64)">
+  WriteNumberValue(ulong)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[CLSCompliant(false)]
+public void WriteNumberValue(ulong value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.uint64">ulong</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WritePropertyName_" data-uid="System.Text.Json.Utf8JsonWriter.WritePropertyName*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WritePropertyName_System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WritePropertyName(System.ReadOnlySpan{System.Byte})">
+  WritePropertyName(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePropertyName(ReadOnlySpan&lt;byte&gt; utf8PropertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WritePropertyName_" data-uid="System.Text.Json.Utf8JsonWriter.WritePropertyName*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WritePropertyName_System_ReadOnlySpan_System_Char__" data-uid="System.Text.Json.Utf8JsonWriter.WritePropertyName(System.ReadOnlySpan{System.Char})">
+  WritePropertyName(ReadOnlySpan&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePropertyName(ReadOnlySpan&lt;char&gt; propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WritePropertyName_" data-uid="System.Text.Json.Utf8JsonWriter.WritePropertyName*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WritePropertyName_System_String_" data-uid="System.Text.Json.Utf8JsonWriter.WritePropertyName(System.String)">
+  WritePropertyName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePropertyName(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WritePropertyName_" data-uid="System.Text.Json.Utf8JsonWriter.WritePropertyName*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WritePropertyName_System_Text_Json_JsonEncodedText_" data-uid="System.Text.Json.Utf8JsonWriter.WritePropertyName(System.Text.Json.JsonEncodedText)">
+  WritePropertyName(JsonEncodedText)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WritePropertyName(JsonEncodedText propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteRawValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteRawValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteRawValue_System_Buffers_ReadOnlySequence_System_Byte__System_Boolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteRawValue(System.Buffers.ReadOnlySequence{System.Byte},System.Boolean)">
+  WriteRawValue(ReadOnlySequence&lt;byte&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteRawValue(ReadOnlySequence&lt;byte&gt; utf8Json, bool skipInputValidation = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8Json</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.buffers.readonlysequence-1">ReadOnlySequence</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>skipInputValidation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteRawValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteRawValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteRawValue_System_ReadOnlySpan_System_Byte__System_Boolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteRawValue(System.ReadOnlySpan{System.Byte},System.Boolean)">
+  WriteRawValue(ReadOnlySpan&lt;byte&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteRawValue(ReadOnlySpan&lt;byte&gt; utf8Json, bool skipInputValidation = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8Json</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>skipInputValidation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteRawValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteRawValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteRawValue_System_ReadOnlySpan_System_Char__System_Boolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteRawValue(System.ReadOnlySpan{System.Char},System.Boolean)">
+  WriteRawValue(ReadOnlySpan&lt;char&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteRawValue(ReadOnlySpan&lt;char&gt; json, bool skipInputValidation = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>json</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>skipInputValidation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteRawValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteRawValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteRawValue_System_String_System_Boolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteRawValue(System.String,System.Boolean)">
+  WriteRawValue(string, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteRawValue(string json, bool skipInputValidation = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>json</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>skipInputValidation</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStartArray_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartArray*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStartArray" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartArray">
+  WriteStartArray()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStartArray()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStartArray_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartArray*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStartArray_System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartArray(System.ReadOnlySpan{System.Byte})">
+  WriteStartArray(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStartArray(ReadOnlySpan&lt;byte&gt; utf8PropertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStartArray_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartArray*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStartArray_System_ReadOnlySpan_System_Char__" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartArray(System.ReadOnlySpan{System.Char})">
+  WriteStartArray(ReadOnlySpan&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStartArray(ReadOnlySpan&lt;char&gt; propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStartArray_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartArray*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStartArray_System_String_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartArray(System.String)">
+  WriteStartArray(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStartArray(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStartArray_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartArray*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStartArray_System_Text_Json_JsonEncodedText_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartArray(System.Text.Json.JsonEncodedText)">
+  WriteStartArray(JsonEncodedText)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStartArray(JsonEncodedText propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStartObject_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartObject*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStartObject" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartObject">
+  WriteStartObject()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStartObject()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStartObject_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartObject*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStartObject_System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartObject(System.ReadOnlySpan{System.Byte})">
+  WriteStartObject(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStartObject(ReadOnlySpan&lt;byte&gt; utf8PropertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStartObject_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartObject*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStartObject_System_ReadOnlySpan_System_Char__" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartObject(System.ReadOnlySpan{System.Char})">
+  WriteStartObject(ReadOnlySpan&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStartObject(ReadOnlySpan&lt;char&gt; propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStartObject_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartObject*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStartObject_System_String_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartObject(System.String)">
+  WriteStartObject(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStartObject(string propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStartObject_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartObject*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStartObject_System_Text_Json_JsonEncodedText_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStartObject(System.Text.Json.JsonEncodedText)">
+  WriteStartObject(JsonEncodedText)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStartObject(JsonEncodedText propertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Byte__System_DateTime_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.DateTime)">
+  WriteString(ReadOnlySpan&lt;byte&gt;, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;byte&gt; utf8PropertyName, DateTime value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Byte__System_DateTimeOffset_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.DateTimeOffset)">
+  WriteString(ReadOnlySpan&lt;byte&gt;, DateTimeOffset)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;byte&gt; utf8PropertyName, DateTimeOffset value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Byte__System_Guid_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.Guid)">
+  WriteString(ReadOnlySpan&lt;byte&gt;, Guid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;byte&gt; utf8PropertyName, Guid value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Byte__System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Byte})">
+  WriteString(ReadOnlySpan&lt;byte&gt;, ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;byte&gt; utf8PropertyName, ReadOnlySpan&lt;byte&gt; utf8Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>utf8Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Byte__System_ReadOnlySpan_System_Char__" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.ReadOnlySpan{System.Char})">
+  WriteString(ReadOnlySpan&lt;byte&gt;, ReadOnlySpan&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;byte&gt; utf8PropertyName, ReadOnlySpan&lt;char&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Byte__System_String_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.String)">
+  WriteString(ReadOnlySpan&lt;byte&gt;, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;byte&gt; utf8PropertyName, string? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Byte__System_Text_Json_JsonEncodedText_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Byte},System.Text.Json.JsonEncodedText)">
+  WriteString(ReadOnlySpan&lt;byte&gt;, JsonEncodedText)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;byte&gt; utf8PropertyName, JsonEncodedText value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8PropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Char__System_DateTime_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.DateTime)">
+  WriteString(ReadOnlySpan&lt;char&gt;, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;char&gt; propertyName, DateTime value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Char__System_DateTimeOffset_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.DateTimeOffset)">
+  WriteString(ReadOnlySpan&lt;char&gt;, DateTimeOffset)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;char&gt; propertyName, DateTimeOffset value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Char__System_Guid_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.Guid)">
+  WriteString(ReadOnlySpan&lt;char&gt;, Guid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;char&gt; propertyName, Guid value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Char__System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Byte})">
+  WriteString(ReadOnlySpan&lt;char&gt;, ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;char&gt; propertyName, ReadOnlySpan&lt;byte&gt; utf8Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>utf8Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Char__System_ReadOnlySpan_System_Char__" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.ReadOnlySpan{System.Char})">
+  WriteString(ReadOnlySpan&lt;char&gt;, ReadOnlySpan&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;char&gt; propertyName, ReadOnlySpan&lt;char&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Char__System_String_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.String)">
+  WriteString(ReadOnlySpan&lt;char&gt;, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;char&gt; propertyName, string? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_ReadOnlySpan_System_Char__System_Text_Json_JsonEncodedText_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.ReadOnlySpan{System.Char},System.Text.Json.JsonEncodedText)">
+  WriteString(ReadOnlySpan&lt;char&gt;, JsonEncodedText)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(ReadOnlySpan&lt;char&gt; propertyName, JsonEncodedText value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_String_System_DateTime_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.DateTime)">
+  WriteString(string, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(string propertyName, DateTime value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_String_System_DateTimeOffset_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.DateTimeOffset)">
+  WriteString(string, DateTimeOffset)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(string propertyName, DateTimeOffset value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_String_System_Guid_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.Guid)">
+  WriteString(string, Guid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(string propertyName, Guid value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_String_System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.ReadOnlySpan{System.Byte})">
+  WriteString(string, ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(string propertyName, ReadOnlySpan&lt;byte&gt; utf8Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>utf8Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_String_System_ReadOnlySpan_System_Char__" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.ReadOnlySpan{System.Char})">
+  WriteString(string, ReadOnlySpan&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(string propertyName, ReadOnlySpan&lt;char&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_String_System_String_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.String)">
+  WriteString(string, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(string propertyName, string? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_String_System_Text_Json_JsonEncodedText_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.String,System.Text.Json.JsonEncodedText)">
+  WriteString(string, JsonEncodedText)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(string propertyName, JsonEncodedText value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_Text_Json_JsonEncodedText_System_DateTime_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.DateTime)">
+  WriteString(JsonEncodedText, DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(JsonEncodedText propertyName, DateTime value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_Text_Json_JsonEncodedText_System_DateTimeOffset_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.DateTimeOffset)">
+  WriteString(JsonEncodedText, DateTimeOffset)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(JsonEncodedText propertyName, DateTimeOffset value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_Text_Json_JsonEncodedText_System_Guid_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.Guid)">
+  WriteString(JsonEncodedText, Guid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(JsonEncodedText propertyName, Guid value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_Text_Json_JsonEncodedText_System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.ReadOnlySpan{System.Byte})">
+  WriteString(JsonEncodedText, ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(JsonEncodedText propertyName, ReadOnlySpan&lt;byte&gt; utf8Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>utf8Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_Text_Json_JsonEncodedText_System_ReadOnlySpan_System_Char__" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.ReadOnlySpan{System.Char})">
+  WriteString(JsonEncodedText, ReadOnlySpan&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(JsonEncodedText propertyName, ReadOnlySpan&lt;char&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_Text_Json_JsonEncodedText_System_String_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.String)">
+  WriteString(JsonEncodedText, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(JsonEncodedText propertyName, string? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteString_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteString_System_Text_Json_JsonEncodedText_System_Text_Json_JsonEncodedText_" data-uid="System.Text.Json.Utf8JsonWriter.WriteString(System.Text.Json.JsonEncodedText,System.Text.Json.JsonEncodedText)">
+  WriteString(JsonEncodedText, JsonEncodedText)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteString(JsonEncodedText propertyName, JsonEncodedText value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyName</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStringValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStringValue_System_DateTime_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue(System.DateTime)">
+  WriteStringValue(DateTime)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStringValue(DateTime value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetime">DateTime</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStringValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStringValue_System_DateTimeOffset_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue(System.DateTimeOffset)">
+  WriteStringValue(DateTimeOffset)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStringValue(DateTimeOffset value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStringValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStringValue_System_Guid_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue(System.Guid)">
+  WriteStringValue(Guid)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStringValue(Guid value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.guid">Guid</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStringValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStringValue_System_ReadOnlySpan_System_Byte__" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue(System.ReadOnlySpan{System.Byte})">
+  WriteStringValue(ReadOnlySpan&lt;byte&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStringValue(ReadOnlySpan&lt;byte&gt; utf8Value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>utf8Value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStringValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStringValue_System_ReadOnlySpan_System_Char__" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue(System.ReadOnlySpan{System.Char})">
+  WriteStringValue(ReadOnlySpan&lt;char&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStringValue(ReadOnlySpan&lt;char&gt; value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStringValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStringValue_System_String_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue(System.String)">
+  WriteStringValue(string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStringValue(string? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStringValue_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStringValue_System_Text_Json_JsonEncodedText_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValue(System.Text.Json.JsonEncodedText)">
+  WriteStringValue(JsonEncodedText)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStringValue(JsonEncodedText value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="System.Text.Json.JsonEncodedText.html">JsonEncodedText</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStringValueSegment_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValueSegment*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStringValueSegment_System_ReadOnlySpan_System_Byte__System_Boolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValueSegment(System.ReadOnlySpan{System.Byte},System.Boolean)">
+  WriteStringValueSegment(ReadOnlySpan&lt;byte&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStringValueSegment(ReadOnlySpan&lt;byte&gt; value, bool isFinalSegment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>isFinalSegment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Utf8JsonWriter_WriteStringValueSegment_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValueSegment*"></a>
+
+  <h3 id="System_Text_Json_Utf8JsonWriter_WriteStringValueSegment_System_ReadOnlySpan_System_Char__System_Boolean_" data-uid="System.Text.Json.Utf8JsonWriter.WriteStringValueSegment(System.ReadOnlySpan{System.Char},System.Boolean)">
+  WriteStringValueSegment(ReadOnlySpan&lt;char&gt;, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void WriteStringValueSegment(ReadOnlySpan&lt;char&gt; value, bool isFinalSegment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.char">char</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>isFinalSegment</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

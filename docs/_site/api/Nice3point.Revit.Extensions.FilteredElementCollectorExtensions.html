@@ -1,0 +1,4795 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class FilteredElementCollectorExtensions | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class FilteredElementCollectorExtensions | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions">
+
+
+
+  <h1 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions" class="text-break">
+Class FilteredElementCollectorExtensions  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Nice3point.html">Nice3point</a>.<a class="xref" href="Nice3point.Revit.html">Revit</a>.<a class="xref" href="Nice3point.Revit.Extensions.html">Extensions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[PublicAPI]
+public static class FilteredElementCollectorExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">FilteredElementCollectorExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds(Autodesk.Revit.DB.Document)">
+  EnumerateInstanceIds(Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds(this Document document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
+  EnumerateInstanceIds(Document, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds(this Document document, BuiltInCategory category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstanceIds(Document, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds(this Document document, BuiltInCategory category, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstanceIds(Document, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds(this Document document, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstanceIds(Document, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds(this Document document, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)">
+  EnumerateInstanceIds(Document, ElementId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds(this Document document, ElementId viewId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory)">
+  EnumerateInstanceIds(Document, ElementId, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds(this Document document, ElementId viewId, BuiltInCategory category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstanceIds(Document, ElementId, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds(this Document document, ElementId viewId, BuiltInCategory category, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstanceIds(Document, ElementId, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds(this Document document, ElementId viewId, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstanceIds(Document, ElementId, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds(this Document document, ElementId viewId, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstanceIds(Document, ElementId, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds(this Document document, ElementId viewId, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstanceIds(Document, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds(this Document document, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds__1_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds``1(Autodesk.Revit.DB.Document)">
+  EnumerateInstanceIds&lt;T&gt;(Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds&lt;T&gt;(this Document document) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
+  EnumerateInstanceIds&lt;T&gt;(Document, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds&lt;T&gt;(this Document document, BuiltInCategory category) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstanceIds&lt;T&gt;(Document, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds&lt;T&gt;(this Document document, BuiltInCategory category, ElementFilter filter) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstanceIds&lt;T&gt;(Document, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds&lt;T&gt;(this Document document, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstanceIds&lt;T&gt;(Document, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds&lt;T&gt;(this Document document, ElementFilter filter) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)">
+  EnumerateInstanceIds&lt;T&gt;(Document, ElementId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds&lt;T&gt;(this Document document, ElementId viewId) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory)">
+  EnumerateInstanceIds&lt;T&gt;(Document, ElementId, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds&lt;T&gt;(this Document document, ElementId viewId, BuiltInCategory category) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstanceIds&lt;T&gt;(Document, ElementId, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds&lt;T&gt;(this Document document, ElementId viewId, BuiltInCategory category, ElementFilter filter) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstanceIds&lt;T&gt;(Document, ElementId, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds&lt;T&gt;(this Document document, ElementId viewId, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstanceIds&lt;T&gt;(Document, ElementId, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds&lt;T&gt;(this Document document, ElementId viewId, ElementFilter filter) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstanceIds&lt;T&gt;(Document, ElementId, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds&lt;T&gt;(this Document document, ElementId viewId, IEnumerable&lt;ElementFilter&gt; filters) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstanceIds__1_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstanceIds``1(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstanceIds&lt;T&gt;(Document, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateInstanceIds&lt;T&gt;(this Document document, IEnumerable&lt;ElementFilter&gt; filters) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances(Autodesk.Revit.DB.Document)">
+  EnumerateInstances(Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateInstances(this Document document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
+  EnumerateInstances(Document, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateInstances(this Document document, BuiltInCategory category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstances(Document, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateInstances(this Document document, BuiltInCategory category, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstances(Document, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateInstances(this Document document, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstances(Document, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateInstances(this Document document, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)">
+  EnumerateInstances(Document, ElementId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateInstances(this Document document, ElementId viewId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory)">
+  EnumerateInstances(Document, ElementId, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateInstances(this Document document, ElementId viewId, BuiltInCategory category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstances(Document, ElementId, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateInstances(this Document document, ElementId viewId, BuiltInCategory category, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstances(Document, ElementId, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateInstances(this Document document, ElementId viewId, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstances(Document, ElementId, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateInstances(this Document document, ElementId viewId, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstances(Document, ElementId, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateInstances(this Document document, ElementId viewId, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstances(Document, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateInstances(this Document document, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances__1_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances``1(Autodesk.Revit.DB.Document)">
+  EnumerateInstances&lt;T&gt;(Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateInstances&lt;T&gt;(this Document document) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
+  EnumerateInstances&lt;T&gt;(Document, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateInstances&lt;T&gt;(this Document document, BuiltInCategory category) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstances&lt;T&gt;(Document, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateInstances&lt;T&gt;(this Document document, BuiltInCategory category, ElementFilter filter) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstances&lt;T&gt;(Document, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateInstances&lt;T&gt;(this Document document, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstances&lt;T&gt;(Document, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateInstances&lt;T&gt;(this Document document, ElementFilter filter) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)">
+  EnumerateInstances&lt;T&gt;(Document, ElementId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateInstances&lt;T&gt;(this Document document, ElementId viewId) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory)">
+  EnumerateInstances&lt;T&gt;(Document, ElementId, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateInstances&lt;T&gt;(this Document document, ElementId viewId, BuiltInCategory category) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstances&lt;T&gt;(Document, ElementId, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateInstances&lt;T&gt;(this Document document, ElementId viewId, BuiltInCategory category, ElementFilter filter) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstances&lt;T&gt;(Document, ElementId, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateInstances&lt;T&gt;(this Document document, ElementId viewId, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateInstances&lt;T&gt;(Document, ElementId, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateInstances&lt;T&gt;(this Document document, ElementId viewId, ElementFilter filter) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstances&lt;T&gt;(Document, ElementId, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateInstances&lt;T&gt;(this Document document, ElementId viewId, IEnumerable&lt;ElementFilter&gt; filters) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateInstances__1_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateInstances``1(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateInstances&lt;T&gt;(Document, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateInstances&lt;T&gt;(this Document document, IEnumerable&lt;ElementFilter&gt; filters) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds(Autodesk.Revit.DB.Document)">
+  EnumerateTypeIds(Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateTypeIds(this Document document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
+  EnumerateTypeIds(Document, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateTypeIds(this Document document, BuiltInCategory category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateTypeIds(Document, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateTypeIds(this Document document, BuiltInCategory category, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateTypeIds(Document, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateTypeIds(this Document document, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateTypeIds(Document, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateTypeIds(this Document document, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateTypeIds(Document, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateTypeIds(this Document document, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds__1_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds``1(Autodesk.Revit.DB.Document)">
+  EnumerateTypeIds&lt;T&gt;(Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateTypeIds&lt;T&gt;(this Document document) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
+  EnumerateTypeIds&lt;T&gt;(Document, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateTypeIds&lt;T&gt;(this Document document, BuiltInCategory category) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateTypeIds&lt;T&gt;(Document, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateTypeIds&lt;T&gt;(this Document document, BuiltInCategory category, ElementFilter filter) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateTypeIds&lt;T&gt;(Document, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateTypeIds&lt;T&gt;(this Document document, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateTypeIds&lt;T&gt;(Document, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateTypeIds&lt;T&gt;(this Document document, ElementFilter filter) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypeIds__1_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypeIds``1(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateTypeIds&lt;T&gt;(Document, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;ElementId&gt; EnumerateTypeIds&lt;T&gt;(this Document document, IEnumerable&lt;ElementFilter&gt; filters) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes(Autodesk.Revit.DB.Document)">
+  EnumerateTypes(Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateTypes(this Document document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
+  EnumerateTypes(Document, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateTypes(this Document document, BuiltInCategory category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateTypes(Document, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateTypes(this Document document, BuiltInCategory category, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateTypes(Document, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateTypes(this Document document, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateTypes(Document, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateTypes(this Document document, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateTypes(Document, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;Element&gt; EnumerateTypes(this Document document, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes__1_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes``1(Autodesk.Revit.DB.Document)">
+  EnumerateTypes&lt;T&gt;(Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateTypes&lt;T&gt;(this Document document) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
+  EnumerateTypes&lt;T&gt;(Document, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateTypes&lt;T&gt;(this Document document, BuiltInCategory category) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateTypes&lt;T&gt;(Document, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateTypes&lt;T&gt;(this Document document, BuiltInCategory category, ElementFilter filter) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateTypes&lt;T&gt;(Document, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateTypes&lt;T&gt;(this Document document, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes__1_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes``1(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  EnumerateTypes&lt;T&gt;(Document, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateTypes&lt;T&gt;(this Document document, ElementFilter filter) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_EnumerateTypes__1_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.EnumerateTypes``1(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  EnumerateTypes&lt;T&gt;(Document, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IEnumerable&lt;T&gt; EnumerateTypes&lt;T&gt;(this Document document, IEnumerable&lt;ElementFilter&gt; filters) where T : Element</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetElements_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetElements*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetElements_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetElements(Autodesk.Revit.DB.Document)">
+  GetElements(Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static FilteredElementCollector GetElements(this Document document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FilteredElementCollector</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetElements_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetElements*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetElements_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetElements(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)">
+  GetElements(Document, ElementId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static FilteredElementCollector GetElements(this Document document, ElementId viewId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FilteredElementCollector</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetElements_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetElements*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetElements_Autodesk_Revit_DB_Document_System_Collections_Generic_ICollection_Autodesk_Revit_DB_ElementId__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetElements(Autodesk.Revit.DB.Document,System.Collections.Generic.ICollection{Autodesk.Revit.DB.ElementId})">
+  GetElements(Document, ICollection&lt;ElementId&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static FilteredElementCollector GetElements(this Document document, ICollection&lt;ElementId&gt; elementIds)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>elementIds</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FilteredElementCollector</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds(Autodesk.Revit.DB.Document)">
+  GetInstanceIds(Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetInstanceIds(this Document document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
+  GetInstanceIds(Document, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetInstanceIds(this Document document, BuiltInCategory category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  GetInstanceIds(Document, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetInstanceIds(this Document document, BuiltInCategory category, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  GetInstanceIds(Document, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetInstanceIds(this Document document, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  GetInstanceIds(Document, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetInstanceIds(this Document document, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)">
+  GetInstanceIds(Document, ElementId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetInstanceIds(this Document document, ElementId viewId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory)">
+  GetInstanceIds(Document, ElementId, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetInstanceIds(this Document document, ElementId viewId, BuiltInCategory category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  GetInstanceIds(Document, ElementId, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetInstanceIds(this Document document, ElementId viewId, BuiltInCategory category, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  GetInstanceIds(Document, ElementId, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetInstanceIds(this Document document, ElementId viewId, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.ElementFilter)">
+  GetInstanceIds(Document, ElementId, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetInstanceIds(this Document document, ElementId viewId, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  GetInstanceIds(Document, ElementId, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetInstanceIds(this Document document, ElementId viewId, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstanceIds_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstanceIds(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  GetInstanceIds(Document, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetInstanceIds(this Document document, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances(Autodesk.Revit.DB.Document)">
+  GetInstances(Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetInstances(this Document document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
+  GetInstances(Document, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetInstances(this Document document, BuiltInCategory category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  GetInstances(Document, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetInstances(this Document document, BuiltInCategory category, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  GetInstances(Document, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetInstances(this Document document, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  GetInstances(Document, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetInstances(this Document document, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId)">
+  GetInstances(Document, ElementId)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetInstances(this Document document, ElementId viewId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory)">
+  GetInstances(Document, ElementId, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetInstances(this Document document, ElementId viewId, BuiltInCategory category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  GetInstances(Document, ElementId, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetInstances(this Document document, ElementId viewId, BuiltInCategory category, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  GetInstances(Document, ElementId, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetInstances(this Document document, ElementId viewId, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,Autodesk.Revit.DB.ElementFilter)">
+  GetInstances(Document, ElementId, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetInstances(this Document document, ElementId viewId, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementId_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementId,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  GetInstances(Document, ElementId, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetInstances(this Document document, ElementId viewId, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>viewId</code> <span class="xref">ElementId</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetInstances_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetInstances(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  GetInstances(Document, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetInstances(this Document document, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypeIds_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypeIds(Autodesk.Revit.DB.Document)">
+  GetTypeIds(Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetTypeIds(this Document document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypeIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypeIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
+  GetTypeIds(Document, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetTypeIds(this Document document, BuiltInCategory category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypeIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypeIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  GetTypeIds(Document, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetTypeIds(this Document document, BuiltInCategory category, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypeIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypeIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  GetTypeIds(Document, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetTypeIds(this Document document, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypeIds_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypeIds(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  GetTypeIds(Document, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetTypeIds(this Document document, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypeIds_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypeIds*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypeIds_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypeIds(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  GetTypeIds(Document, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static ICollection&lt;ElementId&gt; GetTypeIds(this Document document, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<span class="xref">ElementId</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypes_Autodesk_Revit_DB_Document_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypes(Autodesk.Revit.DB.Document)">
+  GetTypes(Document)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetTypes(this Document document)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypes_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypes(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory)">
+  GetTypes(Document, BuiltInCategory)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetTypes(this Document document, BuiltInCategory category)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypes_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypes(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,Autodesk.Revit.DB.ElementFilter)">
+  GetTypes(Document, BuiltInCategory, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetTypes(this Document document, BuiltInCategory category, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypes_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_BuiltInCategory_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypes(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.BuiltInCategory,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  GetTypes(Document, BuiltInCategory, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetTypes(this Document document, BuiltInCategory category, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>category</code> <span class="xref">BuiltInCategory</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypes_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_ElementFilter_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypes(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.ElementFilter)">
+  GetTypes(Document, ElementFilter)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetTypes(this Document document, ElementFilter filter)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filter</code> <span class="xref">ElementFilter</span></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypes_" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypes*"></a>
+
+  <h3 id="Nice3point_Revit_Extensions_FilteredElementCollectorExtensions_GetTypes_Autodesk_Revit_DB_Document_System_Collections_Generic_IEnumerable_Autodesk_Revit_DB_ElementFilter__" data-uid="Nice3point.Revit.Extensions.FilteredElementCollectorExtensions.GetTypes(Autodesk.Revit.DB.Document,System.Collections.Generic.IEnumerable{Autodesk.Revit.DB.ElementFilter})">
+  GetTypes(Document, IEnumerable&lt;ElementFilter&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Pure]
+public static IList&lt;Element&gt; GetTypes(this Document document, IEnumerable&lt;ElementFilter&gt; filters)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>document</code> <span class="xref">Document</span></dt>
+    <dd></dd>
+    <dt><code>filters</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">ElementFilter</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

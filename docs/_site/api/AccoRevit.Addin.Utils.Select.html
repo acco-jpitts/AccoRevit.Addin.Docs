@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Select | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Select | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="AccoRevit.Addin.Utils.Select">
+
+
+
+  <h1 id="AccoRevit_Addin_Utils_Select" data-uid="AccoRevit.Addin.Utils.Select" class="text-break">
+Class Select  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="AccoRevit.html">AccoRevit</a>.<a class="xref" href="AccoRevit.Addin.html">Addin</a>.<a class="xref" href="AccoRevit.Addin.Utils.html">Utils</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Select</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Select</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="AccoRevit_Addin_Utils_Select_Area_" data-uid="AccoRevit.Addin.Utils.Select.Area*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Select_Area_System_String_System_String_" data-uid="AccoRevit.Addin.Utils.Select.Area(System.String,System.String)">
+  Area(string, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Select.PickBox Area(string promptMessage = &quot;Select an area&quot;, string boxStyle = &quot;Points&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>promptMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>boxStyle</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="AccoRevit.Addin.Utils.Select.html">Select</a>.<a class="xref" href="AccoRevit.Addin.Utils.Select.PickBox.html">PickBox</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Select_Assemblies_" data-uid="AccoRevit.Addin.Utils.Select.Assemblies*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Select_Assemblies_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_System_Boolean_" data-uid="AccoRevit.Addin.Utils.Select.Assemblies(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)">
+  Assemblies(string, ISelectionFilter, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;AssemblyInstance&gt; Assemblies(string promptMessage = &quot;Select Assemblies&quot;, ISelectionFilter selectionFilter = null, bool useRectangleSelection = false, bool usePreselection = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>promptMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>selectionFilter</code> <span class="xref">ISelectionFilter</span></dt>
+    <dd></dd>
+    <dt><code>useRectangleSelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>usePreselection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">AssemblyInstance</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Select_Assembly_" data-uid="AccoRevit.Addin.Utils.Select.Assembly*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Select_Assembly_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_" data-uid="AccoRevit.Addin.Utils.Select.Assembly(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)">
+  Assembly(string, ISelectionFilter, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AssemblyInstance Assembly(string promptMessage = &quot;Select an Assembly&quot;, ISelectionFilter selectionFilter = null, bool usePreselection = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>promptMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>selectionFilter</code> <span class="xref">ISelectionFilter</span></dt>
+    <dd></dd>
+    <dt><code>usePreselection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">AssemblyInstance</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Select_Element_" data-uid="AccoRevit.Addin.Utils.Select.Element*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Select_Element_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_" data-uid="AccoRevit.Addin.Utils.Select.Element(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)">
+  Element(string, ISelectionFilter, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Element Element(string promptMessage = &quot;Select an Element&quot;, ISelectionFilter selectionFilter = null, bool usePreselection = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>promptMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>selectionFilter</code> <span class="xref">ISelectionFilter</span></dt>
+    <dd></dd>
+    <dt><code>usePreselection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">Element</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Select_Elements_" data-uid="AccoRevit.Addin.Utils.Select.Elements*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Select_Elements_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_System_Boolean_" data-uid="AccoRevit.Addin.Utils.Select.Elements(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)">
+  Elements(string, ISelectionFilter, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Element&gt; Elements(string promptMessage = &quot;Select Elements&quot;, ISelectionFilter selectionFilter = null, bool useRectangleSelection = false, bool usePreselection = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>promptMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>selectionFilter</code> <span class="xref">ISelectionFilter</span></dt>
+    <dd></dd>
+    <dt><code>useRectangleSelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>usePreselection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Select_FabricationPart_" data-uid="AccoRevit.Addin.Utils.Select.FabricationPart*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Select_FabricationPart_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_" data-uid="AccoRevit.Addin.Utils.Select.FabricationPart(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)">
+  FabricationPart(string, ISelectionFilter, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FabricationPart FabricationPart(string promptMessage = &quot;Select a Fabrication Part&quot;, ISelectionFilter selectionFilter = null, bool usePreselection = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>promptMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>selectionFilter</code> <span class="xref">ISelectionFilter</span></dt>
+    <dd></dd>
+    <dt><code>usePreselection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FabricationPart</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Select_FabricationParts_" data-uid="AccoRevit.Addin.Utils.Select.FabricationParts*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Select_FabricationParts_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_System_Boolean_" data-uid="AccoRevit.Addin.Utils.Select.FabricationParts(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)">
+  FabricationParts(string, ISelectionFilter, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;FabricationPart&gt; FabricationParts(string promptMessage = &quot;Select Fabrication Parts&quot;, ISelectionFilter selectionFilter = null, bool useRectangleSelection = false, bool usePreselection = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>promptMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>selectionFilter</code> <span class="xref">ISelectionFilter</span></dt>
+    <dd></dd>
+    <dt><code>useRectangleSelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>usePreselection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FabricationPart</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Select_FamilyInstance_" data-uid="AccoRevit.Addin.Utils.Select.FamilyInstance*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Select_FamilyInstance_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_" data-uid="AccoRevit.Addin.Utils.Select.FamilyInstance(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)">
+  FamilyInstance(string, ISelectionFilter, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static FamilyInstance FamilyInstance(string promptMessage = &quot;Select a Family Instance&quot;, ISelectionFilter selectionFilter = null, bool usePreselection = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>promptMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>selectionFilter</code> <span class="xref">ISelectionFilter</span></dt>
+    <dd></dd>
+    <dt><code>usePreselection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">FamilyInstance</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Select_FamilyInstances_" data-uid="AccoRevit.Addin.Utils.Select.FamilyInstances*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Select_FamilyInstances_System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_System_Boolean_" data-uid="AccoRevit.Addin.Utils.Select.FamilyInstances(System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)">
+  FamilyInstances(string, ISelectionFilter, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;FamilyInstance&gt; FamilyInstances(string promptMessage = &quot;Select Families&quot;, ISelectionFilter selectionFilter = null, bool useRectangleSelection = false, bool usePreselection = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>promptMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>selectionFilter</code> <span class="xref">ISelectionFilter</span></dt>
+    <dd></dd>
+    <dt><code>useRectangleSelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>usePreselection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">FamilyInstance</span>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Select_Point_" data-uid="AccoRevit.Addin.Utils.Select.Point*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Select_Point_System_String_" data-uid="AccoRevit.Addin.Utils.Select.Point(System.String)">
+  Point(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static XYZ Point(string promptMessage = &quot;Select a point&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>promptMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">XYZ</span></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Select_TryElement_" data-uid="AccoRevit.Addin.Utils.Select.TryElement*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Select_TryElement_Autodesk_Revit_DB_Element__System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_" data-uid="AccoRevit.Addin.Utils.Select.TryElement(Autodesk.Revit.DB.Element@,System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean)">
+  TryElement(out Element, string, ISelectionFilter, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Select.SelectionOutcome TryElement(out Element element, string promptMessage = &quot;Select Element&quot;, ISelectionFilter selectionFilter = null, bool usePreselection = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <span class="xref">Element</span></dt>
+    <dd></dd>
+    <dt><code>promptMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>selectionFilter</code> <span class="xref">ISelectionFilter</span></dt>
+    <dd></dd>
+    <dt><code>usePreselection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="AccoRevit.Addin.Utils.Select.html">Select</a>.<a class="xref" href="AccoRevit.Addin.Utils.Select.SelectionOutcome.html">SelectionOutcome</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="AccoRevit_Addin_Utils_Select_TryElements_" data-uid="AccoRevit.Addin.Utils.Select.TryElements*"></a>
+
+  <h3 id="AccoRevit_Addin_Utils_Select_TryElements_System_Collections_Generic_List_Autodesk_Revit_DB_Element___System_String_Autodesk_Revit_UI_Selection_ISelectionFilter_System_Boolean_System_Boolean_" data-uid="AccoRevit.Addin.Utils.Select.TryElements(System.Collections.Generic.List{Autodesk.Revit.DB.Element}@,System.String,Autodesk.Revit.UI.Selection.ISelectionFilter,System.Boolean,System.Boolean)">
+  TryElements(out List&lt;Element&gt;, string, ISelectionFilter, bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Select.SelectionOutcome TryElements(out List&lt;Element&gt; elements, string promptMessage = &quot;Select Elements&quot;, ISelectionFilter selectionFilter = null, bool useRectangleSelection = false, bool usePreselection = true)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>elements</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<span class="xref">Element</span>&gt;</dt>
+    <dd></dd>
+    <dt><code>promptMessage</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>selectionFilter</code> <span class="xref">ISelectionFilter</span></dt>
+    <dd></dd>
+    <dt><code>useRectangleSelection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+    <dt><code>usePreselection</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="AccoRevit.Addin.Utils.Select.html">Select</a>.<a class="xref" href="AccoRevit.Addin.Utils.Select.SelectionOutcome.html">SelectionOutcome</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/accoes/CTT_Revit-ACCO_VC_2-0/blob/8f63670cca51ec1c49420b5e120fa5e419d76946/source/AccoRevit.Addin/Utils/Select.cs" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

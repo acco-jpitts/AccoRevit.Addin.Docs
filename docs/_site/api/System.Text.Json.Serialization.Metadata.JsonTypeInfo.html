@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class JsonTypeInfo | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class JsonTypeInfo | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo">
+
+
+
+  <h1 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo" class="text-break">
+Class JsonTypeInfo  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="System.html">System</a>.<a class="xref" href="System.Text.html">Text</a>.<a class="xref" href="System.Text.Json.html">Json</a>.<a class="xref" href="System.Text.Json.Serialization.html">Serialization</a>.<a class="xref" href="System.Text.Json.Serialization.Metadata.html">Metadata</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class JsonTypeInfo</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">JsonTypeInfo</span></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="System.Text.Json.Serialization.Metadata.JsonTypeInfo-1.html">JsonTypeInfo</a>&lt;T&gt;</div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_">UnitExtensions.ToUnitLabel(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_">ReflectionUtils.GetHighlightProperty(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_">SystemExtensions.Cast&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Text.Json.Schema.JsonSchemaExporter.html#System_Text_Json_Schema_JsonSchemaExporter_GetJsonSchemaAsNode_System_Text_Json_Serialization_Metadata_JsonTypeInfo_System_Text_Json_Schema_JsonSchemaExporterOptions_">JsonSchemaExporter.GetJsonSchemaAsNode(JsonTypeInfo, JsonSchemaExporterOptions?)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_ConstructorAttributeProvider_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.ConstructorAttributeProvider*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_ConstructorAttributeProvider" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.ConstructorAttributeProvider">
+  ConstructorAttributeProvider
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICustomAttributeProvider? ConstructorAttributeProvider { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.reflection.icustomattributeprovider">ICustomAttributeProvider</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_Converter_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.Converter*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_Converter" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.Converter">
+  Converter
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonConverter Converter { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Text.Json.Serialization.JsonConverter.html">JsonConverter</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_CreateObject_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.CreateObject*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_CreateObject" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.CreateObject">
+  CreateObject
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Func&lt;object&gt;? CreateObject { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_ElementType_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.ElementType*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_ElementType" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.ElementType">
+  ElementType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type? ElementType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_IsReadOnly_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.IsReadOnly*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_IsReadOnly" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.IsReadOnly">
+  IsReadOnly
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_KeyType_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.KeyType*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_KeyType" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.KeyType">
+  KeyType
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type? KeyType { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_Kind_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.Kind*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_Kind" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.Kind">
+  Kind
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonTypeInfoKind Kind { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Text.Json.Serialization.Metadata.JsonTypeInfoKind.html">JsonTypeInfoKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_NumberHandling_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.NumberHandling*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_NumberHandling" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.NumberHandling">
+  NumberHandling
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonNumberHandling? NumberHandling { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Text.Json.Serialization.JsonNumberHandling.html">JsonNumberHandling</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_OnDeserialized_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.OnDeserialized*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_OnDeserialized" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.OnDeserialized">
+  OnDeserialized
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;object&gt;? OnDeserialized { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_OnDeserializing_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.OnDeserializing*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_OnDeserializing" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.OnDeserializing">
+  OnDeserializing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;object&gt;? OnDeserializing { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_OnSerialized_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.OnSerialized*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_OnSerialized" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.OnSerialized">
+  OnSerialized
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;object&gt;? OnSerialized { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_OnSerializing_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.OnSerializing*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_OnSerializing" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.OnSerializing">
+  OnSerializing
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Action&lt;object&gt;? OnSerializing { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_Options_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.Options*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_Options" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.Options">
+  Options
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonSerializerOptions Options { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Text.Json.JsonSerializerOptions.html">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_PolymorphismOptions_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.PolymorphismOptions*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_PolymorphismOptions" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.PolymorphismOptions">
+  PolymorphismOptions
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonPolymorphismOptions? PolymorphismOptions { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Text.Json.Serialization.Metadata.JsonPolymorphismOptions.html">JsonPolymorphismOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_PreferredPropertyObjectCreationHandling_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.PreferredPropertyObjectCreationHandling*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_PreferredPropertyObjectCreationHandling" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.PreferredPropertyObjectCreationHandling">
+  PreferredPropertyObjectCreationHandling
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonObjectCreationHandling? PreferredPropertyObjectCreationHandling { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Text.Json.Serialization.JsonObjectCreationHandling.html">JsonObjectCreationHandling</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_Properties_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.Properties*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_Properties" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.Properties">
+  Properties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IList&lt;JsonPropertyInfo&gt; Properties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="System.Text.Json.Serialization.Metadata.JsonPropertyInfo.html">JsonPropertyInfo</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_Type_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.Type*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_Type" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.Type">
+  Type
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Type Type { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_UnmappedMemberHandling_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.UnmappedMemberHandling*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_UnmappedMemberHandling" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.UnmappedMemberHandling">
+  UnmappedMemberHandling
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonUnmappedMemberHandling? UnmappedMemberHandling { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Text.Json.Serialization.JsonUnmappedMemberHandling.html">JsonUnmappedMemberHandling</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_CreateJsonPropertyInfo_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.CreateJsonPropertyInfo*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_CreateJsonPropertyInfo_System_Type_System_String_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.CreateJsonPropertyInfo(System.Type,System.String)">
+  CreateJsonPropertyInfo(Type, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonPropertyInfo CreateJsonPropertyInfo(Type propertyType, string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>propertyType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Text.Json.Serialization.Metadata.JsonPropertyInfo.html">JsonPropertyInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_CreateJsonTypeInfo_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.CreateJsonTypeInfo*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_CreateJsonTypeInfo_System_Type_System_Text_Json_JsonSerializerOptions_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.CreateJsonTypeInfo(System.Type,System.Text.Json.JsonSerializerOptions)">
+  CreateJsonTypeInfo(Type, JsonSerializerOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JsonTypeInfo CreateJsonTypeInfo(Type type, JsonSerializerOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Text.Json.JsonSerializerOptions.html">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Text.Json.Serialization.Metadata.JsonTypeInfo.html">JsonTypeInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_CreateJsonTypeInfo_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.CreateJsonTypeInfo*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_CreateJsonTypeInfo__1_System_Text_Json_JsonSerializerOptions_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.CreateJsonTypeInfo``1(System.Text.Json.JsonSerializerOptions)">
+  CreateJsonTypeInfo&lt;T&gt;(JsonSerializerOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JsonTypeInfo&lt;T&gt; CreateJsonTypeInfo&lt;T&gt;(JsonSerializerOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="System.Text.Json.JsonSerializerOptions.html">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Text.Json.Serialization.Metadata.JsonTypeInfo-1.html">JsonTypeInfo</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_MakeReadOnly_" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.MakeReadOnly*"></a>
+
+  <h3 id="System_Text_Json_Serialization_Metadata_JsonTypeInfo_MakeReadOnly" data-uid="System.Text.Json.Serialization.Metadata.JsonTypeInfo.MakeReadOnly">
+  MakeReadOnly()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void MakeReadOnly()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

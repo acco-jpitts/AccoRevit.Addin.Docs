@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CopyAnalysisData | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CopyAnalysisData | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData">
+
+
+
+  <h1 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData" class="text-break">
+Class CopyAnalysisData  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.CodeAnalysis.html">CodeAnalysis</a>.<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.html">FlowAnalysis</a>.<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.html">DataFlow</a>.<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.html">CopyAnalysis</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class CopyAnalysisData : AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;, IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractAnalysisData.html">AbstractAnalysisData</a></div>
+      <div><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicatedAnalysisData-2.html">PredicatedAnalysisData</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html">AnalysisEntity</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</div>
+      <div><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html">AnalysisEntityBasedPredicateAnalysisData</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</div>
+      <div><span class="xref">CopyAnalysisData</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData_1_HasAbstractValue_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_">AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;.HasAbstractValue(AnalysisEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData_1_TryGetValue_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity__0__">AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;.TryGetValue(AnalysisEntity, out CopyAbstractValue)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData_1_RemoveEntries_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_">AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;.RemoveEntries(AnalysisEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData_1_Equals_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData__0__">AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;.Equals(AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData_1_StartTrackingPredicatedData_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData__0__Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData__0__">AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;.StartTrackingPredicatedData(AnalysisEntity, AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;, AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData_1_ApplyPredicatedDataForEntity_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_System_Boolean_">AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;.ApplyPredicatedDataForEntity(AnalysisEntity, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData_1_AddTrackedEntities_System_Collections_Generic_HashSet_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity__">AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;.AddTrackedEntities(HashSet&lt;AnalysisEntity&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData_1_CoreAnalysisData">AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;.CoreAnalysisData</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData_1_HasAnyAbstractValue">AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;.HasAnyAbstractValue</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData_1_Item_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_">AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;.this[AnalysisEntity]</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicatedAnalysisData-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_PredicatedAnalysisData_2_StopTrackingPredicatedData_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_">PredicatedAnalysisData&lt;AnalysisEntity, CopyAbstractValue&gt;.StopTrackingPredicatedData(AnalysisEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicatedAnalysisData-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_PredicatedAnalysisData_2_HasPredicatedDataForEntity_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_">PredicatedAnalysisData&lt;AnalysisEntity, CopyAbstractValue&gt;.HasPredicatedDataForEntity(AnalysisEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicatedAnalysisData-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_PredicatedAnalysisData_2_TransferPredicatedData_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_">PredicatedAnalysisData&lt;AnalysisEntity, CopyAbstractValue&gt;.TransferPredicatedData(AnalysisEntity, AnalysisEntity)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicatedAnalysisData-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_PredicatedAnalysisData_2_IsReachableBlockData">PredicatedAnalysisData&lt;AnalysisEntity, CopyAbstractValue&gt;.IsReachableBlockData</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PredicatedAnalysisData-2.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_PredicatedAnalysisData_2_HasPredicatedData">PredicatedAnalysisData&lt;AnalysisEntity, CopyAbstractValue&gt;.HasPredicatedData</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractAnalysisData.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractAnalysisData_Dispose">AbstractAnalysisData.Dispose()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractAnalysisData.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractAnalysisData_IsDisposed">AbstractAnalysisData.IsDisposed</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_">UnitExtensions.ToUnitLabel(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_">ReflectionUtils.GetHighlightProperty(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_">SystemExtensions.Cast&lt;T&gt;(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_ApplyPredicatedData_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.ApplyPredicatedData*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_ApplyPredicatedData_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DictionaryAnalysisData_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAbstractValue__Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DictionaryAnalysisData_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAbstractValue__" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.ApplyPredicatedData(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DictionaryAnalysisData{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue},Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DictionaryAnalysisData{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue})">
+  ApplyPredicatedData(DictionaryAnalysisData&lt;AnalysisEntity, CopyAbstractValue&gt;, DictionaryAnalysisData&lt;AnalysisEntity, CopyAbstractValue&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void ApplyPredicatedData(DictionaryAnalysisData&lt;AnalysisEntity, CopyAbstractValue&gt; coreAnalysisData, DictionaryAnalysisData&lt;AnalysisEntity, CopyAbstractValue&gt; predicatedData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>coreAnalysisData</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DictionaryAnalysisData-2.html">DictionaryAnalysisData</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html">AnalysisEntity</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>predicatedData</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DictionaryAnalysisData-2.html">DictionaryAnalysisData</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html">AnalysisEntity</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_Clone_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.Clone*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_Clone" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.Clone">
+  Clone()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt; Clone()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html">AnalysisEntityBasedPredicateAnalysisData</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_Compare_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.Compare*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_Compare_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAbstractValue__Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_MapAbstractDomain_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAbstractValue__" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.Compare(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue},Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.MapAbstractDomain{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue})">
+  Compare(AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;, MapAbstractDomain&lt;AnalysisEntity, CopyAbstractValue&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int Compare(AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt; other, MapAbstractDomain&lt;AnalysisEntity, CopyAbstractValue&gt; coreDataAnalysisDomain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>other</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html">AnalysisEntityBasedPredicateAnalysisData</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>coreDataAnalysisDomain</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.MapAbstractDomain-2.html">MapAbstractDomain</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html">AnalysisEntity</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_RemoveEntryInPredicatedData_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.RemoveEntryInPredicatedData*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_RemoveEntryInPredicatedData_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_DictionaryAnalysisData_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAbstractValue__" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.RemoveEntryInPredicatedData(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DictionaryAnalysisData{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue})">
+  RemoveEntryInPredicatedData(AnalysisEntity, DictionaryAnalysisData&lt;AnalysisEntity, CopyAbstractValue&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void RemoveEntryInPredicatedData(AnalysisEntity key, DictionaryAnalysisData&lt;AnalysisEntity, CopyAbstractValue&gt; predicatedData)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html">AnalysisEntity</a></dt>
+    <dd></dd>
+    <dt><code>predicatedData</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.DictionaryAnalysisData-2.html">DictionaryAnalysisData</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html">AnalysisEntity</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_Reset_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.Reset*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_Reset_System_Func_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAbstractValue_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAbstractValue__" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.Reset(System.Func{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue})">
+  Reset(Func&lt;AnalysisEntity, CopyAbstractValue, CopyAbstractValue&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Reset(Func&lt;AnalysisEntity, CopyAbstractValue, CopyAbstractValue&gt; getResetValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>getResetValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html">AnalysisEntity</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_SetAbstractValue_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.SetAbstractValue*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_SetAbstractValue_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAbstractValue_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.SetAbstractValue(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue)">
+  SetAbstractValue(AnalysisEntity, CopyAbstractValue)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetAbstractValue(AnalysisEntity key, CopyAbstractValue value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>key</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html">AnalysisEntity</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_WithMergedData_" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.WithMergedData*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAnalysisData_WithMergedData_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntityBasedPredicateAnalysisData_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAbstractValue__Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_MapAbstractDomain_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CopyAnalysis_CopyAbstractValue__" data-uid="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAnalysisData.WithMergedData(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue},Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.MapAbstractDomain{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue})">
+  WithMergedData(AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt;, MapAbstractDomain&lt;AnalysisEntity, CopyAbstractValue&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt; WithMergedData(AnalysisEntityBasedPredicateAnalysisData&lt;CopyAbstractValue&gt; data, MapAbstractDomain&lt;AnalysisEntity, CopyAbstractValue&gt; coreDataAnalysisDomain)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>data</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html">AnalysisEntityBasedPredicateAnalysisData</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>coreDataAnalysisDomain</code> <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.MapAbstractDomain-2.html">MapAbstractDomain</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html">AnalysisEntity</a>, <a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntityBasedPredicateAnalysisData-1.html">AnalysisEntityBasedPredicateAnalysisData</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CopyAnalysis.CopyAbstractValue.html">CopyAbstractValue</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
