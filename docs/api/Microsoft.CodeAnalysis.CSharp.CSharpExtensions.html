@@ -1,0 +1,4376 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class CSharpExtensions | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class CSharpExtensions | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions">
+
+
+
+  <h1 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions" class="text-break">
+Class CSharpExtensions  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.CodeAnalysis.html">CodeAnalysis</a>.<a class="xref" href="Microsoft.CodeAnalysis.CSharp.html">CSharp</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CSharpExtensions</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">CSharpExtensions</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeControlFlow_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeControlFlow*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeControlFlow_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_StatementSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax)">
+  AnalyzeControlFlow(SemanticModel?, StatementSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ControlFlowAnalysis? AnalyzeControlFlow(this SemanticModel? semanticModel, StatementSyntax statement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>statement</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax.html">StatementSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ControlFlowAnalysis.html">ControlFlowAnalysis</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeControlFlow_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeControlFlow*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeControlFlow_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_StatementSyntax_Microsoft_CodeAnalysis_CSharp_Syntax_StatementSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeControlFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax,Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax)">
+  AnalyzeControlFlow(SemanticModel?, StatementSyntax, StatementSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ControlFlowAnalysis? AnalyzeControlFlow(this SemanticModel? semanticModel, StatementSyntax firstStatement, StatementSyntax lastStatement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>firstStatement</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax.html">StatementSyntax</a></dt>
+    <dd></dd>
+    <dt><code>lastStatement</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax.html">StatementSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ControlFlowAnalysis.html">ControlFlowAnalysis</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeDataFlow_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeDataFlow*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeDataFlow_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ConstructorInitializerSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ConstructorInitializerSyntax)">
+  AnalyzeDataFlow(SemanticModel?, ConstructorInitializerSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DataFlowAnalysis? AnalyzeDataFlow(this SemanticModel? semanticModel, ConstructorInitializerSyntax constructorInitializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>constructorInitializer</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ConstructorInitializerSyntax.html">ConstructorInitializerSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.DataFlowAnalysis.html">DataFlowAnalysis</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeDataFlow_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeDataFlow*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeDataFlow_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ExpressionSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax)">
+  AnalyzeDataFlow(SemanticModel?, ExpressionSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DataFlowAnalysis? AnalyzeDataFlow(this SemanticModel? semanticModel, ExpressionSyntax expression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax.html">ExpressionSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.DataFlowAnalysis.html">DataFlowAnalysis</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeDataFlow_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeDataFlow*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeDataFlow_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_PrimaryConstructorBaseTypeSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.PrimaryConstructorBaseTypeSyntax)">
+  AnalyzeDataFlow(SemanticModel?, PrimaryConstructorBaseTypeSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DataFlowAnalysis? AnalyzeDataFlow(this SemanticModel? semanticModel, PrimaryConstructorBaseTypeSyntax primaryConstructorBaseType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>primaryConstructorBaseType</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.PrimaryConstructorBaseTypeSyntax.html">PrimaryConstructorBaseTypeSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.DataFlowAnalysis.html">DataFlowAnalysis</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeDataFlow_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeDataFlow*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeDataFlow_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_StatementSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax)">
+  AnalyzeDataFlow(SemanticModel?, StatementSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DataFlowAnalysis? AnalyzeDataFlow(this SemanticModel? semanticModel, StatementSyntax statement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>statement</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax.html">StatementSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.DataFlowAnalysis.html">DataFlowAnalysis</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeDataFlow_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeDataFlow*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_AnalyzeDataFlow_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_StatementSyntax_Microsoft_CodeAnalysis_CSharp_Syntax_StatementSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.AnalyzeDataFlow(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax,Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax)">
+  AnalyzeDataFlow(SemanticModel?, StatementSyntax, StatementSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DataFlowAnalysis? AnalyzeDataFlow(this SemanticModel? semanticModel, StatementSyntax firstStatement, StatementSyntax lastStatement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>firstStatement</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax.html">StatementSyntax</a></dt>
+    <dd></dd>
+    <dt><code>lastStatement</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax.html">StatementSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.DataFlowAnalysis.html">DataFlowAnalysis</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_ClassifyConversion_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.ClassifyConversion*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_ClassifyConversion_Microsoft_CodeAnalysis_Compilation_Microsoft_CodeAnalysis_ITypeSymbol_Microsoft_CodeAnalysis_ITypeSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.ClassifyConversion(Microsoft.CodeAnalysis.Compilation,Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.ITypeSymbol)">
+  ClassifyConversion(Compilation?, ITypeSymbol, ITypeSymbol)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Conversion ClassifyConversion(this Compilation? compilation, ITypeSymbol source, ITypeSymbol destination)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compilation</code> <a class="xref" href="Microsoft.CodeAnalysis.Compilation.html">Compilation</a></dt>
+    <dd></dd>
+    <dt><code>source</code> <a class="xref" href="Microsoft.CodeAnalysis.ITypeSymbol.html">ITypeSymbol</a></dt>
+    <dd></dd>
+    <dt><code>destination</code> <a class="xref" href="Microsoft.CodeAnalysis.ITypeSymbol.html">ITypeSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.Conversion.html">Conversion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_ClassifyConversion_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.ClassifyConversion*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_ClassifyConversion_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ExpressionSyntax_Microsoft_CodeAnalysis_ITypeSymbol_System_Boolean_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.ClassifyConversion(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax,Microsoft.CodeAnalysis.ITypeSymbol,System.Boolean)">
+  ClassifyConversion(SemanticModel?, ExpressionSyntax, ITypeSymbol, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Conversion ClassifyConversion(this SemanticModel? semanticModel, ExpressionSyntax expression, ITypeSymbol destination, bool isExplicitInSource = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax.html">ExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>destination</code> <a class="xref" href="Microsoft.CodeAnalysis.ITypeSymbol.html">ITypeSymbol</a></dt>
+    <dd></dd>
+    <dt><code>isExplicitInSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.Conversion.html">Conversion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_ClassifyConversion_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.ClassifyConversion*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_ClassifyConversion_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_ExpressionSyntax_Microsoft_CodeAnalysis_ITypeSymbol_System_Boolean_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.ClassifyConversion(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax,Microsoft.CodeAnalysis.ITypeSymbol,System.Boolean)">
+  ClassifyConversion(SemanticModel?, int, ExpressionSyntax, ITypeSymbol, bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Conversion ClassifyConversion(this SemanticModel? semanticModel, int position, ExpressionSyntax expression, ITypeSymbol destination, bool isExplicitInSource = false)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax.html">ExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>destination</code> <a class="xref" href="Microsoft.CodeAnalysis.ITypeSymbol.html">ITypeSymbol</a></dt>
+    <dd></dd>
+    <dt><code>isExplicitInSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.Conversion.html">Conversion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetAliasInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetAliasInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetAliasInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_IdentifierNameSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetAliasInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.IdentifierNameSyntax,System.Threading.CancellationToken)">
+  GetAliasInfo(SemanticModel?, IdentifierNameSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAliasSymbol? GetAliasInfo(this SemanticModel? semanticModel, IdentifierNameSyntax nameSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>nameSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.IdentifierNameSyntax.html">IdentifierNameSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IAliasSymbol.html">IAliasSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetAwaitExpressionInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetAwaitExpressionInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetAwaitExpressionInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_AwaitExpressionSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetAwaitExpressionInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.AwaitExpressionSyntax)">
+  GetAwaitExpressionInfo(SemanticModel?, AwaitExpressionSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static AwaitExpressionInfo GetAwaitExpressionInfo(this SemanticModel? semanticModel, AwaitExpressionSyntax awaitExpression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>awaitExpression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.AwaitExpressionSyntax.html">AwaitExpressionSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.AwaitExpressionInfo.html">AwaitExpressionInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetCollectionInitializerSymbolInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetCollectionInitializerSymbolInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetCollectionInitializerSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ExpressionSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetCollectionInitializerSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax,System.Threading.CancellationToken)">
+  GetCollectionInitializerSymbolInfo(SemanticModel?, ExpressionSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolInfo GetCollectionInitializerSymbolInfo(this SemanticModel? semanticModel, ExpressionSyntax expression, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax.html">ExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolInfo.html">SymbolInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetCompilationUnitRoot_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetCompilationUnitRoot*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetCompilationUnitRoot_Microsoft_CodeAnalysis_SyntaxTree_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetCompilationUnitRoot(Microsoft.CodeAnalysis.SyntaxTree,System.Threading.CancellationToken)">
+  GetCompilationUnitRoot(SyntaxTree, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static CompilationUnitSyntax GetCompilationUnitRoot(this SyntaxTree tree, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>tree</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxTree.html">SyntaxTree</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.CompilationUnitSyntax.html">CompilationUnitSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetConstantValue_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetConstantValue*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetConstantValue_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ExpressionSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetConstantValue(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax,System.Threading.CancellationToken)">
+  GetConstantValue(SemanticModel?, ExpressionSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Optional&lt;object&gt; GetConstantValue(this SemanticModel? semanticModel, ExpressionSyntax expression, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax.html">ExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.Optional-1.html">Optional</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetConversion_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetConversion*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetConversion_Microsoft_CodeAnalysis_Operations_IConversionOperation_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetConversion(Microsoft.CodeAnalysis.Operations.IConversionOperation)">
+  GetConversion(IConversionOperation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Conversion GetConversion(this IConversionOperation conversionExpression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>conversionExpression</code> <a class="xref" href="Microsoft.CodeAnalysis.Operations.IConversionOperation.html">IConversionOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.Conversion.html">Conversion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetConversion_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetConversion*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetConversion_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_SyntaxNode_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetConversion(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.SyntaxNode,System.Threading.CancellationToken)">
+  GetConversion(SemanticModel?, SyntaxNode, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Conversion GetConversion(this SemanticModel? semanticModel, SyntaxNode expression, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxNode.html">SyntaxNode</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.Conversion.html">Conversion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_AccessorDeclarationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.AccessorDeclarationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, AccessorDeclarationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IMethodSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, AccessorDeclarationSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.AccessorDeclarationSyntax.html">AccessorDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IMethodSymbol.html">IMethodSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_AnonymousObjectCreationExpressionSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.AnonymousObjectCreationExpressionSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, AnonymousObjectCreationExpressionSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static INamedTypeSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, AnonymousObjectCreationExpressionSyntax declaratorSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declaratorSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.AnonymousObjectCreationExpressionSyntax.html">AnonymousObjectCreationExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.INamedTypeSymbol.html">INamedTypeSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_AnonymousObjectMemberDeclaratorSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.AnonymousObjectMemberDeclaratorSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, AnonymousObjectMemberDeclaratorSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IPropertySymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, AnonymousObjectMemberDeclaratorSyntax declaratorSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declaratorSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.AnonymousObjectMemberDeclaratorSyntax.html">AnonymousObjectMemberDeclaratorSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IPropertySymbol.html">IPropertySymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ArgumentSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ArgumentSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, ArgumentSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, ArgumentSyntax declaratorSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declaratorSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ArgumentSyntax.html">ArgumentSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ISymbol.html">ISymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_BaseMethodDeclarationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.BaseMethodDeclarationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, BaseMethodDeclarationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IMethodSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, BaseMethodDeclarationSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.BaseMethodDeclarationSyntax.html">BaseMethodDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IMethodSymbol.html">IMethodSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_BasePropertyDeclarationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.BasePropertyDeclarationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, BasePropertyDeclarationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, BasePropertyDeclarationSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.BasePropertyDeclarationSyntax.html">BasePropertyDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ISymbol.html">ISymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_BaseTypeDeclarationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.BaseTypeDeclarationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, BaseTypeDeclarationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static INamedTypeSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, BaseTypeDeclarationSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.BaseTypeDeclarationSyntax.html">BaseTypeDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.INamedTypeSymbol.html">INamedTypeSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_CatchDeclarationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.CatchDeclarationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, CatchDeclarationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ILocalSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, CatchDeclarationSyntax catchDeclaration, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>catchDeclaration</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.CatchDeclarationSyntax.html">CatchDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ILocalSymbol.html">ILocalSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_CompilationUnitSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.CompilationUnitSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, CompilationUnitSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IMethodSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, CompilationUnitSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.CompilationUnitSyntax.html">CompilationUnitSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IMethodSymbol.html">IMethodSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_DelegateDeclarationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.DelegateDeclarationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, DelegateDeclarationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static INamedTypeSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, DelegateDeclarationSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.DelegateDeclarationSyntax.html">DelegateDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.INamedTypeSymbol.html">INamedTypeSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_EnumMemberDeclarationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.EnumMemberDeclarationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, EnumMemberDeclarationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IFieldSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, EnumMemberDeclarationSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.EnumMemberDeclarationSyntax.html">EnumMemberDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IFieldSymbol.html">IFieldSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_EventDeclarationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.EventDeclarationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, EventDeclarationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEventSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, EventDeclarationSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.EventDeclarationSyntax.html">EventDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IEventSymbol.html">IEventSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ExternAliasDirectiveSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ExternAliasDirectiveSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, ExternAliasDirectiveSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAliasSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, ExternAliasDirectiveSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ExternAliasDirectiveSyntax.html">ExternAliasDirectiveSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IAliasSymbol.html">IAliasSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_FileScopedNamespaceDeclarationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.FileScopedNamespaceDeclarationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, FileScopedNamespaceDeclarationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static INamespaceSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, FileScopedNamespaceDeclarationSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.FileScopedNamespaceDeclarationSyntax.html">FileScopedNamespaceDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.INamespaceSymbol.html">INamespaceSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ForEachStatementSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ForEachStatementSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, ForEachStatementSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ILocalSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, ForEachStatementSyntax forEachStatement, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>forEachStatement</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ForEachStatementSyntax.html">ForEachStatementSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ILocalSymbol.html">ILocalSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_IndexerDeclarationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.IndexerDeclarationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, IndexerDeclarationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IPropertySymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, IndexerDeclarationSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.IndexerDeclarationSyntax.html">IndexerDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IPropertySymbol.html">IPropertySymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_JoinIntoClauseSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.JoinIntoClauseSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, JoinIntoClauseSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IRangeVariableSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, JoinIntoClauseSyntax node, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.JoinIntoClauseSyntax.html">JoinIntoClauseSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IRangeVariableSymbol.html">IRangeVariableSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_LabeledStatementSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.LabeledStatementSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, LabeledStatementSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ILabelSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, LabeledStatementSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.LabeledStatementSyntax.html">LabeledStatementSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ILabelSymbol.html">ILabelSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_LocalFunctionStatementSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.LocalFunctionStatementSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, LocalFunctionStatementSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IMethodSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, LocalFunctionStatementSyntax node, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.LocalFunctionStatementSyntax.html">LocalFunctionStatementSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IMethodSymbol.html">IMethodSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_MemberDeclarationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.MemberDeclarationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, MemberDeclarationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, MemberDeclarationSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.MemberDeclarationSyntax.html">MemberDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ISymbol.html">ISymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_NamespaceDeclarationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.NamespaceDeclarationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, NamespaceDeclarationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static INamespaceSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, NamespaceDeclarationSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.NamespaceDeclarationSyntax.html">NamespaceDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.INamespaceSymbol.html">INamespaceSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ParameterSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ParameterSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, ParameterSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IParameterSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, ParameterSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ParameterSyntax.html">ParameterSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IParameterSymbol.html">IParameterSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_PropertyDeclarationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.PropertyDeclarationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, PropertyDeclarationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IPropertySymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, PropertyDeclarationSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.PropertyDeclarationSyntax.html">PropertyDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IPropertySymbol.html">IPropertySymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_QueryClauseSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.QueryClauseSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, QueryClauseSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IRangeVariableSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, QueryClauseSyntax queryClause, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>queryClause</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.QueryClauseSyntax.html">QueryClauseSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IRangeVariableSymbol.html">IRangeVariableSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_QueryContinuationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.QueryContinuationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, QueryContinuationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IRangeVariableSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, QueryContinuationSyntax node, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.QueryContinuationSyntax.html">QueryContinuationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IRangeVariableSymbol.html">IRangeVariableSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_SingleVariableDesignationSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.SingleVariableDesignationSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, SingleVariableDesignationSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, SingleVariableDesignationSyntax designationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>designationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.SingleVariableDesignationSyntax.html">SingleVariableDesignationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ISymbol.html">ISymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_SwitchLabelSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.SwitchLabelSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, SwitchLabelSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ILabelSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, SwitchLabelSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.SwitchLabelSyntax.html">SwitchLabelSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ILabelSymbol.html">ILabelSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_TupleElementSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.TupleElementSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, TupleElementSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, TupleElementSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.TupleElementSyntax.html">TupleElementSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ISymbol.html">ISymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_TupleExpressionSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.TupleExpressionSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, TupleExpressionSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static INamedTypeSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, TupleExpressionSyntax declaratorSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declaratorSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.TupleExpressionSyntax.html">TupleExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.INamedTypeSymbol.html">INamedTypeSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_TypeParameterSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.TypeParameterSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, TypeParameterSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ITypeParameterSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, TypeParameterSyntax typeParameter, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>typeParameter</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.TypeParameterSyntax.html">TypeParameterSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ITypeParameterSymbol.html">ITypeParameterSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_UsingDirectiveSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, UsingDirectiveSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAliasSymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, UsingDirectiveSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.UsingDirectiveSyntax.html">UsingDirectiveSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IAliasSymbol.html">IAliasSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeclaredSymbol_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_VariableDeclaratorSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeclaredSymbol(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.VariableDeclaratorSyntax,System.Threading.CancellationToken)">
+  GetDeclaredSymbol(SemanticModel?, VariableDeclaratorSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISymbol? GetDeclaredSymbol(this SemanticModel? semanticModel, VariableDeclaratorSyntax declarationSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>declarationSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.VariableDeclaratorSyntax.html">VariableDeclaratorSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.ISymbol.html">ISymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeconstructionInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeconstructionInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeconstructionInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_AssignmentExpressionSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeconstructionInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.AssignmentExpressionSyntax)">
+  GetDeconstructionInfo(SemanticModel?, AssignmentExpressionSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DeconstructionInfo GetDeconstructionInfo(this SemanticModel? semanticModel, AssignmentExpressionSyntax assignment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>assignment</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.AssignmentExpressionSyntax.html">AssignmentExpressionSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.DeconstructionInfo.html">DeconstructionInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeconstructionInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeconstructionInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetDeconstructionInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ForEachVariableStatementSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetDeconstructionInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ForEachVariableStatementSyntax)">
+  GetDeconstructionInfo(SemanticModel?, ForEachVariableStatementSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DeconstructionInfo GetDeconstructionInfo(this SemanticModel? semanticModel, ForEachVariableStatementSyntax @foreach)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>foreach</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ForEachVariableStatementSyntax.html">ForEachVariableStatementSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.DeconstructionInfo.html">DeconstructionInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetElementConversion_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetElementConversion*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetElementConversion_Microsoft_CodeAnalysis_Operations_ISpreadOperation_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetElementConversion(Microsoft.CodeAnalysis.Operations.ISpreadOperation)">
+  GetElementConversion(ISpreadOperation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Conversion GetElementConversion(this ISpreadOperation spread)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>spread</code> <a class="xref" href="Microsoft.CodeAnalysis.Operations.ISpreadOperation.html">ISpreadOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.Conversion.html">Conversion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetFirstDirective_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetFirstDirective*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetFirstDirective_Microsoft_CodeAnalysis_SyntaxNode_System_Func_Microsoft_CodeAnalysis_CSharp_Syntax_DirectiveTriviaSyntax_System_Boolean__" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetFirstDirective(Microsoft.CodeAnalysis.SyntaxNode,System.Func{Microsoft.CodeAnalysis.CSharp.Syntax.DirectiveTriviaSyntax,System.Boolean})">
+  GetFirstDirective(SyntaxNode, Func&lt;DirectiveTriviaSyntax, bool&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DirectiveTriviaSyntax? GetFirstDirective(this SyntaxNode node, Func&lt;DirectiveTriviaSyntax, bool&gt;? predicate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxNode.html">SyntaxNode</a></dt>
+    <dd></dd>
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.DirectiveTriviaSyntax.html">DirectiveTriviaSyntax</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.DirectiveTriviaSyntax.html">DirectiveTriviaSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetForEachStatementInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetForEachStatementInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetForEachStatementInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_CommonForEachStatementSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetForEachStatementInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.CommonForEachStatementSyntax)">
+  GetForEachStatementInfo(SemanticModel?, CommonForEachStatementSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ForEachStatementInfo GetForEachStatementInfo(this SemanticModel? semanticModel, CommonForEachStatementSyntax forEachStatement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>forEachStatement</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.CommonForEachStatementSyntax.html">CommonForEachStatementSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.ForEachStatementInfo.html">ForEachStatementInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetForEachStatementInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetForEachStatementInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetForEachStatementInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ForEachStatementSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetForEachStatementInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ForEachStatementSyntax)">
+  GetForEachStatementInfo(SemanticModel?, ForEachStatementSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ForEachStatementInfo GetForEachStatementInfo(this SemanticModel? semanticModel, ForEachStatementSyntax forEachStatement)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>forEachStatement</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ForEachStatementSyntax.html">ForEachStatementSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.ForEachStatementInfo.html">ForEachStatementInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetInConversion_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetInConversion*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetInConversion_Microsoft_CodeAnalysis_Operations_ICompoundAssignmentOperation_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetInConversion(Microsoft.CodeAnalysis.Operations.ICompoundAssignmentOperation)">
+  GetInConversion(ICompoundAssignmentOperation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Conversion GetInConversion(this ICompoundAssignmentOperation compoundAssignment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compoundAssignment</code> <a class="xref" href="Microsoft.CodeAnalysis.Operations.ICompoundAssignmentOperation.html">ICompoundAssignmentOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.Conversion.html">Conversion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetIndexerGroup_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetIndexerGroup*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetIndexerGroup_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ExpressionSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetIndexerGroup(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax,System.Threading.CancellationToken)">
+  GetIndexerGroup(SemanticModel?, ExpressionSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray&lt;IPropertySymbol&gt; GetIndexerGroup(this SemanticModel? semanticModel, ExpressionSyntax expression, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax.html">ExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.IPropertySymbol.html">IPropertySymbol</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetInterceptorMethod_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetInterceptorMethod*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetInterceptorMethod_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_InvocationExpressionSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetInterceptorMethod(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.InvocationExpressionSyntax,System.Threading.CancellationToken)">
+  GetInterceptorMethod(SemanticModel?, InvocationExpressionSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Experimental(&quot;RSEXPERIMENTAL002&quot;, UrlFormat = &quot;https://github.com/dotnet/csharplang/issues/7009&quot;)]
+public static IMethodSymbol? GetInterceptorMethod(this SemanticModel? semanticModel, InvocationExpressionSyntax node, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.InvocationExpressionSyntax.html">InvocationExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IMethodSymbol.html">IMethodSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetLastDirective_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetLastDirective*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetLastDirective_Microsoft_CodeAnalysis_SyntaxNode_System_Func_Microsoft_CodeAnalysis_CSharp_Syntax_DirectiveTriviaSyntax_System_Boolean__" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetLastDirective(Microsoft.CodeAnalysis.SyntaxNode,System.Func{Microsoft.CodeAnalysis.CSharp.Syntax.DirectiveTriviaSyntax,System.Boolean})">
+  GetLastDirective(SyntaxNode, Func&lt;DirectiveTriviaSyntax, bool&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DirectiveTriviaSyntax? GetLastDirective(this SyntaxNode node, Func&lt;DirectiveTriviaSyntax, bool&gt;? predicate = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxNode.html">SyntaxNode</a></dt>
+    <dd></dd>
+    <dt><code>predicate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.DirectiveTriviaSyntax.html">DirectiveTriviaSyntax</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.DirectiveTriviaSyntax.html">DirectiveTriviaSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetMemberGroup_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetMemberGroup*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetMemberGroup_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_AttributeSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetMemberGroup(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.AttributeSyntax,System.Threading.CancellationToken)">
+  GetMemberGroup(SemanticModel?, AttributeSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray&lt;ISymbol&gt; GetMemberGroup(this SemanticModel? semanticModel, AttributeSyntax attribute, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>attribute</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.AttributeSyntax.html">AttributeSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.ISymbol.html">ISymbol</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetMemberGroup_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetMemberGroup*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetMemberGroup_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ConstructorInitializerSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetMemberGroup(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ConstructorInitializerSyntax,System.Threading.CancellationToken)">
+  GetMemberGroup(SemanticModel?, ConstructorInitializerSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray&lt;ISymbol&gt; GetMemberGroup(this SemanticModel? semanticModel, ConstructorInitializerSyntax initializer, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>initializer</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ConstructorInitializerSyntax.html">ConstructorInitializerSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.ISymbol.html">ISymbol</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetMemberGroup_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetMemberGroup*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetMemberGroup_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ExpressionSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetMemberGroup(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax,System.Threading.CancellationToken)">
+  GetMemberGroup(SemanticModel?, ExpressionSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ImmutableArray&lt;ISymbol&gt; GetMemberGroup(this SemanticModel? semanticModel, ExpressionSyntax expression, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax.html">ExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1">ImmutableArray</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.ISymbol.html">ISymbol</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetOutConversion_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetOutConversion*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetOutConversion_Microsoft_CodeAnalysis_Operations_ICompoundAssignmentOperation_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetOutConversion(Microsoft.CodeAnalysis.Operations.ICompoundAssignmentOperation)">
+  GetOutConversion(ICompoundAssignmentOperation)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Conversion GetOutConversion(this ICompoundAssignmentOperation compoundAssignment)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>compoundAssignment</code> <a class="xref" href="Microsoft.CodeAnalysis.Operations.ICompoundAssignmentOperation.html">ICompoundAssignmentOperation</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.Conversion.html">Conversion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetQueryClauseInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetQueryClauseInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetQueryClauseInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_QueryClauseSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetQueryClauseInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.QueryClauseSyntax,System.Threading.CancellationToken)">
+  GetQueryClauseInfo(SemanticModel?, QueryClauseSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static QueryClauseInfo GetQueryClauseInfo(this SemanticModel? semanticModel, QueryClauseSyntax node, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.QueryClauseSyntax.html">QueryClauseSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.QueryClauseInfo.html">QueryClauseInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeAliasInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeAliasInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeAliasInfo_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_IdentifierNameSyntax_Microsoft_CodeAnalysis_SpeculativeBindingOption_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeAliasInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.IdentifierNameSyntax,Microsoft.CodeAnalysis.SpeculativeBindingOption)">
+  GetSpeculativeAliasInfo(SemanticModel?, int, IdentifierNameSyntax, SpeculativeBindingOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IAliasSymbol? GetSpeculativeAliasInfo(this SemanticModel? semanticModel, int position, IdentifierNameSyntax nameSyntax, SpeculativeBindingOption bindingOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>nameSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.IdentifierNameSyntax.html">IdentifierNameSyntax</a></dt>
+    <dd></dd>
+    <dt><code>bindingOption</code> <a class="xref" href="Microsoft.CodeAnalysis.SpeculativeBindingOption.html">SpeculativeBindingOption</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.IAliasSymbol.html">IAliasSymbol</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeConversion_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeConversion*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeConversion_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_ExpressionSyntax_Microsoft_CodeAnalysis_SpeculativeBindingOption_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeConversion(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax,Microsoft.CodeAnalysis.SpeculativeBindingOption)">
+  GetSpeculativeConversion(SemanticModel?, int, ExpressionSyntax, SpeculativeBindingOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Conversion GetSpeculativeConversion(this SemanticModel? semanticModel, int position, ExpressionSyntax expression, SpeculativeBindingOption bindingOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax.html">ExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>bindingOption</code> <a class="xref" href="Microsoft.CodeAnalysis.SpeculativeBindingOption.html">SpeculativeBindingOption</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.Conversion.html">Conversion</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeSymbolInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeSymbolInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_AttributeSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.AttributeSyntax)">
+  GetSpeculativeSymbolInfo(SemanticModel?, int, AttributeSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolInfo GetSpeculativeSymbolInfo(this SemanticModel? semanticModel, int position, AttributeSyntax attribute)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>attribute</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.AttributeSyntax.html">AttributeSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolInfo.html">SymbolInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeSymbolInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeSymbolInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_ConstructorInitializerSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.ConstructorInitializerSyntax)">
+  GetSpeculativeSymbolInfo(SemanticModel?, int, ConstructorInitializerSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolInfo GetSpeculativeSymbolInfo(this SemanticModel? semanticModel, int position, ConstructorInitializerSyntax constructorInitializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>constructorInitializer</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ConstructorInitializerSyntax.html">ConstructorInitializerSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolInfo.html">SymbolInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeSymbolInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeSymbolInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_CrefSyntax_Microsoft_CodeAnalysis_SpeculativeBindingOption_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.CrefSyntax,Microsoft.CodeAnalysis.SpeculativeBindingOption)">
+  GetSpeculativeSymbolInfo(SemanticModel?, int, CrefSyntax, SpeculativeBindingOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolInfo GetSpeculativeSymbolInfo(this SemanticModel? semanticModel, int position, CrefSyntax expression, SpeculativeBindingOption bindingOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.CrefSyntax.html">CrefSyntax</a></dt>
+    <dd></dd>
+    <dt><code>bindingOption</code> <a class="xref" href="Microsoft.CodeAnalysis.SpeculativeBindingOption.html">SpeculativeBindingOption</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolInfo.html">SymbolInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeSymbolInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeSymbolInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_ExpressionSyntax_Microsoft_CodeAnalysis_SpeculativeBindingOption_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax,Microsoft.CodeAnalysis.SpeculativeBindingOption)">
+  GetSpeculativeSymbolInfo(SemanticModel?, int, ExpressionSyntax, SpeculativeBindingOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolInfo GetSpeculativeSymbolInfo(this SemanticModel? semanticModel, int position, ExpressionSyntax expression, SpeculativeBindingOption bindingOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax.html">ExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>bindingOption</code> <a class="xref" href="Microsoft.CodeAnalysis.SpeculativeBindingOption.html">SpeculativeBindingOption</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolInfo.html">SymbolInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeSymbolInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeSymbolInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_PrimaryConstructorBaseTypeSyntax_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.PrimaryConstructorBaseTypeSyntax)">
+  GetSpeculativeSymbolInfo(SemanticModel?, int, PrimaryConstructorBaseTypeSyntax)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolInfo GetSpeculativeSymbolInfo(this SemanticModel? semanticModel, int position, PrimaryConstructorBaseTypeSyntax constructorInitializer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>constructorInitializer</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.PrimaryConstructorBaseTypeSyntax.html">PrimaryConstructorBaseTypeSyntax</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolInfo.html">SymbolInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeTypeInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeTypeInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSpeculativeTypeInfo_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_ExpressionSyntax_Microsoft_CodeAnalysis_SpeculativeBindingOption_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSpeculativeTypeInfo(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax,Microsoft.CodeAnalysis.SpeculativeBindingOption)">
+  GetSpeculativeTypeInfo(SemanticModel?, int, ExpressionSyntax, SpeculativeBindingOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TypeInfo GetSpeculativeTypeInfo(this SemanticModel? semanticModel, int position, ExpressionSyntax expression, SpeculativeBindingOption bindingOption)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax.html">ExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>bindingOption</code> <a class="xref" href="Microsoft.CodeAnalysis.SpeculativeBindingOption.html">SpeculativeBindingOption</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.TypeInfo.html">TypeInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_AttributeSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.AttributeSyntax,System.Threading.CancellationToken)">
+  GetSymbolInfo(SemanticModel?, AttributeSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolInfo GetSymbolInfo(this SemanticModel? semanticModel, AttributeSyntax attributeSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>attributeSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.AttributeSyntax.html">AttributeSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolInfo.html">SymbolInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ConstructorInitializerSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ConstructorInitializerSyntax,System.Threading.CancellationToken)">
+  GetSymbolInfo(SemanticModel?, ConstructorInitializerSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolInfo GetSymbolInfo(this SemanticModel? semanticModel, ConstructorInitializerSyntax constructorInitializer, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>constructorInitializer</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ConstructorInitializerSyntax.html">ConstructorInitializerSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolInfo.html">SymbolInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_CrefSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.CrefSyntax,System.Threading.CancellationToken)">
+  GetSymbolInfo(SemanticModel?, CrefSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolInfo GetSymbolInfo(this SemanticModel? semanticModel, CrefSyntax crefSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>crefSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.CrefSyntax.html">CrefSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolInfo.html">SymbolInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ExpressionSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax,System.Threading.CancellationToken)">
+  GetSymbolInfo(SemanticModel?, ExpressionSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolInfo GetSymbolInfo(this SemanticModel? semanticModel, ExpressionSyntax expression, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax.html">ExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolInfo.html">SymbolInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_OrderingSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.OrderingSyntax,System.Threading.CancellationToken)">
+  GetSymbolInfo(SemanticModel?, OrderingSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolInfo GetSymbolInfo(this SemanticModel? semanticModel, OrderingSyntax node, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.OrderingSyntax.html">OrderingSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolInfo.html">SymbolInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_PrimaryConstructorBaseTypeSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.PrimaryConstructorBaseTypeSyntax,System.Threading.CancellationToken)">
+  GetSymbolInfo(SemanticModel?, PrimaryConstructorBaseTypeSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolInfo GetSymbolInfo(this SemanticModel? semanticModel, PrimaryConstructorBaseTypeSyntax constructorInitializer, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>constructorInitializer</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.PrimaryConstructorBaseTypeSyntax.html">PrimaryConstructorBaseTypeSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolInfo.html">SymbolInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetSymbolInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_SelectOrGroupClauseSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetSymbolInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.SelectOrGroupClauseSyntax,System.Threading.CancellationToken)">
+  GetSymbolInfo(SemanticModel?, SelectOrGroupClauseSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SymbolInfo GetSymbolInfo(this SemanticModel? semanticModel, SelectOrGroupClauseSyntax node, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.SelectOrGroupClauseSyntax.html">SelectOrGroupClauseSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SymbolInfo.html">SymbolInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetTypeInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetTypeInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetTypeInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_AttributeSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetTypeInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.AttributeSyntax,System.Threading.CancellationToken)">
+  GetTypeInfo(SemanticModel?, AttributeSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TypeInfo GetTypeInfo(this SemanticModel? semanticModel, AttributeSyntax attributeSyntax, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>attributeSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.AttributeSyntax.html">AttributeSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.TypeInfo.html">TypeInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetTypeInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetTypeInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetTypeInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ConstructorInitializerSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetTypeInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ConstructorInitializerSyntax,System.Threading.CancellationToken)">
+  GetTypeInfo(SemanticModel?, ConstructorInitializerSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TypeInfo GetTypeInfo(this SemanticModel? semanticModel, ConstructorInitializerSyntax constructorInitializer, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>constructorInitializer</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ConstructorInitializerSyntax.html">ConstructorInitializerSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.TypeInfo.html">TypeInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetTypeInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetTypeInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetTypeInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_ExpressionSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetTypeInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax,System.Threading.CancellationToken)">
+  GetTypeInfo(SemanticModel?, ExpressionSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TypeInfo GetTypeInfo(this SemanticModel? semanticModel, ExpressionSyntax expression, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>expression</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ExpressionSyntax.html">ExpressionSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.TypeInfo.html">TypeInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetTypeInfo_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetTypeInfo*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_GetTypeInfo_Microsoft_CodeAnalysis_SemanticModel_Microsoft_CodeAnalysis_CSharp_Syntax_SelectOrGroupClauseSyntax_System_Threading_CancellationToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.GetTypeInfo(Microsoft.CodeAnalysis.SemanticModel,Microsoft.CodeAnalysis.CSharp.Syntax.SelectOrGroupClauseSyntax,System.Threading.CancellationToken)">
+  GetTypeInfo(SemanticModel?, SelectOrGroupClauseSyntax, CancellationToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TypeInfo GetTypeInfo(this SemanticModel? semanticModel, SelectOrGroupClauseSyntax node, CancellationToken cancellationToken = default)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>node</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.SelectOrGroupClauseSyntax.html">SelectOrGroupClauseSyntax</a></dt>
+    <dd></dd>
+    <dt><code>cancellationToken</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.TypeInfo.html">TypeInfo</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_Insert_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Insert*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_Insert_Microsoft_CodeAnalysis_SyntaxTokenList_System_Int32_Microsoft_CodeAnalysis_SyntaxToken___" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Insert(Microsoft.CodeAnalysis.SyntaxTokenList,System.Int32,Microsoft.CodeAnalysis.SyntaxToken[])">
+  Insert(SyntaxTokenList, int, params SyntaxToken[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SyntaxTokenList Insert(this SyntaxTokenList list, int index, params SyntaxToken[] items)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>list</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxTokenList.html">SyntaxTokenList</a></dt>
+    <dd></dd>
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>items</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxToken.html">SyntaxToken</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SyntaxTokenList.html">SyntaxTokenList</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_IsContextualKeyword_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.IsContextualKeyword*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_IsContextualKeyword_Microsoft_CodeAnalysis_SyntaxToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.IsContextualKeyword(Microsoft.CodeAnalysis.SyntaxToken)">
+  IsContextualKeyword(SyntaxToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsContextualKeyword(this SyntaxToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxToken.html">SyntaxToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_IsKeyword_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.IsKeyword*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_IsKeyword_Microsoft_CodeAnalysis_SyntaxToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.IsKeyword(Microsoft.CodeAnalysis.SyntaxToken)">
+  IsKeyword(SyntaxToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsKeyword(this SyntaxToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxToken.html">SyntaxToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_IsReservedKeyword_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.IsReservedKeyword*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_IsReservedKeyword_Microsoft_CodeAnalysis_SyntaxToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.IsReservedKeyword(Microsoft.CodeAnalysis.SyntaxToken)">
+  IsReservedKeyword(SyntaxToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsReservedKeyword(this SyntaxToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxToken.html">SyntaxToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_IsVerbatimIdentifier_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.IsVerbatimIdentifier*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_IsVerbatimIdentifier_Microsoft_CodeAnalysis_SyntaxToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.IsVerbatimIdentifier(Microsoft.CodeAnalysis.SyntaxToken)">
+  IsVerbatimIdentifier(SyntaxToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsVerbatimIdentifier(this SyntaxToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxToken.html">SyntaxToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_IsVerbatimStringLiteral_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.IsVerbatimStringLiteral*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_IsVerbatimStringLiteral_Microsoft_CodeAnalysis_SyntaxToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.IsVerbatimStringLiteral(Microsoft.CodeAnalysis.SyntaxToken)">
+  IsVerbatimStringLiteral(SyntaxToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsVerbatimStringLiteral(this SyntaxToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxToken.html">SyntaxToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_Kind_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_Kind_Microsoft_CodeAnalysis_SyntaxNode_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind(Microsoft.CodeAnalysis.SyntaxNode)">
+  Kind(SyntaxNode)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SyntaxKind Kind(this SyntaxNode node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxNode.html">SyntaxNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.SyntaxKind.html">SyntaxKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_Kind_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_Kind_Microsoft_CodeAnalysis_SyntaxNodeOrToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind(Microsoft.CodeAnalysis.SyntaxNodeOrToken)">
+  Kind(SyntaxNodeOrToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SyntaxKind Kind(this SyntaxNodeOrToken nodeOrToken)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>nodeOrToken</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxNodeOrToken.html">SyntaxNodeOrToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.SyntaxKind.html">SyntaxKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_Kind_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_Kind_Microsoft_CodeAnalysis_SyntaxToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind(Microsoft.CodeAnalysis.SyntaxToken)">
+  Kind(SyntaxToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SyntaxKind Kind(this SyntaxToken token)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxToken.html">SyntaxToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.SyntaxKind.html">SyntaxKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_Kind_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_Kind_Microsoft_CodeAnalysis_SyntaxTrivia_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.Kind(Microsoft.CodeAnalysis.SyntaxTrivia)">
+  Kind(SyntaxTrivia)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SyntaxKind Kind(this SyntaxTrivia trivia)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>trivia</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxTrivia.html">SyntaxTrivia</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.CSharp.SyntaxKind.html">SyntaxKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_ReplaceTrivia_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.ReplaceTrivia*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_ReplaceTrivia_Microsoft_CodeAnalysis_SyntaxToken_Microsoft_CodeAnalysis_SyntaxTrivia_Microsoft_CodeAnalysis_SyntaxTrivia_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.ReplaceTrivia(Microsoft.CodeAnalysis.SyntaxToken,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia)">
+  ReplaceTrivia(SyntaxToken, SyntaxTrivia, SyntaxTrivia)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SyntaxToken ReplaceTrivia(this SyntaxToken token, SyntaxTrivia oldTrivia, SyntaxTrivia newTrivia)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxToken.html">SyntaxToken</a></dt>
+    <dd></dd>
+    <dt><code>oldTrivia</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxTrivia.html">SyntaxTrivia</a></dt>
+    <dd></dd>
+    <dt><code>newTrivia</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxTrivia.html">SyntaxTrivia</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SyntaxToken.html">SyntaxToken</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_ReplaceTrivia_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.ReplaceTrivia*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_ReplaceTrivia_Microsoft_CodeAnalysis_SyntaxToken_System_Collections_Generic_IEnumerable_Microsoft_CodeAnalysis_SyntaxTrivia__System_Func_Microsoft_CodeAnalysis_SyntaxTrivia_Microsoft_CodeAnalysis_SyntaxTrivia_Microsoft_CodeAnalysis_SyntaxTrivia__" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.ReplaceTrivia(Microsoft.CodeAnalysis.SyntaxToken,System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.SyntaxTrivia},System.Func{Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia,Microsoft.CodeAnalysis.SyntaxTrivia})">
+  ReplaceTrivia(SyntaxToken, IEnumerable&lt;SyntaxTrivia&gt;, Func&lt;SyntaxTrivia, SyntaxTrivia, SyntaxTrivia&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SyntaxToken ReplaceTrivia(this SyntaxToken token, IEnumerable&lt;SyntaxTrivia&gt; trivia, Func&lt;SyntaxTrivia, SyntaxTrivia, SyntaxTrivia&gt; computeReplacementTrivia)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>token</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxToken.html">SyntaxToken</a></dt>
+    <dd></dd>
+    <dt><code>trivia</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.SyntaxTrivia.html">SyntaxTrivia</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>computeReplacementTrivia</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="Microsoft.CodeAnalysis.SyntaxTrivia.html">SyntaxTrivia</a>, <a class="xref" href="Microsoft.CodeAnalysis.SyntaxTrivia.html">SyntaxTrivia</a>, <a class="xref" href="Microsoft.CodeAnalysis.SyntaxTrivia.html">SyntaxTrivia</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.SyntaxToken.html">SyntaxToken</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_ArrowExpressionClauseSyntax_Microsoft_CodeAnalysis_SemanticModel__" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.ArrowExpressionClauseSyntax,Microsoft.CodeAnalysis.SemanticModel@)">
+  TryGetSpeculativeSemanticModel(SemanticModel?, int, ArrowExpressionClauseSyntax, out SemanticModel?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetSpeculativeSemanticModel(this SemanticModel? semanticModel, int position, ArrowExpressionClauseSyntax expressionBody, out SemanticModel? speculativeModel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>expressionBody</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ArrowExpressionClauseSyntax.html">ArrowExpressionClauseSyntax</a></dt>
+    <dd></dd>
+    <dt><code>speculativeModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_AttributeSyntax_Microsoft_CodeAnalysis_SemanticModel__" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.AttributeSyntax,Microsoft.CodeAnalysis.SemanticModel@)">
+  TryGetSpeculativeSemanticModel(SemanticModel?, int, AttributeSyntax, out SemanticModel?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetSpeculativeSemanticModel(this SemanticModel? semanticModel, int position, AttributeSyntax attribute, out SemanticModel? speculativeModel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>attribute</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.AttributeSyntax.html">AttributeSyntax</a></dt>
+    <dd></dd>
+    <dt><code>speculativeModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_ConstructorInitializerSyntax_Microsoft_CodeAnalysis_SemanticModel__" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.ConstructorInitializerSyntax,Microsoft.CodeAnalysis.SemanticModel@)">
+  TryGetSpeculativeSemanticModel(SemanticModel?, int, ConstructorInitializerSyntax, out SemanticModel?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetSpeculativeSemanticModel(this SemanticModel? semanticModel, int position, ConstructorInitializerSyntax constructorInitializer, out SemanticModel? speculativeModel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>constructorInitializer</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.ConstructorInitializerSyntax.html">ConstructorInitializerSyntax</a></dt>
+    <dd></dd>
+    <dt><code>speculativeModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_CrefSyntax_Microsoft_CodeAnalysis_SemanticModel__" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.CrefSyntax,Microsoft.CodeAnalysis.SemanticModel@)">
+  TryGetSpeculativeSemanticModel(SemanticModel?, int, CrefSyntax, out SemanticModel?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetSpeculativeSemanticModel(this SemanticModel? semanticModel, int position, CrefSyntax crefSyntax, out SemanticModel? speculativeModel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>crefSyntax</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.CrefSyntax.html">CrefSyntax</a></dt>
+    <dd></dd>
+    <dt><code>speculativeModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_EqualsValueClauseSyntax_Microsoft_CodeAnalysis_SemanticModel__" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.EqualsValueClauseSyntax,Microsoft.CodeAnalysis.SemanticModel@)">
+  TryGetSpeculativeSemanticModel(SemanticModel?, int, EqualsValueClauseSyntax, out SemanticModel?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetSpeculativeSemanticModel(this SemanticModel? semanticModel, int position, EqualsValueClauseSyntax initializer, out SemanticModel? speculativeModel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>initializer</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.EqualsValueClauseSyntax.html">EqualsValueClauseSyntax</a></dt>
+    <dd></dd>
+    <dt><code>speculativeModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_PrimaryConstructorBaseTypeSyntax_Microsoft_CodeAnalysis_SemanticModel__" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.PrimaryConstructorBaseTypeSyntax,Microsoft.CodeAnalysis.SemanticModel@)">
+  TryGetSpeculativeSemanticModel(SemanticModel?, int, PrimaryConstructorBaseTypeSyntax, out SemanticModel?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetSpeculativeSemanticModel(this SemanticModel? semanticModel, int position, PrimaryConstructorBaseTypeSyntax constructorInitializer, out SemanticModel? speculativeModel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>constructorInitializer</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.PrimaryConstructorBaseTypeSyntax.html">PrimaryConstructorBaseTypeSyntax</a></dt>
+    <dd></dd>
+    <dt><code>speculativeModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_StatementSyntax_Microsoft_CodeAnalysis_SemanticModel__" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax,Microsoft.CodeAnalysis.SemanticModel@)">
+  TryGetSpeculativeSemanticModel(SemanticModel?, int, StatementSyntax, out SemanticModel?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetSpeculativeSemanticModel(this SemanticModel? semanticModel, int position, StatementSyntax statement, out SemanticModel? speculativeModel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>statement</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.StatementSyntax.html">StatementSyntax</a></dt>
+    <dd></dd>
+    <dt><code>speculativeModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModel_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_TypeSyntax_Microsoft_CodeAnalysis_SemanticModel__Microsoft_CodeAnalysis_SpeculativeBindingOption_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModel(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.TypeSyntax,Microsoft.CodeAnalysis.SemanticModel@,Microsoft.CodeAnalysis.SpeculativeBindingOption)">
+  TryGetSpeculativeSemanticModel(SemanticModel?, int, TypeSyntax, out SemanticModel?, SpeculativeBindingOption)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetSpeculativeSemanticModel(this SemanticModel? semanticModel, int position, TypeSyntax type, out SemanticModel? speculativeModel, SpeculativeBindingOption bindingOption = SpeculativeBindingOption.BindAsExpression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.TypeSyntax.html">TypeSyntax</a></dt>
+    <dd></dd>
+    <dt><code>speculativeModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>bindingOption</code> <a class="xref" href="Microsoft.CodeAnalysis.SpeculativeBindingOption.html">SpeculativeBindingOption</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModelForMethodBody_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModelForMethodBody*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModelForMethodBody_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_AccessorDeclarationSyntax_Microsoft_CodeAnalysis_SemanticModel__" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModelForMethodBody(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.AccessorDeclarationSyntax,Microsoft.CodeAnalysis.SemanticModel@)">
+  TryGetSpeculativeSemanticModelForMethodBody(SemanticModel?, int, AccessorDeclarationSyntax, out SemanticModel?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetSpeculativeSemanticModelForMethodBody(this SemanticModel? semanticModel, int position, AccessorDeclarationSyntax accessor, out SemanticModel? speculativeModel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>accessor</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.AccessorDeclarationSyntax.html">AccessorDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>speculativeModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModelForMethodBody_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModelForMethodBody*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_TryGetSpeculativeSemanticModelForMethodBody_Microsoft_CodeAnalysis_SemanticModel_System_Int32_Microsoft_CodeAnalysis_CSharp_Syntax_BaseMethodDeclarationSyntax_Microsoft_CodeAnalysis_SemanticModel__" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.TryGetSpeculativeSemanticModelForMethodBody(Microsoft.CodeAnalysis.SemanticModel,System.Int32,Microsoft.CodeAnalysis.CSharp.Syntax.BaseMethodDeclarationSyntax,Microsoft.CodeAnalysis.SemanticModel@)">
+  TryGetSpeculativeSemanticModelForMethodBody(SemanticModel?, int, BaseMethodDeclarationSyntax, out SemanticModel?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool TryGetSpeculativeSemanticModelForMethodBody(this SemanticModel? semanticModel, int position, BaseMethodDeclarationSyntax method, out SemanticModel? speculativeModel)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>semanticModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+    <dt><code>position</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>method</code> <a class="xref" href="Microsoft.CodeAnalysis.CSharp.Syntax.BaseMethodDeclarationSyntax.html">BaseMethodDeclarationSyntax</a></dt>
+    <dd></dd>
+    <dt><code>speculativeModel</code> <a class="xref" href="Microsoft.CodeAnalysis.SemanticModel.html">SemanticModel</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_VarianceKindFromToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.VarianceKindFromToken*"></a>
+
+  <h3 id="Microsoft_CodeAnalysis_CSharp_CSharpExtensions_VarianceKindFromToken_Microsoft_CodeAnalysis_SyntaxToken_" data-uid="Microsoft.CodeAnalysis.CSharp.CSharpExtensions.VarianceKindFromToken(Microsoft.CodeAnalysis.SyntaxToken)">
+  VarianceKindFromToken(SyntaxToken)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static VarianceKind VarianceKindFromToken(this SyntaxToken node)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>node</code> <a class="xref" href="Microsoft.CodeAnalysis.SyntaxToken.html">SyntaxToken</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.CodeAnalysis.VarianceKind.html">VarianceKind</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
