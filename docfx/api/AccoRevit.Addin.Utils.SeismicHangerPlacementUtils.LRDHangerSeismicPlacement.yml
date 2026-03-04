@@ -1,0 +1,1429 @@
+### YamlMime:ManagedReference
+items:
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement
+  commentId: T:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement
+  id: LRDHangerSeismicPlacement
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils
+  children:
+  - AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.#ctor(System.Action{System.String})
+  - AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.SeismicHangerPlacements(Autodesk.Revit.DB.Document,AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput)
+  langs:
+  - csharp
+  - vb
+  name: LRDHangerSeismicPlacement
+  nameWithType: LRDHangerSeismicPlacement
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils
+  syntax:
+    content: 'public class LRDHangerSeismicPlacement : SeismicHangerHelper, ISeismicHangerPlacements'
+    content.vb: Public Class LRDHangerSeismicPlacement Inherits SeismicHangerHelper Implements ISeismicHangerPlacements
+  inheritance:
+  - System.Object
+  - AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper
+  implements:
+  - AccoRevit.Addin.Interfaces.ISeismicHangerPlacements
+  inheritedMembers:
+  - AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.TrySetParameter(Autodesk.Revit.DB.Element,System.String,System.Object)
+  - AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.SetHangerElevationOffset(Autodesk.Revit.DB.FabricationPart,System.Double)
+  - AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.PlaceAndRotateBrace(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.FamilySymbol,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Level,Autodesk.Revit.DB.FabricationPart,System.Double,System.Int32,System.Double,System.Boolean)
+  - AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.CalculateSignedPlanAngleFromX(Autodesk.Revit.DB.XYZ)
+  - AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.NormalizeRadians(System.Double)
+  - AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.DirectionFromLocationCurve(Autodesk.Revit.DB.Element)
+  - AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.HangerTopElevationFeet(Autodesk.Revit.DB.FabricationPart,Autodesk.Revit.DB.Level)
+  - AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.GetNodeGripLocation(Autodesk.Revit.DB.FabricationPart)
+  - AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.GetPipeFromBeamClip(Autodesk.Revit.DB.FabricationPart)
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.#ctor(System.Action{System.String})
+  commentId: M:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.#ctor(System.Action{System.String})
+  id: '#ctor(System.Action{System.String})'
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement
+  langs:
+  - csharp
+  - vb
+  name: LRDHangerSeismicPlacement(Action<string>)
+  nameWithType: LRDHangerSeismicPlacement.LRDHangerSeismicPlacement(Action<string>)
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.LRDHangerSeismicPlacement(System.Action<string>)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils
+  syntax:
+    content: public LRDHangerSeismicPlacement(Action<string> report = null)
+    parameters:
+    - id: report
+      type: System.Action{System.String}
+    content.vb: Public Sub New(report As Action(Of String) = Nothing)
+  overload: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.#ctor*
+  nameWithType.vb: LRDHangerSeismicPlacement.New(Action(Of String))
+  fullName.vb: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.New(System.Action(Of String))
+  name.vb: New(Action(Of String))
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.SeismicHangerPlacements(Autodesk.Revit.DB.Document,AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput)
+  commentId: M:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.SeismicHangerPlacements(Autodesk.Revit.DB.Document,AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput)
+  id: SeismicHangerPlacements(Autodesk.Revit.DB.Document,AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput)
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement
+  langs:
+  - csharp
+  - vb
+  name: SeismicHangerPlacements(Document, SeismicHangerPlacementInput)
+  nameWithType: LRDHangerSeismicPlacement.SeismicHangerPlacements(Document, SeismicHangerPlacementInput)
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.SeismicHangerPlacements(Autodesk.Revit.DB.Document, AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils
+  example: []
+  syntax:
+    content: public void SeismicHangerPlacements(Document doc, SeismicHangerPlacementInput hangerPlacementInputs)
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+    - id: hangerPlacementInputs
+      type: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput
+    content.vb: Public Sub SeismicHangerPlacements(doc As Document, hangerPlacementInputs As SeismicHangerPlacementInput)
+  overload: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.SeismicHangerPlacements*
+  implements:
+  - AccoRevit.Addin.Interfaces.ISeismicHangerPlacements.SeismicHangerPlacements(Autodesk.Revit.DB.Document,AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput)
+references:
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils
+  commentId: N:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils
+  nameWithType: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils
+    name: SeismicHangerPlacementUtils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils
+    name: SeismicHangerPlacementUtils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper
+  commentId: T:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html
+  name: SeismicHangerHelper
+  nameWithType: SeismicHangerHelper
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper
+- uid: AccoRevit.Addin.Interfaces.ISeismicHangerPlacements
+  commentId: T:AccoRevit.Addin.Interfaces.ISeismicHangerPlacements
+  parent: AccoRevit.Addin.Interfaces
+  isExternal: true
+  href: AccoRevit.Addin.Interfaces.ISeismicHangerPlacements.html
+  name: ISeismicHangerPlacements
+  nameWithType: ISeismicHangerPlacements
+  fullName: AccoRevit.Addin.Interfaces.ISeismicHangerPlacements
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.TrySetParameter(Autodesk.Revit.DB.Element,System.String,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.TrySetParameter(Autodesk.Revit.DB.Element,System.String,System.Object)
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_TrySetParameter_Autodesk_Revit_DB_Element_System_String_System_Object_
+  name: TrySetParameter(Element, string, object)
+  nameWithType: SeismicHangerHelper.TrySetParameter(Element, string, object)
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.TrySetParameter(Autodesk.Revit.DB.Element, string, object)
+  nameWithType.vb: SeismicHangerHelper.TrySetParameter(Element, String, Object)
+  fullName.vb: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.TrySetParameter(Autodesk.Revit.DB.Element, String, Object)
+  name.vb: TrySetParameter(Element, String, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.TrySetParameter(Autodesk.Revit.DB.Element,System.String,System.Object)
+    name: TrySetParameter
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_TrySetParameter_Autodesk_Revit_DB_Element_System_String_System_Object_
+  - name: (
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.TrySetParameter(Autodesk.Revit.DB.Element,System.String,System.Object)
+    name: TrySetParameter
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_TrySetParameter_Autodesk_Revit_DB_Element_System_String_System_Object_
+  - name: (
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.SetHangerElevationOffset(Autodesk.Revit.DB.FabricationPart,System.Double)
+  commentId: M:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.SetHangerElevationOffset(Autodesk.Revit.DB.FabricationPart,System.Double)
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_SetHangerElevationOffset_Autodesk_Revit_DB_FabricationPart_System_Double_
+  name: SetHangerElevationOffset(FabricationPart, double)
+  nameWithType: SeismicHangerHelper.SetHangerElevationOffset(FabricationPart, double)
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.SetHangerElevationOffset(Autodesk.Revit.DB.FabricationPart, double)
+  nameWithType.vb: SeismicHangerHelper.SetHangerElevationOffset(FabricationPart, Double)
+  fullName.vb: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.SetHangerElevationOffset(Autodesk.Revit.DB.FabricationPart, Double)
+  name.vb: SetHangerElevationOffset(FabricationPart, Double)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.SetHangerElevationOffset(Autodesk.Revit.DB.FabricationPart,System.Double)
+    name: SetHangerElevationOffset
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_SetHangerElevationOffset_Autodesk_Revit_DB_FabricationPart_System_Double_
+  - name: (
+  - uid: Autodesk.Revit.DB.FabricationPart
+    name: FabricationPart
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.SetHangerElevationOffset(Autodesk.Revit.DB.FabricationPart,System.Double)
+    name: SetHangerElevationOffset
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_SetHangerElevationOffset_Autodesk_Revit_DB_FabricationPart_System_Double_
+  - name: (
+  - uid: Autodesk.Revit.DB.FabricationPart
+    name: FabricationPart
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.PlaceAndRotateBrace(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.FamilySymbol,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Level,Autodesk.Revit.DB.FabricationPart,System.Double,System.Int32,System.Double,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.PlaceAndRotateBrace(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.FamilySymbol,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Level,Autodesk.Revit.DB.FabricationPart,System.Double,System.Int32,System.Double,System.Boolean)
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_PlaceAndRotateBrace_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_FamilySymbol_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Level_Autodesk_Revit_DB_FabricationPart_System_Double_System_Int32_System_Double_System_Boolean_
+  name: PlaceAndRotateBrace(Document, FamilySymbol, XYZ, Level, FabricationPart, double, int, double, bool)
+  nameWithType: SeismicHangerHelper.PlaceAndRotateBrace(Document, FamilySymbol, XYZ, Level, FabricationPart, double, int, double, bool)
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.PlaceAndRotateBrace(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.FamilySymbol, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.Level, Autodesk.Revit.DB.FabricationPart, double, int, double, bool)
+  nameWithType.vb: SeismicHangerHelper.PlaceAndRotateBrace(Document, FamilySymbol, XYZ, Level, FabricationPart, Double, Integer, Double, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.PlaceAndRotateBrace(Autodesk.Revit.DB.Document, Autodesk.Revit.DB.FamilySymbol, Autodesk.Revit.DB.XYZ, Autodesk.Revit.DB.Level, Autodesk.Revit.DB.FabricationPart, Double, Integer, Double, Boolean)
+  name.vb: PlaceAndRotateBrace(Document, FamilySymbol, XYZ, Level, FabricationPart, Double, Integer, Double, Boolean)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.PlaceAndRotateBrace(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.FamilySymbol,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Level,Autodesk.Revit.DB.FabricationPart,System.Double,System.Int32,System.Double,System.Boolean)
+    name: PlaceAndRotateBrace
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_PlaceAndRotateBrace_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_FamilySymbol_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Level_Autodesk_Revit_DB_FabricationPart_System_Double_System_Int32_System_Double_System_Boolean_
+  - name: (
+  - uid: Autodesk.Revit.DB.Document
+    name: Document
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.FamilySymbol
+    name: FamilySymbol
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.Level
+    name: Level
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.FabricationPart
+    name: FabricationPart
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.PlaceAndRotateBrace(Autodesk.Revit.DB.Document,Autodesk.Revit.DB.FamilySymbol,Autodesk.Revit.DB.XYZ,Autodesk.Revit.DB.Level,Autodesk.Revit.DB.FabricationPart,System.Double,System.Int32,System.Double,System.Boolean)
+    name: PlaceAndRotateBrace
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_PlaceAndRotateBrace_Autodesk_Revit_DB_Document_Autodesk_Revit_DB_FamilySymbol_Autodesk_Revit_DB_XYZ_Autodesk_Revit_DB_Level_Autodesk_Revit_DB_FabricationPart_System_Double_System_Int32_System_Double_System_Boolean_
+  - name: (
+  - uid: Autodesk.Revit.DB.Document
+    name: Document
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.FamilySymbol
+    name: FamilySymbol
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.Level
+    name: Level
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.FabricationPart
+    name: FabricationPart
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.CalculateSignedPlanAngleFromX(Autodesk.Revit.DB.XYZ)
+  commentId: M:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.CalculateSignedPlanAngleFromX(Autodesk.Revit.DB.XYZ)
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_CalculateSignedPlanAngleFromX_Autodesk_Revit_DB_XYZ_
+  name: CalculateSignedPlanAngleFromX(XYZ)
+  nameWithType: SeismicHangerHelper.CalculateSignedPlanAngleFromX(XYZ)
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.CalculateSignedPlanAngleFromX(Autodesk.Revit.DB.XYZ)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.CalculateSignedPlanAngleFromX(Autodesk.Revit.DB.XYZ)
+    name: CalculateSignedPlanAngleFromX
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_CalculateSignedPlanAngleFromX_Autodesk_Revit_DB_XYZ_
+  - name: (
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.CalculateSignedPlanAngleFromX(Autodesk.Revit.DB.XYZ)
+    name: CalculateSignedPlanAngleFromX
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_CalculateSignedPlanAngleFromX_Autodesk_Revit_DB_XYZ_
+  - name: (
+  - uid: Autodesk.Revit.DB.XYZ
+    name: XYZ
+    isExternal: true
+  - name: )
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.NormalizeRadians(System.Double)
+  commentId: M:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.NormalizeRadians(System.Double)
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_NormalizeRadians_System_Double_
+  name: NormalizeRadians(double)
+  nameWithType: SeismicHangerHelper.NormalizeRadians(double)
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.NormalizeRadians(double)
+  nameWithType.vb: SeismicHangerHelper.NormalizeRadians(Double)
+  fullName.vb: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.NormalizeRadians(Double)
+  name.vb: NormalizeRadians(Double)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.NormalizeRadians(System.Double)
+    name: NormalizeRadians
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_NormalizeRadians_System_Double_
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.NormalizeRadians(System.Double)
+    name: NormalizeRadians
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_NormalizeRadians_System_Double_
+  - name: (
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.DirectionFromLocationCurve(Autodesk.Revit.DB.Element)
+  commentId: M:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.DirectionFromLocationCurve(Autodesk.Revit.DB.Element)
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_DirectionFromLocationCurve_Autodesk_Revit_DB_Element_
+  name: DirectionFromLocationCurve(Element)
+  nameWithType: SeismicHangerHelper.DirectionFromLocationCurve(Element)
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.DirectionFromLocationCurve(Autodesk.Revit.DB.Element)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.DirectionFromLocationCurve(Autodesk.Revit.DB.Element)
+    name: DirectionFromLocationCurve
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_DirectionFromLocationCurve_Autodesk_Revit_DB_Element_
+  - name: (
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.DirectionFromLocationCurve(Autodesk.Revit.DB.Element)
+    name: DirectionFromLocationCurve
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_DirectionFromLocationCurve_Autodesk_Revit_DB_Element_
+  - name: (
+  - uid: Autodesk.Revit.DB.Element
+    name: Element
+    isExternal: true
+  - name: )
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.HangerTopElevationFeet(Autodesk.Revit.DB.FabricationPart,Autodesk.Revit.DB.Level)
+  commentId: M:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.HangerTopElevationFeet(Autodesk.Revit.DB.FabricationPart,Autodesk.Revit.DB.Level)
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_HangerTopElevationFeet_Autodesk_Revit_DB_FabricationPart_Autodesk_Revit_DB_Level_
+  name: HangerTopElevationFeet(FabricationPart, Level)
+  nameWithType: SeismicHangerHelper.HangerTopElevationFeet(FabricationPart, Level)
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.HangerTopElevationFeet(Autodesk.Revit.DB.FabricationPart, Autodesk.Revit.DB.Level)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.HangerTopElevationFeet(Autodesk.Revit.DB.FabricationPart,Autodesk.Revit.DB.Level)
+    name: HangerTopElevationFeet
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_HangerTopElevationFeet_Autodesk_Revit_DB_FabricationPart_Autodesk_Revit_DB_Level_
+  - name: (
+  - uid: Autodesk.Revit.DB.FabricationPart
+    name: FabricationPart
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.Level
+    name: Level
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.HangerTopElevationFeet(Autodesk.Revit.DB.FabricationPart,Autodesk.Revit.DB.Level)
+    name: HangerTopElevationFeet
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_HangerTopElevationFeet_Autodesk_Revit_DB_FabricationPart_Autodesk_Revit_DB_Level_
+  - name: (
+  - uid: Autodesk.Revit.DB.FabricationPart
+    name: FabricationPart
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: Autodesk.Revit.DB.Level
+    name: Level
+    isExternal: true
+  - name: )
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.GetNodeGripLocation(Autodesk.Revit.DB.FabricationPart)
+  commentId: M:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.GetNodeGripLocation(Autodesk.Revit.DB.FabricationPart)
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_GetNodeGripLocation_Autodesk_Revit_DB_FabricationPart_
+  name: GetNodeGripLocation(FabricationPart)
+  nameWithType: SeismicHangerHelper.GetNodeGripLocation(FabricationPart)
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.GetNodeGripLocation(Autodesk.Revit.DB.FabricationPart)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.GetNodeGripLocation(Autodesk.Revit.DB.FabricationPart)
+    name: GetNodeGripLocation
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_GetNodeGripLocation_Autodesk_Revit_DB_FabricationPart_
+  - name: (
+  - uid: Autodesk.Revit.DB.FabricationPart
+    name: FabricationPart
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.GetNodeGripLocation(Autodesk.Revit.DB.FabricationPart)
+    name: GetNodeGripLocation
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_GetNodeGripLocation_Autodesk_Revit_DB_FabricationPart_
+  - name: (
+  - uid: Autodesk.Revit.DB.FabricationPart
+    name: FabricationPart
+    isExternal: true
+  - name: )
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.GetPipeFromBeamClip(Autodesk.Revit.DB.FabricationPart)
+  commentId: M:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.GetPipeFromBeamClip(Autodesk.Revit.DB.FabricationPart)
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_GetPipeFromBeamClip_Autodesk_Revit_DB_FabricationPart_
+  name: GetPipeFromBeamClip(FabricationPart)
+  nameWithType: SeismicHangerHelper.GetPipeFromBeamClip(FabricationPart)
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.GetPipeFromBeamClip(Autodesk.Revit.DB.FabricationPart)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.GetPipeFromBeamClip(Autodesk.Revit.DB.FabricationPart)
+    name: GetPipeFromBeamClip
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_GetPipeFromBeamClip_Autodesk_Revit_DB_FabricationPart_
+  - name: (
+  - uid: Autodesk.Revit.DB.FabricationPart
+    name: FabricationPart
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.GetPipeFromBeamClip(Autodesk.Revit.DB.FabricationPart)
+    name: GetPipeFromBeamClip
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerHelper.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerHelper_GetPipeFromBeamClip_Autodesk_Revit_DB_FabricationPart_
+  - name: (
+  - uid: Autodesk.Revit.DB.FabricationPart
+    name: FabricationPart
+    isExternal: true
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Interfaces
+  commentId: N:AccoRevit.Addin.Interfaces
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Interfaces
+  nameWithType: AccoRevit.Addin.Interfaces
+  fullName: AccoRevit.Addin.Interfaces
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: AccoRevit.Addin.Interfaces.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Interfaces
+    name: Interfaces
+    isExternal: true
+    href: AccoRevit.Addin.Interfaces.html
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.#ctor*
+  commentId: Overload:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.#ctor
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_LRDHangerSeismicPlacement__ctor_System_Action_System_String__
+  name: LRDHangerSeismicPlacement
+  nameWithType: LRDHangerSeismicPlacement.LRDHangerSeismicPlacement
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.LRDHangerSeismicPlacement
+  nameWithType.vb: LRDHangerSeismicPlacement.New
+  fullName.vb: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.New
+  name.vb: New
+- uid: System.Action{System.String}
+  commentId: T:System.Action{System.String}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<string>
+  nameWithType: Action<string>
+  fullName: System.Action<string>
+  nameWithType.vb: Action(Of String)
+  fullName.vb: System.Action(Of String)
+  name.vb: Action(Of String)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.SeismicHangerPlacements*
+  commentId: Overload:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.SeismicHangerPlacements
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.html#AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_LRDHangerSeismicPlacement_SeismicHangerPlacements_Autodesk_Revit_DB_Document_AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerPlacementInput_
+  name: SeismicHangerPlacements
+  nameWithType: LRDHangerSeismicPlacement.SeismicHangerPlacements
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.LRDHangerSeismicPlacement.SeismicHangerPlacements
+- uid: AccoRevit.Addin.Interfaces.ISeismicHangerPlacements.SeismicHangerPlacements(Autodesk.Revit.DB.Document,AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput)
+  commentId: M:AccoRevit.Addin.Interfaces.ISeismicHangerPlacements.SeismicHangerPlacements(Autodesk.Revit.DB.Document,AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput)
+  parent: AccoRevit.Addin.Interfaces.ISeismicHangerPlacements
+  isExternal: true
+  href: AccoRevit.Addin.Interfaces.ISeismicHangerPlacements.html#AccoRevit_Addin_Interfaces_ISeismicHangerPlacements_SeismicHangerPlacements_Autodesk_Revit_DB_Document_AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerPlacementInput_
+  name: SeismicHangerPlacements(Document, SeismicHangerPlacementInput)
+  nameWithType: ISeismicHangerPlacements.SeismicHangerPlacements(Document, SeismicHangerPlacementInput)
+  fullName: AccoRevit.Addin.Interfaces.ISeismicHangerPlacements.SeismicHangerPlacements(Autodesk.Revit.DB.Document, AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Interfaces.ISeismicHangerPlacements.SeismicHangerPlacements(Autodesk.Revit.DB.Document,AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput)
+    name: SeismicHangerPlacements
+    isExternal: true
+    href: AccoRevit.Addin.Interfaces.ISeismicHangerPlacements.html#AccoRevit_Addin_Interfaces_ISeismicHangerPlacements_SeismicHangerPlacements_Autodesk_Revit_DB_Document_AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerPlacementInput_
+  - name: (
+  - uid: Autodesk.Revit.DB.Document
+    name: Document
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput
+    name: SeismicHangerPlacementInput
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput.html
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Interfaces.ISeismicHangerPlacements.SeismicHangerPlacements(Autodesk.Revit.DB.Document,AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput)
+    name: SeismicHangerPlacements
+    isExternal: true
+    href: AccoRevit.Addin.Interfaces.ISeismicHangerPlacements.html#AccoRevit_Addin_Interfaces_ISeismicHangerPlacements_SeismicHangerPlacements_Autodesk_Revit_DB_Document_AccoRevit_Addin_Utils_SeismicHangerPlacementUtils_SeismicHangerPlacementInput_
+  - name: (
+  - uid: Autodesk.Revit.DB.Document
+    name: Document
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput
+    name: SeismicHangerPlacementInput
+    isExternal: true
+    href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput.html
+  - name: )
+- uid: Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput
+  commentId: T:AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput
+  parent: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput.html
+  name: SeismicHangerPlacementInput
+  nameWithType: SeismicHangerPlacementInput
+  fullName: AccoRevit.Addin.Utils.SeismicHangerPlacementUtils.SeismicHangerPlacementInput

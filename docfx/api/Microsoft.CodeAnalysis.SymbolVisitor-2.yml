@@ -1,0 +1,1788 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2
+  commentId: T:Microsoft.CodeAnalysis.SymbolVisitor`2
+  id: SymbolVisitor`2
+  parent: Microsoft.CodeAnalysis
+  children:
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.#ctor
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.DefaultResult
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.DefaultVisit(Microsoft.CodeAnalysis.ISymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.Visit(Microsoft.CodeAnalysis.ISymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitAlias(Microsoft.CodeAnalysis.IAliasSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitArrayType(Microsoft.CodeAnalysis.IArrayTypeSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitAssembly(Microsoft.CodeAnalysis.IAssemblySymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitDiscard(Microsoft.CodeAnalysis.IDiscardSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitDynamicType(Microsoft.CodeAnalysis.IDynamicTypeSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitEvent(Microsoft.CodeAnalysis.IEventSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitField(Microsoft.CodeAnalysis.IFieldSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitFunctionPointerType(Microsoft.CodeAnalysis.IFunctionPointerTypeSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitLabel(Microsoft.CodeAnalysis.ILabelSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitLocal(Microsoft.CodeAnalysis.ILocalSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitMethod(Microsoft.CodeAnalysis.IMethodSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitModule(Microsoft.CodeAnalysis.IModuleSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitNamedType(Microsoft.CodeAnalysis.INamedTypeSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitNamespace(Microsoft.CodeAnalysis.INamespaceSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitParameter(Microsoft.CodeAnalysis.IParameterSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitPointerType(Microsoft.CodeAnalysis.IPointerTypeSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitProperty(Microsoft.CodeAnalysis.IPropertySymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitRangeVariable(Microsoft.CodeAnalysis.IRangeVariableSymbol,`0)
+  - Microsoft.CodeAnalysis.SymbolVisitor`2.VisitTypeParameter(Microsoft.CodeAnalysis.ITypeParameterSymbol,`0)
+  langs:
+  - csharp
+  - vb
+  name: SymbolVisitor<TArgument, TResult>
+  nameWithType: SymbolVisitor<TArgument, TResult>
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public abstract class SymbolVisitor<TArgument, TResult>
+    typeParameters:
+    - id: TArgument
+    - id: TResult
+    content.vb: Public MustInherit Class SymbolVisitor(Of TArgument, TResult)
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult)
+  name.vb: SymbolVisitor(Of TArgument, TResult)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.Visit(Microsoft.CodeAnalysis.ISymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.Visit(Microsoft.CodeAnalysis.ISymbol,`0)
+  id: Visit(Microsoft.CodeAnalysis.ISymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: Visit(ISymbol?, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.Visit(ISymbol?, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.Visit(Microsoft.CodeAnalysis.ISymbol?, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult Visit(ISymbol? symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.ISymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function Visit(symbol As ISymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.Visit*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).Visit(ISymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).Visit(Microsoft.CodeAnalysis.ISymbol, TArgument)
+  name.vb: Visit(ISymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.DefaultVisit(Microsoft.CodeAnalysis.ISymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.DefaultVisit(Microsoft.CodeAnalysis.ISymbol,`0)
+  id: DefaultVisit(Microsoft.CodeAnalysis.ISymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: DefaultVisit(ISymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.DefaultVisit(ISymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.DefaultVisit(Microsoft.CodeAnalysis.ISymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult DefaultVisit(ISymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.ISymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function DefaultVisit(symbol As ISymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.DefaultVisit*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).DefaultVisit(ISymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).DefaultVisit(Microsoft.CodeAnalysis.ISymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitAlias(Microsoft.CodeAnalysis.IAliasSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitAlias(Microsoft.CodeAnalysis.IAliasSymbol,`0)
+  id: VisitAlias(Microsoft.CodeAnalysis.IAliasSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitAlias(IAliasSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitAlias(IAliasSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitAlias(Microsoft.CodeAnalysis.IAliasSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitAlias(IAliasSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IAliasSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitAlias(symbol As IAliasSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitAlias*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitAlias(IAliasSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitAlias(Microsoft.CodeAnalysis.IAliasSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitArrayType(Microsoft.CodeAnalysis.IArrayTypeSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitArrayType(Microsoft.CodeAnalysis.IArrayTypeSymbol,`0)
+  id: VisitArrayType(Microsoft.CodeAnalysis.IArrayTypeSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitArrayType(IArrayTypeSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitArrayType(IArrayTypeSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitArrayType(Microsoft.CodeAnalysis.IArrayTypeSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitArrayType(IArrayTypeSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IArrayTypeSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitArrayType(symbol As IArrayTypeSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitArrayType*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitArrayType(IArrayTypeSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitArrayType(Microsoft.CodeAnalysis.IArrayTypeSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitAssembly(Microsoft.CodeAnalysis.IAssemblySymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitAssembly(Microsoft.CodeAnalysis.IAssemblySymbol,`0)
+  id: VisitAssembly(Microsoft.CodeAnalysis.IAssemblySymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitAssembly(IAssemblySymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitAssembly(IAssemblySymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitAssembly(Microsoft.CodeAnalysis.IAssemblySymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitAssembly(IAssemblySymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IAssemblySymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitAssembly(symbol As IAssemblySymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitAssembly*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitAssembly(IAssemblySymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitAssembly(Microsoft.CodeAnalysis.IAssemblySymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitDiscard(Microsoft.CodeAnalysis.IDiscardSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitDiscard(Microsoft.CodeAnalysis.IDiscardSymbol,`0)
+  id: VisitDiscard(Microsoft.CodeAnalysis.IDiscardSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitDiscard(IDiscardSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitDiscard(IDiscardSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitDiscard(Microsoft.CodeAnalysis.IDiscardSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitDiscard(IDiscardSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IDiscardSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitDiscard(symbol As IDiscardSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitDiscard*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitDiscard(IDiscardSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitDiscard(Microsoft.CodeAnalysis.IDiscardSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitDynamicType(Microsoft.CodeAnalysis.IDynamicTypeSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitDynamicType(Microsoft.CodeAnalysis.IDynamicTypeSymbol,`0)
+  id: VisitDynamicType(Microsoft.CodeAnalysis.IDynamicTypeSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitDynamicType(IDynamicTypeSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitDynamicType(IDynamicTypeSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitDynamicType(Microsoft.CodeAnalysis.IDynamicTypeSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitDynamicType(IDynamicTypeSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IDynamicTypeSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitDynamicType(symbol As IDynamicTypeSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitDynamicType*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitDynamicType(IDynamicTypeSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitDynamicType(Microsoft.CodeAnalysis.IDynamicTypeSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitEvent(Microsoft.CodeAnalysis.IEventSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitEvent(Microsoft.CodeAnalysis.IEventSymbol,`0)
+  id: VisitEvent(Microsoft.CodeAnalysis.IEventSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitEvent(IEventSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitEvent(IEventSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitEvent(Microsoft.CodeAnalysis.IEventSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitEvent(IEventSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IEventSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitEvent(symbol As IEventSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitEvent*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitEvent(IEventSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitEvent(Microsoft.CodeAnalysis.IEventSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitField(Microsoft.CodeAnalysis.IFieldSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitField(Microsoft.CodeAnalysis.IFieldSymbol,`0)
+  id: VisitField(Microsoft.CodeAnalysis.IFieldSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitField(IFieldSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitField(IFieldSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitField(Microsoft.CodeAnalysis.IFieldSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitField(IFieldSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IFieldSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitField(symbol As IFieldSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitField*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitField(IFieldSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitField(Microsoft.CodeAnalysis.IFieldSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitLabel(Microsoft.CodeAnalysis.ILabelSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitLabel(Microsoft.CodeAnalysis.ILabelSymbol,`0)
+  id: VisitLabel(Microsoft.CodeAnalysis.ILabelSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitLabel(ILabelSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitLabel(ILabelSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitLabel(Microsoft.CodeAnalysis.ILabelSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitLabel(ILabelSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.ILabelSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitLabel(symbol As ILabelSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitLabel*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitLabel(ILabelSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitLabel(Microsoft.CodeAnalysis.ILabelSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitLocal(Microsoft.CodeAnalysis.ILocalSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitLocal(Microsoft.CodeAnalysis.ILocalSymbol,`0)
+  id: VisitLocal(Microsoft.CodeAnalysis.ILocalSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitLocal(ILocalSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitLocal(ILocalSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitLocal(Microsoft.CodeAnalysis.ILocalSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitLocal(ILocalSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.ILocalSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitLocal(symbol As ILocalSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitLocal*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitLocal(ILocalSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitLocal(Microsoft.CodeAnalysis.ILocalSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitMethod(Microsoft.CodeAnalysis.IMethodSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitMethod(Microsoft.CodeAnalysis.IMethodSymbol,`0)
+  id: VisitMethod(Microsoft.CodeAnalysis.IMethodSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitMethod(IMethodSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitMethod(IMethodSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitMethod(Microsoft.CodeAnalysis.IMethodSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitMethod(IMethodSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IMethodSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitMethod(symbol As IMethodSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitMethod*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitMethod(IMethodSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitMethod(Microsoft.CodeAnalysis.IMethodSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitModule(Microsoft.CodeAnalysis.IModuleSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitModule(Microsoft.CodeAnalysis.IModuleSymbol,`0)
+  id: VisitModule(Microsoft.CodeAnalysis.IModuleSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitModule(IModuleSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitModule(IModuleSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitModule(Microsoft.CodeAnalysis.IModuleSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitModule(IModuleSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IModuleSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitModule(symbol As IModuleSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitModule*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitModule(IModuleSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitModule(Microsoft.CodeAnalysis.IModuleSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitNamedType(Microsoft.CodeAnalysis.INamedTypeSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitNamedType(Microsoft.CodeAnalysis.INamedTypeSymbol,`0)
+  id: VisitNamedType(Microsoft.CodeAnalysis.INamedTypeSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitNamedType(INamedTypeSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitNamedType(INamedTypeSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitNamedType(Microsoft.CodeAnalysis.INamedTypeSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitNamedType(INamedTypeSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.INamedTypeSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitNamedType(symbol As INamedTypeSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitNamedType*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitNamedType(INamedTypeSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitNamedType(Microsoft.CodeAnalysis.INamedTypeSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitNamespace(Microsoft.CodeAnalysis.INamespaceSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitNamespace(Microsoft.CodeAnalysis.INamespaceSymbol,`0)
+  id: VisitNamespace(Microsoft.CodeAnalysis.INamespaceSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitNamespace(INamespaceSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitNamespace(INamespaceSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitNamespace(Microsoft.CodeAnalysis.INamespaceSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitNamespace(INamespaceSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.INamespaceSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitNamespace(symbol As INamespaceSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitNamespace*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitNamespace(INamespaceSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitNamespace(Microsoft.CodeAnalysis.INamespaceSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitParameter(Microsoft.CodeAnalysis.IParameterSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitParameter(Microsoft.CodeAnalysis.IParameterSymbol,`0)
+  id: VisitParameter(Microsoft.CodeAnalysis.IParameterSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitParameter(IParameterSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitParameter(IParameterSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitParameter(Microsoft.CodeAnalysis.IParameterSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitParameter(IParameterSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IParameterSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitParameter(symbol As IParameterSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitParameter*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitParameter(IParameterSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitParameter(Microsoft.CodeAnalysis.IParameterSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitPointerType(Microsoft.CodeAnalysis.IPointerTypeSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitPointerType(Microsoft.CodeAnalysis.IPointerTypeSymbol,`0)
+  id: VisitPointerType(Microsoft.CodeAnalysis.IPointerTypeSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitPointerType(IPointerTypeSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitPointerType(IPointerTypeSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitPointerType(Microsoft.CodeAnalysis.IPointerTypeSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitPointerType(IPointerTypeSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IPointerTypeSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitPointerType(symbol As IPointerTypeSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitPointerType*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitPointerType(IPointerTypeSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitPointerType(Microsoft.CodeAnalysis.IPointerTypeSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitFunctionPointerType(Microsoft.CodeAnalysis.IFunctionPointerTypeSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitFunctionPointerType(Microsoft.CodeAnalysis.IFunctionPointerTypeSymbol,`0)
+  id: VisitFunctionPointerType(Microsoft.CodeAnalysis.IFunctionPointerTypeSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitFunctionPointerType(IFunctionPointerTypeSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitFunctionPointerType(IFunctionPointerTypeSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitFunctionPointerType(Microsoft.CodeAnalysis.IFunctionPointerTypeSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitFunctionPointerType(IFunctionPointerTypeSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IFunctionPointerTypeSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitFunctionPointerType(symbol As IFunctionPointerTypeSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitFunctionPointerType*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitFunctionPointerType(IFunctionPointerTypeSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitFunctionPointerType(Microsoft.CodeAnalysis.IFunctionPointerTypeSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitProperty(Microsoft.CodeAnalysis.IPropertySymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitProperty(Microsoft.CodeAnalysis.IPropertySymbol,`0)
+  id: VisitProperty(Microsoft.CodeAnalysis.IPropertySymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitProperty(IPropertySymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitProperty(IPropertySymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitProperty(Microsoft.CodeAnalysis.IPropertySymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitProperty(IPropertySymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IPropertySymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitProperty(symbol As IPropertySymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitProperty*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitProperty(IPropertySymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitProperty(Microsoft.CodeAnalysis.IPropertySymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitRangeVariable(Microsoft.CodeAnalysis.IRangeVariableSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitRangeVariable(Microsoft.CodeAnalysis.IRangeVariableSymbol,`0)
+  id: VisitRangeVariable(Microsoft.CodeAnalysis.IRangeVariableSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitRangeVariable(IRangeVariableSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitRangeVariable(IRangeVariableSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitRangeVariable(Microsoft.CodeAnalysis.IRangeVariableSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitRangeVariable(IRangeVariableSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.IRangeVariableSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitRangeVariable(symbol As IRangeVariableSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitRangeVariable*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitRangeVariable(IRangeVariableSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitRangeVariable(Microsoft.CodeAnalysis.IRangeVariableSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitTypeParameter(Microsoft.CodeAnalysis.ITypeParameterSymbol,`0)
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitTypeParameter(Microsoft.CodeAnalysis.ITypeParameterSymbol,`0)
+  id: VisitTypeParameter(Microsoft.CodeAnalysis.ITypeParameterSymbol,`0)
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: VisitTypeParameter(ITypeParameterSymbol, TArgument)
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitTypeParameter(ITypeParameterSymbol, TArgument)
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitTypeParameter(Microsoft.CodeAnalysis.ITypeParameterSymbol, TArgument)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public virtual TResult VisitTypeParameter(ITypeParameterSymbol symbol, TArgument argument)
+    parameters:
+    - id: symbol
+      type: Microsoft.CodeAnalysis.ITypeParameterSymbol
+    - id: argument
+      type: '{TArgument}'
+    return:
+      type: '{TResult}'
+    content.vb: Public Overridable Function VisitTypeParameter(symbol As ITypeParameterSymbol, argument As TArgument) As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitTypeParameter*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitTypeParameter(ITypeParameterSymbol, TArgument)
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitTypeParameter(Microsoft.CodeAnalysis.ITypeParameterSymbol, TArgument)
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.#ctor
+  commentId: M:Microsoft.CodeAnalysis.SymbolVisitor`2.#ctor
+  id: '#ctor'
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: SymbolVisitor()
+  nameWithType: SymbolVisitor<TArgument, TResult>.SymbolVisitor()
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.SymbolVisitor()
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: protected SymbolVisitor()
+    content.vb: Protected Sub New()
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.#ctor*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).New()
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).New()
+  name.vb: New()
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.DefaultResult
+  commentId: P:Microsoft.CodeAnalysis.SymbolVisitor`2.DefaultResult
+  id: DefaultResult
+  parent: Microsoft.CodeAnalysis.SymbolVisitor`2
+  langs:
+  - csharp
+  - vb
+  name: DefaultResult
+  nameWithType: SymbolVisitor<TArgument, TResult>.DefaultResult
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.DefaultResult
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: protected abstract TResult DefaultResult { get; }
+    parameters: []
+    return:
+      type: '{TResult}'
+    content.vb: Protected MustOverride ReadOnly Property DefaultResult As TResult
+  overload: Microsoft.CodeAnalysis.SymbolVisitor`2.DefaultResult*
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).DefaultResult
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).DefaultResult
+references:
+- uid: Microsoft.CodeAnalysis
+  commentId: N:Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis
+  nameWithType: Microsoft.CodeAnalysis
+  fullName: Microsoft.CodeAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.Visit*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.Visit
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_Visit_Microsoft_CodeAnalysis_ISymbol__0_
+  name: Visit
+  nameWithType: SymbolVisitor<TArgument, TResult>.Visit
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.Visit
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).Visit
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).Visit
+- uid: Microsoft.CodeAnalysis.ISymbol
+  commentId: T:Microsoft.CodeAnalysis.ISymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html
+  name: ISymbol
+  nameWithType: ISymbol
+  fullName: Microsoft.CodeAnalysis.ISymbol
+- uid: '{TArgument}'
+  commentId: '!:TArgument'
+  definition: TArgument
+  name: TArgument
+  nameWithType: TArgument
+  fullName: TArgument
+- uid: '{TResult}'
+  commentId: '!:TResult'
+  definition: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: TArgument
+  name: TArgument
+  nameWithType: TArgument
+  fullName: TArgument
+- uid: TResult
+  name: TResult
+  nameWithType: TResult
+  fullName: TResult
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.DefaultVisit*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.DefaultVisit
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_DefaultVisit_Microsoft_CodeAnalysis_ISymbol__0_
+  name: DefaultVisit
+  nameWithType: SymbolVisitor<TArgument, TResult>.DefaultVisit
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.DefaultVisit
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).DefaultVisit
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).DefaultVisit
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitAlias*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitAlias
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitAlias_Microsoft_CodeAnalysis_IAliasSymbol__0_
+  name: VisitAlias
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitAlias
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitAlias
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitAlias
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitAlias
+- uid: Microsoft.CodeAnalysis.IAliasSymbol
+  commentId: T:Microsoft.CodeAnalysis.IAliasSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IAliasSymbol.html
+  name: IAliasSymbol
+  nameWithType: IAliasSymbol
+  fullName: Microsoft.CodeAnalysis.IAliasSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitArrayType*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitArrayType
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitArrayType_Microsoft_CodeAnalysis_IArrayTypeSymbol__0_
+  name: VisitArrayType
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitArrayType
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitArrayType
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitArrayType
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitArrayType
+- uid: Microsoft.CodeAnalysis.IArrayTypeSymbol
+  commentId: T:Microsoft.CodeAnalysis.IArrayTypeSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IArrayTypeSymbol.html
+  name: IArrayTypeSymbol
+  nameWithType: IArrayTypeSymbol
+  fullName: Microsoft.CodeAnalysis.IArrayTypeSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitAssembly*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitAssembly
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitAssembly_Microsoft_CodeAnalysis_IAssemblySymbol__0_
+  name: VisitAssembly
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitAssembly
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitAssembly
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitAssembly
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitAssembly
+- uid: Microsoft.CodeAnalysis.IAssemblySymbol
+  commentId: T:Microsoft.CodeAnalysis.IAssemblySymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IAssemblySymbol.html
+  name: IAssemblySymbol
+  nameWithType: IAssemblySymbol
+  fullName: Microsoft.CodeAnalysis.IAssemblySymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitDiscard*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitDiscard
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitDiscard_Microsoft_CodeAnalysis_IDiscardSymbol__0_
+  name: VisitDiscard
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitDiscard
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitDiscard
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitDiscard
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitDiscard
+- uid: Microsoft.CodeAnalysis.IDiscardSymbol
+  commentId: T:Microsoft.CodeAnalysis.IDiscardSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IDiscardSymbol.html
+  name: IDiscardSymbol
+  nameWithType: IDiscardSymbol
+  fullName: Microsoft.CodeAnalysis.IDiscardSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitDynamicType*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitDynamicType
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitDynamicType_Microsoft_CodeAnalysis_IDynamicTypeSymbol__0_
+  name: VisitDynamicType
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitDynamicType
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitDynamicType
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitDynamicType
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitDynamicType
+- uid: Microsoft.CodeAnalysis.IDynamicTypeSymbol
+  commentId: T:Microsoft.CodeAnalysis.IDynamicTypeSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IDynamicTypeSymbol.html
+  name: IDynamicTypeSymbol
+  nameWithType: IDynamicTypeSymbol
+  fullName: Microsoft.CodeAnalysis.IDynamicTypeSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitEvent*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitEvent
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitEvent_Microsoft_CodeAnalysis_IEventSymbol__0_
+  name: VisitEvent
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitEvent
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitEvent
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitEvent
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitEvent
+- uid: Microsoft.CodeAnalysis.IEventSymbol
+  commentId: T:Microsoft.CodeAnalysis.IEventSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IEventSymbol.html
+  name: IEventSymbol
+  nameWithType: IEventSymbol
+  fullName: Microsoft.CodeAnalysis.IEventSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitField*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitField
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitField_Microsoft_CodeAnalysis_IFieldSymbol__0_
+  name: VisitField
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitField
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitField
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitField
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitField
+- uid: Microsoft.CodeAnalysis.IFieldSymbol
+  commentId: T:Microsoft.CodeAnalysis.IFieldSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IFieldSymbol.html
+  name: IFieldSymbol
+  nameWithType: IFieldSymbol
+  fullName: Microsoft.CodeAnalysis.IFieldSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitLabel*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitLabel
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitLabel_Microsoft_CodeAnalysis_ILabelSymbol__0_
+  name: VisitLabel
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitLabel
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitLabel
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitLabel
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitLabel
+- uid: Microsoft.CodeAnalysis.ILabelSymbol
+  commentId: T:Microsoft.CodeAnalysis.ILabelSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ILabelSymbol.html
+  name: ILabelSymbol
+  nameWithType: ILabelSymbol
+  fullName: Microsoft.CodeAnalysis.ILabelSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitLocal*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitLocal
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitLocal_Microsoft_CodeAnalysis_ILocalSymbol__0_
+  name: VisitLocal
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitLocal
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitLocal
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitLocal
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitLocal
+- uid: Microsoft.CodeAnalysis.ILocalSymbol
+  commentId: T:Microsoft.CodeAnalysis.ILocalSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ILocalSymbol.html
+  name: ILocalSymbol
+  nameWithType: ILocalSymbol
+  fullName: Microsoft.CodeAnalysis.ILocalSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitMethod*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitMethod
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitMethod_Microsoft_CodeAnalysis_IMethodSymbol__0_
+  name: VisitMethod
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitMethod
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitMethod
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitMethod
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitMethod
+- uid: Microsoft.CodeAnalysis.IMethodSymbol
+  commentId: T:Microsoft.CodeAnalysis.IMethodSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IMethodSymbol.html
+  name: IMethodSymbol
+  nameWithType: IMethodSymbol
+  fullName: Microsoft.CodeAnalysis.IMethodSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitModule*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitModule
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitModule_Microsoft_CodeAnalysis_IModuleSymbol__0_
+  name: VisitModule
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitModule
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitModule
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitModule
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitModule
+- uid: Microsoft.CodeAnalysis.IModuleSymbol
+  commentId: T:Microsoft.CodeAnalysis.IModuleSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IModuleSymbol.html
+  name: IModuleSymbol
+  nameWithType: IModuleSymbol
+  fullName: Microsoft.CodeAnalysis.IModuleSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitNamedType*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitNamedType
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitNamedType_Microsoft_CodeAnalysis_INamedTypeSymbol__0_
+  name: VisitNamedType
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitNamedType
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitNamedType
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitNamedType
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitNamedType
+- uid: Microsoft.CodeAnalysis.INamedTypeSymbol
+  commentId: T:Microsoft.CodeAnalysis.INamedTypeSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.INamedTypeSymbol.html
+  name: INamedTypeSymbol
+  nameWithType: INamedTypeSymbol
+  fullName: Microsoft.CodeAnalysis.INamedTypeSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitNamespace*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitNamespace
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitNamespace_Microsoft_CodeAnalysis_INamespaceSymbol__0_
+  name: VisitNamespace
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitNamespace
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitNamespace
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitNamespace
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitNamespace
+- uid: Microsoft.CodeAnalysis.INamespaceSymbol
+  commentId: T:Microsoft.CodeAnalysis.INamespaceSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.INamespaceSymbol.html
+  name: INamespaceSymbol
+  nameWithType: INamespaceSymbol
+  fullName: Microsoft.CodeAnalysis.INamespaceSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitParameter*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitParameter
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitParameter_Microsoft_CodeAnalysis_IParameterSymbol__0_
+  name: VisitParameter
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitParameter
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitParameter
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitParameter
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitParameter
+- uid: Microsoft.CodeAnalysis.IParameterSymbol
+  commentId: T:Microsoft.CodeAnalysis.IParameterSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IParameterSymbol.html
+  name: IParameterSymbol
+  nameWithType: IParameterSymbol
+  fullName: Microsoft.CodeAnalysis.IParameterSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitPointerType*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitPointerType
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitPointerType_Microsoft_CodeAnalysis_IPointerTypeSymbol__0_
+  name: VisitPointerType
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitPointerType
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitPointerType
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitPointerType
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitPointerType
+- uid: Microsoft.CodeAnalysis.IPointerTypeSymbol
+  commentId: T:Microsoft.CodeAnalysis.IPointerTypeSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IPointerTypeSymbol.html
+  name: IPointerTypeSymbol
+  nameWithType: IPointerTypeSymbol
+  fullName: Microsoft.CodeAnalysis.IPointerTypeSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitFunctionPointerType*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitFunctionPointerType
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitFunctionPointerType_Microsoft_CodeAnalysis_IFunctionPointerTypeSymbol__0_
+  name: VisitFunctionPointerType
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitFunctionPointerType
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitFunctionPointerType
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitFunctionPointerType
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitFunctionPointerType
+- uid: Microsoft.CodeAnalysis.IFunctionPointerTypeSymbol
+  commentId: T:Microsoft.CodeAnalysis.IFunctionPointerTypeSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IFunctionPointerTypeSymbol.html
+  name: IFunctionPointerTypeSymbol
+  nameWithType: IFunctionPointerTypeSymbol
+  fullName: Microsoft.CodeAnalysis.IFunctionPointerTypeSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitProperty*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitProperty
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitProperty_Microsoft_CodeAnalysis_IPropertySymbol__0_
+  name: VisitProperty
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitProperty
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitProperty
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitProperty
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitProperty
+- uid: Microsoft.CodeAnalysis.IPropertySymbol
+  commentId: T:Microsoft.CodeAnalysis.IPropertySymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IPropertySymbol.html
+  name: IPropertySymbol
+  nameWithType: IPropertySymbol
+  fullName: Microsoft.CodeAnalysis.IPropertySymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitRangeVariable*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitRangeVariable
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitRangeVariable_Microsoft_CodeAnalysis_IRangeVariableSymbol__0_
+  name: VisitRangeVariable
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitRangeVariable
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitRangeVariable
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitRangeVariable
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitRangeVariable
+- uid: Microsoft.CodeAnalysis.IRangeVariableSymbol
+  commentId: T:Microsoft.CodeAnalysis.IRangeVariableSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.IRangeVariableSymbol.html
+  name: IRangeVariableSymbol
+  nameWithType: IRangeVariableSymbol
+  fullName: Microsoft.CodeAnalysis.IRangeVariableSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.VisitTypeParameter*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.VisitTypeParameter
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_VisitTypeParameter_Microsoft_CodeAnalysis_ITypeParameterSymbol__0_
+  name: VisitTypeParameter
+  nameWithType: SymbolVisitor<TArgument, TResult>.VisitTypeParameter
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.VisitTypeParameter
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).VisitTypeParameter
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).VisitTypeParameter
+- uid: Microsoft.CodeAnalysis.ITypeParameterSymbol
+  commentId: T:Microsoft.CodeAnalysis.ITypeParameterSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ITypeParameterSymbol.html
+  name: ITypeParameterSymbol
+  nameWithType: ITypeParameterSymbol
+  fullName: Microsoft.CodeAnalysis.ITypeParameterSymbol
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.#ctor*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.#ctor
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2__ctor
+  name: SymbolVisitor
+  nameWithType: SymbolVisitor<TArgument, TResult>.SymbolVisitor
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.SymbolVisitor
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).New
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).New
+  name.vb: New
+- uid: Microsoft.CodeAnalysis.SymbolVisitor`2.DefaultResult*
+  commentId: Overload:Microsoft.CodeAnalysis.SymbolVisitor`2.DefaultResult
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SymbolVisitor-2.html#Microsoft_CodeAnalysis_SymbolVisitor_2_DefaultResult
+  name: DefaultResult
+  nameWithType: SymbolVisitor<TArgument, TResult>.DefaultResult
+  fullName: Microsoft.CodeAnalysis.SymbolVisitor<TArgument, TResult>.DefaultResult
+  nameWithType.vb: SymbolVisitor(Of TArgument, TResult).DefaultResult
+  fullName.vb: Microsoft.CodeAnalysis.SymbolVisitor(Of TArgument, TResult).DefaultResult

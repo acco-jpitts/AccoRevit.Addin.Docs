@@ -1,0 +1,2779 @@
+### YamlMime:ManagedReference
+items:
+- uid: Newtonsoft.Json.JsonReader
+  commentId: T:Newtonsoft.Json.JsonReader
+  id: JsonReader
+  parent: Newtonsoft.Json
+  children:
+  - Newtonsoft.Json.JsonReader.#ctor
+  - Newtonsoft.Json.JsonReader.Close
+  - Newtonsoft.Json.JsonReader.CloseInput
+  - Newtonsoft.Json.JsonReader.Culture
+  - Newtonsoft.Json.JsonReader.CurrentState
+  - Newtonsoft.Json.JsonReader.DateFormatString
+  - Newtonsoft.Json.JsonReader.DateParseHandling
+  - Newtonsoft.Json.JsonReader.DateTimeZoneHandling
+  - Newtonsoft.Json.JsonReader.Depth
+  - Newtonsoft.Json.JsonReader.Dispose(System.Boolean)
+  - Newtonsoft.Json.JsonReader.FloatParseHandling
+  - Newtonsoft.Json.JsonReader.MaxDepth
+  - Newtonsoft.Json.JsonReader.Path
+  - Newtonsoft.Json.JsonReader.QuoteChar
+  - Newtonsoft.Json.JsonReader.Read
+  - Newtonsoft.Json.JsonReader.ReadAsBoolean
+  - Newtonsoft.Json.JsonReader.ReadAsBooleanAsync(System.Threading.CancellationToken)
+  - Newtonsoft.Json.JsonReader.ReadAsBytes
+  - Newtonsoft.Json.JsonReader.ReadAsBytesAsync(System.Threading.CancellationToken)
+  - Newtonsoft.Json.JsonReader.ReadAsDateTime
+  - Newtonsoft.Json.JsonReader.ReadAsDateTimeAsync(System.Threading.CancellationToken)
+  - Newtonsoft.Json.JsonReader.ReadAsDateTimeOffset
+  - Newtonsoft.Json.JsonReader.ReadAsDateTimeOffsetAsync(System.Threading.CancellationToken)
+  - Newtonsoft.Json.JsonReader.ReadAsDecimal
+  - Newtonsoft.Json.JsonReader.ReadAsDecimalAsync(System.Threading.CancellationToken)
+  - Newtonsoft.Json.JsonReader.ReadAsDouble
+  - Newtonsoft.Json.JsonReader.ReadAsDoubleAsync(System.Threading.CancellationToken)
+  - Newtonsoft.Json.JsonReader.ReadAsInt32
+  - Newtonsoft.Json.JsonReader.ReadAsInt32Async(System.Threading.CancellationToken)
+  - Newtonsoft.Json.JsonReader.ReadAsString
+  - Newtonsoft.Json.JsonReader.ReadAsStringAsync(System.Threading.CancellationToken)
+  - Newtonsoft.Json.JsonReader.ReadAsync(System.Threading.CancellationToken)
+  - Newtonsoft.Json.JsonReader.SetStateBasedOnCurrent
+  - Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken)
+  - Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken,System.Object)
+  - Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken,System.Object,System.Boolean)
+  - Newtonsoft.Json.JsonReader.Skip
+  - Newtonsoft.Json.JsonReader.SkipAsync(System.Threading.CancellationToken)
+  - Newtonsoft.Json.JsonReader.SupportMultipleContent
+  - Newtonsoft.Json.JsonReader.TokenType
+  - Newtonsoft.Json.JsonReader.Value
+  - Newtonsoft.Json.JsonReader.ValueType
+  langs:
+  - csharp
+  - vb
+  name: JsonReader
+  nameWithType: JsonReader
+  fullName: Newtonsoft.Json.JsonReader
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: 'public abstract class JsonReader : IAsyncDisposable, IDisposable'
+    content.vb: Public MustInherit Class JsonReader Implements IAsyncDisposable, IDisposable
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - Newtonsoft.Json.Bson.BsonReader
+  - Newtonsoft.Json.JsonTextReader
+  - Newtonsoft.Json.JsonValidatingReader
+  - Newtonsoft.Json.Linq.JTokenReader
+  implements:
+  - System.IAsyncDisposable
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Newtonsoft.Json.JsonReader.ReadAsync(System.Threading.CancellationToken)
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsync(System.Threading.CancellationToken)
+  id: ReadAsync(System.Threading.CancellationToken)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsync(CancellationToken)
+  nameWithType: JsonReader.ReadAsync(CancellationToken)
+  fullName: Newtonsoft.Json.JsonReader.ReadAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual Task<bool> ReadAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Boolean}
+    content.vb: Public Overridable Function ReadAsync(cancellationToken As CancellationToken = Nothing) As Task(Of Boolean)
+  overload: Newtonsoft.Json.JsonReader.ReadAsync*
+- uid: Newtonsoft.Json.JsonReader.SkipAsync(System.Threading.CancellationToken)
+  commentId: M:Newtonsoft.Json.JsonReader.SkipAsync(System.Threading.CancellationToken)
+  id: SkipAsync(System.Threading.CancellationToken)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: SkipAsync(CancellationToken)
+  nameWithType: JsonReader.SkipAsync(CancellationToken)
+  fullName: Newtonsoft.Json.JsonReader.SkipAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public Task SkipAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SkipAsync(cancellationToken As CancellationToken = Nothing) As Task
+  overload: Newtonsoft.Json.JsonReader.SkipAsync*
+- uid: Newtonsoft.Json.JsonReader.ReadAsBooleanAsync(System.Threading.CancellationToken)
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsBooleanAsync(System.Threading.CancellationToken)
+  id: ReadAsBooleanAsync(System.Threading.CancellationToken)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsBooleanAsync(CancellationToken)
+  nameWithType: JsonReader.ReadAsBooleanAsync(CancellationToken)
+  fullName: Newtonsoft.Json.JsonReader.ReadAsBooleanAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual Task<bool?> ReadAsBooleanAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Nullable{System.Boolean}}
+    content.vb: Public Overridable Function ReadAsBooleanAsync(cancellationToken As CancellationToken = Nothing) As Task(Of Boolean?)
+  overload: Newtonsoft.Json.JsonReader.ReadAsBooleanAsync*
+- uid: Newtonsoft.Json.JsonReader.ReadAsBytesAsync(System.Threading.CancellationToken)
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsBytesAsync(System.Threading.CancellationToken)
+  id: ReadAsBytesAsync(System.Threading.CancellationToken)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsBytesAsync(CancellationToken)
+  nameWithType: JsonReader.ReadAsBytesAsync(CancellationToken)
+  fullName: Newtonsoft.Json.JsonReader.ReadAsBytesAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual Task<byte[]?> ReadAsBytesAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Byte[]}
+    content.vb: Public Overridable Function ReadAsBytesAsync(cancellationToken As CancellationToken = Nothing) As Task(Of Byte())
+  overload: Newtonsoft.Json.JsonReader.ReadAsBytesAsync*
+- uid: Newtonsoft.Json.JsonReader.ReadAsDateTimeAsync(System.Threading.CancellationToken)
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsDateTimeAsync(System.Threading.CancellationToken)
+  id: ReadAsDateTimeAsync(System.Threading.CancellationToken)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsDateTimeAsync(CancellationToken)
+  nameWithType: JsonReader.ReadAsDateTimeAsync(CancellationToken)
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDateTimeAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual Task<DateTime?> ReadAsDateTimeAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Nullable{System.DateTime}}
+    content.vb: Public Overridable Function ReadAsDateTimeAsync(cancellationToken As CancellationToken = Nothing) As Task(Of Date?)
+  overload: Newtonsoft.Json.JsonReader.ReadAsDateTimeAsync*
+- uid: Newtonsoft.Json.JsonReader.ReadAsDateTimeOffsetAsync(System.Threading.CancellationToken)
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsDateTimeOffsetAsync(System.Threading.CancellationToken)
+  id: ReadAsDateTimeOffsetAsync(System.Threading.CancellationToken)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsDateTimeOffsetAsync(CancellationToken)
+  nameWithType: JsonReader.ReadAsDateTimeOffsetAsync(CancellationToken)
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDateTimeOffsetAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual Task<DateTimeOffset?> ReadAsDateTimeOffsetAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Nullable{System.DateTimeOffset}}
+    content.vb: Public Overridable Function ReadAsDateTimeOffsetAsync(cancellationToken As CancellationToken = Nothing) As Task(Of DateTimeOffset?)
+  overload: Newtonsoft.Json.JsonReader.ReadAsDateTimeOffsetAsync*
+- uid: Newtonsoft.Json.JsonReader.ReadAsDecimalAsync(System.Threading.CancellationToken)
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsDecimalAsync(System.Threading.CancellationToken)
+  id: ReadAsDecimalAsync(System.Threading.CancellationToken)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsDecimalAsync(CancellationToken)
+  nameWithType: JsonReader.ReadAsDecimalAsync(CancellationToken)
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDecimalAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual Task<decimal?> ReadAsDecimalAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Nullable{System.Decimal}}
+    content.vb: Public Overridable Function ReadAsDecimalAsync(cancellationToken As CancellationToken = Nothing) As Task(Of Decimal?)
+  overload: Newtonsoft.Json.JsonReader.ReadAsDecimalAsync*
+- uid: Newtonsoft.Json.JsonReader.ReadAsDoubleAsync(System.Threading.CancellationToken)
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsDoubleAsync(System.Threading.CancellationToken)
+  id: ReadAsDoubleAsync(System.Threading.CancellationToken)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsDoubleAsync(CancellationToken)
+  nameWithType: JsonReader.ReadAsDoubleAsync(CancellationToken)
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDoubleAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual Task<double?> ReadAsDoubleAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Nullable{System.Double}}
+    content.vb: Public Overridable Function ReadAsDoubleAsync(cancellationToken As CancellationToken = Nothing) As Task(Of Double?)
+  overload: Newtonsoft.Json.JsonReader.ReadAsDoubleAsync*
+- uid: Newtonsoft.Json.JsonReader.ReadAsInt32Async(System.Threading.CancellationToken)
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsInt32Async(System.Threading.CancellationToken)
+  id: ReadAsInt32Async(System.Threading.CancellationToken)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsInt32Async(CancellationToken)
+  nameWithType: JsonReader.ReadAsInt32Async(CancellationToken)
+  fullName: Newtonsoft.Json.JsonReader.ReadAsInt32Async(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual Task<int?> ReadAsInt32Async(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.Nullable{System.Int32}}
+    content.vb: Public Overridable Function ReadAsInt32Async(cancellationToken As CancellationToken = Nothing) As Task(Of Integer?)
+  overload: Newtonsoft.Json.JsonReader.ReadAsInt32Async*
+- uid: Newtonsoft.Json.JsonReader.ReadAsStringAsync(System.Threading.CancellationToken)
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsStringAsync(System.Threading.CancellationToken)
+  id: ReadAsStringAsync(System.Threading.CancellationToken)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsStringAsync(CancellationToken)
+  nameWithType: JsonReader.ReadAsStringAsync(CancellationToken)
+  fullName: Newtonsoft.Json.JsonReader.ReadAsStringAsync(System.Threading.CancellationToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual Task<string?> ReadAsStringAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+    content.vb: Public Overridable Function ReadAsStringAsync(cancellationToken As CancellationToken = Nothing) As Task(Of String)
+  overload: Newtonsoft.Json.JsonReader.ReadAsStringAsync*
+- uid: Newtonsoft.Json.JsonReader.#ctor
+  commentId: M:Newtonsoft.Json.JsonReader.#ctor
+  id: '#ctor'
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: JsonReader()
+  nameWithType: JsonReader.JsonReader()
+  fullName: Newtonsoft.Json.JsonReader.JsonReader()
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: protected JsonReader()
+    content.vb: Protected Sub New()
+  overload: Newtonsoft.Json.JsonReader.#ctor*
+  nameWithType.vb: JsonReader.New()
+  fullName.vb: Newtonsoft.Json.JsonReader.New()
+  name.vb: New()
+- uid: Newtonsoft.Json.JsonReader.Read
+  commentId: M:Newtonsoft.Json.JsonReader.Read
+  id: Read
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Read()
+  nameWithType: JsonReader.Read()
+  fullName: Newtonsoft.Json.JsonReader.Read()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public abstract bool Read()
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride Function Read() As Boolean
+  overload: Newtonsoft.Json.JsonReader.Read*
+- uid: Newtonsoft.Json.JsonReader.ReadAsInt32
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsInt32
+  id: ReadAsInt32
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsInt32()
+  nameWithType: JsonReader.ReadAsInt32()
+  fullName: Newtonsoft.Json.JsonReader.ReadAsInt32()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual int? ReadAsInt32()
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Overridable Function ReadAsInt32() As Integer?
+  overload: Newtonsoft.Json.JsonReader.ReadAsInt32*
+- uid: Newtonsoft.Json.JsonReader.ReadAsString
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsString
+  id: ReadAsString
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsString()
+  nameWithType: JsonReader.ReadAsString()
+  fullName: Newtonsoft.Json.JsonReader.ReadAsString()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual string? ReadAsString()
+    return:
+      type: System.String
+    content.vb: Public Overridable Function ReadAsString() As String
+  overload: Newtonsoft.Json.JsonReader.ReadAsString*
+- uid: Newtonsoft.Json.JsonReader.ReadAsBytes
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsBytes
+  id: ReadAsBytes
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsBytes()
+  nameWithType: JsonReader.ReadAsBytes()
+  fullName: Newtonsoft.Json.JsonReader.ReadAsBytes()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual byte[]? ReadAsBytes()
+    return:
+      type: System.Byte[]
+    content.vb: Public Overridable Function ReadAsBytes() As Byte()
+  overload: Newtonsoft.Json.JsonReader.ReadAsBytes*
+- uid: Newtonsoft.Json.JsonReader.ReadAsDouble
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsDouble
+  id: ReadAsDouble
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsDouble()
+  nameWithType: JsonReader.ReadAsDouble()
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDouble()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual double? ReadAsDouble()
+    return:
+      type: System.Nullable{System.Double}
+    content.vb: Public Overridable Function ReadAsDouble() As Double?
+  overload: Newtonsoft.Json.JsonReader.ReadAsDouble*
+- uid: Newtonsoft.Json.JsonReader.ReadAsBoolean
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsBoolean
+  id: ReadAsBoolean
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsBoolean()
+  nameWithType: JsonReader.ReadAsBoolean()
+  fullName: Newtonsoft.Json.JsonReader.ReadAsBoolean()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual bool? ReadAsBoolean()
+    return:
+      type: System.Nullable{System.Boolean}
+    content.vb: Public Overridable Function ReadAsBoolean() As Boolean?
+  overload: Newtonsoft.Json.JsonReader.ReadAsBoolean*
+- uid: Newtonsoft.Json.JsonReader.ReadAsDecimal
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsDecimal
+  id: ReadAsDecimal
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsDecimal()
+  nameWithType: JsonReader.ReadAsDecimal()
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDecimal()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual decimal? ReadAsDecimal()
+    return:
+      type: System.Nullable{System.Decimal}
+    content.vb: Public Overridable Function ReadAsDecimal() As Decimal?
+  overload: Newtonsoft.Json.JsonReader.ReadAsDecimal*
+- uid: Newtonsoft.Json.JsonReader.ReadAsDateTime
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsDateTime
+  id: ReadAsDateTime
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsDateTime()
+  nameWithType: JsonReader.ReadAsDateTime()
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDateTime()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual DateTime? ReadAsDateTime()
+    return:
+      type: System.Nullable{System.DateTime}
+    content.vb: Public Overridable Function ReadAsDateTime() As Date?
+  overload: Newtonsoft.Json.JsonReader.ReadAsDateTime*
+- uid: Newtonsoft.Json.JsonReader.ReadAsDateTimeOffset
+  commentId: M:Newtonsoft.Json.JsonReader.ReadAsDateTimeOffset
+  id: ReadAsDateTimeOffset
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ReadAsDateTimeOffset()
+  nameWithType: JsonReader.ReadAsDateTimeOffset()
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDateTimeOffset()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual DateTimeOffset? ReadAsDateTimeOffset()
+    return:
+      type: System.Nullable{System.DateTimeOffset}
+    content.vb: Public Overridable Function ReadAsDateTimeOffset() As DateTimeOffset?
+  overload: Newtonsoft.Json.JsonReader.ReadAsDateTimeOffset*
+- uid: Newtonsoft.Json.JsonReader.Skip
+  commentId: M:Newtonsoft.Json.JsonReader.Skip
+  id: Skip
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Skip()
+  nameWithType: JsonReader.Skip()
+  fullName: Newtonsoft.Json.JsonReader.Skip()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public void Skip()
+    content.vb: Public Sub Skip()
+  overload: Newtonsoft.Json.JsonReader.Skip*
+- uid: Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken)
+  commentId: M:Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken)
+  id: SetToken(Newtonsoft.Json.JsonToken)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: SetToken(JsonToken)
+  nameWithType: JsonReader.SetToken(JsonToken)
+  fullName: Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: protected void SetToken(JsonToken newToken)
+    parameters:
+    - id: newToken
+      type: Newtonsoft.Json.JsonToken
+    content.vb: Protected Sub SetToken(newToken As JsonToken)
+  overload: Newtonsoft.Json.JsonReader.SetToken*
+- uid: Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken,System.Object)
+  commentId: M:Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken,System.Object)
+  id: SetToken(Newtonsoft.Json.JsonToken,System.Object)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: SetToken(JsonToken, object?)
+  nameWithType: JsonReader.SetToken(JsonToken, object?)
+  fullName: Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken, object?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: protected void SetToken(JsonToken newToken, object? value)
+    parameters:
+    - id: newToken
+      type: Newtonsoft.Json.JsonToken
+    - id: value
+      type: System.Object
+    content.vb: Protected Sub SetToken(newToken As JsonToken, value As Object)
+  overload: Newtonsoft.Json.JsonReader.SetToken*
+  nameWithType.vb: JsonReader.SetToken(JsonToken, Object)
+  fullName.vb: Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken, Object)
+  name.vb: SetToken(JsonToken, Object)
+- uid: Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken,System.Object,System.Boolean)
+  commentId: M:Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken,System.Object,System.Boolean)
+  id: SetToken(Newtonsoft.Json.JsonToken,System.Object,System.Boolean)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: SetToken(JsonToken, object?, bool)
+  nameWithType: JsonReader.SetToken(JsonToken, object?, bool)
+  fullName: Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken, object?, bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: protected void SetToken(JsonToken newToken, object? value, bool updateIndex)
+    parameters:
+    - id: newToken
+      type: Newtonsoft.Json.JsonToken
+    - id: value
+      type: System.Object
+    - id: updateIndex
+      type: System.Boolean
+    content.vb: Protected Sub SetToken(newToken As JsonToken, value As Object, updateIndex As Boolean)
+  overload: Newtonsoft.Json.JsonReader.SetToken*
+  nameWithType.vb: JsonReader.SetToken(JsonToken, Object, Boolean)
+  fullName.vb: Newtonsoft.Json.JsonReader.SetToken(Newtonsoft.Json.JsonToken, Object, Boolean)
+  name.vb: SetToken(JsonToken, Object, Boolean)
+- uid: Newtonsoft.Json.JsonReader.SetStateBasedOnCurrent
+  commentId: M:Newtonsoft.Json.JsonReader.SetStateBasedOnCurrent
+  id: SetStateBasedOnCurrent
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: SetStateBasedOnCurrent()
+  nameWithType: JsonReader.SetStateBasedOnCurrent()
+  fullName: Newtonsoft.Json.JsonReader.SetStateBasedOnCurrent()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: protected void SetStateBasedOnCurrent()
+    content.vb: Protected Sub SetStateBasedOnCurrent()
+  overload: Newtonsoft.Json.JsonReader.SetStateBasedOnCurrent*
+- uid: Newtonsoft.Json.JsonReader.Dispose(System.Boolean)
+  commentId: M:Newtonsoft.Json.JsonReader.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: JsonReader.Dispose(bool)
+  fullName: Newtonsoft.Json.JsonReader.Dispose(bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: Newtonsoft.Json.JsonReader.Dispose*
+  nameWithType.vb: JsonReader.Dispose(Boolean)
+  fullName.vb: Newtonsoft.Json.JsonReader.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: Newtonsoft.Json.JsonReader.Close
+  commentId: M:Newtonsoft.Json.JsonReader.Close
+  id: Close
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: JsonReader.Close()
+  fullName: Newtonsoft.Json.JsonReader.Close()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual void Close()
+    content.vb: Public Overridable Sub Close()
+  overload: Newtonsoft.Json.JsonReader.Close*
+- uid: Newtonsoft.Json.JsonReader.CurrentState
+  commentId: P:Newtonsoft.Json.JsonReader.CurrentState
+  id: CurrentState
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: CurrentState
+  nameWithType: JsonReader.CurrentState
+  fullName: Newtonsoft.Json.JsonReader.CurrentState
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: protected JsonReader.State CurrentState { get; }
+    parameters: []
+    return:
+      type: Newtonsoft.Json.JsonReader.State
+    content.vb: Protected ReadOnly Property CurrentState As JsonReader.State
+  overload: Newtonsoft.Json.JsonReader.CurrentState*
+- uid: Newtonsoft.Json.JsonReader.CloseInput
+  commentId: P:Newtonsoft.Json.JsonReader.CloseInput
+  id: CloseInput
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: CloseInput
+  nameWithType: JsonReader.CloseInput
+  fullName: Newtonsoft.Json.JsonReader.CloseInput
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public bool CloseInput { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property CloseInput As Boolean
+  overload: Newtonsoft.Json.JsonReader.CloseInput*
+- uid: Newtonsoft.Json.JsonReader.SupportMultipleContent
+  commentId: P:Newtonsoft.Json.JsonReader.SupportMultipleContent
+  id: SupportMultipleContent
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: SupportMultipleContent
+  nameWithType: JsonReader.SupportMultipleContent
+  fullName: Newtonsoft.Json.JsonReader.SupportMultipleContent
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public bool SupportMultipleContent { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property SupportMultipleContent As Boolean
+  overload: Newtonsoft.Json.JsonReader.SupportMultipleContent*
+- uid: Newtonsoft.Json.JsonReader.QuoteChar
+  commentId: P:Newtonsoft.Json.JsonReader.QuoteChar
+  id: QuoteChar
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: QuoteChar
+  nameWithType: JsonReader.QuoteChar
+  fullName: Newtonsoft.Json.JsonReader.QuoteChar
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual char QuoteChar { get; protected set; }
+    parameters: []
+    return:
+      type: System.Char
+    content.vb: Public Overridable Property QuoteChar As Char
+  overload: Newtonsoft.Json.JsonReader.QuoteChar*
+- uid: Newtonsoft.Json.JsonReader.DateTimeZoneHandling
+  commentId: P:Newtonsoft.Json.JsonReader.DateTimeZoneHandling
+  id: DateTimeZoneHandling
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: DateTimeZoneHandling
+  nameWithType: JsonReader.DateTimeZoneHandling
+  fullName: Newtonsoft.Json.JsonReader.DateTimeZoneHandling
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public DateTimeZoneHandling DateTimeZoneHandling { get; set; }
+    parameters: []
+    return:
+      type: Newtonsoft.Json.DateTimeZoneHandling
+    content.vb: Public Property DateTimeZoneHandling As DateTimeZoneHandling
+  overload: Newtonsoft.Json.JsonReader.DateTimeZoneHandling*
+- uid: Newtonsoft.Json.JsonReader.DateParseHandling
+  commentId: P:Newtonsoft.Json.JsonReader.DateParseHandling
+  id: DateParseHandling
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: DateParseHandling
+  nameWithType: JsonReader.DateParseHandling
+  fullName: Newtonsoft.Json.JsonReader.DateParseHandling
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public DateParseHandling DateParseHandling { get; set; }
+    parameters: []
+    return:
+      type: Newtonsoft.Json.DateParseHandling
+    content.vb: Public Property DateParseHandling As DateParseHandling
+  overload: Newtonsoft.Json.JsonReader.DateParseHandling*
+- uid: Newtonsoft.Json.JsonReader.FloatParseHandling
+  commentId: P:Newtonsoft.Json.JsonReader.FloatParseHandling
+  id: FloatParseHandling
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: FloatParseHandling
+  nameWithType: JsonReader.FloatParseHandling
+  fullName: Newtonsoft.Json.JsonReader.FloatParseHandling
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public FloatParseHandling FloatParseHandling { get; set; }
+    parameters: []
+    return:
+      type: Newtonsoft.Json.FloatParseHandling
+    content.vb: Public Property FloatParseHandling As FloatParseHandling
+  overload: Newtonsoft.Json.JsonReader.FloatParseHandling*
+- uid: Newtonsoft.Json.JsonReader.DateFormatString
+  commentId: P:Newtonsoft.Json.JsonReader.DateFormatString
+  id: DateFormatString
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: DateFormatString
+  nameWithType: JsonReader.DateFormatString
+  fullName: Newtonsoft.Json.JsonReader.DateFormatString
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public string? DateFormatString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DateFormatString As String
+  overload: Newtonsoft.Json.JsonReader.DateFormatString*
+- uid: Newtonsoft.Json.JsonReader.MaxDepth
+  commentId: P:Newtonsoft.Json.JsonReader.MaxDepth
+  id: MaxDepth
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: MaxDepth
+  nameWithType: JsonReader.MaxDepth
+  fullName: Newtonsoft.Json.JsonReader.MaxDepth
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public int? MaxDepth { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Public Property MaxDepth As Integer?
+  overload: Newtonsoft.Json.JsonReader.MaxDepth*
+- uid: Newtonsoft.Json.JsonReader.TokenType
+  commentId: P:Newtonsoft.Json.JsonReader.TokenType
+  id: TokenType
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: TokenType
+  nameWithType: JsonReader.TokenType
+  fullName: Newtonsoft.Json.JsonReader.TokenType
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual JsonToken TokenType { get; }
+    parameters: []
+    return:
+      type: Newtonsoft.Json.JsonToken
+    content.vb: Public Overridable ReadOnly Property TokenType As JsonToken
+  overload: Newtonsoft.Json.JsonReader.TokenType*
+- uid: Newtonsoft.Json.JsonReader.Value
+  commentId: P:Newtonsoft.Json.JsonReader.Value
+  id: Value
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: JsonReader.Value
+  fullName: Newtonsoft.Json.JsonReader.Value
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual object? Value { get; }
+    parameters: []
+    return:
+      type: System.Object
+    content.vb: Public Overridable ReadOnly Property Value As Object
+  overload: Newtonsoft.Json.JsonReader.Value*
+- uid: Newtonsoft.Json.JsonReader.ValueType
+  commentId: P:Newtonsoft.Json.JsonReader.ValueType
+  id: ValueType
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: ValueType
+  nameWithType: JsonReader.ValueType
+  fullName: Newtonsoft.Json.JsonReader.ValueType
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual Type? ValueType { get; }
+    parameters: []
+    return:
+      type: System.Type
+    content.vb: Public Overridable ReadOnly Property ValueType As Type
+  overload: Newtonsoft.Json.JsonReader.ValueType*
+- uid: Newtonsoft.Json.JsonReader.Depth
+  commentId: P:Newtonsoft.Json.JsonReader.Depth
+  id: Depth
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Depth
+  nameWithType: JsonReader.Depth
+  fullName: Newtonsoft.Json.JsonReader.Depth
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual int Depth { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Overridable ReadOnly Property Depth As Integer
+  overload: Newtonsoft.Json.JsonReader.Depth*
+- uid: Newtonsoft.Json.JsonReader.Path
+  commentId: P:Newtonsoft.Json.JsonReader.Path
+  id: Path
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Path
+  nameWithType: JsonReader.Path
+  fullName: Newtonsoft.Json.JsonReader.Path
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public virtual string Path { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Overridable ReadOnly Property Path As String
+  overload: Newtonsoft.Json.JsonReader.Path*
+- uid: Newtonsoft.Json.JsonReader.Culture
+  commentId: P:Newtonsoft.Json.JsonReader.Culture
+  id: Culture
+  parent: Newtonsoft.Json.JsonReader
+  langs:
+  - csharp
+  - vb
+  name: Culture
+  nameWithType: JsonReader.Culture
+  fullName: Newtonsoft.Json.JsonReader.Culture
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Newtonsoft.Json
+  syntax:
+    content: public CultureInfo Culture { get; set; }
+    parameters: []
+    return:
+      type: System.Globalization.CultureInfo
+    content.vb: Public Property Culture As CultureInfo
+  overload: Newtonsoft.Json.JsonReader.Culture*
+references:
+- uid: Newtonsoft.Json
+  commentId: N:Newtonsoft.Json
+  isExternal: true
+  href: Newtonsoft.html
+  name: Newtonsoft.Json
+  nameWithType: Newtonsoft.Json
+  fullName: Newtonsoft.Json
+  spec.csharp:
+  - uid: Newtonsoft
+    name: Newtonsoft
+    isExternal: true
+    href: Newtonsoft.html
+  - name: .
+  - uid: Newtonsoft.Json
+    name: Json
+    isExternal: true
+    href: Newtonsoft.Json.html
+  spec.vb:
+  - uid: Newtonsoft
+    name: Newtonsoft
+    isExternal: true
+    href: Newtonsoft.html
+  - name: .
+  - uid: Newtonsoft.Json
+    name: Json
+    isExternal: true
+    href: Newtonsoft.Json.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IAsyncDisposable
+  commentId: T:System.IAsyncDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iasyncdisposable
+  name: IAsyncDisposable
+  nameWithType: IAsyncDisposable
+  fullName: System.IAsyncDisposable
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Newtonsoft.Json.JsonReader.ReadAsync*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsync
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsync_System_Threading_CancellationToken_
+  name: ReadAsync
+  nameWithType: JsonReader.ReadAsync
+  fullName: Newtonsoft.Json.JsonReader.ReadAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Boolean}
+  commentId: T:System.Threading.Tasks.Task{System.Boolean}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool>
+  nameWithType: Task<bool>
+  fullName: System.Threading.Tasks.Task<bool>
+  nameWithType.vb: Task(Of Boolean)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean)
+  name.vb: Task(Of Boolean)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Newtonsoft.Json.JsonReader.SkipAsync*
+  commentId: Overload:Newtonsoft.Json.JsonReader.SkipAsync
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_SkipAsync_System_Threading_CancellationToken_
+  name: SkipAsync
+  nameWithType: JsonReader.SkipAsync
+  fullName: Newtonsoft.Json.JsonReader.SkipAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Newtonsoft.Json.JsonReader.ReadAsBooleanAsync*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsBooleanAsync
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsBooleanAsync_System_Threading_CancellationToken_
+  name: ReadAsBooleanAsync
+  nameWithType: JsonReader.ReadAsBooleanAsync
+  fullName: Newtonsoft.Json.JsonReader.ReadAsBooleanAsync
+- uid: System.Threading.Tasks.Task{System.Nullable{System.Boolean}}
+  commentId: T:System.Threading.Tasks.Task{System.Nullable{System.Boolean}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool?>
+  nameWithType: Task<bool?>
+  fullName: System.Threading.Tasks.Task<bool?>
+  nameWithType.vb: Task(Of Boolean?)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean?)
+  name.vb: Task(Of Boolean?)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+- uid: Newtonsoft.Json.JsonReader.ReadAsBytesAsync*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsBytesAsync
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsBytesAsync_System_Threading_CancellationToken_
+  name: ReadAsBytesAsync
+  nameWithType: JsonReader.ReadAsBytesAsync
+  fullName: Newtonsoft.Json.JsonReader.ReadAsBytesAsync
+- uid: System.Threading.Tasks.Task{System.Byte[]}
+  commentId: T:System.Threading.Tasks.Task{System.Byte[]}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<byte[]>
+  nameWithType: Task<byte[]>
+  fullName: System.Threading.Tasks.Task<byte[]>
+  nameWithType.vb: Task(Of Byte())
+  fullName.vb: System.Threading.Tasks.Task(Of Byte())
+  name.vb: Task(Of Byte())
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: )
+- uid: Newtonsoft.Json.JsonReader.ReadAsDateTimeAsync*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsDateTimeAsync
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsDateTimeAsync_System_Threading_CancellationToken_
+  name: ReadAsDateTimeAsync
+  nameWithType: JsonReader.ReadAsDateTimeAsync
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDateTimeAsync
+- uid: System.Threading.Tasks.Task{System.Nullable{System.DateTime}}
+  commentId: T:System.Threading.Tasks.Task{System.Nullable{System.DateTime}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<DateTime?>
+  nameWithType: Task<DateTime?>
+  fullName: System.Threading.Tasks.Task<System.DateTime?>
+  nameWithType.vb: Task(Of Date?)
+  fullName.vb: System.Threading.Tasks.Task(Of Date?)
+  name.vb: Task(Of Date?)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  - name: )
+- uid: Newtonsoft.Json.JsonReader.ReadAsDateTimeOffsetAsync*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsDateTimeOffsetAsync
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsDateTimeOffsetAsync_System_Threading_CancellationToken_
+  name: ReadAsDateTimeOffsetAsync
+  nameWithType: JsonReader.ReadAsDateTimeOffsetAsync
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDateTimeOffsetAsync
+- uid: System.Threading.Tasks.Task{System.Nullable{System.DateTimeOffset}}
+  commentId: T:System.Threading.Tasks.Task{System.Nullable{System.DateTimeOffset}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<DateTimeOffset?>
+  nameWithType: Task<DateTimeOffset?>
+  fullName: System.Threading.Tasks.Task<System.DateTimeOffset?>
+  nameWithType.vb: Task(Of DateTimeOffset?)
+  fullName.vb: System.Threading.Tasks.Task(Of System.DateTimeOffset?)
+  name.vb: Task(Of DateTimeOffset?)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  - name: )
+- uid: Newtonsoft.Json.JsonReader.ReadAsDecimalAsync*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsDecimalAsync
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsDecimalAsync_System_Threading_CancellationToken_
+  name: ReadAsDecimalAsync
+  nameWithType: JsonReader.ReadAsDecimalAsync
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDecimalAsync
+- uid: System.Threading.Tasks.Task{System.Nullable{System.Decimal}}
+  commentId: T:System.Threading.Tasks.Task{System.Nullable{System.Decimal}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<decimal?>
+  nameWithType: Task<decimal?>
+  fullName: System.Threading.Tasks.Task<decimal?>
+  nameWithType.vb: Task(Of Decimal?)
+  fullName.vb: System.Threading.Tasks.Task(Of Decimal?)
+  name.vb: Task(Of Decimal?)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: '?'
+  - name: )
+- uid: Newtonsoft.Json.JsonReader.ReadAsDoubleAsync*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsDoubleAsync
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsDoubleAsync_System_Threading_CancellationToken_
+  name: ReadAsDoubleAsync
+  nameWithType: JsonReader.ReadAsDoubleAsync
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDoubleAsync
+- uid: System.Threading.Tasks.Task{System.Nullable{System.Double}}
+  commentId: T:System.Threading.Tasks.Task{System.Nullable{System.Double}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<double?>
+  nameWithType: Task<double?>
+  fullName: System.Threading.Tasks.Task<double?>
+  nameWithType.vb: Task(Of Double?)
+  fullName.vb: System.Threading.Tasks.Task(Of Double?)
+  name.vb: Task(Of Double?)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  - name: )
+- uid: Newtonsoft.Json.JsonReader.ReadAsInt32Async*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsInt32Async
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsInt32Async_System_Threading_CancellationToken_
+  name: ReadAsInt32Async
+  nameWithType: JsonReader.ReadAsInt32Async
+  fullName: Newtonsoft.Json.JsonReader.ReadAsInt32Async
+- uid: System.Threading.Tasks.Task{System.Nullable{System.Int32}}
+  commentId: T:System.Threading.Tasks.Task{System.Nullable{System.Int32}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<int?>
+  nameWithType: Task<int?>
+  fullName: System.Threading.Tasks.Task<int?>
+  nameWithType.vb: Task(Of Integer?)
+  fullName.vb: System.Threading.Tasks.Task(Of Integer?)
+  name.vb: Task(Of Integer?)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  - name: )
+- uid: Newtonsoft.Json.JsonReader.ReadAsStringAsync*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsStringAsync
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsStringAsync_System_Threading_CancellationToken_
+  name: ReadAsStringAsync
+  nameWithType: JsonReader.ReadAsStringAsync
+  fullName: Newtonsoft.Json.JsonReader.ReadAsStringAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Newtonsoft.Json.JsonReader.#ctor*
+  commentId: Overload:Newtonsoft.Json.JsonReader.#ctor
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader__ctor
+  name: JsonReader
+  nameWithType: JsonReader.JsonReader
+  fullName: Newtonsoft.Json.JsonReader.JsonReader
+  nameWithType.vb: JsonReader.New
+  fullName.vb: Newtonsoft.Json.JsonReader.New
+  name.vb: New
+- uid: Newtonsoft.Json.JsonReader.Read*
+  commentId: Overload:Newtonsoft.Json.JsonReader.Read
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_Read
+  name: Read
+  nameWithType: JsonReader.Read
+  fullName: Newtonsoft.Json.JsonReader.Read
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Newtonsoft.Json.JsonReader.ReadAsInt32*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsInt32
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsInt32
+  name: ReadAsInt32
+  nameWithType: JsonReader.ReadAsInt32
+  fullName: Newtonsoft.Json.JsonReader.ReadAsInt32
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Newtonsoft.Json.JsonReader.ReadAsString*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsString
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsString
+  name: ReadAsString
+  nameWithType: JsonReader.ReadAsString
+  fullName: Newtonsoft.Json.JsonReader.ReadAsString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Newtonsoft.Json.JsonReader.ReadAsBytes*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsBytes
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsBytes
+  name: ReadAsBytes
+  nameWithType: JsonReader.ReadAsBytes
+  fullName: Newtonsoft.Json.JsonReader.ReadAsBytes
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: Newtonsoft.Json.JsonReader.ReadAsDouble*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsDouble
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsDouble
+  name: ReadAsDouble
+  nameWithType: JsonReader.ReadAsDouble
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDouble
+- uid: System.Nullable{System.Double}
+  commentId: T:System.Nullable{System.Double}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double?
+  nameWithType: double?
+  fullName: double?
+  nameWithType.vb: Double?
+  fullName.vb: Double?
+  name.vb: Double?
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '?'
+- uid: Newtonsoft.Json.JsonReader.ReadAsBoolean*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsBoolean
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsBoolean
+  name: ReadAsBoolean
+  nameWithType: JsonReader.ReadAsBoolean
+  fullName: Newtonsoft.Json.JsonReader.ReadAsBoolean
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: Newtonsoft.Json.JsonReader.ReadAsDecimal*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsDecimal
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsDecimal
+  name: ReadAsDecimal
+  nameWithType: JsonReader.ReadAsDecimal
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDecimal
+- uid: System.Nullable{System.Decimal}
+  commentId: T:System.Nullable{System.Decimal}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal?
+  nameWithType: decimal?
+  fullName: decimal?
+  nameWithType.vb: Decimal?
+  fullName.vb: Decimal?
+  name.vb: Decimal?
+  spec.csharp:
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: '?'
+  spec.vb:
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: '?'
+- uid: Newtonsoft.Json.JsonReader.ReadAsDateTime*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsDateTime
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsDateTime
+  name: ReadAsDateTime
+  nameWithType: JsonReader.ReadAsDateTime
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDateTime
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: Newtonsoft.Json.JsonReader.ReadAsDateTimeOffset*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ReadAsDateTimeOffset
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ReadAsDateTimeOffset
+  name: ReadAsDateTimeOffset
+  nameWithType: JsonReader.ReadAsDateTimeOffset
+  fullName: Newtonsoft.Json.JsonReader.ReadAsDateTimeOffset
+- uid: System.Nullable{System.DateTimeOffset}
+  commentId: T:System.Nullable{System.DateTimeOffset}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset?
+  nameWithType: DateTimeOffset?
+  fullName: System.DateTimeOffset?
+  spec.csharp:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTimeOffset
+    name: DateTimeOffset
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  - name: '?'
+- uid: Newtonsoft.Json.JsonReader.Skip*
+  commentId: Overload:Newtonsoft.Json.JsonReader.Skip
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_Skip
+  name: Skip
+  nameWithType: JsonReader.Skip
+  fullName: Newtonsoft.Json.JsonReader.Skip
+- uid: Newtonsoft.Json.JsonReader.SetToken*
+  commentId: Overload:Newtonsoft.Json.JsonReader.SetToken
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_SetToken_Newtonsoft_Json_JsonToken_
+  name: SetToken
+  nameWithType: JsonReader.SetToken
+  fullName: Newtonsoft.Json.JsonReader.SetToken
+- uid: Newtonsoft.Json.JsonToken
+  commentId: T:Newtonsoft.Json.JsonToken
+  parent: Newtonsoft.Json
+  isExternal: true
+  href: Newtonsoft.Json.JsonToken.html
+  name: JsonToken
+  nameWithType: JsonToken
+  fullName: Newtonsoft.Json.JsonToken
+- uid: Newtonsoft.Json.JsonReader.SetStateBasedOnCurrent*
+  commentId: Overload:Newtonsoft.Json.JsonReader.SetStateBasedOnCurrent
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_SetStateBasedOnCurrent
+  name: SetStateBasedOnCurrent
+  nameWithType: JsonReader.SetStateBasedOnCurrent
+  fullName: Newtonsoft.Json.JsonReader.SetStateBasedOnCurrent
+- uid: Newtonsoft.Json.JsonReader.Dispose*
+  commentId: Overload:Newtonsoft.Json.JsonReader.Dispose
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_Dispose_System_Boolean_
+  name: Dispose
+  nameWithType: JsonReader.Dispose
+  fullName: Newtonsoft.Json.JsonReader.Dispose
+- uid: Newtonsoft.Json.JsonReader.Close*
+  commentId: Overload:Newtonsoft.Json.JsonReader.Close
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_Close
+  name: Close
+  nameWithType: JsonReader.Close
+  fullName: Newtonsoft.Json.JsonReader.Close
+- uid: Newtonsoft.Json.JsonReader.CurrentState*
+  commentId: Overload:Newtonsoft.Json.JsonReader.CurrentState
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_CurrentState
+  name: CurrentState
+  nameWithType: JsonReader.CurrentState
+  fullName: Newtonsoft.Json.JsonReader.CurrentState
+- uid: Newtonsoft.Json.JsonReader.State
+  commentId: T:Newtonsoft.Json.JsonReader.State
+  parent: Newtonsoft.Json
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html
+  name: JsonReader.State
+  nameWithType: JsonReader.State
+  fullName: Newtonsoft.Json.JsonReader.State
+  spec.csharp:
+  - uid: Newtonsoft.Json.JsonReader
+    name: JsonReader
+    isExternal: true
+    href: Newtonsoft.Json.JsonReader.html
+  - name: .
+  - uid: Newtonsoft.Json.JsonReader.State
+    name: State
+    isExternal: true
+    href: Newtonsoft.Json.JsonReader.State.html
+  spec.vb:
+  - uid: Newtonsoft.Json.JsonReader
+    name: JsonReader
+    isExternal: true
+    href: Newtonsoft.Json.JsonReader.html
+  - name: .
+  - uid: Newtonsoft.Json.JsonReader.State
+    name: State
+    isExternal: true
+    href: Newtonsoft.Json.JsonReader.State.html
+- uid: Newtonsoft.Json.JsonReader.CloseInput*
+  commentId: Overload:Newtonsoft.Json.JsonReader.CloseInput
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_CloseInput
+  name: CloseInput
+  nameWithType: JsonReader.CloseInput
+  fullName: Newtonsoft.Json.JsonReader.CloseInput
+- uid: Newtonsoft.Json.JsonReader.SupportMultipleContent*
+  commentId: Overload:Newtonsoft.Json.JsonReader.SupportMultipleContent
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_SupportMultipleContent
+  name: SupportMultipleContent
+  nameWithType: JsonReader.SupportMultipleContent
+  fullName: Newtonsoft.Json.JsonReader.SupportMultipleContent
+- uid: Newtonsoft.Json.JsonReader.QuoteChar*
+  commentId: Overload:Newtonsoft.Json.JsonReader.QuoteChar
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_QuoteChar
+  name: QuoteChar
+  nameWithType: JsonReader.QuoteChar
+  fullName: Newtonsoft.Json.JsonReader.QuoteChar
+- uid: System.Char
+  commentId: T:System.Char
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.char
+  name: char
+  nameWithType: char
+  fullName: char
+  nameWithType.vb: Char
+  fullName.vb: Char
+  name.vb: Char
+- uid: Newtonsoft.Json.JsonReader.DateTimeZoneHandling*
+  commentId: Overload:Newtonsoft.Json.JsonReader.DateTimeZoneHandling
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_DateTimeZoneHandling
+  name: DateTimeZoneHandling
+  nameWithType: JsonReader.DateTimeZoneHandling
+  fullName: Newtonsoft.Json.JsonReader.DateTimeZoneHandling
+- uid: Newtonsoft.Json.DateTimeZoneHandling
+  commentId: T:Newtonsoft.Json.DateTimeZoneHandling
+  parent: Newtonsoft.Json
+  isExternal: true
+  href: Newtonsoft.Json.DateTimeZoneHandling.html
+  name: DateTimeZoneHandling
+  nameWithType: DateTimeZoneHandling
+  fullName: Newtonsoft.Json.DateTimeZoneHandling
+- uid: Newtonsoft.Json.JsonReader.DateParseHandling*
+  commentId: Overload:Newtonsoft.Json.JsonReader.DateParseHandling
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_DateParseHandling
+  name: DateParseHandling
+  nameWithType: JsonReader.DateParseHandling
+  fullName: Newtonsoft.Json.JsonReader.DateParseHandling
+- uid: Newtonsoft.Json.DateParseHandling
+  commentId: T:Newtonsoft.Json.DateParseHandling
+  parent: Newtonsoft.Json
+  isExternal: true
+  href: Newtonsoft.Json.DateParseHandling.html
+  name: DateParseHandling
+  nameWithType: DateParseHandling
+  fullName: Newtonsoft.Json.DateParseHandling
+- uid: Newtonsoft.Json.JsonReader.FloatParseHandling*
+  commentId: Overload:Newtonsoft.Json.JsonReader.FloatParseHandling
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_FloatParseHandling
+  name: FloatParseHandling
+  nameWithType: JsonReader.FloatParseHandling
+  fullName: Newtonsoft.Json.JsonReader.FloatParseHandling
+- uid: Newtonsoft.Json.FloatParseHandling
+  commentId: T:Newtonsoft.Json.FloatParseHandling
+  parent: Newtonsoft.Json
+  isExternal: true
+  href: Newtonsoft.Json.FloatParseHandling.html
+  name: FloatParseHandling
+  nameWithType: FloatParseHandling
+  fullName: Newtonsoft.Json.FloatParseHandling
+- uid: Newtonsoft.Json.JsonReader.DateFormatString*
+  commentId: Overload:Newtonsoft.Json.JsonReader.DateFormatString
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_DateFormatString
+  name: DateFormatString
+  nameWithType: JsonReader.DateFormatString
+  fullName: Newtonsoft.Json.JsonReader.DateFormatString
+- uid: Newtonsoft.Json.JsonReader.MaxDepth*
+  commentId: Overload:Newtonsoft.Json.JsonReader.MaxDepth
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_MaxDepth
+  name: MaxDepth
+  nameWithType: JsonReader.MaxDepth
+  fullName: Newtonsoft.Json.JsonReader.MaxDepth
+- uid: Newtonsoft.Json.JsonReader.TokenType*
+  commentId: Overload:Newtonsoft.Json.JsonReader.TokenType
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_TokenType
+  name: TokenType
+  nameWithType: JsonReader.TokenType
+  fullName: Newtonsoft.Json.JsonReader.TokenType
+- uid: Newtonsoft.Json.JsonReader.Value*
+  commentId: Overload:Newtonsoft.Json.JsonReader.Value
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_Value
+  name: Value
+  nameWithType: JsonReader.Value
+  fullName: Newtonsoft.Json.JsonReader.Value
+- uid: Newtonsoft.Json.JsonReader.ValueType*
+  commentId: Overload:Newtonsoft.Json.JsonReader.ValueType
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_ValueType
+  name: ValueType
+  nameWithType: JsonReader.ValueType
+  fullName: Newtonsoft.Json.JsonReader.ValueType
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Newtonsoft.Json.JsonReader.Depth*
+  commentId: Overload:Newtonsoft.Json.JsonReader.Depth
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_Depth
+  name: Depth
+  nameWithType: JsonReader.Depth
+  fullName: Newtonsoft.Json.JsonReader.Depth
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Newtonsoft.Json.JsonReader.Path*
+  commentId: Overload:Newtonsoft.Json.JsonReader.Path
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_Path
+  name: Path
+  nameWithType: JsonReader.Path
+  fullName: Newtonsoft.Json.JsonReader.Path
+- uid: Newtonsoft.Json.JsonReader.Culture*
+  commentId: Overload:Newtonsoft.Json.JsonReader.Culture
+  isExternal: true
+  href: Newtonsoft.Json.JsonReader.html#Newtonsoft_Json_JsonReader_Culture
+  name: Culture
+  nameWithType: JsonReader.Culture
+  fullName: Newtonsoft.Json.JsonReader.Culture
+- uid: System.Globalization.CultureInfo
+  commentId: T:System.Globalization.CultureInfo
+  parent: System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.globalization.cultureinfo
+  name: CultureInfo
+  nameWithType: CultureInfo
+  fullName: System.Globalization.CultureInfo
+- uid: System.Globalization
+  commentId: N:System.Globalization
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Globalization
+  nameWithType: System.Globalization
+  fullName: System.Globalization
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Globalization
+    name: Globalization
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.globalization

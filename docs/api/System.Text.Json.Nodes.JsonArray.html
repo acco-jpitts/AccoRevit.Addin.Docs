@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class JsonArray | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class JsonArray | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="System.Text.Json.Nodes.JsonArray">
+
+
+
+  <h1 id="System_Text_Json_Nodes_JsonArray" data-uid="System.Text.Json.Nodes.JsonArray" class="text-break">
+Class JsonArray  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="System.html">System</a>.<a class="xref" href="System.Text.html">Text</a>.<a class="xref" href="System.Text.Json.html">Json</a>.<a class="xref" href="System.Text.Json.Nodes.html">Nodes</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class JsonArray : JsonNode, IList&lt;JsonNode?&gt;, ICollection&lt;JsonNode?&gt;, IEnumerable&lt;JsonNode?&gt;, IEnumerable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a></div>
+      <div><span class="xref">JsonArray</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a>&gt;</div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_AsArray">JsonNode.AsArray()</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_AsObject">JsonNode.AsObject()</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_AsValue">JsonNode.AsValue()</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_GetPath">JsonNode.GetPath()</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_GetValue__1">JsonNode.GetValue&lt;T&gt;()</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_DeepClone">JsonNode.DeepClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_GetValueKind">JsonNode.GetValueKind()</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_GetPropertyName">JsonNode.GetPropertyName()</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_GetElementIndex">JsonNode.GetElementIndex()</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_DeepEquals_System_Text_Json_Nodes_JsonNode_System_Text_Json_Nodes_JsonNode_">JsonNode.DeepEquals(JsonNode, JsonNode)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_ReplaceWith__1___0_">JsonNode.ReplaceWith&lt;T&gt;(T)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_Text_Json_Utf8JsonReader__System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__">JsonNode.Parse(ref Utf8JsonReader, JsonNodeOptions?)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_String_System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__System_Text_Json_JsonDocumentOptions_">JsonNode.Parse(string, JsonNodeOptions?, JsonDocumentOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_ReadOnlySpan_System_Byte__System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__System_Text_Json_JsonDocumentOptions_">JsonNode.Parse(ReadOnlySpan&lt;byte&gt;, JsonNodeOptions?, JsonDocumentOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parse_System_IO_Stream_System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__System_Text_Json_JsonDocumentOptions_">JsonNode.Parse(Stream, JsonNodeOptions?, JsonDocumentOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_ParseAsync_System_IO_Stream_System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__System_Text_Json_JsonDocumentOptions_System_Threading_CancellationToken_">JsonNode.ParseAsync(Stream, JsonNodeOptions?, JsonDocumentOptions, CancellationToken)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_ToJsonString_System_Text_Json_JsonSerializerOptions_">JsonNode.ToJsonString(JsonSerializerOptions)</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_ToString">JsonNode.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Options">JsonNode.Options</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Parent">JsonNode.Parent</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Root">JsonNode.Root</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Item_System_Int32_">JsonNode.this[int]</a>
+    </div>
+    <div>
+      <a class="xref" href="System.Text.Json.Nodes.JsonNode.html#System_Text_Json_Nodes_JsonNode_Item_System_String_">JsonNode.this[string]</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__">CollectionExtensions.ToObservableCollection&lt;T&gt;(IEnumerable&lt;T&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_">UnitExtensions.ToUnitLabel(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_">ReflectionUtils.GetHighlightProperty(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_">SystemExtensions.Cast&lt;T&gt;(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Text_Json_Serialization_Metadata_JsonTypeInfo_">JsonSerializer.Deserialize(JsonNode?, JsonTypeInfo)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_JsonSerializerOptions_">JsonSerializer.Deserialize(JsonNode?, Type, JsonSerializerOptions?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize_System_Text_Json_Nodes_JsonNode_System_Type_System_Text_Json_Serialization_JsonSerializerContext_">JsonSerializer.Deserialize(JsonNode?, Type, JsonSerializerContext)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_JsonSerializerOptions_">JsonSerializer.Deserialize&lt;TValue&gt;(JsonNode?, JsonSerializerOptions?)</a>
+  </div>
+  <div>
+      <a class="xref" href="System.Text.Json.JsonSerializer.html#System_Text_Json_JsonSerializer_Deserialize__1_System_Text_Json_Nodes_JsonNode_System_Text_Json_Serialization_Metadata_JsonTypeInfo___0__">JsonSerializer.Deserialize&lt;TValue&gt;(JsonNode?, JsonTypeInfo&lt;TValue&gt;)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="System_Text_Json_Nodes_JsonArray__ctor_" data-uid="System.Text.Json.Nodes.JsonArray.#ctor*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray__ctor_System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__" data-uid="System.Text.Json.Nodes.JsonArray.#ctor(System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})">
+  JsonArray(JsonNodeOptions?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonArray(JsonNodeOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="System.Text.Json.Nodes.JsonNodeOptions.html">JsonNodeOptions</a>?</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray__ctor_" data-uid="System.Text.Json.Nodes.JsonArray.#ctor*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray__ctor_System_ReadOnlySpan_System_Text_Json_Nodes_JsonNode__" data-uid="System.Text.Json.Nodes.JsonArray.#ctor(System.ReadOnlySpan{System.Text.Json.Nodes.JsonNode})">
+  JsonArray(params ReadOnlySpan&lt;JsonNode?&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonArray(params ReadOnlySpan&lt;JsonNode?&gt; items)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray__ctor_" data-uid="System.Text.Json.Nodes.JsonArray.#ctor*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray__ctor_System_Text_Json_Nodes_JsonNodeOptions_System_ReadOnlySpan_System_Text_Json_Nodes_JsonNode__" data-uid="System.Text.Json.Nodes.JsonArray.#ctor(System.Text.Json.Nodes.JsonNodeOptions,System.ReadOnlySpan{System.Text.Json.Nodes.JsonNode})">
+  JsonArray(JsonNodeOptions, params ReadOnlySpan&lt;JsonNode?&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonArray(JsonNodeOptions options, params ReadOnlySpan&lt;JsonNode?&gt; items)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="System.Text.Json.Nodes.JsonNodeOptions.html">JsonNodeOptions</a></dt>
+    <dd></dd>
+    <dt><code>items</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.readonlyspan-1">ReadOnlySpan</a>&lt;<a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray__ctor_" data-uid="System.Text.Json.Nodes.JsonArray.#ctor*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray__ctor_System_Text_Json_Nodes_JsonNodeOptions_System_Text_Json_Nodes_JsonNode___" data-uid="System.Text.Json.Nodes.JsonArray.#ctor(System.Text.Json.Nodes.JsonNodeOptions,System.Text.Json.Nodes.JsonNode[])">
+  JsonArray(JsonNodeOptions, params JsonNode?[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonArray(JsonNodeOptions options, params JsonNode?[] items)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="System.Text.Json.Nodes.JsonNodeOptions.html">JsonNodeOptions</a></dt>
+    <dd></dd>
+    <dt><code>items</code> <a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray__ctor_" data-uid="System.Text.Json.Nodes.JsonArray.#ctor*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray__ctor_System_Text_Json_Nodes_JsonNode___" data-uid="System.Text.Json.Nodes.JsonArray.#ctor(System.Text.Json.Nodes.JsonNode[])">
+  JsonArray(params JsonNode?[])
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JsonArray(params JsonNode?[] items)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>items</code> <a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a>[]</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_Count_" data-uid="System.Text.Json.Nodes.JsonArray.Count*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_Count" data-uid="System.Text.Json.Nodes.JsonArray.Count">
+  Count
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_Add_" data-uid="System.Text.Json.Nodes.JsonArray.Add*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_Add_System_Text_Json_Nodes_JsonNode_" data-uid="System.Text.Json.Nodes.JsonArray.Add(System.Text.Json.Nodes.JsonNode)">
+  Add(JsonNode?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(JsonNode? item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_Add_" data-uid="System.Text.Json.Nodes.JsonArray.Add*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_Add__1___0_" data-uid="System.Text.Json.Nodes.JsonArray.Add``1(``0)">
+  Add&lt;T&gt;(T?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[RequiresUnreferencedCode(&quot;Creating JsonValue instances with non-primitive types is not compatible with trimming. It can result in non-primitive types being serialized, which may have their members trimmed.&quot;)]
+[RequiresDynamicCode(&quot;Creating JsonValue instances with non-primitive types requires generating code at runtime.&quot;)]
+public void Add&lt;T&gt;(T? value)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>value</code> <span class="xref">T</span></dt>
+    <dd></dd>
+  </dl>
+
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_Clear_" data-uid="System.Text.Json.Nodes.JsonArray.Clear*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_Clear" data-uid="System.Text.Json.Nodes.JsonArray.Clear">
+  Clear()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_Contains_" data-uid="System.Text.Json.Nodes.JsonArray.Contains*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_Contains_System_Text_Json_Nodes_JsonNode_" data-uid="System.Text.Json.Nodes.JsonArray.Contains(System.Text.Json.Nodes.JsonNode)">
+  Contains(JsonNode?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(JsonNode? item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_Create_" data-uid="System.Text.Json.Nodes.JsonArray.Create*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_Create_System_Text_Json_JsonElement_System_Nullable_System_Text_Json_Nodes_JsonNodeOptions__" data-uid="System.Text.Json.Nodes.JsonArray.Create(System.Text.Json.JsonElement,System.Nullable{System.Text.Json.Nodes.JsonNodeOptions})">
+  Create(JsonElement, JsonNodeOptions?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static JsonArray? Create(JsonElement element, JsonNodeOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>element</code> <a class="xref" href="System.Text.Json.JsonElement.html">JsonElement</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Text.Json.Nodes.JsonNodeOptions.html">JsonNodeOptions</a>?</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Text.Json.Nodes.JsonArray.html">JsonArray</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_GetEnumerator_" data-uid="System.Text.Json.Nodes.JsonArray.GetEnumerator*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_GetEnumerator" data-uid="System.Text.Json.Nodes.JsonArray.GetEnumerator">
+  GetEnumerator()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;JsonNode?&gt; GetEnumerator()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_GetValues_" data-uid="System.Text.Json.Nodes.JsonArray.GetValues*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_GetValues__1" data-uid="System.Text.Json.Nodes.JsonArray.GetValues``1">
+  GetValues&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;T&gt; GetValues&lt;T&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_IndexOf_" data-uid="System.Text.Json.Nodes.JsonArray.IndexOf*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_IndexOf_System_Text_Json_Nodes_JsonNode_" data-uid="System.Text.Json.Nodes.JsonArray.IndexOf(System.Text.Json.Nodes.JsonNode)">
+  IndexOf(JsonNode?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int IndexOf(JsonNode? item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_Insert_" data-uid="System.Text.Json.Nodes.JsonArray.Insert*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_Insert_System_Int32_System_Text_Json_Nodes_JsonNode_" data-uid="System.Text.Json.Nodes.JsonArray.Insert(System.Int32,System.Text.Json.Nodes.JsonNode)">
+  Insert(int, JsonNode?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Insert(int index, JsonNode? item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>item</code> <a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_Remove_" data-uid="System.Text.Json.Nodes.JsonArray.Remove*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_Remove_System_Text_Json_Nodes_JsonNode_" data-uid="System.Text.Json.Nodes.JsonArray.Remove(System.Text.Json.Nodes.JsonNode)">
+  Remove(JsonNode?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(JsonNode? item)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>item</code> <a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_RemoveAll_" data-uid="System.Text.Json.Nodes.JsonArray.RemoveAll*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_RemoveAll_System_Func_System_Text_Json_Nodes_JsonNode_System_Boolean__" data-uid="System.Text.Json.Nodes.JsonArray.RemoveAll(System.Func{System.Text.Json.Nodes.JsonNode,System.Boolean})">
+  RemoveAll(Func&lt;JsonNode?, bool&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemoveAll(Func&lt;JsonNode?, bool&gt; match)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>match</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="System.Text.Json.Nodes.JsonNode.html">JsonNode</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_RemoveAt_" data-uid="System.Text.Json.Nodes.JsonArray.RemoveAt*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_RemoveAt_System_Int32_" data-uid="System.Text.Json.Nodes.JsonArray.RemoveAt(System.Int32)">
+  RemoveAt(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveAt(int index)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_RemoveRange_" data-uid="System.Text.Json.Nodes.JsonArray.RemoveRange*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_RemoveRange_System_Int32_System_Int32_" data-uid="System.Text.Json.Nodes.JsonArray.RemoveRange(System.Int32,System.Int32)">
+  RemoveRange(int, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveRange(int index, int count)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>index</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+    <dt><code>count</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Text_Json_Nodes_JsonArray_WriteTo_" data-uid="System.Text.Json.Nodes.JsonArray.WriteTo*"></a>
+
+  <h3 id="System_Text_Json_Nodes_JsonArray_WriteTo_System_Text_Json_Utf8JsonWriter_System_Text_Json_JsonSerializerOptions_" data-uid="System.Text.Json.Nodes.JsonArray.WriteTo(System.Text.Json.Utf8JsonWriter,System.Text.Json.JsonSerializerOptions)">
+  WriteTo(Utf8JsonWriter, JsonSerializerOptions?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void WriteTo(Utf8JsonWriter writer, JsonSerializerOptions? options = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>writer</code> <a class="xref" href="System.Text.Json.Utf8JsonWriter.html">Utf8JsonWriter</a></dt>
+    <dd></dd>
+    <dt><code>options</code> <a class="xref" href="System.Text.Json.JsonSerializerOptions.html">JsonSerializerOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

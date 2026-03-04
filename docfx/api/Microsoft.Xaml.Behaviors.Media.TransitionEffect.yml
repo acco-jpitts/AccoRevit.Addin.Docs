@@ -1,0 +1,1762 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  commentId: T:Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  id: TransitionEffect
+  parent: Microsoft.Xaml.Behaviors.Media
+  children:
+  - Microsoft.Xaml.Behaviors.Media.TransitionEffect.#ctor
+  - Microsoft.Xaml.Behaviors.Media.TransitionEffect.CloneCurrentValue
+  - Microsoft.Xaml.Behaviors.Media.TransitionEffect.DeepCopy
+  - Microsoft.Xaml.Behaviors.Media.TransitionEffect.Input
+  - Microsoft.Xaml.Behaviors.Media.TransitionEffect.InputProperty
+  - Microsoft.Xaml.Behaviors.Media.TransitionEffect.OldImage
+  - Microsoft.Xaml.Behaviors.Media.TransitionEffect.OldImageProperty
+  - Microsoft.Xaml.Behaviors.Media.TransitionEffect.Progress
+  - Microsoft.Xaml.Behaviors.Media.TransitionEffect.ProgressProperty
+  langs:
+  - csharp
+  - vb
+  name: TransitionEffect
+  nameWithType: TransitionEffect
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Media
+  syntax:
+    content: 'public abstract class TransitionEffect : ShaderEffect, IAnimatable'
+    content.vb: Public MustInherit Class TransitionEffect Inherits ShaderEffect Implements IAnimatable
+  inheritance:
+  - System.Object
+  - System.Windows.Media.Animation.Animatable
+  - System.Windows.Media.Effects.Effect
+  - System.Windows.Media.Effects.ShaderEffect
+  implements:
+  - System.Windows.Media.Animation.IAnimatable
+  inheritedMembers:
+  - System.Windows.Media.Effects.ShaderEffect.PixelShaderProperty
+  - System.Windows.Media.Effects.ShaderEffect.UpdateShaderValue(System.Windows.DependencyProperty)
+  - System.Windows.Media.Effects.ShaderEffect.PixelShaderConstantCallback(System.Int32)
+  - System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(System.Int32)
+  - System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(System.Int32,System.Windows.Media.Effects.SamplingMode)
+  - System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(System.String,System.Type,System.Int32)
+  - System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(System.String,System.Type,System.Int32,System.Windows.Media.Effects.SamplingMode)
+  - System.Windows.Media.Effects.ShaderEffect.CloneCore(System.Windows.Freezable)
+  - System.Windows.Media.Effects.ShaderEffect.CloneCurrentValueCore(System.Windows.Freezable)
+  - System.Windows.Media.Effects.ShaderEffect.GetAsFrozenCore(System.Windows.Freezable)
+  - System.Windows.Media.Effects.ShaderEffect.GetCurrentValueAsFrozenCore(System.Windows.Freezable)
+  - System.Windows.Media.Effects.ShaderEffect.Clone
+  - System.Windows.Media.Effects.ShaderEffect.CreateInstanceCore
+  - System.Windows.Media.Effects.ShaderEffect.PaddingTop
+  - System.Windows.Media.Effects.ShaderEffect.PaddingBottom
+  - System.Windows.Media.Effects.ShaderEffect.PaddingLeft
+  - System.Windows.Media.Effects.ShaderEffect.PaddingRight
+  - System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex
+  - System.Windows.Media.Effects.ShaderEffect.PixelShader
+  - System.Windows.Media.Effects.Effect.ImplicitInput
+  - System.Windows.Media.Effects.Effect.EffectMapping
+  - System.Windows.Media.Animation.Animatable.FreezeCore(System.Boolean)
+  - System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)
+  - System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)
+  - System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)
+  - System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)
+  - System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)
+  - System.Windows.Media.Animation.Animatable.HasAnimatedProperties
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.InputProperty
+  commentId: F:Microsoft.Xaml.Behaviors.Media.TransitionEffect.InputProperty
+  id: InputProperty
+  parent: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  langs:
+  - csharp
+  - vb
+  name: InputProperty
+  nameWithType: TransitionEffect.InputProperty
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.InputProperty
+  type: Field
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Media
+  syntax:
+    content: public static readonly DependencyProperty InputProperty
+    return:
+      type: System.Windows.DependencyProperty
+    content.vb: Public Shared ReadOnly InputProperty As DependencyProperty
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.OldImageProperty
+  commentId: F:Microsoft.Xaml.Behaviors.Media.TransitionEffect.OldImageProperty
+  id: OldImageProperty
+  parent: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  langs:
+  - csharp
+  - vb
+  name: OldImageProperty
+  nameWithType: TransitionEffect.OldImageProperty
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.OldImageProperty
+  type: Field
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Media
+  syntax:
+    content: public static readonly DependencyProperty OldImageProperty
+    return:
+      type: System.Windows.DependencyProperty
+    content.vb: Public Shared ReadOnly OldImageProperty As DependencyProperty
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.ProgressProperty
+  commentId: F:Microsoft.Xaml.Behaviors.Media.TransitionEffect.ProgressProperty
+  id: ProgressProperty
+  parent: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  langs:
+  - csharp
+  - vb
+  name: ProgressProperty
+  nameWithType: TransitionEffect.ProgressProperty
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.ProgressProperty
+  type: Field
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Media
+  syntax:
+    content: public static readonly DependencyProperty ProgressProperty
+    return:
+      type: System.Windows.DependencyProperty
+    content.vb: Public Shared ReadOnly ProgressProperty As DependencyProperty
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.CloneCurrentValue
+  commentId: M:Microsoft.Xaml.Behaviors.Media.TransitionEffect.CloneCurrentValue
+  id: CloneCurrentValue
+  parent: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  langs:
+  - csharp
+  - vb
+  name: CloneCurrentValue()
+  nameWithType: TransitionEffect.CloneCurrentValue()
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.CloneCurrentValue()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Media
+  syntax:
+    content: public TransitionEffect CloneCurrentValue()
+    return:
+      type: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+    content.vb: Public Function CloneCurrentValue() As TransitionEffect
+  overload: Microsoft.Xaml.Behaviors.Media.TransitionEffect.CloneCurrentValue*
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.DeepCopy
+  commentId: M:Microsoft.Xaml.Behaviors.Media.TransitionEffect.DeepCopy
+  id: DeepCopy
+  parent: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  langs:
+  - csharp
+  - vb
+  name: DeepCopy()
+  nameWithType: TransitionEffect.DeepCopy()
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.DeepCopy()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Media
+  syntax:
+    content: protected abstract TransitionEffect DeepCopy()
+    return:
+      type: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+    content.vb: Protected MustOverride Function DeepCopy() As TransitionEffect
+  overload: Microsoft.Xaml.Behaviors.Media.TransitionEffect.DeepCopy*
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.#ctor
+  commentId: M:Microsoft.Xaml.Behaviors.Media.TransitionEffect.#ctor
+  id: '#ctor'
+  parent: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  langs:
+  - csharp
+  - vb
+  name: TransitionEffect()
+  nameWithType: TransitionEffect.TransitionEffect()
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.TransitionEffect()
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Media
+  syntax:
+    content: protected TransitionEffect()
+    content.vb: Protected Sub New()
+  overload: Microsoft.Xaml.Behaviors.Media.TransitionEffect.#ctor*
+  nameWithType.vb: TransitionEffect.New()
+  fullName.vb: Microsoft.Xaml.Behaviors.Media.TransitionEffect.New()
+  name.vb: New()
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.Input
+  commentId: P:Microsoft.Xaml.Behaviors.Media.TransitionEffect.Input
+  id: Input
+  parent: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  langs:
+  - csharp
+  - vb
+  name: Input
+  nameWithType: TransitionEffect.Input
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.Input
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Media
+  syntax:
+    content: public Brush Input { get; set; }
+    parameters: []
+    return:
+      type: System.Windows.Media.Brush
+    content.vb: Public Property Input As Brush
+  overload: Microsoft.Xaml.Behaviors.Media.TransitionEffect.Input*
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.OldImage
+  commentId: P:Microsoft.Xaml.Behaviors.Media.TransitionEffect.OldImage
+  id: OldImage
+  parent: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  langs:
+  - csharp
+  - vb
+  name: OldImage
+  nameWithType: TransitionEffect.OldImage
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.OldImage
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Media
+  syntax:
+    content: public Brush OldImage { get; set; }
+    parameters: []
+    return:
+      type: System.Windows.Media.Brush
+    content.vb: Public Property OldImage As Brush
+  overload: Microsoft.Xaml.Behaviors.Media.TransitionEffect.OldImage*
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.Progress
+  commentId: P:Microsoft.Xaml.Behaviors.Media.TransitionEffect.Progress
+  id: Progress
+  parent: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  langs:
+  - csharp
+  - vb
+  name: Progress
+  nameWithType: TransitionEffect.Progress
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.Progress
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Media
+  syntax:
+    content: public double Progress { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Progress As Double
+  overload: Microsoft.Xaml.Behaviors.Media.TransitionEffect.Progress*
+references:
+- uid: Microsoft.Xaml.Behaviors.Media
+  commentId: N:Microsoft.Xaml.Behaviors.Media
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Xaml.Behaviors.Media
+  nameWithType: Microsoft.Xaml.Behaviors.Media
+  fullName: Microsoft.Xaml.Behaviors.Media
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Xaml
+    name: Xaml
+    isExternal: true
+    href: Microsoft.Xaml.html
+  - name: .
+  - uid: Microsoft.Xaml.Behaviors
+    name: Behaviors
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.html
+  - name: .
+  - uid: Microsoft.Xaml.Behaviors.Media
+    name: Media
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Media.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Xaml
+    name: Xaml
+    isExternal: true
+    href: Microsoft.Xaml.html
+  - name: .
+  - uid: Microsoft.Xaml.Behaviors
+    name: Behaviors
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.html
+  - name: .
+  - uid: Microsoft.Xaml.Behaviors.Media
+    name: Media
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Media.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Windows.Media.Animation.Animatable
+  commentId: T:System.Windows.Media.Animation.Animatable
+  parent: System.Windows.Media.Animation
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable
+  name: Animatable
+  nameWithType: Animatable
+  fullName: System.Windows.Media.Animation.Animatable
+- uid: System.Windows.Media.Effects.Effect
+  commentId: T:System.Windows.Media.Effects.Effect
+  parent: System.Windows.Media.Effects
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.effect
+  name: Effect
+  nameWithType: Effect
+  fullName: System.Windows.Media.Effects.Effect
+- uid: System.Windows.Media.Effects.ShaderEffect
+  commentId: T:System.Windows.Media.Effects.ShaderEffect
+  parent: System.Windows.Media.Effects
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect
+  name: ShaderEffect
+  nameWithType: ShaderEffect
+  fullName: System.Windows.Media.Effects.ShaderEffect
+- uid: System.Windows.Media.Animation.IAnimatable
+  commentId: T:System.Windows.Media.Animation.IAnimatable
+  parent: System.Windows.Media.Animation
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.ianimatable
+  name: IAnimatable
+  nameWithType: IAnimatable
+  fullName: System.Windows.Media.Animation.IAnimatable
+- uid: System.Windows.Media.Effects.ShaderEffect.PixelShaderProperty
+  commentId: F:System.Windows.Media.Effects.ShaderEffect.PixelShaderProperty
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.pixelshaderproperty
+  name: PixelShaderProperty
+  nameWithType: ShaderEffect.PixelShaderProperty
+  fullName: System.Windows.Media.Effects.ShaderEffect.PixelShaderProperty
+- uid: System.Windows.Media.Effects.ShaderEffect.UpdateShaderValue(System.Windows.DependencyProperty)
+  commentId: M:System.Windows.Media.Effects.ShaderEffect.UpdateShaderValue(System.Windows.DependencyProperty)
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.updateshadervalue
+  name: UpdateShaderValue(DependencyProperty)
+  nameWithType: ShaderEffect.UpdateShaderValue(DependencyProperty)
+  fullName: System.Windows.Media.Effects.ShaderEffect.UpdateShaderValue(System.Windows.DependencyProperty)
+  spec.csharp:
+  - uid: System.Windows.Media.Effects.ShaderEffect.UpdateShaderValue(System.Windows.DependencyProperty)
+    name: UpdateShaderValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.updateshadervalue
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Effects.ShaderEffect.UpdateShaderValue(System.Windows.DependencyProperty)
+    name: UpdateShaderValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.updateshadervalue
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: )
+- uid: System.Windows.Media.Effects.ShaderEffect.PixelShaderConstantCallback(System.Int32)
+  commentId: M:System.Windows.Media.Effects.ShaderEffect.PixelShaderConstantCallback(System.Int32)
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.pixelshaderconstantcallback
+  name: PixelShaderConstantCallback(int)
+  nameWithType: ShaderEffect.PixelShaderConstantCallback(int)
+  fullName: System.Windows.Media.Effects.ShaderEffect.PixelShaderConstantCallback(int)
+  nameWithType.vb: ShaderEffect.PixelShaderConstantCallback(Integer)
+  fullName.vb: System.Windows.Media.Effects.ShaderEffect.PixelShaderConstantCallback(Integer)
+  name.vb: PixelShaderConstantCallback(Integer)
+  spec.csharp:
+  - uid: System.Windows.Media.Effects.ShaderEffect.PixelShaderConstantCallback(System.Int32)
+    name: PixelShaderConstantCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.pixelshaderconstantcallback
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Effects.ShaderEffect.PixelShaderConstantCallback(System.Int32)
+    name: PixelShaderConstantCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.pixelshaderconstantcallback
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(System.Int32)
+  commentId: M:System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(System.Int32)
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.pixelshadersamplercallback#system-windows-media-effects-shadereffect-pixelshadersamplercallback(system-int32)
+  name: PixelShaderSamplerCallback(int)
+  nameWithType: ShaderEffect.PixelShaderSamplerCallback(int)
+  fullName: System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(int)
+  nameWithType.vb: ShaderEffect.PixelShaderSamplerCallback(Integer)
+  fullName.vb: System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(Integer)
+  name.vb: PixelShaderSamplerCallback(Integer)
+  spec.csharp:
+  - uid: System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(System.Int32)
+    name: PixelShaderSamplerCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.pixelshadersamplercallback#system-windows-media-effects-shadereffect-pixelshadersamplercallback(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(System.Int32)
+    name: PixelShaderSamplerCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.pixelshadersamplercallback#system-windows-media-effects-shadereffect-pixelshadersamplercallback(system-int32)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(System.Int32,System.Windows.Media.Effects.SamplingMode)
+  commentId: M:System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(System.Int32,System.Windows.Media.Effects.SamplingMode)
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.pixelshadersamplercallback#system-windows-media-effects-shadereffect-pixelshadersamplercallback(system-int32-system-windows-media-effects-samplingmode)
+  name: PixelShaderSamplerCallback(int, SamplingMode)
+  nameWithType: ShaderEffect.PixelShaderSamplerCallback(int, SamplingMode)
+  fullName: System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(int, System.Windows.Media.Effects.SamplingMode)
+  nameWithType.vb: ShaderEffect.PixelShaderSamplerCallback(Integer, SamplingMode)
+  fullName.vb: System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(Integer, System.Windows.Media.Effects.SamplingMode)
+  name.vb: PixelShaderSamplerCallback(Integer, SamplingMode)
+  spec.csharp:
+  - uid: System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(System.Int32,System.Windows.Media.Effects.SamplingMode)
+    name: PixelShaderSamplerCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.pixelshadersamplercallback#system-windows-media-effects-shadereffect-pixelshadersamplercallback(system-int32-system-windows-media-effects-samplingmode)
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Effects.SamplingMode
+    name: SamplingMode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.samplingmode
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Effects.ShaderEffect.PixelShaderSamplerCallback(System.Int32,System.Windows.Media.Effects.SamplingMode)
+    name: PixelShaderSamplerCallback
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.pixelshadersamplercallback#system-windows-media-effects-shadereffect-pixelshadersamplercallback(system-int32-system-windows-media-effects-samplingmode)
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Effects.SamplingMode
+    name: SamplingMode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.samplingmode
+  - name: )
+- uid: System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(System.String,System.Type,System.Int32)
+  commentId: M:System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(System.String,System.Type,System.Int32)
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.registerpixelshadersamplerproperty#system-windows-media-effects-shadereffect-registerpixelshadersamplerproperty(system-string-system-type-system-int32)
+  name: RegisterPixelShaderSamplerProperty(string, Type, int)
+  nameWithType: ShaderEffect.RegisterPixelShaderSamplerProperty(string, Type, int)
+  fullName: System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(string, System.Type, int)
+  nameWithType.vb: ShaderEffect.RegisterPixelShaderSamplerProperty(String, Type, Integer)
+  fullName.vb: System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(String, System.Type, Integer)
+  name.vb: RegisterPixelShaderSamplerProperty(String, Type, Integer)
+  spec.csharp:
+  - uid: System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(System.String,System.Type,System.Int32)
+    name: RegisterPixelShaderSamplerProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.registerpixelshadersamplerproperty#system-windows-media-effects-shadereffect-registerpixelshadersamplerproperty(system-string-system-type-system-int32)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(System.String,System.Type,System.Int32)
+    name: RegisterPixelShaderSamplerProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.registerpixelshadersamplerproperty#system-windows-media-effects-shadereffect-registerpixelshadersamplerproperty(system-string-system-type-system-int32)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(System.String,System.Type,System.Int32,System.Windows.Media.Effects.SamplingMode)
+  commentId: M:System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(System.String,System.Type,System.Int32,System.Windows.Media.Effects.SamplingMode)
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.registerpixelshadersamplerproperty#system-windows-media-effects-shadereffect-registerpixelshadersamplerproperty(system-string-system-type-system-int32-system-windows-media-effects-samplingmode)
+  name: RegisterPixelShaderSamplerProperty(string, Type, int, SamplingMode)
+  nameWithType: ShaderEffect.RegisterPixelShaderSamplerProperty(string, Type, int, SamplingMode)
+  fullName: System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(string, System.Type, int, System.Windows.Media.Effects.SamplingMode)
+  nameWithType.vb: ShaderEffect.RegisterPixelShaderSamplerProperty(String, Type, Integer, SamplingMode)
+  fullName.vb: System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(String, System.Type, Integer, System.Windows.Media.Effects.SamplingMode)
+  name.vb: RegisterPixelShaderSamplerProperty(String, Type, Integer, SamplingMode)
+  spec.csharp:
+  - uid: System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(System.String,System.Type,System.Int32,System.Windows.Media.Effects.SamplingMode)
+    name: RegisterPixelShaderSamplerProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.registerpixelshadersamplerproperty#system-windows-media-effects-shadereffect-registerpixelshadersamplerproperty(system-string-system-type-system-int32-system-windows-media-effects-samplingmode)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Effects.SamplingMode
+    name: SamplingMode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.samplingmode
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Effects.ShaderEffect.RegisterPixelShaderSamplerProperty(System.String,System.Type,System.Int32,System.Windows.Media.Effects.SamplingMode)
+    name: RegisterPixelShaderSamplerProperty
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.registerpixelshadersamplerproperty#system-windows-media-effects-shadereffect-registerpixelshadersamplerproperty(system-string-system-type-system-int32-system-windows-media-effects-samplingmode)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Effects.SamplingMode
+    name: SamplingMode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.samplingmode
+  - name: )
+- uid: System.Windows.Media.Effects.ShaderEffect.CloneCore(System.Windows.Freezable)
+  commentId: M:System.Windows.Media.Effects.ShaderEffect.CloneCore(System.Windows.Freezable)
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.clonecore
+  name: CloneCore(Freezable)
+  nameWithType: ShaderEffect.CloneCore(Freezable)
+  fullName: System.Windows.Media.Effects.ShaderEffect.CloneCore(System.Windows.Freezable)
+  spec.csharp:
+  - uid: System.Windows.Media.Effects.ShaderEffect.CloneCore(System.Windows.Freezable)
+    name: CloneCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.clonecore
+  - name: (
+  - uid: System.Windows.Freezable
+    name: Freezable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Effects.ShaderEffect.CloneCore(System.Windows.Freezable)
+    name: CloneCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.clonecore
+  - name: (
+  - uid: System.Windows.Freezable
+    name: Freezable
+    isExternal: true
+  - name: )
+- uid: System.Windows.Media.Effects.ShaderEffect.CloneCurrentValueCore(System.Windows.Freezable)
+  commentId: M:System.Windows.Media.Effects.ShaderEffect.CloneCurrentValueCore(System.Windows.Freezable)
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.clonecurrentvaluecore
+  name: CloneCurrentValueCore(Freezable)
+  nameWithType: ShaderEffect.CloneCurrentValueCore(Freezable)
+  fullName: System.Windows.Media.Effects.ShaderEffect.CloneCurrentValueCore(System.Windows.Freezable)
+  spec.csharp:
+  - uid: System.Windows.Media.Effects.ShaderEffect.CloneCurrentValueCore(System.Windows.Freezable)
+    name: CloneCurrentValueCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.clonecurrentvaluecore
+  - name: (
+  - uid: System.Windows.Freezable
+    name: Freezable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Effects.ShaderEffect.CloneCurrentValueCore(System.Windows.Freezable)
+    name: CloneCurrentValueCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.clonecurrentvaluecore
+  - name: (
+  - uid: System.Windows.Freezable
+    name: Freezable
+    isExternal: true
+  - name: )
+- uid: System.Windows.Media.Effects.ShaderEffect.GetAsFrozenCore(System.Windows.Freezable)
+  commentId: M:System.Windows.Media.Effects.ShaderEffect.GetAsFrozenCore(System.Windows.Freezable)
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.getasfrozencore
+  name: GetAsFrozenCore(Freezable)
+  nameWithType: ShaderEffect.GetAsFrozenCore(Freezable)
+  fullName: System.Windows.Media.Effects.ShaderEffect.GetAsFrozenCore(System.Windows.Freezable)
+  spec.csharp:
+  - uid: System.Windows.Media.Effects.ShaderEffect.GetAsFrozenCore(System.Windows.Freezable)
+    name: GetAsFrozenCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.getasfrozencore
+  - name: (
+  - uid: System.Windows.Freezable
+    name: Freezable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Effects.ShaderEffect.GetAsFrozenCore(System.Windows.Freezable)
+    name: GetAsFrozenCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.getasfrozencore
+  - name: (
+  - uid: System.Windows.Freezable
+    name: Freezable
+    isExternal: true
+  - name: )
+- uid: System.Windows.Media.Effects.ShaderEffect.GetCurrentValueAsFrozenCore(System.Windows.Freezable)
+  commentId: M:System.Windows.Media.Effects.ShaderEffect.GetCurrentValueAsFrozenCore(System.Windows.Freezable)
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.getcurrentvalueasfrozencore
+  name: GetCurrentValueAsFrozenCore(Freezable)
+  nameWithType: ShaderEffect.GetCurrentValueAsFrozenCore(Freezable)
+  fullName: System.Windows.Media.Effects.ShaderEffect.GetCurrentValueAsFrozenCore(System.Windows.Freezable)
+  spec.csharp:
+  - uid: System.Windows.Media.Effects.ShaderEffect.GetCurrentValueAsFrozenCore(System.Windows.Freezable)
+    name: GetCurrentValueAsFrozenCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.getcurrentvalueasfrozencore
+  - name: (
+  - uid: System.Windows.Freezable
+    name: Freezable
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Effects.ShaderEffect.GetCurrentValueAsFrozenCore(System.Windows.Freezable)
+    name: GetCurrentValueAsFrozenCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.getcurrentvalueasfrozencore
+  - name: (
+  - uid: System.Windows.Freezable
+    name: Freezable
+    isExternal: true
+  - name: )
+- uid: System.Windows.Media.Effects.ShaderEffect.Clone
+  commentId: M:System.Windows.Media.Effects.ShaderEffect.Clone
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.clone
+  name: Clone()
+  nameWithType: ShaderEffect.Clone()
+  fullName: System.Windows.Media.Effects.ShaderEffect.Clone()
+  spec.csharp:
+  - uid: System.Windows.Media.Effects.ShaderEffect.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Effects.ShaderEffect.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.clone
+  - name: (
+  - name: )
+- uid: System.Windows.Media.Effects.ShaderEffect.CreateInstanceCore
+  commentId: M:System.Windows.Media.Effects.ShaderEffect.CreateInstanceCore
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.createinstancecore
+  name: CreateInstanceCore()
+  nameWithType: ShaderEffect.CreateInstanceCore()
+  fullName: System.Windows.Media.Effects.ShaderEffect.CreateInstanceCore()
+  spec.csharp:
+  - uid: System.Windows.Media.Effects.ShaderEffect.CreateInstanceCore
+    name: CreateInstanceCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.createinstancecore
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Effects.ShaderEffect.CreateInstanceCore
+    name: CreateInstanceCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.createinstancecore
+  - name: (
+  - name: )
+- uid: System.Windows.Media.Effects.ShaderEffect.PaddingTop
+  commentId: P:System.Windows.Media.Effects.ShaderEffect.PaddingTop
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.paddingtop
+  name: PaddingTop
+  nameWithType: ShaderEffect.PaddingTop
+  fullName: System.Windows.Media.Effects.ShaderEffect.PaddingTop
+- uid: System.Windows.Media.Effects.ShaderEffect.PaddingBottom
+  commentId: P:System.Windows.Media.Effects.ShaderEffect.PaddingBottom
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.paddingbottom
+  name: PaddingBottom
+  nameWithType: ShaderEffect.PaddingBottom
+  fullName: System.Windows.Media.Effects.ShaderEffect.PaddingBottom
+- uid: System.Windows.Media.Effects.ShaderEffect.PaddingLeft
+  commentId: P:System.Windows.Media.Effects.ShaderEffect.PaddingLeft
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.paddingleft
+  name: PaddingLeft
+  nameWithType: ShaderEffect.PaddingLeft
+  fullName: System.Windows.Media.Effects.ShaderEffect.PaddingLeft
+- uid: System.Windows.Media.Effects.ShaderEffect.PaddingRight
+  commentId: P:System.Windows.Media.Effects.ShaderEffect.PaddingRight
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.paddingright
+  name: PaddingRight
+  nameWithType: ShaderEffect.PaddingRight
+  fullName: System.Windows.Media.Effects.ShaderEffect.PaddingRight
+- uid: System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex
+  commentId: P:System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.ddxuvddyuvregisterindex
+  name: DdxUvDdyUvRegisterIndex
+  nameWithType: ShaderEffect.DdxUvDdyUvRegisterIndex
+  fullName: System.Windows.Media.Effects.ShaderEffect.DdxUvDdyUvRegisterIndex
+- uid: System.Windows.Media.Effects.ShaderEffect.PixelShader
+  commentId: P:System.Windows.Media.Effects.ShaderEffect.PixelShader
+  parent: System.Windows.Media.Effects.ShaderEffect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.shadereffect.pixelshader
+  name: PixelShader
+  nameWithType: ShaderEffect.PixelShader
+  fullName: System.Windows.Media.Effects.ShaderEffect.PixelShader
+- uid: System.Windows.Media.Effects.Effect.ImplicitInput
+  commentId: P:System.Windows.Media.Effects.Effect.ImplicitInput
+  parent: System.Windows.Media.Effects.Effect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.effect.implicitinput
+  name: ImplicitInput
+  nameWithType: Effect.ImplicitInput
+  fullName: System.Windows.Media.Effects.Effect.ImplicitInput
+- uid: System.Windows.Media.Effects.Effect.EffectMapping
+  commentId: P:System.Windows.Media.Effects.Effect.EffectMapping
+  parent: System.Windows.Media.Effects.Effect
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects.effect.effectmapping
+  name: EffectMapping
+  nameWithType: Effect.EffectMapping
+  fullName: System.Windows.Media.Effects.Effect.EffectMapping
+- uid: System.Windows.Media.Animation.Animatable.FreezeCore(System.Boolean)
+  commentId: M:System.Windows.Media.Animation.Animatable.FreezeCore(System.Boolean)
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.freezecore
+  name: FreezeCore(bool)
+  nameWithType: Animatable.FreezeCore(bool)
+  fullName: System.Windows.Media.Animation.Animatable.FreezeCore(bool)
+  nameWithType.vb: Animatable.FreezeCore(Boolean)
+  fullName.vb: System.Windows.Media.Animation.Animatable.FreezeCore(Boolean)
+  name.vb: FreezeCore(Boolean)
+  spec.csharp:
+  - uid: System.Windows.Media.Animation.Animatable.FreezeCore(System.Boolean)
+    name: FreezeCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.freezecore
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Animation.Animatable.FreezeCore(System.Boolean)
+    name: FreezeCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.freezecore
+  - name: (
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)
+  commentId: M:System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock)
+  name: ApplyAnimationClock(DependencyProperty, AnimationClock)
+  nameWithType: Animatable.ApplyAnimationClock(DependencyProperty, AnimationClock)
+  fullName: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty, System.Windows.Media.Animation.AnimationClock)
+  spec.csharp:
+  - uid: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)
+    name: ApplyAnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationClock
+    name: AnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationclock
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)
+    name: ApplyAnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationClock
+    name: AnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationclock
+  - name: )
+- uid: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)
+  commentId: M:System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock-system-windows-media-animation-handoffbehavior)
+  name: ApplyAnimationClock(DependencyProperty, AnimationClock, HandoffBehavior)
+  nameWithType: Animatable.ApplyAnimationClock(DependencyProperty, AnimationClock, HandoffBehavior)
+  fullName: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty, System.Windows.Media.Animation.AnimationClock, System.Windows.Media.Animation.HandoffBehavior)
+  spec.csharp:
+  - uid: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)
+    name: ApplyAnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock-system-windows-media-animation-handoffbehavior)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationClock
+    name: AnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationclock
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.HandoffBehavior
+    name: HandoffBehavior
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.handoffbehavior
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)
+    name: ApplyAnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock-system-windows-media-animation-handoffbehavior)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationClock
+    name: AnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationclock
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.HandoffBehavior
+    name: HandoffBehavior
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.handoffbehavior
+  - name: )
+- uid: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)
+  commentId: M:System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline)
+  name: BeginAnimation(DependencyProperty, AnimationTimeline)
+  nameWithType: Animatable.BeginAnimation(DependencyProperty, AnimationTimeline)
+  fullName: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty, System.Windows.Media.Animation.AnimationTimeline)
+  spec.csharp:
+  - uid: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)
+    name: BeginAnimation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationTimeline
+    name: AnimationTimeline
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationtimeline
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)
+    name: BeginAnimation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationTimeline
+    name: AnimationTimeline
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationtimeline
+  - name: )
+- uid: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)
+  commentId: M:System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline-system-windows-media-animation-handoffbehavior)
+  name: BeginAnimation(DependencyProperty, AnimationTimeline, HandoffBehavior)
+  nameWithType: Animatable.BeginAnimation(DependencyProperty, AnimationTimeline, HandoffBehavior)
+  fullName: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty, System.Windows.Media.Animation.AnimationTimeline, System.Windows.Media.Animation.HandoffBehavior)
+  spec.csharp:
+  - uid: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)
+    name: BeginAnimation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline-system-windows-media-animation-handoffbehavior)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationTimeline
+    name: AnimationTimeline
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationtimeline
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.HandoffBehavior
+    name: HandoffBehavior
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.handoffbehavior
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)
+    name: BeginAnimation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline-system-windows-media-animation-handoffbehavior)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationTimeline
+    name: AnimationTimeline
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationtimeline
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.HandoffBehavior
+    name: HandoffBehavior
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.handoffbehavior
+  - name: )
+- uid: System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)
+  commentId: M:System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.getanimationbasevalue
+  name: GetAnimationBaseValue(DependencyProperty)
+  nameWithType: Animatable.GetAnimationBaseValue(DependencyProperty)
+  fullName: System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)
+  spec.csharp:
+  - uid: System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)
+    name: GetAnimationBaseValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.getanimationbasevalue
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)
+    name: GetAnimationBaseValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.getanimationbasevalue
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: )
+- uid: System.Windows.Media.Animation.Animatable.HasAnimatedProperties
+  commentId: P:System.Windows.Media.Animation.Animatable.HasAnimatedProperties
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.hasanimatedproperties
+  name: HasAnimatedProperties
+  nameWithType: Animatable.HasAnimatedProperties
+  fullName: System.Windows.Media.Animation.Animatable.HasAnimatedProperties
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Windows.Media.Animation
+  commentId: N:System.Windows.Media.Animation
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Media.Animation
+  nameWithType: System.Windows.Media.Animation
+  fullName: System.Windows.Media.Animation
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
+  - name: .
+  - uid: System.Windows.Media.Animation
+    name: Animation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
+  - name: .
+  - uid: System.Windows.Media.Animation
+    name: Animation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation
+- uid: System.Windows.Media.Effects
+  commentId: N:System.Windows.Media.Effects
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Media.Effects
+  nameWithType: System.Windows.Media.Effects
+  fullName: System.Windows.Media.Effects
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
+  - name: .
+  - uid: System.Windows.Media.Effects
+    name: Effects
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
+  - name: .
+  - uid: System.Windows.Media.Effects
+    name: Effects
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.effects
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: System.Windows.DependencyProperty
+  isExternal: true
+  name: DependencyProperty
+  nameWithType: DependencyProperty
+  fullName: System.Windows.DependencyProperty
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.CloneCurrentValue*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Media.TransitionEffect.CloneCurrentValue
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Media.TransitionEffect.html#Microsoft_Xaml_Behaviors_Media_TransitionEffect_CloneCurrentValue
+  name: CloneCurrentValue
+  nameWithType: TransitionEffect.CloneCurrentValue
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.CloneCurrentValue
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  commentId: T:Microsoft.Xaml.Behaviors.Media.TransitionEffect
+  parent: Microsoft.Xaml.Behaviors.Media
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Media.TransitionEffect.html
+  name: TransitionEffect
+  nameWithType: TransitionEffect
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.DeepCopy*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Media.TransitionEffect.DeepCopy
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Media.TransitionEffect.html#Microsoft_Xaml_Behaviors_Media_TransitionEffect_DeepCopy
+  name: DeepCopy
+  nameWithType: TransitionEffect.DeepCopy
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.DeepCopy
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.#ctor*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Media.TransitionEffect.#ctor
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Media.TransitionEffect.html#Microsoft_Xaml_Behaviors_Media_TransitionEffect__ctor
+  name: TransitionEffect
+  nameWithType: TransitionEffect.TransitionEffect
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.TransitionEffect
+  nameWithType.vb: TransitionEffect.New
+  fullName.vb: Microsoft.Xaml.Behaviors.Media.TransitionEffect.New
+  name.vb: New
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.Input*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Media.TransitionEffect.Input
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Media.TransitionEffect.html#Microsoft_Xaml_Behaviors_Media_TransitionEffect_Input
+  name: Input
+  nameWithType: TransitionEffect.Input
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.Input
+- uid: System.Windows.Media.Brush
+  commentId: T:System.Windows.Media.Brush
+  parent: System.Windows.Media
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.brush
+  name: Brush
+  nameWithType: Brush
+  fullName: System.Windows.Media.Brush
+- uid: System.Windows.Media
+  commentId: N:System.Windows.Media
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Media
+  nameWithType: System.Windows.Media
+  fullName: System.Windows.Media
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.OldImage*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Media.TransitionEffect.OldImage
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Media.TransitionEffect.html#Microsoft_Xaml_Behaviors_Media_TransitionEffect_OldImage
+  name: OldImage
+  nameWithType: TransitionEffect.OldImage
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.OldImage
+- uid: Microsoft.Xaml.Behaviors.Media.TransitionEffect.Progress*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Media.TransitionEffect.Progress
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Media.TransitionEffect.html#Microsoft_Xaml_Behaviors_Media_TransitionEffect_Progress
+  name: Progress
+  nameWithType: TransitionEffect.Progress
+  fullName: Microsoft.Xaml.Behaviors.Media.TransitionEffect.Progress
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double

@@ -1,0 +1,1476 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.IO.Packaging.PackagePart
+  commentId: T:System.IO.Packaging.PackagePart
+  id: PackagePart
+  parent: System.IO.Packaging
+  children:
+  - System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri)
+  - System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri,System.String)
+  - System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri,System.String,System.IO.Packaging.CompressionOption)
+  - System.IO.Packaging.PackagePart.CompressionOption
+  - System.IO.Packaging.PackagePart.ContentType
+  - System.IO.Packaging.PackagePart.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+  - System.IO.Packaging.PackagePart.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String,System.String)
+  - System.IO.Packaging.PackagePart.DeleteRelationship(System.String)
+  - System.IO.Packaging.PackagePart.GetContentTypeCore
+  - System.IO.Packaging.PackagePart.GetRelationship(System.String)
+  - System.IO.Packaging.PackagePart.GetRelationships
+  - System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)
+  - System.IO.Packaging.PackagePart.GetStream
+  - System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode)
+  - System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode,System.IO.FileAccess)
+  - System.IO.Packaging.PackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)
+  - System.IO.Packaging.PackagePart.Package
+  - System.IO.Packaging.PackagePart.RelationshipExists(System.String)
+  - System.IO.Packaging.PackagePart.Uri
+  langs:
+  - csharp
+  - vb
+  name: PackagePart
+  nameWithType: PackagePart
+  fullName: System.IO.Packaging.PackagePart
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public abstract class PackagePart
+    content.vb: Public MustInherit Class PackagePart
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - System.IO.Packaging.ZipPackagePart
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri)
+  commentId: M:System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri)
+  id: '#ctor(System.IO.Packaging.Package,System.Uri)'
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: PackagePart(Package, Uri)
+  nameWithType: PackagePart.PackagePart(Package, Uri)
+  fullName: System.IO.Packaging.PackagePart.PackagePart(System.IO.Packaging.Package, System.Uri)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: protected PackagePart(Package package, Uri partUri)
+    parameters:
+    - id: package
+      type: System.IO.Packaging.Package
+    - id: partUri
+      type: System.Uri
+    content.vb: Protected Sub New(package As Package, partUri As Uri)
+  overload: System.IO.Packaging.PackagePart.#ctor*
+  nameWithType.vb: PackagePart.New(Package, Uri)
+  fullName.vb: System.IO.Packaging.PackagePart.New(System.IO.Packaging.Package, System.Uri)
+  name.vb: New(Package, Uri)
+- uid: System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri,System.String)
+  commentId: M:System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri,System.String)
+  id: '#ctor(System.IO.Packaging.Package,System.Uri,System.String)'
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: PackagePart(Package, Uri, string?)
+  nameWithType: PackagePart.PackagePart(Package, Uri, string?)
+  fullName: System.IO.Packaging.PackagePart.PackagePart(System.IO.Packaging.Package, System.Uri, string?)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: protected PackagePart(Package package, Uri partUri, string? contentType)
+    parameters:
+    - id: package
+      type: System.IO.Packaging.Package
+    - id: partUri
+      type: System.Uri
+    - id: contentType
+      type: System.String
+    content.vb: Protected Sub New(package As Package, partUri As Uri, contentType As String)
+  overload: System.IO.Packaging.PackagePart.#ctor*
+  nameWithType.vb: PackagePart.New(Package, Uri, String)
+  fullName.vb: System.IO.Packaging.PackagePart.New(System.IO.Packaging.Package, System.Uri, String)
+  name.vb: New(Package, Uri, String)
+- uid: System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri,System.String,System.IO.Packaging.CompressionOption)
+  commentId: M:System.IO.Packaging.PackagePart.#ctor(System.IO.Packaging.Package,System.Uri,System.String,System.IO.Packaging.CompressionOption)
+  id: '#ctor(System.IO.Packaging.Package,System.Uri,System.String,System.IO.Packaging.CompressionOption)'
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: PackagePart(Package, Uri, string?, CompressionOption)
+  nameWithType: PackagePart.PackagePart(Package, Uri, string?, CompressionOption)
+  fullName: System.IO.Packaging.PackagePart.PackagePart(System.IO.Packaging.Package, System.Uri, string?, System.IO.Packaging.CompressionOption)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: protected PackagePart(Package package, Uri partUri, string? contentType, CompressionOption compressionOption)
+    parameters:
+    - id: package
+      type: System.IO.Packaging.Package
+    - id: partUri
+      type: System.Uri
+    - id: contentType
+      type: System.String
+    - id: compressionOption
+      type: System.IO.Packaging.CompressionOption
+    content.vb: Protected Sub New(package As Package, partUri As Uri, contentType As String, compressionOption As CompressionOption)
+  overload: System.IO.Packaging.PackagePart.#ctor*
+  nameWithType.vb: PackagePart.New(Package, Uri, String, CompressionOption)
+  fullName.vb: System.IO.Packaging.PackagePart.New(System.IO.Packaging.Package, System.Uri, String, System.IO.Packaging.CompressionOption)
+  name.vb: New(Package, Uri, String, CompressionOption)
+- uid: System.IO.Packaging.PackagePart.GetContentTypeCore
+  commentId: M:System.IO.Packaging.PackagePart.GetContentTypeCore
+  id: GetContentTypeCore
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: GetContentTypeCore()
+  nameWithType: PackagePart.GetContentTypeCore()
+  fullName: System.IO.Packaging.PackagePart.GetContentTypeCore()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: protected virtual string GetContentTypeCore()
+    return:
+      type: System.String
+    content.vb: Protected Overridable Function GetContentTypeCore() As String
+  overload: System.IO.Packaging.PackagePart.GetContentTypeCore*
+- uid: System.IO.Packaging.PackagePart.GetStream
+  commentId: M:System.IO.Packaging.PackagePart.GetStream
+  id: GetStream
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: GetStream()
+  nameWithType: PackagePart.GetStream()
+  fullName: System.IO.Packaging.PackagePart.GetStream()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public Stream GetStream()
+    return:
+      type: System.IO.Stream
+    content.vb: Public Function GetStream() As Stream
+  overload: System.IO.Packaging.PackagePart.GetStream*
+- uid: System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode)
+  commentId: M:System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode)
+  id: GetStream(System.IO.FileMode)
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: GetStream(FileMode)
+  nameWithType: PackagePart.GetStream(FileMode)
+  fullName: System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public Stream GetStream(FileMode mode)
+    parameters:
+    - id: mode
+      type: System.IO.FileMode
+    return:
+      type: System.IO.Stream
+    content.vb: Public Function GetStream(mode As FileMode) As Stream
+  overload: System.IO.Packaging.PackagePart.GetStream*
+- uid: System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode,System.IO.FileAccess)
+  commentId: M:System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode,System.IO.FileAccess)
+  id: GetStream(System.IO.FileMode,System.IO.FileAccess)
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: GetStream(FileMode, FileAccess)
+  nameWithType: PackagePart.GetStream(FileMode, FileAccess)
+  fullName: System.IO.Packaging.PackagePart.GetStream(System.IO.FileMode, System.IO.FileAccess)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public Stream GetStream(FileMode mode, FileAccess access)
+    parameters:
+    - id: mode
+      type: System.IO.FileMode
+    - id: access
+      type: System.IO.FileAccess
+    return:
+      type: System.IO.Stream
+    content.vb: Public Function GetStream(mode As FileMode, access As FileAccess) As Stream
+  overload: System.IO.Packaging.PackagePart.GetStream*
+- uid: System.IO.Packaging.PackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)
+  commentId: M:System.IO.Packaging.PackagePart.GetStreamCore(System.IO.FileMode,System.IO.FileAccess)
+  id: GetStreamCore(System.IO.FileMode,System.IO.FileAccess)
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: GetStreamCore(FileMode, FileAccess)
+  nameWithType: PackagePart.GetStreamCore(FileMode, FileAccess)
+  fullName: System.IO.Packaging.PackagePart.GetStreamCore(System.IO.FileMode, System.IO.FileAccess)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: protected abstract Stream? GetStreamCore(FileMode mode, FileAccess access)
+    parameters:
+    - id: mode
+      type: System.IO.FileMode
+    - id: access
+      type: System.IO.FileAccess
+    return:
+      type: System.IO.Stream
+    content.vb: Protected MustOverride Function GetStreamCore(mode As FileMode, access As FileAccess) As Stream
+  overload: System.IO.Packaging.PackagePart.GetStreamCore*
+- uid: System.IO.Packaging.PackagePart.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+  commentId: M:System.IO.Packaging.PackagePart.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+  id: CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String)
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: CreateRelationship(Uri, TargetMode, string)
+  nameWithType: PackagePart.CreateRelationship(Uri, TargetMode, string)
+  fullName: System.IO.Packaging.PackagePart.CreateRelationship(System.Uri, System.IO.Packaging.TargetMode, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public PackageRelationship CreateRelationship(Uri targetUri, TargetMode targetMode, string relationshipType)
+    parameters:
+    - id: targetUri
+      type: System.Uri
+    - id: targetMode
+      type: System.IO.Packaging.TargetMode
+    - id: relationshipType
+      type: System.String
+    return:
+      type: System.IO.Packaging.PackageRelationship
+    content.vb: Public Function CreateRelationship(targetUri As Uri, targetMode As TargetMode, relationshipType As String) As PackageRelationship
+  overload: System.IO.Packaging.PackagePart.CreateRelationship*
+  nameWithType.vb: PackagePart.CreateRelationship(Uri, TargetMode, String)
+  fullName.vb: System.IO.Packaging.PackagePart.CreateRelationship(System.Uri, System.IO.Packaging.TargetMode, String)
+  name.vb: CreateRelationship(Uri, TargetMode, String)
+- uid: System.IO.Packaging.PackagePart.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String,System.String)
+  commentId: M:System.IO.Packaging.PackagePart.CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String,System.String)
+  id: CreateRelationship(System.Uri,System.IO.Packaging.TargetMode,System.String,System.String)
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: CreateRelationship(Uri, TargetMode, string, string?)
+  nameWithType: PackagePart.CreateRelationship(Uri, TargetMode, string, string?)
+  fullName: System.IO.Packaging.PackagePart.CreateRelationship(System.Uri, System.IO.Packaging.TargetMode, string, string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public PackageRelationship CreateRelationship(Uri targetUri, TargetMode targetMode, string relationshipType, string? id)
+    parameters:
+    - id: targetUri
+      type: System.Uri
+    - id: targetMode
+      type: System.IO.Packaging.TargetMode
+    - id: relationshipType
+      type: System.String
+    - id: id
+      type: System.String
+    return:
+      type: System.IO.Packaging.PackageRelationship
+    content.vb: Public Function CreateRelationship(targetUri As Uri, targetMode As TargetMode, relationshipType As String, id As String) As PackageRelationship
+  overload: System.IO.Packaging.PackagePart.CreateRelationship*
+  nameWithType.vb: PackagePart.CreateRelationship(Uri, TargetMode, String, String)
+  fullName.vb: System.IO.Packaging.PackagePart.CreateRelationship(System.Uri, System.IO.Packaging.TargetMode, String, String)
+  name.vb: CreateRelationship(Uri, TargetMode, String, String)
+- uid: System.IO.Packaging.PackagePart.DeleteRelationship(System.String)
+  commentId: M:System.IO.Packaging.PackagePart.DeleteRelationship(System.String)
+  id: DeleteRelationship(System.String)
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: DeleteRelationship(string)
+  nameWithType: PackagePart.DeleteRelationship(string)
+  fullName: System.IO.Packaging.PackagePart.DeleteRelationship(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public void DeleteRelationship(string id)
+    parameters:
+    - id: id
+      type: System.String
+    content.vb: Public Sub DeleteRelationship(id As String)
+  overload: System.IO.Packaging.PackagePart.DeleteRelationship*
+  nameWithType.vb: PackagePart.DeleteRelationship(String)
+  fullName.vb: System.IO.Packaging.PackagePart.DeleteRelationship(String)
+  name.vb: DeleteRelationship(String)
+- uid: System.IO.Packaging.PackagePart.GetRelationships
+  commentId: M:System.IO.Packaging.PackagePart.GetRelationships
+  id: GetRelationships
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: GetRelationships()
+  nameWithType: PackagePart.GetRelationships()
+  fullName: System.IO.Packaging.PackagePart.GetRelationships()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public PackageRelationshipCollection GetRelationships()
+    return:
+      type: System.IO.Packaging.PackageRelationshipCollection
+    content.vb: Public Function GetRelationships() As PackageRelationshipCollection
+  overload: System.IO.Packaging.PackagePart.GetRelationships*
+- uid: System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)
+  commentId: M:System.IO.Packaging.PackagePart.GetRelationshipsByType(System.String)
+  id: GetRelationshipsByType(System.String)
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: GetRelationshipsByType(string)
+  nameWithType: PackagePart.GetRelationshipsByType(string)
+  fullName: System.IO.Packaging.PackagePart.GetRelationshipsByType(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public PackageRelationshipCollection GetRelationshipsByType(string relationshipType)
+    parameters:
+    - id: relationshipType
+      type: System.String
+    return:
+      type: System.IO.Packaging.PackageRelationshipCollection
+    content.vb: Public Function GetRelationshipsByType(relationshipType As String) As PackageRelationshipCollection
+  overload: System.IO.Packaging.PackagePart.GetRelationshipsByType*
+  nameWithType.vb: PackagePart.GetRelationshipsByType(String)
+  fullName.vb: System.IO.Packaging.PackagePart.GetRelationshipsByType(String)
+  name.vb: GetRelationshipsByType(String)
+- uid: System.IO.Packaging.PackagePart.GetRelationship(System.String)
+  commentId: M:System.IO.Packaging.PackagePart.GetRelationship(System.String)
+  id: GetRelationship(System.String)
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: GetRelationship(string)
+  nameWithType: PackagePart.GetRelationship(string)
+  fullName: System.IO.Packaging.PackagePart.GetRelationship(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public PackageRelationship GetRelationship(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.IO.Packaging.PackageRelationship
+    content.vb: Public Function GetRelationship(id As String) As PackageRelationship
+  overload: System.IO.Packaging.PackagePart.GetRelationship*
+  nameWithType.vb: PackagePart.GetRelationship(String)
+  fullName.vb: System.IO.Packaging.PackagePart.GetRelationship(String)
+  name.vb: GetRelationship(String)
+- uid: System.IO.Packaging.PackagePart.RelationshipExists(System.String)
+  commentId: M:System.IO.Packaging.PackagePart.RelationshipExists(System.String)
+  id: RelationshipExists(System.String)
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: RelationshipExists(string)
+  nameWithType: PackagePart.RelationshipExists(string)
+  fullName: System.IO.Packaging.PackagePart.RelationshipExists(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public bool RelationshipExists(string id)
+    parameters:
+    - id: id
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Function RelationshipExists(id As String) As Boolean
+  overload: System.IO.Packaging.PackagePart.RelationshipExists*
+  nameWithType.vb: PackagePart.RelationshipExists(String)
+  fullName.vb: System.IO.Packaging.PackagePart.RelationshipExists(String)
+  name.vb: RelationshipExists(String)
+- uid: System.IO.Packaging.PackagePart.Uri
+  commentId: P:System.IO.Packaging.PackagePart.Uri
+  id: Uri
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: Uri
+  nameWithType: PackagePart.Uri
+  fullName: System.IO.Packaging.PackagePart.Uri
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public Uri Uri { get; }
+    parameters: []
+    return:
+      type: System.Uri
+    content.vb: Public ReadOnly Property Uri As Uri
+  overload: System.IO.Packaging.PackagePart.Uri*
+- uid: System.IO.Packaging.PackagePart.ContentType
+  commentId: P:System.IO.Packaging.PackagePart.ContentType
+  id: ContentType
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: ContentType
+  nameWithType: PackagePart.ContentType
+  fullName: System.IO.Packaging.PackagePart.ContentType
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public string ContentType { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ContentType As String
+  overload: System.IO.Packaging.PackagePart.ContentType*
+- uid: System.IO.Packaging.PackagePart.Package
+  commentId: P:System.IO.Packaging.PackagePart.Package
+  id: Package
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: Package
+  nameWithType: PackagePart.Package
+  fullName: System.IO.Packaging.PackagePart.Package
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public Package Package { get; }
+    parameters: []
+    return:
+      type: System.IO.Packaging.Package
+    content.vb: Public ReadOnly Property Package As Package
+  overload: System.IO.Packaging.PackagePart.Package*
+- uid: System.IO.Packaging.PackagePart.CompressionOption
+  commentId: P:System.IO.Packaging.PackagePart.CompressionOption
+  id: CompressionOption
+  parent: System.IO.Packaging.PackagePart
+  langs:
+  - csharp
+  - vb
+  name: CompressionOption
+  nameWithType: PackagePart.CompressionOption
+  fullName: System.IO.Packaging.PackagePart.CompressionOption
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public CompressionOption CompressionOption { get; }
+    parameters: []
+    return:
+      type: System.IO.Packaging.CompressionOption
+    content.vb: Public ReadOnly Property CompressionOption As CompressionOption
+  overload: System.IO.Packaging.PackagePart.CompressionOption*
+references:
+- uid: System.IO.Packaging
+  commentId: N:System.IO.Packaging
+  isExternal: true
+  href: System.html
+  name: System.IO.Packaging
+  nameWithType: System.IO.Packaging
+  fullName: System.IO.Packaging
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+  - name: .
+  - uid: System.IO.Packaging
+    name: Packaging
+    isExternal: true
+    href: System.IO.Packaging.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+  - name: .
+  - uid: System.IO.Packaging
+    name: Packaging
+    isExternal: true
+    href: System.IO.Packaging.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: System.IO.Packaging.PackagePart.#ctor*
+  commentId: Overload:System.IO.Packaging.PackagePart.#ctor
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart__ctor_System_IO_Packaging_Package_System_Uri_
+  name: PackagePart
+  nameWithType: PackagePart.PackagePart
+  fullName: System.IO.Packaging.PackagePart.PackagePart
+  nameWithType.vb: PackagePart.New
+  fullName.vb: System.IO.Packaging.PackagePart.New
+  name.vb: New
+- uid: System.IO.Packaging.Package
+  commentId: T:System.IO.Packaging.Package
+  parent: System.IO.Packaging
+  isExternal: true
+  href: System.IO.Packaging.Package.html
+  name: Package
+  nameWithType: Package
+  fullName: System.IO.Packaging.Package
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IO.Packaging.CompressionOption
+  commentId: T:System.IO.Packaging.CompressionOption
+  parent: System.IO.Packaging
+  isExternal: true
+  href: System.IO.Packaging.CompressionOption.html
+  name: CompressionOption
+  nameWithType: CompressionOption
+  fullName: System.IO.Packaging.CompressionOption
+- uid: System.IO.Packaging.PackagePart.GetContentTypeCore*
+  commentId: Overload:System.IO.Packaging.PackagePart.GetContentTypeCore
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart_GetContentTypeCore
+  name: GetContentTypeCore
+  nameWithType: PackagePart.GetContentTypeCore
+  fullName: System.IO.Packaging.PackagePart.GetContentTypeCore
+- uid: System.IO.Packaging.PackagePart.GetStream*
+  commentId: Overload:System.IO.Packaging.PackagePart.GetStream
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart_GetStream
+  name: GetStream
+  nameWithType: PackagePart.GetStream
+  fullName: System.IO.Packaging.PackagePart.GetStream
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.IO.FileMode
+  commentId: T:System.IO.FileMode
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.filemode
+  name: FileMode
+  nameWithType: FileMode
+  fullName: System.IO.FileMode
+- uid: System.IO.FileAccess
+  commentId: T:System.IO.FileAccess
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.fileaccess
+  name: FileAccess
+  nameWithType: FileAccess
+  fullName: System.IO.FileAccess
+- uid: System.IO.Packaging.PackagePart.GetStreamCore*
+  commentId: Overload:System.IO.Packaging.PackagePart.GetStreamCore
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart_GetStreamCore_System_IO_FileMode_System_IO_FileAccess_
+  name: GetStreamCore
+  nameWithType: PackagePart.GetStreamCore
+  fullName: System.IO.Packaging.PackagePart.GetStreamCore
+- uid: System.IO.Packaging.PackagePart.CreateRelationship*
+  commentId: Overload:System.IO.Packaging.PackagePart.CreateRelationship
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart_CreateRelationship_System_Uri_System_IO_Packaging_TargetMode_System_String_
+  name: CreateRelationship
+  nameWithType: PackagePart.CreateRelationship
+  fullName: System.IO.Packaging.PackagePart.CreateRelationship
+- uid: System.IO.Packaging.TargetMode
+  commentId: T:System.IO.Packaging.TargetMode
+  parent: System.IO.Packaging
+  isExternal: true
+  href: System.IO.Packaging.TargetMode.html
+  name: TargetMode
+  nameWithType: TargetMode
+  fullName: System.IO.Packaging.TargetMode
+- uid: System.IO.Packaging.PackageRelationship
+  commentId: T:System.IO.Packaging.PackageRelationship
+  parent: System.IO.Packaging
+  isExternal: true
+  href: System.IO.Packaging.PackageRelationship.html
+  name: PackageRelationship
+  nameWithType: PackageRelationship
+  fullName: System.IO.Packaging.PackageRelationship
+- uid: System.IO.Packaging.PackagePart.DeleteRelationship*
+  commentId: Overload:System.IO.Packaging.PackagePart.DeleteRelationship
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart_DeleteRelationship_System_String_
+  name: DeleteRelationship
+  nameWithType: PackagePart.DeleteRelationship
+  fullName: System.IO.Packaging.PackagePart.DeleteRelationship
+- uid: System.IO.Packaging.PackagePart.GetRelationships*
+  commentId: Overload:System.IO.Packaging.PackagePart.GetRelationships
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart_GetRelationships
+  name: GetRelationships
+  nameWithType: PackagePart.GetRelationships
+  fullName: System.IO.Packaging.PackagePart.GetRelationships
+- uid: System.IO.Packaging.PackageRelationshipCollection
+  commentId: T:System.IO.Packaging.PackageRelationshipCollection
+  parent: System.IO.Packaging
+  isExternal: true
+  href: System.IO.Packaging.PackageRelationshipCollection.html
+  name: PackageRelationshipCollection
+  nameWithType: PackageRelationshipCollection
+  fullName: System.IO.Packaging.PackageRelationshipCollection
+- uid: System.IO.Packaging.PackagePart.GetRelationshipsByType*
+  commentId: Overload:System.IO.Packaging.PackagePart.GetRelationshipsByType
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart_GetRelationshipsByType_System_String_
+  name: GetRelationshipsByType
+  nameWithType: PackagePart.GetRelationshipsByType
+  fullName: System.IO.Packaging.PackagePart.GetRelationshipsByType
+- uid: System.IO.Packaging.PackagePart.GetRelationship*
+  commentId: Overload:System.IO.Packaging.PackagePart.GetRelationship
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart_GetRelationship_System_String_
+  name: GetRelationship
+  nameWithType: PackagePart.GetRelationship
+  fullName: System.IO.Packaging.PackagePart.GetRelationship
+- uid: System.IO.Packaging.PackagePart.RelationshipExists*
+  commentId: Overload:System.IO.Packaging.PackagePart.RelationshipExists
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart_RelationshipExists_System_String_
+  name: RelationshipExists
+  nameWithType: PackagePart.RelationshipExists
+  fullName: System.IO.Packaging.PackagePart.RelationshipExists
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IO.Packaging.PackagePart.Uri*
+  commentId: Overload:System.IO.Packaging.PackagePart.Uri
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart_Uri
+  name: Uri
+  nameWithType: PackagePart.Uri
+  fullName: System.IO.Packaging.PackagePart.Uri
+- uid: System.IO.Packaging.PackagePart.ContentType*
+  commentId: Overload:System.IO.Packaging.PackagePart.ContentType
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart_ContentType
+  name: ContentType
+  nameWithType: PackagePart.ContentType
+  fullName: System.IO.Packaging.PackagePart.ContentType
+- uid: System.IO.Packaging.PackagePart.Package*
+  commentId: Overload:System.IO.Packaging.PackagePart.Package
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart_Package
+  name: Package
+  nameWithType: PackagePart.Package
+  fullName: System.IO.Packaging.PackagePart.Package
+- uid: System.IO.Packaging.PackagePart.CompressionOption*
+  commentId: Overload:System.IO.Packaging.PackagePart.CompressionOption
+  isExternal: true
+  href: System.IO.Packaging.PackagePart.html#System_IO_Packaging_PackagePart_CompressionOption
+  name: CompressionOption
+  nameWithType: PackagePart.CompressionOption
+  fullName: System.IO.Packaging.PackagePart.CompressionOption

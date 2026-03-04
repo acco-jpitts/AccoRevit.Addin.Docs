@@ -1,0 +1,624 @@
+### YamlMime:ManagedReference
+items:
+- uid: Nice3point.Revit.Extensions.ContextMenuExtensions
+  commentId: T:Nice3point.Revit.Extensions.ContextMenuExtensions
+  id: ContextMenuExtensions
+  parent: Nice3point.Revit.Extensions
+  children:
+  - Nice3point.Revit.Extensions.ContextMenuExtensions.AddMenuItem``1(Autodesk.Revit.UI.ContextMenu,System.String)
+  - Nice3point.Revit.Extensions.ContextMenuExtensions.AddSeparator(Autodesk.Revit.UI.ContextMenu)
+  - Nice3point.Revit.Extensions.ContextMenuExtensions.AddSubMenu(Autodesk.Revit.UI.ContextMenu,System.String,Autodesk.Revit.UI.ContextMenu)
+  - Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu(Autodesk.Revit.UI.UIControlledApplication,System.Action{Autodesk.Revit.UI.ContextMenu})
+  - Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu(Autodesk.Revit.UI.UIControlledApplication,System.String,System.Action{Autodesk.Revit.UI.ContextMenu})
+  - Nice3point.Revit.Extensions.ContextMenuExtensions.SetAvailabilityController``1(Autodesk.Revit.UI.CommandMenuItem)
+  langs:
+  - csharp
+  - vb
+  name: ContextMenuExtensions
+  nameWithType: ContextMenuExtensions
+  fullName: Nice3point.Revit.Extensions.ContextMenuExtensions
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public static class ContextMenuExtensions
+    content.vb: >-
+      <PublicAPI>
+
+      Public Module ContextMenuExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Nice3point.Revit.Extensions.ContextMenuExtensions.AddMenuItem``1(Autodesk.Revit.UI.ContextMenu,System.String)
+  commentId: M:Nice3point.Revit.Extensions.ContextMenuExtensions.AddMenuItem``1(Autodesk.Revit.UI.ContextMenu,System.String)
+  id: AddMenuItem``1(Autodesk.Revit.UI.ContextMenu,System.String)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.ContextMenuExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddMenuItem<TCommand>(ContextMenu, string)
+  nameWithType: ContextMenuExtensions.AddMenuItem<TCommand>(ContextMenu, string)
+  fullName: Nice3point.Revit.Extensions.ContextMenuExtensions.AddMenuItem<TCommand>(Autodesk.Revit.UI.ContextMenu, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: 'public static CommandMenuItem AddMenuItem<TCommand>(this ContextMenu menu, string name) where TCommand : IExternalCommand, new()'
+    parameters:
+    - id: menu
+      type: Autodesk.Revit.UI.ContextMenu
+    - id: name
+      type: System.String
+    typeParameters:
+    - id: TCommand
+    return:
+      type: Autodesk.Revit.UI.CommandMenuItem
+    content.vb: Public Shared Function AddMenuItem(Of TCommand As {IExternalCommand, New})(menu As ContextMenu, name As String) As CommandMenuItem
+  overload: Nice3point.Revit.Extensions.ContextMenuExtensions.AddMenuItem*
+  nameWithType.vb: ContextMenuExtensions.AddMenuItem(Of TCommand)(ContextMenu, String)
+  fullName.vb: Nice3point.Revit.Extensions.ContextMenuExtensions.AddMenuItem(Of TCommand)(Autodesk.Revit.UI.ContextMenu, String)
+  name.vb: AddMenuItem(Of TCommand)(ContextMenu, String)
+- uid: Nice3point.Revit.Extensions.ContextMenuExtensions.AddSeparator(Autodesk.Revit.UI.ContextMenu)
+  commentId: M:Nice3point.Revit.Extensions.ContextMenuExtensions.AddSeparator(Autodesk.Revit.UI.ContextMenu)
+  id: AddSeparator(Autodesk.Revit.UI.ContextMenu)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.ContextMenuExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddSeparator(ContextMenu)
+  nameWithType: ContextMenuExtensions.AddSeparator(ContextMenu)
+  fullName: Nice3point.Revit.Extensions.ContextMenuExtensions.AddSeparator(Autodesk.Revit.UI.ContextMenu)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: public static SeparatorItem AddSeparator(this ContextMenu menu)
+    parameters:
+    - id: menu
+      type: Autodesk.Revit.UI.ContextMenu
+    return:
+      type: Autodesk.Revit.UI.SeparatorItem
+    content.vb: Public Shared Function AddSeparator(menu As ContextMenu) As SeparatorItem
+  overload: Nice3point.Revit.Extensions.ContextMenuExtensions.AddSeparator*
+- uid: Nice3point.Revit.Extensions.ContextMenuExtensions.AddSubMenu(Autodesk.Revit.UI.ContextMenu,System.String,Autodesk.Revit.UI.ContextMenu)
+  commentId: M:Nice3point.Revit.Extensions.ContextMenuExtensions.AddSubMenu(Autodesk.Revit.UI.ContextMenu,System.String,Autodesk.Revit.UI.ContextMenu)
+  id: AddSubMenu(Autodesk.Revit.UI.ContextMenu,System.String,Autodesk.Revit.UI.ContextMenu)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.ContextMenuExtensions
+  langs:
+  - csharp
+  - vb
+  name: AddSubMenu(ContextMenu, string, ContextMenu)
+  nameWithType: ContextMenuExtensions.AddSubMenu(ContextMenu, string, ContextMenu)
+  fullName: Nice3point.Revit.Extensions.ContextMenuExtensions.AddSubMenu(Autodesk.Revit.UI.ContextMenu, string, Autodesk.Revit.UI.ContextMenu)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: public static ContextMenu AddSubMenu(this ContextMenu menu, string name, ContextMenu subMenu)
+    parameters:
+    - id: menu
+      type: Autodesk.Revit.UI.ContextMenu
+    - id: name
+      type: System.String
+    - id: subMenu
+      type: Autodesk.Revit.UI.ContextMenu
+    return:
+      type: Autodesk.Revit.UI.ContextMenu
+    content.vb: Public Shared Function AddSubMenu(menu As ContextMenu, name As String, subMenu As ContextMenu) As ContextMenu
+  overload: Nice3point.Revit.Extensions.ContextMenuExtensions.AddSubMenu*
+  nameWithType.vb: ContextMenuExtensions.AddSubMenu(ContextMenu, String, ContextMenu)
+  fullName.vb: Nice3point.Revit.Extensions.ContextMenuExtensions.AddSubMenu(Autodesk.Revit.UI.ContextMenu, String, Autodesk.Revit.UI.ContextMenu)
+  name.vb: AddSubMenu(ContextMenu, String, ContextMenu)
+- uid: Nice3point.Revit.Extensions.ContextMenuExtensions.SetAvailabilityController``1(Autodesk.Revit.UI.CommandMenuItem)
+  commentId: M:Nice3point.Revit.Extensions.ContextMenuExtensions.SetAvailabilityController``1(Autodesk.Revit.UI.CommandMenuItem)
+  id: SetAvailabilityController``1(Autodesk.Revit.UI.CommandMenuItem)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.ContextMenuExtensions
+  langs:
+  - csharp
+  - vb
+  name: SetAvailabilityController<T>(CommandMenuItem)
+  nameWithType: ContextMenuExtensions.SetAvailabilityController<T>(CommandMenuItem)
+  fullName: Nice3point.Revit.Extensions.ContextMenuExtensions.SetAvailabilityController<T>(Autodesk.Revit.UI.CommandMenuItem)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: 'public static CommandMenuItem SetAvailabilityController<T>(this CommandMenuItem menuItem) where T : IExternalCommandAvailability, new()'
+    parameters:
+    - id: menuItem
+      type: Autodesk.Revit.UI.CommandMenuItem
+    typeParameters:
+    - id: T
+    return:
+      type: Autodesk.Revit.UI.CommandMenuItem
+    content.vb: Public Shared Function SetAvailabilityController(Of T As {IExternalCommandAvailability, New})(menuItem As CommandMenuItem) As CommandMenuItem
+  overload: Nice3point.Revit.Extensions.ContextMenuExtensions.SetAvailabilityController*
+  nameWithType.vb: ContextMenuExtensions.SetAvailabilityController(Of T)(CommandMenuItem)
+  fullName.vb: Nice3point.Revit.Extensions.ContextMenuExtensions.SetAvailabilityController(Of T)(Autodesk.Revit.UI.CommandMenuItem)
+  name.vb: SetAvailabilityController(Of T)(CommandMenuItem)
+- uid: Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu(Autodesk.Revit.UI.UIControlledApplication,System.Action{Autodesk.Revit.UI.ContextMenu})
+  commentId: M:Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu(Autodesk.Revit.UI.UIControlledApplication,System.Action{Autodesk.Revit.UI.ContextMenu})
+  id: ConfigureContextMenu(Autodesk.Revit.UI.UIControlledApplication,System.Action{Autodesk.Revit.UI.ContextMenu})
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.ContextMenuExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureContextMenu(UIControlledApplication, Action<ContextMenu>)
+  nameWithType: ContextMenuExtensions.ConfigureContextMenu(UIControlledApplication, Action<ContextMenu>)
+  fullName: Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu(Autodesk.Revit.UI.UIControlledApplication, System.Action<Autodesk.Revit.UI.ContextMenu>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: public static UIControlledApplication ConfigureContextMenu(this UIControlledApplication application, Action<ContextMenu> configuration)
+    parameters:
+    - id: application
+      type: Autodesk.Revit.UI.UIControlledApplication
+    - id: configuration
+      type: System.Action{Autodesk.Revit.UI.ContextMenu}
+    return:
+      type: Autodesk.Revit.UI.UIControlledApplication
+    content.vb: Public Shared Function ConfigureContextMenu(application As UIControlledApplication, configuration As Action(Of ContextMenu)) As UIControlledApplication
+  overload: Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu*
+  nameWithType.vb: ContextMenuExtensions.ConfigureContextMenu(UIControlledApplication, Action(Of ContextMenu))
+  fullName.vb: Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu(Autodesk.Revit.UI.UIControlledApplication, System.Action(Of Autodesk.Revit.UI.ContextMenu))
+  name.vb: ConfigureContextMenu(UIControlledApplication, Action(Of ContextMenu))
+- uid: Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu(Autodesk.Revit.UI.UIControlledApplication,System.String,System.Action{Autodesk.Revit.UI.ContextMenu})
+  commentId: M:Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu(Autodesk.Revit.UI.UIControlledApplication,System.String,System.Action{Autodesk.Revit.UI.ContextMenu})
+  id: ConfigureContextMenu(Autodesk.Revit.UI.UIControlledApplication,System.String,System.Action{Autodesk.Revit.UI.ContextMenu})
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.ContextMenuExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureContextMenu(UIControlledApplication, string, Action<ContextMenu>)
+  nameWithType: ContextMenuExtensions.ConfigureContextMenu(UIControlledApplication, string, Action<ContextMenu>)
+  fullName: Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu(Autodesk.Revit.UI.UIControlledApplication, string, System.Action<Autodesk.Revit.UI.ContextMenu>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: public static UIControlledApplication ConfigureContextMenu(this UIControlledApplication application, string title, Action<ContextMenu> configuration)
+    parameters:
+    - id: application
+      type: Autodesk.Revit.UI.UIControlledApplication
+    - id: title
+      type: System.String
+    - id: configuration
+      type: System.Action{Autodesk.Revit.UI.ContextMenu}
+    return:
+      type: Autodesk.Revit.UI.UIControlledApplication
+    content.vb: Public Shared Function ConfigureContextMenu(application As UIControlledApplication, title As String, configuration As Action(Of ContextMenu)) As UIControlledApplication
+  overload: Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu*
+  nameWithType.vb: ContextMenuExtensions.ConfigureContextMenu(UIControlledApplication, String, Action(Of ContextMenu))
+  fullName.vb: Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu(Autodesk.Revit.UI.UIControlledApplication, String, System.Action(Of Autodesk.Revit.UI.ContextMenu))
+  name.vb: ConfigureContextMenu(UIControlledApplication, String, Action(Of ContextMenu))
+references:
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Nice3point.Revit.Extensions.ContextMenuExtensions.AddMenuItem*
+  commentId: Overload:Nice3point.Revit.Extensions.ContextMenuExtensions.AddMenuItem
+  isExternal: true
+  href: Nice3point.Revit.Extensions.ContextMenuExtensions.html#Nice3point_Revit_Extensions_ContextMenuExtensions_AddMenuItem__1_Autodesk_Revit_UI_ContextMenu_System_String_
+  name: AddMenuItem
+  nameWithType: ContextMenuExtensions.AddMenuItem
+  fullName: Nice3point.Revit.Extensions.ContextMenuExtensions.AddMenuItem
+- uid: Autodesk.Revit.UI.ContextMenu
+  isExternal: true
+  name: ContextMenu
+  nameWithType: ContextMenu
+  fullName: Autodesk.Revit.UI.ContextMenu
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Autodesk.Revit.UI.CommandMenuItem
+  isExternal: true
+  name: CommandMenuItem
+  nameWithType: CommandMenuItem
+  fullName: Autodesk.Revit.UI.CommandMenuItem
+- uid: Nice3point.Revit.Extensions.ContextMenuExtensions.AddSeparator*
+  commentId: Overload:Nice3point.Revit.Extensions.ContextMenuExtensions.AddSeparator
+  isExternal: true
+  href: Nice3point.Revit.Extensions.ContextMenuExtensions.html#Nice3point_Revit_Extensions_ContextMenuExtensions_AddSeparator_Autodesk_Revit_UI_ContextMenu_
+  name: AddSeparator
+  nameWithType: ContextMenuExtensions.AddSeparator
+  fullName: Nice3point.Revit.Extensions.ContextMenuExtensions.AddSeparator
+- uid: Autodesk.Revit.UI.SeparatorItem
+  commentId: '!:Autodesk.Revit.UI.SeparatorItem'
+  isExternal: true
+  name: SeparatorItem
+  nameWithType: SeparatorItem
+  fullName: Autodesk.Revit.UI.SeparatorItem
+- uid: Nice3point.Revit.Extensions.ContextMenuExtensions.AddSubMenu*
+  commentId: Overload:Nice3point.Revit.Extensions.ContextMenuExtensions.AddSubMenu
+  isExternal: true
+  href: Nice3point.Revit.Extensions.ContextMenuExtensions.html#Nice3point_Revit_Extensions_ContextMenuExtensions_AddSubMenu_Autodesk_Revit_UI_ContextMenu_System_String_Autodesk_Revit_UI_ContextMenu_
+  name: AddSubMenu
+  nameWithType: ContextMenuExtensions.AddSubMenu
+  fullName: Nice3point.Revit.Extensions.ContextMenuExtensions.AddSubMenu
+- uid: Nice3point.Revit.Extensions.ContextMenuExtensions.SetAvailabilityController*
+  commentId: Overload:Nice3point.Revit.Extensions.ContextMenuExtensions.SetAvailabilityController
+  isExternal: true
+  href: Nice3point.Revit.Extensions.ContextMenuExtensions.html#Nice3point_Revit_Extensions_ContextMenuExtensions_SetAvailabilityController__1_Autodesk_Revit_UI_CommandMenuItem_
+  name: SetAvailabilityController
+  nameWithType: ContextMenuExtensions.SetAvailabilityController
+  fullName: Nice3point.Revit.Extensions.ContextMenuExtensions.SetAvailabilityController
+- uid: Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu*
+  commentId: Overload:Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu
+  isExternal: true
+  href: Nice3point.Revit.Extensions.ContextMenuExtensions.html#Nice3point_Revit_Extensions_ContextMenuExtensions_ConfigureContextMenu_Autodesk_Revit_UI_UIControlledApplication_System_Action_Autodesk_Revit_UI_ContextMenu__
+  name: ConfigureContextMenu
+  nameWithType: ContextMenuExtensions.ConfigureContextMenu
+  fullName: Nice3point.Revit.Extensions.ContextMenuExtensions.ConfigureContextMenu
+- uid: Autodesk.Revit.UI.UIControlledApplication
+  isExternal: true
+  name: UIControlledApplication
+  nameWithType: UIControlledApplication
+  fullName: Autodesk.Revit.UI.UIControlledApplication
+- uid: System.Action{Autodesk.Revit.UI.ContextMenu}
+  commentId: T:System.Action{Autodesk.Revit.UI.ContextMenu}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<ContextMenu>
+  nameWithType: Action<ContextMenu>
+  fullName: System.Action<Autodesk.Revit.UI.ContextMenu>
+  nameWithType.vb: Action(Of ContextMenu)
+  fullName.vb: System.Action(Of Autodesk.Revit.UI.ContextMenu)
+  name.vb: Action(Of ContextMenu)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Autodesk.Revit.UI.ContextMenu
+    name: ContextMenu
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.UI.ContextMenu
+    name: ContextMenu
+    isExternal: true
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,1779 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class Meter | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class Meter | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="System.Diagnostics.Metrics.Meter">
+
+
+
+  <h1 id="System_Diagnostics_Metrics_Meter" data-uid="System.Diagnostics.Metrics.Meter" class="text-break">
+Class Meter  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="System.html">System</a>.<a class="xref" href="System.Diagnostics.html">Diagnostics</a>.<a class="xref" href="System.Diagnostics.Metrics.html">Metrics</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Meter : IDisposable</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">Meter</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_">UnitExtensions.ToUnitLabel(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_">ReflectionUtils.GetHighlightProperty(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_">SystemExtensions.Cast&lt;T&gt;(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="System_Diagnostics_Metrics_Meter__ctor_" data-uid="System.Diagnostics.Metrics.Meter.#ctor*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter__ctor_System_Diagnostics_Metrics_MeterOptions_" data-uid="System.Diagnostics.Metrics.Meter.#ctor(System.Diagnostics.Metrics.MeterOptions)">
+  Meter(MeterOptions)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Meter(MeterOptions options)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>options</code> <a class="xref" href="System.Diagnostics.Metrics.MeterOptions.html">MeterOptions</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter__ctor_" data-uid="System.Diagnostics.Metrics.Meter.#ctor*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter__ctor_System_String_" data-uid="System.Diagnostics.Metrics.Meter.#ctor(System.String)">
+  Meter(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Meter(string name)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter__ctor_" data-uid="System.Diagnostics.Metrics.Meter.#ctor*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter__ctor_System_String_System_String_" data-uid="System.Diagnostics.Metrics.Meter.#ctor(System.String,System.String)">
+  Meter(string, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Meter(string name, string? version)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>version</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter__ctor_" data-uid="System.Diagnostics.Metrics.Meter.#ctor*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter__ctor_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___System_Object_" data-uid="System.Diagnostics.Metrics.Meter.#ctor(System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Object)">
+  Meter(string, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?, object?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Meter(string name, string? version, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags, object? scope = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>version</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>scope</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="System_Diagnostics_Metrics_Meter_Name_" data-uid="System.Diagnostics.Metrics.Meter.Name*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_Name" data-uid="System.Diagnostics.Metrics.Meter.Name">
+  Name
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_Scope_" data-uid="System.Diagnostics.Metrics.Meter.Scope*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_Scope" data-uid="System.Diagnostics.Metrics.Meter.Scope">
+  Scope
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object? Scope { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_Tags_" data-uid="System.Diagnostics.Metrics.Meter.Tags*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_Tags" data-uid="System.Diagnostics.Metrics.Meter.Tags">
+  Tags
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? Tags { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_TelemetrySchemaUrl_" data-uid="System.Diagnostics.Metrics.Meter.TelemetrySchemaUrl*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_TelemetrySchemaUrl" data-uid="System.Diagnostics.Metrics.Meter.TelemetrySchemaUrl">
+  TelemetrySchemaUrl
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? TelemetrySchemaUrl { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_Version_" data-uid="System.Diagnostics.Metrics.Meter.Version*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_Version" data-uid="System.Diagnostics.Metrics.Meter.Version">
+  Version
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string? Version { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateCounter__1_System_String_System_String_System_String_" data-uid="System.Diagnostics.Metrics.Meter.CreateCounter``1(System.String,System.String,System.String)">
+  CreateCounter&lt;T&gt;(string, string?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Counter&lt;T&gt; CreateCounter&lt;T&gt;(string name, string? unit = null, string? description = null) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.Counter-1.html">Counter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateCounter__1_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___" data-uid="System.Diagnostics.Metrics.Meter.CreateCounter``1(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+  CreateCounter&lt;T&gt;(string, string?, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Counter&lt;T&gt; CreateCounter&lt;T&gt;(string name, string? unit, string? description, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.Counter-1.html">Counter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateGauge_" data-uid="System.Diagnostics.Metrics.Meter.CreateGauge*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateGauge__1_System_String_" data-uid="System.Diagnostics.Metrics.Meter.CreateGauge``1(System.String)">
+  CreateGauge&lt;T&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gauge&lt;T&gt; CreateGauge&lt;T&gt;(string name) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.Gauge-1.html">Gauge</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateGauge_" data-uid="System.Diagnostics.Metrics.Meter.CreateGauge*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateGauge__1_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___" data-uid="System.Diagnostics.Metrics.Meter.CreateGauge``1(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+  CreateGauge&lt;T&gt;(string, string?, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Gauge&lt;T&gt; CreateGauge&lt;T&gt;(string name, string? unit = null, string? description = null, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags = null) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.Gauge-1.html">Gauge</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateHistogram_" data-uid="System.Diagnostics.Metrics.Meter.CreateHistogram*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateHistogram__1_System_String_" data-uid="System.Diagnostics.Metrics.Meter.CreateHistogram``1(System.String)">
+  CreateHistogram&lt;T&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Histogram&lt;T&gt; CreateHistogram&lt;T&gt;(string name) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.Histogram-1.html">Histogram</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateHistogram_" data-uid="System.Diagnostics.Metrics.Meter.CreateHistogram*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateHistogram__1_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___System_Diagnostics_Metrics_InstrumentAdvice___0__" data-uid="System.Diagnostics.Metrics.Meter.CreateHistogram``1(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}},System.Diagnostics.Metrics.InstrumentAdvice{``0})">
+  CreateHistogram&lt;T&gt;(string, string?, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?, InstrumentAdvice&lt;T&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Histogram&lt;T&gt; CreateHistogram&lt;T&gt;(string name, string? unit = null, string? description = null, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags = null, InstrumentAdvice&lt;T&gt;? advice = null) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>advice</code> <a class="xref" href="System.Diagnostics.Metrics.InstrumentAdvice-1.html">InstrumentAdvice</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.Histogram-1.html">Histogram</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableCounter__1_System_String_System_Func_System_Collections_Generic_IEnumerable_System_Diagnostics_Metrics_Measurement___0____System_String_System_String_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableCounter``1(System.String,System.Func{System.Collections.Generic.IEnumerable{System.Diagnostics.Metrics.Measurement{``0}}},System.String,System.String)">
+  CreateObservableCounter&lt;T&gt;(string, Func&lt;IEnumerable&lt;Measurement&lt;T&gt;&gt;&gt;, string?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCounter&lt;T&gt; CreateObservableCounter&lt;T&gt;(string name, Func&lt;IEnumerable&lt;Measurement&lt;T&gt;&gt;&gt; observeValues, string? unit = null, string? description = null) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="System.Diagnostics.Metrics.Measurement-1.html">Measurement</a>&lt;T&gt;&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableCounter-1.html">ObservableCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableCounter__1_System_String_System_Func_System_Collections_Generic_IEnumerable_System_Diagnostics_Metrics_Measurement___0____System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableCounter``1(System.String,System.Func{System.Collections.Generic.IEnumerable{System.Diagnostics.Metrics.Measurement{``0}}},System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+  CreateObservableCounter&lt;T&gt;(string, Func&lt;IEnumerable&lt;Measurement&lt;T&gt;&gt;&gt;, string?, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCounter&lt;T&gt; CreateObservableCounter&lt;T&gt;(string name, Func&lt;IEnumerable&lt;Measurement&lt;T&gt;&gt;&gt; observeValues, string? unit, string? description, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="System.Diagnostics.Metrics.Measurement-1.html">Measurement</a>&lt;T&gt;&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableCounter-1.html">ObservableCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableCounter__1_System_String_System_Func_System_Diagnostics_Metrics_Measurement___0___System_String_System_String_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableCounter``1(System.String,System.Func{System.Diagnostics.Metrics.Measurement{``0}},System.String,System.String)">
+  CreateObservableCounter&lt;T&gt;(string, Func&lt;Measurement&lt;T&gt;&gt;, string?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCounter&lt;T&gt; CreateObservableCounter&lt;T&gt;(string name, Func&lt;Measurement&lt;T&gt;&gt; observeValue, string? unit = null, string? description = null) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="System.Diagnostics.Metrics.Measurement-1.html">Measurement</a>&lt;T&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableCounter-1.html">ObservableCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableCounter__1_System_String_System_Func_System_Diagnostics_Metrics_Measurement___0___System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableCounter``1(System.String,System.Func{System.Diagnostics.Metrics.Measurement{``0}},System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+  CreateObservableCounter&lt;T&gt;(string, Func&lt;Measurement&lt;T&gt;&gt;, string?, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCounter&lt;T&gt; CreateObservableCounter&lt;T&gt;(string name, Func&lt;Measurement&lt;T&gt;&gt; observeValue, string? unit, string? description, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="System.Diagnostics.Metrics.Measurement-1.html">Measurement</a>&lt;T&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableCounter-1.html">ObservableCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableCounter__1_System_String_System_Func___0__System_String_System_String_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableCounter``1(System.String,System.Func{``0},System.String,System.String)">
+  CreateObservableCounter&lt;T&gt;(string, Func&lt;T&gt;, string?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCounter&lt;T&gt; CreateObservableCounter&lt;T&gt;(string name, Func&lt;T&gt; observeValue, string? unit = null, string? description = null) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableCounter-1.html">ObservableCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableCounter__1_System_String_System_Func___0__System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableCounter``1(System.String,System.Func{``0},System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+  CreateObservableCounter&lt;T&gt;(string, Func&lt;T&gt;, string?, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableCounter&lt;T&gt; CreateObservableCounter&lt;T&gt;(string name, Func&lt;T&gt; observeValue, string? unit, string? description, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableCounter-1.html">ObservableCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableGauge_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableGauge*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableGauge__1_System_String_System_Func_System_Collections_Generic_IEnumerable_System_Diagnostics_Metrics_Measurement___0____System_String_System_String_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableGauge``1(System.String,System.Func{System.Collections.Generic.IEnumerable{System.Diagnostics.Metrics.Measurement{``0}}},System.String,System.String)">
+  CreateObservableGauge&lt;T&gt;(string, Func&lt;IEnumerable&lt;Measurement&lt;T&gt;&gt;&gt;, string?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableGauge&lt;T&gt; CreateObservableGauge&lt;T&gt;(string name, Func&lt;IEnumerable&lt;Measurement&lt;T&gt;&gt;&gt; observeValues, string? unit = null, string? description = null) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="System.Diagnostics.Metrics.Measurement-1.html">Measurement</a>&lt;T&gt;&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableGauge-1.html">ObservableGauge</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableGauge_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableGauge*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableGauge__1_System_String_System_Func_System_Collections_Generic_IEnumerable_System_Diagnostics_Metrics_Measurement___0____System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableGauge``1(System.String,System.Func{System.Collections.Generic.IEnumerable{System.Diagnostics.Metrics.Measurement{``0}}},System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+  CreateObservableGauge&lt;T&gt;(string, Func&lt;IEnumerable&lt;Measurement&lt;T&gt;&gt;&gt;, string?, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableGauge&lt;T&gt; CreateObservableGauge&lt;T&gt;(string name, Func&lt;IEnumerable&lt;Measurement&lt;T&gt;&gt;&gt; observeValues, string? unit, string? description, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="System.Diagnostics.Metrics.Measurement-1.html">Measurement</a>&lt;T&gt;&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableGauge-1.html">ObservableGauge</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableGauge_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableGauge*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableGauge__1_System_String_System_Func_System_Diagnostics_Metrics_Measurement___0___System_String_System_String_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableGauge``1(System.String,System.Func{System.Diagnostics.Metrics.Measurement{``0}},System.String,System.String)">
+  CreateObservableGauge&lt;T&gt;(string, Func&lt;Measurement&lt;T&gt;&gt;, string?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableGauge&lt;T&gt; CreateObservableGauge&lt;T&gt;(string name, Func&lt;Measurement&lt;T&gt;&gt; observeValue, string? unit = null, string? description = null) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="System.Diagnostics.Metrics.Measurement-1.html">Measurement</a>&lt;T&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableGauge-1.html">ObservableGauge</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableGauge_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableGauge*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableGauge__1_System_String_System_Func_System_Diagnostics_Metrics_Measurement___0___System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableGauge``1(System.String,System.Func{System.Diagnostics.Metrics.Measurement{``0}},System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+  CreateObservableGauge&lt;T&gt;(string, Func&lt;Measurement&lt;T&gt;&gt;, string?, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableGauge&lt;T&gt; CreateObservableGauge&lt;T&gt;(string name, Func&lt;Measurement&lt;T&gt;&gt; observeValue, string? unit, string? description, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="System.Diagnostics.Metrics.Measurement-1.html">Measurement</a>&lt;T&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableGauge-1.html">ObservableGauge</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableGauge_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableGauge*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableGauge__1_System_String_System_Func___0__System_String_System_String_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableGauge``1(System.String,System.Func{``0},System.String,System.String)">
+  CreateObservableGauge&lt;T&gt;(string, Func&lt;T&gt;, string?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableGauge&lt;T&gt; CreateObservableGauge&lt;T&gt;(string name, Func&lt;T&gt; observeValue, string? unit = null, string? description = null) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableGauge-1.html">ObservableGauge</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableGauge_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableGauge*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableGauge__1_System_String_System_Func___0__System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableGauge``1(System.String,System.Func{``0},System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+  CreateObservableGauge&lt;T&gt;(string, Func&lt;T&gt;, string?, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableGauge&lt;T&gt; CreateObservableGauge&lt;T&gt;(string name, Func&lt;T&gt; observeValue, string? unit, string? description, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableGauge-1.html">ObservableGauge</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableUpDownCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableUpDownCounter__1_System_String_System_Func_System_Collections_Generic_IEnumerable_System_Diagnostics_Metrics_Measurement___0____System_String_System_String_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter``1(System.String,System.Func{System.Collections.Generic.IEnumerable{System.Diagnostics.Metrics.Measurement{``0}}},System.String,System.String)">
+  CreateObservableUpDownCounter&lt;T&gt;(string, Func&lt;IEnumerable&lt;Measurement&lt;T&gt;&gt;&gt;, string?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableUpDownCounter&lt;T&gt; CreateObservableUpDownCounter&lt;T&gt;(string name, Func&lt;IEnumerable&lt;Measurement&lt;T&gt;&gt;&gt; observeValues, string? unit = null, string? description = null) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="System.Diagnostics.Metrics.Measurement-1.html">Measurement</a>&lt;T&gt;&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableUpDownCounter-1.html">ObservableUpDownCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableUpDownCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableUpDownCounter__1_System_String_System_Func_System_Collections_Generic_IEnumerable_System_Diagnostics_Metrics_Measurement___0____System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter``1(System.String,System.Func{System.Collections.Generic.IEnumerable{System.Diagnostics.Metrics.Measurement{``0}}},System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+  CreateObservableUpDownCounter&lt;T&gt;(string, Func&lt;IEnumerable&lt;Measurement&lt;T&gt;&gt;&gt;, string?, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableUpDownCounter&lt;T&gt; CreateObservableUpDownCounter&lt;T&gt;(string name, Func&lt;IEnumerable&lt;Measurement&lt;T&gt;&gt;&gt; observeValues, string? unit, string? description, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="System.Diagnostics.Metrics.Measurement-1.html">Measurement</a>&lt;T&gt;&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableUpDownCounter-1.html">ObservableUpDownCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableUpDownCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableUpDownCounter__1_System_String_System_Func_System_Diagnostics_Metrics_Measurement___0___System_String_System_String_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter``1(System.String,System.Func{System.Diagnostics.Metrics.Measurement{``0}},System.String,System.String)">
+  CreateObservableUpDownCounter&lt;T&gt;(string, Func&lt;Measurement&lt;T&gt;&gt;, string?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableUpDownCounter&lt;T&gt; CreateObservableUpDownCounter&lt;T&gt;(string name, Func&lt;Measurement&lt;T&gt;&gt; observeValue, string? unit = null, string? description = null) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="System.Diagnostics.Metrics.Measurement-1.html">Measurement</a>&lt;T&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableUpDownCounter-1.html">ObservableUpDownCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableUpDownCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableUpDownCounter__1_System_String_System_Func_System_Diagnostics_Metrics_Measurement___0___System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter``1(System.String,System.Func{System.Diagnostics.Metrics.Measurement{``0}},System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+  CreateObservableUpDownCounter&lt;T&gt;(string, Func&lt;Measurement&lt;T&gt;&gt;, string?, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableUpDownCounter&lt;T&gt; CreateObservableUpDownCounter&lt;T&gt;(string name, Func&lt;Measurement&lt;T&gt;&gt; observeValue, string? unit, string? description, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="System.Diagnostics.Metrics.Measurement-1.html">Measurement</a>&lt;T&gt;&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableUpDownCounter-1.html">ObservableUpDownCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableUpDownCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableUpDownCounter__1_System_String_System_Func___0__System_String_System_String_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter``1(System.String,System.Func{``0},System.String,System.String)">
+  CreateObservableUpDownCounter&lt;T&gt;(string, Func&lt;T&gt;, string?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableUpDownCounter&lt;T&gt; CreateObservableUpDownCounter&lt;T&gt;(string name, Func&lt;T&gt; observeValue, string? unit = null, string? description = null) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableUpDownCounter-1.html">ObservableUpDownCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateObservableUpDownCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateObservableUpDownCounter__1_System_String_System_Func___0__System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___" data-uid="System.Diagnostics.Metrics.Meter.CreateObservableUpDownCounter``1(System.String,System.Func{``0},System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+  CreateObservableUpDownCounter&lt;T&gt;(string, Func&lt;T&gt;, string?, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ObservableUpDownCounter&lt;T&gt; CreateObservableUpDownCounter&lt;T&gt;(string name, Func&lt;T&gt; observeValue, string? unit, string? description, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>observeValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;T&gt;</dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.ObservableUpDownCounter-1.html">ObservableUpDownCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateUpDownCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateUpDownCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateUpDownCounter__1_System_String_System_String_System_String_" data-uid="System.Diagnostics.Metrics.Meter.CreateUpDownCounter``1(System.String,System.String,System.String)">
+  CreateUpDownCounter&lt;T&gt;(string, string?, string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UpDownCounter&lt;T&gt; CreateUpDownCounter&lt;T&gt;(string name, string? unit = null, string? description = null) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.UpDownCounter-1.html">UpDownCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_CreateUpDownCounter_" data-uid="System.Diagnostics.Metrics.Meter.CreateUpDownCounter*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_CreateUpDownCounter__1_System_String_System_String_System_String_System_Collections_Generic_IEnumerable_System_Collections_Generic_KeyValuePair_System_String_System_Object___" data-uid="System.Diagnostics.Metrics.Meter.CreateUpDownCounter``1(System.String,System.String,System.String,System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}})">
+  CreateUpDownCounter&lt;T&gt;(string, string?, string?, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UpDownCounter&lt;T&gt; CreateUpDownCounter&lt;T&gt;(string name, string? unit, string? description, IEnumerable&lt;KeyValuePair&lt;string, object?&gt;&gt;? tags) where T : struct</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>unit</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>description</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>tags</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="System.Diagnostics.Metrics.UpDownCounter-1.html">UpDownCounter</a>&lt;T&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_Dispose_" data-uid="System.Diagnostics.Metrics.Meter.Dispose*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_Dispose" data-uid="System.Diagnostics.Metrics.Meter.Dispose">
+  Dispose()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="System_Diagnostics_Metrics_Meter_Dispose_" data-uid="System.Diagnostics.Metrics.Meter.Dispose*"></a>
+
+  <h3 id="System_Diagnostics_Metrics_Meter_Dispose_System_Boolean_" data-uid="System.Diagnostics.Metrics.Meter.Dispose(System.Boolean)">
+  Dispose(bool)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose(bool disposing)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>disposing</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

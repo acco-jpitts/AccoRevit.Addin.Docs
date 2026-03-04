@@ -1,0 +1,1234 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan
+  commentId: T:Microsoft.CodeAnalysis.Text.LinePositionSpan
+  id: LinePositionSpan
+  parent: Microsoft.CodeAnalysis.Text
+  children:
+  - Microsoft.CodeAnalysis.Text.LinePositionSpan.#ctor(Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
+  - Microsoft.CodeAnalysis.Text.LinePositionSpan.End
+  - Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  - Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals(System.Object)
+  - Microsoft.CodeAnalysis.Text.LinePositionSpan.GetHashCode
+  - Microsoft.CodeAnalysis.Text.LinePositionSpan.Start
+  - Microsoft.CodeAnalysis.Text.LinePositionSpan.ToString
+  - Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Equality(Microsoft.CodeAnalysis.Text.LinePositionSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  - Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Inequality(Microsoft.CodeAnalysis.Text.LinePositionSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  langs:
+  - csharp
+  - vb
+  name: LinePositionSpan
+  nameWithType: LinePositionSpan
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan
+  type: Struct
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: >-
+      [DataContract]
+
+      public readonly struct LinePositionSpan : IEquatable<LinePositionSpan>
+    content.vb: >-
+      <DataContract>
+
+      Public Structure LinePositionSpan Implements IEquatable(Of LinePositionSpan)
+  implements:
+  - System.IEquatable{Microsoft.CodeAnalysis.Text.LinePositionSpan}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  attributes:
+  - type: System.Runtime.Serialization.DataContractAttribute
+    ctor: System.Runtime.Serialization.DataContractAttribute.#ctor
+    arguments: []
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.#ctor(Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
+  commentId: M:Microsoft.CodeAnalysis.Text.LinePositionSpan.#ctor(Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)
+  id: '#ctor(Microsoft.CodeAnalysis.Text.LinePosition,Microsoft.CodeAnalysis.Text.LinePosition)'
+  parent: Microsoft.CodeAnalysis.Text.LinePositionSpan
+  langs:
+  - csharp
+  - vb
+  name: LinePositionSpan(LinePosition, LinePosition)
+  nameWithType: LinePositionSpan.LinePositionSpan(LinePosition, LinePosition)
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.LinePositionSpan(Microsoft.CodeAnalysis.Text.LinePosition, Microsoft.CodeAnalysis.Text.LinePosition)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: public LinePositionSpan(LinePosition start, LinePosition end)
+    parameters:
+    - id: start
+      type: Microsoft.CodeAnalysis.Text.LinePosition
+    - id: end
+      type: Microsoft.CodeAnalysis.Text.LinePosition
+    content.vb: Public Sub New(start As LinePosition, [end] As LinePosition)
+  overload: Microsoft.CodeAnalysis.Text.LinePositionSpan.#ctor*
+  nameWithType.vb: LinePositionSpan.New(LinePosition, LinePosition)
+  fullName.vb: Microsoft.CodeAnalysis.Text.LinePositionSpan.New(Microsoft.CodeAnalysis.Text.LinePosition, Microsoft.CodeAnalysis.Text.LinePosition)
+  name.vb: New(LinePosition, LinePosition)
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals(System.Object)
+  commentId: M:Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals(System.Object)
+  id: Equals(System.Object)
+  parent: Microsoft.CodeAnalysis.Text.LinePositionSpan
+  langs:
+  - csharp
+  - vb
+  name: Equals(object?)
+  nameWithType: LinePositionSpan.Equals(object?)
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals(object?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  example: []
+  syntax:
+    content: public override bool Equals(object? obj)
+    parameters:
+    - id: obj
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function Equals(obj As Object) As Boolean
+  overridden: System.ValueType.Equals(System.Object)
+  overload: Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals*
+  nameWithType.vb: LinePositionSpan.Equals(Object)
+  fullName.vb: Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals(Object)
+  name.vb: Equals(Object)
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  commentId: M:Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  id: Equals(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  parent: Microsoft.CodeAnalysis.Text.LinePositionSpan
+  langs:
+  - csharp
+  - vb
+  name: Equals(LinePositionSpan)
+  nameWithType: LinePositionSpan.Equals(LinePositionSpan)
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  example: []
+  syntax:
+    content: public bool Equals(LinePositionSpan other)
+    parameters:
+    - id: other
+      type: Microsoft.CodeAnalysis.Text.LinePositionSpan
+    return:
+      type: System.Boolean
+    content.vb: Public Function Equals(other As LinePositionSpan) As Boolean
+  overload: Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals*
+  implements:
+  - System.IEquatable{Microsoft.CodeAnalysis.Text.LinePositionSpan}.Equals(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.GetHashCode
+  commentId: M:Microsoft.CodeAnalysis.Text.LinePositionSpan.GetHashCode
+  id: GetHashCode
+  parent: Microsoft.CodeAnalysis.Text.LinePositionSpan
+  langs:
+  - csharp
+  - vb
+  name: GetHashCode()
+  nameWithType: LinePositionSpan.GetHashCode()
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.GetHashCode()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  example: []
+  syntax:
+    content: public override int GetHashCode()
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetHashCode() As Integer
+  overridden: System.ValueType.GetHashCode
+  overload: Microsoft.CodeAnalysis.Text.LinePositionSpan.GetHashCode*
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Equality(Microsoft.CodeAnalysis.Text.LinePositionSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  commentId: M:Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Equality(Microsoft.CodeAnalysis.Text.LinePositionSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  id: op_Equality(Microsoft.CodeAnalysis.Text.LinePositionSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  parent: Microsoft.CodeAnalysis.Text.LinePositionSpan
+  langs:
+  - csharp
+  - vb
+  name: operator ==(LinePositionSpan, LinePositionSpan)
+  nameWithType: LinePositionSpan.operator ==(LinePositionSpan, LinePositionSpan)
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.operator ==(Microsoft.CodeAnalysis.Text.LinePositionSpan, Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  type: Operator
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: public static bool operator ==(LinePositionSpan left, LinePositionSpan right)
+    parameters:
+    - id: left
+      type: Microsoft.CodeAnalysis.Text.LinePositionSpan
+    - id: right
+      type: Microsoft.CodeAnalysis.Text.LinePositionSpan
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator =(left As LinePositionSpan, right As LinePositionSpan) As Boolean
+  overload: Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Equality*
+  nameWithType.vb: LinePositionSpan.=(LinePositionSpan, LinePositionSpan)
+  fullName.vb: Microsoft.CodeAnalysis.Text.LinePositionSpan.=(Microsoft.CodeAnalysis.Text.LinePositionSpan, Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  name.vb: =(LinePositionSpan, LinePositionSpan)
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Inequality(Microsoft.CodeAnalysis.Text.LinePositionSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  commentId: M:Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Inequality(Microsoft.CodeAnalysis.Text.LinePositionSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  id: op_Inequality(Microsoft.CodeAnalysis.Text.LinePositionSpan,Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  parent: Microsoft.CodeAnalysis.Text.LinePositionSpan
+  langs:
+  - csharp
+  - vb
+  name: operator !=(LinePositionSpan, LinePositionSpan)
+  nameWithType: LinePositionSpan.operator !=(LinePositionSpan, LinePositionSpan)
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.operator !=(Microsoft.CodeAnalysis.Text.LinePositionSpan, Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  type: Operator
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: public static bool operator !=(LinePositionSpan left, LinePositionSpan right)
+    parameters:
+    - id: left
+      type: Microsoft.CodeAnalysis.Text.LinePositionSpan
+    - id: right
+      type: Microsoft.CodeAnalysis.Text.LinePositionSpan
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Operator <>(left As LinePositionSpan, right As LinePositionSpan) As Boolean
+  overload: Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Inequality*
+  nameWithType.vb: LinePositionSpan.<>(LinePositionSpan, LinePositionSpan)
+  fullName.vb: Microsoft.CodeAnalysis.Text.LinePositionSpan.<>(Microsoft.CodeAnalysis.Text.LinePositionSpan, Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  name.vb: <>(LinePositionSpan, LinePositionSpan)
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.ToString
+  commentId: M:Microsoft.CodeAnalysis.Text.LinePositionSpan.ToString
+  id: ToString
+  parent: Microsoft.CodeAnalysis.Text.LinePositionSpan
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: LinePositionSpan.ToString()
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.ToString()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.ValueType.ToString
+  overload: Microsoft.CodeAnalysis.Text.LinePositionSpan.ToString*
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.Start
+  commentId: P:Microsoft.CodeAnalysis.Text.LinePositionSpan.Start
+  id: Start
+  parent: Microsoft.CodeAnalysis.Text.LinePositionSpan
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: LinePositionSpan.Start
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.Start
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: public LinePosition Start { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.Text.LinePosition
+    content.vb: Public ReadOnly Property Start As LinePosition
+  overload: Microsoft.CodeAnalysis.Text.LinePositionSpan.Start*
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.End
+  commentId: P:Microsoft.CodeAnalysis.Text.LinePositionSpan.End
+  id: End
+  parent: Microsoft.CodeAnalysis.Text.LinePositionSpan
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: LinePositionSpan.End
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.End
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: public LinePosition End { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.Text.LinePosition
+    content.vb: Public ReadOnly Property [End] As LinePosition
+  overload: Microsoft.CodeAnalysis.Text.LinePositionSpan.End*
+references:
+- uid: Microsoft.CodeAnalysis.Text
+  commentId: N:Microsoft.CodeAnalysis.Text
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Text
+  nameWithType: Microsoft.CodeAnalysis.Text
+  fullName: Microsoft.CodeAnalysis.Text
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Text
+    name: Text
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Text
+    name: Text
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.html
+- uid: System.IEquatable{Microsoft.CodeAnalysis.Text.LinePositionSpan}
+  commentId: T:System.IEquatable{Microsoft.CodeAnalysis.Text.LinePositionSpan}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<LinePositionSpan>
+  nameWithType: IEquatable<LinePositionSpan>
+  fullName: System.IEquatable<Microsoft.CodeAnalysis.Text.LinePositionSpan>
+  nameWithType.vb: IEquatable(Of LinePositionSpan)
+  fullName.vb: System.IEquatable(Of Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  name.vb: IEquatable(Of LinePositionSpan)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Text.LinePositionSpan
+    name: LinePositionSpan
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Text.LinePositionSpan
+    name: LinePositionSpan
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.#ctor*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.LinePositionSpan.#ctor
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html#Microsoft_CodeAnalysis_Text_LinePositionSpan__ctor_Microsoft_CodeAnalysis_Text_LinePosition_Microsoft_CodeAnalysis_Text_LinePosition_
+  name: LinePositionSpan
+  nameWithType: LinePositionSpan.LinePositionSpan
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.LinePositionSpan
+  nameWithType.vb: LinePositionSpan.New
+  fullName.vb: Microsoft.CodeAnalysis.Text.LinePositionSpan.New
+  name.vb: New
+- uid: Microsoft.CodeAnalysis.Text.LinePosition
+  commentId: T:Microsoft.CodeAnalysis.Text.LinePosition
+  parent: Microsoft.CodeAnalysis.Text
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.LinePosition.html
+  name: LinePosition
+  nameWithType: LinePosition
+  fullName: Microsoft.CodeAnalysis.Text.LinePosition
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html#Microsoft_CodeAnalysis_Text_LinePositionSpan_Equals_System_Object_
+  name: Equals
+  nameWithType: LinePositionSpan.Equals
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.Equals
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.IEquatable{Microsoft.CodeAnalysis.Text.LinePositionSpan}.Equals(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  commentId: M:System.IEquatable{Microsoft.CodeAnalysis.Text.LinePositionSpan}.Equals(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  parent: System.IEquatable{Microsoft.CodeAnalysis.Text.LinePositionSpan}
+  definition: System.IEquatable`1.Equals(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(LinePositionSpan)
+  nameWithType: IEquatable<LinePositionSpan>.Equals(LinePositionSpan)
+  fullName: System.IEquatable<Microsoft.CodeAnalysis.Text.LinePositionSpan>.Equals(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  nameWithType.vb: IEquatable(Of LinePositionSpan).Equals(LinePositionSpan)
+  fullName.vb: System.IEquatable(Of Microsoft.CodeAnalysis.Text.LinePositionSpan).Equals(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  spec.csharp:
+  - uid: System.IEquatable{Microsoft.CodeAnalysis.Text.LinePositionSpan}.Equals(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Text.LinePositionSpan
+    name: LinePositionSpan
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable{Microsoft.CodeAnalysis.Text.LinePositionSpan}.Equals(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - uid: Microsoft.CodeAnalysis.Text.LinePositionSpan
+    name: LinePositionSpan
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan
+  commentId: T:Microsoft.CodeAnalysis.Text.LinePositionSpan
+  parent: Microsoft.CodeAnalysis.Text
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html
+  name: LinePositionSpan
+  nameWithType: LinePositionSpan
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan
+- uid: System.IEquatable`1.Equals(`0)
+  commentId: M:System.IEquatable`1.Equals(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  name: Equals(T)
+  nameWithType: IEquatable<T>.Equals(T)
+  fullName: System.IEquatable<T>.Equals(T)
+  nameWithType.vb: IEquatable(Of T).Equals(T)
+  fullName.vb: System.IEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.IEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1.equals
+  - name: (
+  - name: T
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.GetHashCode*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.LinePositionSpan.GetHashCode
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html#Microsoft_CodeAnalysis_Text_LinePositionSpan_GetHashCode
+  name: GetHashCode
+  nameWithType: LinePositionSpan.GetHashCode
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.GetHashCode
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Equality*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Equality
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html#Microsoft_CodeAnalysis_Text_LinePositionSpan_op_Equality_Microsoft_CodeAnalysis_Text_LinePositionSpan_Microsoft_CodeAnalysis_Text_LinePositionSpan_
+  name: operator ==
+  nameWithType: LinePositionSpan.operator ==
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.operator ==
+  nameWithType.vb: LinePositionSpan.=
+  fullName.vb: Microsoft.CodeAnalysis.Text.LinePositionSpan.=
+  name.vb: =
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Equality*
+    name: ==
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html#Microsoft_CodeAnalysis_Text_LinePositionSpan_op_Equality_Microsoft_CodeAnalysis_Text_LinePositionSpan_Microsoft_CodeAnalysis_Text_LinePositionSpan_
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Inequality*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Inequality
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html#Microsoft_CodeAnalysis_Text_LinePositionSpan_op_Inequality_Microsoft_CodeAnalysis_Text_LinePositionSpan_Microsoft_CodeAnalysis_Text_LinePositionSpan_
+  name: operator !=
+  nameWithType: LinePositionSpan.operator !=
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.operator !=
+  nameWithType.vb: LinePositionSpan.<>
+  fullName.vb: Microsoft.CodeAnalysis.Text.LinePositionSpan.<>
+  name.vb: <>
+  spec.csharp:
+  - name: operator
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.op_Inequality*
+    name: '!='
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html#Microsoft_CodeAnalysis_Text_LinePositionSpan_op_Inequality_Microsoft_CodeAnalysis_Text_LinePositionSpan_Microsoft_CodeAnalysis_Text_LinePositionSpan_
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.ToString*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.LinePositionSpan.ToString
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html#Microsoft_CodeAnalysis_Text_LinePositionSpan_ToString
+  name: ToString
+  nameWithType: LinePositionSpan.ToString
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.ToString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.Start*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.LinePositionSpan.Start
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html#Microsoft_CodeAnalysis_Text_LinePositionSpan_Start
+  name: Start
+  nameWithType: LinePositionSpan.Start
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.Start
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan.End*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.LinePositionSpan.End
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html#Microsoft_CodeAnalysis_Text_LinePositionSpan_End
+  name: End
+  nameWithType: LinePositionSpan.End
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan.End

@@ -1,0 +1,1735 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata
+  commentId: T:Microsoft.CodeAnalysis.AssemblyMetadata
+  id: AssemblyMetadata
+  parent: Microsoft.CodeAnalysis
+  children:
+  - Microsoft.CodeAnalysis.AssemblyMetadata.CommonCopy
+  - Microsoft.CodeAnalysis.AssemblyMetadata.Create(Microsoft.CodeAnalysis.ModuleMetadata)
+  - Microsoft.CodeAnalysis.AssemblyMetadata.Create(Microsoft.CodeAnalysis.ModuleMetadata[])
+  - Microsoft.CodeAnalysis.AssemblyMetadata.Create(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata})
+  - Microsoft.CodeAnalysis.AssemblyMetadata.Create(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata})
+  - Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromFile(System.String)
+  - Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Generic.IEnumerable{System.Byte})
+  - Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Immutable.ImmutableArray{System.Byte})
+  - Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream(System.IO.Stream,System.Boolean)
+  - Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions)
+  - Microsoft.CodeAnalysis.AssemblyMetadata.Dispose
+  - Microsoft.CodeAnalysis.AssemblyMetadata.GetModules
+  - Microsoft.CodeAnalysis.AssemblyMetadata.GetReference(Microsoft.CodeAnalysis.DocumentationProvider,System.Collections.Immutable.ImmutableArray{System.String},System.Boolean,System.String,System.String)
+  - Microsoft.CodeAnalysis.AssemblyMetadata.Kind
+  langs:
+  - csharp
+  - vb
+  name: AssemblyMetadata
+  nameWithType: AssemblyMetadata
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: 'public sealed class AssemblyMetadata : Metadata, IDisposable'
+    content.vb: Public NotInheritable Class AssemblyMetadata Inherits Metadata Implements IDisposable
+  inheritance:
+  - System.Object
+  - Microsoft.CodeAnalysis.Metadata
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - Microsoft.CodeAnalysis.Metadata.Copy
+  - Microsoft.CodeAnalysis.Metadata.Id
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Immutable.ImmutableArray{System.Byte})
+  commentId: M:Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Immutable.ImmutableArray{System.Byte})
+  id: CreateFromImage(System.Collections.Immutable.ImmutableArray{System.Byte})
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: CreateFromImage(ImmutableArray<byte>)
+  nameWithType: AssemblyMetadata.CreateFromImage(ImmutableArray<byte>)
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Immutable.ImmutableArray<byte>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static AssemblyMetadata CreateFromImage(ImmutableArray<byte> peImage)
+    parameters:
+    - id: peImage
+      type: System.Collections.Immutable.ImmutableArray{System.Byte}
+    return:
+      type: Microsoft.CodeAnalysis.AssemblyMetadata
+    content.vb: Public Shared Function CreateFromImage(peImage As ImmutableArray(Of Byte)) As AssemblyMetadata
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage*
+  nameWithType.vb: AssemblyMetadata.CreateFromImage(ImmutableArray(Of Byte))
+  fullName.vb: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Immutable.ImmutableArray(Of Byte))
+  name.vb: CreateFromImage(ImmutableArray(Of Byte))
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Generic.IEnumerable{System.Byte})
+  commentId: M:Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Generic.IEnumerable{System.Byte})
+  id: CreateFromImage(System.Collections.Generic.IEnumerable{System.Byte})
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: CreateFromImage(IEnumerable<byte>)
+  nameWithType: AssemblyMetadata.CreateFromImage(IEnumerable<byte>)
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Generic.IEnumerable<byte>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static AssemblyMetadata CreateFromImage(IEnumerable<byte> peImage)
+    parameters:
+    - id: peImage
+      type: System.Collections.Generic.IEnumerable{System.Byte}
+    return:
+      type: Microsoft.CodeAnalysis.AssemblyMetadata
+    content.vb: Public Shared Function CreateFromImage(peImage As IEnumerable(Of Byte)) As AssemblyMetadata
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage*
+  nameWithType.vb: AssemblyMetadata.CreateFromImage(IEnumerable(Of Byte))
+  fullName.vb: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage(System.Collections.Generic.IEnumerable(Of Byte))
+  name.vb: CreateFromImage(IEnumerable(Of Byte))
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream(System.IO.Stream,System.Boolean)
+  commentId: M:Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream(System.IO.Stream,System.Boolean)
+  id: CreateFromStream(System.IO.Stream,System.Boolean)
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: CreateFromStream(Stream, bool)
+  nameWithType: AssemblyMetadata.CreateFromStream(Stream, bool)
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream(System.IO.Stream, bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static AssemblyMetadata CreateFromStream(Stream peStream, bool leaveOpen = false)
+    parameters:
+    - id: peStream
+      type: System.IO.Stream
+    - id: leaveOpen
+      type: System.Boolean
+    return:
+      type: Microsoft.CodeAnalysis.AssemblyMetadata
+    content.vb: Public Shared Function CreateFromStream(peStream As Stream, leaveOpen As Boolean = False) As AssemblyMetadata
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream*
+  nameWithType.vb: AssemblyMetadata.CreateFromStream(Stream, Boolean)
+  fullName.vb: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream(System.IO.Stream, Boolean)
+  name.vb: CreateFromStream(Stream, Boolean)
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions)
+  commentId: M:Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions)
+  id: CreateFromStream(System.IO.Stream,System.Reflection.PortableExecutable.PEStreamOptions)
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: CreateFromStream(Stream, PEStreamOptions)
+  nameWithType: AssemblyMetadata.CreateFromStream(Stream, PEStreamOptions)
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream(System.IO.Stream, System.Reflection.PortableExecutable.PEStreamOptions)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static AssemblyMetadata CreateFromStream(Stream peStream, PEStreamOptions options)
+    parameters:
+    - id: peStream
+      type: System.IO.Stream
+    - id: options
+      type: System.Reflection.PortableExecutable.PEStreamOptions
+    return:
+      type: Microsoft.CodeAnalysis.AssemblyMetadata
+    content.vb: Public Shared Function CreateFromStream(peStream As Stream, options As PEStreamOptions) As AssemblyMetadata
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream*
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromFile(System.String)
+  commentId: M:Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromFile(System.String)
+  id: CreateFromFile(System.String)
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: CreateFromFile(string)
+  nameWithType: AssemblyMetadata.CreateFromFile(string)
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromFile(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static AssemblyMetadata CreateFromFile(string path)
+    parameters:
+    - id: path
+      type: System.String
+    return:
+      type: Microsoft.CodeAnalysis.AssemblyMetadata
+    content.vb: Public Shared Function CreateFromFile(path As String) As AssemblyMetadata
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromFile*
+  nameWithType.vb: AssemblyMetadata.CreateFromFile(String)
+  fullName.vb: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromFile(String)
+  name.vb: CreateFromFile(String)
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.Create(Microsoft.CodeAnalysis.ModuleMetadata)
+  commentId: M:Microsoft.CodeAnalysis.AssemblyMetadata.Create(Microsoft.CodeAnalysis.ModuleMetadata)
+  id: Create(Microsoft.CodeAnalysis.ModuleMetadata)
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: Create(ModuleMetadata)
+  nameWithType: AssemblyMetadata.Create(ModuleMetadata)
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.Create(Microsoft.CodeAnalysis.ModuleMetadata)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static AssemblyMetadata Create(ModuleMetadata module)
+    parameters:
+    - id: module
+      type: Microsoft.CodeAnalysis.ModuleMetadata
+    return:
+      type: Microsoft.CodeAnalysis.AssemblyMetadata
+    content.vb: Public Shared Function Create([module] As ModuleMetadata) As AssemblyMetadata
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.Create*
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.Create(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata})
+  commentId: M:Microsoft.CodeAnalysis.AssemblyMetadata.Create(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata})
+  id: Create(System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata})
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: Create(ImmutableArray<ModuleMetadata>)
+  nameWithType: AssemblyMetadata.Create(ImmutableArray<ModuleMetadata>)
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.Create(System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.ModuleMetadata>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static AssemblyMetadata Create(ImmutableArray<ModuleMetadata> modules)
+    parameters:
+    - id: modules
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata}
+    return:
+      type: Microsoft.CodeAnalysis.AssemblyMetadata
+    content.vb: Public Shared Function Create(modules As ImmutableArray(Of ModuleMetadata)) As AssemblyMetadata
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.Create*
+  nameWithType.vb: AssemblyMetadata.Create(ImmutableArray(Of ModuleMetadata))
+  fullName.vb: Microsoft.CodeAnalysis.AssemblyMetadata.Create(System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.ModuleMetadata))
+  name.vb: Create(ImmutableArray(Of ModuleMetadata))
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.Create(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata})
+  commentId: M:Microsoft.CodeAnalysis.AssemblyMetadata.Create(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata})
+  id: Create(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata})
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: Create(IEnumerable<ModuleMetadata>)
+  nameWithType: AssemblyMetadata.Create(IEnumerable<ModuleMetadata>)
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.Create(System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.ModuleMetadata>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static AssemblyMetadata Create(IEnumerable<ModuleMetadata> modules)
+    parameters:
+    - id: modules
+      type: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata}
+    return:
+      type: Microsoft.CodeAnalysis.AssemblyMetadata
+    content.vb: Public Shared Function Create(modules As IEnumerable(Of ModuleMetadata)) As AssemblyMetadata
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.Create*
+  nameWithType.vb: AssemblyMetadata.Create(IEnumerable(Of ModuleMetadata))
+  fullName.vb: Microsoft.CodeAnalysis.AssemblyMetadata.Create(System.Collections.Generic.IEnumerable(Of Microsoft.CodeAnalysis.ModuleMetadata))
+  name.vb: Create(IEnumerable(Of ModuleMetadata))
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.Create(Microsoft.CodeAnalysis.ModuleMetadata[])
+  commentId: M:Microsoft.CodeAnalysis.AssemblyMetadata.Create(Microsoft.CodeAnalysis.ModuleMetadata[])
+  id: Create(Microsoft.CodeAnalysis.ModuleMetadata[])
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: Create(params ModuleMetadata[])
+  nameWithType: AssemblyMetadata.Create(params ModuleMetadata[])
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.Create(params Microsoft.CodeAnalysis.ModuleMetadata[])
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public static AssemblyMetadata Create(params ModuleMetadata[] modules)
+    parameters:
+    - id: modules
+      type: Microsoft.CodeAnalysis.ModuleMetadata[]
+    return:
+      type: Microsoft.CodeAnalysis.AssemblyMetadata
+    content.vb: Public Shared Function Create(ParamArray modules As ModuleMetadata()) As AssemblyMetadata
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.Create*
+  nameWithType.vb: AssemblyMetadata.Create(ParamArray ModuleMetadata())
+  fullName.vb: Microsoft.CodeAnalysis.AssemblyMetadata.Create(ParamArray Microsoft.CodeAnalysis.ModuleMetadata())
+  name.vb: Create(ParamArray ModuleMetadata())
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.CommonCopy
+  commentId: M:Microsoft.CodeAnalysis.AssemblyMetadata.CommonCopy
+  id: CommonCopy
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: CommonCopy()
+  nameWithType: AssemblyMetadata.CommonCopy()
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.CommonCopy()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  example: []
+  syntax:
+    content: protected override Metadata CommonCopy()
+    return:
+      type: Microsoft.CodeAnalysis.Metadata
+    content.vb: Protected Overrides Function CommonCopy() As Metadata
+  overridden: Microsoft.CodeAnalysis.Metadata.CommonCopy
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.CommonCopy*
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.GetModules
+  commentId: M:Microsoft.CodeAnalysis.AssemblyMetadata.GetModules
+  id: GetModules
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: GetModules()
+  nameWithType: AssemblyMetadata.GetModules()
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.GetModules()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public ImmutableArray<ModuleMetadata> GetModules()
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata}
+    content.vb: Public Function GetModules() As ImmutableArray(Of ModuleMetadata)
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.GetModules*
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.Dispose
+  commentId: M:Microsoft.CodeAnalysis.AssemblyMetadata.Dispose
+  id: Dispose
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: AssemblyMetadata.Dispose()
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.Dispose()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  example: []
+  syntax:
+    content: public override void Dispose()
+    content.vb: Public Overrides Sub Dispose()
+  overridden: Microsoft.CodeAnalysis.Metadata.Dispose
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.Dispose*
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.GetReference(Microsoft.CodeAnalysis.DocumentationProvider,System.Collections.Immutable.ImmutableArray{System.String},System.Boolean,System.String,System.String)
+  commentId: M:Microsoft.CodeAnalysis.AssemblyMetadata.GetReference(Microsoft.CodeAnalysis.DocumentationProvider,System.Collections.Immutable.ImmutableArray{System.String},System.Boolean,System.String,System.String)
+  id: GetReference(Microsoft.CodeAnalysis.DocumentationProvider,System.Collections.Immutable.ImmutableArray{System.String},System.Boolean,System.String,System.String)
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: GetReference(DocumentationProvider?, ImmutableArray<string>, bool, string?, string?)
+  nameWithType: AssemblyMetadata.GetReference(DocumentationProvider?, ImmutableArray<string>, bool, string?, string?)
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.GetReference(Microsoft.CodeAnalysis.DocumentationProvider?, System.Collections.Immutable.ImmutableArray<string>, bool, string?, string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  syntax:
+    content: public PortableExecutableReference GetReference(DocumentationProvider? documentation = null, ImmutableArray<string> aliases = default, bool embedInteropTypes = false, string? filePath = null, string? display = null)
+    parameters:
+    - id: documentation
+      type: Microsoft.CodeAnalysis.DocumentationProvider
+    - id: aliases
+      type: System.Collections.Immutable.ImmutableArray{System.String}
+    - id: embedInteropTypes
+      type: System.Boolean
+    - id: filePath
+      type: System.String
+    - id: display
+      type: System.String
+    return:
+      type: Microsoft.CodeAnalysis.PortableExecutableReference
+    content.vb: Public Function GetReference(documentation As DocumentationProvider = Nothing, aliases As ImmutableArray(Of String) = Nothing, embedInteropTypes As Boolean = False, filePath As String = Nothing, display As String = Nothing) As PortableExecutableReference
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.GetReference*
+  nameWithType.vb: AssemblyMetadata.GetReference(DocumentationProvider, ImmutableArray(Of String), Boolean, String, String)
+  fullName.vb: Microsoft.CodeAnalysis.AssemblyMetadata.GetReference(Microsoft.CodeAnalysis.DocumentationProvider, System.Collections.Immutable.ImmutableArray(Of String), Boolean, String, String)
+  name.vb: GetReference(DocumentationProvider, ImmutableArray(Of String), Boolean, String, String)
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.Kind
+  commentId: P:Microsoft.CodeAnalysis.AssemblyMetadata.Kind
+  id: Kind
+  parent: Microsoft.CodeAnalysis.AssemblyMetadata
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: AssemblyMetadata.Kind
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.Kind
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis
+  example: []
+  syntax:
+    content: public override MetadataImageKind Kind { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.MetadataImageKind
+    content.vb: Public Overrides ReadOnly Property Kind As MetadataImageKind
+  overridden: Microsoft.CodeAnalysis.Metadata.Kind
+  overload: Microsoft.CodeAnalysis.AssemblyMetadata.Kind*
+references:
+- uid: Microsoft.CodeAnalysis
+  commentId: N:Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis
+  nameWithType: Microsoft.CodeAnalysis
+  fullName: Microsoft.CodeAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.CodeAnalysis.Metadata
+  commentId: T:Microsoft.CodeAnalysis.Metadata
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Metadata.html
+  name: Metadata
+  nameWithType: Metadata
+  fullName: Microsoft.CodeAnalysis.Metadata
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Microsoft.CodeAnalysis.Metadata.Copy
+  commentId: M:Microsoft.CodeAnalysis.Metadata.Copy
+  parent: Microsoft.CodeAnalysis.Metadata
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Metadata.html#Microsoft_CodeAnalysis_Metadata_Copy
+  name: Copy()
+  nameWithType: Metadata.Copy()
+  fullName: Microsoft.CodeAnalysis.Metadata.Copy()
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Metadata.Copy
+    name: Copy
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Metadata.html#Microsoft_CodeAnalysis_Metadata_Copy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Metadata.Copy
+    name: Copy
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Metadata.html#Microsoft_CodeAnalysis_Metadata_Copy
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.Metadata.Id
+  commentId: P:Microsoft.CodeAnalysis.Metadata.Id
+  parent: Microsoft.CodeAnalysis.Metadata
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Metadata.html#Microsoft_CodeAnalysis_Metadata_Id
+  name: Id
+  nameWithType: Metadata.Id
+  fullName: Microsoft.CodeAnalysis.Metadata.Id
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage*
+  commentId: Overload:Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage
+  isExternal: true
+  href: Microsoft.CodeAnalysis.AssemblyMetadata.html#Microsoft_CodeAnalysis_AssemblyMetadata_CreateFromImage_System_Collections_Immutable_ImmutableArray_System_Byte__
+  name: CreateFromImage
+  nameWithType: AssemblyMetadata.CreateFromImage
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromImage
+- uid: System.Collections.Immutable.ImmutableArray{System.Byte}
+  commentId: T:System.Collections.Immutable.ImmutableArray{System.Byte}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<byte>
+  nameWithType: ImmutableArray<byte>
+  fullName: System.Collections.Immutable.ImmutableArray<byte>
+  nameWithType.vb: ImmutableArray(Of Byte)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Byte)
+  name.vb: ImmutableArray(Of Byte)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata
+  commentId: T:Microsoft.CodeAnalysis.AssemblyMetadata
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.AssemblyMetadata.html
+  name: AssemblyMetadata
+  nameWithType: AssemblyMetadata
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata
+- uid: System.Collections.Immutable.ImmutableArray`1
+  commentId: T:System.Collections.Immutable.ImmutableArray`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<T>
+  nameWithType: ImmutableArray<T>
+  fullName: System.Collections.Immutable.ImmutableArray<T>
+  nameWithType.vb: ImmutableArray(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T)
+  name.vb: ImmutableArray(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Immutable
+  commentId: N:System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Immutable
+  nameWithType: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+- uid: System.Collections.Generic.IEnumerable{System.Byte}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Byte}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<byte>
+  nameWithType: IEnumerable<byte>
+  fullName: System.Collections.Generic.IEnumerable<byte>
+  nameWithType.vb: IEnumerable(Of Byte)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Byte)
+  name.vb: IEnumerable(Of Byte)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream*
+  commentId: Overload:Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream
+  isExternal: true
+  href: Microsoft.CodeAnalysis.AssemblyMetadata.html#Microsoft_CodeAnalysis_AssemblyMetadata_CreateFromStream_System_IO_Stream_System_Boolean_
+  name: CreateFromStream
+  nameWithType: AssemblyMetadata.CreateFromStream
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromStream
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.Reflection.PortableExecutable.PEStreamOptions
+  commentId: T:System.Reflection.PortableExecutable.PEStreamOptions
+  parent: System.Reflection.PortableExecutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.portableexecutable.pestreamoptions
+  name: PEStreamOptions
+  nameWithType: PEStreamOptions
+  fullName: System.Reflection.PortableExecutable.PEStreamOptions
+- uid: System.Reflection.PortableExecutable
+  commentId: N:System.Reflection.PortableExecutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection.PortableExecutable
+  nameWithType: System.Reflection.PortableExecutable
+  fullName: System.Reflection.PortableExecutable
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  - name: .
+  - uid: System.Reflection.PortableExecutable
+    name: PortableExecutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.portableexecutable
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  - name: .
+  - uid: System.Reflection.PortableExecutable
+    name: PortableExecutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.portableexecutable
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromFile*
+  commentId: Overload:Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromFile
+  isExternal: true
+  href: Microsoft.CodeAnalysis.AssemblyMetadata.html#Microsoft_CodeAnalysis_AssemblyMetadata_CreateFromFile_System_String_
+  name: CreateFromFile
+  nameWithType: AssemblyMetadata.CreateFromFile
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.CreateFromFile
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.Create*
+  commentId: Overload:Microsoft.CodeAnalysis.AssemblyMetadata.Create
+  isExternal: true
+  href: Microsoft.CodeAnalysis.AssemblyMetadata.html#Microsoft_CodeAnalysis_AssemblyMetadata_Create_Microsoft_CodeAnalysis_ModuleMetadata_
+  name: Create
+  nameWithType: AssemblyMetadata.Create
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.Create
+- uid: Microsoft.CodeAnalysis.ModuleMetadata
+  commentId: T:Microsoft.CodeAnalysis.ModuleMetadata
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ModuleMetadata.html
+  name: ModuleMetadata
+  nameWithType: ModuleMetadata
+  fullName: Microsoft.CodeAnalysis.ModuleMetadata
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.ModuleMetadata}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<ModuleMetadata>
+  nameWithType: ImmutableArray<ModuleMetadata>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.ModuleMetadata>
+  nameWithType.vb: ImmutableArray(Of ModuleMetadata)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.ModuleMetadata)
+  name.vb: ImmutableArray(Of ModuleMetadata)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.ModuleMetadata
+    name: ModuleMetadata
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ModuleMetadata.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.ModuleMetadata
+    name: ModuleMetadata
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ModuleMetadata.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.ModuleMetadata}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ModuleMetadata>
+  nameWithType: IEnumerable<ModuleMetadata>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.ModuleMetadata>
+  nameWithType.vb: IEnumerable(Of ModuleMetadata)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.CodeAnalysis.ModuleMetadata)
+  name.vb: IEnumerable(Of ModuleMetadata)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.ModuleMetadata
+    name: ModuleMetadata
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ModuleMetadata.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.ModuleMetadata
+    name: ModuleMetadata
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ModuleMetadata.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ModuleMetadata[]
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ModuleMetadata.html
+  name: ModuleMetadata[]
+  nameWithType: ModuleMetadata[]
+  fullName: Microsoft.CodeAnalysis.ModuleMetadata[]
+  nameWithType.vb: ModuleMetadata()
+  fullName.vb: Microsoft.CodeAnalysis.ModuleMetadata()
+  name.vb: ModuleMetadata()
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.ModuleMetadata
+    name: ModuleMetadata
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ModuleMetadata.html
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.ModuleMetadata
+    name: ModuleMetadata
+    isExternal: true
+    href: Microsoft.CodeAnalysis.ModuleMetadata.html
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.Metadata.CommonCopy
+  commentId: M:Microsoft.CodeAnalysis.Metadata.CommonCopy
+  parent: Microsoft.CodeAnalysis.Metadata
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Metadata.html#Microsoft_CodeAnalysis_Metadata_CommonCopy
+  name: CommonCopy()
+  nameWithType: Metadata.CommonCopy()
+  fullName: Microsoft.CodeAnalysis.Metadata.CommonCopy()
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Metadata.CommonCopy
+    name: CommonCopy
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Metadata.html#Microsoft_CodeAnalysis_Metadata_CommonCopy
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Metadata.CommonCopy
+    name: CommonCopy
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Metadata.html#Microsoft_CodeAnalysis_Metadata_CommonCopy
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.CommonCopy*
+  commentId: Overload:Microsoft.CodeAnalysis.AssemblyMetadata.CommonCopy
+  isExternal: true
+  href: Microsoft.CodeAnalysis.AssemblyMetadata.html#Microsoft_CodeAnalysis_AssemblyMetadata_CommonCopy
+  name: CommonCopy
+  nameWithType: AssemblyMetadata.CommonCopy
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.CommonCopy
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.GetModules*
+  commentId: Overload:Microsoft.CodeAnalysis.AssemblyMetadata.GetModules
+  isExternal: true
+  href: Microsoft.CodeAnalysis.AssemblyMetadata.html#Microsoft_CodeAnalysis_AssemblyMetadata_GetModules
+  name: GetModules
+  nameWithType: AssemblyMetadata.GetModules
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.GetModules
+- uid: Microsoft.CodeAnalysis.Metadata.Dispose
+  commentId: M:Microsoft.CodeAnalysis.Metadata.Dispose
+  parent: Microsoft.CodeAnalysis.Metadata
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Metadata.html#Microsoft_CodeAnalysis_Metadata_Dispose
+  name: Dispose()
+  nameWithType: Metadata.Dispose()
+  fullName: Microsoft.CodeAnalysis.Metadata.Dispose()
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Metadata.Dispose
+    name: Dispose
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Metadata.html#Microsoft_CodeAnalysis_Metadata_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Metadata.Dispose
+    name: Dispose
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Metadata.html#Microsoft_CodeAnalysis_Metadata_Dispose
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.Dispose*
+  commentId: Overload:Microsoft.CodeAnalysis.AssemblyMetadata.Dispose
+  isExternal: true
+  href: Microsoft.CodeAnalysis.AssemblyMetadata.html#Microsoft_CodeAnalysis_AssemblyMetadata_Dispose
+  name: Dispose
+  nameWithType: AssemblyMetadata.Dispose
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.Dispose
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.GetReference*
+  commentId: Overload:Microsoft.CodeAnalysis.AssemblyMetadata.GetReference
+  isExternal: true
+  href: Microsoft.CodeAnalysis.AssemblyMetadata.html#Microsoft_CodeAnalysis_AssemblyMetadata_GetReference_Microsoft_CodeAnalysis_DocumentationProvider_System_Collections_Immutable_ImmutableArray_System_String__System_Boolean_System_String_System_String_
+  name: GetReference
+  nameWithType: AssemblyMetadata.GetReference
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.GetReference
+- uid: Microsoft.CodeAnalysis.DocumentationProvider
+  commentId: T:Microsoft.CodeAnalysis.DocumentationProvider
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.DocumentationProvider.html
+  name: DocumentationProvider
+  nameWithType: DocumentationProvider
+  fullName: Microsoft.CodeAnalysis.DocumentationProvider
+- uid: System.Collections.Immutable.ImmutableArray{System.String}
+  commentId: T:System.Collections.Immutable.ImmutableArray{System.String}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<string>
+  nameWithType: ImmutableArray<string>
+  fullName: System.Collections.Immutable.ImmutableArray<string>
+  nameWithType.vb: ImmutableArray(Of String)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of String)
+  name.vb: ImmutableArray(Of String)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.CodeAnalysis.PortableExecutableReference
+  commentId: T:Microsoft.CodeAnalysis.PortableExecutableReference
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.PortableExecutableReference.html
+  name: PortableExecutableReference
+  nameWithType: PortableExecutableReference
+  fullName: Microsoft.CodeAnalysis.PortableExecutableReference
+- uid: Microsoft.CodeAnalysis.Metadata.Kind
+  commentId: P:Microsoft.CodeAnalysis.Metadata.Kind
+  parent: Microsoft.CodeAnalysis.Metadata
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Metadata.html#Microsoft_CodeAnalysis_Metadata_Kind
+  name: Kind
+  nameWithType: Metadata.Kind
+  fullName: Microsoft.CodeAnalysis.Metadata.Kind
+- uid: Microsoft.CodeAnalysis.AssemblyMetadata.Kind*
+  commentId: Overload:Microsoft.CodeAnalysis.AssemblyMetadata.Kind
+  isExternal: true
+  href: Microsoft.CodeAnalysis.AssemblyMetadata.html#Microsoft_CodeAnalysis_AssemblyMetadata_Kind
+  name: Kind
+  nameWithType: AssemblyMetadata.Kind
+  fullName: Microsoft.CodeAnalysis.AssemblyMetadata.Kind
+- uid: Microsoft.CodeAnalysis.MetadataImageKind
+  commentId: T:Microsoft.CodeAnalysis.MetadataImageKind
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.MetadataImageKind.html
+  name: MetadataImageKind
+  nameWithType: MetadataImageKind
+  fullName: Microsoft.CodeAnalysis.MetadataImageKind

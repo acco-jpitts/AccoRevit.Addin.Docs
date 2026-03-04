@@ -1,0 +1,1640 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Composition.CompositionContext
+  commentId: T:System.Composition.CompositionContext
+  id: CompositionContext
+  parent: System.Composition
+  children:
+  - System.Composition.CompositionContext.#ctor
+  - System.Composition.CompositionContext.GetExport(System.Composition.Hosting.Core.CompositionContract)
+  - System.Composition.CompositionContext.GetExport(System.Type)
+  - System.Composition.CompositionContext.GetExport(System.Type,System.String)
+  - System.Composition.CompositionContext.GetExport``1
+  - System.Composition.CompositionContext.GetExport``1(System.String)
+  - System.Composition.CompositionContext.GetExports(System.Type)
+  - System.Composition.CompositionContext.GetExports(System.Type,System.String)
+  - System.Composition.CompositionContext.GetExports``1
+  - System.Composition.CompositionContext.GetExports``1(System.String)
+  - System.Composition.CompositionContext.TryGetExport(System.Composition.Hosting.Core.CompositionContract,System.Object@)
+  - System.Composition.CompositionContext.TryGetExport(System.Type,System.Object@)
+  - System.Composition.CompositionContext.TryGetExport(System.Type,System.String,System.Object@)
+  - System.Composition.CompositionContext.TryGetExport``1(System.String,``0@)
+  - System.Composition.CompositionContext.TryGetExport``1(``0@)
+  langs:
+  - csharp
+  - vb
+  name: CompositionContext
+  nameWithType: CompositionContext
+  fullName: System.Composition.CompositionContext
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public abstract class CompositionContext
+    content.vb: Public MustInherit Class CompositionContext
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - System.Composition.Hosting.CompositionHost
+  - System.Composition.Hosting.Core.LifetimeContext
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Composition.CompositionContext.System.Composition.CompositionContextExtensions.SatisfyImports(System.Object)
+  - System.Composition.CompositionContext.System.Composition.CompositionContextExtensions.SatisfyImports(System.Object,System.Composition.Convention.AttributedModelProvider)
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: System.Composition.CompositionContext.TryGetExport(System.Composition.Hosting.Core.CompositionContract,System.Object@)
+  commentId: M:System.Composition.CompositionContext.TryGetExport(System.Composition.Hosting.Core.CompositionContract,System.Object@)
+  id: TryGetExport(System.Composition.Hosting.Core.CompositionContract,System.Object@)
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: TryGetExport(CompositionContract, out object)
+  nameWithType: CompositionContext.TryGetExport(CompositionContract, out object)
+  fullName: System.Composition.CompositionContext.TryGetExport(System.Composition.Hosting.Core.CompositionContract, out object)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public abstract bool TryGetExport(CompositionContract contract, out object export)
+    parameters:
+    - id: contract
+      type: System.Composition.Hosting.Core.CompositionContract
+    - id: export
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public MustOverride Function TryGetExport(contract As CompositionContract, export As Object) As Boolean
+  overload: System.Composition.CompositionContext.TryGetExport*
+  nameWithType.vb: CompositionContext.TryGetExport(CompositionContract, Object)
+  fullName.vb: System.Composition.CompositionContext.TryGetExport(System.Composition.Hosting.Core.CompositionContract, Object)
+  name.vb: TryGetExport(CompositionContract, Object)
+- uid: System.Composition.CompositionContext.GetExport``1
+  commentId: M:System.Composition.CompositionContext.GetExport``1
+  id: GetExport``1
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: GetExport<TExport>()
+  nameWithType: CompositionContext.GetExport<TExport>()
+  fullName: System.Composition.CompositionContext.GetExport<TExport>()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public TExport GetExport<TExport>()
+    typeParameters:
+    - id: TExport
+    return:
+      type: '{TExport}'
+    content.vb: Public Function GetExport(Of TExport)() As TExport
+  overload: System.Composition.CompositionContext.GetExport*
+  nameWithType.vb: CompositionContext.GetExport(Of TExport)()
+  fullName.vb: System.Composition.CompositionContext.GetExport(Of TExport)()
+  name.vb: GetExport(Of TExport)()
+- uid: System.Composition.CompositionContext.GetExport``1(System.String)
+  commentId: M:System.Composition.CompositionContext.GetExport``1(System.String)
+  id: GetExport``1(System.String)
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: GetExport<TExport>(string)
+  nameWithType: CompositionContext.GetExport<TExport>(string)
+  fullName: System.Composition.CompositionContext.GetExport<TExport>(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public TExport GetExport<TExport>(string contractName)
+    parameters:
+    - id: contractName
+      type: System.String
+    typeParameters:
+    - id: TExport
+    return:
+      type: '{TExport}'
+    content.vb: Public Function GetExport(Of TExport)(contractName As String) As TExport
+  overload: System.Composition.CompositionContext.GetExport*
+  nameWithType.vb: CompositionContext.GetExport(Of TExport)(String)
+  fullName.vb: System.Composition.CompositionContext.GetExport(Of TExport)(String)
+  name.vb: GetExport(Of TExport)(String)
+- uid: System.Composition.CompositionContext.TryGetExport(System.Type,System.Object@)
+  commentId: M:System.Composition.CompositionContext.TryGetExport(System.Type,System.Object@)
+  id: TryGetExport(System.Type,System.Object@)
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: TryGetExport(Type, out object)
+  nameWithType: CompositionContext.TryGetExport(Type, out object)
+  fullName: System.Composition.CompositionContext.TryGetExport(System.Type, out object)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public bool TryGetExport(Type exportType, out object export)
+    parameters:
+    - id: exportType
+      type: System.Type
+    - id: export
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetExport(exportType As Type, export As Object) As Boolean
+  overload: System.Composition.CompositionContext.TryGetExport*
+  nameWithType.vb: CompositionContext.TryGetExport(Type, Object)
+  fullName.vb: System.Composition.CompositionContext.TryGetExport(System.Type, Object)
+  name.vb: TryGetExport(Type, Object)
+- uid: System.Composition.CompositionContext.TryGetExport(System.Type,System.String,System.Object@)
+  commentId: M:System.Composition.CompositionContext.TryGetExport(System.Type,System.String,System.Object@)
+  id: TryGetExport(System.Type,System.String,System.Object@)
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: TryGetExport(Type, string, out object)
+  nameWithType: CompositionContext.TryGetExport(Type, string, out object)
+  fullName: System.Composition.CompositionContext.TryGetExport(System.Type, string, out object)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public bool TryGetExport(Type exportType, string contractName, out object export)
+    parameters:
+    - id: exportType
+      type: System.Type
+    - id: contractName
+      type: System.String
+    - id: export
+      type: System.Object
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetExport(exportType As Type, contractName As String, export As Object) As Boolean
+  overload: System.Composition.CompositionContext.TryGetExport*
+  nameWithType.vb: CompositionContext.TryGetExport(Type, String, Object)
+  fullName.vb: System.Composition.CompositionContext.TryGetExport(System.Type, String, Object)
+  name.vb: TryGetExport(Type, String, Object)
+- uid: System.Composition.CompositionContext.TryGetExport``1(``0@)
+  commentId: M:System.Composition.CompositionContext.TryGetExport``1(``0@)
+  id: TryGetExport``1(``0@)
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: TryGetExport<TExport>(out TExport)
+  nameWithType: CompositionContext.TryGetExport<TExport>(out TExport)
+  fullName: System.Composition.CompositionContext.TryGetExport<TExport>(out TExport)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public bool TryGetExport<TExport>(out TExport export)
+    parameters:
+    - id: export
+      type: '{TExport}'
+    typeParameters:
+    - id: TExport
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetExport(Of TExport)(export As TExport) As Boolean
+  overload: System.Composition.CompositionContext.TryGetExport*
+  nameWithType.vb: CompositionContext.TryGetExport(Of TExport)(TExport)
+  fullName.vb: System.Composition.CompositionContext.TryGetExport(Of TExport)(TExport)
+  name.vb: TryGetExport(Of TExport)(TExport)
+- uid: System.Composition.CompositionContext.TryGetExport``1(System.String,``0@)
+  commentId: M:System.Composition.CompositionContext.TryGetExport``1(System.String,``0@)
+  id: TryGetExport``1(System.String,``0@)
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: TryGetExport<TExport>(string, out TExport)
+  nameWithType: CompositionContext.TryGetExport<TExport>(string, out TExport)
+  fullName: System.Composition.CompositionContext.TryGetExport<TExport>(string, out TExport)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public bool TryGetExport<TExport>(string contractName, out TExport export)
+    parameters:
+    - id: contractName
+      type: System.String
+    - id: export
+      type: '{TExport}'
+    typeParameters:
+    - id: TExport
+    return:
+      type: System.Boolean
+    content.vb: Public Function TryGetExport(Of TExport)(contractName As String, export As TExport) As Boolean
+  overload: System.Composition.CompositionContext.TryGetExport*
+  nameWithType.vb: CompositionContext.TryGetExport(Of TExport)(String, TExport)
+  fullName.vb: System.Composition.CompositionContext.TryGetExport(Of TExport)(String, TExport)
+  name.vb: TryGetExport(Of TExport)(String, TExport)
+- uid: System.Composition.CompositionContext.GetExport(System.Type)
+  commentId: M:System.Composition.CompositionContext.GetExport(System.Type)
+  id: GetExport(System.Type)
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: GetExport(Type)
+  nameWithType: CompositionContext.GetExport(Type)
+  fullName: System.Composition.CompositionContext.GetExport(System.Type)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public object GetExport(Type exportType)
+    parameters:
+    - id: exportType
+      type: System.Type
+    return:
+      type: System.Object
+    content.vb: Public Function GetExport(exportType As Type) As Object
+  overload: System.Composition.CompositionContext.GetExport*
+- uid: System.Composition.CompositionContext.GetExport(System.Type,System.String)
+  commentId: M:System.Composition.CompositionContext.GetExport(System.Type,System.String)
+  id: GetExport(System.Type,System.String)
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: GetExport(Type, string)
+  nameWithType: CompositionContext.GetExport(Type, string)
+  fullName: System.Composition.CompositionContext.GetExport(System.Type, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public object GetExport(Type exportType, string contractName)
+    parameters:
+    - id: exportType
+      type: System.Type
+    - id: contractName
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Function GetExport(exportType As Type, contractName As String) As Object
+  overload: System.Composition.CompositionContext.GetExport*
+  nameWithType.vb: CompositionContext.GetExport(Type, String)
+  fullName.vb: System.Composition.CompositionContext.GetExport(System.Type, String)
+  name.vb: GetExport(Type, String)
+- uid: System.Composition.CompositionContext.GetExport(System.Composition.Hosting.Core.CompositionContract)
+  commentId: M:System.Composition.CompositionContext.GetExport(System.Composition.Hosting.Core.CompositionContract)
+  id: GetExport(System.Composition.Hosting.Core.CompositionContract)
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: GetExport(CompositionContract)
+  nameWithType: CompositionContext.GetExport(CompositionContract)
+  fullName: System.Composition.CompositionContext.GetExport(System.Composition.Hosting.Core.CompositionContract)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public object GetExport(CompositionContract contract)
+    parameters:
+    - id: contract
+      type: System.Composition.Hosting.Core.CompositionContract
+    return:
+      type: System.Object
+    content.vb: Public Function GetExport(contract As CompositionContract) As Object
+  overload: System.Composition.CompositionContext.GetExport*
+- uid: System.Composition.CompositionContext.GetExports(System.Type)
+  commentId: M:System.Composition.CompositionContext.GetExports(System.Type)
+  id: GetExports(System.Type)
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: GetExports(Type)
+  nameWithType: CompositionContext.GetExports(Type)
+  fullName: System.Composition.CompositionContext.GetExports(System.Type)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public IEnumerable<object> GetExports(Type exportType)
+    parameters:
+    - id: exportType
+      type: System.Type
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object}
+    content.vb: Public Function GetExports(exportType As Type) As IEnumerable(Of Object)
+  overload: System.Composition.CompositionContext.GetExports*
+- uid: System.Composition.CompositionContext.GetExports(System.Type,System.String)
+  commentId: M:System.Composition.CompositionContext.GetExports(System.Type,System.String)
+  id: GetExports(System.Type,System.String)
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: GetExports(Type, string)
+  nameWithType: CompositionContext.GetExports(Type, string)
+  fullName: System.Composition.CompositionContext.GetExports(System.Type, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public IEnumerable<object> GetExports(Type exportType, string contractName)
+    parameters:
+    - id: exportType
+      type: System.Type
+    - id: contractName
+      type: System.String
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Object}
+    content.vb: Public Function GetExports(exportType As Type, contractName As String) As IEnumerable(Of Object)
+  overload: System.Composition.CompositionContext.GetExports*
+  nameWithType.vb: CompositionContext.GetExports(Type, String)
+  fullName.vb: System.Composition.CompositionContext.GetExports(System.Type, String)
+  name.vb: GetExports(Type, String)
+- uid: System.Composition.CompositionContext.GetExports``1
+  commentId: M:System.Composition.CompositionContext.GetExports``1
+  id: GetExports``1
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: GetExports<TExport>()
+  nameWithType: CompositionContext.GetExports<TExport>()
+  fullName: System.Composition.CompositionContext.GetExports<TExport>()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public IEnumerable<TExport> GetExports<TExport>()
+    typeParameters:
+    - id: TExport
+    return:
+      type: System.Collections.Generic.IEnumerable{{TExport}}
+    content.vb: Public Function GetExports(Of TExport)() As IEnumerable(Of TExport)
+  overload: System.Composition.CompositionContext.GetExports*
+  nameWithType.vb: CompositionContext.GetExports(Of TExport)()
+  fullName.vb: System.Composition.CompositionContext.GetExports(Of TExport)()
+  name.vb: GetExports(Of TExport)()
+- uid: System.Composition.CompositionContext.GetExports``1(System.String)
+  commentId: M:System.Composition.CompositionContext.GetExports``1(System.String)
+  id: GetExports``1(System.String)
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: GetExports<TExport>(string)
+  nameWithType: CompositionContext.GetExports<TExport>(string)
+  fullName: System.Composition.CompositionContext.GetExports<TExport>(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: public IEnumerable<TExport> GetExports<TExport>(string contractName)
+    parameters:
+    - id: contractName
+      type: System.String
+    typeParameters:
+    - id: TExport
+    return:
+      type: System.Collections.Generic.IEnumerable{{TExport}}
+    content.vb: Public Function GetExports(Of TExport)(contractName As String) As IEnumerable(Of TExport)
+  overload: System.Composition.CompositionContext.GetExports*
+  nameWithType.vb: CompositionContext.GetExports(Of TExport)(String)
+  fullName.vb: System.Composition.CompositionContext.GetExports(Of TExport)(String)
+  name.vb: GetExports(Of TExport)(String)
+- uid: System.Composition.CompositionContext.#ctor
+  commentId: M:System.Composition.CompositionContext.#ctor
+  id: '#ctor'
+  parent: System.Composition.CompositionContext
+  langs:
+  - csharp
+  - vb
+  name: CompositionContext()
+  nameWithType: CompositionContext.CompositionContext()
+  fullName: System.Composition.CompositionContext.CompositionContext()
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Composition
+  syntax:
+    content: protected CompositionContext()
+    content.vb: Protected Sub New()
+  overload: System.Composition.CompositionContext.#ctor*
+  nameWithType.vb: CompositionContext.New()
+  fullName.vb: System.Composition.CompositionContext.New()
+  name.vb: New()
+references:
+- uid: System.Composition
+  commentId: N:System.Composition
+  isExternal: true
+  href: System.html
+  name: System.Composition
+  nameWithType: System.Composition
+  fullName: System.Composition
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Composition
+    name: Composition
+    isExternal: true
+    href: System.Composition.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Composition
+    name: Composition
+    isExternal: true
+    href: System.Composition.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Composition.CompositionContext.System.Composition.CompositionContextExtensions.SatisfyImports(System.Object)
+  commentId: M:System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object)
+  parent: System.Composition.CompositionContextExtensions
+  definition: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object)
+  href: System.Composition.CompositionContextExtensions.html#System_Composition_CompositionContextExtensions_SatisfyImports_System_Composition_CompositionContext_System_Object_
+  name: SatisfyImports(CompositionContext, object)
+  nameWithType: CompositionContextExtensions.SatisfyImports(CompositionContext, object)
+  fullName: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext, object)
+  nameWithType.vb: CompositionContextExtensions.SatisfyImports(CompositionContext, Object)
+  fullName.vb: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext, Object)
+  name.vb: SatisfyImports(CompositionContext, Object)
+  spec.csharp:
+  - uid: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object)
+    name: SatisfyImports
+    isExternal: true
+    href: System.Composition.CompositionContextExtensions.html#System_Composition_CompositionContextExtensions_SatisfyImports_System_Composition_CompositionContext_System_Object_
+  - name: (
+  - uid: System.Composition.CompositionContext
+    name: CompositionContext
+    isExternal: true
+    href: System.Composition.CompositionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object)
+    name: SatisfyImports
+    isExternal: true
+    href: System.Composition.CompositionContextExtensions.html#System_Composition_CompositionContextExtensions_SatisfyImports_System_Composition_CompositionContext_System_Object_
+  - name: (
+  - uid: System.Composition.CompositionContext
+    name: CompositionContext
+    isExternal: true
+    href: System.Composition.CompositionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Composition.CompositionContext.System.Composition.CompositionContextExtensions.SatisfyImports(System.Object,System.Composition.Convention.AttributedModelProvider)
+  commentId: M:System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object,System.Composition.Convention.AttributedModelProvider)
+  parent: System.Composition.CompositionContextExtensions
+  definition: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object,System.Composition.Convention.AttributedModelProvider)
+  href: System.Composition.CompositionContextExtensions.html#System_Composition_CompositionContextExtensions_SatisfyImports_System_Composition_CompositionContext_System_Object_System_Composition_Convention_AttributedModelProvider_
+  name: SatisfyImports(CompositionContext, object, AttributedModelProvider)
+  nameWithType: CompositionContextExtensions.SatisfyImports(CompositionContext, object, AttributedModelProvider)
+  fullName: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext, object, System.Composition.Convention.AttributedModelProvider)
+  nameWithType.vb: CompositionContextExtensions.SatisfyImports(CompositionContext, Object, AttributedModelProvider)
+  fullName.vb: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext, Object, System.Composition.Convention.AttributedModelProvider)
+  name.vb: SatisfyImports(CompositionContext, Object, AttributedModelProvider)
+  spec.csharp:
+  - uid: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object,System.Composition.Convention.AttributedModelProvider)
+    name: SatisfyImports
+    isExternal: true
+    href: System.Composition.CompositionContextExtensions.html#System_Composition_CompositionContextExtensions_SatisfyImports_System_Composition_CompositionContext_System_Object_System_Composition_Convention_AttributedModelProvider_
+  - name: (
+  - uid: System.Composition.CompositionContext
+    name: CompositionContext
+    isExternal: true
+    href: System.Composition.CompositionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Composition.Convention.AttributedModelProvider
+    name: AttributedModelProvider
+    isExternal: true
+    href: System.Composition.Convention.AttributedModelProvider.html
+  - name: )
+  spec.vb:
+  - uid: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object,System.Composition.Convention.AttributedModelProvider)
+    name: SatisfyImports
+    isExternal: true
+    href: System.Composition.CompositionContextExtensions.html#System_Composition_CompositionContextExtensions_SatisfyImports_System_Composition_CompositionContext_System_Object_System_Composition_Convention_AttributedModelProvider_
+  - name: (
+  - uid: System.Composition.CompositionContext
+    name: CompositionContext
+    isExternal: true
+    href: System.Composition.CompositionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Composition.Convention.AttributedModelProvider
+    name: AttributedModelProvider
+    isExternal: true
+    href: System.Composition.Convention.AttributedModelProvider.html
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object)
+  commentId: M:System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object)
+  isExternal: true
+  href: System.Composition.CompositionContextExtensions.html#System_Composition_CompositionContextExtensions_SatisfyImports_System_Composition_CompositionContext_System_Object_
+  name: SatisfyImports(CompositionContext, object)
+  nameWithType: CompositionContextExtensions.SatisfyImports(CompositionContext, object)
+  fullName: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext, object)
+  nameWithType.vb: CompositionContextExtensions.SatisfyImports(CompositionContext, Object)
+  fullName.vb: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext, Object)
+  name.vb: SatisfyImports(CompositionContext, Object)
+  spec.csharp:
+  - uid: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object)
+    name: SatisfyImports
+    isExternal: true
+    href: System.Composition.CompositionContextExtensions.html#System_Composition_CompositionContextExtensions_SatisfyImports_System_Composition_CompositionContext_System_Object_
+  - name: (
+  - uid: System.Composition.CompositionContext
+    name: CompositionContext
+    isExternal: true
+    href: System.Composition.CompositionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object)
+    name: SatisfyImports
+    isExternal: true
+    href: System.Composition.CompositionContextExtensions.html#System_Composition_CompositionContextExtensions_SatisfyImports_System_Composition_CompositionContext_System_Object_
+  - name: (
+  - uid: System.Composition.CompositionContext
+    name: CompositionContext
+    isExternal: true
+    href: System.Composition.CompositionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Composition.CompositionContextExtensions
+  commentId: T:System.Composition.CompositionContextExtensions
+  parent: System.Composition
+  isExternal: true
+  href: System.Composition.CompositionContextExtensions.html
+  name: CompositionContextExtensions
+  nameWithType: CompositionContextExtensions
+  fullName: System.Composition.CompositionContextExtensions
+- uid: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object,System.Composition.Convention.AttributedModelProvider)
+  commentId: M:System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object,System.Composition.Convention.AttributedModelProvider)
+  isExternal: true
+  href: System.Composition.CompositionContextExtensions.html#System_Composition_CompositionContextExtensions_SatisfyImports_System_Composition_CompositionContext_System_Object_System_Composition_Convention_AttributedModelProvider_
+  name: SatisfyImports(CompositionContext, object, AttributedModelProvider)
+  nameWithType: CompositionContextExtensions.SatisfyImports(CompositionContext, object, AttributedModelProvider)
+  fullName: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext, object, System.Composition.Convention.AttributedModelProvider)
+  nameWithType.vb: CompositionContextExtensions.SatisfyImports(CompositionContext, Object, AttributedModelProvider)
+  fullName.vb: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext, Object, System.Composition.Convention.AttributedModelProvider)
+  name.vb: SatisfyImports(CompositionContext, Object, AttributedModelProvider)
+  spec.csharp:
+  - uid: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object,System.Composition.Convention.AttributedModelProvider)
+    name: SatisfyImports
+    isExternal: true
+    href: System.Composition.CompositionContextExtensions.html#System_Composition_CompositionContextExtensions_SatisfyImports_System_Composition_CompositionContext_System_Object_System_Composition_Convention_AttributedModelProvider_
+  - name: (
+  - uid: System.Composition.CompositionContext
+    name: CompositionContext
+    isExternal: true
+    href: System.Composition.CompositionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Composition.Convention.AttributedModelProvider
+    name: AttributedModelProvider
+    isExternal: true
+    href: System.Composition.Convention.AttributedModelProvider.html
+  - name: )
+  spec.vb:
+  - uid: System.Composition.CompositionContextExtensions.SatisfyImports(System.Composition.CompositionContext,System.Object,System.Composition.Convention.AttributedModelProvider)
+    name: SatisfyImports
+    isExternal: true
+    href: System.Composition.CompositionContextExtensions.html#System_Composition_CompositionContextExtensions_SatisfyImports_System_Composition_CompositionContext_System_Object_System_Composition_Convention_AttributedModelProvider_
+  - name: (
+  - uid: System.Composition.CompositionContext
+    name: CompositionContext
+    isExternal: true
+    href: System.Composition.CompositionContext.html
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Composition.Convention.AttributedModelProvider
+    name: AttributedModelProvider
+    isExternal: true
+    href: System.Composition.Convention.AttributedModelProvider.html
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: System.Composition.CompositionContext.TryGetExport*
+  commentId: Overload:System.Composition.CompositionContext.TryGetExport
+  isExternal: true
+  href: System.Composition.CompositionContext.html#System_Composition_CompositionContext_TryGetExport_System_Composition_Hosting_Core_CompositionContract_System_Object__
+  name: TryGetExport
+  nameWithType: CompositionContext.TryGetExport
+  fullName: System.Composition.CompositionContext.TryGetExport
+- uid: System.Composition.Hosting.Core.CompositionContract
+  commentId: T:System.Composition.Hosting.Core.CompositionContract
+  parent: System.Composition.Hosting.Core
+  isExternal: true
+  href: System.Composition.Hosting.Core.CompositionContract.html
+  name: CompositionContract
+  nameWithType: CompositionContract
+  fullName: System.Composition.Hosting.Core.CompositionContract
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Composition.Hosting.Core
+  commentId: N:System.Composition.Hosting.Core
+  isExternal: true
+  href: System.html
+  name: System.Composition.Hosting.Core
+  nameWithType: System.Composition.Hosting.Core
+  fullName: System.Composition.Hosting.Core
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Composition
+    name: Composition
+    isExternal: true
+    href: System.Composition.html
+  - name: .
+  - uid: System.Composition.Hosting
+    name: Hosting
+    isExternal: true
+    href: System.Composition.Hosting.html
+  - name: .
+  - uid: System.Composition.Hosting.Core
+    name: Core
+    isExternal: true
+    href: System.Composition.Hosting.Core.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Composition
+    name: Composition
+    isExternal: true
+    href: System.Composition.html
+  - name: .
+  - uid: System.Composition.Hosting
+    name: Hosting
+    isExternal: true
+    href: System.Composition.Hosting.html
+  - name: .
+  - uid: System.Composition.Hosting.Core
+    name: Core
+    isExternal: true
+    href: System.Composition.Hosting.Core.html
+- uid: System.Composition.CompositionContext.GetExport*
+  commentId: Overload:System.Composition.CompositionContext.GetExport
+  isExternal: true
+  href: System.Composition.CompositionContext.html#System_Composition_CompositionContext_GetExport__1
+  name: GetExport
+  nameWithType: CompositionContext.GetExport
+  fullName: System.Composition.CompositionContext.GetExport
+- uid: '{TExport}'
+  commentId: '!:TExport'
+  definition: TExport
+  name: TExport
+  nameWithType: TExport
+  fullName: TExport
+- uid: TExport
+  name: TExport
+  nameWithType: TExport
+  fullName: TExport
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Composition.CompositionContext.GetExports*
+  commentId: Overload:System.Composition.CompositionContext.GetExports
+  isExternal: true
+  href: System.Composition.CompositionContext.html#System_Composition_CompositionContext_GetExports_System_Type_
+  name: GetExports
+  nameWithType: CompositionContext.GetExports
+  fullName: System.Composition.CompositionContext.GetExports
+- uid: System.Collections.Generic.IEnumerable{System.Object}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Object}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<object>
+  nameWithType: IEnumerable<object>
+  fullName: System.Collections.Generic.IEnumerable<object>
+  nameWithType.vb: IEnumerable(Of Object)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Object)
+  name.vb: IEnumerable(Of Object)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IEnumerable{{TExport}}
+  commentId: T:System.Collections.Generic.IEnumerable{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TExport>
+  nameWithType: IEnumerable<TExport>
+  fullName: System.Collections.Generic.IEnumerable<TExport>
+  nameWithType.vb: IEnumerable(Of TExport)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TExport)
+  name.vb: IEnumerable(Of TExport)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TExport
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TExport
+  - name: )
+- uid: System.Composition.CompositionContext.#ctor*
+  commentId: Overload:System.Composition.CompositionContext.#ctor
+  isExternal: true
+  href: System.Composition.CompositionContext.html#System_Composition_CompositionContext__ctor
+  name: CompositionContext
+  nameWithType: CompositionContext.CompositionContext
+  fullName: System.Composition.CompositionContext.CompositionContext
+  nameWithType.vb: CompositionContext.New
+  fullName.vb: System.Composition.CompositionContext.New
+  name.vb: New

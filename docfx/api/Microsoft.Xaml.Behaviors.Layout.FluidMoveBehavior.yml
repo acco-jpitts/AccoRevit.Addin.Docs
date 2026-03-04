@@ -1,0 +1,1632 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  commentId: T:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  id: FluidMoveBehavior
+  parent: Microsoft.Xaml.Behaviors.Layout
+  children:
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.#ctor
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.Duration
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.DurationProperty
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseX
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseXProperty
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseY
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseYProperty
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EnsureTags(System.Windows.FrameworkElement)
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FloatAbove
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FloatAboveProperty
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTag
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagPath
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagPathProperty
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagProperty
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.ShouldSkipInitialLayout
+  langs:
+  - csharp
+  - vb
+  name: FluidMoveBehavior
+  nameWithType: FluidMoveBehavior
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: 'public sealed class FluidMoveBehavior : FluidMoveBehaviorBase, IAnimatable, IAttachedObject'
+    content.vb: Public NotInheritable Class FluidMoveBehavior Inherits FluidMoveBehaviorBase Implements IAnimatable, IAttachedObject
+  inheritance:
+  - System.Object
+  - System.Windows.Media.Animation.Animatable
+  - Microsoft.Xaml.Behaviors.Behavior
+  - Microsoft.Xaml.Behaviors.Behavior{System.Windows.FrameworkElement}
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+  implements:
+  - System.Windows.Media.Animation.IAnimatable
+  - Microsoft.Xaml.Behaviors.IAttachedObject
+  inheritedMembers:
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.AppliesToProperty
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.IsActiveProperty
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.TagProperty
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.TagPathProperty
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.AppliesTo
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.IsActive
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.Tag
+  - Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.TagPath
+  - Microsoft.Xaml.Behaviors.Behavior.Attach(System.Windows.DependencyObject)
+  - Microsoft.Xaml.Behaviors.Behavior.Detach
+  - System.Windows.Media.Animation.Animatable.Clone
+  - System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)
+  - System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)
+  - System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)
+  - System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)
+  - System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)
+  - System.Windows.Media.Animation.Animatable.HasAnimatedProperties
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.DurationProperty
+  commentId: F:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.DurationProperty
+  id: DurationProperty
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: DurationProperty
+  nameWithType: FluidMoveBehavior.DurationProperty
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.DurationProperty
+  type: Field
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: public static readonly DependencyProperty DurationProperty
+    return:
+      type: System.Windows.DependencyProperty
+    content.vb: Public Shared ReadOnly DurationProperty As DependencyProperty
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagProperty
+  commentId: F:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagProperty
+  id: InitialTagProperty
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: InitialTagProperty
+  nameWithType: FluidMoveBehavior.InitialTagProperty
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagProperty
+  type: Field
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: public static readonly DependencyProperty InitialTagProperty
+    return:
+      type: System.Windows.DependencyProperty
+    content.vb: Public Shared ReadOnly InitialTagProperty As DependencyProperty
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagPathProperty
+  commentId: F:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagPathProperty
+  id: InitialTagPathProperty
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: InitialTagPathProperty
+  nameWithType: FluidMoveBehavior.InitialTagPathProperty
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagPathProperty
+  type: Field
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: public static readonly DependencyProperty InitialTagPathProperty
+    return:
+      type: System.Windows.DependencyProperty
+    content.vb: Public Shared ReadOnly InitialTagPathProperty As DependencyProperty
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FloatAboveProperty
+  commentId: F:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FloatAboveProperty
+  id: FloatAboveProperty
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: FloatAboveProperty
+  nameWithType: FluidMoveBehavior.FloatAboveProperty
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FloatAboveProperty
+  type: Field
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: public static readonly DependencyProperty FloatAboveProperty
+    return:
+      type: System.Windows.DependencyProperty
+    content.vb: Public Shared ReadOnly FloatAboveProperty As DependencyProperty
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseXProperty
+  commentId: F:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseXProperty
+  id: EaseXProperty
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: EaseXProperty
+  nameWithType: FluidMoveBehavior.EaseXProperty
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseXProperty
+  type: Field
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: public static readonly DependencyProperty EaseXProperty
+    return:
+      type: System.Windows.DependencyProperty
+    content.vb: Public Shared ReadOnly EaseXProperty As DependencyProperty
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseYProperty
+  commentId: F:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseYProperty
+  id: EaseYProperty
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: EaseYProperty
+  nameWithType: FluidMoveBehavior.EaseYProperty
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseYProperty
+  type: Field
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: public static readonly DependencyProperty EaseYProperty
+    return:
+      type: System.Windows.DependencyProperty
+    content.vb: Public Shared ReadOnly EaseYProperty As DependencyProperty
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EnsureTags(System.Windows.FrameworkElement)
+  commentId: M:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EnsureTags(System.Windows.FrameworkElement)
+  id: EnsureTags(System.Windows.FrameworkElement)
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: EnsureTags(FrameworkElement)
+  nameWithType: FluidMoveBehavior.EnsureTags(FrameworkElement)
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EnsureTags(System.Windows.FrameworkElement)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  example: []
+  syntax:
+    content: protected override void EnsureTags(FrameworkElement child)
+    parameters:
+    - id: child
+      type: System.Windows.FrameworkElement
+    content.vb: Protected Overrides Sub EnsureTags(child As FrameworkElement)
+  overridden: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.EnsureTags(System.Windows.FrameworkElement)
+  overload: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EnsureTags*
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.#ctor
+  commentId: M:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.#ctor
+  id: '#ctor'
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: FluidMoveBehavior()
+  nameWithType: FluidMoveBehavior.FluidMoveBehavior()
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FluidMoveBehavior()
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: public FluidMoveBehavior()
+    content.vb: Public Sub New()
+  overload: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.#ctor*
+  nameWithType.vb: FluidMoveBehavior.New()
+  fullName.vb: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.New()
+  name.vb: New()
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.Duration
+  commentId: P:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.Duration
+  id: Duration
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: FluidMoveBehavior.Duration
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.Duration
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: public Duration Duration { get; set; }
+    parameters: []
+    return:
+      type: System.Windows.Duration
+    content.vb: Public Property Duration As Duration
+  overload: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.Duration*
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTag
+  commentId: P:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTag
+  id: InitialTag
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: InitialTag
+  nameWithType: FluidMoveBehavior.InitialTag
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTag
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: public TagType InitialTag { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.Xaml.Behaviors.Layout.TagType
+    content.vb: Public Property InitialTag As TagType
+  overload: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTag*
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagPath
+  commentId: P:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagPath
+  id: InitialTagPath
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: InitialTagPath
+  nameWithType: FluidMoveBehavior.InitialTagPath
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagPath
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: public string InitialTagPath { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property InitialTagPath As String
+  overload: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagPath*
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FloatAbove
+  commentId: P:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FloatAbove
+  id: FloatAbove
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: FloatAbove
+  nameWithType: FluidMoveBehavior.FloatAbove
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FloatAbove
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: public bool FloatAbove { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property FloatAbove As Boolean
+  overload: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FloatAbove*
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseX
+  commentId: P:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseX
+  id: EaseX
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: EaseX
+  nameWithType: FluidMoveBehavior.EaseX
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseX
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: public IEasingFunction EaseX { get; set; }
+    parameters: []
+    return:
+      type: System.Windows.Media.Animation.IEasingFunction
+    content.vb: Public Property EaseX As IEasingFunction
+  overload: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseX*
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseY
+  commentId: P:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseY
+  id: EaseY
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: EaseY
+  nameWithType: FluidMoveBehavior.EaseY
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseY
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  syntax:
+    content: public IEasingFunction EaseY { get; set; }
+    parameters: []
+    return:
+      type: System.Windows.Media.Animation.IEasingFunction
+    content.vb: Public Property EaseY As IEasingFunction
+  overload: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseY*
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.ShouldSkipInitialLayout
+  commentId: P:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.ShouldSkipInitialLayout
+  id: ShouldSkipInitialLayout
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior
+  langs:
+  - csharp
+  - vb
+  name: ShouldSkipInitialLayout
+  nameWithType: FluidMoveBehavior.ShouldSkipInitialLayout
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.ShouldSkipInitialLayout
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Xaml.Behaviors.Layout
+  example: []
+  syntax:
+    content: protected override bool ShouldSkipInitialLayout { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Protected Overrides ReadOnly Property ShouldSkipInitialLayout As Boolean
+  overridden: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.ShouldSkipInitialLayout
+  overload: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.ShouldSkipInitialLayout*
+references:
+- uid: Microsoft.Xaml.Behaviors.Layout
+  commentId: N:Microsoft.Xaml.Behaviors.Layout
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Xaml.Behaviors.Layout
+  nameWithType: Microsoft.Xaml.Behaviors.Layout
+  fullName: Microsoft.Xaml.Behaviors.Layout
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Xaml
+    name: Xaml
+    isExternal: true
+    href: Microsoft.Xaml.html
+  - name: .
+  - uid: Microsoft.Xaml.Behaviors
+    name: Behaviors
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.html
+  - name: .
+  - uid: Microsoft.Xaml.Behaviors.Layout
+    name: Layout
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Layout.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Xaml
+    name: Xaml
+    isExternal: true
+    href: Microsoft.Xaml.html
+  - name: .
+  - uid: Microsoft.Xaml.Behaviors
+    name: Behaviors
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.html
+  - name: .
+  - uid: Microsoft.Xaml.Behaviors.Layout
+    name: Layout
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Layout.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Windows.Media.Animation.Animatable
+  commentId: T:System.Windows.Media.Animation.Animatable
+  parent: System.Windows.Media.Animation
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable
+  name: Animatable
+  nameWithType: Animatable
+  fullName: System.Windows.Media.Animation.Animatable
+- uid: Microsoft.Xaml.Behaviors.Behavior
+  commentId: T:Microsoft.Xaml.Behaviors.Behavior
+  parent: Microsoft.Xaml.Behaviors
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Behavior.html
+  name: Behavior
+  nameWithType: Behavior
+  fullName: Microsoft.Xaml.Behaviors.Behavior
+- uid: Microsoft.Xaml.Behaviors.Behavior{System.Windows.FrameworkElement}
+  commentId: T:Microsoft.Xaml.Behaviors.Behavior{System.Windows.FrameworkElement}
+  parent: Microsoft.Xaml.Behaviors
+  definition: Microsoft.Xaml.Behaviors.Behavior`1
+  href: Microsoft.Xaml.Behaviors.Behavior-1.html
+  name: Behavior<FrameworkElement>
+  nameWithType: Behavior<FrameworkElement>
+  fullName: Microsoft.Xaml.Behaviors.Behavior<System.Windows.FrameworkElement>
+  nameWithType.vb: Behavior(Of FrameworkElement)
+  fullName.vb: Microsoft.Xaml.Behaviors.Behavior(Of System.Windows.FrameworkElement)
+  name.vb: Behavior(Of FrameworkElement)
+  spec.csharp:
+  - uid: Microsoft.Xaml.Behaviors.Behavior`1
+    name: Behavior
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Behavior-1.html
+  - name: <
+  - uid: System.Windows.FrameworkElement
+    name: FrameworkElement
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Xaml.Behaviors.Behavior`1
+    name: Behavior
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Behavior-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Windows.FrameworkElement
+    name: FrameworkElement
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement
+  - name: )
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+  commentId: T:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+  parent: Microsoft.Xaml.Behaviors.Layout
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.html
+  name: FluidMoveBehaviorBase
+  nameWithType: FluidMoveBehaviorBase
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+- uid: System.Windows.Media.Animation.IAnimatable
+  commentId: T:System.Windows.Media.Animation.IAnimatable
+  parent: System.Windows.Media.Animation
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.ianimatable
+  name: IAnimatable
+  nameWithType: IAnimatable
+  fullName: System.Windows.Media.Animation.IAnimatable
+- uid: Microsoft.Xaml.Behaviors.IAttachedObject
+  commentId: T:Microsoft.Xaml.Behaviors.IAttachedObject
+  parent: Microsoft.Xaml.Behaviors
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.IAttachedObject.html
+  name: IAttachedObject
+  nameWithType: IAttachedObject
+  fullName: Microsoft.Xaml.Behaviors.IAttachedObject
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.AppliesToProperty
+  commentId: F:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.AppliesToProperty
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehaviorBase_AppliesToProperty
+  name: AppliesToProperty
+  nameWithType: FluidMoveBehaviorBase.AppliesToProperty
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.AppliesToProperty
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.IsActiveProperty
+  commentId: F:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.IsActiveProperty
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehaviorBase_IsActiveProperty
+  name: IsActiveProperty
+  nameWithType: FluidMoveBehaviorBase.IsActiveProperty
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.IsActiveProperty
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.TagProperty
+  commentId: F:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.TagProperty
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehaviorBase_TagProperty
+  name: TagProperty
+  nameWithType: FluidMoveBehaviorBase.TagProperty
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.TagProperty
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.TagPathProperty
+  commentId: F:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.TagPathProperty
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehaviorBase_TagPathProperty
+  name: TagPathProperty
+  nameWithType: FluidMoveBehaviorBase.TagPathProperty
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.TagPathProperty
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.AppliesTo
+  commentId: P:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.AppliesTo
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehaviorBase_AppliesTo
+  name: AppliesTo
+  nameWithType: FluidMoveBehaviorBase.AppliesTo
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.AppliesTo
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.IsActive
+  commentId: P:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.IsActive
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehaviorBase_IsActive
+  name: IsActive
+  nameWithType: FluidMoveBehaviorBase.IsActive
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.IsActive
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.Tag
+  commentId: P:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.Tag
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehaviorBase_Tag
+  name: Tag
+  nameWithType: FluidMoveBehaviorBase.Tag
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.Tag
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.TagPath
+  commentId: P:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.TagPath
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehaviorBase_TagPath
+  name: TagPath
+  nameWithType: FluidMoveBehaviorBase.TagPath
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.TagPath
+- uid: Microsoft.Xaml.Behaviors.Behavior.Attach(System.Windows.DependencyObject)
+  commentId: M:Microsoft.Xaml.Behaviors.Behavior.Attach(System.Windows.DependencyObject)
+  parent: Microsoft.Xaml.Behaviors.Behavior
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Behavior.html#Microsoft_Xaml_Behaviors_Behavior_Attach_System_Windows_DependencyObject_
+  name: Attach(DependencyObject)
+  nameWithType: Behavior.Attach(DependencyObject)
+  fullName: Microsoft.Xaml.Behaviors.Behavior.Attach(System.Windows.DependencyObject)
+  spec.csharp:
+  - uid: Microsoft.Xaml.Behaviors.Behavior.Attach(System.Windows.DependencyObject)
+    name: Attach
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Behavior.html#Microsoft_Xaml_Behaviors_Behavior_Attach_System_Windows_DependencyObject_
+  - name: (
+  - uid: System.Windows.DependencyObject
+    name: DependencyObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Xaml.Behaviors.Behavior.Attach(System.Windows.DependencyObject)
+    name: Attach
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Behavior.html#Microsoft_Xaml_Behaviors_Behavior_Attach_System_Windows_DependencyObject_
+  - name: (
+  - uid: System.Windows.DependencyObject
+    name: DependencyObject
+    isExternal: true
+  - name: )
+- uid: Microsoft.Xaml.Behaviors.Behavior.Detach
+  commentId: M:Microsoft.Xaml.Behaviors.Behavior.Detach
+  parent: Microsoft.Xaml.Behaviors.Behavior
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Behavior.html#Microsoft_Xaml_Behaviors_Behavior_Detach
+  name: Detach()
+  nameWithType: Behavior.Detach()
+  fullName: Microsoft.Xaml.Behaviors.Behavior.Detach()
+  spec.csharp:
+  - uid: Microsoft.Xaml.Behaviors.Behavior.Detach
+    name: Detach
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Behavior.html#Microsoft_Xaml_Behaviors_Behavior_Detach
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Xaml.Behaviors.Behavior.Detach
+    name: Detach
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Behavior.html#Microsoft_Xaml_Behaviors_Behavior_Detach
+  - name: (
+  - name: )
+- uid: System.Windows.Media.Animation.Animatable.Clone
+  commentId: M:System.Windows.Media.Animation.Animatable.Clone
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.clone
+  name: Clone()
+  nameWithType: Animatable.Clone()
+  fullName: System.Windows.Media.Animation.Animatable.Clone()
+  spec.csharp:
+  - uid: System.Windows.Media.Animation.Animatable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.clone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Animation.Animatable.Clone
+    name: Clone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.clone
+  - name: (
+  - name: )
+- uid: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)
+  commentId: M:System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock)
+  name: ApplyAnimationClock(DependencyProperty, AnimationClock)
+  nameWithType: Animatable.ApplyAnimationClock(DependencyProperty, AnimationClock)
+  fullName: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty, System.Windows.Media.Animation.AnimationClock)
+  spec.csharp:
+  - uid: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)
+    name: ApplyAnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationClock
+    name: AnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationclock
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock)
+    name: ApplyAnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationClock
+    name: AnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationclock
+  - name: )
+- uid: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)
+  commentId: M:System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock-system-windows-media-animation-handoffbehavior)
+  name: ApplyAnimationClock(DependencyProperty, AnimationClock, HandoffBehavior)
+  nameWithType: Animatable.ApplyAnimationClock(DependencyProperty, AnimationClock, HandoffBehavior)
+  fullName: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty, System.Windows.Media.Animation.AnimationClock, System.Windows.Media.Animation.HandoffBehavior)
+  spec.csharp:
+  - uid: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)
+    name: ApplyAnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock-system-windows-media-animation-handoffbehavior)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationClock
+    name: AnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationclock
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.HandoffBehavior
+    name: HandoffBehavior
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.handoffbehavior
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Animation.Animatable.ApplyAnimationClock(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationClock,System.Windows.Media.Animation.HandoffBehavior)
+    name: ApplyAnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.applyanimationclock#system-windows-media-animation-animatable-applyanimationclock(system-windows-dependencyproperty-system-windows-media-animation-animationclock-system-windows-media-animation-handoffbehavior)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationClock
+    name: AnimationClock
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationclock
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.HandoffBehavior
+    name: HandoffBehavior
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.handoffbehavior
+  - name: )
+- uid: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)
+  commentId: M:System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline)
+  name: BeginAnimation(DependencyProperty, AnimationTimeline)
+  nameWithType: Animatable.BeginAnimation(DependencyProperty, AnimationTimeline)
+  fullName: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty, System.Windows.Media.Animation.AnimationTimeline)
+  spec.csharp:
+  - uid: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)
+    name: BeginAnimation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationTimeline
+    name: AnimationTimeline
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationtimeline
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline)
+    name: BeginAnimation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationTimeline
+    name: AnimationTimeline
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationtimeline
+  - name: )
+- uid: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)
+  commentId: M:System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline-system-windows-media-animation-handoffbehavior)
+  name: BeginAnimation(DependencyProperty, AnimationTimeline, HandoffBehavior)
+  nameWithType: Animatable.BeginAnimation(DependencyProperty, AnimationTimeline, HandoffBehavior)
+  fullName: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty, System.Windows.Media.Animation.AnimationTimeline, System.Windows.Media.Animation.HandoffBehavior)
+  spec.csharp:
+  - uid: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)
+    name: BeginAnimation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline-system-windows-media-animation-handoffbehavior)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationTimeline
+    name: AnimationTimeline
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationtimeline
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.HandoffBehavior
+    name: HandoffBehavior
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.handoffbehavior
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Animation.Animatable.BeginAnimation(System.Windows.DependencyProperty,System.Windows.Media.Animation.AnimationTimeline,System.Windows.Media.Animation.HandoffBehavior)
+    name: BeginAnimation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.beginanimation#system-windows-media-animation-animatable-beginanimation(system-windows-dependencyproperty-system-windows-media-animation-animationtimeline-system-windows-media-animation-handoffbehavior)
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.AnimationTimeline
+    name: AnimationTimeline
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animationtimeline
+  - name: ','
+  - name: " "
+  - uid: System.Windows.Media.Animation.HandoffBehavior
+    name: HandoffBehavior
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.handoffbehavior
+  - name: )
+- uid: System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)
+  commentId: M:System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.getanimationbasevalue
+  name: GetAnimationBaseValue(DependencyProperty)
+  nameWithType: Animatable.GetAnimationBaseValue(DependencyProperty)
+  fullName: System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)
+  spec.csharp:
+  - uid: System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)
+    name: GetAnimationBaseValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.getanimationbasevalue
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: System.Windows.Media.Animation.Animatable.GetAnimationBaseValue(System.Windows.DependencyProperty)
+    name: GetAnimationBaseValue
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.getanimationbasevalue
+  - name: (
+  - uid: System.Windows.DependencyProperty
+    name: DependencyProperty
+    isExternal: true
+  - name: )
+- uid: System.Windows.Media.Animation.Animatable.HasAnimatedProperties
+  commentId: P:System.Windows.Media.Animation.Animatable.HasAnimatedProperties
+  parent: System.Windows.Media.Animation.Animatable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.animatable.hasanimatedproperties
+  name: HasAnimatedProperties
+  nameWithType: Animatable.HasAnimatedProperties
+  fullName: System.Windows.Media.Animation.Animatable.HasAnimatedProperties
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Windows.Media.Animation
+  commentId: N:System.Windows.Media.Animation
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Media.Animation
+  nameWithType: System.Windows.Media.Animation
+  fullName: System.Windows.Media.Animation
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
+  - name: .
+  - uid: System.Windows.Media.Animation
+    name: Animation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
+  - name: .
+  - uid: System.Windows.Media.Animation
+    name: Animation
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation
+- uid: Microsoft.Xaml.Behaviors
+  commentId: N:Microsoft.Xaml.Behaviors
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Xaml.Behaviors
+  nameWithType: Microsoft.Xaml.Behaviors
+  fullName: Microsoft.Xaml.Behaviors
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Xaml
+    name: Xaml
+    isExternal: true
+    href: Microsoft.Xaml.html
+  - name: .
+  - uid: Microsoft.Xaml.Behaviors
+    name: Behaviors
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Xaml
+    name: Xaml
+    isExternal: true
+    href: Microsoft.Xaml.html
+  - name: .
+  - uid: Microsoft.Xaml.Behaviors
+    name: Behaviors
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.html
+- uid: Microsoft.Xaml.Behaviors.Behavior`1
+  commentId: T:Microsoft.Xaml.Behaviors.Behavior`1
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Behavior-1.html
+  name: Behavior<T>
+  nameWithType: Behavior<T>
+  fullName: Microsoft.Xaml.Behaviors.Behavior<T>
+  nameWithType.vb: Behavior(Of T)
+  fullName.vb: Microsoft.Xaml.Behaviors.Behavior(Of T)
+  name.vb: Behavior(Of T)
+  spec.csharp:
+  - uid: Microsoft.Xaml.Behaviors.Behavior`1
+    name: Behavior
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Behavior-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Xaml.Behaviors.Behavior`1
+    name: Behavior
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Behavior-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: System.Windows.DependencyProperty
+  isExternal: true
+  name: DependencyProperty
+  nameWithType: DependencyProperty
+  fullName: System.Windows.DependencyProperty
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.EnsureTags(System.Windows.FrameworkElement)
+  commentId: M:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.EnsureTags(System.Windows.FrameworkElement)
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehaviorBase_EnsureTags_System_Windows_FrameworkElement_
+  name: EnsureTags(FrameworkElement)
+  nameWithType: FluidMoveBehaviorBase.EnsureTags(FrameworkElement)
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.EnsureTags(System.Windows.FrameworkElement)
+  spec.csharp:
+  - uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.EnsureTags(System.Windows.FrameworkElement)
+    name: EnsureTags
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehaviorBase_EnsureTags_System_Windows_FrameworkElement_
+  - name: (
+  - uid: System.Windows.FrameworkElement
+    name: FrameworkElement
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.EnsureTags(System.Windows.FrameworkElement)
+    name: EnsureTags
+    isExternal: true
+    href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehaviorBase_EnsureTags_System_Windows_FrameworkElement_
+  - name: (
+  - uid: System.Windows.FrameworkElement
+    name: FrameworkElement
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement
+  - name: )
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EnsureTags*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EnsureTags
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehavior_EnsureTags_System_Windows_FrameworkElement_
+  name: EnsureTags
+  nameWithType: FluidMoveBehavior.EnsureTags
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EnsureTags
+- uid: System.Windows.FrameworkElement
+  commentId: T:System.Windows.FrameworkElement
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.frameworkelement
+  name: FrameworkElement
+  nameWithType: FrameworkElement
+  fullName: System.Windows.FrameworkElement
+- uid: System.Windows
+  commentId: N:System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows
+  nameWithType: System.Windows
+  fullName: System.Windows
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.#ctor*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.#ctor
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehavior__ctor
+  name: FluidMoveBehavior
+  nameWithType: FluidMoveBehavior.FluidMoveBehavior
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FluidMoveBehavior
+  nameWithType.vb: FluidMoveBehavior.New
+  fullName.vb: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.New
+  name.vb: New
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.Duration*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.Duration
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehavior_Duration
+  name: Duration
+  nameWithType: FluidMoveBehavior.Duration
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.Duration
+- uid: System.Windows.Duration
+  commentId: T:System.Windows.Duration
+  parent: System.Windows
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.duration
+  name: Duration
+  nameWithType: Duration
+  fullName: System.Windows.Duration
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTag*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTag
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehavior_InitialTag
+  name: InitialTag
+  nameWithType: FluidMoveBehavior.InitialTag
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTag
+- uid: Microsoft.Xaml.Behaviors.Layout.TagType
+  commentId: T:Microsoft.Xaml.Behaviors.Layout.TagType
+  parent: Microsoft.Xaml.Behaviors.Layout
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.TagType.html
+  name: TagType
+  nameWithType: TagType
+  fullName: Microsoft.Xaml.Behaviors.Layout.TagType
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagPath*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagPath
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehavior_InitialTagPath
+  name: InitialTagPath
+  nameWithType: FluidMoveBehavior.InitialTagPath
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.InitialTagPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FloatAbove*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FloatAbove
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehavior_FloatAbove
+  name: FloatAbove
+  nameWithType: FluidMoveBehavior.FloatAbove
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.FloatAbove
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseX*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseX
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehavior_EaseX
+  name: EaseX
+  nameWithType: FluidMoveBehavior.EaseX
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseX
+- uid: System.Windows.Media.Animation.IEasingFunction
+  commentId: T:System.Windows.Media.Animation.IEasingFunction
+  parent: System.Windows.Media.Animation
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.animation.ieasingfunction
+  name: IEasingFunction
+  nameWithType: IEasingFunction
+  fullName: System.Windows.Media.Animation.IEasingFunction
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseY*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseY
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehavior_EaseY
+  name: EaseY
+  nameWithType: FluidMoveBehavior.EaseY
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.EaseY
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.ShouldSkipInitialLayout
+  commentId: P:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.ShouldSkipInitialLayout
+  parent: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehaviorBase_ShouldSkipInitialLayout
+  name: ShouldSkipInitialLayout
+  nameWithType: FluidMoveBehaviorBase.ShouldSkipInitialLayout
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehaviorBase.ShouldSkipInitialLayout
+- uid: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.ShouldSkipInitialLayout*
+  commentId: Overload:Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.ShouldSkipInitialLayout
+  isExternal: true
+  href: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.html#Microsoft_Xaml_Behaviors_Layout_FluidMoveBehavior_ShouldSkipInitialLayout
+  name: ShouldSkipInitialLayout
+  nameWithType: FluidMoveBehavior.ShouldSkipInitialLayout
+  fullName: Microsoft.Xaml.Behaviors.Layout.FluidMoveBehavior.ShouldSkipInitialLayout

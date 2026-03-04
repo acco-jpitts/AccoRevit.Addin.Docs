@@ -1,0 +1,1417 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader
+  commentId: T:System.Diagnostics.Eventing.Reader.EventLogReader
+  id: EventLogReader
+  parent: System.Diagnostics.Eventing.Reader
+  children:
+  - System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery)
+  - System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery,System.Diagnostics.Eventing.Reader.EventBookmark)
+  - System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.String)
+  - System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.String,System.Diagnostics.Eventing.Reader.PathType)
+  - System.Diagnostics.Eventing.Reader.EventLogReader.BatchSize
+  - System.Diagnostics.Eventing.Reader.EventLogReader.CancelReading
+  - System.Diagnostics.Eventing.Reader.EventLogReader.Dispose
+  - System.Diagnostics.Eventing.Reader.EventLogReader.Dispose(System.Boolean)
+  - System.Diagnostics.Eventing.Reader.EventLogReader.LogStatus
+  - System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent
+  - System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent(System.TimeSpan)
+  - System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.Diagnostics.Eventing.Reader.EventBookmark)
+  - System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.Diagnostics.Eventing.Reader.EventBookmark,System.Int64)
+  - System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.IO.SeekOrigin,System.Int64)
+  langs:
+  - csharp
+  - vb
+  name: EventLogReader
+  nameWithType: EventLogReader
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: 'public class EventLogReader : IDisposable'
+    content.vb: Public Class EventLogReader Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery)
+  commentId: M:System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery)
+  id: '#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery)'
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: EventLogReader(EventLogQuery)
+  nameWithType: EventLogReader.EventLogReader(EventLogQuery)
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.EventLogReader(System.Diagnostics.Eventing.Reader.EventLogQuery)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: public EventLogReader(EventLogQuery eventQuery)
+    parameters:
+    - id: eventQuery
+      type: System.Diagnostics.Eventing.Reader.EventLogQuery
+    content.vb: Public Sub New(eventQuery As EventLogQuery)
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.#ctor*
+  nameWithType.vb: EventLogReader.New(EventLogQuery)
+  fullName.vb: System.Diagnostics.Eventing.Reader.EventLogReader.New(System.Diagnostics.Eventing.Reader.EventLogQuery)
+  name.vb: New(EventLogQuery)
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery,System.Diagnostics.Eventing.Reader.EventBookmark)
+  commentId: M:System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery,System.Diagnostics.Eventing.Reader.EventBookmark)
+  id: '#ctor(System.Diagnostics.Eventing.Reader.EventLogQuery,System.Diagnostics.Eventing.Reader.EventBookmark)'
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: EventLogReader(EventLogQuery, EventBookmark)
+  nameWithType: EventLogReader.EventLogReader(EventLogQuery, EventBookmark)
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.EventLogReader(System.Diagnostics.Eventing.Reader.EventLogQuery, System.Diagnostics.Eventing.Reader.EventBookmark)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: public EventLogReader(EventLogQuery eventQuery, EventBookmark bookmark)
+    parameters:
+    - id: eventQuery
+      type: System.Diagnostics.Eventing.Reader.EventLogQuery
+    - id: bookmark
+      type: System.Diagnostics.Eventing.Reader.EventBookmark
+    content.vb: Public Sub New(eventQuery As EventLogQuery, bookmark As EventBookmark)
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.#ctor*
+  nameWithType.vb: EventLogReader.New(EventLogQuery, EventBookmark)
+  fullName.vb: System.Diagnostics.Eventing.Reader.EventLogReader.New(System.Diagnostics.Eventing.Reader.EventLogQuery, System.Diagnostics.Eventing.Reader.EventBookmark)
+  name.vb: New(EventLogQuery, EventBookmark)
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.String)
+  commentId: M:System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: EventLogReader(string)
+  nameWithType: EventLogReader.EventLogReader(string)
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.EventLogReader(string)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: public EventLogReader(string path)
+    parameters:
+    - id: path
+      type: System.String
+    content.vb: Public Sub New(path As String)
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.#ctor*
+  nameWithType.vb: EventLogReader.New(String)
+  fullName.vb: System.Diagnostics.Eventing.Reader.EventLogReader.New(String)
+  name.vb: New(String)
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.String,System.Diagnostics.Eventing.Reader.PathType)
+  commentId: M:System.Diagnostics.Eventing.Reader.EventLogReader.#ctor(System.String,System.Diagnostics.Eventing.Reader.PathType)
+  id: '#ctor(System.String,System.Diagnostics.Eventing.Reader.PathType)'
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: EventLogReader(string, PathType)
+  nameWithType: EventLogReader.EventLogReader(string, PathType)
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.EventLogReader(string, System.Diagnostics.Eventing.Reader.PathType)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: public EventLogReader(string path, PathType pathType)
+    parameters:
+    - id: path
+      type: System.String
+    - id: pathType
+      type: System.Diagnostics.Eventing.Reader.PathType
+    content.vb: Public Sub New(path As String, pathType As PathType)
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.#ctor*
+  nameWithType.vb: EventLogReader.New(String, PathType)
+  fullName.vb: System.Diagnostics.Eventing.Reader.EventLogReader.New(String, System.Diagnostics.Eventing.Reader.PathType)
+  name.vb: New(String, PathType)
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.CancelReading
+  commentId: M:System.Diagnostics.Eventing.Reader.EventLogReader.CancelReading
+  id: CancelReading
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: CancelReading()
+  nameWithType: EventLogReader.CancelReading()
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.CancelReading()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: public void CancelReading()
+    content.vb: Public Sub CancelReading()
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.CancelReading*
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.Dispose
+  commentId: M:System.Diagnostics.Eventing.Reader.EventLogReader.Dispose
+  id: Dispose
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: EventLogReader.Dispose()
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.Dispose()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.Dispose(System.Boolean)
+  commentId: M:System.Diagnostics.Eventing.Reader.EventLogReader.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: EventLogReader.Dispose(bool)
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.Dispose(bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.Dispose*
+  nameWithType.vb: EventLogReader.Dispose(Boolean)
+  fullName.vb: System.Diagnostics.Eventing.Reader.EventLogReader.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent
+  commentId: M:System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent
+  id: ReadEvent
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: ReadEvent()
+  nameWithType: EventLogReader.ReadEvent()
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: public EventRecord ReadEvent()
+    return:
+      type: System.Diagnostics.Eventing.Reader.EventRecord
+    content.vb: Public Function ReadEvent() As EventRecord
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent*
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent(System.TimeSpan)
+  commentId: M:System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent(System.TimeSpan)
+  id: ReadEvent(System.TimeSpan)
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: ReadEvent(TimeSpan)
+  nameWithType: EventLogReader.ReadEvent(TimeSpan)
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent(System.TimeSpan)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: public EventRecord ReadEvent(TimeSpan timeout)
+    parameters:
+    - id: timeout
+      type: System.TimeSpan
+    return:
+      type: System.Diagnostics.Eventing.Reader.EventRecord
+    content.vb: Public Function ReadEvent(timeout As TimeSpan) As EventRecord
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent*
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.Diagnostics.Eventing.Reader.EventBookmark)
+  commentId: M:System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.Diagnostics.Eventing.Reader.EventBookmark)
+  id: Seek(System.Diagnostics.Eventing.Reader.EventBookmark)
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: Seek(EventBookmark)
+  nameWithType: EventLogReader.Seek(EventBookmark)
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.Diagnostics.Eventing.Reader.EventBookmark)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: public void Seek(EventBookmark bookmark)
+    parameters:
+    - id: bookmark
+      type: System.Diagnostics.Eventing.Reader.EventBookmark
+    content.vb: Public Sub Seek(bookmark As EventBookmark)
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.Seek*
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.Diagnostics.Eventing.Reader.EventBookmark,System.Int64)
+  commentId: M:System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.Diagnostics.Eventing.Reader.EventBookmark,System.Int64)
+  id: Seek(System.Diagnostics.Eventing.Reader.EventBookmark,System.Int64)
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: Seek(EventBookmark, long)
+  nameWithType: EventLogReader.Seek(EventBookmark, long)
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.Diagnostics.Eventing.Reader.EventBookmark, long)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: public void Seek(EventBookmark bookmark, long offset)
+    parameters:
+    - id: bookmark
+      type: System.Diagnostics.Eventing.Reader.EventBookmark
+    - id: offset
+      type: System.Int64
+    content.vb: Public Sub Seek(bookmark As EventBookmark, offset As Long)
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.Seek*
+  nameWithType.vb: EventLogReader.Seek(EventBookmark, Long)
+  fullName.vb: System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.Diagnostics.Eventing.Reader.EventBookmark, Long)
+  name.vb: Seek(EventBookmark, Long)
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.IO.SeekOrigin,System.Int64)
+  commentId: M:System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.IO.SeekOrigin,System.Int64)
+  id: Seek(System.IO.SeekOrigin,System.Int64)
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: Seek(SeekOrigin, long)
+  nameWithType: EventLogReader.Seek(SeekOrigin, long)
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.IO.SeekOrigin, long)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: public void Seek(SeekOrigin origin, long offset)
+    parameters:
+    - id: origin
+      type: System.IO.SeekOrigin
+    - id: offset
+      type: System.Int64
+    content.vb: Public Sub Seek(origin As SeekOrigin, offset As Long)
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.Seek*
+  nameWithType.vb: EventLogReader.Seek(SeekOrigin, Long)
+  fullName.vb: System.Diagnostics.Eventing.Reader.EventLogReader.Seek(System.IO.SeekOrigin, Long)
+  name.vb: Seek(SeekOrigin, Long)
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.BatchSize
+  commentId: P:System.Diagnostics.Eventing.Reader.EventLogReader.BatchSize
+  id: BatchSize
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: BatchSize
+  nameWithType: EventLogReader.BatchSize
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.BatchSize
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: public int BatchSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property BatchSize As Integer
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.BatchSize*
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.LogStatus
+  commentId: P:System.Diagnostics.Eventing.Reader.EventLogReader.LogStatus
+  id: LogStatus
+  parent: System.Diagnostics.Eventing.Reader.EventLogReader
+  langs:
+  - csharp
+  - vb
+  name: LogStatus
+  nameWithType: EventLogReader.LogStatus
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.LogStatus
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics.Eventing.Reader
+  syntax:
+    content: public IList<EventLogStatus> LogStatus { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IList{System.Diagnostics.Eventing.Reader.EventLogStatus}
+    content.vb: Public ReadOnly Property LogStatus As IList(Of EventLogStatus)
+  overload: System.Diagnostics.Eventing.Reader.EventLogReader.LogStatus*
+references:
+- uid: System.Diagnostics.Eventing.Reader
+  commentId: N:System.Diagnostics.Eventing.Reader
+  isExternal: true
+  href: System.html
+  name: System.Diagnostics.Eventing.Reader
+  nameWithType: System.Diagnostics.Eventing.Reader
+  fullName: System.Diagnostics.Eventing.Reader
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: System.Diagnostics.html
+  - name: .
+  - uid: System.Diagnostics.Eventing
+    name: Eventing
+    isExternal: true
+    href: System.Diagnostics.Eventing.html
+  - name: .
+  - uid: System.Diagnostics.Eventing.Reader
+    name: Reader
+    isExternal: true
+    href: System.Diagnostics.Eventing.Reader.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: System.Diagnostics.html
+  - name: .
+  - uid: System.Diagnostics.Eventing
+    name: Eventing
+    isExternal: true
+    href: System.Diagnostics.Eventing.html
+  - name: .
+  - uid: System.Diagnostics.Eventing.Reader
+    name: Reader
+    isExternal: true
+    href: System.Diagnostics.Eventing.Reader.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.#ctor*
+  commentId: Overload:System.Diagnostics.Eventing.Reader.EventLogReader.#ctor
+  isExternal: true
+  href: System.Diagnostics.Eventing.Reader.EventLogReader.html#System_Diagnostics_Eventing_Reader_EventLogReader__ctor_System_Diagnostics_Eventing_Reader_EventLogQuery_
+  name: EventLogReader
+  nameWithType: EventLogReader.EventLogReader
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.EventLogReader
+  nameWithType.vb: EventLogReader.New
+  fullName.vb: System.Diagnostics.Eventing.Reader.EventLogReader.New
+  name.vb: New
+- uid: System.Diagnostics.Eventing.Reader.EventLogQuery
+  commentId: T:System.Diagnostics.Eventing.Reader.EventLogQuery
+  parent: System.Diagnostics.Eventing.Reader
+  isExternal: true
+  href: System.Diagnostics.Eventing.Reader.EventLogQuery.html
+  name: EventLogQuery
+  nameWithType: EventLogQuery
+  fullName: System.Diagnostics.Eventing.Reader.EventLogQuery
+- uid: System.Diagnostics.Eventing.Reader.EventBookmark
+  commentId: T:System.Diagnostics.Eventing.Reader.EventBookmark
+  parent: System.Diagnostics.Eventing.Reader
+  isExternal: true
+  href: System.Diagnostics.Eventing.Reader.EventBookmark.html
+  name: EventBookmark
+  nameWithType: EventBookmark
+  fullName: System.Diagnostics.Eventing.Reader.EventBookmark
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Diagnostics.Eventing.Reader.PathType
+  commentId: T:System.Diagnostics.Eventing.Reader.PathType
+  parent: System.Diagnostics.Eventing.Reader
+  isExternal: true
+  href: System.Diagnostics.Eventing.Reader.PathType.html
+  name: PathType
+  nameWithType: PathType
+  fullName: System.Diagnostics.Eventing.Reader.PathType
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.CancelReading*
+  commentId: Overload:System.Diagnostics.Eventing.Reader.EventLogReader.CancelReading
+  isExternal: true
+  href: System.Diagnostics.Eventing.Reader.EventLogReader.html#System_Diagnostics_Eventing_Reader_EventLogReader_CancelReading
+  name: CancelReading
+  nameWithType: EventLogReader.CancelReading
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.CancelReading
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.Dispose*
+  commentId: Overload:System.Diagnostics.Eventing.Reader.EventLogReader.Dispose
+  isExternal: true
+  href: System.Diagnostics.Eventing.Reader.EventLogReader.html#System_Diagnostics_Eventing_Reader_EventLogReader_Dispose
+  name: Dispose
+  nameWithType: EventLogReader.Dispose
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent*
+  commentId: Overload:System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent
+  isExternal: true
+  href: System.Diagnostics.Eventing.Reader.EventLogReader.html#System_Diagnostics_Eventing_Reader_EventLogReader_ReadEvent
+  name: ReadEvent
+  nameWithType: EventLogReader.ReadEvent
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.ReadEvent
+- uid: System.Diagnostics.Eventing.Reader.EventRecord
+  commentId: T:System.Diagnostics.Eventing.Reader.EventRecord
+  parent: System.Diagnostics.Eventing.Reader
+  isExternal: true
+  href: System.Diagnostics.Eventing.Reader.EventRecord.html
+  name: EventRecord
+  nameWithType: EventRecord
+  fullName: System.Diagnostics.Eventing.Reader.EventRecord
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.Seek*
+  commentId: Overload:System.Diagnostics.Eventing.Reader.EventLogReader.Seek
+  isExternal: true
+  href: System.Diagnostics.Eventing.Reader.EventLogReader.html#System_Diagnostics_Eventing_Reader_EventLogReader_Seek_System_Diagnostics_Eventing_Reader_EventBookmark_
+  name: Seek
+  nameWithType: EventLogReader.Seek
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.Seek
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.IO.SeekOrigin
+  commentId: T:System.IO.SeekOrigin
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.seekorigin
+  name: SeekOrigin
+  nameWithType: SeekOrigin
+  fullName: System.IO.SeekOrigin
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.BatchSize*
+  commentId: Overload:System.Diagnostics.Eventing.Reader.EventLogReader.BatchSize
+  isExternal: true
+  href: System.Diagnostics.Eventing.Reader.EventLogReader.html#System_Diagnostics_Eventing_Reader_EventLogReader_BatchSize
+  name: BatchSize
+  nameWithType: EventLogReader.BatchSize
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.BatchSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.Diagnostics.Eventing.Reader.EventLogReader.LogStatus*
+  commentId: Overload:System.Diagnostics.Eventing.Reader.EventLogReader.LogStatus
+  isExternal: true
+  href: System.Diagnostics.Eventing.Reader.EventLogReader.html#System_Diagnostics_Eventing_Reader_EventLogReader_LogStatus
+  name: LogStatus
+  nameWithType: EventLogReader.LogStatus
+  fullName: System.Diagnostics.Eventing.Reader.EventLogReader.LogStatus
+- uid: System.Collections.Generic.IList{System.Diagnostics.Eventing.Reader.EventLogStatus}
+  commentId: T:System.Collections.Generic.IList{System.Diagnostics.Eventing.Reader.EventLogStatus}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<EventLogStatus>
+  nameWithType: IList<EventLogStatus>
+  fullName: System.Collections.Generic.IList<System.Diagnostics.Eventing.Reader.EventLogStatus>
+  nameWithType.vb: IList(Of EventLogStatus)
+  fullName.vb: System.Collections.Generic.IList(Of System.Diagnostics.Eventing.Reader.EventLogStatus)
+  name.vb: IList(Of EventLogStatus)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.Diagnostics.Eventing.Reader.EventLogStatus
+    name: EventLogStatus
+    isExternal: true
+    href: System.Diagnostics.Eventing.Reader.EventLogStatus.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Diagnostics.Eventing.Reader.EventLogStatus
+    name: EventLogStatus
+    isExternal: true
+    href: System.Diagnostics.Eventing.Reader.EventLogStatus.html
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

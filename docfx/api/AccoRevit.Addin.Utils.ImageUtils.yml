@@ -1,0 +1,798 @@
+### YamlMime:ManagedReference
+items:
+- uid: AccoRevit.Addin.Utils.ImageUtils
+  commentId: T:AccoRevit.Addin.Utils.ImageUtils
+  id: ImageUtils
+  parent: AccoRevit.Addin.Utils
+  children:
+  - AccoRevit.Addin.Utils.ImageUtils.AddIcons(System.Collections.Generic.List{Autodesk.Revit.UI.RibbonItem})
+  - AccoRevit.Addin.Utils.ImageUtils.GetEmbeddedImage(System.Reflection.Assembly,System.String)
+  - AccoRevit.Addin.Utils.ImageUtils.LoadPackImage(System.String,System.String)
+  - AccoRevit.Addin.Utils.ImageUtils.ToggleImage(Autodesk.Revit.UI.UIApplication,System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ImageUtils
+  nameWithType: ImageUtils
+  fullName: AccoRevit.Addin.Utils.ImageUtils
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Provides utilities for loading ribbon icons and contextual help resources for Revit UI elements.
+  remarks: >-
+    <p>
+
+    This class supports three icon sources:
+
+    </p>
+
+    <ul><li>WPF Pack URIs for resources embedded as <code>Resource</code> content.</li><li>Embedded manifest resources via <xref href="System.Reflection.Assembly.GetManifestResourceStream(System.String)" data-throw-if-not-resolved="false"></xref>.</li><li>File-based icons in the user's Revit add-in AppData folder (theme-aware naming).</li></ul>
+
+    <p>
+
+    Theme handling uses <code>UIThemeManager</code> on Revit 2024+; otherwise it defaults to light theme.
+
+    </p>
+
+    <p>
+
+    When an icon cannot be resolved, a "Missing32.{theme}.ico" fallback icon is used.
+
+    </p>
+  example: []
+  syntax:
+    content: public static class ImageUtils
+    content.vb: Public Module ImageUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: AccoRevit.Addin.Utils.ImageUtils.LoadPackImage(System.String,System.String)
+  commentId: M:AccoRevit.Addin.Utils.ImageUtils.LoadPackImage(System.String,System.String)
+  id: LoadPackImage(System.String,System.String)
+  parent: AccoRevit.Addin.Utils.ImageUtils
+  langs:
+  - csharp
+  - vb
+  name: LoadPackImage(string, string)
+  nameWithType: ImageUtils.LoadPackImage(string, string)
+  fullName: AccoRevit.Addin.Utils.ImageUtils.LoadPackImage(string, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Loads a WPF image from a Pack URI pointing to a resource embedded in an assembly.
+  remarks: >-
+    Uses <xref href="System.Windows.Media.Imaging.BitmapCacheOption.OnLoad" data-throw-if-not-resolved="false"></xref> so the stream can be released immediately.
+
+    The returned image is frozen to allow cross-thread use and reduce UI overhead.
+  example: []
+  syntax:
+    content: public static BitmapImage LoadPackImage(string assemblyName, string relativePath)
+    parameters:
+    - id: assemblyName
+      type: System.String
+      description: The short assembly name hosting the resource.
+    - id: relativePath
+      type: System.String
+      description: Relative path to the resource within the assembly.
+    return:
+      type: System.Windows.Media.Imaging.BitmapImage
+      description: A frozen <xref href="System.Windows.Media.Imaging.BitmapImage" data-throw-if-not-resolved="false"></xref> loaded from the Pack URI.
+    content.vb: Public Shared Function LoadPackImage(assemblyName As String, relativePath As String) As BitmapImage
+  overload: AccoRevit.Addin.Utils.ImageUtils.LoadPackImage*
+  nameWithType.vb: ImageUtils.LoadPackImage(String, String)
+  fullName.vb: AccoRevit.Addin.Utils.ImageUtils.LoadPackImage(String, String)
+  name.vb: LoadPackImage(String, String)
+- uid: AccoRevit.Addin.Utils.ImageUtils.GetEmbeddedImage(System.Reflection.Assembly,System.String)
+  commentId: M:AccoRevit.Addin.Utils.ImageUtils.GetEmbeddedImage(System.Reflection.Assembly,System.String)
+  id: GetEmbeddedImage(System.Reflection.Assembly,System.String)
+  parent: AccoRevit.Addin.Utils.ImageUtils
+  langs:
+  - csharp
+  - vb
+  name: GetEmbeddedImage(Assembly, string)
+  nameWithType: ImageUtils.GetEmbeddedImage(Assembly, string)
+  fullName: AccoRevit.Addin.Utils.ImageUtils.GetEmbeddedImage(System.Reflection.Assembly, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Loads an embedded manifest resource image as a <xref href="System.Windows.Media.Imaging.BitmapSource" data-throw-if-not-resolved="false"></xref>.
+  remarks: >-
+    If <code class="paramref">imageFullName</code> is null/empty, this method returns <xref href="AccoRevit.Addin.Utils.ImageUtils.DefaultLargeImage" data-throw-if-not-resolved="false"></xref>.
+
+    Any exceptions are swallowed and also result in returning <xref href="AccoRevit.Addin.Utils.ImageUtils.DefaultLargeImage" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public static BitmapSource GetEmbeddedImage(Assembly assembly, string imageFullName)
+    parameters:
+    - id: assembly
+      type: System.Reflection.Assembly
+      description: Assembly that contains the embedded resource.
+    - id: imageFullName
+      type: System.String
+      description: Fully-qualified manifest resource name.
+    return:
+      type: System.Windows.Media.Imaging.BitmapSource
+      description: The loaded image if found; otherwise <xref href="AccoRevit.Addin.Utils.ImageUtils.DefaultLargeImage" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Shared Function GetEmbeddedImage(assembly As Assembly, imageFullName As String) As BitmapSource
+  overload: AccoRevit.Addin.Utils.ImageUtils.GetEmbeddedImage*
+  nameWithType.vb: ImageUtils.GetEmbeddedImage(Assembly, String)
+  fullName.vb: AccoRevit.Addin.Utils.ImageUtils.GetEmbeddedImage(System.Reflection.Assembly, String)
+  name.vb: GetEmbeddedImage(Assembly, String)
+- uid: AccoRevit.Addin.Utils.ImageUtils.AddIcons(System.Collections.Generic.List{Autodesk.Revit.UI.RibbonItem})
+  commentId: M:AccoRevit.Addin.Utils.ImageUtils.AddIcons(System.Collections.Generic.List{Autodesk.Revit.UI.RibbonItem})
+  id: AddIcons(System.Collections.Generic.List{Autodesk.Revit.UI.RibbonItem})
+  parent: AccoRevit.Addin.Utils.ImageUtils
+  langs:
+  - csharp
+  - vb
+  name: AddIcons(List<RibbonItem>)
+  nameWithType: ImageUtils.AddIcons(List<RibbonItem>)
+  fullName: AccoRevit.Addin.Utils.ImageUtils.AddIcons(System.Collections.Generic.List<Autodesk.Revit.UI.RibbonItem>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Applies icons, tooltips, and contextual help to a set of ribbon items based on the current theme.
+  remarks: >-
+    <p>
+
+    Icons are resolved from the add-in AppData folder using naming conventions:
+
+    </p>
+
+    <ul><li><code>{CommandName}16.{theme}.ico</code> for small images.</li><li><code>{CommandName}32.{theme}.ico</code> for large images.</li></ul>
+
+    <p>
+
+    Tooltips are loaded from <code>Resources/Tooltips/tooltips.csv</code> when present.
+
+    Contextual help is applied if <code>Resources/Help/{CommandName}.pdf</code> exists.
+
+    </p>
+  example: []
+  syntax:
+    content: public static void AddIcons(List<RibbonItem> allRibbonItems)
+    parameters:
+    - id: allRibbonItems
+      type: System.Collections.Generic.List{Autodesk.Revit.UI.RibbonItem}
+      description: All ribbon items to update.
+    content.vb: Public Shared Sub AddIcons(allRibbonItems As List(Of RibbonItem))
+  overload: AccoRevit.Addin.Utils.ImageUtils.AddIcons*
+  nameWithType.vb: ImageUtils.AddIcons(List(Of RibbonItem))
+  fullName.vb: AccoRevit.Addin.Utils.ImageUtils.AddIcons(System.Collections.Generic.List(Of Autodesk.Revit.UI.RibbonItem))
+  name.vb: AddIcons(List(Of RibbonItem))
+- uid: AccoRevit.Addin.Utils.ImageUtils.ToggleImage(Autodesk.Revit.UI.UIApplication,System.String,System.String)
+  commentId: M:AccoRevit.Addin.Utils.ImageUtils.ToggleImage(Autodesk.Revit.UI.UIApplication,System.String,System.String)
+  id: ToggleImage(Autodesk.Revit.UI.UIApplication,System.String,System.String)
+  isExtensionMethod: true
+  parent: AccoRevit.Addin.Utils.ImageUtils
+  langs:
+  - csharp
+  - vb
+  name: ToggleImage(UIApplication, string, string)
+  nameWithType: ImageUtils.ToggleImage(UIApplication, string, string)
+  fullName: AccoRevit.Addin.Utils.ImageUtils.ToggleImage(Autodesk.Revit.UI.UIApplication, string, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Updates (toggles) the icon on a ribbon button found on the "Toggle" ribbon tab.
+  remarks: >-
+    <p>
+
+    This method enumerates ribbon items on the "Toggle" tab and updates the first <xref href="Autodesk.Revit.UI.RibbonButton" data-throw-if-not-resolved="false"></xref>
+
+    whose <xref href="Autodesk.Revit.UI.RibbonItem.Name" data-throw-if-not-resolved="false"></xref> matches <code class="paramref">buttonName</code> (ordinal comparison).
+
+    </p>
+
+    <p>
+
+    The icon is resolved from the user's AppData add-in folder.
+
+    </p>
+  example: []
+  syntax:
+    content: public static void ToggleImage(this UIApplication uiapp, string buttonName, string ico)
+    parameters:
+    - id: uiapp
+      type: Autodesk.Revit.UI.UIApplication
+      description: Revit UI application.
+    - id: buttonName
+      type: System.String
+      description: Ribbon button name to match.
+    - id: ico
+      type: System.String
+      description: Base icon name (without theme suffix and extension). The resolved file name will be <code>{ico}.{theme}.ico</code>.
+    content.vb: Public Shared Sub ToggleImage(uiapp As UIApplication, buttonName As String, ico As String)
+  overload: AccoRevit.Addin.Utils.ImageUtils.ToggleImage*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown when <code class="paramref">uiapp</code> is null.
+  nameWithType.vb: ImageUtils.ToggleImage(UIApplication, String, String)
+  fullName.vb: AccoRevit.Addin.Utils.ImageUtils.ToggleImage(Autodesk.Revit.UI.UIApplication, String, String)
+  name.vb: ToggleImage(UIApplication, String, String)
+references:
+- uid: System.Reflection.Assembly.GetManifestResourceStream(System.String)
+  commentId: M:System.Reflection.Assembly.GetManifestResourceStream(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream#system-reflection-assembly-getmanifestresourcestream(system-string)
+  name: GetManifestResourceStream(string)
+  nameWithType: Assembly.GetManifestResourceStream(string)
+  fullName: System.Reflection.Assembly.GetManifestResourceStream(string)
+  nameWithType.vb: Assembly.GetManifestResourceStream(String)
+  fullName.vb: System.Reflection.Assembly.GetManifestResourceStream(String)
+  name.vb: GetManifestResourceStream(String)
+  spec.csharp:
+  - uid: System.Reflection.Assembly.GetManifestResourceStream(System.String)
+    name: GetManifestResourceStream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream#system-reflection-assembly-getmanifestresourcestream(system-string)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Reflection.Assembly.GetManifestResourceStream(System.String)
+    name: GetManifestResourceStream
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly.getmanifestresourcestream#system-reflection-assembly-getmanifestresourcestream(system-string)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Windows.Media.Imaging.BitmapImage
+  commentId: T:System.Windows.Media.Imaging.BitmapImage
+  parent: System.Windows.Media.Imaging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.imaging.bitmapimage
+  name: BitmapImage
+  nameWithType: BitmapImage
+  fullName: System.Windows.Media.Imaging.BitmapImage
+- uid: System.Windows.Media.Imaging.BitmapCacheOption.OnLoad
+  commentId: F:System.Windows.Media.Imaging.BitmapCacheOption.OnLoad
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.imaging.bitmapcacheoption#system-windows-media-imaging-bitmapcacheoption-onload
+  name: OnLoad
+  nameWithType: BitmapCacheOption.OnLoad
+  fullName: System.Windows.Media.Imaging.BitmapCacheOption.OnLoad
+- uid: AccoRevit.Addin.Utils.ImageUtils.LoadPackImage*
+  commentId: Overload:AccoRevit.Addin.Utils.ImageUtils.LoadPackImage
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ImageUtils.html#AccoRevit_Addin_Utils_ImageUtils_LoadPackImage_System_String_System_String_
+  name: LoadPackImage
+  nameWithType: ImageUtils.LoadPackImage
+  fullName: AccoRevit.Addin.Utils.ImageUtils.LoadPackImage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Windows.Media.Imaging
+  commentId: N:System.Windows.Media.Imaging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Windows.Media.Imaging
+  nameWithType: System.Windows.Media.Imaging
+  fullName: System.Windows.Media.Imaging
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
+  - name: .
+  - uid: System.Windows.Media.Imaging
+    name: Imaging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.imaging
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Windows
+    name: Windows
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows
+  - name: .
+  - uid: System.Windows.Media
+    name: Media
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media
+  - name: .
+  - uid: System.Windows.Media.Imaging
+    name: Imaging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.windows.media.imaging
+- uid: System.Windows.Media.Imaging.BitmapSource
+  commentId: T:System.Windows.Media.Imaging.BitmapSource
+  parent: System.Windows.Media.Imaging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.windows.media.imaging.bitmapsource
+  name: BitmapSource
+  nameWithType: BitmapSource
+  fullName: System.Windows.Media.Imaging.BitmapSource
+- uid: AccoRevit.Addin.Utils.ImageUtils.DefaultLargeImage
+  commentId: F:AccoRevit.Addin.Utils.ImageUtils.DefaultLargeImage
+  isExternal: true
+- uid: AccoRevit.Addin.Utils.ImageUtils.GetEmbeddedImage*
+  commentId: Overload:AccoRevit.Addin.Utils.ImageUtils.GetEmbeddedImage
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ImageUtils.html#AccoRevit_Addin_Utils_ImageUtils_GetEmbeddedImage_System_Reflection_Assembly_System_String_
+  name: GetEmbeddedImage
+  nameWithType: ImageUtils.GetEmbeddedImage
+  fullName: AccoRevit.Addin.Utils.ImageUtils.GetEmbeddedImage
+- uid: System.Reflection.Assembly
+  commentId: T:System.Reflection.Assembly
+  parent: System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.reflection.assembly
+  name: Assembly
+  nameWithType: Assembly
+  fullName: System.Reflection.Assembly
+- uid: System.Reflection
+  commentId: N:System.Reflection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Reflection
+  nameWithType: System.Reflection
+  fullName: System.Reflection
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Reflection
+    name: Reflection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection
+- uid: AccoRevit.Addin.Utils.ImageUtils.AddIcons*
+  commentId: Overload:AccoRevit.Addin.Utils.ImageUtils.AddIcons
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ImageUtils.html#AccoRevit_Addin_Utils_ImageUtils_AddIcons_System_Collections_Generic_List_Autodesk_Revit_UI_RibbonItem__
+  name: AddIcons
+  nameWithType: ImageUtils.AddIcons
+  fullName: AccoRevit.Addin.Utils.ImageUtils.AddIcons
+- uid: System.Collections.Generic.List{Autodesk.Revit.UI.RibbonItem}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.UI.RibbonItem}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<RibbonItem>
+  nameWithType: List<RibbonItem>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.UI.RibbonItem>
+  nameWithType.vb: List(Of RibbonItem)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.UI.RibbonItem)
+  name.vb: List(Of RibbonItem)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.UI.RibbonItem
+    name: RibbonItem
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.UI.RibbonItem
+    name: RibbonItem
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Autodesk.Revit.UI.RibbonButton
+  commentId: T:Autodesk.Revit.UI.RibbonButton
+  isExternal: true
+  name: RibbonButton
+  nameWithType: RibbonButton
+  fullName: Autodesk.Revit.UI.RibbonButton
+- uid: Autodesk.Revit.UI.RibbonItem.Name
+  commentId: P:Autodesk.Revit.UI.RibbonItem.Name
+  isExternal: true
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: AccoRevit.Addin.Utils.ImageUtils.ToggleImage*
+  commentId: Overload:AccoRevit.Addin.Utils.ImageUtils.ToggleImage
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ImageUtils.html#AccoRevit_Addin_Utils_ImageUtils_ToggleImage_Autodesk_Revit_UI_UIApplication_System_String_System_String_
+  name: ToggleImage
+  nameWithType: ImageUtils.ToggleImage
+  fullName: AccoRevit.Addin.Utils.ImageUtils.ToggleImage
+- uid: Autodesk.Revit.UI.UIApplication
+  isExternal: true
+  name: UIApplication
+  nameWithType: UIApplication
+  fullName: Autodesk.Revit.UI.UIApplication

@@ -1,0 +1,960 @@
+### YamlMime:ManagedReference
+items:
+- uid: AccoRevit.Addin.Utils.SelectionHelper
+  commentId: T:AccoRevit.Addin.Utils.SelectionHelper
+  id: SelectionHelper
+  parent: AccoRevit.Addin.Utils
+  children:
+  - AccoRevit.Addin.Utils.SelectionHelper.PickSourceSeries(System.String,System.String)
+  - AccoRevit.Addin.Utils.SelectionHelper.PickTargetSeries(System.String,System.String)
+  - AccoRevit.Addin.Utils.SelectionHelper.SelectDependentViews(Autodesk.Revit.DB.Document,System.String,System.Boolean,System.Boolean,System.Boolean)
+  - AccoRevit.Addin.Utils.SelectionHelper.SelectSheetTypesByTrade(System.Nullable{AccoRevit.Addin.Enums.Trade})
+  - AccoRevit.Addin.Utils.SelectionHelper.SelectSheets(Autodesk.Revit.DB.Document,System.String,System.Boolean,System.Boolean,System.Boolean,System.String)
+  - AccoRevit.Addin.Utils.SelectionHelper.SelectViews(Autodesk.Revit.DB.Document,System.String,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean)
+  - AccoRevit.Addin.Utils.SelectionHelper.ShowLevelDatumDialog
+  langs:
+  - csharp
+  - vb
+  name: SelectionHelper
+  nameWithType: SelectionHelper
+  fullName: AccoRevit.Addin.Utils.SelectionHelper
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static class SelectionHelper
+    content.vb: Public Module SelectionHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: AccoRevit.Addin.Utils.SelectionHelper.SelectSheets(Autodesk.Revit.DB.Document,System.String,System.Boolean,System.Boolean,System.Boolean,System.String)
+  commentId: M:AccoRevit.Addin.Utils.SelectionHelper.SelectSheets(Autodesk.Revit.DB.Document,System.String,System.Boolean,System.Boolean,System.Boolean,System.String)
+  id: SelectSheets(Autodesk.Revit.DB.Document,System.String,System.Boolean,System.Boolean,System.Boolean,System.String)
+  isExtensionMethod: true
+  parent: AccoRevit.Addin.Utils.SelectionHelper
+  langs:
+  - csharp
+  - vb
+  name: SelectSheets(Document, string, bool, bool, bool, string)
+  nameWithType: SelectionHelper.SelectSheets(Document, string, bool, bool, bool, string)
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.SelectSheets(Autodesk.Revit.DB.Document, string, bool, bool, bool, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: 'public static List<ViewSheet> SelectSheets(this Document doc, string title = "ACCO: Select Sheets", bool multiSelect = true, bool containsAllOption = true, bool sort = true, string paramName = "Sheet Type")'
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+    - id: title
+      type: System.String
+    - id: multiSelect
+      type: System.Boolean
+    - id: containsAllOption
+      type: System.Boolean
+    - id: sort
+      type: System.Boolean
+    - id: paramName
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.ViewSheet}
+    content.vb: 'Public Shared Function SelectSheets(doc As Document, title As String = "ACCO: Select Sheets", multiSelect As Boolean = True, containsAllOption As Boolean = True, sort As Boolean = True, paramName As String = "Sheet Type") As List(Of ViewSheet)'
+  overload: AccoRevit.Addin.Utils.SelectionHelper.SelectSheets*
+  nameWithType.vb: SelectionHelper.SelectSheets(Document, String, Boolean, Boolean, Boolean, String)
+  fullName.vb: AccoRevit.Addin.Utils.SelectionHelper.SelectSheets(Autodesk.Revit.DB.Document, String, Boolean, Boolean, Boolean, String)
+  name.vb: SelectSheets(Document, String, Boolean, Boolean, Boolean, String)
+- uid: AccoRevit.Addin.Utils.SelectionHelper.SelectViews(Autodesk.Revit.DB.Document,System.String,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.SelectionHelper.SelectViews(Autodesk.Revit.DB.Document,System.String,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean)
+  id: SelectViews(Autodesk.Revit.DB.Document,System.String,System.Boolean,System.Boolean,System.Boolean,System.String,System.Boolean)
+  isExtensionMethod: true
+  parent: AccoRevit.Addin.Utils.SelectionHelper
+  langs:
+  - csharp
+  - vb
+  name: SelectViews(Document, string, bool, bool, bool, string, bool)
+  nameWithType: SelectionHelper.SelectViews(Document, string, bool, bool, bool, string, bool)
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.SelectViews(Autodesk.Revit.DB.Document, string, bool, bool, bool, string, bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: 'public static List<View> SelectViews(this Document doc, string title = "ACCO: Select Views", bool multiSelect = true, bool containsAllOption = true, bool sort = true, string category = null, bool includeAssemblyViews = false)'
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+    - id: title
+      type: System.String
+    - id: multiSelect
+      type: System.Boolean
+    - id: containsAllOption
+      type: System.Boolean
+    - id: sort
+      type: System.Boolean
+    - id: category
+      type: System.String
+    - id: includeAssemblyViews
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.View}
+    content.vb: 'Public Shared Function SelectViews(doc As Document, title As String = "ACCO: Select Views", multiSelect As Boolean = True, containsAllOption As Boolean = True, sort As Boolean = True, category As String = Nothing, includeAssemblyViews As Boolean = False) As List(Of View)'
+  overload: AccoRevit.Addin.Utils.SelectionHelper.SelectViews*
+  nameWithType.vb: SelectionHelper.SelectViews(Document, String, Boolean, Boolean, Boolean, String, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.SelectionHelper.SelectViews(Autodesk.Revit.DB.Document, String, Boolean, Boolean, Boolean, String, Boolean)
+  name.vb: SelectViews(Document, String, Boolean, Boolean, Boolean, String, Boolean)
+- uid: AccoRevit.Addin.Utils.SelectionHelper.SelectDependentViews(Autodesk.Revit.DB.Document,System.String,System.Boolean,System.Boolean,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.SelectionHelper.SelectDependentViews(Autodesk.Revit.DB.Document,System.String,System.Boolean,System.Boolean,System.Boolean)
+  id: SelectDependentViews(Autodesk.Revit.DB.Document,System.String,System.Boolean,System.Boolean,System.Boolean)
+  isExtensionMethod: true
+  parent: AccoRevit.Addin.Utils.SelectionHelper
+  langs:
+  - csharp
+  - vb
+  name: SelectDependentViews(Document, string, bool, bool, bool)
+  nameWithType: SelectionHelper.SelectDependentViews(Document, string, bool, bool, bool)
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.SelectDependentViews(Autodesk.Revit.DB.Document, string, bool, bool, bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: 'public static List<View> SelectDependentViews(this Document doc, string title = "ACCO: Select Views", bool multiSelect = true, bool containsAllOption = true, bool sort = true)'
+    parameters:
+    - id: doc
+      type: Autodesk.Revit.DB.Document
+    - id: title
+      type: System.String
+    - id: multiSelect
+      type: System.Boolean
+    - id: containsAllOption
+      type: System.Boolean
+    - id: sort
+      type: System.Boolean
+    return:
+      type: System.Collections.Generic.List{Autodesk.Revit.DB.View}
+    content.vb: 'Public Shared Function SelectDependentViews(doc As Document, title As String = "ACCO: Select Views", multiSelect As Boolean = True, containsAllOption As Boolean = True, sort As Boolean = True) As List(Of View)'
+  overload: AccoRevit.Addin.Utils.SelectionHelper.SelectDependentViews*
+  nameWithType.vb: SelectionHelper.SelectDependentViews(Document, String, Boolean, Boolean, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.SelectionHelper.SelectDependentViews(Autodesk.Revit.DB.Document, String, Boolean, Boolean, Boolean)
+  name.vb: SelectDependentViews(Document, String, Boolean, Boolean, Boolean)
+- uid: AccoRevit.Addin.Utils.SelectionHelper.ShowLevelDatumDialog
+  commentId: M:AccoRevit.Addin.Utils.SelectionHelper.ShowLevelDatumDialog
+  id: ShowLevelDatumDialog
+  parent: AccoRevit.Addin.Utils.SelectionHelper
+  langs:
+  - csharp
+  - vb
+  name: ShowLevelDatumDialog()
+  nameWithType: SelectionHelper.ShowLevelDatumDialog()
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.ShowLevelDatumDialog()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static LevelDatumViewModel ShowLevelDatumDialog()
+    return:
+      type: AccoRevit.Addin.ModelViews.LevelDatumViewModel
+    content.vb: Public Shared Function ShowLevelDatumDialog() As LevelDatumViewModel
+  overload: AccoRevit.Addin.Utils.SelectionHelper.ShowLevelDatumDialog*
+- uid: AccoRevit.Addin.Utils.SelectionHelper.SelectSheetTypesByTrade(System.Nullable{AccoRevit.Addin.Enums.Trade})
+  commentId: M:AccoRevit.Addin.Utils.SelectionHelper.SelectSheetTypesByTrade(System.Nullable{AccoRevit.Addin.Enums.Trade})
+  id: SelectSheetTypesByTrade(System.Nullable{AccoRevit.Addin.Enums.Trade})
+  parent: AccoRevit.Addin.Utils.SelectionHelper
+  langs:
+  - csharp
+  - vb
+  name: SelectSheetTypesByTrade(Trade?)
+  nameWithType: SelectionHelper.SelectSheetTypesByTrade(Trade?)
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.SelectSheetTypesByTrade(AccoRevit.Addin.Enums.Trade?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: public static List<(string code, string name)> SelectSheetTypesByTrade(Trade? trade)
+    parameters:
+    - id: trade
+      type: System.Nullable{AccoRevit.Addin.Enums.Trade}
+    return:
+      type: System.Collections.Generic.List{System.ValueTuple{System.String,System.String}}
+    content.vb: Public Shared Function SelectSheetTypesByTrade(trade As Trade?) As List(Of (code As String, name As String))
+  overload: AccoRevit.Addin.Utils.SelectionHelper.SelectSheetTypesByTrade*
+- uid: AccoRevit.Addin.Utils.SelectionHelper.PickSourceSeries(System.String,System.String)
+  commentId: M:AccoRevit.Addin.Utils.SelectionHelper.PickSourceSeries(System.String,System.String)
+  id: PickSourceSeries(System.String,System.String)
+  parent: AccoRevit.Addin.Utils.SelectionHelper
+  langs:
+  - csharp
+  - vb
+  name: PickSourceSeries(string, string)
+  nameWithType: SelectionHelper.PickSourceSeries(string, string)
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.PickSourceSeries(string, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: 'public static string PickSourceSeries(string trade = null, string title = "ACCO: Select Source Series")'
+    parameters:
+    - id: trade
+      type: System.String
+    - id: title
+      type: System.String
+    return:
+      type: System.String
+    content.vb: 'Public Shared Function PickSourceSeries(trade As String = Nothing, title As String = "ACCO: Select Source Series") As String'
+  overload: AccoRevit.Addin.Utils.SelectionHelper.PickSourceSeries*
+  nameWithType.vb: SelectionHelper.PickSourceSeries(String, String)
+  fullName.vb: AccoRevit.Addin.Utils.SelectionHelper.PickSourceSeries(String, String)
+  name.vb: PickSourceSeries(String, String)
+- uid: AccoRevit.Addin.Utils.SelectionHelper.PickTargetSeries(System.String,System.String)
+  commentId: M:AccoRevit.Addin.Utils.SelectionHelper.PickTargetSeries(System.String,System.String)
+  id: PickTargetSeries(System.String,System.String)
+  parent: AccoRevit.Addin.Utils.SelectionHelper
+  langs:
+  - csharp
+  - vb
+  name: PickTargetSeries(string, string)
+  nameWithType: SelectionHelper.PickTargetSeries(string, string)
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.PickTargetSeries(string, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  syntax:
+    content: 'public static IList<string> PickTargetSeries(string trade = null, string title = "ACCO: Select Target Series")'
+    parameters:
+    - id: trade
+      type: System.String
+    - id: title
+      type: System.String
+    return:
+      type: System.Collections.Generic.IList{System.String}
+    content.vb: 'Public Shared Function PickTargetSeries(trade As String = Nothing, title As String = "ACCO: Select Target Series") As IList(Of String)'
+  overload: AccoRevit.Addin.Utils.SelectionHelper.PickTargetSeries*
+  nameWithType.vb: SelectionHelper.PickTargetSeries(String, String)
+  fullName.vb: AccoRevit.Addin.Utils.SelectionHelper.PickTargetSeries(String, String)
+  name.vb: PickTargetSeries(String, String)
+references:
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Utils.SelectionHelper.SelectSheets*
+  commentId: Overload:AccoRevit.Addin.Utils.SelectionHelper.SelectSheets
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SelectionHelper.html#AccoRevit_Addin_Utils_SelectionHelper_SelectSheets_Autodesk_Revit_DB_Document_System_String_System_Boolean_System_Boolean_System_Boolean_System_String_
+  name: SelectSheets
+  nameWithType: SelectionHelper.SelectSheets
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.SelectSheets
+- uid: Autodesk.Revit.DB.Document
+  isExternal: true
+  name: Document
+  nameWithType: Document
+  fullName: Autodesk.Revit.DB.Document
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.ViewSheet}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.ViewSheet}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<ViewSheet>
+  nameWithType: List<ViewSheet>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.ViewSheet>
+  nameWithType.vb: List(Of ViewSheet)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.ViewSheet)
+  name.vb: List(Of ViewSheet)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.ViewSheet
+    name: ViewSheet
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.ViewSheet
+    name: ViewSheet
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: AccoRevit.Addin.Utils.SelectionHelper.SelectViews*
+  commentId: Overload:AccoRevit.Addin.Utils.SelectionHelper.SelectViews
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SelectionHelper.html#AccoRevit_Addin_Utils_SelectionHelper_SelectViews_Autodesk_Revit_DB_Document_System_String_System_Boolean_System_Boolean_System_Boolean_System_String_System_Boolean_
+  name: SelectViews
+  nameWithType: SelectionHelper.SelectViews
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.SelectViews
+- uid: System.Collections.Generic.List{Autodesk.Revit.DB.View}
+  commentId: T:System.Collections.Generic.List{Autodesk.Revit.DB.View}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<View>
+  nameWithType: List<View>
+  fullName: System.Collections.Generic.List<Autodesk.Revit.DB.View>
+  nameWithType.vb: List(Of View)
+  fullName.vb: System.Collections.Generic.List(Of Autodesk.Revit.DB.View)
+  name.vb: List(Of View)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: Autodesk.Revit.DB.View
+    name: View
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Autodesk.Revit.DB.View
+    name: View
+    isExternal: true
+  - name: )
+- uid: AccoRevit.Addin.Utils.SelectionHelper.SelectDependentViews*
+  commentId: Overload:AccoRevit.Addin.Utils.SelectionHelper.SelectDependentViews
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SelectionHelper.html#AccoRevit_Addin_Utils_SelectionHelper_SelectDependentViews_Autodesk_Revit_DB_Document_System_String_System_Boolean_System_Boolean_System_Boolean_
+  name: SelectDependentViews
+  nameWithType: SelectionHelper.SelectDependentViews
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.SelectDependentViews
+- uid: AccoRevit.Addin.Utils.SelectionHelper.ShowLevelDatumDialog*
+  commentId: Overload:AccoRevit.Addin.Utils.SelectionHelper.ShowLevelDatumDialog
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SelectionHelper.html#AccoRevit_Addin_Utils_SelectionHelper_ShowLevelDatumDialog
+  name: ShowLevelDatumDialog
+  nameWithType: SelectionHelper.ShowLevelDatumDialog
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.ShowLevelDatumDialog
+- uid: AccoRevit.Addin.ModelViews.LevelDatumViewModel
+  commentId: T:AccoRevit.Addin.ModelViews.LevelDatumViewModel
+  parent: AccoRevit.Addin.ModelViews
+  isExternal: true
+  href: AccoRevit.Addin.ModelViews.LevelDatumViewModel.html
+  name: LevelDatumViewModel
+  nameWithType: LevelDatumViewModel
+  fullName: AccoRevit.Addin.ModelViews.LevelDatumViewModel
+- uid: AccoRevit.Addin.ModelViews
+  commentId: N:AccoRevit.Addin.ModelViews
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.ModelViews
+  nameWithType: AccoRevit.Addin.ModelViews
+  fullName: AccoRevit.Addin.ModelViews
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.ModelViews
+    name: ModelViews
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.ModelViews
+    name: ModelViews
+    isExternal: true
+    href: AccoRevit.Addin.ModelViews.html
+- uid: AccoRevit.Addin.Utils.SelectionHelper.SelectSheetTypesByTrade*
+  commentId: Overload:AccoRevit.Addin.Utils.SelectionHelper.SelectSheetTypesByTrade
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SelectionHelper.html#AccoRevit_Addin_Utils_SelectionHelper_SelectSheetTypesByTrade_System_Nullable_AccoRevit_Addin_Enums_Trade__
+  name: SelectSheetTypesByTrade
+  nameWithType: SelectionHelper.SelectSheetTypesByTrade
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.SelectSheetTypesByTrade
+- uid: System.Nullable{AccoRevit.Addin.Enums.Trade}
+  commentId: T:System.Nullable{AccoRevit.Addin.Enums.Trade}
+  parent: System
+  definition: System.Nullable`1
+  href: AccoRevit.Addin.Enums.Trade.html
+  name: Trade?
+  nameWithType: Trade?
+  fullName: AccoRevit.Addin.Enums.Trade?
+  spec.csharp:
+  - uid: AccoRevit.Addin.Enums.Trade
+    name: Trade
+    isExternal: true
+    href: AccoRevit.Addin.Enums.Trade.html
+  - name: '?'
+  spec.vb:
+  - uid: AccoRevit.Addin.Enums.Trade
+    name: Trade
+    isExternal: true
+    href: AccoRevit.Addin.Enums.Trade.html
+  - name: '?'
+- uid: System.Collections.Generic.List{System.ValueTuple{System.String,System.String}}
+  commentId: T:System.Collections.Generic.List{System.ValueTuple{System.String,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<(string code, string name)>
+  nameWithType: List<(string code, string name)>
+  fullName: System.Collections.Generic.List<(string code, string name)>
+  nameWithType.vb: List(Of (code As String, name As String))
+  fullName.vb: System.Collections.Generic.List(Of (code As String, name As String))
+  name.vb: List(Of (code As String, name As String))
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.code
+    name: code
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.code
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.name
+    name: name
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.name
+  - name: )
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: (
+  - uid: System.ValueTuple{System.String,System.String}.code
+    name: code
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.code
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.String,System.String}.name
+    name: name
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.string,system.string-.name
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: AccoRevit.Addin.Utils.SelectionHelper.PickSourceSeries*
+  commentId: Overload:AccoRevit.Addin.Utils.SelectionHelper.PickSourceSeries
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SelectionHelper.html#AccoRevit_Addin_Utils_SelectionHelper_PickSourceSeries_System_String_System_String_
+  name: PickSourceSeries
+  nameWithType: SelectionHelper.PickSourceSeries
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.PickSourceSeries
+- uid: AccoRevit.Addin.Utils.SelectionHelper.PickTargetSeries*
+  commentId: Overload:AccoRevit.Addin.Utils.SelectionHelper.PickTargetSeries
+  isExternal: true
+  href: AccoRevit.Addin.Utils.SelectionHelper.html#AccoRevit_Addin_Utils_SelectionHelper_PickTargetSeries_System_String_System_String_
+  name: PickTargetSeries
+  nameWithType: SelectionHelper.PickTargetSeries
+  fullName: AccoRevit.Addin.Utils.SelectionHelper.PickTargetSeries
+- uid: System.Collections.Generic.IList{System.String}
+  commentId: T:System.Collections.Generic.IList{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<string>
+  nameWithType: IList<string>
+  fullName: System.Collections.Generic.IList<string>
+  nameWithType.vb: IList(Of String)
+  fullName.vb: System.Collections.Generic.IList(Of String)
+  name.vb: IList(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

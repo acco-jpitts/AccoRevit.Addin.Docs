@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class HostBuilder | AccoRevit.Addin </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class HostBuilder | AccoRevit.Addin ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="AccoRevit.Addin">
+            AccoRevit.Addin
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="Microsoft.Extensions.Hosting.HostBuilder">
+
+
+
+  <h1 id="Microsoft_Extensions_Hosting_HostBuilder" data-uid="Microsoft.Extensions.Hosting.HostBuilder" class="text-break">
+Class HostBuilder  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="Microsoft.html">Microsoft</a>.<a class="xref" href="Microsoft.Extensions.html">Extensions</a>.<a class="xref" href="Microsoft.Extensions.Hosting.html">Hosting</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>AccoRevit.Addin.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"></div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class HostBuilder : IHostBuilder</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">HostBuilder</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="Microsoft.Extensions.Hosting.IHostBuilder.html">IHostBuilder</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+  </dd></dl>
+
+  <dl class="typelist extensionMethods">
+    <dt>Extension Methods</dt>
+    <dd>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingAbstractionsHostBuilderExtensions_Start_Microsoft_Extensions_Hosting_IHostBuilder_">HostingAbstractionsHostBuilderExtensions.Start(IHostBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingAbstractionsHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingAbstractionsHostBuilderExtensions_StartAsync_Microsoft_Extensions_Hosting_IHostBuilder_System_Threading_CancellationToken_">HostingAbstractionsHostBuilderExtensions.StartAsync(IHostBuilder, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_ConfigureAppConfiguration_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Configuration_IConfigurationBuilder__">HostingHostBuilderExtensions.ConfigureAppConfiguration(IHostBuilder, Action&lt;IConfigurationBuilder&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_ConfigureContainer__1_Microsoft_Extensions_Hosting_IHostBuilder_System_Action___0__">HostingHostBuilderExtensions.ConfigureContainer&lt;TContainerBuilder&gt;(IHostBuilder, Action&lt;TContainerBuilder&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_ConfigureDefaults_Microsoft_Extensions_Hosting_IHostBuilder_System_String___">HostingHostBuilderExtensions.ConfigureDefaults(IHostBuilder, string[]?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_ConfigureHostOptions_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_Hosting_HostOptions__">HostingHostBuilderExtensions.ConfigureHostOptions(IHostBuilder, Action&lt;HostBuilderContext, HostOptions&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_ConfigureHostOptions_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_HostOptions__">HostingHostBuilderExtensions.ConfigureHostOptions(IHostBuilder, Action&lt;HostOptions&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_ConfigureLogging_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_Logging_ILoggingBuilder__">HostingHostBuilderExtensions.ConfigureLogging(IHostBuilder, Action&lt;HostBuilderContext, ILoggingBuilder&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_ConfigureLogging_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__">HostingHostBuilderExtensions.ConfigureLogging(IHostBuilder, Action&lt;ILoggingBuilder&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_ConfigureMetrics_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Diagnostics_Metrics_IMetricsBuilder__">HostingHostBuilderExtensions.ConfigureMetrics(IHostBuilder, Action&lt;IMetricsBuilder&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_ConfigureMetrics_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_Diagnostics_Metrics_IMetricsBuilder__">HostingHostBuilderExtensions.ConfigureMetrics(IHostBuilder, Action&lt;HostBuilderContext, IMetricsBuilder&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_ConfigureServices_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__">HostingHostBuilderExtensions.ConfigureServices(IHostBuilder, Action&lt;IServiceCollection&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_RunConsoleAsync_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_ConsoleLifetimeOptions__System_Threading_CancellationToken_">HostingHostBuilderExtensions.RunConsoleAsync(IHostBuilder, Action&lt;ConsoleLifetimeOptions&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_RunConsoleAsync_Microsoft_Extensions_Hosting_IHostBuilder_System_Threading_CancellationToken_">HostingHostBuilderExtensions.RunConsoleAsync(IHostBuilder, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_UseConsoleLifetime_Microsoft_Extensions_Hosting_IHostBuilder_">HostingHostBuilderExtensions.UseConsoleLifetime(IHostBuilder)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_UseConsoleLifetime_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_ConsoleLifetimeOptions__">HostingHostBuilderExtensions.UseConsoleLifetime(IHostBuilder, Action&lt;ConsoleLifetimeOptions&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_UseContentRoot_Microsoft_Extensions_Hosting_IHostBuilder_System_String_">HostingHostBuilderExtensions.UseContentRoot(IHostBuilder, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_UseDefaultServiceProvider_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_DependencyInjection_ServiceProviderOptions__">HostingHostBuilderExtensions.UseDefaultServiceProvider(IHostBuilder, Action&lt;ServiceProviderOptions&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_UseDefaultServiceProvider_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_ServiceProviderOptions__">HostingHostBuilderExtensions.UseDefaultServiceProvider(IHostBuilder, Action&lt;HostBuilderContext, ServiceProviderOptions&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Extensions.Hosting.HostingHostBuilderExtensions.html#Microsoft_Extensions_Hosting_HostingHostBuilderExtensions_UseEnvironment_Microsoft_Extensions_Hosting_IHostBuilder_System_String_">HostingHostBuilderExtensions.UseEnvironment(IHostBuilder, string)</a>
+  </div>
+  <div>
+      <a class="xref" href="Serilog.SerilogHostBuilderExtensions.html#Serilog_SerilogHostBuilderExtensions_UseSerilog_Microsoft_Extensions_Hosting_IHostBuilder_Serilog_ILogger_System_Boolean_Serilog_Extensions_Logging_LoggerProviderCollection_">SerilogHostBuilderExtensions.UseSerilog(IHostBuilder, ILogger?, bool, LoggerProviderCollection?)</a>
+  </div>
+  <div>
+      <a class="xref" href="Serilog.SerilogHostBuilderExtensions.html#Serilog_SerilogHostBuilderExtensions_UseSerilog_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Serilog_LoggerConfiguration__System_Boolean_System_Boolean_">SerilogHostBuilderExtensions.UseSerilog(IHostBuilder, Action&lt;HostBuilderContext, LoggerConfiguration&gt;, bool, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="Serilog.SerilogHostBuilderExtensions.html#Serilog_SerilogHostBuilderExtensions_UseSerilog_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_System_IServiceProvider_Serilog_LoggerConfiguration__System_Boolean_System_Boolean_">SerilogHostBuilderExtensions.UseSerilog(IHostBuilder, Action&lt;HostBuilderContext, IServiceProvider, LoggerConfiguration&gt;, bool, bool)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_">UnitExtensions.ToUnitLabel(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_">ReflectionUtils.GetHighlightProperty(object)</a>
+  </div>
+  <div>
+      <a class="xref" href="AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)</a>
+  </div>
+  <div>
+      <a class="xref" href="Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_">SystemExtensions.Cast&lt;T&gt;(object)</a>
+  </div>
+  </dd></dl>
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="Microsoft_Extensions_Hosting_HostBuilder__ctor_" data-uid="Microsoft.Extensions.Hosting.HostBuilder.#ctor*"></a>
+
+  <h3 id="Microsoft_Extensions_Hosting_HostBuilder__ctor" data-uid="Microsoft.Extensions.Hosting.HostBuilder.#ctor">
+  HostBuilder()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HostBuilder()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="Microsoft_Extensions_Hosting_HostBuilder_Properties_" data-uid="Microsoft.Extensions.Hosting.HostBuilder.Properties*"></a>
+
+  <h3 id="Microsoft_Extensions_Hosting_HostBuilder_Properties" data-uid="Microsoft.Extensions.Hosting.HostBuilder.Properties">
+  Properties
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;object, object&gt; Properties { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="Microsoft_Extensions_Hosting_HostBuilder_Build_" data-uid="Microsoft.Extensions.Hosting.HostBuilder.Build*"></a>
+
+  <h3 id="Microsoft_Extensions_Hosting_HostBuilder_Build" data-uid="Microsoft.Extensions.Hosting.HostBuilder.Build">
+  Build()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IHost Build()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Extensions.Hosting.IHost.html">IHost</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Extensions_Hosting_HostBuilder_ConfigureAppConfiguration_" data-uid="Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration*"></a>
+
+  <h3 id="Microsoft_Extensions_Hosting_HostBuilder_ConfigureAppConfiguration_System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_Configuration_IConfigurationBuilder__" data-uid="Microsoft.Extensions.Hosting.HostBuilder.ConfigureAppConfiguration(System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+  ConfigureAppConfiguration(Action&lt;HostBuilderContext, IConfigurationBuilder&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IHostBuilder ConfigureAppConfiguration(Action&lt;HostBuilderContext, IConfigurationBuilder&gt; configureDelegate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configureDelegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Microsoft.Extensions.Hosting.HostBuilderContext.html">HostBuilderContext</a>, <a class="xref" href="Microsoft.Extensions.Configuration.IConfigurationBuilder.html">IConfigurationBuilder</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Extensions.Hosting.IHostBuilder.html">IHostBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Extensions_Hosting_HostBuilder_ConfigureContainer_" data-uid="Microsoft.Extensions.Hosting.HostBuilder.ConfigureContainer*"></a>
+
+  <h3 id="Microsoft_Extensions_Hosting_HostBuilder_ConfigureContainer__1_System_Action_Microsoft_Extensions_Hosting_HostBuilderContext___0__" data-uid="Microsoft.Extensions.Hosting.HostBuilder.ConfigureContainer``1(System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,``0})">
+  ConfigureContainer&lt;TContainerBuilder&gt;(Action&lt;HostBuilderContext, TContainerBuilder&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IHostBuilder ConfigureContainer&lt;TContainerBuilder&gt;(Action&lt;HostBuilderContext, TContainerBuilder&gt; configureDelegate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configureDelegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Microsoft.Extensions.Hosting.HostBuilderContext.html">HostBuilderContext</a>, TContainerBuilder&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Extensions.Hosting.IHostBuilder.html">IHostBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TContainerBuilder</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Extensions_Hosting_HostBuilder_ConfigureHostConfiguration_" data-uid="Microsoft.Extensions.Hosting.HostBuilder.ConfigureHostConfiguration*"></a>
+
+  <h3 id="Microsoft_Extensions_Hosting_HostBuilder_ConfigureHostConfiguration_System_Action_Microsoft_Extensions_Configuration_IConfigurationBuilder__" data-uid="Microsoft.Extensions.Hosting.HostBuilder.ConfigureHostConfiguration(System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})">
+  ConfigureHostConfiguration(Action&lt;IConfigurationBuilder&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IHostBuilder ConfigureHostConfiguration(Action&lt;IConfigurationBuilder&gt; configureDelegate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configureDelegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="Microsoft.Extensions.Configuration.IConfigurationBuilder.html">IConfigurationBuilder</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Extensions.Hosting.IHostBuilder.html">IHostBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Extensions_Hosting_HostBuilder_ConfigureServices_" data-uid="Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices*"></a>
+
+  <h3 id="Microsoft_Extensions_Hosting_HostBuilder_ConfigureServices_System_Action_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceCollection__" data-uid="Microsoft.Extensions.Hosting.HostBuilder.ConfigureServices(System.Action{Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.DependencyInjection.IServiceCollection})">
+  ConfigureServices(Action&lt;HostBuilderContext, IServiceCollection&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IHostBuilder ConfigureServices(Action&lt;HostBuilderContext, IServiceCollection&gt; configureDelegate)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>configureDelegate</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="Microsoft.Extensions.Hosting.HostBuilderContext.html">HostBuilderContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Extensions.Hosting.IHostBuilder.html">IHostBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Extensions_Hosting_HostBuilder_UseServiceProviderFactory_" data-uid="Microsoft.Extensions.Hosting.HostBuilder.UseServiceProviderFactory*"></a>
+
+  <h3 id="Microsoft_Extensions_Hosting_HostBuilder_UseServiceProviderFactory__1_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory___0__" data-uid="Microsoft.Extensions.Hosting.HostBuilder.UseServiceProviderFactory``1(Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{``0})">
+  UseServiceProviderFactory&lt;TContainerBuilder&gt;(IServiceProviderFactory&lt;TContainerBuilder&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IHostBuilder UseServiceProviderFactory&lt;TContainerBuilder&gt;(IServiceProviderFactory&lt;TContainerBuilder&gt; factory) where TContainerBuilder : notnull</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>factory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iserviceproviderfactory-1">IServiceProviderFactory</a>&lt;TContainerBuilder&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Extensions.Hosting.IHostBuilder.html">IHostBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TContainerBuilder</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="Microsoft_Extensions_Hosting_HostBuilder_UseServiceProviderFactory_" data-uid="Microsoft.Extensions.Hosting.HostBuilder.UseServiceProviderFactory*"></a>
+
+  <h3 id="Microsoft_Extensions_Hosting_HostBuilder_UseServiceProviderFactory__1_System_Func_Microsoft_Extensions_Hosting_HostBuilderContext_Microsoft_Extensions_DependencyInjection_IServiceProviderFactory___0___" data-uid="Microsoft.Extensions.Hosting.HostBuilder.UseServiceProviderFactory``1(System.Func{Microsoft.Extensions.Hosting.HostBuilderContext,Microsoft.Extensions.DependencyInjection.IServiceProviderFactory{``0}})">
+  UseServiceProviderFactory&lt;TContainerBuilder&gt;(Func&lt;HostBuilderContext, IServiceProviderFactory&lt;TContainerBuilder&gt;&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IHostBuilder UseServiceProviderFactory&lt;TContainerBuilder&gt;(Func&lt;HostBuilderContext, IServiceProviderFactory&lt;TContainerBuilder&gt;&gt; factory) where TContainerBuilder : notnull</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>factory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="Microsoft.Extensions.Hosting.HostBuilderContext.html">HostBuilderContext</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iserviceproviderfactory-1">IServiceProviderFactory</a>&lt;TContainerBuilder&gt;&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="Microsoft.Extensions.Hosting.IHostBuilder.html">IHostBuilder</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TContainerBuilder</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

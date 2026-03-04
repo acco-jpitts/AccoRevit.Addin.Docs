@@ -1,0 +1,615 @@
+### YamlMime:ManagedReference
+items:
+- uid: AccoRevit.Addin.Utils.AnnotationUtils
+  commentId: T:AccoRevit.Addin.Utils.AnnotationUtils
+  id: AnnotationUtils
+  parent: AccoRevit.Addin.Utils
+  children:
+  - AccoRevit.Addin.Utils.AnnotationUtils.ComputeTagHeadPoint(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.View,AccoRevit.Addin.Models.AnnotationRule)
+  - AccoRevit.Addin.Utils.AnnotationUtils.GetRuleKey(AccoRevit.Addin.Models.AnnotationRule)
+  - AccoRevit.Addin.Utils.AnnotationUtils.RuleMatchesElement(Autodesk.Revit.DB.Element,AccoRevit.Addin.Models.AnnotationRule)
+  - AccoRevit.Addin.Utils.AnnotationUtils.TrySetLeader(Autodesk.Revit.DB.IndependentTag,System.Boolean)
+  langs:
+  - csharp
+  - vb
+  name: AnnotationUtils
+  nameWithType: AnnotationUtils
+  fullName: AccoRevit.Addin.Utils.AnnotationUtils
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Extension methods that support XML-driven annotation rule matching and tag placement.
+  remarks: >-
+    <p>
+
+    This class provides:
+
+
+    <ul><li>Rule matching helpers (category and fabrication service type).</li><li>Rule key generation for caching family symbols.</li><li>Safe leader toggling for <xref href="IndependentTag" data-throw-if-not-resolved="false"></xref>.</li><li>Tag head point computation from an element's bounding box, view orientation, and XML offsets.</li></ul>
+
+    </p>
+
+    <p>
+
+    Offsets from XML are interpreted in "paper" units and converted to model feet using view scale
+
+    (see <xref href="AccoRevit.Addin.Utils.AnnotationUtils.XmlOffsetToModelFeetAtScale1" data-throw-if-not-resolved="false"></xref>).
+
+    </p>
+  example: []
+  syntax:
+    content: public static class AnnotationUtils
+    content.vb: Public Module AnnotationUtils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: AccoRevit.Addin.Utils.AnnotationUtils.GetRuleKey(AccoRevit.Addin.Models.AnnotationRule)
+  commentId: M:AccoRevit.Addin.Utils.AnnotationUtils.GetRuleKey(AccoRevit.Addin.Models.AnnotationRule)
+  id: GetRuleKey(AccoRevit.Addin.Models.AnnotationRule)
+  isExtensionMethod: true
+  parent: AccoRevit.Addin.Utils.AnnotationUtils
+  langs:
+  - csharp
+  - vb
+  name: GetRuleKey(AnnotationRule)
+  nameWithType: AnnotationUtils.GetRuleKey(AnnotationRule)
+  fullName: AccoRevit.Addin.Utils.AnnotationUtils.GetRuleKey(AccoRevit.Addin.Models.AnnotationRule)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Builds a stable cache key for resolving/loading a tag family symbol for a rule.
+  example: []
+  syntax:
+    content: public static string GetRuleKey(this AnnotationRule rule)
+    parameters:
+    - id: rule
+      type: AccoRevit.Addin.Models.AnnotationRule
+      description: The annotation rule.
+    return:
+      type: System.String
+      description: >-
+        <p>
+
+        A key of the form <code>{FamilyName}</code> when the type is empty or <code>(Autodetect)</code>, otherwise
+
+        <code>{FamilyName}:{FamilyType}</code>. Returns an empty string when <code class="paramref">rule</code> or the family name is missing.
+
+        </p>
+    content.vb: Public Shared Function GetRuleKey(rule As AnnotationRule) As String
+  overload: AccoRevit.Addin.Utils.AnnotationUtils.GetRuleKey*
+- uid: AccoRevit.Addin.Utils.AnnotationUtils.RuleMatchesElement(Autodesk.Revit.DB.Element,AccoRevit.Addin.Models.AnnotationRule)
+  commentId: M:AccoRevit.Addin.Utils.AnnotationUtils.RuleMatchesElement(Autodesk.Revit.DB.Element,AccoRevit.Addin.Models.AnnotationRule)
+  id: RuleMatchesElement(Autodesk.Revit.DB.Element,AccoRevit.Addin.Models.AnnotationRule)
+  isExtensionMethod: true
+  parent: AccoRevit.Addin.Utils.AnnotationUtils
+  langs:
+  - csharp
+  - vb
+  name: RuleMatchesElement(Element, AnnotationRule)
+  nameWithType: AnnotationUtils.RuleMatchesElement(Element, AnnotationRule)
+  fullName: AccoRevit.Addin.Utils.AnnotationUtils.RuleMatchesElement(Autodesk.Revit.DB.Element, AccoRevit.Addin.Models.AnnotationRule)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Determines whether an element satisfies all constraints defined by the rule.
+  example: []
+  syntax:
+    content: public static bool RuleMatchesElement(this Element element, AnnotationRule rule)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: The element to test.
+    - id: rule
+      type: AccoRevit.Addin.Models.AnnotationRule
+      description: The rule to apply.
+    return:
+      type: System.Boolean
+      description: <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">true</a> if the element matches; otherwise <a href="https://learn.microsoft.com/dotnet/csharp/language-reference/builtin-types/bool">false</a>.
+    content.vb: Public Shared Function RuleMatchesElement(element As Element, rule As AnnotationRule) As Boolean
+  overload: AccoRevit.Addin.Utils.AnnotationUtils.RuleMatchesElement*
+- uid: AccoRevit.Addin.Utils.AnnotationUtils.TrySetLeader(Autodesk.Revit.DB.IndependentTag,System.Boolean)
+  commentId: M:AccoRevit.Addin.Utils.AnnotationUtils.TrySetLeader(Autodesk.Revit.DB.IndependentTag,System.Boolean)
+  id: TrySetLeader(Autodesk.Revit.DB.IndependentTag,System.Boolean)
+  isExtensionMethod: true
+  parent: AccoRevit.Addin.Utils.AnnotationUtils
+  langs:
+  - csharp
+  - vb
+  name: TrySetLeader(IndependentTag, bool)
+  nameWithType: AnnotationUtils.TrySetLeader(IndependentTag, bool)
+  fullName: AccoRevit.Addin.Utils.AnnotationUtils.TrySetLeader(Autodesk.Revit.DB.IndependentTag, bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: Attempts to set the leader visibility for a tag, suppressing API exceptions.
+  remarks: >-
+    Some tag contexts or Revit versions can throw when setting <xref href="Autodesk.Revit.DB.IndependentTag.HasLeader" data-throw-if-not-resolved="false"></xref>; this helper
+
+    intentionally swallows those exceptions to keep placement resilient.
+  example: []
+  syntax:
+    content: public static void TrySetLeader(this IndependentTag tag, bool showLeader)
+    parameters:
+    - id: tag
+      type: Autodesk.Revit.DB.IndependentTag
+      description: The tag to modify.
+    - id: showLeader
+      type: System.Boolean
+      description: Whether a leader should be enabled.
+    content.vb: Public Shared Sub TrySetLeader(tag As IndependentTag, showLeader As Boolean)
+  overload: AccoRevit.Addin.Utils.AnnotationUtils.TrySetLeader*
+  nameWithType.vb: AnnotationUtils.TrySetLeader(IndependentTag, Boolean)
+  fullName.vb: AccoRevit.Addin.Utils.AnnotationUtils.TrySetLeader(Autodesk.Revit.DB.IndependentTag, Boolean)
+  name.vb: TrySetLeader(IndependentTag, Boolean)
+- uid: AccoRevit.Addin.Utils.AnnotationUtils.ComputeTagHeadPoint(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.View,AccoRevit.Addin.Models.AnnotationRule)
+  commentId: M:AccoRevit.Addin.Utils.AnnotationUtils.ComputeTagHeadPoint(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.View,AccoRevit.Addin.Models.AnnotationRule)
+  id: ComputeTagHeadPoint(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.View,AccoRevit.Addin.Models.AnnotationRule)
+  isExtensionMethod: true
+  parent: AccoRevit.Addin.Utils.AnnotationUtils
+  langs:
+  - csharp
+  - vb
+  name: ComputeTagHeadPoint(Element, View, AnnotationRule)
+  nameWithType: AnnotationUtils.ComputeTagHeadPoint(Element, View, AnnotationRule)
+  fullName: AccoRevit.Addin.Utils.AnnotationUtils.ComputeTagHeadPoint(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.View, AccoRevit.Addin.Models.AnnotationRule)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Utils
+  summary: >-
+    Computes the tag head point for an element in a given view based on its bounding box, a placement anchor,
+
+    and configured X/Y offsets.
+  remarks: >-
+    <p>
+
+    The method projects the element bounding box extents onto the view's <xref href="Autodesk.Revit.DB.View.RightDirection" data-throw-if-not-resolved="false"></xref> and
+
+    <xref href="Autodesk.Revit.DB.View.UpDirection" data-throw-if-not-resolved="false"></xref> axes to compute a 2D anchor in the view plane.
+
+    </p>
+
+    <p>
+
+    XML offsets are treated as paper offsets and converted to model feet using <code>view.Scale</code> and
+
+    <xref href="AccoRevit.Addin.Utils.AnnotationUtils.XmlOffsetToModelFeetAtScale1" data-throw-if-not-resolved="false"></xref>.
+
+    </p>
+  example: []
+  syntax:
+    content: public static XYZ ComputeTagHeadPoint(this Element element, View view, AnnotationRule rule)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+      description: Element being tagged.
+    - id: view
+      type: Autodesk.Revit.DB.View
+      description: View in which the tag will be placed.
+    - id: rule
+      type: AccoRevit.Addin.Models.AnnotationRule
+      description: Rule defining placement position and offsets.
+    return:
+      type: Autodesk.Revit.DB.XYZ
+      description: The computed tag head point in model coordinates, or <xref href="Autodesk.Revit.DB.XYZ.Zero" data-throw-if-not-resolved="false"></xref> when a bounding box cannot be obtained.
+    content.vb: Public Shared Function ComputeTagHeadPoint(element As Element, view As View, rule As AnnotationRule) As XYZ
+  overload: AccoRevit.Addin.Utils.AnnotationUtils.ComputeTagHeadPoint*
+references:
+- uid: IndependentTag
+  commentId: T:IndependentTag
+  isExternal: true
+- uid: AccoRevit.Addin.Utils.AnnotationUtils.XmlOffsetToModelFeetAtScale1
+  commentId: F:AccoRevit.Addin.Utils.AnnotationUtils.XmlOffsetToModelFeetAtScale1
+  isExternal: true
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Utils.AnnotationUtils.GetRuleKey*
+  commentId: Overload:AccoRevit.Addin.Utils.AnnotationUtils.GetRuleKey
+  isExternal: true
+  href: AccoRevit.Addin.Utils.AnnotationUtils.html#AccoRevit_Addin_Utils_AnnotationUtils_GetRuleKey_AccoRevit_Addin_Models_AnnotationRule_
+  name: GetRuleKey
+  nameWithType: AnnotationUtils.GetRuleKey
+  fullName: AccoRevit.Addin.Utils.AnnotationUtils.GetRuleKey
+- uid: AccoRevit.Addin.Models.AnnotationRule
+  commentId: T:AccoRevit.Addin.Models.AnnotationRule
+  parent: AccoRevit.Addin.Models
+  isExternal: true
+  href: AccoRevit.Addin.Models.AnnotationRule.html
+  name: AnnotationRule
+  nameWithType: AnnotationRule
+  fullName: AccoRevit.Addin.Models.AnnotationRule
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: AccoRevit.Addin.Models
+  commentId: N:AccoRevit.Addin.Models
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Models
+  nameWithType: AccoRevit.Addin.Models
+  fullName: AccoRevit.Addin.Models
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Models
+    name: Models
+    isExternal: true
+    href: AccoRevit.Addin.Models.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Models
+    name: Models
+    isExternal: true
+    href: AccoRevit.Addin.Models.html
+- uid: AccoRevit.Addin.Utils.AnnotationUtils.RuleMatchesElement*
+  commentId: Overload:AccoRevit.Addin.Utils.AnnotationUtils.RuleMatchesElement
+  isExternal: true
+  href: AccoRevit.Addin.Utils.AnnotationUtils.html#AccoRevit_Addin_Utils_AnnotationUtils_RuleMatchesElement_Autodesk_Revit_DB_Element_AccoRevit_Addin_Models_AnnotationRule_
+  name: RuleMatchesElement
+  nameWithType: AnnotationUtils.RuleMatchesElement
+  fullName: AccoRevit.Addin.Utils.AnnotationUtils.RuleMatchesElement
+- uid: Autodesk.Revit.DB.Element
+  isExternal: true
+  name: Element
+  nameWithType: Element
+  fullName: Autodesk.Revit.DB.Element
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Autodesk.Revit.DB.IndependentTag.HasLeader
+  commentId: P:Autodesk.Revit.DB.IndependentTag.HasLeader
+  isExternal: true
+- uid: AccoRevit.Addin.Utils.AnnotationUtils.TrySetLeader*
+  commentId: Overload:AccoRevit.Addin.Utils.AnnotationUtils.TrySetLeader
+  isExternal: true
+  href: AccoRevit.Addin.Utils.AnnotationUtils.html#AccoRevit_Addin_Utils_AnnotationUtils_TrySetLeader_Autodesk_Revit_DB_IndependentTag_System_Boolean_
+  name: TrySetLeader
+  nameWithType: AnnotationUtils.TrySetLeader
+  fullName: AccoRevit.Addin.Utils.AnnotationUtils.TrySetLeader
+- uid: Autodesk.Revit.DB.IndependentTag
+  isExternal: true
+  name: IndependentTag
+  nameWithType: IndependentTag
+  fullName: Autodesk.Revit.DB.IndependentTag
+- uid: Autodesk.Revit.DB.XYZ.Zero
+  commentId: P:Autodesk.Revit.DB.XYZ.Zero
+  isExternal: true
+- uid: Autodesk.Revit.DB.View.RightDirection
+  commentId: P:Autodesk.Revit.DB.View.RightDirection
+  isExternal: true
+- uid: Autodesk.Revit.DB.View.UpDirection
+  commentId: P:Autodesk.Revit.DB.View.UpDirection
+  isExternal: true
+- uid: AccoRevit.Addin.Utils.AnnotationUtils.ComputeTagHeadPoint*
+  commentId: Overload:AccoRevit.Addin.Utils.AnnotationUtils.ComputeTagHeadPoint
+  isExternal: true
+  href: AccoRevit.Addin.Utils.AnnotationUtils.html#AccoRevit_Addin_Utils_AnnotationUtils_ComputeTagHeadPoint_Autodesk_Revit_DB_Element_Autodesk_Revit_DB_View_AccoRevit_Addin_Models_AnnotationRule_
+  name: ComputeTagHeadPoint
+  nameWithType: AnnotationUtils.ComputeTagHeadPoint
+  fullName: AccoRevit.Addin.Utils.AnnotationUtils.ComputeTagHeadPoint
+- uid: Autodesk.Revit.DB.View
+  isExternal: true
+  name: View
+  nameWithType: View
+  fullName: Autodesk.Revit.DB.View
+- uid: Autodesk.Revit.DB.XYZ
+  isExternal: true
+  name: XYZ
+  nameWithType: XYZ
+  fullName: Autodesk.Revit.DB.XYZ

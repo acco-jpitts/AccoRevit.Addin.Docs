@@ -1,0 +1,376 @@
+### YamlMime:ManagedReference
+items:
+- uid: AccoRevit.Addin.Library.PcfTemplates
+  commentId: T:AccoRevit.Addin.Library.PcfTemplates
+  id: PcfTemplates
+  parent: AccoRevit.Addin.Library
+  children:
+  - AccoRevit.Addin.Library.PcfTemplates.ElbowWithSaddleDummyLegTemplate
+  - AccoRevit.Addin.Library.PcfTemplates.PipeTemplate
+  - AccoRevit.Addin.Library.PcfTemplates.SaddleTemplate
+  langs:
+  - csharp
+  - vb
+  name: PcfTemplates
+  nameWithType: PcfTemplates
+  fullName: AccoRevit.Addin.Library.PcfTemplates
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Library
+  syntax:
+    content: public static class PcfTemplates
+    content.vb: Public Module PcfTemplates
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: AccoRevit.Addin.Library.PcfTemplates.ElbowWithSaddleDummyLegTemplate
+  commentId: F:AccoRevit.Addin.Library.PcfTemplates.ElbowWithSaddleDummyLegTemplate
+  id: ElbowWithSaddleDummyLegTemplate
+  parent: AccoRevit.Addin.Library.PcfTemplates
+  langs:
+  - csharp
+  - vb
+  name: ElbowWithSaddleDummyLegTemplate
+  nameWithType: PcfTemplates.ElbowWithSaddleDummyLegTemplate
+  fullName: AccoRevit.Addin.Library.PcfTemplates.ElbowWithSaddleDummyLegTemplate
+  type: Field
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Library
+  syntax:
+    content: public const string ElbowWithSaddleDummyLegTemplate = "WELD\r\n    END-POINT  {weldEndOne.X}  {weldEndOne.Y}  {weldEndOne.Z}  {weldEndOneSize}  BW\r\n    END-POINT  {weldEndTwo.X}  {weldEndTwo.Y}  {weldEndTwo.Z}  {weldEndTwoSize}  BW\r\n    SKEY WF\r\n    ITEM-CODE  {weldItemCode}\r\n    ITEM-DESCRIPTION  {weldProductName}\r\n    FABRICATION-ITEM\r\n    PIPING-SPEC  IPS\r\n    SPOOL-IDENTIFIER  {spoolName}\r\n    UNIQUE-COMPONENT-IDENTIFIER  {weldUniqueId}\r\n    ITEM-ATTRIBUTE0 CID=[{weldItemCustomId}]\r\n    WEIGHT  {weight}\r\nBEND-TEED\r\n    END-POINT  {bendEndTwo.X}  {bendEndTwo.Y}  {bendEndTwo.Z}  {bendEndTwoSize}  BW\r\n    END-POINT  {bendEndOne.X}  {bendEndOne.Y}  {bendEndOne.Z}  {bendEndOneSize}  BW\r\n    CENTRE-POINT  {bendEndOne.X}  {bendEndTwo.Y}  {bendEndOne.Z}\r\n    BRANCH1-POINT  {bendLegConnector.X}  {bendLegConnector.Y}  {bendLegConnector.Z}  {bendLegConnectorSize}  PL\r\n    SKEY MTBW\r\n    ITEM-CODE  {bendItemCode}\r\n    ITEM-DESCRIPTION  {bendProductName}\r\n    FABRICATION-ITEM\r\n    ANGLE  9000\r\n    PIPING-SPEC  {spec}\r\n    SPOOL-IDENTIFIER  {spoolName}\r\n    UNIQUE-COMPONENT-IDENTIFIER  {bendUniqueId}\r\n    ITEM-ATTRIBUTE0 CID=[{bendItemCustomId}]\r\n    WEIGHT  {weight}"
+    return:
+      type: System.String
+    content.vb: Public Const ElbowWithSaddleDummyLegTemplate As String = "WELD" & vbCrLf & "    END-POINT  {weldEndOne.X}  {weldEndOne.Y}  {weldEndOne.Z}  {weldEndOneSize}  BW" & vbCrLf & "    END-POINT  {weldEndTwo.X}  {weldEndTwo.Y}  {weldEndTwo.Z}  {weldEndTwoSize}  BW" & vbCrLf & "    SKEY WF" & vbCrLf & "    ITEM-CODE  {weldItemCode}" & vbCrLf & "    ITEM-DESCRIPTION  {weldProductName}" & vbCrLf & "    FABRICATION-ITEM" & vbCrLf & "    PIPING-SPEC  IPS" & vbCrLf & "    SPOOL-IDENTIFIER  {spoolName}" & vbCrLf & "    UNIQUE-COMPONENT-IDENTIFIER  {weldUniqueId}" & vbCrLf & "    ITEM-ATTRIBUTE0 CID=[{weldItemCustomId}]" & vbCrLf & "    WEIGHT  {weight}" & vbCrLf & "BEND-TEED" & vbCrLf & "    END-POINT  {bendEndTwo.X}  {bendEndTwo.Y}  {bendEndTwo.Z}  {bendEndTwoSize}  BW" & vbCrLf & "    END-POINT  {bendEndOne.X}  {bendEndOne.Y}  {bendEndOne.Z}  {bendEndOneSize}  BW" & vbCrLf & "    CENTRE-POINT  {bendEndOne.X}  {bendEndTwo.Y}  {bendEndOne.Z}" & vbCrLf & "    BRANCH1-POINT  {bendLegConnector.X}  {bendLegConnector.Y}  {bendLegConnector.Z}  {bendLegConnectorSize}  PL" & vbCrLf & "    SKEY MTBW" & vbCrLf & "    ITEM-CODE  {bendItemCode}" & vbCrLf & "    ITEM-DESCRIPTION  {bendProductName}" & vbCrLf & "    FABRICATION-ITEM" & vbCrLf & "    ANGLE  9000" & vbCrLf & "    PIPING-SPEC  {spec}" & vbCrLf & "    SPOOL-IDENTIFIER  {spoolName}" & vbCrLf & "    UNIQUE-COMPONENT-IDENTIFIER  {bendUniqueId}" & vbCrLf & "    ITEM-ATTRIBUTE0 CID=[{bendItemCustomId}]" & vbCrLf & "    WEIGHT  {weight}"
+- uid: AccoRevit.Addin.Library.PcfTemplates.SaddleTemplate
+  commentId: F:AccoRevit.Addin.Library.PcfTemplates.SaddleTemplate
+  id: SaddleTemplate
+  parent: AccoRevit.Addin.Library.PcfTemplates
+  langs:
+  - csharp
+  - vb
+  name: SaddleTemplate
+  nameWithType: PcfTemplates.SaddleTemplate
+  fullName: AccoRevit.Addin.Library.PcfTemplates.SaddleTemplate
+  type: Field
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Library
+  syntax:
+    content: public const string SaddleTemplate = "{componentType}\r\n    {primaryConnectionType}  {primaryPointX}  {primaryPointY}  {primaryPointZ}  {primarySize}  {primaryJointType}\r\n    {branchConnectionType}  {branchPointX}  {branchPointY}  {branchPointZ}  {branchSize}  {branchJointType}\r\n    SKEY {skey}\r\n    ITEM-CODE  {itemCode}\r\n    ITEM-DESCRIPTION  {itemDescription}\r\n    FABRICATION-ITEM\r\n    PIPING-SPEC  {spec}\r\n    SPOOL-IDENTIFIER  {spoolName}\r\n    UNIQUE-COMPONENT-IDENTIFIER  {uniqueId}\r\n    ITEM-ATTRIBUTE0 CID=[{cid}]\r\n    WEIGHT  {weight}"
+    return:
+      type: System.String
+    content.vb: Public Const SaddleTemplate As String = "{componentType}" & vbCrLf & "    {primaryConnectionType}  {primaryPointX}  {primaryPointY}  {primaryPointZ}  {primarySize}  {primaryJointType}" & vbCrLf & "    {branchConnectionType}  {branchPointX}  {branchPointY}  {branchPointZ}  {branchSize}  {branchJointType}" & vbCrLf & "    SKEY {skey}" & vbCrLf & "    ITEM-CODE  {itemCode}" & vbCrLf & "    ITEM-DESCRIPTION  {itemDescription}" & vbCrLf & "    FABRICATION-ITEM" & vbCrLf & "    PIPING-SPEC  {spec}" & vbCrLf & "    SPOOL-IDENTIFIER  {spoolName}" & vbCrLf & "    UNIQUE-COMPONENT-IDENTIFIER  {uniqueId}" & vbCrLf & "    ITEM-ATTRIBUTE0 CID=[{cid}]" & vbCrLf & "    WEIGHT  {weight}"
+- uid: AccoRevit.Addin.Library.PcfTemplates.PipeTemplate
+  commentId: F:AccoRevit.Addin.Library.PcfTemplates.PipeTemplate
+  id: PipeTemplate
+  parent: AccoRevit.Addin.Library.PcfTemplates
+  langs:
+  - csharp
+  - vb
+  name: PipeTemplate
+  nameWithType: PcfTemplates.PipeTemplate
+  fullName: AccoRevit.Addin.Library.PcfTemplates.PipeTemplate
+  type: Field
+  assemblies:
+  - AccoRevit.Addin
+  namespace: AccoRevit.Addin.Library
+  syntax:
+    content: public const string PipeTemplate = "PIPE\r\n    END-POINT  {primaryPointX}  {primaryPointY}  {primaryPointZ}  {BoreSize}  {primaryJointType}\r\n    END-POINT  {secondaryPointX}  {secondaryPointY}  {secondaryPointZ}  {BoreSize}  {branchJointType}\r\n    ITEM-CODE  {itemCode}\r\n    ITEM-DESCRIPTION  {materialDescription}\r\n    FABRICATION-ITEM\r\n    PIPING-SPEC  {spec}\r\n    SPOOL-IDENTIFIER  {pipelineReference}\r\n    UNIQUE-COMPONENT-IDENTIFIER  {uniqueId}\r\n    ITEM-ATTRIBUTE0 CID=[{cid}]\r\n    WEIGHT  {weight}"
+    return:
+      type: System.String
+    content.vb: Public Const PipeTemplate As String = "PIPE" & vbCrLf & "    END-POINT  {primaryPointX}  {primaryPointY}  {primaryPointZ}  {BoreSize}  {primaryJointType}" & vbCrLf & "    END-POINT  {secondaryPointX}  {secondaryPointY}  {secondaryPointZ}  {BoreSize}  {branchJointType}" & vbCrLf & "    ITEM-CODE  {itemCode}" & vbCrLf & "    ITEM-DESCRIPTION  {materialDescription}" & vbCrLf & "    FABRICATION-ITEM" & vbCrLf & "    PIPING-SPEC  {spec}" & vbCrLf & "    SPOOL-IDENTIFIER  {pipelineReference}" & vbCrLf & "    UNIQUE-COMPONENT-IDENTIFIER  {uniqueId}" & vbCrLf & "    ITEM-ATTRIBUTE0 CID=[{cid}]" & vbCrLf & "    WEIGHT  {weight}"
+references:
+- uid: AccoRevit.Addin.Library
+  commentId: N:AccoRevit.Addin.Library
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Library
+  nameWithType: AccoRevit.Addin.Library
+  fullName: AccoRevit.Addin.Library
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Library
+    name: Library
+    isExternal: true
+    href: AccoRevit.Addin.Library.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Library
+    name: Library
+    isExternal: true
+    href: AccoRevit.Addin.Library.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

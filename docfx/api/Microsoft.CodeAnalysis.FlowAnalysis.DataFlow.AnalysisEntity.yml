@@ -1,0 +1,2144 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  commentId: T:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  id: AnalysisEntity
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  children:
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CaptureIdOpt
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ComputeHashCodeParts(System.Action{System.Int32})
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId,Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create(Microsoft.CodeAnalysis.ISymbol,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex},Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create(Microsoft.CodeAnalysis.Operations.IInstanceReferenceOperation,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CreateThisOrMeInstance(Microsoft.CodeAnalysis.INamedTypeSymbol,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocation(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocationId
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasAncestor(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasConstantValue
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasUnknownInstanceLocation
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Indices
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceLocation
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceReferenceOperationSyntaxOpt
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsChildOrInstanceMember
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsLValueFlowCaptureEntity
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsThisOrMeInstance
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ParentOpt
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.SymbolOpt
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Type
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.WithMergedInstanceLocation(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  langs:
+  - csharp
+  - vb
+  name: AnalysisEntity
+  nameWithType: AnalysisEntity
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: 'public sealed class AnalysisEntity : CacheBasedEquatable<AnalysisEntity>, IEquatable<AnalysisEntity?>'
+    content.vb: Public NotInheritable Class AnalysisEntity Inherits CacheBasedEquatable(Of AnalysisEntity) Implements IEquatable(Of AnalysisEntity)
+  inheritance:
+  - System.Object
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}
+  implements:
+  - System.IEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}
+  inheritedMembers:
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.GetHashCode
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.Equals(System.Object)
+  - Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.Equals(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create(Microsoft.CodeAnalysis.ISymbol,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex},Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create(Microsoft.CodeAnalysis.ISymbol,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex},Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  id: Create(Microsoft.CodeAnalysis.ISymbol,System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex},Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: Create(ISymbol?, ImmutableArray<AbstractIndex>, ITypeSymbol, PointsToAbstractValue, AnalysisEntity?)
+  nameWithType: AnalysisEntity.Create(ISymbol?, ImmutableArray<AbstractIndex>, ITypeSymbol, PointsToAbstractValue, AnalysisEntity?)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create(Microsoft.CodeAnalysis.ISymbol?, System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex>, Microsoft.CodeAnalysis.ITypeSymbol, Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue, Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public static AnalysisEntity Create(ISymbol? symbolOpt, ImmutableArray<AbstractIndex> indices, ITypeSymbol type, PointsToAbstractValue instanceLocation, AnalysisEntity? parentOpt)
+    parameters:
+    - id: symbolOpt
+      type: Microsoft.CodeAnalysis.ISymbol
+    - id: indices
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex}
+    - id: type
+      type: Microsoft.CodeAnalysis.ITypeSymbol
+    - id: instanceLocation
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue
+    - id: parentOpt
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    return:
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    content.vb: Public Shared Function Create(symbolOpt As ISymbol, indices As ImmutableArray(Of AbstractIndex), type As ITypeSymbol, instanceLocation As PointsToAbstractValue, parentOpt As AnalysisEntity) As AnalysisEntity
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create*
+  nameWithType.vb: AnalysisEntity.Create(ISymbol, ImmutableArray(Of AbstractIndex), ITypeSymbol, PointsToAbstractValue, AnalysisEntity)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create(Microsoft.CodeAnalysis.ISymbol, System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex), Microsoft.CodeAnalysis.ITypeSymbol, Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue, Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  name.vb: Create(ISymbol, ImmutableArray(Of AbstractIndex), ITypeSymbol, PointsToAbstractValue, AnalysisEntity)
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create(Microsoft.CodeAnalysis.Operations.IInstanceReferenceOperation,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create(Microsoft.CodeAnalysis.Operations.IInstanceReferenceOperation,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  id: Create(Microsoft.CodeAnalysis.Operations.IInstanceReferenceOperation,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: Create(IInstanceReferenceOperation, PointsToAbstractValue)
+  nameWithType: AnalysisEntity.Create(IInstanceReferenceOperation, PointsToAbstractValue)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create(Microsoft.CodeAnalysis.Operations.IInstanceReferenceOperation, Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public static AnalysisEntity Create(IInstanceReferenceOperation instanceReferenceOperation, PointsToAbstractValue instanceLocation)
+    parameters:
+    - id: instanceReferenceOperation
+      type: Microsoft.CodeAnalysis.Operations.IInstanceReferenceOperation
+    - id: instanceLocation
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue
+    return:
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    content.vb: Public Shared Function Create(instanceReferenceOperation As IInstanceReferenceOperation, instanceLocation As PointsToAbstractValue) As AnalysisEntity
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId,Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId,Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  id: Create(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId,Microsoft.CodeAnalysis.ITypeSymbol,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: Create(InterproceduralCaptureId, ITypeSymbol, PointsToAbstractValue)
+  nameWithType: AnalysisEntity.Create(InterproceduralCaptureId, ITypeSymbol, PointsToAbstractValue)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId, Microsoft.CodeAnalysis.ITypeSymbol, Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public static AnalysisEntity Create(InterproceduralCaptureId interproceduralCaptureId, ITypeSymbol type, PointsToAbstractValue instanceLocation)
+    parameters:
+    - id: interproceduralCaptureId
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId
+    - id: type
+      type: Microsoft.CodeAnalysis.ITypeSymbol
+    - id: instanceLocation
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue
+    return:
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    content.vb: Public Shared Function Create(interproceduralCaptureId As InterproceduralCaptureId, type As ITypeSymbol, instanceLocation As PointsToAbstractValue) As AnalysisEntity
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CreateThisOrMeInstance(Microsoft.CodeAnalysis.INamedTypeSymbol,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CreateThisOrMeInstance(Microsoft.CodeAnalysis.INamedTypeSymbol,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  id: CreateThisOrMeInstance(Microsoft.CodeAnalysis.INamedTypeSymbol,Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: CreateThisOrMeInstance(INamedTypeSymbol, PointsToAbstractValue)
+  nameWithType: AnalysisEntity.CreateThisOrMeInstance(INamedTypeSymbol, PointsToAbstractValue)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CreateThisOrMeInstance(Microsoft.CodeAnalysis.INamedTypeSymbol, Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public static AnalysisEntity CreateThisOrMeInstance(INamedTypeSymbol typeSymbol, PointsToAbstractValue instanceLocation)
+    parameters:
+    - id: typeSymbol
+      type: Microsoft.CodeAnalysis.INamedTypeSymbol
+    - id: instanceLocation
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue
+    return:
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    content.vb: Public Shared Function CreateThisOrMeInstance(typeSymbol As INamedTypeSymbol, instanceLocation As PointsToAbstractValue) As AnalysisEntity
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CreateThisOrMeInstance*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.WithMergedInstanceLocation(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.WithMergedInstanceLocation(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  id: WithMergedInstanceLocation(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: WithMergedInstanceLocation(AnalysisEntity)
+  nameWithType: AnalysisEntity.WithMergedInstanceLocation(AnalysisEntity)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.WithMergedInstanceLocation(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public AnalysisEntity WithMergedInstanceLocation(AnalysisEntity analysisEntityToMerge)
+    parameters:
+    - id: analysisEntityToMerge
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    return:
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    content.vb: Public Function WithMergedInstanceLocation(analysisEntityToMerge As AnalysisEntity) As AnalysisEntity
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.WithMergedInstanceLocation*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocation(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocation(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  id: EqualsIgnoringInstanceLocation(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: EqualsIgnoringInstanceLocation(AnalysisEntity?)
+  nameWithType: AnalysisEntity.EqualsIgnoringInstanceLocation(AnalysisEntity?)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocation(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public bool EqualsIgnoringInstanceLocation(AnalysisEntity? other)
+    parameters:
+    - id: other
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    return:
+      type: System.Boolean
+    content.vb: Public Function EqualsIgnoringInstanceLocation(other As AnalysisEntity) As Boolean
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocation*
+  nameWithType.vb: AnalysisEntity.EqualsIgnoringInstanceLocation(AnalysisEntity)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocation(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  name.vb: EqualsIgnoringInstanceLocation(AnalysisEntity)
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ComputeHashCodeParts(System.Action{System.Int32})
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ComputeHashCodeParts(System.Action{System.Int32})
+  id: ComputeHashCodeParts(System.Action{System.Int32})
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: ComputeHashCodeParts(Action<int>)
+  nameWithType: AnalysisEntity.ComputeHashCodeParts(Action<int>)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ComputeHashCodeParts(System.Action<int>)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  example: []
+  syntax:
+    content: protected override void ComputeHashCodeParts(Action<int> addPart)
+    parameters:
+    - id: addPart
+      type: System.Action{System.Int32}
+    content.vb: Protected Overrides Sub ComputeHashCodeParts(addPart As Action(Of Integer))
+  overridden: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.ComputeHashCodeParts(System.Action{System.Int32})
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ComputeHashCodeParts*
+  nameWithType.vb: AnalysisEntity.ComputeHashCodeParts(Action(Of Integer))
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ComputeHashCodeParts(System.Action(Of Integer))
+  name.vb: ComputeHashCodeParts(Action(Of Integer))
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasAncestor(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasAncestor(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  id: HasAncestor(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: HasAncestor(AnalysisEntity)
+  nameWithType: AnalysisEntity.HasAncestor(AnalysisEntity)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasAncestor(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public bool HasAncestor(AnalysisEntity ancestor)
+    parameters:
+    - id: ancestor
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    return:
+      type: System.Boolean
+    content.vb: Public Function HasAncestor(ancestor As AnalysisEntity) As Boolean
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasAncestor*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsChildOrInstanceMember
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsChildOrInstanceMember
+  id: IsChildOrInstanceMember
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: IsChildOrInstanceMember
+  nameWithType: AnalysisEntity.IsChildOrInstanceMember
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsChildOrInstanceMember
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public bool IsChildOrInstanceMember { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsChildOrInstanceMember As Boolean
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsChildOrInstanceMember*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasConstantValue
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasConstantValue
+  id: HasConstantValue
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: HasConstantValue
+  nameWithType: AnalysisEntity.HasConstantValue
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasConstantValue
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public bool HasConstantValue { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasConstantValue As Boolean
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasConstantValue*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.SymbolOpt
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.SymbolOpt
+  id: SymbolOpt
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: SymbolOpt
+  nameWithType: AnalysisEntity.SymbolOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.SymbolOpt
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public ISymbol? SymbolOpt { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.ISymbol
+    content.vb: Public ReadOnly Property SymbolOpt As ISymbol
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.SymbolOpt*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Indices
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Indices
+  id: Indices
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: Indices
+  nameWithType: AnalysisEntity.Indices
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Indices
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public ImmutableArray<AbstractIndex> Indices { get; }
+    parameters: []
+    return:
+      type: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex}
+    content.vb: Public ReadOnly Property Indices As ImmutableArray(Of AbstractIndex)
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Indices*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceReferenceOperationSyntaxOpt
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceReferenceOperationSyntaxOpt
+  id: InstanceReferenceOperationSyntaxOpt
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: InstanceReferenceOperationSyntaxOpt
+  nameWithType: AnalysisEntity.InstanceReferenceOperationSyntaxOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceReferenceOperationSyntaxOpt
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public SyntaxNode? InstanceReferenceOperationSyntaxOpt { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.SyntaxNode
+    content.vb: Public ReadOnly Property InstanceReferenceOperationSyntaxOpt As SyntaxNode
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceReferenceOperationSyntaxOpt*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CaptureIdOpt
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CaptureIdOpt
+  id: CaptureIdOpt
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: CaptureIdOpt
+  nameWithType: AnalysisEntity.CaptureIdOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CaptureIdOpt
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public InterproceduralCaptureId? CaptureIdOpt { get; }
+    parameters: []
+    return:
+      type: System.Nullable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId}
+    content.vb: Public ReadOnly Property CaptureIdOpt As InterproceduralCaptureId?
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CaptureIdOpt*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceLocation
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceLocation
+  id: InstanceLocation
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: InstanceLocation
+  nameWithType: AnalysisEntity.InstanceLocation
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceLocation
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public PointsToAbstractValue InstanceLocation { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue
+    content.vb: Public ReadOnly Property InstanceLocation As PointsToAbstractValue
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceLocation*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Type
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Type
+  id: Type
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: AnalysisEntity.Type
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Type
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public ITypeSymbol Type { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.ITypeSymbol
+    content.vb: Public ReadOnly Property Type As ITypeSymbol
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Type*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ParentOpt
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ParentOpt
+  id: ParentOpt
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: ParentOpt
+  nameWithType: AnalysisEntity.ParentOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ParentOpt
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public AnalysisEntity? ParentOpt { get; }
+    parameters: []
+    return:
+      type: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    content.vb: Public ReadOnly Property ParentOpt As AnalysisEntity
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ParentOpt*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsThisOrMeInstance
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsThisOrMeInstance
+  id: IsThisOrMeInstance
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: IsThisOrMeInstance
+  nameWithType: AnalysisEntity.IsThisOrMeInstance
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsThisOrMeInstance
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public bool IsThisOrMeInstance { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsThisOrMeInstance As Boolean
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsThisOrMeInstance*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasUnknownInstanceLocation
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasUnknownInstanceLocation
+  id: HasUnknownInstanceLocation
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: HasUnknownInstanceLocation
+  nameWithType: AnalysisEntity.HasUnknownInstanceLocation
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasUnknownInstanceLocation
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public bool HasUnknownInstanceLocation { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasUnknownInstanceLocation As Boolean
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasUnknownInstanceLocation*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsLValueFlowCaptureEntity
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsLValueFlowCaptureEntity
+  id: IsLValueFlowCaptureEntity
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: IsLValueFlowCaptureEntity
+  nameWithType: AnalysisEntity.IsLValueFlowCaptureEntity
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsLValueFlowCaptureEntity
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public bool IsLValueFlowCaptureEntity { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsLValueFlowCaptureEntity As Boolean
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsLValueFlowCaptureEntity*
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocationId
+  commentId: P:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocationId
+  id: EqualsIgnoringInstanceLocationId
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  langs:
+  - csharp
+  - vb
+  name: EqualsIgnoringInstanceLocationId
+  nameWithType: AnalysisEntity.EqualsIgnoringInstanceLocationId
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocationId
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  syntax:
+    content: public int EqualsIgnoringInstanceLocationId { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property EqualsIgnoringInstanceLocationId As Integer
+  overload: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocationId*
+references:
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  commentId: N:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  nameWithType: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis
+    name: FlowAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+    name: DataFlow
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis
+    name: FlowAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+    name: DataFlow
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}
+  commentId: T:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  definition: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html
+  name: CacheBasedEquatable<AnalysisEntity>
+  nameWithType: CacheBasedEquatable<AnalysisEntity>
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable<Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity>
+  nameWithType.vb: CacheBasedEquatable(Of AnalysisEntity)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable(Of Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  name.vb: CacheBasedEquatable(Of AnalysisEntity)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1
+    name: CacheBasedEquatable
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html
+  - name: <
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    name: AnalysisEntity
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1
+    name: CacheBasedEquatable
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    name: AnalysisEntity
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html
+  - name: )
+- uid: System.IEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}
+  commentId: T:System.IEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}
+  parent: System
+  definition: System.IEquatable`1
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<AnalysisEntity>
+  nameWithType: IEquatable<AnalysisEntity>
+  fullName: System.IEquatable<Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity>
+  nameWithType.vb: IEquatable(Of AnalysisEntity)
+  fullName.vb: System.IEquatable(Of Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  name.vb: IEquatable(Of AnalysisEntity)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    name: AnalysisEntity
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    name: AnalysisEntity
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.GetHashCode
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.GetHashCode
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}
+  definition: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.GetHashCode
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_GetHashCode
+  name: GetHashCode()
+  nameWithType: CacheBasedEquatable<AnalysisEntity>.GetHashCode()
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable<Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity>.GetHashCode()
+  nameWithType.vb: CacheBasedEquatable(Of AnalysisEntity).GetHashCode()
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable(Of Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity).GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_GetHashCode
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.Equals(System.Object)
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.Equals(System.Object)
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}
+  definition: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.Equals(System.Object)
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: CacheBasedEquatable<AnalysisEntity>.Equals(object)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable<Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity>.Equals(object)
+  nameWithType.vb: CacheBasedEquatable(Of AnalysisEntity).Equals(Object)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable(Of Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity).Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.Equals(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.Equals(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}
+  definition: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.Equals(`0)
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals__0_
+  name: Equals(AnalysisEntity)
+  nameWithType: CacheBasedEquatable<AnalysisEntity>.Equals(AnalysisEntity)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable<Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity>.Equals(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  nameWithType.vb: CacheBasedEquatable(Of AnalysisEntity).Equals(AnalysisEntity)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable(Of Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity).Equals(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.Equals(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals__0_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    name: AnalysisEntity
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.Equals(Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals__0_
+  - name: (
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+    name: AnalysisEntity
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1
+  commentId: T:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html
+  name: CacheBasedEquatable<T>
+  nameWithType: CacheBasedEquatable<T>
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable<T>
+  nameWithType.vb: CacheBasedEquatable(Of T)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable(Of T)
+  name.vb: CacheBasedEquatable(Of T)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1
+    name: CacheBasedEquatable
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1
+    name: CacheBasedEquatable
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.IEquatable`1
+  commentId: T:System.IEquatable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  name: IEquatable<T>
+  nameWithType: IEquatable<T>
+  fullName: System.IEquatable<T>
+  nameWithType.vb: IEquatable(Of T)
+  fullName.vb: System.IEquatable(Of T)
+  name.vb: IEquatable(Of T)
+  spec.csharp:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.IEquatable`1
+    name: IEquatable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.iequatable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.GetHashCode
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.GetHashCode
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_GetHashCode
+  name: GetHashCode()
+  nameWithType: CacheBasedEquatable<T>.GetHashCode()
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable<T>.GetHashCode()
+  nameWithType.vb: CacheBasedEquatable(Of T).GetHashCode()
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable(Of T).GetHashCode()
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_GetHashCode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_GetHashCode
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.Equals(System.Object)
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.Equals(System.Object)
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals_System_Object_
+  name: Equals(object)
+  nameWithType: CacheBasedEquatable<T>.Equals(object)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable<T>.Equals(object)
+  nameWithType.vb: CacheBasedEquatable(Of T).Equals(Object)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable(Of T).Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.Equals(`0)
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.Equals(`0)
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals__0_
+  name: Equals(T)
+  nameWithType: CacheBasedEquatable<T>.Equals(T)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable<T>.Equals(T)
+  nameWithType.vb: CacheBasedEquatable(Of T).Equals(T)
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable(Of T).Equals(T)
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.Equals(`0)
+    name: Equals
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_Equals__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_Create_Microsoft_CodeAnalysis_ISymbol_System_Collections_Immutable_ImmutableArray_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AbstractIndex__Microsoft_CodeAnalysis_ITypeSymbol_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_PointsToAnalysis_PointsToAbstractValue_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_
+  name: Create
+  nameWithType: AnalysisEntity.Create
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Create
+- uid: Microsoft.CodeAnalysis.ISymbol
+  commentId: T:Microsoft.CodeAnalysis.ISymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ISymbol.html
+  name: ISymbol
+  nameWithType: ISymbol
+  fullName: Microsoft.CodeAnalysis.ISymbol
+- uid: System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex}
+  commentId: T:System.Collections.Immutable.ImmutableArray{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex}
+  parent: System.Collections.Immutable
+  definition: System.Collections.Immutable.ImmutableArray`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<AbstractIndex>
+  nameWithType: ImmutableArray<AbstractIndex>
+  fullName: System.Collections.Immutable.ImmutableArray<Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex>
+  nameWithType.vb: ImmutableArray(Of AbstractIndex)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex)
+  name.vb: ImmutableArray(Of AbstractIndex)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex
+    name: AbstractIndex
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex
+    name: AbstractIndex
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AbstractIndex.html
+  - name: )
+- uid: Microsoft.CodeAnalysis.ITypeSymbol
+  commentId: T:Microsoft.CodeAnalysis.ITypeSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.ITypeSymbol.html
+  name: ITypeSymbol
+  nameWithType: ITypeSymbol
+  fullName: Microsoft.CodeAnalysis.ITypeSymbol
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue
+  commentId: T:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue.html
+  name: PointsToAbstractValue
+  nameWithType: PointsToAbstractValue
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.PointsToAbstractValue
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  commentId: T:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html
+  name: AnalysisEntity
+  nameWithType: AnalysisEntity
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity
+- uid: Microsoft.CodeAnalysis
+  commentId: N:Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis
+  nameWithType: Microsoft.CodeAnalysis
+  fullName: Microsoft.CodeAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+- uid: System.Collections.Immutable.ImmutableArray`1
+  commentId: T:System.Collections.Immutable.ImmutableArray`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  name: ImmutableArray<T>
+  nameWithType: ImmutableArray<T>
+  fullName: System.Collections.Immutable.ImmutableArray<T>
+  nameWithType.vb: ImmutableArray(Of T)
+  fullName.vb: System.Collections.Immutable.ImmutableArray(Of T)
+  name.vb: ImmutableArray(Of T)
+  spec.csharp:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Immutable.ImmutableArray`1
+    name: ImmutableArray
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable.immutablearray-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Immutable
+  commentId: N:System.Collections.Immutable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Immutable
+  nameWithType: System.Collections.Immutable
+  fullName: System.Collections.Immutable
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Immutable
+    name: Immutable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.immutable
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis
+  commentId: N:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis
+  nameWithType: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis
+    name: FlowAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+    name: DataFlow
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis
+    name: PointsToAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis
+    name: FlowAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+    name: DataFlow
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis
+    name: PointsToAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.PointsToAnalysis.html
+- uid: Microsoft.CodeAnalysis.Operations.IInstanceReferenceOperation
+  commentId: T:Microsoft.CodeAnalysis.Operations.IInstanceReferenceOperation
+  parent: Microsoft.CodeAnalysis.Operations
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Operations.IInstanceReferenceOperation.html
+  name: IInstanceReferenceOperation
+  nameWithType: IInstanceReferenceOperation
+  fullName: Microsoft.CodeAnalysis.Operations.IInstanceReferenceOperation
+- uid: Microsoft.CodeAnalysis.Operations
+  commentId: N:Microsoft.CodeAnalysis.Operations
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Operations
+  nameWithType: Microsoft.CodeAnalysis.Operations
+  fullName: Microsoft.CodeAnalysis.Operations
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Operations
+    name: Operations
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Operations.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Operations
+    name: Operations
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Operations.html
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId
+  commentId: T:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId.html
+  name: InterproceduralCaptureId
+  nameWithType: InterproceduralCaptureId
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CreateThisOrMeInstance*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CreateThisOrMeInstance
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_CreateThisOrMeInstance_Microsoft_CodeAnalysis_INamedTypeSymbol_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_PointsToAnalysis_PointsToAbstractValue_
+  name: CreateThisOrMeInstance
+  nameWithType: AnalysisEntity.CreateThisOrMeInstance
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CreateThisOrMeInstance
+- uid: Microsoft.CodeAnalysis.INamedTypeSymbol
+  commentId: T:Microsoft.CodeAnalysis.INamedTypeSymbol
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.INamedTypeSymbol.html
+  name: INamedTypeSymbol
+  nameWithType: INamedTypeSymbol
+  fullName: Microsoft.CodeAnalysis.INamedTypeSymbol
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.WithMergedInstanceLocation*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.WithMergedInstanceLocation
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_WithMergedInstanceLocation_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_
+  name: WithMergedInstanceLocation
+  nameWithType: AnalysisEntity.WithMergedInstanceLocation
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.WithMergedInstanceLocation
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocation*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocation
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_EqualsIgnoringInstanceLocation_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_
+  name: EqualsIgnoringInstanceLocation
+  nameWithType: AnalysisEntity.EqualsIgnoringInstanceLocation
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocation
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.ComputeHashCodeParts(System.Action{System.Int32})
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.ComputeHashCodeParts(System.Action{System.Int32})
+  parent: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}
+  definition: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.ComputeHashCodeParts(System.Action{System.Int32})
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_ComputeHashCodeParts_System_Action_System_Int32__
+  name: ComputeHashCodeParts(Action<int>)
+  nameWithType: CacheBasedEquatable<AnalysisEntity>.ComputeHashCodeParts(Action<int>)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable<Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity>.ComputeHashCodeParts(System.Action<int>)
+  nameWithType.vb: CacheBasedEquatable(Of AnalysisEntity).ComputeHashCodeParts(Action(Of Integer))
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable(Of Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity).ComputeHashCodeParts(System.Action(Of Integer))
+  name.vb: ComputeHashCodeParts(Action(Of Integer))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.ComputeHashCodeParts(System.Action{System.Int32})
+    name: ComputeHashCodeParts
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_ComputeHashCodeParts_System_Action_System_Int32__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity}.ComputeHashCodeParts(System.Action{System.Int32})
+    name: ComputeHashCodeParts
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_ComputeHashCodeParts_System_Action_System_Int32__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ComputeHashCodeParts*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ComputeHashCodeParts
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_ComputeHashCodeParts_System_Action_System_Int32__
+  name: ComputeHashCodeParts
+  nameWithType: AnalysisEntity.ComputeHashCodeParts
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ComputeHashCodeParts
+- uid: System.Action{System.Int32}
+  commentId: T:System.Action{System.Int32}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<int>
+  nameWithType: Action<int>
+  fullName: System.Action<int>
+  nameWithType.vb: Action(Of Integer)
+  fullName.vb: System.Action(Of Integer)
+  name.vb: Action(Of Integer)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.ComputeHashCodeParts(System.Action{System.Int32})
+  commentId: M:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.ComputeHashCodeParts(System.Action{System.Int32})
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_ComputeHashCodeParts_System_Action_System_Int32__
+  name: ComputeHashCodeParts(Action<int>)
+  nameWithType: CacheBasedEquatable<T>.ComputeHashCodeParts(Action<int>)
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable<T>.ComputeHashCodeParts(System.Action<int>)
+  nameWithType.vb: CacheBasedEquatable(Of T).ComputeHashCodeParts(Action(Of Integer))
+  fullName.vb: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable(Of T).ComputeHashCodeParts(System.Action(Of Integer))
+  name.vb: ComputeHashCodeParts(Action(Of Integer))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.ComputeHashCodeParts(System.Action{System.Int32})
+    name: ComputeHashCodeParts
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_ComputeHashCodeParts_System_Action_System_Int32__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable`1.ComputeHashCodeParts(System.Action{System.Int32})
+    name: ComputeHashCodeParts
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.CacheBasedEquatable-1.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_CacheBasedEquatable_1_ComputeHashCodeParts_System_Action_System_Int32__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasAncestor*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasAncestor
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_HasAncestor_Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_
+  name: HasAncestor
+  nameWithType: AnalysisEntity.HasAncestor
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasAncestor
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsChildOrInstanceMember*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsChildOrInstanceMember
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_IsChildOrInstanceMember
+  name: IsChildOrInstanceMember
+  nameWithType: AnalysisEntity.IsChildOrInstanceMember
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsChildOrInstanceMember
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasConstantValue*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasConstantValue
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_HasConstantValue
+  name: HasConstantValue
+  nameWithType: AnalysisEntity.HasConstantValue
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasConstantValue
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.SymbolOpt*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.SymbolOpt
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_SymbolOpt
+  name: SymbolOpt
+  nameWithType: AnalysisEntity.SymbolOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.SymbolOpt
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Indices*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Indices
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_Indices
+  name: Indices
+  nameWithType: AnalysisEntity.Indices
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Indices
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceReferenceOperationSyntaxOpt*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceReferenceOperationSyntaxOpt
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_InstanceReferenceOperationSyntaxOpt
+  name: InstanceReferenceOperationSyntaxOpt
+  nameWithType: AnalysisEntity.InstanceReferenceOperationSyntaxOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceReferenceOperationSyntaxOpt
+- uid: Microsoft.CodeAnalysis.SyntaxNode
+  commentId: T:Microsoft.CodeAnalysis.SyntaxNode
+  parent: Microsoft.CodeAnalysis
+  isExternal: true
+  href: Microsoft.CodeAnalysis.SyntaxNode.html
+  name: SyntaxNode
+  nameWithType: SyntaxNode
+  fullName: Microsoft.CodeAnalysis.SyntaxNode
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CaptureIdOpt*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CaptureIdOpt
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_CaptureIdOpt
+  name: CaptureIdOpt
+  nameWithType: AnalysisEntity.CaptureIdOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.CaptureIdOpt
+- uid: System.Nullable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId}
+  commentId: T:System.Nullable{Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId}
+  parent: System
+  definition: System.Nullable`1
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId.html
+  name: InterproceduralCaptureId?
+  nameWithType: InterproceduralCaptureId?
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId?
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId
+    name: InterproceduralCaptureId
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId.html
+  - name: '?'
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId
+    name: InterproceduralCaptureId
+    isExternal: true
+    href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.InterproceduralCaptureId.html
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceLocation*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceLocation
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_InstanceLocation
+  name: InstanceLocation
+  nameWithType: AnalysisEntity.InstanceLocation
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.InstanceLocation
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Type*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Type
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_Type
+  name: Type
+  nameWithType: AnalysisEntity.Type
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.Type
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ParentOpt*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ParentOpt
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_ParentOpt
+  name: ParentOpt
+  nameWithType: AnalysisEntity.ParentOpt
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.ParentOpt
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsThisOrMeInstance*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsThisOrMeInstance
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_IsThisOrMeInstance
+  name: IsThisOrMeInstance
+  nameWithType: AnalysisEntity.IsThisOrMeInstance
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsThisOrMeInstance
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasUnknownInstanceLocation*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasUnknownInstanceLocation
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_HasUnknownInstanceLocation
+  name: HasUnknownInstanceLocation
+  nameWithType: AnalysisEntity.HasUnknownInstanceLocation
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.HasUnknownInstanceLocation
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsLValueFlowCaptureEntity*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsLValueFlowCaptureEntity
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_IsLValueFlowCaptureEntity
+  name: IsLValueFlowCaptureEntity
+  nameWithType: AnalysisEntity.IsLValueFlowCaptureEntity
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.IsLValueFlowCaptureEntity
+- uid: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocationId*
+  commentId: Overload:Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocationId
+  isExternal: true
+  href: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.html#Microsoft_CodeAnalysis_FlowAnalysis_DataFlow_AnalysisEntity_EqualsIgnoringInstanceLocationId
+  name: EqualsIgnoringInstanceLocationId
+  nameWithType: AnalysisEntity.EqualsIgnoringInstanceLocationId
+  fullName: Microsoft.CodeAnalysis.FlowAnalysis.DataFlow.AnalysisEntity.EqualsIgnoringInstanceLocationId
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

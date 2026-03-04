@@ -1,0 +1,1652 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo
+  commentId: T:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo
+  id: PhysicalDirectoryInfo
+  parent: Microsoft.Extensions.FileProviders.Physical
+  children:
+  - Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.#ctor(System.IO.DirectoryInfo)
+  - Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.CreateReadStream
+  - Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Exists
+  - Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.GetEnumerator
+  - Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.IsDirectory
+  - Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.LastModified
+  - Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Length
+  - Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Name
+  - Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.PhysicalPath
+  langs:
+  - csharp
+  - vb
+  name: PhysicalDirectoryInfo
+  nameWithType: PhysicalDirectoryInfo
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.FileProviders.Physical
+  syntax:
+    content: 'public class PhysicalDirectoryInfo : IFileInfo, IDirectoryContents, IEnumerable<IFileInfo>, IEnumerable'
+    content.vb: Public Class PhysicalDirectoryInfo Implements IFileInfo, IDirectoryContents, IEnumerable(Of IFileInfo), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Extensions.FileProviders.IFileInfo
+  - Microsoft.Extensions.FileProviders.IDirectoryContents
+  - System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileProviders.IFileInfo}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileProviders.IFileInfo}.AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.#ctor(System.IO.DirectoryInfo)
+  commentId: M:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.#ctor(System.IO.DirectoryInfo)
+  id: '#ctor(System.IO.DirectoryInfo)'
+  parent: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: PhysicalDirectoryInfo(DirectoryInfo)
+  nameWithType: PhysicalDirectoryInfo.PhysicalDirectoryInfo(DirectoryInfo)
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.PhysicalDirectoryInfo(System.IO.DirectoryInfo)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.FileProviders.Physical
+  syntax:
+    content: public PhysicalDirectoryInfo(DirectoryInfo info)
+    parameters:
+    - id: info
+      type: System.IO.DirectoryInfo
+    content.vb: Public Sub New(info As DirectoryInfo)
+  overload: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.#ctor*
+  nameWithType.vb: PhysicalDirectoryInfo.New(DirectoryInfo)
+  fullName.vb: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.New(System.IO.DirectoryInfo)
+  name.vb: New(DirectoryInfo)
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.CreateReadStream
+  commentId: M:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.CreateReadStream
+  id: CreateReadStream
+  parent: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: CreateReadStream()
+  nameWithType: PhysicalDirectoryInfo.CreateReadStream()
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.CreateReadStream()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.FileProviders.Physical
+  example: []
+  syntax:
+    content: public Stream CreateReadStream()
+    return:
+      type: System.IO.Stream
+    content.vb: Public Function CreateReadStream() As Stream
+  overload: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.CreateReadStream*
+  implements:
+  - Microsoft.Extensions.FileProviders.IFileInfo.CreateReadStream
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.GetEnumerator
+  commentId: M:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: PhysicalDirectoryInfo.GetEnumerator()
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.GetEnumerator()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.FileProviders.Physical
+  example: []
+  syntax:
+    content: public IEnumerator<IFileInfo> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{Microsoft.Extensions.FileProviders.IFileInfo}
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of IFileInfo)
+  overload: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.GetEnumerator*
+  implements:
+  - System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileProviders.IFileInfo}.GetEnumerator
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Exists
+  commentId: P:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Exists
+  id: Exists
+  parent: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: Exists
+  nameWithType: PhysicalDirectoryInfo.Exists
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Exists
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.FileProviders.Physical
+  example: []
+  syntax:
+    content: public bool Exists { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Exists As Boolean
+  overload: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Exists*
+  implements:
+  - Microsoft.Extensions.FileProviders.IFileInfo.Exists
+  - Microsoft.Extensions.FileProviders.IDirectoryContents.Exists
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Length
+  commentId: P:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Length
+  id: Length
+  parent: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: Length
+  nameWithType: PhysicalDirectoryInfo.Length
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Length
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.FileProviders.Physical
+  example: []
+  syntax:
+    content: public long Length { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property Length As Long
+  overload: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Length*
+  implements:
+  - Microsoft.Extensions.FileProviders.IFileInfo.Length
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.PhysicalPath
+  commentId: P:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.PhysicalPath
+  id: PhysicalPath
+  parent: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: PhysicalPath
+  nameWithType: PhysicalDirectoryInfo.PhysicalPath
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.PhysicalPath
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.FileProviders.Physical
+  example: []
+  syntax:
+    content: public string PhysicalPath { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property PhysicalPath As String
+  overload: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.PhysicalPath*
+  implements:
+  - Microsoft.Extensions.FileProviders.IFileInfo.PhysicalPath
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Name
+  commentId: P:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Name
+  id: Name
+  parent: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: PhysicalDirectoryInfo.Name
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Name
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.FileProviders.Physical
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Name*
+  implements:
+  - Microsoft.Extensions.FileProviders.IFileInfo.Name
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.LastModified
+  commentId: P:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.LastModified
+  id: LastModified
+  parent: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: LastModified
+  nameWithType: PhysicalDirectoryInfo.LastModified
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.LastModified
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.FileProviders.Physical
+  example: []
+  syntax:
+    content: public DateTimeOffset LastModified { get; }
+    parameters: []
+    return:
+      type: System.DateTimeOffset
+    content.vb: Public ReadOnly Property LastModified As DateTimeOffset
+  overload: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.LastModified*
+  implements:
+  - Microsoft.Extensions.FileProviders.IFileInfo.LastModified
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.IsDirectory
+  commentId: P:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.IsDirectory
+  id: IsDirectory
+  parent: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo
+  langs:
+  - csharp
+  - vb
+  name: IsDirectory
+  nameWithType: PhysicalDirectoryInfo.IsDirectory
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.IsDirectory
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.FileProviders.Physical
+  example: []
+  syntax:
+    content: public bool IsDirectory { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsDirectory As Boolean
+  overload: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.IsDirectory*
+  implements:
+  - Microsoft.Extensions.FileProviders.IFileInfo.IsDirectory
+references:
+- uid: Microsoft.Extensions.FileProviders.Physical
+  commentId: N:Microsoft.Extensions.FileProviders.Physical
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Extensions.FileProviders.Physical
+  nameWithType: Microsoft.Extensions.FileProviders.Physical
+  fullName: Microsoft.Extensions.FileProviders.Physical
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.FileProviders
+    name: FileProviders
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.html
+  - name: .
+  - uid: Microsoft.Extensions.FileProviders.Physical
+    name: Physical
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.Physical.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.FileProviders
+    name: FileProviders
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.html
+  - name: .
+  - uid: Microsoft.Extensions.FileProviders.Physical
+    name: Physical
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.Physical.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Extensions.FileProviders.IFileInfo
+  commentId: T:Microsoft.Extensions.FileProviders.IFileInfo
+  parent: Microsoft.Extensions.FileProviders
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.IFileInfo.html
+  name: IFileInfo
+  nameWithType: IFileInfo
+  fullName: Microsoft.Extensions.FileProviders.IFileInfo
+- uid: Microsoft.Extensions.FileProviders.IDirectoryContents
+  commentId: T:Microsoft.Extensions.FileProviders.IDirectoryContents
+  parent: Microsoft.Extensions.FileProviders
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.IDirectoryContents.html
+  name: IDirectoryContents
+  nameWithType: IDirectoryContents
+  fullName: Microsoft.Extensions.FileProviders.IDirectoryContents
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileProviders.IFileInfo}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileProviders.IFileInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<IFileInfo>
+  nameWithType: IEnumerable<IFileInfo>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Extensions.FileProviders.IFileInfo>
+  nameWithType.vb: IEnumerable(Of IFileInfo)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.Extensions.FileProviders.IFileInfo)
+  name.vb: IEnumerable(Of IFileInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.Extensions.FileProviders.IFileInfo
+    name: IFileInfo
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.IFileInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.FileProviders.IFileInfo
+    name: IFileInfo
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.IFileInfo.html
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileProviders.IFileInfo}.AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1
+  commentId: M:AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  parent: AccoRevit.Addin.Extensions.CollectionExtensions
+  definition: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToObservableCollection<IFileInfo>(IEnumerable<IFileInfo>)
+  nameWithType: CollectionExtensions.ToObservableCollection<IFileInfo>(IEnumerable<IFileInfo>)
+  fullName: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection<Microsoft.Extensions.FileProviders.IFileInfo>(System.Collections.Generic.IEnumerable<Microsoft.Extensions.FileProviders.IFileInfo>)
+  nameWithType.vb: CollectionExtensions.ToObservableCollection(Of IFileInfo)(IEnumerable(Of IFileInfo))
+  fullName.vb: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection(Of Microsoft.Extensions.FileProviders.IFileInfo)(System.Collections.Generic.IEnumerable(Of Microsoft.Extensions.FileProviders.IFileInfo))
+  name.vb: ToObservableCollection(Of IFileInfo)(IEnumerable(Of IFileInfo))
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileProviders.IFileInfo})
+    name: ToObservableCollection
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - uid: Microsoft.Extensions.FileProviders.IFileInfo
+    name: IFileInfo
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.IFileInfo.html
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.Extensions.FileProviders.IFileInfo
+    name: IFileInfo
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.IFileInfo.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileProviders.IFileInfo})
+    name: ToObservableCollection
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.FileProviders.IFileInfo
+    name: IFileInfo
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.IFileInfo.html
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.FileProviders.IFileInfo
+    name: IFileInfo
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.IFileInfo.html
+  - name: )
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.FileProviders
+  commentId: N:Microsoft.Extensions.FileProviders
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Extensions.FileProviders
+  nameWithType: Microsoft.Extensions.FileProviders
+  fullName: Microsoft.Extensions.FileProviders
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.FileProviders
+    name: FileProviders
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.FileProviders
+    name: FileProviders
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.html
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToObservableCollection<T>(IEnumerable<T>)
+  nameWithType: CollectionExtensions.ToObservableCollection<T>(IEnumerable<T>)
+  fullName: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: CollectionExtensions.ToObservableCollection(Of T)(IEnumerable(Of T))
+  fullName.vb: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ToObservableCollection(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToObservableCollection
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToObservableCollection
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: AccoRevit.Addin.Extensions.CollectionExtensions
+  commentId: T:AccoRevit.Addin.Extensions.CollectionExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.CollectionExtensions.html
+  name: CollectionExtensions
+  nameWithType: CollectionExtensions
+  fullName: AccoRevit.Addin.Extensions.CollectionExtensions
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.#ctor*
+  commentId: Overload:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.#ctor
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.html#Microsoft_Extensions_FileProviders_Physical_PhysicalDirectoryInfo__ctor_System_IO_DirectoryInfo_
+  name: PhysicalDirectoryInfo
+  nameWithType: PhysicalDirectoryInfo.PhysicalDirectoryInfo
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.PhysicalDirectoryInfo
+  nameWithType.vb: PhysicalDirectoryInfo.New
+  fullName.vb: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.New
+  name.vb: New
+- uid: System.IO.DirectoryInfo
+  commentId: T:System.IO.DirectoryInfo
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.directoryinfo
+  name: DirectoryInfo
+  nameWithType: DirectoryInfo
+  fullName: System.IO.DirectoryInfo
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.CreateReadStream*
+  commentId: Overload:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.CreateReadStream
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.html#Microsoft_Extensions_FileProviders_Physical_PhysicalDirectoryInfo_CreateReadStream
+  name: CreateReadStream
+  nameWithType: PhysicalDirectoryInfo.CreateReadStream
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.CreateReadStream
+- uid: Microsoft.Extensions.FileProviders.IFileInfo.CreateReadStream
+  commentId: M:Microsoft.Extensions.FileProviders.IFileInfo.CreateReadStream
+  parent: Microsoft.Extensions.FileProviders.IFileInfo
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.IFileInfo.html#Microsoft_Extensions_FileProviders_IFileInfo_CreateReadStream
+  name: CreateReadStream()
+  nameWithType: IFileInfo.CreateReadStream()
+  fullName: Microsoft.Extensions.FileProviders.IFileInfo.CreateReadStream()
+  spec.csharp:
+  - uid: Microsoft.Extensions.FileProviders.IFileInfo.CreateReadStream
+    name: CreateReadStream
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.IFileInfo.html#Microsoft_Extensions_FileProviders_IFileInfo_CreateReadStream
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.FileProviders.IFileInfo.CreateReadStream
+    name: CreateReadStream
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.IFileInfo.html#Microsoft_Extensions_FileProviders_IFileInfo_CreateReadStream
+  - name: (
+  - name: )
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.GetEnumerator*
+  commentId: Overload:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.GetEnumerator
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.html#Microsoft_Extensions_FileProviders_Physical_PhysicalDirectoryInfo_GetEnumerator
+  name: GetEnumerator
+  nameWithType: PhysicalDirectoryInfo.GetEnumerator
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.GetEnumerator
+- uid: System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileProviders.IFileInfo}.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileProviders.IFileInfo}.GetEnumerator
+  parent: System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileProviders.IFileInfo}
+  definition: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<IFileInfo>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.Extensions.FileProviders.IFileInfo>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of IFileInfo).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.Extensions.FileProviders.IFileInfo).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileProviders.IFileInfo}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable{Microsoft.Extensions.FileProviders.IFileInfo}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator{Microsoft.Extensions.FileProviders.IFileInfo}
+  commentId: T:System.Collections.Generic.IEnumerator{Microsoft.Extensions.FileProviders.IFileInfo}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<IFileInfo>
+  nameWithType: IEnumerator<IFileInfo>
+  fullName: System.Collections.Generic.IEnumerator<Microsoft.Extensions.FileProviders.IFileInfo>
+  nameWithType.vb: IEnumerator(Of IFileInfo)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of Microsoft.Extensions.FileProviders.IFileInfo)
+  name.vb: IEnumerator(Of IFileInfo)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - uid: Microsoft.Extensions.FileProviders.IFileInfo
+    name: IFileInfo
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.IFileInfo.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.FileProviders.IFileInfo
+    name: IFileInfo
+    isExternal: true
+    href: Microsoft.Extensions.FileProviders.IFileInfo.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+  commentId: M:System.Collections.Generic.IEnumerable`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: IEnumerable<T>.GetEnumerator()
+  fullName: System.Collections.Generic.IEnumerable<T>.GetEnumerator()
+  nameWithType.vb: IEnumerable(Of T).GetEnumerator()
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Exists*
+  commentId: Overload:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Exists
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.html#Microsoft_Extensions_FileProviders_Physical_PhysicalDirectoryInfo_Exists
+  name: Exists
+  nameWithType: PhysicalDirectoryInfo.Exists
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Exists
+- uid: Microsoft.Extensions.FileProviders.IFileInfo.Exists
+  commentId: P:Microsoft.Extensions.FileProviders.IFileInfo.Exists
+  parent: Microsoft.Extensions.FileProviders.IFileInfo
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.IFileInfo.html#Microsoft_Extensions_FileProviders_IFileInfo_Exists
+  name: Exists
+  nameWithType: IFileInfo.Exists
+  fullName: Microsoft.Extensions.FileProviders.IFileInfo.Exists
+- uid: Microsoft.Extensions.FileProviders.IDirectoryContents.Exists
+  commentId: P:Microsoft.Extensions.FileProviders.IDirectoryContents.Exists
+  parent: Microsoft.Extensions.FileProviders.IDirectoryContents
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.IDirectoryContents.html#Microsoft_Extensions_FileProviders_IDirectoryContents_Exists
+  name: Exists
+  nameWithType: IDirectoryContents.Exists
+  fullName: Microsoft.Extensions.FileProviders.IDirectoryContents.Exists
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Length*
+  commentId: Overload:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Length
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.html#Microsoft_Extensions_FileProviders_Physical_PhysicalDirectoryInfo_Length
+  name: Length
+  nameWithType: PhysicalDirectoryInfo.Length
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Length
+- uid: Microsoft.Extensions.FileProviders.IFileInfo.Length
+  commentId: P:Microsoft.Extensions.FileProviders.IFileInfo.Length
+  parent: Microsoft.Extensions.FileProviders.IFileInfo
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.IFileInfo.html#Microsoft_Extensions_FileProviders_IFileInfo_Length
+  name: Length
+  nameWithType: IFileInfo.Length
+  fullName: Microsoft.Extensions.FileProviders.IFileInfo.Length
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.PhysicalPath*
+  commentId: Overload:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.PhysicalPath
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.html#Microsoft_Extensions_FileProviders_Physical_PhysicalDirectoryInfo_PhysicalPath
+  name: PhysicalPath
+  nameWithType: PhysicalDirectoryInfo.PhysicalPath
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.PhysicalPath
+- uid: Microsoft.Extensions.FileProviders.IFileInfo.PhysicalPath
+  commentId: P:Microsoft.Extensions.FileProviders.IFileInfo.PhysicalPath
+  parent: Microsoft.Extensions.FileProviders.IFileInfo
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.IFileInfo.html#Microsoft_Extensions_FileProviders_IFileInfo_PhysicalPath
+  name: PhysicalPath
+  nameWithType: IFileInfo.PhysicalPath
+  fullName: Microsoft.Extensions.FileProviders.IFileInfo.PhysicalPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Name*
+  commentId: Overload:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Name
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.html#Microsoft_Extensions_FileProviders_Physical_PhysicalDirectoryInfo_Name
+  name: Name
+  nameWithType: PhysicalDirectoryInfo.Name
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.Name
+- uid: Microsoft.Extensions.FileProviders.IFileInfo.Name
+  commentId: P:Microsoft.Extensions.FileProviders.IFileInfo.Name
+  parent: Microsoft.Extensions.FileProviders.IFileInfo
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.IFileInfo.html#Microsoft_Extensions_FileProviders_IFileInfo_Name
+  name: Name
+  nameWithType: IFileInfo.Name
+  fullName: Microsoft.Extensions.FileProviders.IFileInfo.Name
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.LastModified*
+  commentId: Overload:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.LastModified
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.html#Microsoft_Extensions_FileProviders_Physical_PhysicalDirectoryInfo_LastModified
+  name: LastModified
+  nameWithType: PhysicalDirectoryInfo.LastModified
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.LastModified
+- uid: Microsoft.Extensions.FileProviders.IFileInfo.LastModified
+  commentId: P:Microsoft.Extensions.FileProviders.IFileInfo.LastModified
+  parent: Microsoft.Extensions.FileProviders.IFileInfo
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.IFileInfo.html#Microsoft_Extensions_FileProviders_IFileInfo_LastModified
+  name: LastModified
+  nameWithType: IFileInfo.LastModified
+  fullName: Microsoft.Extensions.FileProviders.IFileInfo.LastModified
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.IsDirectory*
+  commentId: Overload:Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.IsDirectory
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.html#Microsoft_Extensions_FileProviders_Physical_PhysicalDirectoryInfo_IsDirectory
+  name: IsDirectory
+  nameWithType: PhysicalDirectoryInfo.IsDirectory
+  fullName: Microsoft.Extensions.FileProviders.Physical.PhysicalDirectoryInfo.IsDirectory
+- uid: Microsoft.Extensions.FileProviders.IFileInfo.IsDirectory
+  commentId: P:Microsoft.Extensions.FileProviders.IFileInfo.IsDirectory
+  parent: Microsoft.Extensions.FileProviders.IFileInfo
+  isExternal: true
+  href: Microsoft.Extensions.FileProviders.IFileInfo.html#Microsoft_Extensions_FileProviders_IFileInfo_IsDirectory
+  name: IsDirectory
+  nameWithType: IFileInfo.IsDirectory
+  fullName: Microsoft.Extensions.FileProviders.IFileInfo.IsDirectory

@@ -1,0 +1,735 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions
+  id: BinaryReaderWriterExtensions
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions
+  children:
+  - Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadArrayLength(System.IO.BinaryReader,System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadList``1(System.IO.BinaryReader)
+  - Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadPrimitiveArray``1(System.IO.BinaryReader)
+  - Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.WritePrimitiveArray(System.IO.BinaryWriter,System.Array,System.Int32,System.Int32)
+  - Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.Write``1(System.IO.BinaryWriter,System.Collections.Generic.IList{``0},System.Int32,System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: BinaryReaderWriterExtensions
+  nameWithType: BinaryReaderWriterExtensions
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Extensions
+  syntax:
+    content: public static class BinaryReaderWriterExtensions
+    content.vb: Public Module BinaryReaderWriterExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.WritePrimitiveArray(System.IO.BinaryWriter,System.Array,System.Int32,System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.WritePrimitiveArray(System.IO.BinaryWriter,System.Array,System.Int32,System.Int32)
+  id: WritePrimitiveArray(System.IO.BinaryWriter,System.Array,System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions
+  langs:
+  - csharp
+  - vb
+  name: WritePrimitiveArray(BinaryWriter, Array, int, int)
+  nameWithType: BinaryReaderWriterExtensions.WritePrimitiveArray(BinaryWriter, Array, int, int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.WritePrimitiveArray(System.IO.BinaryWriter, System.Array, int, int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Extensions
+  syntax:
+    content: public static void WritePrimitiveArray(this BinaryWriter writer, Array array, int index = 0, int length = -1)
+    parameters:
+    - id: writer
+      type: System.IO.BinaryWriter
+    - id: array
+      type: System.Array
+    - id: index
+      type: System.Int32
+    - id: length
+      type: System.Int32
+    content.vb: Public Shared Sub WritePrimitiveArray(writer As BinaryWriter, array As Array, index As Integer = 0, length As Integer = -1)
+  overload: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.WritePrimitiveArray*
+  nameWithType.vb: BinaryReaderWriterExtensions.WritePrimitiveArray(BinaryWriter, Array, Integer, Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.WritePrimitiveArray(System.IO.BinaryWriter, System.Array, Integer, Integer)
+  name.vb: WritePrimitiveArray(BinaryWriter, Array, Integer, Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadPrimitiveArray``1(System.IO.BinaryReader)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadPrimitiveArray``1(System.IO.BinaryReader)
+  id: ReadPrimitiveArray``1(System.IO.BinaryReader)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadPrimitiveArray<T>(BinaryReader)
+  nameWithType: BinaryReaderWriterExtensions.ReadPrimitiveArray<T>(BinaryReader)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadPrimitiveArray<T>(System.IO.BinaryReader)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Extensions
+  syntax:
+    content: public static T[] ReadPrimitiveArray<T>(this BinaryReader reader)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}[]'
+    content.vb: Public Shared Function ReadPrimitiveArray(Of T)(reader As BinaryReader) As T()
+  overload: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadPrimitiveArray*
+  nameWithType.vb: BinaryReaderWriterExtensions.ReadPrimitiveArray(Of T)(BinaryReader)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadPrimitiveArray(Of T)(System.IO.BinaryReader)
+  name.vb: ReadPrimitiveArray(Of T)(BinaryReader)
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.Write``1(System.IO.BinaryWriter,System.Collections.Generic.IList{``0},System.Int32,System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.Write``1(System.IO.BinaryWriter,System.Collections.Generic.IList{``0},System.Int32,System.Int32)
+  id: Write``1(System.IO.BinaryWriter,System.Collections.Generic.IList{``0},System.Int32,System.Int32)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions
+  langs:
+  - csharp
+  - vb
+  name: Write<T>(BinaryWriter, IList<T>, int, int)
+  nameWithType: BinaryReaderWriterExtensions.Write<T>(BinaryWriter, IList<T>, int, int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.Write<T>(System.IO.BinaryWriter, System.Collections.Generic.IList<T>, int, int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Extensions
+  syntax:
+    content: 'public static void Write<T>(this BinaryWriter writer, IList<T> items, int index = 0, int length = -1) where T : IBinarySerializable'
+    parameters:
+    - id: writer
+      type: System.IO.BinaryWriter
+    - id: items
+      type: System.Collections.Generic.IList{{T}}
+    - id: index
+      type: System.Int32
+    - id: length
+      type: System.Int32
+    typeParameters:
+    - id: T
+    content.vb: Public Shared Sub Write(Of T As IBinarySerializable)(writer As BinaryWriter, items As IList(Of T), index As Integer = 0, length As Integer = -1)
+  overload: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.Write*
+  nameWithType.vb: BinaryReaderWriterExtensions.Write(Of T)(BinaryWriter, IList(Of T), Integer, Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.Write(Of T)(System.IO.BinaryWriter, System.Collections.Generic.IList(Of T), Integer, Integer)
+  name.vb: Write(Of T)(BinaryWriter, IList(Of T), Integer, Integer)
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadList``1(System.IO.BinaryReader)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadList``1(System.IO.BinaryReader)
+  id: ReadList``1(System.IO.BinaryReader)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadList<T>(BinaryReader)
+  nameWithType: BinaryReaderWriterExtensions.ReadList<T>(BinaryReader)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadList<T>(System.IO.BinaryReader)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Extensions
+  syntax:
+    content: 'public static List<T> ReadList<T>(this BinaryReader reader) where T : IBinarySerializable, new()'
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+    typeParameters:
+    - id: T
+    return:
+      type: System.Collections.Generic.List{{T}}
+    content.vb: Public Shared Function ReadList(Of T As {IBinarySerializable, New})(reader As BinaryReader) As List(Of T)
+  overload: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadList*
+  nameWithType.vb: BinaryReaderWriterExtensions.ReadList(Of T)(BinaryReader)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadList(Of T)(System.IO.BinaryReader)
+  name.vb: ReadList(Of T)(BinaryReader)
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadArrayLength(System.IO.BinaryReader,System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadArrayLength(System.IO.BinaryReader,System.Int32)
+  id: ReadArrayLength(System.IO.BinaryReader,System.Int32)
+  isExtensionMethod: true
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions
+  langs:
+  - csharp
+  - vb
+  name: ReadArrayLength(BinaryReader, int)
+  nameWithType: BinaryReaderWriterExtensions.ReadArrayLength(BinaryReader, int)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadArrayLength(System.IO.BinaryReader, int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Elfie.Extensions
+  syntax:
+    content: public static int ReadArrayLength(this BinaryReader reader, int elementSizeInBytes = 1)
+    parameters:
+    - id: reader
+      type: System.IO.BinaryReader
+    - id: elementSizeInBytes
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function ReadArrayLength(reader As BinaryReader, elementSizeInBytes As Integer = 1) As Integer
+  overload: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadArrayLength*
+  nameWithType.vb: BinaryReaderWriterExtensions.ReadArrayLength(BinaryReader, Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadArrayLength(System.IO.BinaryReader, Integer)
+  name.vb: ReadArrayLength(BinaryReader, Integer)
+references:
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions
+  commentId: N:Microsoft.CodeAnalysis.Elfie.Extensions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Elfie.Extensions
+  nameWithType: Microsoft.CodeAnalysis.Elfie.Extensions
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.WritePrimitiveArray*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.WritePrimitiveArray
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_BinaryReaderWriterExtensions_WritePrimitiveArray_System_IO_BinaryWriter_System_Array_System_Int32_System_Int32_
+  name: WritePrimitiveArray
+  nameWithType: BinaryReaderWriterExtensions.WritePrimitiveArray
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.WritePrimitiveArray
+- uid: System.IO.BinaryWriter
+  commentId: T:System.IO.BinaryWriter
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.binarywriter
+  name: BinaryWriter
+  nameWithType: BinaryWriter
+  fullName: System.IO.BinaryWriter
+- uid: System.Array
+  commentId: T:System.Array
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.array
+  name: Array
+  nameWithType: Array
+  fullName: System.Array
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadPrimitiveArray*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadPrimitiveArray
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_BinaryReaderWriterExtensions_ReadPrimitiveArray__1_System_IO_BinaryReader_
+  name: ReadPrimitiveArray
+  nameWithType: BinaryReaderWriterExtensions.ReadPrimitiveArray
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadPrimitiveArray
+- uid: System.IO.BinaryReader
+  commentId: T:System.IO.BinaryReader
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.binaryreader
+  name: BinaryReader
+  nameWithType: BinaryReader
+  fullName: System.IO.BinaryReader
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.Write*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.Write
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_BinaryReaderWriterExtensions_Write__1_System_IO_BinaryWriter_System_Collections_Generic_IList___0__System_Int32_System_Int32_
+  name: Write
+  nameWithType: BinaryReaderWriterExtensions.Write
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.Write
+- uid: System.Collections.Generic.IList{{T}}
+  commentId: T:System.Collections.Generic.IList{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadList*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadList
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_BinaryReaderWriterExtensions_ReadList__1_System_IO_BinaryReader_
+  name: ReadList
+  nameWithType: BinaryReaderWriterExtensions.ReadList
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadList
+- uid: System.Collections.Generic.List{{T}}
+  commentId: T:System.Collections.Generic.List{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadArrayLength*
+  commentId: Overload:Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadArrayLength
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_BinaryReaderWriterExtensions_ReadArrayLength_System_IO_BinaryReader_System_Int32_
+  name: ReadArrayLength
+  nameWithType: BinaryReaderWriterExtensions.ReadArrayLength
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.BinaryReaderWriterExtensions.ReadArrayLength

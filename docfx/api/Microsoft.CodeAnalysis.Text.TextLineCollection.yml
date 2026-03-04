@@ -1,0 +1,1794 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection
+  commentId: T:Microsoft.CodeAnalysis.Text.TextLineCollection
+  id: TextLineCollection
+  parent: Microsoft.CodeAnalysis.Text
+  children:
+  - Microsoft.CodeAnalysis.Text.TextLineCollection.#ctor
+  - Microsoft.CodeAnalysis.Text.TextLineCollection.Count
+  - Microsoft.CodeAnalysis.Text.TextLineCollection.GetEnumerator
+  - Microsoft.CodeAnalysis.Text.TextLineCollection.GetLineFromPosition(System.Int32)
+  - Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePosition(System.Int32)
+  - Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePositionSpan(Microsoft.CodeAnalysis.Text.TextSpan)
+  - Microsoft.CodeAnalysis.Text.TextLineCollection.GetPosition(Microsoft.CodeAnalysis.Text.LinePosition)
+  - Microsoft.CodeAnalysis.Text.TextLineCollection.GetTextSpan(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  - Microsoft.CodeAnalysis.Text.TextLineCollection.IndexOf(System.Int32)
+  - Microsoft.CodeAnalysis.Text.TextLineCollection.Item(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: TextLineCollection
+  nameWithType: TextLineCollection
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: 'public abstract class TextLineCollection : IReadOnlyList<TextLine>, IReadOnlyCollection<TextLine>, IEnumerable<TextLine>, IEnumerable'
+    content.vb: Public MustInherit Class TextLineCollection Implements IReadOnlyList(Of TextLine), IReadOnlyCollection(Of TextLine), IEnumerable(Of TextLine), IEnumerable
+  inheritance:
+  - System.Object
+  implements:
+  - System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextLine}
+  - System.Collections.Generic.IReadOnlyCollection{Microsoft.CodeAnalysis.Text.TextLine}
+  - System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextLine}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextLine}.AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1
+  - System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextLine}.Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.IndexOf(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Text.TextLineCollection.IndexOf(System.Int32)
+  id: IndexOf(System.Int32)
+  parent: Microsoft.CodeAnalysis.Text.TextLineCollection
+  langs:
+  - csharp
+  - vb
+  name: IndexOf(int)
+  nameWithType: TextLineCollection.IndexOf(int)
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.IndexOf(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: public abstract int IndexOf(int position)
+    parameters:
+    - id: position
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride Function IndexOf(position As Integer) As Integer
+  overload: Microsoft.CodeAnalysis.Text.TextLineCollection.IndexOf*
+  nameWithType.vb: TextLineCollection.IndexOf(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Text.TextLineCollection.IndexOf(Integer)
+  name.vb: IndexOf(Integer)
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLineFromPosition(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Text.TextLineCollection.GetLineFromPosition(System.Int32)
+  id: GetLineFromPosition(System.Int32)
+  parent: Microsoft.CodeAnalysis.Text.TextLineCollection
+  langs:
+  - csharp
+  - vb
+  name: GetLineFromPosition(int)
+  nameWithType: TextLineCollection.GetLineFromPosition(int)
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLineFromPosition(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: public virtual TextLine GetLineFromPosition(int position)
+    parameters:
+    - id: position
+      type: System.Int32
+    return:
+      type: Microsoft.CodeAnalysis.Text.TextLine
+    content.vb: Public Overridable Function GetLineFromPosition(position As Integer) As TextLine
+  overload: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLineFromPosition*
+  nameWithType.vb: TextLineCollection.GetLineFromPosition(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLineFromPosition(Integer)
+  name.vb: GetLineFromPosition(Integer)
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePosition(System.Int32)
+  commentId: M:Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePosition(System.Int32)
+  id: GetLinePosition(System.Int32)
+  parent: Microsoft.CodeAnalysis.Text.TextLineCollection
+  langs:
+  - csharp
+  - vb
+  name: GetLinePosition(int)
+  nameWithType: TextLineCollection.GetLinePosition(int)
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePosition(int)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: public virtual LinePosition GetLinePosition(int position)
+    parameters:
+    - id: position
+      type: System.Int32
+    return:
+      type: Microsoft.CodeAnalysis.Text.LinePosition
+    content.vb: Public Overridable Function GetLinePosition(position As Integer) As LinePosition
+  overload: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePosition*
+  nameWithType.vb: TextLineCollection.GetLinePosition(Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePosition(Integer)
+  name.vb: GetLinePosition(Integer)
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePositionSpan(Microsoft.CodeAnalysis.Text.TextSpan)
+  commentId: M:Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePositionSpan(Microsoft.CodeAnalysis.Text.TextSpan)
+  id: GetLinePositionSpan(Microsoft.CodeAnalysis.Text.TextSpan)
+  parent: Microsoft.CodeAnalysis.Text.TextLineCollection
+  langs:
+  - csharp
+  - vb
+  name: GetLinePositionSpan(TextSpan)
+  nameWithType: TextLineCollection.GetLinePositionSpan(TextSpan)
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePositionSpan(Microsoft.CodeAnalysis.Text.TextSpan)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: public LinePositionSpan GetLinePositionSpan(TextSpan span)
+    parameters:
+    - id: span
+      type: Microsoft.CodeAnalysis.Text.TextSpan
+    return:
+      type: Microsoft.CodeAnalysis.Text.LinePositionSpan
+    content.vb: Public Function GetLinePositionSpan(span As TextSpan) As LinePositionSpan
+  overload: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePositionSpan*
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.GetPosition(Microsoft.CodeAnalysis.Text.LinePosition)
+  commentId: M:Microsoft.CodeAnalysis.Text.TextLineCollection.GetPosition(Microsoft.CodeAnalysis.Text.LinePosition)
+  id: GetPosition(Microsoft.CodeAnalysis.Text.LinePosition)
+  parent: Microsoft.CodeAnalysis.Text.TextLineCollection
+  langs:
+  - csharp
+  - vb
+  name: GetPosition(LinePosition)
+  nameWithType: TextLineCollection.GetPosition(LinePosition)
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.GetPosition(Microsoft.CodeAnalysis.Text.LinePosition)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: public int GetPosition(LinePosition position)
+    parameters:
+    - id: position
+      type: Microsoft.CodeAnalysis.Text.LinePosition
+    return:
+      type: System.Int32
+    content.vb: Public Function GetPosition(position As LinePosition) As Integer
+  overload: Microsoft.CodeAnalysis.Text.TextLineCollection.GetPosition*
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.GetTextSpan(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  commentId: M:Microsoft.CodeAnalysis.Text.TextLineCollection.GetTextSpan(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  id: GetTextSpan(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  parent: Microsoft.CodeAnalysis.Text.TextLineCollection
+  langs:
+  - csharp
+  - vb
+  name: GetTextSpan(LinePositionSpan)
+  nameWithType: TextLineCollection.GetTextSpan(LinePositionSpan)
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.GetTextSpan(Microsoft.CodeAnalysis.Text.LinePositionSpan)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: public TextSpan GetTextSpan(LinePositionSpan span)
+    parameters:
+    - id: span
+      type: Microsoft.CodeAnalysis.Text.LinePositionSpan
+    return:
+      type: Microsoft.CodeAnalysis.Text.TextSpan
+    content.vb: Public Function GetTextSpan(span As LinePositionSpan) As TextSpan
+  overload: Microsoft.CodeAnalysis.Text.TextLineCollection.GetTextSpan*
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.GetEnumerator
+  commentId: M:Microsoft.CodeAnalysis.Text.TextLineCollection.GetEnumerator
+  id: GetEnumerator
+  parent: Microsoft.CodeAnalysis.Text.TextLineCollection
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: TextLineCollection.GetEnumerator()
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.GetEnumerator()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: public TextLineCollection.Enumerator GetEnumerator()
+    return:
+      type: Microsoft.CodeAnalysis.Text.TextLineCollection.Enumerator
+    content.vb: Public Function GetEnumerator() As TextLineCollection.Enumerator
+  overload: Microsoft.CodeAnalysis.Text.TextLineCollection.GetEnumerator*
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.#ctor
+  commentId: M:Microsoft.CodeAnalysis.Text.TextLineCollection.#ctor
+  id: '#ctor'
+  parent: Microsoft.CodeAnalysis.Text.TextLineCollection
+  langs:
+  - csharp
+  - vb
+  name: TextLineCollection()
+  nameWithType: TextLineCollection.TextLineCollection()
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.TextLineCollection()
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  syntax:
+    content: protected TextLineCollection()
+    content.vb: Protected Sub New()
+  overload: Microsoft.CodeAnalysis.Text.TextLineCollection.#ctor*
+  nameWithType.vb: TextLineCollection.New()
+  fullName.vb: Microsoft.CodeAnalysis.Text.TextLineCollection.New()
+  name.vb: New()
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.Count
+  commentId: P:Microsoft.CodeAnalysis.Text.TextLineCollection.Count
+  id: Count
+  parent: Microsoft.CodeAnalysis.Text.TextLineCollection
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: TextLineCollection.Count
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.Count
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  example: []
+  syntax:
+    content: public abstract int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public MustOverride ReadOnly Property Count As Integer
+  overload: Microsoft.CodeAnalysis.Text.TextLineCollection.Count*
+  implements:
+  - System.Collections.Generic.IReadOnlyCollection{Microsoft.CodeAnalysis.Text.TextLine}.Count
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.Item(System.Int32)
+  commentId: P:Microsoft.CodeAnalysis.Text.TextLineCollection.Item(System.Int32)
+  id: Item(System.Int32)
+  parent: Microsoft.CodeAnalysis.Text.TextLineCollection
+  langs:
+  - csharp
+  - vb
+  name: this[int]
+  nameWithType: TextLineCollection.this[int]
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.this[int]
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.CodeAnalysis.Text
+  example: []
+  syntax:
+    content: public abstract TextLine this[int index] { get; }
+    parameters:
+    - id: index
+      type: System.Int32
+    return:
+      type: Microsoft.CodeAnalysis.Text.TextLine
+    content.vb: Public MustOverride ReadOnly Default Property this[](index As Integer) As TextLine
+  overload: Microsoft.CodeAnalysis.Text.TextLineCollection.Item*
+  implements:
+  - System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextLine}.Item(System.Int32)
+  nameWithType.vb: TextLineCollection.this[](Integer)
+  fullName.vb: Microsoft.CodeAnalysis.Text.TextLineCollection.this[](Integer)
+  name.vb: this[](Integer)
+references:
+- uid: Microsoft.CodeAnalysis.Text
+  commentId: N:Microsoft.CodeAnalysis.Text
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Text
+  nameWithType: Microsoft.CodeAnalysis.Text
+  fullName: Microsoft.CodeAnalysis.Text
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Text
+    name: Text
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Text
+    name: Text
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextLine}
+  commentId: T:System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextLine}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<TextLine>
+  nameWithType: IReadOnlyList<TextLine>
+  fullName: System.Collections.Generic.IReadOnlyList<Microsoft.CodeAnalysis.Text.TextLine>
+  nameWithType.vb: IReadOnlyList(Of TextLine)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Microsoft.CodeAnalysis.Text.TextLine)
+  name.vb: IReadOnlyList(Of TextLine)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection{Microsoft.CodeAnalysis.Text.TextLine}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{Microsoft.CodeAnalysis.Text.TextLine}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<TextLine>
+  nameWithType: IReadOnlyCollection<TextLine>
+  fullName: System.Collections.Generic.IReadOnlyCollection<Microsoft.CodeAnalysis.Text.TextLine>
+  nameWithType.vb: IReadOnlyCollection(Of TextLine)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Microsoft.CodeAnalysis.Text.TextLine)
+  name.vb: IReadOnlyCollection(Of TextLine)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextLine}
+  commentId: T:System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextLine}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TextLine>
+  nameWithType: IEnumerable<TextLine>
+  fullName: System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Text.TextLine>
+  nameWithType.vb: IEnumerable(Of TextLine)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of Microsoft.CodeAnalysis.Text.TextLine)
+  name.vb: IEnumerable(Of TextLine)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextLine}.AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1
+  commentId: M:AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  parent: AccoRevit.Addin.Extensions.CollectionExtensions
+  definition: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToObservableCollection<TextLine>(IEnumerable<TextLine>)
+  nameWithType: CollectionExtensions.ToObservableCollection<TextLine>(IEnumerable<TextLine>)
+  fullName: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection<Microsoft.CodeAnalysis.Text.TextLine>(System.Collections.Generic.IEnumerable<Microsoft.CodeAnalysis.Text.TextLine>)
+  nameWithType.vb: CollectionExtensions.ToObservableCollection(Of TextLine)(IEnumerable(Of TextLine))
+  fullName.vb: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection(Of Microsoft.CodeAnalysis.Text.TextLine)(System.Collections.Generic.IEnumerable(Of Microsoft.CodeAnalysis.Text.TextLine))
+  name.vb: ToObservableCollection(Of TextLine)(IEnumerable(Of TextLine))
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextLine})
+    name: ToObservableCollection
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{Microsoft.CodeAnalysis.Text.TextLine})
+    name: ToObservableCollection
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextLine}.Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{``0})
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions
+  definition: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{``0})
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IReadOnlyListExtensions_GetDefaultEnumerator__1_System_Collections_Generic_IReadOnlyList___0__
+  name: GetDefaultEnumerator<TextLine>(IReadOnlyList<TextLine>)
+  nameWithType: IReadOnlyListExtensions.GetDefaultEnumerator<TextLine>(IReadOnlyList<TextLine>)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator<Microsoft.CodeAnalysis.Text.TextLine>(System.Collections.Generic.IReadOnlyList<Microsoft.CodeAnalysis.Text.TextLine>)
+  nameWithType.vb: IReadOnlyListExtensions.GetDefaultEnumerator(Of TextLine)(IReadOnlyList(Of TextLine))
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator(Of Microsoft.CodeAnalysis.Text.TextLine)(System.Collections.Generic.IReadOnlyList(Of Microsoft.CodeAnalysis.Text.TextLine))
+  name.vb: GetDefaultEnumerator(Of TextLine)(IReadOnlyList(Of TextLine))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextLine})
+    name: GetDefaultEnumerator
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IReadOnlyListExtensions_GetDefaultEnumerator__1_System_Collections_Generic_IReadOnlyList___0__
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextLine})
+    name: GetDefaultEnumerator
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IReadOnlyListExtensions_GetDefaultEnumerator__1_System_Collections_Generic_IReadOnlyList___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.CodeAnalysis.Text.TextLine
+    name: TextLine
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLine.html
+  - name: )
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToObservableCollection<T>(IEnumerable<T>)
+  nameWithType: CollectionExtensions.ToObservableCollection<T>(IEnumerable<T>)
+  fullName: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: CollectionExtensions.ToObservableCollection(Of T)(IEnumerable(Of T))
+  fullName.vb: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ToObservableCollection(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToObservableCollection
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToObservableCollection
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: AccoRevit.Addin.Extensions.CollectionExtensions
+  commentId: T:AccoRevit.Addin.Extensions.CollectionExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.CollectionExtensions.html
+  name: CollectionExtensions
+  nameWithType: CollectionExtensions
+  fullName: AccoRevit.Addin.Extensions.CollectionExtensions
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{``0})
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{``0})
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IReadOnlyListExtensions_GetDefaultEnumerator__1_System_Collections_Generic_IReadOnlyList___0__
+  name: GetDefaultEnumerator<T>(IReadOnlyList<T>)
+  nameWithType: IReadOnlyListExtensions.GetDefaultEnumerator<T>(IReadOnlyList<T>)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator<T>(System.Collections.Generic.IReadOnlyList<T>)
+  nameWithType.vb: IReadOnlyListExtensions.GetDefaultEnumerator(Of T)(IReadOnlyList(Of T))
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator(Of T)(System.Collections.Generic.IReadOnlyList(Of T))
+  name.vb: GetDefaultEnumerator(Of T)(IReadOnlyList(Of T))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{``0})
+    name: GetDefaultEnumerator
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IReadOnlyListExtensions_GetDefaultEnumerator__1_System_Collections_Generic_IReadOnlyList___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{``0})
+    name: GetDefaultEnumerator
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IReadOnlyListExtensions_GetDefaultEnumerator__1_System_Collections_Generic_IReadOnlyList___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html
+  name: IReadOnlyListExtensions
+  nameWithType: IReadOnlyListExtensions
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions
+  commentId: N:Microsoft.CodeAnalysis.Elfie.Extensions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Elfie.Extensions
+  nameWithType: Microsoft.CodeAnalysis.Elfie.Extensions
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.IndexOf*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.TextLineCollection.IndexOf
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.TextLineCollection.html#Microsoft_CodeAnalysis_Text_TextLineCollection_IndexOf_System_Int32_
+  name: IndexOf
+  nameWithType: TextLineCollection.IndexOf
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.IndexOf
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLineFromPosition*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.TextLineCollection.GetLineFromPosition
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.TextLineCollection.html#Microsoft_CodeAnalysis_Text_TextLineCollection_GetLineFromPosition_System_Int32_
+  name: GetLineFromPosition
+  nameWithType: TextLineCollection.GetLineFromPosition
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLineFromPosition
+- uid: Microsoft.CodeAnalysis.Text.TextLine
+  commentId: T:Microsoft.CodeAnalysis.Text.TextLine
+  parent: Microsoft.CodeAnalysis.Text
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.TextLine.html
+  name: TextLine
+  nameWithType: TextLine
+  fullName: Microsoft.CodeAnalysis.Text.TextLine
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePosition*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePosition
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.TextLineCollection.html#Microsoft_CodeAnalysis_Text_TextLineCollection_GetLinePosition_System_Int32_
+  name: GetLinePosition
+  nameWithType: TextLineCollection.GetLinePosition
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePosition
+- uid: Microsoft.CodeAnalysis.Text.LinePosition
+  commentId: T:Microsoft.CodeAnalysis.Text.LinePosition
+  parent: Microsoft.CodeAnalysis.Text
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.LinePosition.html
+  name: LinePosition
+  nameWithType: LinePosition
+  fullName: Microsoft.CodeAnalysis.Text.LinePosition
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePositionSpan*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePositionSpan
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.TextLineCollection.html#Microsoft_CodeAnalysis_Text_TextLineCollection_GetLinePositionSpan_Microsoft_CodeAnalysis_Text_TextSpan_
+  name: GetLinePositionSpan
+  nameWithType: TextLineCollection.GetLinePositionSpan
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.GetLinePositionSpan
+- uid: Microsoft.CodeAnalysis.Text.TextSpan
+  commentId: T:Microsoft.CodeAnalysis.Text.TextSpan
+  parent: Microsoft.CodeAnalysis.Text
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.TextSpan.html
+  name: TextSpan
+  nameWithType: TextSpan
+  fullName: Microsoft.CodeAnalysis.Text.TextSpan
+- uid: Microsoft.CodeAnalysis.Text.LinePositionSpan
+  commentId: T:Microsoft.CodeAnalysis.Text.LinePositionSpan
+  parent: Microsoft.CodeAnalysis.Text
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.LinePositionSpan.html
+  name: LinePositionSpan
+  nameWithType: LinePositionSpan
+  fullName: Microsoft.CodeAnalysis.Text.LinePositionSpan
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.GetPosition*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.TextLineCollection.GetPosition
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.TextLineCollection.html#Microsoft_CodeAnalysis_Text_TextLineCollection_GetPosition_Microsoft_CodeAnalysis_Text_LinePosition_
+  name: GetPosition
+  nameWithType: TextLineCollection.GetPosition
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.GetPosition
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.GetTextSpan*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.TextLineCollection.GetTextSpan
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.TextLineCollection.html#Microsoft_CodeAnalysis_Text_TextLineCollection_GetTextSpan_Microsoft_CodeAnalysis_Text_LinePositionSpan_
+  name: GetTextSpan
+  nameWithType: TextLineCollection.GetTextSpan
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.GetTextSpan
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.GetEnumerator*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.TextLineCollection.GetEnumerator
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.TextLineCollection.html#Microsoft_CodeAnalysis_Text_TextLineCollection_GetEnumerator
+  name: GetEnumerator
+  nameWithType: TextLineCollection.GetEnumerator
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.GetEnumerator
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.Enumerator
+  commentId: T:Microsoft.CodeAnalysis.Text.TextLineCollection.Enumerator
+  parent: Microsoft.CodeAnalysis.Text
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.TextLineCollection.html
+  name: TextLineCollection.Enumerator
+  nameWithType: TextLineCollection.Enumerator
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.Enumerator
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Text.TextLineCollection
+    name: TextLineCollection
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLineCollection.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Text.TextLineCollection.Enumerator
+    name: Enumerator
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLineCollection.Enumerator.html
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Text.TextLineCollection
+    name: TextLineCollection
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLineCollection.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Text.TextLineCollection.Enumerator
+    name: Enumerator
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Text.TextLineCollection.Enumerator.html
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.#ctor*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.TextLineCollection.#ctor
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.TextLineCollection.html#Microsoft_CodeAnalysis_Text_TextLineCollection__ctor
+  name: TextLineCollection
+  nameWithType: TextLineCollection.TextLineCollection
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.TextLineCollection
+  nameWithType.vb: TextLineCollection.New
+  fullName.vb: Microsoft.CodeAnalysis.Text.TextLineCollection.New
+  name.vb: New
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.Count*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.TextLineCollection.Count
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.TextLineCollection.html#Microsoft_CodeAnalysis_Text_TextLineCollection_Count
+  name: Count
+  nameWithType: TextLineCollection.Count
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.Count
+- uid: System.Collections.Generic.IReadOnlyCollection{Microsoft.CodeAnalysis.Text.TextLine}.Count
+  commentId: P:System.Collections.Generic.IReadOnlyCollection{Microsoft.CodeAnalysis.Text.TextLine}.Count
+  parent: System.Collections.Generic.IReadOnlyCollection{Microsoft.CodeAnalysis.Text.TextLine}
+  definition: System.Collections.Generic.IReadOnlyCollection`1.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1.count
+  name: Count
+  nameWithType: IReadOnlyCollection<TextLine>.Count
+  fullName: System.Collections.Generic.IReadOnlyCollection<Microsoft.CodeAnalysis.Text.TextLine>.Count
+  nameWithType.vb: IReadOnlyCollection(Of TextLine).Count
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of Microsoft.CodeAnalysis.Text.TextLine).Count
+- uid: System.Collections.Generic.IReadOnlyCollection`1.Count
+  commentId: P:System.Collections.Generic.IReadOnlyCollection`1.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1.count
+  name: Count
+  nameWithType: IReadOnlyCollection<T>.Count
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>.Count
+  nameWithType.vb: IReadOnlyCollection(Of T).Count
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T).Count
+- uid: Microsoft.CodeAnalysis.Text.TextLineCollection.Item*
+  commentId: Overload:Microsoft.CodeAnalysis.Text.TextLineCollection.Item
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Text.TextLineCollection.html#Microsoft_CodeAnalysis_Text_TextLineCollection_Item_System_Int32_
+  name: this
+  nameWithType: TextLineCollection.this
+  fullName: Microsoft.CodeAnalysis.Text.TextLineCollection.this
+  nameWithType.vb: TextLineCollection.this[]
+  fullName.vb: Microsoft.CodeAnalysis.Text.TextLineCollection.this[]
+  name.vb: this[]
+- uid: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextLine}.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextLine}.Item(System.Int32)
+  parent: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextLine}
+  definition: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IReadOnlyList<TextLine>.this[int]
+  fullName: System.Collections.Generic.IReadOnlyList<Microsoft.CodeAnalysis.Text.TextLine>.this[int]
+  nameWithType.vb: IReadOnlyList(Of TextLine).this[](Integer)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of Microsoft.CodeAnalysis.Text.TextLine).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList{Microsoft.CodeAnalysis.Text.TextLine}.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+  commentId: P:System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: IReadOnlyList<T>.this[int]
+  fullName: System.Collections.Generic.IReadOnlyList<T>.this[int]
+  nameWithType.vb: IReadOnlyList(Of T).this[](Integer)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )

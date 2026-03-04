@@ -1,0 +1,2471 @@
+### YamlMime:ManagedReference
+items:
+- uid: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2
+  commentId: T:CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2
+  id: ReadOnlyObservableGroup`2
+  parent: CommunityToolkit.Mvvm.Collections
+  children:
+  - CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.#ctor(CommunityToolkit.Mvvm.Collections.ObservableGroup{`0,`1})
+  - CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.#ctor(`0,System.Collections.ObjectModel.ObservableCollection{`1})
+  - CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.Key
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlyObservableGroup<TKey, TElement>
+  nameWithType: ReadOnlyObservableGroup<TKey, TElement>
+  fullName: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup<TKey, TElement>
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: CommunityToolkit.Mvvm.Collections
+  syntax:
+    content: 'public sealed class ReadOnlyObservableGroup<TKey, TElement> : ReadOnlyObservableCollection<TElement>, IList<TElement>, ICollection<TElement>, IList, ICollection, IReadOnlyObservableGroup<TKey, TElement>, IReadOnlyObservableGroup<TKey>, IReadOnlyObservableGroup, INotifyPropertyChanged, INotifyCollectionChanged, IReadOnlyList<TElement>, IReadOnlyCollection<TElement>, IGrouping<TKey, TElement>, IEnumerable<TElement>, IEnumerable where TKey : notnull'
+    typeParameters:
+    - id: TKey
+    - id: TElement
+    content.vb: Public NotInheritable Class ReadOnlyObservableGroup(Of TKey, TElement) Inherits ReadOnlyObservableCollection(Of TElement) Implements IList(Of TElement), ICollection(Of TElement), IList, ICollection, IReadOnlyObservableGroup(Of TKey, TElement), IReadOnlyObservableGroup(Of TKey), IReadOnlyObservableGroup, INotifyPropertyChanged, INotifyCollectionChanged, IReadOnlyList(Of TElement), IReadOnlyCollection(Of TElement), IGrouping(Of TKey, TElement), IEnumerable(Of TElement), IEnumerable
+  inheritance:
+  - System.Object
+  - System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}
+  - System.Collections.ObjectModel.ReadOnlyObservableCollection{{TElement}}
+  implements:
+  - System.Collections.Generic.IList{{TElement}}
+  - System.Collections.Generic.ICollection{{TElement}}
+  - System.Collections.IList
+  - System.Collections.ICollection
+  - CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup{{TKey},{TElement}}
+  - CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup{{TKey}}
+  - CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup
+  - System.ComponentModel.INotifyPropertyChanged
+  - System.Collections.Specialized.INotifyCollectionChanged
+  - System.Collections.Generic.IReadOnlyList{{TElement}}
+  - System.Collections.Generic.IReadOnlyCollection{{TElement}}
+  - System.Linq.IGrouping{{TKey},{TElement}}
+  - System.Collections.Generic.IEnumerable{{TElement}}
+  - System.Collections.IEnumerable
+  inheritedMembers:
+  - System.Collections.ObjectModel.ReadOnlyObservableCollection{{TElement}}.Empty
+  - System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}.Contains({TElement})
+  - System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}.CopyTo({TElement}[],System.Int32)
+  - System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}.GetEnumerator
+  - System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}.IndexOf({TElement})
+  - System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}.Count
+  - System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}.Item(System.Int32)
+  - System.Object.GetType
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Collections.Generic.IEnumerable{`1}.AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1
+  - System.Collections.Generic.IReadOnlyList{`1}.Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  nameWithType.vb: ReadOnlyObservableGroup(Of TKey, TElement)
+  fullName.vb: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup(Of TKey, TElement)
+  name.vb: ReadOnlyObservableGroup(Of TKey, TElement)
+- uid: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.#ctor(`0,System.Collections.ObjectModel.ObservableCollection{`1})
+  commentId: M:CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.#ctor(`0,System.Collections.ObjectModel.ObservableCollection{`1})
+  id: '#ctor(`0,System.Collections.ObjectModel.ObservableCollection{`1})'
+  parent: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlyObservableGroup(TKey, ObservableCollection<TElement>)
+  nameWithType: ReadOnlyObservableGroup<TKey, TElement>.ReadOnlyObservableGroup(TKey, ObservableCollection<TElement>)
+  fullName: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup<TKey, TElement>.ReadOnlyObservableGroup(TKey, System.Collections.ObjectModel.ObservableCollection<TElement>)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: CommunityToolkit.Mvvm.Collections
+  syntax:
+    content: public ReadOnlyObservableGroup(TKey key, ObservableCollection<TElement> collection)
+    parameters:
+    - id: key
+      type: '{TKey}'
+    - id: collection
+      type: System.Collections.ObjectModel.ObservableCollection{{TElement}}
+    content.vb: Public Sub New(key As TKey, collection As ObservableCollection(Of TElement))
+  overload: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.#ctor*
+  nameWithType.vb: ReadOnlyObservableGroup(Of TKey, TElement).New(TKey, ObservableCollection(Of TElement))
+  fullName.vb: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup(Of TKey, TElement).New(TKey, System.Collections.ObjectModel.ObservableCollection(Of TElement))
+  name.vb: New(TKey, ObservableCollection(Of TElement))
+- uid: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.#ctor(CommunityToolkit.Mvvm.Collections.ObservableGroup{`0,`1})
+  commentId: M:CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.#ctor(CommunityToolkit.Mvvm.Collections.ObservableGroup{`0,`1})
+  id: '#ctor(CommunityToolkit.Mvvm.Collections.ObservableGroup{`0,`1})'
+  parent: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2
+  langs:
+  - csharp
+  - vb
+  name: ReadOnlyObservableGroup(ObservableGroup<TKey, TElement>)
+  nameWithType: ReadOnlyObservableGroup<TKey, TElement>.ReadOnlyObservableGroup(ObservableGroup<TKey, TElement>)
+  fullName: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup<TKey, TElement>.ReadOnlyObservableGroup(CommunityToolkit.Mvvm.Collections.ObservableGroup<TKey, TElement>)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: CommunityToolkit.Mvvm.Collections
+  syntax:
+    content: public ReadOnlyObservableGroup(ObservableGroup<TKey, TElement> group)
+    parameters:
+    - id: group
+      type: CommunityToolkit.Mvvm.Collections.ObservableGroup{{TKey},{TElement}}
+    content.vb: Public Sub New(group As ObservableGroup(Of TKey, TElement))
+  overload: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.#ctor*
+  nameWithType.vb: ReadOnlyObservableGroup(Of TKey, TElement).New(ObservableGroup(Of TKey, TElement))
+  fullName.vb: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup(Of TKey, TElement).New(CommunityToolkit.Mvvm.Collections.ObservableGroup(Of TKey, TElement))
+  name.vb: New(ObservableGroup(Of TKey, TElement))
+- uid: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.Key
+  commentId: P:CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.Key
+  id: Key
+  parent: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2
+  langs:
+  - csharp
+  - vb
+  name: Key
+  nameWithType: ReadOnlyObservableGroup<TKey, TElement>.Key
+  fullName: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup<TKey, TElement>.Key
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: CommunityToolkit.Mvvm.Collections
+  example: []
+  syntax:
+    content: public TKey Key { get; }
+    parameters: []
+    return:
+      type: '{TKey}'
+    content.vb: Public ReadOnly Property Key As TKey
+  overload: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.Key*
+  implements:
+  - CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup{{TKey}}.Key
+  - System.Linq.IGrouping{{TKey},{TElement}}.Key
+  nameWithType.vb: ReadOnlyObservableGroup(Of TKey, TElement).Key
+  fullName.vb: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup(Of TKey, TElement).Key
+references:
+- uid: CommunityToolkit.Mvvm.Collections
+  commentId: N:CommunityToolkit.Mvvm.Collections
+  isExternal: true
+  href: CommunityToolkit.html
+  name: CommunityToolkit.Mvvm.Collections
+  nameWithType: CommunityToolkit.Mvvm.Collections
+  fullName: CommunityToolkit.Mvvm.Collections
+  spec.csharp:
+  - uid: CommunityToolkit
+    name: CommunityToolkit
+    isExternal: true
+    href: CommunityToolkit.html
+  - name: .
+  - uid: CommunityToolkit.Mvvm
+    name: Mvvm
+    isExternal: true
+    href: CommunityToolkit.Mvvm.html
+  - name: .
+  - uid: CommunityToolkit.Mvvm.Collections
+    name: Collections
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.html
+  spec.vb:
+  - uid: CommunityToolkit
+    name: CommunityToolkit
+    isExternal: true
+    href: CommunityToolkit.html
+  - name: .
+  - uid: CommunityToolkit.Mvvm
+    name: Mvvm
+    isExternal: true
+    href: CommunityToolkit.Mvvm.html
+  - name: .
+  - uid: CommunityToolkit.Mvvm.Collections
+    name: Collections
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection{`1}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  name: ReadOnlyCollection<TElement>
+  nameWithType: ReadOnlyCollection<TElement>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<TElement>
+  nameWithType.vb: ReadOnlyCollection(Of TElement)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of TElement)
+  name.vb: ReadOnlyCollection(Of TElement)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: System.Collections.ObjectModel.ReadOnlyObservableCollection{{TElement}}
+  commentId: T:System.Collections.ObjectModel.ReadOnlyObservableCollection{`1}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1
+  name: ReadOnlyObservableCollection<TElement>
+  nameWithType: ReadOnlyObservableCollection<TElement>
+  fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection<TElement>
+  nameWithType.vb: ReadOnlyObservableCollection(Of TElement)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyObservableCollection(Of TElement)
+  name.vb: ReadOnlyObservableCollection(Of TElement)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+    name: ReadOnlyObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+    name: ReadOnlyObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: System.Collections.Generic.IList{{TElement}}
+  commentId: T:System.Collections.Generic.IList{`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<TElement>
+  nameWithType: IList<TElement>
+  fullName: System.Collections.Generic.IList<TElement>
+  nameWithType.vb: IList(Of TElement)
+  fullName.vb: System.Collections.Generic.IList(Of TElement)
+  name.vb: IList(Of TElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: System.Collections.Generic.ICollection{{TElement}}
+  commentId: T:System.Collections.Generic.ICollection{`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.ICollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<TElement>
+  nameWithType: ICollection<TElement>
+  fullName: System.Collections.Generic.ICollection<TElement>
+  nameWithType.vb: ICollection(Of TElement)
+  fullName.vb: System.Collections.Generic.ICollection(Of TElement)
+  name.vb: ICollection(Of TElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: System.Collections.IList
+  commentId: T:System.Collections.IList
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ilist
+  name: IList
+  nameWithType: IList
+  fullName: System.Collections.IList
+- uid: System.Collections.ICollection
+  commentId: T:System.Collections.ICollection
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.icollection
+  name: ICollection
+  nameWithType: ICollection
+  fullName: System.Collections.ICollection
+- uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup{{TKey},{TElement}}
+  commentId: T:CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup{`0,`1}
+  parent: CommunityToolkit.Mvvm.Collections
+  definition: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`2
+  href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-2.html
+  name: IReadOnlyObservableGroup<TKey, TElement>
+  nameWithType: IReadOnlyObservableGroup<TKey, TElement>
+  fullName: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup<TKey, TElement>
+  nameWithType.vb: IReadOnlyObservableGroup(Of TKey, TElement)
+  fullName.vb: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup(Of TKey, TElement)
+  name.vb: IReadOnlyObservableGroup(Of TKey, TElement)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`2
+    name: IReadOnlyObservableGroup
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`2
+    name: IReadOnlyObservableGroup
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup{{TKey}}
+  commentId: T:CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup{`0}
+  parent: CommunityToolkit.Mvvm.Collections
+  definition: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`1
+  href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-1.html
+  name: IReadOnlyObservableGroup<TKey>
+  nameWithType: IReadOnlyObservableGroup<TKey>
+  fullName: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup<TKey>
+  nameWithType.vb: IReadOnlyObservableGroup(Of TKey)
+  fullName.vb: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup(Of TKey)
+  name.vb: IReadOnlyObservableGroup(Of TKey)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`1
+    name: IReadOnlyObservableGroup
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-1.html
+  - name: <
+  - name: TKey
+  - name: '>'
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`1
+    name: IReadOnlyObservableGroup
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: )
+- uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup
+  commentId: T:CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup
+  parent: CommunityToolkit.Mvvm.Collections
+  isExternal: true
+  href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup.html
+  name: IReadOnlyObservableGroup
+  nameWithType: IReadOnlyObservableGroup
+  fullName: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup
+- uid: System.ComponentModel.INotifyPropertyChanged
+  commentId: T:System.ComponentModel.INotifyPropertyChanged
+  parent: System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.inotifypropertychanged
+  name: INotifyPropertyChanged
+  nameWithType: INotifyPropertyChanged
+  fullName: System.ComponentModel.INotifyPropertyChanged
+- uid: System.Collections.Specialized.INotifyCollectionChanged
+  commentId: T:System.Collections.Specialized.INotifyCollectionChanged
+  parent: System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.specialized.inotifycollectionchanged
+  name: INotifyCollectionChanged
+  nameWithType: INotifyCollectionChanged
+  fullName: System.Collections.Specialized.INotifyCollectionChanged
+- uid: System.Collections.Generic.IReadOnlyList{{TElement}}
+  commentId: T:System.Collections.Generic.IReadOnlyList{`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<TElement>
+  nameWithType: IReadOnlyList<TElement>
+  fullName: System.Collections.Generic.IReadOnlyList<TElement>
+  nameWithType.vb: IReadOnlyList(Of TElement)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of TElement)
+  name.vb: IReadOnlyList(Of TElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection{{TElement}}
+  commentId: T:System.Collections.Generic.IReadOnlyCollection{`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IReadOnlyCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<TElement>
+  nameWithType: IReadOnlyCollection<TElement>
+  fullName: System.Collections.Generic.IReadOnlyCollection<TElement>
+  nameWithType.vb: IReadOnlyCollection(Of TElement)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of TElement)
+  name.vb: IReadOnlyCollection(Of TElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: System.Linq.IGrouping{{TKey},{TElement}}
+  commentId: T:System.Linq.IGrouping{`0,`1}
+  parent: System.Linq
+  definition: System.Linq.IGrouping`2
+  href: https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2
+  name: IGrouping<TKey, TElement>
+  nameWithType: IGrouping<TKey, TElement>
+  fullName: System.Linq.IGrouping<TKey, TElement>
+  nameWithType.vb: IGrouping(Of TKey, TElement)
+  fullName.vb: System.Linq.IGrouping(Of TKey, TElement)
+  name.vb: IGrouping(Of TKey, TElement)
+  spec.csharp:
+  - uid: System.Linq.IGrouping`2
+    name: IGrouping
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IGrouping`2
+    name: IGrouping
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{{TElement}}
+  commentId: T:System.Collections.Generic.IEnumerable{`1}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<TElement>
+  nameWithType: IEnumerable<TElement>
+  fullName: System.Collections.Generic.IEnumerable<TElement>
+  nameWithType.vb: IEnumerable(Of TElement)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of TElement)
+  name.vb: IEnumerable(Of TElement)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: System.Collections.IEnumerable
+  commentId: T:System.Collections.IEnumerable
+  parent: System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.ienumerable
+  name: IEnumerable
+  nameWithType: IEnumerable
+  fullName: System.Collections.IEnumerable
+- uid: System.Collections.ObjectModel.ReadOnlyObservableCollection{{TElement}}.Empty
+  commentId: P:System.Collections.ObjectModel.ReadOnlyObservableCollection{`1}.Empty
+  parent: System.Collections.ObjectModel.ReadOnlyObservableCollection{{TElement}}
+  definition: System.Collections.ObjectModel.ReadOnlyObservableCollection`1.Empty
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1.empty
+  name: Empty
+  nameWithType: ReadOnlyObservableCollection<TElement>.Empty
+  fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection<TElement>.Empty
+  nameWithType.vb: ReadOnlyObservableCollection(Of TElement).Empty
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyObservableCollection(Of TElement).Empty
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}.Contains({TElement})
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{`1}.Contains(`1)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.Contains(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.contains
+  name: Contains(TElement)
+  nameWithType: ReadOnlyCollection<TElement>.Contains(TElement)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<TElement>.Contains(TElement)
+  nameWithType.vb: ReadOnlyCollection(Of TElement).Contains(TElement)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of TElement).Contains(TElement)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection{`1}.Contains(`1)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.contains
+  - name: (
+  - name: TElement
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection{`1}.Contains(`1)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.contains
+  - name: (
+  - name: TElement
+  - name: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}.CopyTo({TElement}[],System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{`1}.CopyTo(`1[],System.Int32)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.CopyTo(`0[],System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.copyto
+  name: CopyTo(TElement[], int)
+  nameWithType: ReadOnlyCollection<TElement>.CopyTo(TElement[], int)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<TElement>.CopyTo(TElement[], int)
+  nameWithType.vb: ReadOnlyCollection(Of TElement).CopyTo(TElement(), Integer)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of TElement).CopyTo(TElement(), Integer)
+  name.vb: CopyTo(TElement(), Integer)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection{`1}.CopyTo(`1[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.copyto
+  - name: (
+  - name: TElement
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection{`1}.CopyTo(`1[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.copyto
+  - name: (
+  - name: TElement
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}.GetEnumerator
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{`1}.GetEnumerator
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.GetEnumerator
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: ReadOnlyCollection<TElement>.GetEnumerator()
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<TElement>.GetEnumerator()
+  nameWithType.vb: ReadOnlyCollection(Of TElement).GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of TElement).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection{`1}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection{`1}.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}.IndexOf({TElement})
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection{`1}.IndexOf(`1)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.IndexOf(`0)
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.indexof
+  name: IndexOf(TElement)
+  nameWithType: ReadOnlyCollection<TElement>.IndexOf(TElement)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<TElement>.IndexOf(TElement)
+  nameWithType.vb: ReadOnlyCollection(Of TElement).IndexOf(TElement)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of TElement).IndexOf(TElement)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection{`1}.IndexOf(`1)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.indexof
+  - name: (
+  - name: TElement
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection{`1}.IndexOf(`1)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.indexof
+  - name: (
+  - name: TElement
+  - name: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}.Count
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection{`1}.Count
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.Count
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.count
+  name: Count
+  nameWithType: ReadOnlyCollection<TElement>.Count
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<TElement>.Count
+  nameWithType.vb: ReadOnlyCollection(Of TElement).Count
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of TElement).Count
+- uid: System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}.Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection{`1}.Item(System.Int32)
+  parent: System.Collections.ObjectModel.ReadOnlyCollection{{TElement}}
+  definition: System.Collections.ObjectModel.ReadOnlyCollection`1.Item(System.Int32)
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: ReadOnlyCollection<TElement>.this[int]
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<TElement>.this[int]
+  nameWithType.vb: ReadOnlyCollection(Of TElement).this[](Integer)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of TElement).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection{`1}.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.IEnumerable{`1}.AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1
+  commentId: M:AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  parent: AccoRevit.Addin.Extensions.CollectionExtensions
+  definition: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToObservableCollection<TElement>(IEnumerable<TElement>)
+  nameWithType: CollectionExtensions.ToObservableCollection<TElement>(IEnumerable<TElement>)
+  fullName: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection<TElement>(System.Collections.Generic.IEnumerable<TElement>)
+  nameWithType.vb: CollectionExtensions.ToObservableCollection(Of TElement)(IEnumerable(Of TElement))
+  fullName.vb: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection(Of TElement)(System.Collections.Generic.IEnumerable(Of TElement))
+  name.vb: ToObservableCollection(Of TElement)(IEnumerable(Of TElement))
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{`1})
+    name: ToObservableCollection
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: TElement
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{`1})
+    name: ToObservableCollection
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyList{`1}.Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{``0})
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions
+  definition: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{``0})
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IReadOnlyListExtensions_GetDefaultEnumerator__1_System_Collections_Generic_IReadOnlyList___0__
+  name: GetDefaultEnumerator<TElement>(IReadOnlyList<TElement>)
+  nameWithType: IReadOnlyListExtensions.GetDefaultEnumerator<TElement>(IReadOnlyList<TElement>)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator<TElement>(System.Collections.Generic.IReadOnlyList<TElement>)
+  nameWithType.vb: IReadOnlyListExtensions.GetDefaultEnumerator(Of TElement)(IReadOnlyList(Of TElement))
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator(Of TElement)(System.Collections.Generic.IReadOnlyList(Of TElement))
+  name.vb: GetDefaultEnumerator(Of TElement)(IReadOnlyList(Of TElement))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{`1})
+    name: GetDefaultEnumerator
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IReadOnlyListExtensions_GetDefaultEnumerator__1_System_Collections_Generic_IReadOnlyList___0__
+  - name: <
+  - name: TElement
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{`1})
+    name: GetDefaultEnumerator
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IReadOnlyListExtensions_GetDefaultEnumerator__1_System_Collections_Generic_IReadOnlyList___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+  commentId: T:System.Collections.ObjectModel.ReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  name: ReadOnlyCollection<T>
+  nameWithType: ReadOnlyCollection<T>
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>
+  nameWithType.vb: ReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T)
+  name.vb: ReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1
+    name: ReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel
+  commentId: N:System.Collections.ObjectModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.ObjectModel
+  nameWithType: System.Collections.ObjectModel
+  fullName: System.Collections.ObjectModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.ObjectModel
+    name: ObjectModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel
+- uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1
+  name: ReadOnlyObservableCollection<T>
+  nameWithType: ReadOnlyObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection<T>
+  nameWithType.vb: ReadOnlyObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyObservableCollection(Of T)
+  name.vb: ReadOnlyObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+    name: ReadOnlyObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1
+    name: ReadOnlyObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Collections.Generic.ICollection`1
+  commentId: T:System.Collections.Generic.ICollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  name: ICollection<T>
+  nameWithType: ICollection<T>
+  fullName: System.Collections.Generic.ICollection<T>
+  nameWithType.vb: ICollection(Of T)
+  fullName.vb: System.Collections.Generic.ICollection(Of T)
+  name.vb: ICollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+- uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`2
+  commentId: T:CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`2
+  isExternal: true
+  href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-2.html
+  name: IReadOnlyObservableGroup<TKey, TElement>
+  nameWithType: IReadOnlyObservableGroup<TKey, TElement>
+  fullName: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup<TKey, TElement>
+  nameWithType.vb: IReadOnlyObservableGroup(Of TKey, TElement)
+  fullName.vb: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup(Of TKey, TElement)
+  name.vb: IReadOnlyObservableGroup(Of TKey, TElement)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`2
+    name: IReadOnlyObservableGroup
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`2
+    name: IReadOnlyObservableGroup
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`1
+  commentId: T:CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`1
+  isExternal: true
+  href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-1.html
+  name: IReadOnlyObservableGroup<TKey>
+  nameWithType: IReadOnlyObservableGroup<TKey>
+  fullName: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup<TKey>
+  nameWithType.vb: IReadOnlyObservableGroup(Of TKey)
+  fullName.vb: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup(Of TKey)
+  name.vb: IReadOnlyObservableGroup(Of TKey)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`1
+    name: IReadOnlyObservableGroup
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-1.html
+  - name: <
+  - name: TKey
+  - name: '>'
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`1
+    name: IReadOnlyObservableGroup
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: )
+- uid: System.ComponentModel
+  commentId: N:System.ComponentModel
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.ComponentModel
+  nameWithType: System.ComponentModel
+  fullName: System.ComponentModel
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.ComponentModel
+    name: ComponentModel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel
+- uid: System.Collections.Specialized
+  commentId: N:System.Collections.Specialized
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Specialized
+  nameWithType: System.Collections.Specialized
+  fullName: System.Collections.Specialized
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Specialized
+    name: Specialized
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.specialized
+- uid: System.Collections.Generic.IReadOnlyList`1
+  commentId: T:System.Collections.Generic.IReadOnlyList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  name: IReadOnlyList<T>
+  nameWithType: IReadOnlyList<T>
+  fullName: System.Collections.Generic.IReadOnlyList<T>
+  nameWithType.vb: IReadOnlyList(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyList(Of T)
+  name.vb: IReadOnlyList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IReadOnlyCollection`1
+  commentId: T:System.Collections.Generic.IReadOnlyCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  name: IReadOnlyCollection<T>
+  nameWithType: IReadOnlyCollection<T>
+  fullName: System.Collections.Generic.IReadOnlyCollection<T>
+  nameWithType.vb: IReadOnlyCollection(Of T)
+  fullName.vb: System.Collections.Generic.IReadOnlyCollection(Of T)
+  name.vb: IReadOnlyCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IReadOnlyCollection`1
+    name: IReadOnlyCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Linq.IGrouping`2
+  commentId: T:System.Linq.IGrouping`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2
+  name: IGrouping<TKey, TElement>
+  nameWithType: IGrouping<TKey, TElement>
+  fullName: System.Linq.IGrouping<TKey, TElement>
+  nameWithType.vb: IGrouping(Of TKey, TElement)
+  fullName.vb: System.Linq.IGrouping(Of TKey, TElement)
+  name.vb: IGrouping(Of TKey, TElement)
+  spec.csharp:
+  - uid: System.Linq.IGrouping`2
+    name: IGrouping
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.IGrouping`2
+    name: IGrouping
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: System.Linq
+  commentId: N:System.Linq
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq
+  nameWithType: System.Linq
+  fullName: System.Linq
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.ReadOnlyObservableCollection`1.Empty
+  commentId: P:System.Collections.ObjectModel.ReadOnlyObservableCollection`1.Empty
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlyobservablecollection-1.empty
+  name: Empty
+  nameWithType: ReadOnlyObservableCollection<T>.Empty
+  fullName: System.Collections.ObjectModel.ReadOnlyObservableCollection<T>.Empty
+  nameWithType.vb: ReadOnlyObservableCollection(Of T).Empty
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyObservableCollection(Of T).Empty
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Contains(`0)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.Contains(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.contains
+  name: Contains(T)
+  nameWithType: ReadOnlyCollection<T>.Contains(T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.Contains(T)
+  nameWithType.vb: ReadOnlyCollection(Of T).Contains(T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).Contains(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Contains(`0)
+    name: Contains
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.contains
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.CopyTo(`0[],System.Int32)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.CopyTo(`0[],System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.copyto
+  name: CopyTo(T[], int)
+  nameWithType: ReadOnlyCollection<T>.CopyTo(T[], int)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.CopyTo(T[], int)
+  nameWithType.vb: ReadOnlyCollection(Of T).CopyTo(T(), Integer)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).CopyTo(T(), Integer)
+  name.vb: CopyTo(T(), Integer)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.copyto
+  - name: (
+  - name: T
+  - name: '['
+  - name: ']'
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.CopyTo(`0[],System.Int32)
+    name: CopyTo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.copyto
+  - name: (
+  - name: T
+  - name: (
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.GetEnumerator
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.GetEnumerator
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.getenumerator
+  name: GetEnumerator()
+  nameWithType: ReadOnlyCollection<T>.GetEnumerator()
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.GetEnumerator()
+  nameWithType.vb: ReadOnlyCollection(Of T).GetEnumerator()
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).GetEnumerator()
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.getenumerator
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.GetEnumerator
+    name: GetEnumerator
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.getenumerator
+  - name: (
+  - name: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.IndexOf(`0)
+  commentId: M:System.Collections.ObjectModel.ReadOnlyCollection`1.IndexOf(`0)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.indexof
+  name: IndexOf(T)
+  nameWithType: ReadOnlyCollection<T>.IndexOf(T)
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.IndexOf(T)
+  nameWithType.vb: ReadOnlyCollection(Of T).IndexOf(T)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).IndexOf(T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.indexof
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.IndexOf(`0)
+    name: IndexOf
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.indexof
+  - name: (
+  - name: T
+  - name: )
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Count
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection`1.Count
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.count
+  name: Count
+  nameWithType: ReadOnlyCollection<T>.Count
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.Count
+  nameWithType.vb: ReadOnlyCollection(Of T).Count
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).Count
+- uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Item(System.Int32)
+  commentId: P:System.Collections.ObjectModel.ReadOnlyCollection`1.Item(System.Int32)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: this[int]
+  nameWithType: ReadOnlyCollection<T>.this[int]
+  fullName: System.Collections.ObjectModel.ReadOnlyCollection<T>.this[int]
+  nameWithType.vb: ReadOnlyCollection(Of T).this[](Integer)
+  fullName.vb: System.Collections.ObjectModel.ReadOnlyCollection(Of T).this[](Integer)
+  name.vb: this[](Integer)
+  spec.csharp:
+  - name: this
+  - name: '['
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ']'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ReadOnlyCollection`1.Item(System.Int32)
+    name: this[]
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.readonlycollection-1.item
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  commentId: M:AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  name: ToObservableCollection<T>(IEnumerable<T>)
+  nameWithType: CollectionExtensions.ToObservableCollection<T>(IEnumerable<T>)
+  fullName: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection<T>(System.Collections.Generic.IEnumerable<T>)
+  nameWithType.vb: CollectionExtensions.ToObservableCollection(Of T)(IEnumerable(Of T))
+  fullName.vb: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  name.vb: ToObservableCollection(Of T)(IEnumerable(Of T))
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToObservableCollection
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.CollectionExtensions.ToObservableCollection``1(System.Collections.Generic.IEnumerable{``0})
+    name: ToObservableCollection
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.CollectionExtensions.html#AccoRevit_Addin_Extensions_CollectionExtensions_ToObservableCollection__1_System_Collections_Generic_IEnumerable___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: AccoRevit.Addin.Extensions.CollectionExtensions
+  commentId: T:AccoRevit.Addin.Extensions.CollectionExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.CollectionExtensions.html
+  name: CollectionExtensions
+  nameWithType: CollectionExtensions
+  fullName: AccoRevit.Addin.Extensions.CollectionExtensions
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{``0})
+  commentId: M:Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{``0})
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IReadOnlyListExtensions_GetDefaultEnumerator__1_System_Collections_Generic_IReadOnlyList___0__
+  name: GetDefaultEnumerator<T>(IReadOnlyList<T>)
+  nameWithType: IReadOnlyListExtensions.GetDefaultEnumerator<T>(IReadOnlyList<T>)
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator<T>(System.Collections.Generic.IReadOnlyList<T>)
+  nameWithType.vb: IReadOnlyListExtensions.GetDefaultEnumerator(Of T)(IReadOnlyList(Of T))
+  fullName.vb: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator(Of T)(System.Collections.Generic.IReadOnlyList(Of T))
+  name.vb: GetDefaultEnumerator(Of T)(IReadOnlyList(Of T))
+  spec.csharp:
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{``0})
+    name: GetDefaultEnumerator
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IReadOnlyListExtensions_GetDefaultEnumerator__1_System_Collections_Generic_IReadOnlyList___0__
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.GetDefaultEnumerator``1(System.Collections.Generic.IReadOnlyList{``0})
+    name: GetDefaultEnumerator
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html#Microsoft_CodeAnalysis_Elfie_Extensions_IReadOnlyListExtensions_GetDefaultEnumerator__1_System_Collections_Generic_IReadOnlyList___0__
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Collections.Generic.IReadOnlyList`1
+    name: IReadOnlyList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: )
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions
+  commentId: T:Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions
+  parent: Microsoft.CodeAnalysis.Elfie.Extensions
+  isExternal: true
+  href: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions.html
+  name: IReadOnlyListExtensions
+  nameWithType: IReadOnlyListExtensions
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions.IReadOnlyListExtensions
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: Microsoft.CodeAnalysis.Elfie.Extensions
+  commentId: N:Microsoft.CodeAnalysis.Elfie.Extensions
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.CodeAnalysis.Elfie.Extensions
+  nameWithType: Microsoft.CodeAnalysis.Elfie.Extensions
+  fullName: Microsoft.CodeAnalysis.Elfie.Extensions
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis
+    name: CodeAnalysis
+    isExternal: true
+    href: Microsoft.CodeAnalysis.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie
+    name: Elfie
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.html
+  - name: .
+  - uid: Microsoft.CodeAnalysis.Elfie.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.CodeAnalysis.Elfie.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.#ctor*
+  commentId: Overload:CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.#ctor
+  isExternal: true
+  href: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup-2.html#CommunityToolkit_Mvvm_Collections_ReadOnlyObservableGroup_2__ctor__0_System_Collections_ObjectModel_ObservableCollection__1__
+  name: ReadOnlyObservableGroup
+  nameWithType: ReadOnlyObservableGroup<TKey, TElement>.ReadOnlyObservableGroup
+  fullName: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup<TKey, TElement>.ReadOnlyObservableGroup
+  nameWithType.vb: ReadOnlyObservableGroup(Of TKey, TElement).New
+  fullName.vb: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup(Of TKey, TElement).New
+  name.vb: New
+- uid: '{TKey}'
+  commentId: '!:TKey'
+  definition: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: System.Collections.ObjectModel.ObservableCollection{{TElement}}
+  commentId: T:System.Collections.ObjectModel.ObservableCollection{`1}
+  parent: System.Collections.ObjectModel
+  definition: System.Collections.ObjectModel.ObservableCollection`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<TElement>
+  nameWithType: ObservableCollection<TElement>
+  fullName: System.Collections.ObjectModel.ObservableCollection<TElement>
+  nameWithType.vb: ObservableCollection(Of TElement)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of TElement)
+  name.vb: ObservableCollection(Of TElement)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: TKey
+  name: TKey
+  nameWithType: TKey
+  fullName: TKey
+- uid: System.Collections.ObjectModel.ObservableCollection`1
+  commentId: T:System.Collections.ObjectModel.ObservableCollection`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  name: ObservableCollection<T>
+  nameWithType: ObservableCollection<T>
+  fullName: System.Collections.ObjectModel.ObservableCollection<T>
+  nameWithType.vb: ObservableCollection(Of T)
+  fullName.vb: System.Collections.ObjectModel.ObservableCollection(Of T)
+  name.vb: ObservableCollection(Of T)
+  spec.csharp:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.ObjectModel.ObservableCollection`1
+    name: ObservableCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.objectmodel.observablecollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: CommunityToolkit.Mvvm.Collections.ObservableGroup{{TKey},{TElement}}
+  commentId: T:CommunityToolkit.Mvvm.Collections.ObservableGroup{``0,``1}
+  parent: CommunityToolkit.Mvvm.Collections
+  definition: CommunityToolkit.Mvvm.Collections.ObservableGroup`2
+  href: CommunityToolkit.Mvvm.Collections.ObservableGroup-2.html
+  name: ObservableGroup<TKey, TElement>
+  nameWithType: ObservableGroup<TKey, TElement>
+  fullName: CommunityToolkit.Mvvm.Collections.ObservableGroup<TKey, TElement>
+  nameWithType.vb: ObservableGroup(Of TKey, TElement)
+  fullName.vb: CommunityToolkit.Mvvm.Collections.ObservableGroup(Of TKey, TElement)
+  name.vb: ObservableGroup(Of TKey, TElement)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.Collections.ObservableGroup`2
+    name: ObservableGroup
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.ObservableGroup-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.Collections.ObservableGroup`2
+    name: ObservableGroup
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.ObservableGroup-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: CommunityToolkit.Mvvm.Collections.ObservableGroup`2
+  commentId: T:CommunityToolkit.Mvvm.Collections.ObservableGroup`2
+  isExternal: true
+  href: CommunityToolkit.Mvvm.Collections.ObservableGroup-2.html
+  name: ObservableGroup<TKey, TElement>
+  nameWithType: ObservableGroup<TKey, TElement>
+  fullName: CommunityToolkit.Mvvm.Collections.ObservableGroup<TKey, TElement>
+  nameWithType.vb: ObservableGroup(Of TKey, TElement)
+  fullName.vb: CommunityToolkit.Mvvm.Collections.ObservableGroup(Of TKey, TElement)
+  name.vb: ObservableGroup(Of TKey, TElement)
+  spec.csharp:
+  - uid: CommunityToolkit.Mvvm.Collections.ObservableGroup`2
+    name: ObservableGroup
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.ObservableGroup-2.html
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: '>'
+  spec.vb:
+  - uid: CommunityToolkit.Mvvm.Collections.ObservableGroup`2
+    name: ObservableGroup
+    isExternal: true
+    href: CommunityToolkit.Mvvm.Collections.ObservableGroup-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TElement
+  - name: )
+- uid: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.Key*
+  commentId: Overload:CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup`2.Key
+  isExternal: true
+  href: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup-2.html#CommunityToolkit_Mvvm_Collections_ReadOnlyObservableGroup_2_Key
+  name: Key
+  nameWithType: ReadOnlyObservableGroup<TKey, TElement>.Key
+  fullName: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup<TKey, TElement>.Key
+  nameWithType.vb: ReadOnlyObservableGroup(Of TKey, TElement).Key
+  fullName.vb: CommunityToolkit.Mvvm.Collections.ReadOnlyObservableGroup(Of TKey, TElement).Key
+- uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup{{TKey}}.Key
+  commentId: P:CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup{`0}.Key
+  parent: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup{{TKey}}
+  definition: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`1.Key
+  href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-1.html#CommunityToolkit_Mvvm_Collections_IReadOnlyObservableGroup_1_Key
+  name: Key
+  nameWithType: IReadOnlyObservableGroup<TKey>.Key
+  fullName: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup<TKey>.Key
+  nameWithType.vb: IReadOnlyObservableGroup(Of TKey).Key
+  fullName.vb: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup(Of TKey).Key
+- uid: System.Linq.IGrouping{{TKey},{TElement}}.Key
+  commentId: P:System.Linq.IGrouping{`0,`1}.Key
+  parent: System.Linq.IGrouping{{TKey},{TElement}}
+  definition: System.Linq.IGrouping`2.Key
+  href: https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2.key
+  name: Key
+  nameWithType: IGrouping<TKey, TElement>.Key
+  fullName: System.Linq.IGrouping<TKey, TElement>.Key
+  nameWithType.vb: IGrouping(Of TKey, TElement).Key
+  fullName.vb: System.Linq.IGrouping(Of TKey, TElement).Key
+- uid: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`1.Key
+  commentId: P:CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup`1.Key
+  isExternal: true
+  href: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup-1.html#CommunityToolkit_Mvvm_Collections_IReadOnlyObservableGroup_1_Key
+  name: Key
+  nameWithType: IReadOnlyObservableGroup<TKey>.Key
+  fullName: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup<TKey>.Key
+  nameWithType.vb: IReadOnlyObservableGroup(Of TKey).Key
+  fullName.vb: CommunityToolkit.Mvvm.Collections.IReadOnlyObservableGroup(Of TKey).Key
+- uid: System.Linq.IGrouping`2.Key
+  commentId: P:System.Linq.IGrouping`2.Key
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.igrouping-2.key
+  name: Key
+  nameWithType: IGrouping<TKey, TElement>.Key
+  fullName: System.Linq.IGrouping<TKey, TElement>.Key
+  nameWithType.vb: IGrouping(Of TKey, TElement).Key
+  fullName.vb: System.Linq.IGrouping(Of TKey, TElement).Key

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/dotnet/docfx/main/schemas/docfx.schema.json",
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "C:/Users/jpitts/source/repos/AccoRevit.Addin.Solution/AccoRevit.Addin.Solution/source/AccoRevit.Addin/bin",
+          "files": [
+            "Release.R25/AccoRevit.Addin.dll"
+          ],
+          "exclude": [
+            "**/publish/**",
+            "**/obj/**",
+            "**/ref/**"
+          ]
+        }
+      ],
+      "references": [
+        "C:/Users/jpitts/source/repos/AccoRevit.Addin.Solution/AccoRevit.Addin.Solution/source/AccoRevit.Addin/bin/Release.R25/AccoRevit.Addin.dll"
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "index.md",
+          "toc.yml",
+          "articles/**.md",
+          "api/**.yml",
+          "api/index.md"
+        ],
+        "exclude": [
+          "_site/**"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "../docs",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "AccoRevit.Addin",
+      "_appTitle": "AccoRevit.Addin",
+      "_enableSearch": true
+    }
+  }
+}

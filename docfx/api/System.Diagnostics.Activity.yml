@@ -1,0 +1,3307 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.Diagnostics.Activity
+  commentId: T:System.Diagnostics.Activity
+  id: Activity
+  parent: System.Diagnostics
+  children:
+  - System.Diagnostics.Activity.#ctor(System.String)
+  - System.Diagnostics.Activity.ActivityTraceFlags
+  - System.Diagnostics.Activity.AddBaggage(System.String,System.String)
+  - System.Diagnostics.Activity.AddEvent(System.Diagnostics.ActivityEvent)
+  - System.Diagnostics.Activity.AddException(System.Exception,System.Diagnostics.TagList@,System.DateTimeOffset)
+  - System.Diagnostics.Activity.AddLink(System.Diagnostics.ActivityLink)
+  - System.Diagnostics.Activity.AddTag(System.String,System.Object)
+  - System.Diagnostics.Activity.AddTag(System.String,System.String)
+  - System.Diagnostics.Activity.Baggage
+  - System.Diagnostics.Activity.Context
+  - System.Diagnostics.Activity.Current
+  - System.Diagnostics.Activity.CurrentChanged
+  - System.Diagnostics.Activity.DefaultIdFormat
+  - System.Diagnostics.Activity.DisplayName
+  - System.Diagnostics.Activity.Dispose
+  - System.Diagnostics.Activity.Dispose(System.Boolean)
+  - System.Diagnostics.Activity.Duration
+  - System.Diagnostics.Activity.EnumerateEvents
+  - System.Diagnostics.Activity.EnumerateLinks
+  - System.Diagnostics.Activity.EnumerateTagObjects
+  - System.Diagnostics.Activity.Events
+  - System.Diagnostics.Activity.ForceDefaultIdFormat
+  - System.Diagnostics.Activity.GetBaggageItem(System.String)
+  - System.Diagnostics.Activity.GetCustomProperty(System.String)
+  - System.Diagnostics.Activity.GetTagItem(System.String)
+  - System.Diagnostics.Activity.HasRemoteParent
+  - System.Diagnostics.Activity.Id
+  - System.Diagnostics.Activity.IdFormat
+  - System.Diagnostics.Activity.IsAllDataRequested
+  - System.Diagnostics.Activity.IsStopped
+  - System.Diagnostics.Activity.Kind
+  - System.Diagnostics.Activity.Links
+  - System.Diagnostics.Activity.OperationName
+  - System.Diagnostics.Activity.Parent
+  - System.Diagnostics.Activity.ParentId
+  - System.Diagnostics.Activity.ParentSpanId
+  - System.Diagnostics.Activity.Recorded
+  - System.Diagnostics.Activity.RootId
+  - System.Diagnostics.Activity.SetBaggage(System.String,System.String)
+  - System.Diagnostics.Activity.SetCustomProperty(System.String,System.Object)
+  - System.Diagnostics.Activity.SetEndTime(System.DateTime)
+  - System.Diagnostics.Activity.SetIdFormat(System.Diagnostics.ActivityIdFormat)
+  - System.Diagnostics.Activity.SetParentId(System.Diagnostics.ActivityTraceId,System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivityTraceFlags)
+  - System.Diagnostics.Activity.SetParentId(System.String)
+  - System.Diagnostics.Activity.SetStartTime(System.DateTime)
+  - System.Diagnostics.Activity.SetStatus(System.Diagnostics.ActivityStatusCode,System.String)
+  - System.Diagnostics.Activity.SetTag(System.String,System.Object)
+  - System.Diagnostics.Activity.Source
+  - System.Diagnostics.Activity.SpanId
+  - System.Diagnostics.Activity.Start
+  - System.Diagnostics.Activity.StartTimeUtc
+  - System.Diagnostics.Activity.Status
+  - System.Diagnostics.Activity.StatusDescription
+  - System.Diagnostics.Activity.Stop
+  - System.Diagnostics.Activity.TagObjects
+  - System.Diagnostics.Activity.Tags
+  - System.Diagnostics.Activity.TraceId
+  - System.Diagnostics.Activity.TraceIdGenerator
+  - System.Diagnostics.Activity.TraceStateString
+  langs:
+  - csharp
+  - vb
+  name: Activity
+  nameWithType: Activity
+  fullName: System.Diagnostics.Activity
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: 'public class Activity : IDisposable'
+    content.vb: Public Class Activity Implements IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+- uid: System.Diagnostics.Activity.SetStatus(System.Diagnostics.ActivityStatusCode,System.String)
+  commentId: M:System.Diagnostics.Activity.SetStatus(System.Diagnostics.ActivityStatusCode,System.String)
+  id: SetStatus(System.Diagnostics.ActivityStatusCode,System.String)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: SetStatus(ActivityStatusCode, string?)
+  nameWithType: Activity.SetStatus(ActivityStatusCode, string?)
+  fullName: System.Diagnostics.Activity.SetStatus(System.Diagnostics.ActivityStatusCode, string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity SetStatus(ActivityStatusCode code, string? description = null)
+    parameters:
+    - id: code
+      type: System.Diagnostics.ActivityStatusCode
+    - id: description
+      type: System.String
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function SetStatus(code As ActivityStatusCode, description As String = Nothing) As Activity
+  overload: System.Diagnostics.Activity.SetStatus*
+  nameWithType.vb: Activity.SetStatus(ActivityStatusCode, String)
+  fullName.vb: System.Diagnostics.Activity.SetStatus(System.Diagnostics.ActivityStatusCode, String)
+  name.vb: SetStatus(ActivityStatusCode, String)
+- uid: System.Diagnostics.Activity.EnumerateTagObjects
+  commentId: M:System.Diagnostics.Activity.EnumerateTagObjects
+  id: EnumerateTagObjects
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: EnumerateTagObjects()
+  nameWithType: Activity.EnumerateTagObjects()
+  fullName: System.Diagnostics.Activity.EnumerateTagObjects()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity.Enumerator<KeyValuePair<string, object?>> EnumerateTagObjects()
+    return:
+      type: System.Diagnostics.Activity.Enumerator{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+    content.vb: Public Function EnumerateTagObjects() As Activity.Enumerator(Of KeyValuePair(Of String, Object))
+  overload: System.Diagnostics.Activity.EnumerateTagObjects*
+- uid: System.Diagnostics.Activity.EnumerateEvents
+  commentId: M:System.Diagnostics.Activity.EnumerateEvents
+  id: EnumerateEvents
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: EnumerateEvents()
+  nameWithType: Activity.EnumerateEvents()
+  fullName: System.Diagnostics.Activity.EnumerateEvents()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity.Enumerator<ActivityEvent> EnumerateEvents()
+    return:
+      type: System.Diagnostics.Activity.Enumerator{System.Diagnostics.ActivityEvent}
+    content.vb: Public Function EnumerateEvents() As Activity.Enumerator(Of ActivityEvent)
+  overload: System.Diagnostics.Activity.EnumerateEvents*
+- uid: System.Diagnostics.Activity.EnumerateLinks
+  commentId: M:System.Diagnostics.Activity.EnumerateLinks
+  id: EnumerateLinks
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: EnumerateLinks()
+  nameWithType: Activity.EnumerateLinks()
+  fullName: System.Diagnostics.Activity.EnumerateLinks()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity.Enumerator<ActivityLink> EnumerateLinks()
+    return:
+      type: System.Diagnostics.Activity.Enumerator{System.Diagnostics.ActivityLink}
+    content.vb: Public Function EnumerateLinks() As Activity.Enumerator(Of ActivityLink)
+  overload: System.Diagnostics.Activity.EnumerateLinks*
+- uid: System.Diagnostics.Activity.GetBaggageItem(System.String)
+  commentId: M:System.Diagnostics.Activity.GetBaggageItem(System.String)
+  id: GetBaggageItem(System.String)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: GetBaggageItem(string)
+  nameWithType: Activity.GetBaggageItem(string)
+  fullName: System.Diagnostics.Activity.GetBaggageItem(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public string? GetBaggageItem(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Function GetBaggageItem(key As String) As String
+  overload: System.Diagnostics.Activity.GetBaggageItem*
+  nameWithType.vb: Activity.GetBaggageItem(String)
+  fullName.vb: System.Diagnostics.Activity.GetBaggageItem(String)
+  name.vb: GetBaggageItem(String)
+- uid: System.Diagnostics.Activity.GetTagItem(System.String)
+  commentId: M:System.Diagnostics.Activity.GetTagItem(System.String)
+  id: GetTagItem(System.String)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: GetTagItem(string)
+  nameWithType: Activity.GetTagItem(string)
+  fullName: System.Diagnostics.Activity.GetTagItem(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public object? GetTagItem(string key)
+    parameters:
+    - id: key
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Function GetTagItem(key As String) As Object
+  overload: System.Diagnostics.Activity.GetTagItem*
+  nameWithType.vb: Activity.GetTagItem(String)
+  fullName.vb: System.Diagnostics.Activity.GetTagItem(String)
+  name.vb: GetTagItem(String)
+- uid: System.Diagnostics.Activity.#ctor(System.String)
+  commentId: M:System.Diagnostics.Activity.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Activity(string)
+  nameWithType: Activity.Activity(string)
+  fullName: System.Diagnostics.Activity.Activity(string)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity(string operationName)
+    parameters:
+    - id: operationName
+      type: System.String
+    content.vb: Public Sub New(operationName As String)
+  overload: System.Diagnostics.Activity.#ctor*
+  nameWithType.vb: Activity.New(String)
+  fullName.vb: System.Diagnostics.Activity.New(String)
+  name.vb: New(String)
+- uid: System.Diagnostics.Activity.AddTag(System.String,System.String)
+  commentId: M:System.Diagnostics.Activity.AddTag(System.String,System.String)
+  id: AddTag(System.String,System.String)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: AddTag(string, string?)
+  nameWithType: Activity.AddTag(string, string?)
+  fullName: System.Diagnostics.Activity.AddTag(string, string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity AddTag(string key, string? value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.String
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function AddTag(key As String, value As String) As Activity
+  overload: System.Diagnostics.Activity.AddTag*
+  nameWithType.vb: Activity.AddTag(String, String)
+  fullName.vb: System.Diagnostics.Activity.AddTag(String, String)
+  name.vb: AddTag(String, String)
+- uid: System.Diagnostics.Activity.AddTag(System.String,System.Object)
+  commentId: M:System.Diagnostics.Activity.AddTag(System.String,System.Object)
+  id: AddTag(System.String,System.Object)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: AddTag(string, object?)
+  nameWithType: Activity.AddTag(string, object?)
+  fullName: System.Diagnostics.Activity.AddTag(string, object?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity AddTag(string key, object? value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Object
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function AddTag(key As String, value As Object) As Activity
+  overload: System.Diagnostics.Activity.AddTag*
+  nameWithType.vb: Activity.AddTag(String, Object)
+  fullName.vb: System.Diagnostics.Activity.AddTag(String, Object)
+  name.vb: AddTag(String, Object)
+- uid: System.Diagnostics.Activity.SetTag(System.String,System.Object)
+  commentId: M:System.Diagnostics.Activity.SetTag(System.String,System.Object)
+  id: SetTag(System.String,System.Object)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: SetTag(string, object?)
+  nameWithType: Activity.SetTag(string, object?)
+  fullName: System.Diagnostics.Activity.SetTag(string, object?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity SetTag(string key, object? value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.Object
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function SetTag(key As String, value As Object) As Activity
+  overload: System.Diagnostics.Activity.SetTag*
+  nameWithType.vb: Activity.SetTag(String, Object)
+  fullName.vb: System.Diagnostics.Activity.SetTag(String, Object)
+  name.vb: SetTag(String, Object)
+- uid: System.Diagnostics.Activity.AddEvent(System.Diagnostics.ActivityEvent)
+  commentId: M:System.Diagnostics.Activity.AddEvent(System.Diagnostics.ActivityEvent)
+  id: AddEvent(System.Diagnostics.ActivityEvent)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: AddEvent(ActivityEvent)
+  nameWithType: Activity.AddEvent(ActivityEvent)
+  fullName: System.Diagnostics.Activity.AddEvent(System.Diagnostics.ActivityEvent)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity AddEvent(ActivityEvent e)
+    parameters:
+    - id: e
+      type: System.Diagnostics.ActivityEvent
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function AddEvent(e As ActivityEvent) As Activity
+  overload: System.Diagnostics.Activity.AddEvent*
+- uid: System.Diagnostics.Activity.AddException(System.Exception,System.Diagnostics.TagList@,System.DateTimeOffset)
+  commentId: M:System.Diagnostics.Activity.AddException(System.Exception,System.Diagnostics.TagList@,System.DateTimeOffset)
+  id: AddException(System.Exception,System.Diagnostics.TagList@,System.DateTimeOffset)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: AddException(Exception, in TagList, DateTimeOffset)
+  nameWithType: Activity.AddException(Exception, in TagList, DateTimeOffset)
+  fullName: System.Diagnostics.Activity.AddException(System.Exception, in System.Diagnostics.TagList, System.DateTimeOffset)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity AddException(Exception exception, in TagList tags = default, DateTimeOffset timestamp = default)
+    parameters:
+    - id: exception
+      type: System.Exception
+    - id: tags
+      type: System.Diagnostics.TagList
+    - id: timestamp
+      type: System.DateTimeOffset
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function AddException(exception As Exception, tags As TagList = Nothing, timestamp As DateTimeOffset = Nothing) As Activity
+  overload: System.Diagnostics.Activity.AddException*
+  nameWithType.vb: Activity.AddException(Exception, TagList, DateTimeOffset)
+  fullName.vb: System.Diagnostics.Activity.AddException(System.Exception, System.Diagnostics.TagList, System.DateTimeOffset)
+  name.vb: AddException(Exception, TagList, DateTimeOffset)
+- uid: System.Diagnostics.Activity.AddLink(System.Diagnostics.ActivityLink)
+  commentId: M:System.Diagnostics.Activity.AddLink(System.Diagnostics.ActivityLink)
+  id: AddLink(System.Diagnostics.ActivityLink)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: AddLink(ActivityLink)
+  nameWithType: Activity.AddLink(ActivityLink)
+  fullName: System.Diagnostics.Activity.AddLink(System.Diagnostics.ActivityLink)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity AddLink(ActivityLink link)
+    parameters:
+    - id: link
+      type: System.Diagnostics.ActivityLink
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function AddLink(link As ActivityLink) As Activity
+  overload: System.Diagnostics.Activity.AddLink*
+- uid: System.Diagnostics.Activity.AddBaggage(System.String,System.String)
+  commentId: M:System.Diagnostics.Activity.AddBaggage(System.String,System.String)
+  id: AddBaggage(System.String,System.String)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: AddBaggage(string, string?)
+  nameWithType: Activity.AddBaggage(string, string?)
+  fullName: System.Diagnostics.Activity.AddBaggage(string, string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity AddBaggage(string key, string? value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.String
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function AddBaggage(key As String, value As String) As Activity
+  overload: System.Diagnostics.Activity.AddBaggage*
+  nameWithType.vb: Activity.AddBaggage(String, String)
+  fullName.vb: System.Diagnostics.Activity.AddBaggage(String, String)
+  name.vb: AddBaggage(String, String)
+- uid: System.Diagnostics.Activity.SetBaggage(System.String,System.String)
+  commentId: M:System.Diagnostics.Activity.SetBaggage(System.String,System.String)
+  id: SetBaggage(System.String,System.String)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: SetBaggage(string, string?)
+  nameWithType: Activity.SetBaggage(string, string?)
+  fullName: System.Diagnostics.Activity.SetBaggage(string, string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity SetBaggage(string key, string? value)
+    parameters:
+    - id: key
+      type: System.String
+    - id: value
+      type: System.String
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function SetBaggage(key As String, value As String) As Activity
+  overload: System.Diagnostics.Activity.SetBaggage*
+  nameWithType.vb: Activity.SetBaggage(String, String)
+  fullName.vb: System.Diagnostics.Activity.SetBaggage(String, String)
+  name.vb: SetBaggage(String, String)
+- uid: System.Diagnostics.Activity.SetParentId(System.String)
+  commentId: M:System.Diagnostics.Activity.SetParentId(System.String)
+  id: SetParentId(System.String)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: SetParentId(string)
+  nameWithType: Activity.SetParentId(string)
+  fullName: System.Diagnostics.Activity.SetParentId(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity SetParentId(string parentId)
+    parameters:
+    - id: parentId
+      type: System.String
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function SetParentId(parentId As String) As Activity
+  overload: System.Diagnostics.Activity.SetParentId*
+  nameWithType.vb: Activity.SetParentId(String)
+  fullName.vb: System.Diagnostics.Activity.SetParentId(String)
+  name.vb: SetParentId(String)
+- uid: System.Diagnostics.Activity.SetParentId(System.Diagnostics.ActivityTraceId,System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivityTraceFlags)
+  commentId: M:System.Diagnostics.Activity.SetParentId(System.Diagnostics.ActivityTraceId,System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivityTraceFlags)
+  id: SetParentId(System.Diagnostics.ActivityTraceId,System.Diagnostics.ActivitySpanId,System.Diagnostics.ActivityTraceFlags)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: SetParentId(ActivityTraceId, ActivitySpanId, ActivityTraceFlags)
+  nameWithType: Activity.SetParentId(ActivityTraceId, ActivitySpanId, ActivityTraceFlags)
+  fullName: System.Diagnostics.Activity.SetParentId(System.Diagnostics.ActivityTraceId, System.Diagnostics.ActivitySpanId, System.Diagnostics.ActivityTraceFlags)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity SetParentId(ActivityTraceId traceId, ActivitySpanId spanId, ActivityTraceFlags activityTraceFlags = ActivityTraceFlags.None)
+    parameters:
+    - id: traceId
+      type: System.Diagnostics.ActivityTraceId
+    - id: spanId
+      type: System.Diagnostics.ActivitySpanId
+    - id: activityTraceFlags
+      type: System.Diagnostics.ActivityTraceFlags
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function SetParentId(traceId As ActivityTraceId, spanId As ActivitySpanId, activityTraceFlags As ActivityTraceFlags = ActivityTraceFlags.None) As Activity
+  overload: System.Diagnostics.Activity.SetParentId*
+- uid: System.Diagnostics.Activity.SetStartTime(System.DateTime)
+  commentId: M:System.Diagnostics.Activity.SetStartTime(System.DateTime)
+  id: SetStartTime(System.DateTime)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: SetStartTime(DateTime)
+  nameWithType: Activity.SetStartTime(DateTime)
+  fullName: System.Diagnostics.Activity.SetStartTime(System.DateTime)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity SetStartTime(DateTime startTimeUtc)
+    parameters:
+    - id: startTimeUtc
+      type: System.DateTime
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function SetStartTime(startTimeUtc As Date) As Activity
+  overload: System.Diagnostics.Activity.SetStartTime*
+  nameWithType.vb: Activity.SetStartTime(Date)
+  fullName.vb: System.Diagnostics.Activity.SetStartTime(Date)
+  name.vb: SetStartTime(Date)
+- uid: System.Diagnostics.Activity.SetEndTime(System.DateTime)
+  commentId: M:System.Diagnostics.Activity.SetEndTime(System.DateTime)
+  id: SetEndTime(System.DateTime)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: SetEndTime(DateTime)
+  nameWithType: Activity.SetEndTime(DateTime)
+  fullName: System.Diagnostics.Activity.SetEndTime(System.DateTime)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity SetEndTime(DateTime endTimeUtc)
+    parameters:
+    - id: endTimeUtc
+      type: System.DateTime
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function SetEndTime(endTimeUtc As Date) As Activity
+  overload: System.Diagnostics.Activity.SetEndTime*
+  nameWithType.vb: Activity.SetEndTime(Date)
+  fullName.vb: System.Diagnostics.Activity.SetEndTime(Date)
+  name.vb: SetEndTime(Date)
+- uid: System.Diagnostics.Activity.Start
+  commentId: M:System.Diagnostics.Activity.Start
+  id: Start
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: Activity.Start()
+  fullName: System.Diagnostics.Activity.Start()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity Start()
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function Start() As Activity
+  overload: System.Diagnostics.Activity.Start*
+- uid: System.Diagnostics.Activity.Stop
+  commentId: M:System.Diagnostics.Activity.Stop
+  id: Stop
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: Activity.Stop()
+  fullName: System.Diagnostics.Activity.Stop()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub [Stop]()
+  overload: System.Diagnostics.Activity.Stop*
+- uid: System.Diagnostics.Activity.SetIdFormat(System.Diagnostics.ActivityIdFormat)
+  commentId: M:System.Diagnostics.Activity.SetIdFormat(System.Diagnostics.ActivityIdFormat)
+  id: SetIdFormat(System.Diagnostics.ActivityIdFormat)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: SetIdFormat(ActivityIdFormat)
+  nameWithType: Activity.SetIdFormat(ActivityIdFormat)
+  fullName: System.Diagnostics.Activity.SetIdFormat(System.Diagnostics.ActivityIdFormat)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity SetIdFormat(ActivityIdFormat format)
+    parameters:
+    - id: format
+      type: System.Diagnostics.ActivityIdFormat
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Function SetIdFormat(format As ActivityIdFormat) As Activity
+  overload: System.Diagnostics.Activity.SetIdFormat*
+- uid: System.Diagnostics.Activity.Dispose
+  commentId: M:System.Diagnostics.Activity.Dispose
+  id: Dispose
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: Activity.Dispose()
+  fullName: System.Diagnostics.Activity.Dispose()
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: System.Diagnostics.Activity.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+- uid: System.Diagnostics.Activity.Dispose(System.Boolean)
+  commentId: M:System.Diagnostics.Activity.Dispose(System.Boolean)
+  id: Dispose(System.Boolean)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Dispose(bool)
+  nameWithType: Activity.Dispose(bool)
+  fullName: System.Diagnostics.Activity.Dispose(bool)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: protected virtual void Dispose(bool disposing)
+    parameters:
+    - id: disposing
+      type: System.Boolean
+    content.vb: Protected Overridable Sub Dispose(disposing As Boolean)
+  overload: System.Diagnostics.Activity.Dispose*
+  nameWithType.vb: Activity.Dispose(Boolean)
+  fullName.vb: System.Diagnostics.Activity.Dispose(Boolean)
+  name.vb: Dispose(Boolean)
+- uid: System.Diagnostics.Activity.SetCustomProperty(System.String,System.Object)
+  commentId: M:System.Diagnostics.Activity.SetCustomProperty(System.String,System.Object)
+  id: SetCustomProperty(System.String,System.Object)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: SetCustomProperty(string, object?)
+  nameWithType: Activity.SetCustomProperty(string, object?)
+  fullName: System.Diagnostics.Activity.SetCustomProperty(string, object?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public void SetCustomProperty(string propertyName, object? propertyValue)
+    parameters:
+    - id: propertyName
+      type: System.String
+    - id: propertyValue
+      type: System.Object
+    content.vb: Public Sub SetCustomProperty(propertyName As String, propertyValue As Object)
+  overload: System.Diagnostics.Activity.SetCustomProperty*
+  nameWithType.vb: Activity.SetCustomProperty(String, Object)
+  fullName.vb: System.Diagnostics.Activity.SetCustomProperty(String, Object)
+  name.vb: SetCustomProperty(String, Object)
+- uid: System.Diagnostics.Activity.GetCustomProperty(System.String)
+  commentId: M:System.Diagnostics.Activity.GetCustomProperty(System.String)
+  id: GetCustomProperty(System.String)
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: GetCustomProperty(string)
+  nameWithType: Activity.GetCustomProperty(string)
+  fullName: System.Diagnostics.Activity.GetCustomProperty(string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public object? GetCustomProperty(string propertyName)
+    parameters:
+    - id: propertyName
+      type: System.String
+    return:
+      type: System.Object
+    content.vb: Public Function GetCustomProperty(propertyName As String) As Object
+  overload: System.Diagnostics.Activity.GetCustomProperty*
+  nameWithType.vb: Activity.GetCustomProperty(String)
+  fullName.vb: System.Diagnostics.Activity.GetCustomProperty(String)
+  name.vb: GetCustomProperty(String)
+- uid: System.Diagnostics.Activity.ForceDefaultIdFormat
+  commentId: P:System.Diagnostics.Activity.ForceDefaultIdFormat
+  id: ForceDefaultIdFormat
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: ForceDefaultIdFormat
+  nameWithType: Activity.ForceDefaultIdFormat
+  fullName: System.Diagnostics.Activity.ForceDefaultIdFormat
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static bool ForceDefaultIdFormat { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Property ForceDefaultIdFormat As Boolean
+  overload: System.Diagnostics.Activity.ForceDefaultIdFormat*
+- uid: System.Diagnostics.Activity.Status
+  commentId: P:System.Diagnostics.Activity.Status
+  id: Status
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Status
+  nameWithType: Activity.Status
+  fullName: System.Diagnostics.Activity.Status
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public ActivityStatusCode Status { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivityStatusCode
+    content.vb: Public ReadOnly Property Status As ActivityStatusCode
+  overload: System.Diagnostics.Activity.Status*
+- uid: System.Diagnostics.Activity.StatusDescription
+  commentId: P:System.Diagnostics.Activity.StatusDescription
+  id: StatusDescription
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: StatusDescription
+  nameWithType: Activity.StatusDescription
+  fullName: System.Diagnostics.Activity.StatusDescription
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public string? StatusDescription { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property StatusDescription As String
+  overload: System.Diagnostics.Activity.StatusDescription*
+- uid: System.Diagnostics.Activity.HasRemoteParent
+  commentId: P:System.Diagnostics.Activity.HasRemoteParent
+  id: HasRemoteParent
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: HasRemoteParent
+  nameWithType: Activity.HasRemoteParent
+  fullName: System.Diagnostics.Activity.HasRemoteParent
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public bool HasRemoteParent { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property HasRemoteParent As Boolean
+  overload: System.Diagnostics.Activity.HasRemoteParent*
+- uid: System.Diagnostics.Activity.Current
+  commentId: P:System.Diagnostics.Activity.Current
+  id: Current
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Current
+  nameWithType: Activity.Current
+  fullName: System.Diagnostics.Activity.Current
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static Activity? Current { get; set; }
+    parameters: []
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public Shared Property Current As Activity
+  overload: System.Diagnostics.Activity.Current*
+- uid: System.Diagnostics.Activity.Kind
+  commentId: P:System.Diagnostics.Activity.Kind
+  id: Kind
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Kind
+  nameWithType: Activity.Kind
+  fullName: System.Diagnostics.Activity.Kind
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public ActivityKind Kind { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivityKind
+    content.vb: Public ReadOnly Property Kind As ActivityKind
+  overload: System.Diagnostics.Activity.Kind*
+- uid: System.Diagnostics.Activity.OperationName
+  commentId: P:System.Diagnostics.Activity.OperationName
+  id: OperationName
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: OperationName
+  nameWithType: Activity.OperationName
+  fullName: System.Diagnostics.Activity.OperationName
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public string OperationName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property OperationName As String
+  overload: System.Diagnostics.Activity.OperationName*
+- uid: System.Diagnostics.Activity.DisplayName
+  commentId: P:System.Diagnostics.Activity.DisplayName
+  id: DisplayName
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: DisplayName
+  nameWithType: Activity.DisplayName
+  fullName: System.Diagnostics.Activity.DisplayName
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public string DisplayName { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property DisplayName As String
+  overload: System.Diagnostics.Activity.DisplayName*
+- uid: System.Diagnostics.Activity.Source
+  commentId: P:System.Diagnostics.Activity.Source
+  id: Source
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Source
+  nameWithType: Activity.Source
+  fullName: System.Diagnostics.Activity.Source
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public ActivitySource Source { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivitySource
+    content.vb: Public ReadOnly Property Source As ActivitySource
+  overload: System.Diagnostics.Activity.Source*
+- uid: System.Diagnostics.Activity.Parent
+  commentId: P:System.Diagnostics.Activity.Parent
+  id: Parent
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Parent
+  nameWithType: Activity.Parent
+  fullName: System.Diagnostics.Activity.Parent
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public Activity? Parent { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.Activity
+    content.vb: Public ReadOnly Property Parent As Activity
+  overload: System.Diagnostics.Activity.Parent*
+- uid: System.Diagnostics.Activity.Duration
+  commentId: P:System.Diagnostics.Activity.Duration
+  id: Duration
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Duration
+  nameWithType: Activity.Duration
+  fullName: System.Diagnostics.Activity.Duration
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public TimeSpan Duration { get; }
+    parameters: []
+    return:
+      type: System.TimeSpan
+    content.vb: Public ReadOnly Property Duration As TimeSpan
+  overload: System.Diagnostics.Activity.Duration*
+- uid: System.Diagnostics.Activity.StartTimeUtc
+  commentId: P:System.Diagnostics.Activity.StartTimeUtc
+  id: StartTimeUtc
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: StartTimeUtc
+  nameWithType: Activity.StartTimeUtc
+  fullName: System.Diagnostics.Activity.StartTimeUtc
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public DateTime StartTimeUtc { get; }
+    parameters: []
+    return:
+      type: System.DateTime
+    content.vb: Public ReadOnly Property StartTimeUtc As Date
+  overload: System.Diagnostics.Activity.StartTimeUtc*
+- uid: System.Diagnostics.Activity.Id
+  commentId: P:System.Diagnostics.Activity.Id
+  id: Id
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Id
+  nameWithType: Activity.Id
+  fullName: System.Diagnostics.Activity.Id
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public string? Id { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Id As String
+  overload: System.Diagnostics.Activity.Id*
+- uid: System.Diagnostics.Activity.ParentId
+  commentId: P:System.Diagnostics.Activity.ParentId
+  id: ParentId
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: ParentId
+  nameWithType: Activity.ParentId
+  fullName: System.Diagnostics.Activity.ParentId
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public string? ParentId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ParentId As String
+  overload: System.Diagnostics.Activity.ParentId*
+- uid: System.Diagnostics.Activity.RootId
+  commentId: P:System.Diagnostics.Activity.RootId
+  id: RootId
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: RootId
+  nameWithType: Activity.RootId
+  fullName: System.Diagnostics.Activity.RootId
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public string? RootId { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property RootId As String
+  overload: System.Diagnostics.Activity.RootId*
+- uid: System.Diagnostics.Activity.Tags
+  commentId: P:System.Diagnostics.Activity.Tags
+  id: Tags
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Tags
+  nameWithType: Activity.Tags
+  fullName: System.Diagnostics.Activity.Tags
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public IEnumerable<KeyValuePair<string, string?>> Tags { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+    content.vb: Public ReadOnly Property Tags As IEnumerable(Of KeyValuePair(Of String, String))
+  overload: System.Diagnostics.Activity.Tags*
+- uid: System.Diagnostics.Activity.TagObjects
+  commentId: P:System.Diagnostics.Activity.TagObjects
+  id: TagObjects
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: TagObjects
+  nameWithType: Activity.TagObjects
+  fullName: System.Diagnostics.Activity.TagObjects
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public IEnumerable<KeyValuePair<string, object?>> TagObjects { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+    content.vb: Public ReadOnly Property TagObjects As IEnumerable(Of KeyValuePair(Of String, Object))
+  overload: System.Diagnostics.Activity.TagObjects*
+- uid: System.Diagnostics.Activity.Events
+  commentId: P:System.Diagnostics.Activity.Events
+  id: Events
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Events
+  nameWithType: Activity.Events
+  fullName: System.Diagnostics.Activity.Events
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public IEnumerable<ActivityEvent> Events { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityEvent}
+    content.vb: Public ReadOnly Property Events As IEnumerable(Of ActivityEvent)
+  overload: System.Diagnostics.Activity.Events*
+- uid: System.Diagnostics.Activity.Links
+  commentId: P:System.Diagnostics.Activity.Links
+  id: Links
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Links
+  nameWithType: Activity.Links
+  fullName: System.Diagnostics.Activity.Links
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public IEnumerable<ActivityLink> Links { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink}
+    content.vb: Public ReadOnly Property Links As IEnumerable(Of ActivityLink)
+  overload: System.Diagnostics.Activity.Links*
+- uid: System.Diagnostics.Activity.Baggage
+  commentId: P:System.Diagnostics.Activity.Baggage
+  id: Baggage
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Baggage
+  nameWithType: Activity.Baggage
+  fullName: System.Diagnostics.Activity.Baggage
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public IEnumerable<KeyValuePair<string, string?>> Baggage { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+    content.vb: Public ReadOnly Property Baggage As IEnumerable(Of KeyValuePair(Of String, String))
+  overload: System.Diagnostics.Activity.Baggage*
+- uid: System.Diagnostics.Activity.Context
+  commentId: P:System.Diagnostics.Activity.Context
+  id: Context
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Context
+  nameWithType: Activity.Context
+  fullName: System.Diagnostics.Activity.Context
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public ActivityContext Context { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivityContext
+    content.vb: Public ReadOnly Property Context As ActivityContext
+  overload: System.Diagnostics.Activity.Context*
+- uid: System.Diagnostics.Activity.TraceStateString
+  commentId: P:System.Diagnostics.Activity.TraceStateString
+  id: TraceStateString
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: TraceStateString
+  nameWithType: Activity.TraceStateString
+  fullName: System.Diagnostics.Activity.TraceStateString
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public string? TraceStateString { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property TraceStateString As String
+  overload: System.Diagnostics.Activity.TraceStateString*
+- uid: System.Diagnostics.Activity.SpanId
+  commentId: P:System.Diagnostics.Activity.SpanId
+  id: SpanId
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: SpanId
+  nameWithType: Activity.SpanId
+  fullName: System.Diagnostics.Activity.SpanId
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public ActivitySpanId SpanId { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivitySpanId
+    content.vb: Public ReadOnly Property SpanId As ActivitySpanId
+  overload: System.Diagnostics.Activity.SpanId*
+- uid: System.Diagnostics.Activity.TraceId
+  commentId: P:System.Diagnostics.Activity.TraceId
+  id: TraceId
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: TraceId
+  nameWithType: Activity.TraceId
+  fullName: System.Diagnostics.Activity.TraceId
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public ActivityTraceId TraceId { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivityTraceId
+    content.vb: Public ReadOnly Property TraceId As ActivityTraceId
+  overload: System.Diagnostics.Activity.TraceId*
+- uid: System.Diagnostics.Activity.Recorded
+  commentId: P:System.Diagnostics.Activity.Recorded
+  id: Recorded
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: Recorded
+  nameWithType: Activity.Recorded
+  fullName: System.Diagnostics.Activity.Recorded
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public bool Recorded { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property Recorded As Boolean
+  overload: System.Diagnostics.Activity.Recorded*
+- uid: System.Diagnostics.Activity.IsAllDataRequested
+  commentId: P:System.Diagnostics.Activity.IsAllDataRequested
+  id: IsAllDataRequested
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: IsAllDataRequested
+  nameWithType: Activity.IsAllDataRequested
+  fullName: System.Diagnostics.Activity.IsAllDataRequested
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public bool IsAllDataRequested { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsAllDataRequested As Boolean
+  overload: System.Diagnostics.Activity.IsAllDataRequested*
+- uid: System.Diagnostics.Activity.ActivityTraceFlags
+  commentId: P:System.Diagnostics.Activity.ActivityTraceFlags
+  id: ActivityTraceFlags
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: ActivityTraceFlags
+  nameWithType: Activity.ActivityTraceFlags
+  fullName: System.Diagnostics.Activity.ActivityTraceFlags
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public ActivityTraceFlags ActivityTraceFlags { get; set; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivityTraceFlags
+    content.vb: Public Property ActivityTraceFlags As ActivityTraceFlags
+  overload: System.Diagnostics.Activity.ActivityTraceFlags*
+- uid: System.Diagnostics.Activity.ParentSpanId
+  commentId: P:System.Diagnostics.Activity.ParentSpanId
+  id: ParentSpanId
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: ParentSpanId
+  nameWithType: Activity.ParentSpanId
+  fullName: System.Diagnostics.Activity.ParentSpanId
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public ActivitySpanId ParentSpanId { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivitySpanId
+    content.vb: Public ReadOnly Property ParentSpanId As ActivitySpanId
+  overload: System.Diagnostics.Activity.ParentSpanId*
+- uid: System.Diagnostics.Activity.TraceIdGenerator
+  commentId: P:System.Diagnostics.Activity.TraceIdGenerator
+  id: TraceIdGenerator
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: TraceIdGenerator
+  nameWithType: Activity.TraceIdGenerator
+  fullName: System.Diagnostics.Activity.TraceIdGenerator
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static Func<ActivityTraceId>? TraceIdGenerator { get; set; }
+    parameters: []
+    return:
+      type: System.Func{System.Diagnostics.ActivityTraceId}
+    content.vb: Public Shared Property TraceIdGenerator As Func(Of ActivityTraceId)
+  overload: System.Diagnostics.Activity.TraceIdGenerator*
+- uid: System.Diagnostics.Activity.DefaultIdFormat
+  commentId: P:System.Diagnostics.Activity.DefaultIdFormat
+  id: DefaultIdFormat
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: DefaultIdFormat
+  nameWithType: Activity.DefaultIdFormat
+  fullName: System.Diagnostics.Activity.DefaultIdFormat
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static ActivityIdFormat DefaultIdFormat { get; set; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivityIdFormat
+    content.vb: Public Shared Property DefaultIdFormat As ActivityIdFormat
+  overload: System.Diagnostics.Activity.DefaultIdFormat*
+- uid: System.Diagnostics.Activity.IsStopped
+  commentId: P:System.Diagnostics.Activity.IsStopped
+  id: IsStopped
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: IsStopped
+  nameWithType: Activity.IsStopped
+  fullName: System.Diagnostics.Activity.IsStopped
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public bool IsStopped { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsStopped As Boolean
+  overload: System.Diagnostics.Activity.IsStopped*
+- uid: System.Diagnostics.Activity.IdFormat
+  commentId: P:System.Diagnostics.Activity.IdFormat
+  id: IdFormat
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: IdFormat
+  nameWithType: Activity.IdFormat
+  fullName: System.Diagnostics.Activity.IdFormat
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public ActivityIdFormat IdFormat { get; }
+    parameters: []
+    return:
+      type: System.Diagnostics.ActivityIdFormat
+    content.vb: Public ReadOnly Property IdFormat As ActivityIdFormat
+  overload: System.Diagnostics.Activity.IdFormat*
+- uid: System.Diagnostics.Activity.CurrentChanged
+  commentId: E:System.Diagnostics.Activity.CurrentChanged
+  id: CurrentChanged
+  parent: System.Diagnostics.Activity
+  langs:
+  - csharp
+  - vb
+  name: CurrentChanged
+  nameWithType: Activity.CurrentChanged
+  fullName: System.Diagnostics.Activity.CurrentChanged
+  type: Event
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.Diagnostics
+  syntax:
+    content: public static event EventHandler<ActivityChangedEventArgs>? CurrentChanged
+    return:
+      type: System.EventHandler{System.Diagnostics.ActivityChangedEventArgs}
+    content.vb: Public Shared Event CurrentChanged As EventHandler(Of ActivityChangedEventArgs)
+references:
+- uid: System.Diagnostics
+  commentId: N:System.Diagnostics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Diagnostics
+  nameWithType: System.Diagnostics
+  fullName: System.Diagnostics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Diagnostics
+    name: Diagnostics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.diagnostics
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: System.Diagnostics.Activity.SetStatus*
+  commentId: Overload:System.Diagnostics.Activity.SetStatus
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_SetStatus_System_Diagnostics_ActivityStatusCode_System_String_
+  name: SetStatus
+  nameWithType: Activity.SetStatus
+  fullName: System.Diagnostics.Activity.SetStatus
+- uid: System.Diagnostics.ActivityStatusCode
+  commentId: T:System.Diagnostics.ActivityStatusCode
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivityStatusCode.html
+  name: ActivityStatusCode
+  nameWithType: ActivityStatusCode
+  fullName: System.Diagnostics.ActivityStatusCode
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Diagnostics.Activity
+  commentId: T:System.Diagnostics.Activity
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.Activity.html
+  name: Activity
+  nameWithType: Activity
+  fullName: System.Diagnostics.Activity
+- uid: System.Diagnostics.Activity.EnumerateTagObjects*
+  commentId: Overload:System.Diagnostics.Activity.EnumerateTagObjects
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_EnumerateTagObjects
+  name: EnumerateTagObjects
+  nameWithType: Activity.EnumerateTagObjects
+  fullName: System.Diagnostics.Activity.EnumerateTagObjects
+- uid: System.Diagnostics.Activity.Enumerator{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  commentId: T:System.Diagnostics.Activity.Enumerator{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  parent: System.Diagnostics
+  definition: System.Diagnostics.Activity.Enumerator`1
+  href: System.Diagnostics.Activity.html
+  name: Activity.Enumerator<KeyValuePair<string, object>>
+  nameWithType: Activity.Enumerator<KeyValuePair<string, object>>
+  fullName: System.Diagnostics.Activity.Enumerator<System.Collections.Generic.KeyValuePair<string, object>>
+  nameWithType.vb: Activity.Enumerator(Of KeyValuePair(Of String, Object))
+  fullName.vb: System.Diagnostics.Activity.Enumerator(Of System.Collections.Generic.KeyValuePair(Of String, Object))
+  name.vb: Activity.Enumerator(Of KeyValuePair(Of String, Object))
+  spec.csharp:
+  - uid: System.Diagnostics.Activity
+    name: Activity
+    isExternal: true
+    href: System.Diagnostics.Activity.html
+  - name: .
+  - uid: System.Diagnostics.Activity.Enumerator`1
+    name: Enumerator
+    isExternal: true
+    href: System.Diagnostics.Activity.Enumerator-1.html
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Diagnostics.Activity
+    name: Activity
+    isExternal: true
+    href: System.Diagnostics.Activity.html
+  - name: .
+  - uid: System.Diagnostics.Activity.Enumerator`1
+    name: Enumerator
+    isExternal: true
+    href: System.Diagnostics.Activity.Enumerator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Diagnostics.Activity.Enumerator`1
+  commentId: T:System.Diagnostics.Activity.Enumerator`1
+  isExternal: true
+  href: System.Diagnostics.Activity.html
+  name: Activity.Enumerator<T>
+  nameWithType: Activity.Enumerator<T>
+  fullName: System.Diagnostics.Activity.Enumerator<T>
+  nameWithType.vb: Activity.Enumerator(Of T)
+  fullName.vb: System.Diagnostics.Activity.Enumerator(Of T)
+  name.vb: Activity.Enumerator(Of T)
+  spec.csharp:
+  - uid: System.Diagnostics.Activity
+    name: Activity
+    isExternal: true
+    href: System.Diagnostics.Activity.html
+  - name: .
+  - uid: System.Diagnostics.Activity.Enumerator`1
+    name: Enumerator
+    isExternal: true
+    href: System.Diagnostics.Activity.Enumerator-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Diagnostics.Activity
+    name: Activity
+    isExternal: true
+    href: System.Diagnostics.Activity.html
+  - name: .
+  - uid: System.Diagnostics.Activity.Enumerator`1
+    name: Enumerator
+    isExternal: true
+    href: System.Diagnostics.Activity.Enumerator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Diagnostics.Activity.EnumerateEvents*
+  commentId: Overload:System.Diagnostics.Activity.EnumerateEvents
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_EnumerateEvents
+  name: EnumerateEvents
+  nameWithType: Activity.EnumerateEvents
+  fullName: System.Diagnostics.Activity.EnumerateEvents
+- uid: System.Diagnostics.Activity.Enumerator{System.Diagnostics.ActivityEvent}
+  commentId: T:System.Diagnostics.Activity.Enumerator{System.Diagnostics.ActivityEvent}
+  parent: System.Diagnostics
+  definition: System.Diagnostics.Activity.Enumerator`1
+  href: System.Diagnostics.Activity.html
+  name: Activity.Enumerator<ActivityEvent>
+  nameWithType: Activity.Enumerator<ActivityEvent>
+  fullName: System.Diagnostics.Activity.Enumerator<System.Diagnostics.ActivityEvent>
+  nameWithType.vb: Activity.Enumerator(Of ActivityEvent)
+  fullName.vb: System.Diagnostics.Activity.Enumerator(Of System.Diagnostics.ActivityEvent)
+  name.vb: Activity.Enumerator(Of ActivityEvent)
+  spec.csharp:
+  - uid: System.Diagnostics.Activity
+    name: Activity
+    isExternal: true
+    href: System.Diagnostics.Activity.html
+  - name: .
+  - uid: System.Diagnostics.Activity.Enumerator`1
+    name: Enumerator
+    isExternal: true
+    href: System.Diagnostics.Activity.Enumerator-1.html
+  - name: <
+  - uid: System.Diagnostics.ActivityEvent
+    name: ActivityEvent
+    isExternal: true
+    href: System.Diagnostics.ActivityEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Diagnostics.Activity
+    name: Activity
+    isExternal: true
+    href: System.Diagnostics.Activity.html
+  - name: .
+  - uid: System.Diagnostics.Activity.Enumerator`1
+    name: Enumerator
+    isExternal: true
+    href: System.Diagnostics.Activity.Enumerator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Diagnostics.ActivityEvent
+    name: ActivityEvent
+    isExternal: true
+    href: System.Diagnostics.ActivityEvent.html
+  - name: )
+- uid: System.Diagnostics.Activity.EnumerateLinks*
+  commentId: Overload:System.Diagnostics.Activity.EnumerateLinks
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_EnumerateLinks
+  name: EnumerateLinks
+  nameWithType: Activity.EnumerateLinks
+  fullName: System.Diagnostics.Activity.EnumerateLinks
+- uid: System.Diagnostics.Activity.Enumerator{System.Diagnostics.ActivityLink}
+  commentId: T:System.Diagnostics.Activity.Enumerator{System.Diagnostics.ActivityLink}
+  parent: System.Diagnostics
+  definition: System.Diagnostics.Activity.Enumerator`1
+  href: System.Diagnostics.Activity.html
+  name: Activity.Enumerator<ActivityLink>
+  nameWithType: Activity.Enumerator<ActivityLink>
+  fullName: System.Diagnostics.Activity.Enumerator<System.Diagnostics.ActivityLink>
+  nameWithType.vb: Activity.Enumerator(Of ActivityLink)
+  fullName.vb: System.Diagnostics.Activity.Enumerator(Of System.Diagnostics.ActivityLink)
+  name.vb: Activity.Enumerator(Of ActivityLink)
+  spec.csharp:
+  - uid: System.Diagnostics.Activity
+    name: Activity
+    isExternal: true
+    href: System.Diagnostics.Activity.html
+  - name: .
+  - uid: System.Diagnostics.Activity.Enumerator`1
+    name: Enumerator
+    isExternal: true
+    href: System.Diagnostics.Activity.Enumerator-1.html
+  - name: <
+  - uid: System.Diagnostics.ActivityLink
+    name: ActivityLink
+    isExternal: true
+    href: System.Diagnostics.ActivityLink.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Diagnostics.Activity
+    name: Activity
+    isExternal: true
+    href: System.Diagnostics.Activity.html
+  - name: .
+  - uid: System.Diagnostics.Activity.Enumerator`1
+    name: Enumerator
+    isExternal: true
+    href: System.Diagnostics.Activity.Enumerator-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Diagnostics.ActivityLink
+    name: ActivityLink
+    isExternal: true
+    href: System.Diagnostics.ActivityLink.html
+  - name: )
+- uid: System.Diagnostics.Activity.GetBaggageItem*
+  commentId: Overload:System.Diagnostics.Activity.GetBaggageItem
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_GetBaggageItem_System_String_
+  name: GetBaggageItem
+  nameWithType: Activity.GetBaggageItem
+  fullName: System.Diagnostics.Activity.GetBaggageItem
+- uid: System.Diagnostics.Activity.GetTagItem*
+  commentId: Overload:System.Diagnostics.Activity.GetTagItem
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_GetTagItem_System_String_
+  name: GetTagItem
+  nameWithType: Activity.GetTagItem
+  fullName: System.Diagnostics.Activity.GetTagItem
+- uid: System.Diagnostics.Activity.#ctor*
+  commentId: Overload:System.Diagnostics.Activity.#ctor
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity__ctor_System_String_
+  name: Activity
+  nameWithType: Activity.Activity
+  fullName: System.Diagnostics.Activity.Activity
+  nameWithType.vb: Activity.New
+  fullName.vb: System.Diagnostics.Activity.New
+  name.vb: New
+- uid: System.Diagnostics.Activity.AddTag*
+  commentId: Overload:System.Diagnostics.Activity.AddTag
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_AddTag_System_String_System_String_
+  name: AddTag
+  nameWithType: Activity.AddTag
+  fullName: System.Diagnostics.Activity.AddTag
+- uid: System.Diagnostics.Activity.SetTag*
+  commentId: Overload:System.Diagnostics.Activity.SetTag
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_SetTag_System_String_System_Object_
+  name: SetTag
+  nameWithType: Activity.SetTag
+  fullName: System.Diagnostics.Activity.SetTag
+- uid: System.Diagnostics.Activity.AddEvent*
+  commentId: Overload:System.Diagnostics.Activity.AddEvent
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_AddEvent_System_Diagnostics_ActivityEvent_
+  name: AddEvent
+  nameWithType: Activity.AddEvent
+  fullName: System.Diagnostics.Activity.AddEvent
+- uid: System.Diagnostics.ActivityEvent
+  commentId: T:System.Diagnostics.ActivityEvent
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivityEvent.html
+  name: ActivityEvent
+  nameWithType: ActivityEvent
+  fullName: System.Diagnostics.ActivityEvent
+- uid: System.Diagnostics.Activity.AddException*
+  commentId: Overload:System.Diagnostics.Activity.AddException
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_AddException_System_Exception_System_Diagnostics_TagList__System_DateTimeOffset_
+  name: AddException
+  nameWithType: Activity.AddException
+  fullName: System.Diagnostics.Activity.AddException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: System.Diagnostics.TagList
+  commentId: T:System.Diagnostics.TagList
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.TagList.html
+  name: TagList
+  nameWithType: TagList
+  fullName: System.Diagnostics.TagList
+- uid: System.DateTimeOffset
+  commentId: T:System.DateTimeOffset
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetimeoffset
+  name: DateTimeOffset
+  nameWithType: DateTimeOffset
+  fullName: System.DateTimeOffset
+- uid: System.Diagnostics.Activity.AddLink*
+  commentId: Overload:System.Diagnostics.Activity.AddLink
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_AddLink_System_Diagnostics_ActivityLink_
+  name: AddLink
+  nameWithType: Activity.AddLink
+  fullName: System.Diagnostics.Activity.AddLink
+- uid: System.Diagnostics.ActivityLink
+  commentId: T:System.Diagnostics.ActivityLink
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivityLink.html
+  name: ActivityLink
+  nameWithType: ActivityLink
+  fullName: System.Diagnostics.ActivityLink
+- uid: System.Diagnostics.Activity.AddBaggage*
+  commentId: Overload:System.Diagnostics.Activity.AddBaggage
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_AddBaggage_System_String_System_String_
+  name: AddBaggage
+  nameWithType: Activity.AddBaggage
+  fullName: System.Diagnostics.Activity.AddBaggage
+- uid: System.Diagnostics.Activity.SetBaggage*
+  commentId: Overload:System.Diagnostics.Activity.SetBaggage
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_SetBaggage_System_String_System_String_
+  name: SetBaggage
+  nameWithType: Activity.SetBaggage
+  fullName: System.Diagnostics.Activity.SetBaggage
+- uid: System.Diagnostics.Activity.SetParentId*
+  commentId: Overload:System.Diagnostics.Activity.SetParentId
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_SetParentId_System_String_
+  name: SetParentId
+  nameWithType: Activity.SetParentId
+  fullName: System.Diagnostics.Activity.SetParentId
+- uid: System.Diagnostics.ActivityTraceId
+  commentId: T:System.Diagnostics.ActivityTraceId
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivityTraceId.html
+  name: ActivityTraceId
+  nameWithType: ActivityTraceId
+  fullName: System.Diagnostics.ActivityTraceId
+- uid: System.Diagnostics.ActivitySpanId
+  commentId: T:System.Diagnostics.ActivitySpanId
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivitySpanId.html
+  name: ActivitySpanId
+  nameWithType: ActivitySpanId
+  fullName: System.Diagnostics.ActivitySpanId
+- uid: System.Diagnostics.ActivityTraceFlags
+  commentId: T:System.Diagnostics.ActivityTraceFlags
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivityTraceFlags.html
+  name: ActivityTraceFlags
+  nameWithType: ActivityTraceFlags
+  fullName: System.Diagnostics.ActivityTraceFlags
+- uid: System.Diagnostics.Activity.SetStartTime*
+  commentId: Overload:System.Diagnostics.Activity.SetStartTime
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_SetStartTime_System_DateTime_
+  name: SetStartTime
+  nameWithType: Activity.SetStartTime
+  fullName: System.Diagnostics.Activity.SetStartTime
+- uid: System.DateTime
+  commentId: T:System.DateTime
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime
+  nameWithType: DateTime
+  fullName: System.DateTime
+  nameWithType.vb: Date
+  fullName.vb: Date
+  name.vb: Date
+- uid: System.Diagnostics.Activity.SetEndTime*
+  commentId: Overload:System.Diagnostics.Activity.SetEndTime
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_SetEndTime_System_DateTime_
+  name: SetEndTime
+  nameWithType: Activity.SetEndTime
+  fullName: System.Diagnostics.Activity.SetEndTime
+- uid: System.Diagnostics.Activity.Start*
+  commentId: Overload:System.Diagnostics.Activity.Start
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Start
+  name: Start
+  nameWithType: Activity.Start
+  fullName: System.Diagnostics.Activity.Start
+- uid: System.Diagnostics.Activity.Stop*
+  commentId: Overload:System.Diagnostics.Activity.Stop
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Stop
+  name: Stop
+  nameWithType: Activity.Stop
+  fullName: System.Diagnostics.Activity.Stop
+- uid: System.Diagnostics.Activity.SetIdFormat*
+  commentId: Overload:System.Diagnostics.Activity.SetIdFormat
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_SetIdFormat_System_Diagnostics_ActivityIdFormat_
+  name: SetIdFormat
+  nameWithType: Activity.SetIdFormat
+  fullName: System.Diagnostics.Activity.SetIdFormat
+- uid: System.Diagnostics.ActivityIdFormat
+  commentId: T:System.Diagnostics.ActivityIdFormat
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivityIdFormat.html
+  name: ActivityIdFormat
+  nameWithType: ActivityIdFormat
+  fullName: System.Diagnostics.ActivityIdFormat
+- uid: System.Diagnostics.Activity.Dispose*
+  commentId: Overload:System.Diagnostics.Activity.Dispose
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Dispose
+  name: Dispose
+  nameWithType: Activity.Dispose
+  fullName: System.Diagnostics.Activity.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Diagnostics.Activity.SetCustomProperty*
+  commentId: Overload:System.Diagnostics.Activity.SetCustomProperty
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_SetCustomProperty_System_String_System_Object_
+  name: SetCustomProperty
+  nameWithType: Activity.SetCustomProperty
+  fullName: System.Diagnostics.Activity.SetCustomProperty
+- uid: System.Diagnostics.Activity.GetCustomProperty*
+  commentId: Overload:System.Diagnostics.Activity.GetCustomProperty
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_GetCustomProperty_System_String_
+  name: GetCustomProperty
+  nameWithType: Activity.GetCustomProperty
+  fullName: System.Diagnostics.Activity.GetCustomProperty
+- uid: System.Diagnostics.Activity.ForceDefaultIdFormat*
+  commentId: Overload:System.Diagnostics.Activity.ForceDefaultIdFormat
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_ForceDefaultIdFormat
+  name: ForceDefaultIdFormat
+  nameWithType: Activity.ForceDefaultIdFormat
+  fullName: System.Diagnostics.Activity.ForceDefaultIdFormat
+- uid: System.Diagnostics.Activity.Status*
+  commentId: Overload:System.Diagnostics.Activity.Status
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Status
+  name: Status
+  nameWithType: Activity.Status
+  fullName: System.Diagnostics.Activity.Status
+- uid: System.Diagnostics.Activity.StatusDescription*
+  commentId: Overload:System.Diagnostics.Activity.StatusDescription
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_StatusDescription
+  name: StatusDescription
+  nameWithType: Activity.StatusDescription
+  fullName: System.Diagnostics.Activity.StatusDescription
+- uid: System.Diagnostics.Activity.HasRemoteParent*
+  commentId: Overload:System.Diagnostics.Activity.HasRemoteParent
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_HasRemoteParent
+  name: HasRemoteParent
+  nameWithType: Activity.HasRemoteParent
+  fullName: System.Diagnostics.Activity.HasRemoteParent
+- uid: System.Diagnostics.Activity.Current*
+  commentId: Overload:System.Diagnostics.Activity.Current
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Current
+  name: Current
+  nameWithType: Activity.Current
+  fullName: System.Diagnostics.Activity.Current
+- uid: System.Diagnostics.Activity.Kind*
+  commentId: Overload:System.Diagnostics.Activity.Kind
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Kind
+  name: Kind
+  nameWithType: Activity.Kind
+  fullName: System.Diagnostics.Activity.Kind
+- uid: System.Diagnostics.ActivityKind
+  commentId: T:System.Diagnostics.ActivityKind
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivityKind.html
+  name: ActivityKind
+  nameWithType: ActivityKind
+  fullName: System.Diagnostics.ActivityKind
+- uid: System.Diagnostics.Activity.OperationName*
+  commentId: Overload:System.Diagnostics.Activity.OperationName
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_OperationName
+  name: OperationName
+  nameWithType: Activity.OperationName
+  fullName: System.Diagnostics.Activity.OperationName
+- uid: System.Diagnostics.Activity.DisplayName*
+  commentId: Overload:System.Diagnostics.Activity.DisplayName
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_DisplayName
+  name: DisplayName
+  nameWithType: Activity.DisplayName
+  fullName: System.Diagnostics.Activity.DisplayName
+- uid: System.Diagnostics.Activity.Source*
+  commentId: Overload:System.Diagnostics.Activity.Source
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Source
+  name: Source
+  nameWithType: Activity.Source
+  fullName: System.Diagnostics.Activity.Source
+- uid: System.Diagnostics.ActivitySource
+  commentId: T:System.Diagnostics.ActivitySource
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivitySource.html
+  name: ActivitySource
+  nameWithType: ActivitySource
+  fullName: System.Diagnostics.ActivitySource
+- uid: System.Diagnostics.Activity.Parent*
+  commentId: Overload:System.Diagnostics.Activity.Parent
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Parent
+  name: Parent
+  nameWithType: Activity.Parent
+  fullName: System.Diagnostics.Activity.Parent
+- uid: System.Diagnostics.Activity.Duration*
+  commentId: Overload:System.Diagnostics.Activity.Duration
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Duration
+  name: Duration
+  nameWithType: Activity.Duration
+  fullName: System.Diagnostics.Activity.Duration
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: System.Diagnostics.Activity.StartTimeUtc*
+  commentId: Overload:System.Diagnostics.Activity.StartTimeUtc
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_StartTimeUtc
+  name: StartTimeUtc
+  nameWithType: Activity.StartTimeUtc
+  fullName: System.Diagnostics.Activity.StartTimeUtc
+- uid: System.Diagnostics.Activity.Id*
+  commentId: Overload:System.Diagnostics.Activity.Id
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Id
+  name: Id
+  nameWithType: Activity.Id
+  fullName: System.Diagnostics.Activity.Id
+- uid: System.Diagnostics.Activity.ParentId*
+  commentId: Overload:System.Diagnostics.Activity.ParentId
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_ParentId
+  name: ParentId
+  nameWithType: Activity.ParentId
+  fullName: System.Diagnostics.Activity.ParentId
+- uid: System.Diagnostics.Activity.RootId*
+  commentId: Overload:System.Diagnostics.Activity.RootId
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_RootId
+  name: RootId
+  nameWithType: Activity.RootId
+  fullName: System.Diagnostics.Activity.RootId
+- uid: System.Diagnostics.Activity.Tags*
+  commentId: Overload:System.Diagnostics.Activity.Tags
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Tags
+  name: Tags
+  nameWithType: Activity.Tags
+  fullName: System.Diagnostics.Activity.Tags
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.String}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<KeyValuePair<string, string>>
+  nameWithType: IEnumerable<KeyValuePair<string, string>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, string>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, String))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, String))
+  name.vb: IEnumerable(Of KeyValuePair(Of String, String))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Diagnostics.Activity.TagObjects*
+  commentId: Overload:System.Diagnostics.Activity.TagObjects
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_TagObjects
+  name: TagObjects
+  nameWithType: Activity.TagObjects
+  fullName: System.Diagnostics.Activity.TagObjects
+- uid: System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Collections.Generic.KeyValuePair{System.String,System.Object}}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<KeyValuePair<string, object>>
+  nameWithType: IEnumerable<KeyValuePair<string, object>>
+  fullName: System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string, object>>
+  nameWithType.vb: IEnumerable(Of KeyValuePair(Of String, Object))
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Collections.Generic.KeyValuePair(Of String, Object))
+  name.vb: IEnumerable(Of KeyValuePair(Of String, Object))
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.KeyValuePair`2
+    name: KeyValuePair
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Diagnostics.Activity.Events*
+  commentId: Overload:System.Diagnostics.Activity.Events
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Events
+  name: Events
+  nameWithType: Activity.Events
+  fullName: System.Diagnostics.Activity.Events
+- uid: System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityEvent}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityEvent}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ActivityEvent>
+  nameWithType: IEnumerable<ActivityEvent>
+  fullName: System.Collections.Generic.IEnumerable<System.Diagnostics.ActivityEvent>
+  nameWithType.vb: IEnumerable(Of ActivityEvent)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Diagnostics.ActivityEvent)
+  name.vb: IEnumerable(Of ActivityEvent)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Diagnostics.ActivityEvent
+    name: ActivityEvent
+    isExternal: true
+    href: System.Diagnostics.ActivityEvent.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Diagnostics.ActivityEvent
+    name: ActivityEvent
+    isExternal: true
+    href: System.Diagnostics.ActivityEvent.html
+  - name: )
+- uid: System.Diagnostics.Activity.Links*
+  commentId: Overload:System.Diagnostics.Activity.Links
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Links
+  name: Links
+  nameWithType: Activity.Links
+  fullName: System.Diagnostics.Activity.Links
+- uid: System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink}
+  commentId: T:System.Collections.Generic.IEnumerable{System.Diagnostics.ActivityLink}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<ActivityLink>
+  nameWithType: IEnumerable<ActivityLink>
+  fullName: System.Collections.Generic.IEnumerable<System.Diagnostics.ActivityLink>
+  nameWithType.vb: IEnumerable(Of ActivityLink)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of System.Diagnostics.ActivityLink)
+  name.vb: IEnumerable(Of ActivityLink)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.Diagnostics.ActivityLink
+    name: ActivityLink
+    isExternal: true
+    href: System.Diagnostics.ActivityLink.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Diagnostics.ActivityLink
+    name: ActivityLink
+    isExternal: true
+    href: System.Diagnostics.ActivityLink.html
+  - name: )
+- uid: System.Diagnostics.Activity.Baggage*
+  commentId: Overload:System.Diagnostics.Activity.Baggage
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Baggage
+  name: Baggage
+  nameWithType: Activity.Baggage
+  fullName: System.Diagnostics.Activity.Baggage
+- uid: System.Diagnostics.Activity.Context*
+  commentId: Overload:System.Diagnostics.Activity.Context
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Context
+  name: Context
+  nameWithType: Activity.Context
+  fullName: System.Diagnostics.Activity.Context
+- uid: System.Diagnostics.ActivityContext
+  commentId: T:System.Diagnostics.ActivityContext
+  parent: System.Diagnostics
+  isExternal: true
+  href: System.Diagnostics.ActivityContext.html
+  name: ActivityContext
+  nameWithType: ActivityContext
+  fullName: System.Diagnostics.ActivityContext
+- uid: System.Diagnostics.Activity.TraceStateString*
+  commentId: Overload:System.Diagnostics.Activity.TraceStateString
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_TraceStateString
+  name: TraceStateString
+  nameWithType: Activity.TraceStateString
+  fullName: System.Diagnostics.Activity.TraceStateString
+- uid: System.Diagnostics.Activity.SpanId*
+  commentId: Overload:System.Diagnostics.Activity.SpanId
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_SpanId
+  name: SpanId
+  nameWithType: Activity.SpanId
+  fullName: System.Diagnostics.Activity.SpanId
+- uid: System.Diagnostics.Activity.TraceId*
+  commentId: Overload:System.Diagnostics.Activity.TraceId
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_TraceId
+  name: TraceId
+  nameWithType: Activity.TraceId
+  fullName: System.Diagnostics.Activity.TraceId
+- uid: System.Diagnostics.Activity.Recorded*
+  commentId: Overload:System.Diagnostics.Activity.Recorded
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_Recorded
+  name: Recorded
+  nameWithType: Activity.Recorded
+  fullName: System.Diagnostics.Activity.Recorded
+- uid: System.Diagnostics.Activity.IsAllDataRequested*
+  commentId: Overload:System.Diagnostics.Activity.IsAllDataRequested
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_IsAllDataRequested
+  name: IsAllDataRequested
+  nameWithType: Activity.IsAllDataRequested
+  fullName: System.Diagnostics.Activity.IsAllDataRequested
+- uid: System.Diagnostics.Activity.ActivityTraceFlags*
+  commentId: Overload:System.Diagnostics.Activity.ActivityTraceFlags
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_ActivityTraceFlags
+  name: ActivityTraceFlags
+  nameWithType: Activity.ActivityTraceFlags
+  fullName: System.Diagnostics.Activity.ActivityTraceFlags
+- uid: System.Diagnostics.Activity.ParentSpanId*
+  commentId: Overload:System.Diagnostics.Activity.ParentSpanId
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_ParentSpanId
+  name: ParentSpanId
+  nameWithType: Activity.ParentSpanId
+  fullName: System.Diagnostics.Activity.ParentSpanId
+- uid: System.Diagnostics.Activity.TraceIdGenerator*
+  commentId: Overload:System.Diagnostics.Activity.TraceIdGenerator
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_TraceIdGenerator
+  name: TraceIdGenerator
+  nameWithType: Activity.TraceIdGenerator
+  fullName: System.Diagnostics.Activity.TraceIdGenerator
+- uid: System.Func{System.Diagnostics.ActivityTraceId}
+  commentId: T:System.Func{System.Diagnostics.ActivityTraceId}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<ActivityTraceId>
+  nameWithType: Func<ActivityTraceId>
+  fullName: System.Func<System.Diagnostics.ActivityTraceId>
+  nameWithType.vb: Func(Of ActivityTraceId)
+  fullName.vb: System.Func(Of System.Diagnostics.ActivityTraceId)
+  name.vb: Func(Of ActivityTraceId)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Diagnostics.ActivityTraceId
+    name: ActivityTraceId
+    isExternal: true
+    href: System.Diagnostics.ActivityTraceId.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Diagnostics.ActivityTraceId
+    name: ActivityTraceId
+    isExternal: true
+    href: System.Diagnostics.ActivityTraceId.html
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Diagnostics.Activity.DefaultIdFormat*
+  commentId: Overload:System.Diagnostics.Activity.DefaultIdFormat
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_DefaultIdFormat
+  name: DefaultIdFormat
+  nameWithType: Activity.DefaultIdFormat
+  fullName: System.Diagnostics.Activity.DefaultIdFormat
+- uid: System.Diagnostics.Activity.IsStopped*
+  commentId: Overload:System.Diagnostics.Activity.IsStopped
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_IsStopped
+  name: IsStopped
+  nameWithType: Activity.IsStopped
+  fullName: System.Diagnostics.Activity.IsStopped
+- uid: System.Diagnostics.Activity.IdFormat*
+  commentId: Overload:System.Diagnostics.Activity.IdFormat
+  isExternal: true
+  href: System.Diagnostics.Activity.html#System_Diagnostics_Activity_IdFormat
+  name: IdFormat
+  nameWithType: Activity.IdFormat
+  fullName: System.Diagnostics.Activity.IdFormat
+- uid: System.EventHandler{System.Diagnostics.ActivityChangedEventArgs}
+  commentId: T:System.EventHandler{System.Diagnostics.ActivityChangedEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<ActivityChangedEventArgs>
+  nameWithType: EventHandler<ActivityChangedEventArgs>
+  fullName: System.EventHandler<System.Diagnostics.ActivityChangedEventArgs>
+  nameWithType.vb: EventHandler(Of ActivityChangedEventArgs)
+  fullName.vb: System.EventHandler(Of System.Diagnostics.ActivityChangedEventArgs)
+  name.vb: EventHandler(Of ActivityChangedEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: System.Diagnostics.ActivityChangedEventArgs
+    name: ActivityChangedEventArgs
+    isExternal: true
+    href: System.Diagnostics.ActivityChangedEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Diagnostics.ActivityChangedEventArgs
+    name: ActivityChangedEventArgs
+    isExternal: true
+    href: System.Diagnostics.ActivityChangedEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )

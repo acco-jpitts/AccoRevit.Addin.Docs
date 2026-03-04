@@ -1,0 +1,1556 @@
+### YamlMime:ManagedReference
+items:
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6
+  commentId: T:Microsoft.Extensions.Options.ConfigureNamedOptions`6
+  id: ConfigureNamedOptions`6
+  parent: Microsoft.Extensions.Options
+  children:
+  - Microsoft.Extensions.Options.ConfigureNamedOptions`6.#ctor(System.String,`1,`2,`3,`4,`5,System.Action{`0,`1,`2,`3,`4,`5})
+  - Microsoft.Extensions.Options.ConfigureNamedOptions`6.Action
+  - Microsoft.Extensions.Options.ConfigureNamedOptions`6.Configure(System.String,`0)
+  - Microsoft.Extensions.Options.ConfigureNamedOptions`6.Configure(`0)
+  - Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency1
+  - Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency2
+  - Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency3
+  - Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency4
+  - Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency5
+  - Microsoft.Extensions.Options.ConfigureNamedOptions`6.Name
+  langs:
+  - csharp
+  - vb
+  name: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  syntax:
+    content: 'public class ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5> : IConfigureNamedOptions<TOptions>, IConfigureOptions<TOptions> where TOptions : class where TDep1 : class where TDep2 : class where TDep3 : class where TDep4 : class where TDep5 : class'
+    typeParameters:
+    - id: TOptions
+    - id: TDep1
+    - id: TDep2
+    - id: TDep3
+    - id: TDep4
+    - id: TDep5
+    content.vb: Public Class ConfigureNamedOptions(Of TOptions As Class, TDep1 As Class, TDep2 As Class, TDep3 As Class, TDep4 As Class, TDep5 As Class) Implements IConfigureNamedOptions(Of TOptions), IConfigureOptions(Of TOptions)
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Extensions.Options.IConfigureNamedOptions{{TOptions}}
+  - Microsoft.Extensions.Options.IConfigureOptions{{TOptions}}
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  extensionMethods:
+  - System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  - System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  - System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5)
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5)
+  name.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5)
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.#ctor(System.String,`1,`2,`3,`4,`5,System.Action{`0,`1,`2,`3,`4,`5})
+  commentId: M:Microsoft.Extensions.Options.ConfigureNamedOptions`6.#ctor(System.String,`1,`2,`3,`4,`5,System.Action{`0,`1,`2,`3,`4,`5})
+  id: '#ctor(System.String,`1,`2,`3,`4,`5,System.Action{`0,`1,`2,`3,`4,`5})'
+  parent: Microsoft.Extensions.Options.ConfigureNamedOptions`6
+  langs:
+  - csharp
+  - vb
+  name: ConfigureNamedOptions(string?, TDep1, TDep2, TDep3, TDep4, TDep5, Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>?)
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.ConfigureNamedOptions(string?, TDep1, TDep2, TDep3, TDep4, TDep5, Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>?)
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.ConfigureNamedOptions(string?, TDep1, TDep2, TDep3, TDep4, TDep5, System.Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>?)
+  type: Constructor
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  syntax:
+    content: public ConfigureNamedOptions(string? name, TDep1 dependency1, TDep2 dependency2, TDep3 dependency3, TDep4 dependency4, TDep5 dependency5, Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>? action)
+    parameters:
+    - id: name
+      type: System.String
+    - id: dependency1
+      type: '{TDep1}'
+    - id: dependency2
+      type: '{TDep2}'
+    - id: dependency3
+      type: '{TDep3}'
+    - id: dependency4
+      type: '{TDep4}'
+    - id: dependency5
+      type: '{TDep5}'
+    - id: action
+      type: System.Action{{TOptions},{TDep1},{TDep2},{TDep3},{TDep4},{TDep5}}
+    content.vb: Public Sub New(name As String, dependency1 As TDep1, dependency2 As TDep2, dependency3 As TDep3, dependency4 As TDep4, dependency5 As TDep5, action As Action(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5))
+  overload: Microsoft.Extensions.Options.ConfigureNamedOptions`6.#ctor*
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).New(String, TDep1, TDep2, TDep3, TDep4, TDep5, Action(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5))
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).New(String, TDep1, TDep2, TDep3, TDep4, TDep5, System.Action(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5))
+  name.vb: New(String, TDep1, TDep2, TDep3, TDep4, TDep5, Action(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5))
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Configure(System.String,`0)
+  commentId: M:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Configure(System.String,`0)
+  id: Configure(System.String,`0)
+  parent: Microsoft.Extensions.Options.ConfigureNamedOptions`6
+  langs:
+  - csharp
+  - vb
+  name: Configure(string?, TOptions)
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Configure(string?, TOptions)
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Configure(string?, TOptions)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  example: []
+  syntax:
+    content: public virtual void Configure(string? name, TOptions options)
+    parameters:
+    - id: name
+      type: System.String
+    - id: options
+      type: '{TOptions}'
+    content.vb: Public Overridable Sub Configure(name As String, options As TOptions)
+  overload: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Configure*
+  implements:
+  - Microsoft.Extensions.Options.IConfigureNamedOptions{{TOptions}}.Configure(System.String,{TOptions})
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Configure(String, TOptions)
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Configure(String, TOptions)
+  name.vb: Configure(String, TOptions)
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Configure(`0)
+  commentId: M:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Configure(`0)
+  id: Configure(`0)
+  parent: Microsoft.Extensions.Options.ConfigureNamedOptions`6
+  langs:
+  - csharp
+  - vb
+  name: Configure(TOptions)
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Configure(TOptions)
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Configure(TOptions)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  example: []
+  syntax:
+    content: public void Configure(TOptions options)
+    parameters:
+    - id: options
+      type: '{TOptions}'
+    content.vb: Public Sub Configure(options As TOptions)
+  overload: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Configure*
+  implements:
+  - Microsoft.Extensions.Options.IConfigureOptions{{TOptions}}.Configure({TOptions})
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Configure(TOptions)
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Configure(TOptions)
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Name
+  commentId: P:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Name
+  id: Name
+  parent: Microsoft.Extensions.Options.ConfigureNamedOptions`6
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Name
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Name
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  syntax:
+    content: public string? Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Name*
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Name
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Name
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Action
+  commentId: P:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Action
+  id: Action
+  parent: Microsoft.Extensions.Options.ConfigureNamedOptions`6
+  langs:
+  - csharp
+  - vb
+  name: Action
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Action
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Action
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  syntax:
+    content: public Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>? Action { get; }
+    parameters: []
+    return:
+      type: System.Action{{TOptions},{TDep1},{TDep2},{TDep3},{TDep4},{TDep5}}
+    content.vb: Public ReadOnly Property Action As Action(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5)
+  overload: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Action*
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Action
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Action
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency1
+  commentId: P:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency1
+  id: Dependency1
+  parent: Microsoft.Extensions.Options.ConfigureNamedOptions`6
+  langs:
+  - csharp
+  - vb
+  name: Dependency1
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency1
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency1
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  syntax:
+    content: public TDep1 Dependency1 { get; }
+    parameters: []
+    return:
+      type: '{TDep1}'
+    content.vb: Public ReadOnly Property Dependency1 As TDep1
+  overload: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency1*
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency1
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency1
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency2
+  commentId: P:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency2
+  id: Dependency2
+  parent: Microsoft.Extensions.Options.ConfigureNamedOptions`6
+  langs:
+  - csharp
+  - vb
+  name: Dependency2
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency2
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency2
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  syntax:
+    content: public TDep2 Dependency2 { get; }
+    parameters: []
+    return:
+      type: '{TDep2}'
+    content.vb: Public ReadOnly Property Dependency2 As TDep2
+  overload: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency2*
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency2
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency2
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency3
+  commentId: P:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency3
+  id: Dependency3
+  parent: Microsoft.Extensions.Options.ConfigureNamedOptions`6
+  langs:
+  - csharp
+  - vb
+  name: Dependency3
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency3
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency3
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  syntax:
+    content: public TDep3 Dependency3 { get; }
+    parameters: []
+    return:
+      type: '{TDep3}'
+    content.vb: Public ReadOnly Property Dependency3 As TDep3
+  overload: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency3*
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency3
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency3
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency4
+  commentId: P:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency4
+  id: Dependency4
+  parent: Microsoft.Extensions.Options.ConfigureNamedOptions`6
+  langs:
+  - csharp
+  - vb
+  name: Dependency4
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency4
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency4
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  syntax:
+    content: public TDep4 Dependency4 { get; }
+    parameters: []
+    return:
+      type: '{TDep4}'
+    content.vb: Public ReadOnly Property Dependency4 As TDep4
+  overload: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency4*
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency4
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency4
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency5
+  commentId: P:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency5
+  id: Dependency5
+  parent: Microsoft.Extensions.Options.ConfigureNamedOptions`6
+  langs:
+  - csharp
+  - vb
+  name: Dependency5
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency5
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency5
+  type: Property
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Microsoft.Extensions.Options
+  syntax:
+    content: public TDep5 Dependency5 { get; }
+    parameters: []
+    return:
+      type: '{TDep5}'
+    content.vb: Public ReadOnly Property Dependency5 As TDep5
+  overload: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency5*
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency5
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency5
+references:
+- uid: Microsoft.Extensions.Options
+  commentId: N:Microsoft.Extensions.Options
+  isExternal: true
+  href: Microsoft.html
+  name: Microsoft.Extensions.Options
+  nameWithType: Microsoft.Extensions.Options
+  fullName: Microsoft.Extensions.Options
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: Microsoft.Extensions.Options.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: Microsoft.html
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: Microsoft.Extensions.html
+  - name: .
+  - uid: Microsoft.Extensions.Options
+    name: Options
+    isExternal: true
+    href: Microsoft.Extensions.Options.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Extensions.Options.IConfigureNamedOptions{{TOptions}}
+  commentId: T:Microsoft.Extensions.Options.IConfigureNamedOptions{`0}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IConfigureNamedOptions`1
+  href: Microsoft.Extensions.Options.IConfigureNamedOptions-1.html
+  name: IConfigureNamedOptions<TOptions>
+  nameWithType: IConfigureNamedOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IConfigureNamedOptions<TOptions>
+  nameWithType.vb: IConfigureNamedOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IConfigureNamedOptions(Of TOptions)
+  name.vb: IConfigureNamedOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IConfigureNamedOptions`1
+    name: IConfigureNamedOptions
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureNamedOptions-1.html
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IConfigureNamedOptions`1
+    name: IConfigureNamedOptions
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureNamedOptions-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options.IConfigureOptions{{TOptions}}
+  commentId: T:Microsoft.Extensions.Options.IConfigureOptions{`0}
+  parent: Microsoft.Extensions.Options
+  definition: Microsoft.Extensions.Options.IConfigureOptions`1
+  href: Microsoft.Extensions.Options.IConfigureOptions-1.html
+  name: IConfigureOptions<TOptions>
+  nameWithType: IConfigureOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IConfigureOptions<TOptions>
+  nameWithType.vb: IConfigureOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IConfigureOptions(Of TOptions)
+  name.vb: IConfigureOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IConfigureOptions`1
+    name: IConfigureOptions
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureOptions-1.html
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IConfigureOptions`1
+    name: IConfigureOptions
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureOptions-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  parent: AccoRevit.Addin.Extensions.UnitExtensions
+  definition: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  parent: AccoRevit.Addin.Utils.ReflectionUtils
+  definition: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Nice3point.Revit.Extensions.SystemExtensions.Cast``1
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  parent: Nice3point.Revit.Extensions.SystemExtensions
+  definition: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Options.IConfigureNamedOptions`1
+  commentId: T:Microsoft.Extensions.Options.IConfigureNamedOptions`1
+  isExternal: true
+  href: Microsoft.Extensions.Options.IConfigureNamedOptions-1.html
+  name: IConfigureNamedOptions<TOptions>
+  nameWithType: IConfigureNamedOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IConfigureNamedOptions<TOptions>
+  nameWithType.vb: IConfigureNamedOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IConfigureNamedOptions(Of TOptions)
+  name.vb: IConfigureNamedOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IConfigureNamedOptions`1
+    name: IConfigureNamedOptions
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureNamedOptions-1.html
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IConfigureNamedOptions`1
+    name: IConfigureNamedOptions
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureNamedOptions-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options.IConfigureOptions`1
+  commentId: T:Microsoft.Extensions.Options.IConfigureOptions`1
+  isExternal: true
+  href: Microsoft.Extensions.Options.IConfigureOptions-1.html
+  name: IConfigureOptions<TOptions>
+  nameWithType: IConfigureOptions<TOptions>
+  fullName: Microsoft.Extensions.Options.IConfigureOptions<TOptions>
+  nameWithType.vb: IConfigureOptions(Of TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IConfigureOptions(Of TOptions)
+  name.vb: IConfigureOptions(Of TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IConfigureOptions`1
+    name: IConfigureOptions
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureOptions-1.html
+  - name: <
+  - name: TOptions
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IConfigureOptions`1
+    name: IConfigureOptions
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureOptions-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  commentId: M:AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  name: ToUnitLabel(object)
+  nameWithType: UnitExtensions.ToUnitLabel(object)
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(object)
+  nameWithType.vb: UnitExtensions.ToUnitLabel(Object)
+  fullName.vb: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(Object)
+  name.vb: ToUnitLabel(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Extensions.UnitExtensions.ToUnitLabel(System.Object)
+    name: ToUnitLabel
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.UnitExtensions.html#AccoRevit_Addin_Extensions_UnitExtensions_ToUnitLabel_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Extensions.UnitExtensions
+  commentId: T:AccoRevit.Addin.Extensions.UnitExtensions
+  parent: AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.Addin.Extensions.UnitExtensions.html
+  name: UnitExtensions
+  nameWithType: UnitExtensions
+  fullName: AccoRevit.Addin.Extensions.UnitExtensions
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  name: GetHighlightProperty(object)
+  nameWithType: ReflectionUtils.GetHighlightProperty(object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(object)
+  nameWithType.vb: ReflectionUtils.GetHighlightProperty(Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(Object)
+  name.vb: GetHighlightProperty(Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.GetHighlightProperty(System.Object)
+    name: GetHighlightProperty
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_GetHighlightProperty_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: AccoRevit.Addin.Utils.ReflectionUtils
+  commentId: T:AccoRevit.Addin.Utils.ReflectionUtils
+  parent: AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html
+  name: ReflectionUtils
+  nameWithType: ReflectionUtils
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils
+- uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  commentId: M:AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+  isExternal: true
+  href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  name: SetPropertyValue(object, PropertyInfo, object)
+  nameWithType: ReflectionUtils.SetPropertyValue(object, PropertyInfo, object)
+  fullName: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(object, System.Reflection.PropertyInfo, object)
+  nameWithType.vb: ReflectionUtils.SetPropertyValue(Object, PropertyInfo, Object)
+  fullName.vb: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(Object, System.Reflection.PropertyInfo, Object)
+  name.vb: SetPropertyValue(Object, PropertyInfo, Object)
+  spec.csharp:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: AccoRevit.Addin.Utils.ReflectionUtils.SetPropertyValue(System.Object,System.Reflection.PropertyInfo,System.Object)
+    name: SetPropertyValue
+    isExternal: true
+    href: AccoRevit.Addin.Utils.ReflectionUtils.html#AccoRevit_Addin_Utils_ReflectionUtils_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Reflection.PropertyInfo
+    name: PropertyInfo
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.reflection.propertyinfo
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  commentId: M:Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  name: Cast<T>(object)
+  nameWithType: SystemExtensions.Cast<T>(object)
+  fullName: Nice3point.Revit.Extensions.SystemExtensions.Cast<T>(object)
+  nameWithType.vb: SystemExtensions.Cast(Of T)(Object)
+  fullName.vb: Nice3point.Revit.Extensions.SystemExtensions.Cast(Of T)(Object)
+  name.vb: Cast(Of T)(Object)
+  spec.csharp:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Nice3point.Revit.Extensions.SystemExtensions.Cast``1(System.Object)
+    name: Cast
+    isExternal: true
+    href: Nice3point.Revit.Extensions.SystemExtensions.html#Nice3point_Revit_Extensions_SystemExtensions_Cast__1_System_Object_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: Nice3point.Revit.Extensions.SystemExtensions
+  commentId: T:Nice3point.Revit.Extensions.SystemExtensions
+  parent: Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SystemExtensions.html
+  name: SystemExtensions
+  nameWithType: SystemExtensions
+  fullName: Nice3point.Revit.Extensions.SystemExtensions
+- uid: AccoRevit.Addin.Extensions
+  commentId: N:AccoRevit.Addin.Extensions
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Extensions
+  nameWithType: AccoRevit.Addin.Extensions
+  fullName: AccoRevit.Addin.Extensions
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Extensions
+    name: Extensions
+    isExternal: true
+    href: AccoRevit.Addin.Extensions.html
+- uid: AccoRevit.Addin.Utils
+  commentId: N:AccoRevit.Addin.Utils
+  isExternal: true
+  href: AccoRevit.html
+  name: AccoRevit.Addin.Utils
+  nameWithType: AccoRevit.Addin.Utils
+  fullName: AccoRevit.Addin.Utils
+  spec.csharp:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+  spec.vb:
+  - uid: AccoRevit
+    name: AccoRevit
+    isExternal: true
+    href: AccoRevit.html
+  - name: .
+  - uid: AccoRevit.Addin
+    name: Addin
+    isExternal: true
+    href: AccoRevit.Addin.html
+  - name: .
+  - uid: AccoRevit.Addin.Utils
+    name: Utils
+    isExternal: true
+    href: AccoRevit.Addin.Utils.html
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.#ctor*
+  commentId: Overload:Microsoft.Extensions.Options.ConfigureNamedOptions`6.#ctor
+  isExternal: true
+  href: Microsoft.Extensions.Options.ConfigureNamedOptions-6.html#Microsoft_Extensions_Options_ConfigureNamedOptions_6__ctor_System_String__1__2__3__4__5_System_Action__0__1__2__3__4__5__
+  name: ConfigureNamedOptions
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.ConfigureNamedOptions
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.ConfigureNamedOptions
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).New
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{TDep1}'
+  commentId: '!:TDep1'
+  definition: TDep1
+  name: TDep1
+  nameWithType: TDep1
+  fullName: TDep1
+- uid: '{TDep2}'
+  commentId: '!:TDep2'
+  definition: TDep2
+  name: TDep2
+  nameWithType: TDep2
+  fullName: TDep2
+- uid: '{TDep3}'
+  commentId: '!:TDep3'
+  definition: TDep3
+  name: TDep3
+  nameWithType: TDep3
+  fullName: TDep3
+- uid: '{TDep4}'
+  commentId: '!:TDep4'
+  definition: TDep4
+  name: TDep4
+  nameWithType: TDep4
+  fullName: TDep4
+- uid: '{TDep5}'
+  commentId: '!:TDep5'
+  definition: TDep5
+  name: TDep5
+  nameWithType: TDep5
+  fullName: TDep5
+- uid: System.Action{{TOptions},{TDep1},{TDep2},{TDep3},{TDep4},{TDep5}}
+  commentId: T:System.Action{`0,`1,`2,`3,`4,`5}
+  parent: System
+  definition: System.Action`6
+  href: https://learn.microsoft.com/dotnet/api/system.action-6
+  name: Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>
+  nameWithType: Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>
+  fullName: System.Action<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>
+  nameWithType.vb: Action(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5)
+  fullName.vb: System.Action(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5)
+  name.vb: Action(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5)
+  spec.csharp:
+  - uid: System.Action`6
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-6
+  - name: <
+  - name: TOptions
+  - name: ','
+  - name: " "
+  - name: TDep1
+  - name: ','
+  - name: " "
+  - name: TDep2
+  - name: ','
+  - name: " "
+  - name: TDep3
+  - name: ','
+  - name: " "
+  - name: TDep4
+  - name: ','
+  - name: " "
+  - name: TDep5
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`6
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-6
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TOptions
+  - name: ','
+  - name: " "
+  - name: TDep1
+  - name: ','
+  - name: " "
+  - name: TDep2
+  - name: ','
+  - name: " "
+  - name: TDep3
+  - name: ','
+  - name: " "
+  - name: TDep4
+  - name: ','
+  - name: " "
+  - name: TDep5
+  - name: )
+- uid: TDep1
+  name: TDep1
+  nameWithType: TDep1
+  fullName: TDep1
+- uid: TDep2
+  name: TDep2
+  nameWithType: TDep2
+  fullName: TDep2
+- uid: TDep3
+  name: TDep3
+  nameWithType: TDep3
+  fullName: TDep3
+- uid: TDep4
+  name: TDep4
+  nameWithType: TDep4
+  fullName: TDep4
+- uid: TDep5
+  name: TDep5
+  nameWithType: TDep5
+  fullName: TDep5
+- uid: System.Action`6
+  commentId: T:System.Action`6
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-6
+  name: Action<T1, T2, T3, T4, T5, T6>
+  nameWithType: Action<T1, T2, T3, T4, T5, T6>
+  fullName: System.Action<T1, T2, T3, T4, T5, T6>
+  nameWithType.vb: Action(Of T1, T2, T3, T4, T5, T6)
+  fullName.vb: System.Action(Of T1, T2, T3, T4, T5, T6)
+  name.vb: Action(Of T1, T2, T3, T4, T5, T6)
+  spec.csharp:
+  - uid: System.Action`6
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-6
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`6
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-6
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: ','
+  - name: " "
+  - name: T6
+  - name: )
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Configure*
+  commentId: Overload:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Configure
+  isExternal: true
+  href: Microsoft.Extensions.Options.ConfigureNamedOptions-6.html#Microsoft_Extensions_Options_ConfigureNamedOptions_6_Configure_System_String__0_
+  name: Configure
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Configure
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Configure
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Configure
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Configure
+- uid: Microsoft.Extensions.Options.IConfigureNamedOptions{{TOptions}}.Configure(System.String,{TOptions})
+  commentId: M:Microsoft.Extensions.Options.IConfigureNamedOptions{`0}.Configure(System.String,`0)
+  parent: Microsoft.Extensions.Options.IConfigureNamedOptions{{TOptions}}
+  definition: Microsoft.Extensions.Options.IConfigureNamedOptions`1.Configure(System.String,`0)
+  href: Microsoft.Extensions.Options.IConfigureNamedOptions-1.html#Microsoft_Extensions_Options_IConfigureNamedOptions_1_Configure_System_String__0_
+  name: Configure(string, TOptions)
+  nameWithType: IConfigureNamedOptions<TOptions>.Configure(string, TOptions)
+  fullName: Microsoft.Extensions.Options.IConfigureNamedOptions<TOptions>.Configure(string, TOptions)
+  nameWithType.vb: IConfigureNamedOptions(Of TOptions).Configure(String, TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IConfigureNamedOptions(Of TOptions).Configure(String, TOptions)
+  name.vb: Configure(String, TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IConfigureNamedOptions{`0}.Configure(System.String,`0)
+    name: Configure
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureNamedOptions-1.html#Microsoft_Extensions_Options_IConfigureNamedOptions_1_Configure_System_String__0_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TOptions
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IConfigureNamedOptions{`0}.Configure(System.String,`0)
+    name: Configure
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureNamedOptions-1.html#Microsoft_Extensions_Options_IConfigureNamedOptions_1_Configure_System_String__0_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: '{TOptions}'
+  commentId: '!:TOptions'
+  definition: TOptions
+  name: TOptions
+  nameWithType: TOptions
+  fullName: TOptions
+- uid: Microsoft.Extensions.Options.IConfigureNamedOptions`1.Configure(System.String,`0)
+  commentId: M:Microsoft.Extensions.Options.IConfigureNamedOptions`1.Configure(System.String,`0)
+  isExternal: true
+  href: Microsoft.Extensions.Options.IConfigureNamedOptions-1.html#Microsoft_Extensions_Options_IConfigureNamedOptions_1_Configure_System_String__0_
+  name: Configure(string, TOptions)
+  nameWithType: IConfigureNamedOptions<TOptions>.Configure(string, TOptions)
+  fullName: Microsoft.Extensions.Options.IConfigureNamedOptions<TOptions>.Configure(string, TOptions)
+  nameWithType.vb: IConfigureNamedOptions(Of TOptions).Configure(String, TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IConfigureNamedOptions(Of TOptions).Configure(String, TOptions)
+  name.vb: Configure(String, TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IConfigureNamedOptions`1.Configure(System.String,`0)
+    name: Configure
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureNamedOptions-1.html#Microsoft_Extensions_Options_IConfigureNamedOptions_1_Configure_System_String__0_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TOptions
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IConfigureNamedOptions`1.Configure(System.String,`0)
+    name: Configure
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureNamedOptions-1.html#Microsoft_Extensions_Options_IConfigureNamedOptions_1_Configure_System_String__0_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - name: TOptions
+  - name: )
+- uid: TOptions
+  name: TOptions
+  nameWithType: TOptions
+  fullName: TOptions
+- uid: Microsoft.Extensions.Options.IConfigureOptions{{TOptions}}.Configure({TOptions})
+  commentId: M:Microsoft.Extensions.Options.IConfigureOptions{`0}.Configure(`0)
+  parent: Microsoft.Extensions.Options.IConfigureOptions{{TOptions}}
+  definition: Microsoft.Extensions.Options.IConfigureOptions`1.Configure(`0)
+  href: Microsoft.Extensions.Options.IConfigureOptions-1.html#Microsoft_Extensions_Options_IConfigureOptions_1_Configure__0_
+  name: Configure(TOptions)
+  nameWithType: IConfigureOptions<TOptions>.Configure(TOptions)
+  fullName: Microsoft.Extensions.Options.IConfigureOptions<TOptions>.Configure(TOptions)
+  nameWithType.vb: IConfigureOptions(Of TOptions).Configure(TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IConfigureOptions(Of TOptions).Configure(TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IConfigureOptions{`0}.Configure(`0)
+    name: Configure
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureOptions-1.html#Microsoft_Extensions_Options_IConfigureOptions_1_Configure__0_
+  - name: (
+  - name: TOptions
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IConfigureOptions{`0}.Configure(`0)
+    name: Configure
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureOptions-1.html#Microsoft_Extensions_Options_IConfigureOptions_1_Configure__0_
+  - name: (
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options.IConfigureOptions`1.Configure(`0)
+  commentId: M:Microsoft.Extensions.Options.IConfigureOptions`1.Configure(`0)
+  isExternal: true
+  href: Microsoft.Extensions.Options.IConfigureOptions-1.html#Microsoft_Extensions_Options_IConfigureOptions_1_Configure__0_
+  name: Configure(TOptions)
+  nameWithType: IConfigureOptions<TOptions>.Configure(TOptions)
+  fullName: Microsoft.Extensions.Options.IConfigureOptions<TOptions>.Configure(TOptions)
+  nameWithType.vb: IConfigureOptions(Of TOptions).Configure(TOptions)
+  fullName.vb: Microsoft.Extensions.Options.IConfigureOptions(Of TOptions).Configure(TOptions)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Options.IConfigureOptions`1.Configure(`0)
+    name: Configure
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureOptions-1.html#Microsoft_Extensions_Options_IConfigureOptions_1_Configure__0_
+  - name: (
+  - name: TOptions
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Options.IConfigureOptions`1.Configure(`0)
+    name: Configure
+    isExternal: true
+    href: Microsoft.Extensions.Options.IConfigureOptions-1.html#Microsoft_Extensions_Options_IConfigureOptions_1_Configure__0_
+  - name: (
+  - name: TOptions
+  - name: )
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Name*
+  commentId: Overload:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Name
+  isExternal: true
+  href: Microsoft.Extensions.Options.ConfigureNamedOptions-6.html#Microsoft_Extensions_Options_ConfigureNamedOptions_6_Name
+  name: Name
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Name
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Name
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Name
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Name
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Action*
+  commentId: Overload:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Action
+  isExternal: true
+  href: Microsoft.Extensions.Options.ConfigureNamedOptions-6.html#Microsoft_Extensions_Options_ConfigureNamedOptions_6_Action
+  name: Action
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Action
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Action
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Action
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Action
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency1*
+  commentId: Overload:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency1
+  isExternal: true
+  href: Microsoft.Extensions.Options.ConfigureNamedOptions-6.html#Microsoft_Extensions_Options_ConfigureNamedOptions_6_Dependency1
+  name: Dependency1
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency1
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency1
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency1
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency1
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency2*
+  commentId: Overload:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency2
+  isExternal: true
+  href: Microsoft.Extensions.Options.ConfigureNamedOptions-6.html#Microsoft_Extensions_Options_ConfigureNamedOptions_6_Dependency2
+  name: Dependency2
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency2
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency2
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency2
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency2
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency3*
+  commentId: Overload:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency3
+  isExternal: true
+  href: Microsoft.Extensions.Options.ConfigureNamedOptions-6.html#Microsoft_Extensions_Options_ConfigureNamedOptions_6_Dependency3
+  name: Dependency3
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency3
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency3
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency3
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency3
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency4*
+  commentId: Overload:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency4
+  isExternal: true
+  href: Microsoft.Extensions.Options.ConfigureNamedOptions-6.html#Microsoft_Extensions_Options_ConfigureNamedOptions_6_Dependency4
+  name: Dependency4
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency4
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency4
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency4
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency4
+- uid: Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency5*
+  commentId: Overload:Microsoft.Extensions.Options.ConfigureNamedOptions`6.Dependency5
+  isExternal: true
+  href: Microsoft.Extensions.Options.ConfigureNamedOptions-6.html#Microsoft_Extensions_Options_ConfigureNamedOptions_6_Dependency5
+  name: Dependency5
+  nameWithType: ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency5
+  fullName: Microsoft.Extensions.Options.ConfigureNamedOptions<TOptions, TDep1, TDep2, TDep3, TDep4, TDep5>.Dependency5
+  nameWithType.vb: ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency5
+  fullName.vb: Microsoft.Extensions.Options.ConfigureNamedOptions(Of TOptions, TDep1, TDep2, TDep3, TDep4, TDep5).Dependency5

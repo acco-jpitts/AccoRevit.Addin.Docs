@@ -1,0 +1,451 @@
+### YamlMime:ManagedReference
+items:
+- uid: Nice3point.Revit.Extensions.SchemaExtensions
+  commentId: T:Nice3point.Revit.Extensions.SchemaExtensions
+  id: SchemaExtensions
+  parent: Nice3point.Revit.Extensions
+  children:
+  - Nice3point.Revit.Extensions.SchemaExtensions.LoadEntity``1(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.ExtensibleStorage.Schema,System.String)
+  - Nice3point.Revit.Extensions.SchemaExtensions.SaveEntity``1(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.ExtensibleStorage.Schema,``0,System.String)
+  langs:
+  - csharp
+  - vb
+  name: SchemaExtensions
+  nameWithType: SchemaExtensions
+  fullName: Nice3point.Revit.Extensions.SchemaExtensions
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [PublicAPI]
+
+      public static class SchemaExtensions
+    content.vb: >-
+      <PublicAPI>
+
+      Public Module SchemaExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  attributes:
+  - type: JetBrains.Annotations.PublicAPIAttribute
+    ctor: JetBrains.Annotations.PublicAPIAttribute.#ctor
+    arguments: []
+- uid: Nice3point.Revit.Extensions.SchemaExtensions.SaveEntity``1(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.ExtensibleStorage.Schema,``0,System.String)
+  commentId: M:Nice3point.Revit.Extensions.SchemaExtensions.SaveEntity``1(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.ExtensibleStorage.Schema,``0,System.String)
+  id: SaveEntity``1(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.ExtensibleStorage.Schema,``0,System.String)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.SchemaExtensions
+  langs:
+  - csharp
+  - vb
+  name: SaveEntity<T>(Element, Schema, T, string)
+  nameWithType: SchemaExtensions.SaveEntity<T>(Element, Schema, T, string)
+  fullName: Nice3point.Revit.Extensions.SchemaExtensions.SaveEntity<T>(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.ExtensibleStorage.Schema, T, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: public static bool SaveEntity<T>(this Element element, Schema schema, T data, string fieldName)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+    - id: schema
+      type: Autodesk.Revit.DB.ExtensibleStorage.Schema
+    - id: data
+      type: '{T}'
+    - id: fieldName
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function SaveEntity(Of T)(element As Element, schema As Schema, data As T, fieldName As String) As Boolean
+  overload: Nice3point.Revit.Extensions.SchemaExtensions.SaveEntity*
+  nameWithType.vb: SchemaExtensions.SaveEntity(Of T)(Element, Schema, T, String)
+  fullName.vb: Nice3point.Revit.Extensions.SchemaExtensions.SaveEntity(Of T)(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.ExtensibleStorage.Schema, T, String)
+  name.vb: SaveEntity(Of T)(Element, Schema, T, String)
+- uid: Nice3point.Revit.Extensions.SchemaExtensions.LoadEntity``1(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.ExtensibleStorage.Schema,System.String)
+  commentId: M:Nice3point.Revit.Extensions.SchemaExtensions.LoadEntity``1(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.ExtensibleStorage.Schema,System.String)
+  id: LoadEntity``1(Autodesk.Revit.DB.Element,Autodesk.Revit.DB.ExtensibleStorage.Schema,System.String)
+  isExtensionMethod: true
+  parent: Nice3point.Revit.Extensions.SchemaExtensions
+  langs:
+  - csharp
+  - vb
+  name: LoadEntity<T>(Element, Schema, string)
+  nameWithType: SchemaExtensions.LoadEntity<T>(Element, Schema, string)
+  fullName: Nice3point.Revit.Extensions.SchemaExtensions.LoadEntity<T>(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.ExtensibleStorage.Schema, string)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: Nice3point.Revit.Extensions
+  syntax:
+    content: >-
+      [Pure]
+
+      public static T? LoadEntity<T>(this Element element, Schema schema, string fieldName)
+    parameters:
+    - id: element
+      type: Autodesk.Revit.DB.Element
+    - id: schema
+      type: Autodesk.Revit.DB.ExtensibleStorage.Schema
+    - id: fieldName
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: >-
+      <Pure>
+
+      Public Shared Function LoadEntity(Of T)(element As Element, schema As Schema, fieldName As String) As T
+  overload: Nice3point.Revit.Extensions.SchemaExtensions.LoadEntity*
+  attributes:
+  - type: JetBrains.Annotations.PureAttribute
+    ctor: JetBrains.Annotations.PureAttribute.#ctor
+    arguments: []
+  nameWithType.vb: SchemaExtensions.LoadEntity(Of T)(Element, Schema, String)
+  fullName.vb: Nice3point.Revit.Extensions.SchemaExtensions.LoadEntity(Of T)(Autodesk.Revit.DB.Element, Autodesk.Revit.DB.ExtensibleStorage.Schema, String)
+  name.vb: LoadEntity(Of T)(Element, Schema, String)
+references:
+- uid: Nice3point.Revit.Extensions
+  commentId: N:Nice3point.Revit.Extensions
+  isExternal: true
+  href: Nice3point.html
+  name: Nice3point.Revit.Extensions
+  nameWithType: Nice3point.Revit.Extensions
+  fullName: Nice3point.Revit.Extensions
+  spec.csharp:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+  spec.vb:
+  - uid: Nice3point
+    name: Nice3point
+    isExternal: true
+    href: Nice3point.html
+  - name: .
+  - uid: Nice3point.Revit
+    name: Revit
+    isExternal: true
+    href: Nice3point.Revit.html
+  - name: .
+  - uid: Nice3point.Revit.Extensions
+    name: Extensions
+    isExternal: true
+    href: Nice3point.Revit.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Nice3point.Revit.Extensions.SchemaExtensions.SaveEntity*
+  commentId: Overload:Nice3point.Revit.Extensions.SchemaExtensions.SaveEntity
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SchemaExtensions.html#Nice3point_Revit_Extensions_SchemaExtensions_SaveEntity__1_Autodesk_Revit_DB_Element_Autodesk_Revit_DB_ExtensibleStorage_Schema___0_System_String_
+  name: SaveEntity
+  nameWithType: SchemaExtensions.SaveEntity
+  fullName: Nice3point.Revit.Extensions.SchemaExtensions.SaveEntity
+- uid: Autodesk.Revit.DB.Element
+  isExternal: true
+  name: Element
+  nameWithType: Element
+  fullName: Autodesk.Revit.DB.Element
+- uid: Autodesk.Revit.DB.ExtensibleStorage.Schema
+  isExternal: true
+  name: Schema
+  nameWithType: Schema
+  fullName: Autodesk.Revit.DB.ExtensibleStorage.Schema
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Nice3point.Revit.Extensions.SchemaExtensions.LoadEntity*
+  commentId: Overload:Nice3point.Revit.Extensions.SchemaExtensions.LoadEntity
+  isExternal: true
+  href: Nice3point.Revit.Extensions.SchemaExtensions.html#Nice3point_Revit_Extensions_SchemaExtensions_LoadEntity__1_Autodesk_Revit_DB_Element_Autodesk_Revit_DB_ExtensibleStorage_Schema_System_String_
+  name: LoadEntity
+  nameWithType: SchemaExtensions.LoadEntity
+  fullName: Nice3point.Revit.Extensions.SchemaExtensions.LoadEntity

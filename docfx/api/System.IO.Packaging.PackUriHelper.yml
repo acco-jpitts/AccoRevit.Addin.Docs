@@ -1,0 +1,811 @@
+### YamlMime:ManagedReference
+items:
+- uid: System.IO.Packaging.PackUriHelper
+  commentId: T:System.IO.Packaging.PackUriHelper
+  id: PackUriHelper
+  parent: System.IO.Packaging
+  children:
+  - System.IO.Packaging.PackUriHelper.ComparePackUri(System.Uri,System.Uri)
+  - System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)
+  - System.IO.Packaging.PackUriHelper.Create(System.Uri)
+  - System.IO.Packaging.PackUriHelper.Create(System.Uri,System.Uri)
+  - System.IO.Packaging.PackUriHelper.Create(System.Uri,System.Uri,System.String)
+  - System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  - System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)
+  - System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)
+  - System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+  - System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)
+  - System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)
+  - System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri(System.Uri)
+  - System.IO.Packaging.PackUriHelper.IsRelationshipPartUri(System.Uri)
+  - System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+  - System.IO.Packaging.PackUriHelper.UriSchemePack
+  langs:
+  - csharp
+  - vb
+  name: PackUriHelper
+  nameWithType: PackUriHelper
+  fullName: System.IO.Packaging.PackUriHelper
+  type: Class
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static class PackUriHelper
+    content.vb: Public Module PackUriHelper
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ToString
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.GetHashCode
+- uid: System.IO.Packaging.PackUriHelper.UriSchemePack
+  commentId: F:System.IO.Packaging.PackUriHelper.UriSchemePack
+  id: UriSchemePack
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: UriSchemePack
+  nameWithType: PackUriHelper.UriSchemePack
+  fullName: System.IO.Packaging.PackUriHelper.UriSchemePack
+  type: Field
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static readonly string UriSchemePack
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly UriSchemePack As String
+- uid: System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  id: CreatePartUri(System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: CreatePartUri(Uri)
+  nameWithType: PackUriHelper.CreatePartUri(Uri)
+  fullName: System.IO.Packaging.PackUriHelper.CreatePartUri(System.Uri)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static Uri CreatePartUri(Uri partUri)
+    parameters:
+    - id: partUri
+      type: System.Uri
+    return:
+      type: System.Uri
+    content.vb: Public Shared Function CreatePartUri(partUri As Uri) As Uri
+  overload: System.IO.Packaging.PackUriHelper.CreatePartUri*
+- uid: System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri,System.Uri)
+  id: ResolvePartUri(System.Uri,System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: ResolvePartUri(Uri, Uri)
+  nameWithType: PackUriHelper.ResolvePartUri(Uri, Uri)
+  fullName: System.IO.Packaging.PackUriHelper.ResolvePartUri(System.Uri, System.Uri)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static Uri ResolvePartUri(Uri sourcePartUri, Uri targetUri)
+    parameters:
+    - id: sourcePartUri
+      type: System.Uri
+    - id: targetUri
+      type: System.Uri
+    return:
+      type: System.Uri
+    content.vb: Public Shared Function ResolvePartUri(sourcePartUri As Uri, targetUri As Uri) As Uri
+  overload: System.IO.Packaging.PackUriHelper.ResolvePartUri*
+- uid: System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri,System.Uri)
+  id: GetRelativeUri(System.Uri,System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: GetRelativeUri(Uri, Uri)
+  nameWithType: PackUriHelper.GetRelativeUri(Uri, Uri)
+  fullName: System.IO.Packaging.PackUriHelper.GetRelativeUri(System.Uri, System.Uri)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static Uri GetRelativeUri(Uri sourcePartUri, Uri targetPartUri)
+    parameters:
+    - id: sourcePartUri
+      type: System.Uri
+    - id: targetPartUri
+      type: System.Uri
+    return:
+      type: System.Uri
+    content.vb: Public Shared Function GetRelativeUri(sourcePartUri As Uri, targetPartUri As Uri) As Uri
+  overload: System.IO.Packaging.PackUriHelper.GetRelativeUri*
+- uid: System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)
+  id: GetNormalizedPartUri(System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: GetNormalizedPartUri(Uri)
+  nameWithType: PackUriHelper.GetNormalizedPartUri(Uri)
+  fullName: System.IO.Packaging.PackUriHelper.GetNormalizedPartUri(System.Uri)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static Uri GetNormalizedPartUri(Uri partUri)
+    parameters:
+    - id: partUri
+      type: System.Uri
+    return:
+      type: System.Uri
+    content.vb: Public Shared Function GetNormalizedPartUri(partUri As Uri) As Uri
+  overload: System.IO.Packaging.PackUriHelper.GetNormalizedPartUri*
+- uid: System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri,System.Uri)
+  id: ComparePartUri(System.Uri,System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: ComparePartUri(Uri?, Uri?)
+  nameWithType: PackUriHelper.ComparePartUri(Uri?, Uri?)
+  fullName: System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri?, System.Uri?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static int ComparePartUri(Uri? firstPartUri, Uri? secondPartUri)
+    parameters:
+    - id: firstPartUri
+      type: System.Uri
+    - id: secondPartUri
+      type: System.Uri
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function ComparePartUri(firstPartUri As Uri, secondPartUri As Uri) As Integer
+  overload: System.IO.Packaging.PackUriHelper.ComparePartUri*
+  nameWithType.vb: PackUriHelper.ComparePartUri(Uri, Uri)
+  fullName.vb: System.IO.Packaging.PackUriHelper.ComparePartUri(System.Uri, System.Uri)
+  name.vb: ComparePartUri(Uri, Uri)
+- uid: System.IO.Packaging.PackUriHelper.IsRelationshipPartUri(System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.IsRelationshipPartUri(System.Uri)
+  id: IsRelationshipPartUri(System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: IsRelationshipPartUri(Uri)
+  nameWithType: PackUriHelper.IsRelationshipPartUri(Uri)
+  fullName: System.IO.Packaging.PackUriHelper.IsRelationshipPartUri(System.Uri)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static bool IsRelationshipPartUri(Uri partUri)
+    parameters:
+    - id: partUri
+      type: System.Uri
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function IsRelationshipPartUri(partUri As Uri) As Boolean
+  overload: System.IO.Packaging.PackUriHelper.IsRelationshipPartUri*
+- uid: System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)
+  id: GetRelationshipPartUri(System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: GetRelationshipPartUri(Uri)
+  nameWithType: PackUriHelper.GetRelationshipPartUri(Uri)
+  fullName: System.IO.Packaging.PackUriHelper.GetRelationshipPartUri(System.Uri)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static Uri GetRelationshipPartUri(Uri partUri)
+    parameters:
+    - id: partUri
+      type: System.Uri
+    return:
+      type: System.Uri
+    content.vb: Public Shared Function GetRelationshipPartUri(partUri As Uri) As Uri
+  overload: System.IO.Packaging.PackUriHelper.GetRelationshipPartUri*
+- uid: System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri(System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri(System.Uri)
+  id: GetSourcePartUriFromRelationshipPartUri(System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSourcePartUriFromRelationshipPartUri(Uri)
+  nameWithType: PackUriHelper.GetSourcePartUriFromRelationshipPartUri(Uri)
+  fullName: System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri(System.Uri)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static Uri GetSourcePartUriFromRelationshipPartUri(Uri relationshipPartUri)
+    parameters:
+    - id: relationshipPartUri
+      type: System.Uri
+    return:
+      type: System.Uri
+    content.vb: Public Shared Function GetSourcePartUriFromRelationshipPartUri(relationshipPartUri As Uri) As Uri
+  overload: System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri*
+- uid: System.IO.Packaging.PackUriHelper.Create(System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.Create(System.Uri)
+  id: Create(System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: Create(Uri)
+  nameWithType: PackUriHelper.Create(Uri)
+  fullName: System.IO.Packaging.PackUriHelper.Create(System.Uri)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static Uri Create(Uri packageUri)
+    parameters:
+    - id: packageUri
+      type: System.Uri
+    return:
+      type: System.Uri
+    content.vb: Public Shared Function Create(packageUri As Uri) As Uri
+  overload: System.IO.Packaging.PackUriHelper.Create*
+- uid: System.IO.Packaging.PackUriHelper.Create(System.Uri,System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.Create(System.Uri,System.Uri)
+  id: Create(System.Uri,System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: Create(Uri, Uri?)
+  nameWithType: PackUriHelper.Create(Uri, Uri?)
+  fullName: System.IO.Packaging.PackUriHelper.Create(System.Uri, System.Uri?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static Uri Create(Uri packageUri, Uri? partUri)
+    parameters:
+    - id: packageUri
+      type: System.Uri
+    - id: partUri
+      type: System.Uri
+    return:
+      type: System.Uri
+    content.vb: Public Shared Function Create(packageUri As Uri, partUri As Uri) As Uri
+  overload: System.IO.Packaging.PackUriHelper.Create*
+  nameWithType.vb: PackUriHelper.Create(Uri, Uri)
+  fullName.vb: System.IO.Packaging.PackUriHelper.Create(System.Uri, System.Uri)
+  name.vb: Create(Uri, Uri)
+- uid: System.IO.Packaging.PackUriHelper.Create(System.Uri,System.Uri,System.String)
+  commentId: M:System.IO.Packaging.PackUriHelper.Create(System.Uri,System.Uri,System.String)
+  id: Create(System.Uri,System.Uri,System.String)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: Create(Uri, Uri?, string?)
+  nameWithType: PackUriHelper.Create(Uri, Uri?, string?)
+  fullName: System.IO.Packaging.PackUriHelper.Create(System.Uri, System.Uri?, string?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static Uri Create(Uri packageUri, Uri? partUri, string? fragment)
+    parameters:
+    - id: packageUri
+      type: System.Uri
+    - id: partUri
+      type: System.Uri
+    - id: fragment
+      type: System.String
+    return:
+      type: System.Uri
+    content.vb: Public Shared Function Create(packageUri As Uri, partUri As Uri, fragment As String) As Uri
+  overload: System.IO.Packaging.PackUriHelper.Create*
+  nameWithType.vb: PackUriHelper.Create(Uri, Uri, String)
+  fullName.vb: System.IO.Packaging.PackUriHelper.Create(System.Uri, System.Uri, String)
+  name.vb: Create(Uri, Uri, String)
+- uid: System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)
+  id: GetPackageUri(System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: GetPackageUri(Uri)
+  nameWithType: PackUriHelper.GetPackageUri(Uri)
+  fullName: System.IO.Packaging.PackUriHelper.GetPackageUri(System.Uri)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static Uri GetPackageUri(Uri packUri)
+    parameters:
+    - id: packUri
+      type: System.Uri
+    return:
+      type: System.Uri
+    content.vb: Public Shared Function GetPackageUri(packUri As Uri) As Uri
+  overload: System.IO.Packaging.PackUriHelper.GetPackageUri*
+- uid: System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+  id: GetPartUri(System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: GetPartUri(Uri)
+  nameWithType: PackUriHelper.GetPartUri(Uri)
+  fullName: System.IO.Packaging.PackUriHelper.GetPartUri(System.Uri)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static Uri? GetPartUri(Uri packUri)
+    parameters:
+    - id: packUri
+      type: System.Uri
+    return:
+      type: System.Uri
+    content.vb: Public Shared Function GetPartUri(packUri As Uri) As Uri
+  overload: System.IO.Packaging.PackUriHelper.GetPartUri*
+- uid: System.IO.Packaging.PackUriHelper.ComparePackUri(System.Uri,System.Uri)
+  commentId: M:System.IO.Packaging.PackUriHelper.ComparePackUri(System.Uri,System.Uri)
+  id: ComparePackUri(System.Uri,System.Uri)
+  parent: System.IO.Packaging.PackUriHelper
+  langs:
+  - csharp
+  - vb
+  name: ComparePackUri(Uri?, Uri?)
+  nameWithType: PackUriHelper.ComparePackUri(Uri?, Uri?)
+  fullName: System.IO.Packaging.PackUriHelper.ComparePackUri(System.Uri?, System.Uri?)
+  type: Method
+  assemblies:
+  - AccoRevit.Addin
+  namespace: System.IO.Packaging
+  syntax:
+    content: public static int ComparePackUri(Uri? firstPackUri, Uri? secondPackUri)
+    parameters:
+    - id: firstPackUri
+      type: System.Uri
+    - id: secondPackUri
+      type: System.Uri
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function ComparePackUri(firstPackUri As Uri, secondPackUri As Uri) As Integer
+  overload: System.IO.Packaging.PackUriHelper.ComparePackUri*
+  nameWithType.vb: PackUriHelper.ComparePackUri(Uri, Uri)
+  fullName.vb: System.IO.Packaging.PackUriHelper.ComparePackUri(System.Uri, System.Uri)
+  name.vb: ComparePackUri(Uri, Uri)
+references:
+- uid: System.IO.Packaging
+  commentId: N:System.IO.Packaging
+  isExternal: true
+  href: System.html
+  name: System.IO.Packaging
+  nameWithType: System.IO.Packaging
+  fullName: System.IO.Packaging
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+  - name: .
+  - uid: System.IO.Packaging
+    name: Packaging
+    isExternal: true
+    href: System.IO.Packaging.html
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: System.html
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: System.IO.html
+  - name: .
+  - uid: System.IO.Packaging
+    name: Packaging
+    isExternal: true
+    href: System.IO.Packaging.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.IO.Packaging.PackUriHelper.CreatePartUri*
+  commentId: Overload:System.IO.Packaging.PackUriHelper.CreatePartUri
+  isExternal: true
+  href: System.IO.Packaging.PackUriHelper.html#System_IO_Packaging_PackUriHelper_CreatePartUri_System_Uri_
+  name: CreatePartUri
+  nameWithType: PackUriHelper.CreatePartUri
+  fullName: System.IO.Packaging.PackUriHelper.CreatePartUri
+- uid: System.Uri
+  commentId: T:System.Uri
+  parent: System
+  isExternal: true
+  name: Uri
+  nameWithType: Uri
+  fullName: System.Uri
+- uid: System.IO.Packaging.PackUriHelper.ResolvePartUri*
+  commentId: Overload:System.IO.Packaging.PackUriHelper.ResolvePartUri
+  isExternal: true
+  href: System.IO.Packaging.PackUriHelper.html#System_IO_Packaging_PackUriHelper_ResolvePartUri_System_Uri_System_Uri_
+  name: ResolvePartUri
+  nameWithType: PackUriHelper.ResolvePartUri
+  fullName: System.IO.Packaging.PackUriHelper.ResolvePartUri
+- uid: System.IO.Packaging.PackUriHelper.GetRelativeUri*
+  commentId: Overload:System.IO.Packaging.PackUriHelper.GetRelativeUri
+  isExternal: true
+  href: System.IO.Packaging.PackUriHelper.html#System_IO_Packaging_PackUriHelper_GetRelativeUri_System_Uri_System_Uri_
+  name: GetRelativeUri
+  nameWithType: PackUriHelper.GetRelativeUri
+  fullName: System.IO.Packaging.PackUriHelper.GetRelativeUri
+- uid: System.IO.Packaging.PackUriHelper.GetNormalizedPartUri*
+  commentId: Overload:System.IO.Packaging.PackUriHelper.GetNormalizedPartUri
+  isExternal: true
+  href: System.IO.Packaging.PackUriHelper.html#System_IO_Packaging_PackUriHelper_GetNormalizedPartUri_System_Uri_
+  name: GetNormalizedPartUri
+  nameWithType: PackUriHelper.GetNormalizedPartUri
+  fullName: System.IO.Packaging.PackUriHelper.GetNormalizedPartUri
+- uid: System.IO.Packaging.PackUriHelper.ComparePartUri*
+  commentId: Overload:System.IO.Packaging.PackUriHelper.ComparePartUri
+  isExternal: true
+  href: System.IO.Packaging.PackUriHelper.html#System_IO_Packaging_PackUriHelper_ComparePartUri_System_Uri_System_Uri_
+  name: ComparePartUri
+  nameWithType: PackUriHelper.ComparePartUri
+  fullName: System.IO.Packaging.PackUriHelper.ComparePartUri
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System.IO.Packaging.PackUriHelper.IsRelationshipPartUri*
+  commentId: Overload:System.IO.Packaging.PackUriHelper.IsRelationshipPartUri
+  isExternal: true
+  href: System.IO.Packaging.PackUriHelper.html#System_IO_Packaging_PackUriHelper_IsRelationshipPartUri_System_Uri_
+  name: IsRelationshipPartUri
+  nameWithType: PackUriHelper.IsRelationshipPartUri
+  fullName: System.IO.Packaging.PackUriHelper.IsRelationshipPartUri
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.IO.Packaging.PackUriHelper.GetRelationshipPartUri*
+  commentId: Overload:System.IO.Packaging.PackUriHelper.GetRelationshipPartUri
+  isExternal: true
+  href: System.IO.Packaging.PackUriHelper.html#System_IO_Packaging_PackUriHelper_GetRelationshipPartUri_System_Uri_
+  name: GetRelationshipPartUri
+  nameWithType: PackUriHelper.GetRelationshipPartUri
+  fullName: System.IO.Packaging.PackUriHelper.GetRelationshipPartUri
+- uid: System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri*
+  commentId: Overload:System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri
+  isExternal: true
+  href: System.IO.Packaging.PackUriHelper.html#System_IO_Packaging_PackUriHelper_GetSourcePartUriFromRelationshipPartUri_System_Uri_
+  name: GetSourcePartUriFromRelationshipPartUri
+  nameWithType: PackUriHelper.GetSourcePartUriFromRelationshipPartUri
+  fullName: System.IO.Packaging.PackUriHelper.GetSourcePartUriFromRelationshipPartUri
+- uid: System.IO.Packaging.PackUriHelper.Create*
+  commentId: Overload:System.IO.Packaging.PackUriHelper.Create
+  isExternal: true
+  href: System.IO.Packaging.PackUriHelper.html#System_IO_Packaging_PackUriHelper_Create_System_Uri_
+  name: Create
+  nameWithType: PackUriHelper.Create
+  fullName: System.IO.Packaging.PackUriHelper.Create
+- uid: System.IO.Packaging.PackUriHelper.GetPackageUri*
+  commentId: Overload:System.IO.Packaging.PackUriHelper.GetPackageUri
+  isExternal: true
+  href: System.IO.Packaging.PackUriHelper.html#System_IO_Packaging_PackUriHelper_GetPackageUri_System_Uri_
+  name: GetPackageUri
+  nameWithType: PackUriHelper.GetPackageUri
+  fullName: System.IO.Packaging.PackUriHelper.GetPackageUri
+- uid: System.IO.Packaging.PackUriHelper.GetPartUri*
+  commentId: Overload:System.IO.Packaging.PackUriHelper.GetPartUri
+  isExternal: true
+  href: System.IO.Packaging.PackUriHelper.html#System_IO_Packaging_PackUriHelper_GetPartUri_System_Uri_
+  name: GetPartUri
+  nameWithType: PackUriHelper.GetPartUri
+  fullName: System.IO.Packaging.PackUriHelper.GetPartUri
+- uid: System.IO.Packaging.PackUriHelper.ComparePackUri*
+  commentId: Overload:System.IO.Packaging.PackUriHelper.ComparePackUri
+  isExternal: true
+  href: System.IO.Packaging.PackUriHelper.html#System_IO_Packaging_PackUriHelper_ComparePackUri_System_Uri_System_Uri_
+  name: ComparePackUri
+  nameWithType: PackUriHelper.ComparePackUri
+  fullName: System.IO.Packaging.PackUriHelper.ComparePackUri
